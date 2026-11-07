@@ -1,0 +1,302 @@
+[
+  {
+    "id": "cityu-hk",
+    "name": "City University of Hong Kong",
+    "moveOnName": "City University of Hong Kong",
+    "countryCode": "CN",
+    "city": "",
+    "lat": 22.320336,
+    "lng": 114.23905,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "sjtu-cn",
+    "name": "Shanghai Jiao Tong University",
+    "moveOnName": "Shanghai Jiao Tong University",
+    "countryCode": "CN",
+    "city": "",
+    "lat": 31.0252,
+    "lng": 121.4338,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "tongji-cn",
+    "name": "Tongji University",
+    "moveOnName": "Tongji University",
+    "countryCode": "CN",
+    "city": "",
+    "lat": 31.262,
+    "lng": 121.459,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "doshisha-jp",
+    "name": "Doshisha University",
+    "moveOnName": "Doshisha University",
+    "countryCode": "JP",
+    "city": "",
+    "lat": 34.999624,
+    "lng": 135.753244,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "sciencetokyo-jp",
+    "name": "Institute of Science Tokyo",
+    "moveOnName": "Institute of Science Tokyo",
+    "countryCode": "JP",
+    "city": "",
+    "lat": 35.675949,
+    "lng": 139.769592,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "nagoya-jp",
+    "name": "Nagoya University",
+    "moveOnName": "Nagoya University",
+    "countryCode": "JP",
+    "city": "",
+    "lat": 35.155904,
+    "lng": 136.915863,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "tohoku-jp",
+    "name": "Tohoku University",
+    "moveOnName": "Tohoku University",
+    "countryCode": "JP",
+    "city": "",
+    "lat": 38.266572,
+    "lng": 140.883246,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "kaist-kr",
+    "name": "Korea Advanced Institute of Science and Technology",
+    "moveOnName": "Korea Advanced Institute of Science and Technology",
+    "countryCode": "KR",
+    "city": "",
+    "lat": 36.324299,
+    "lng": 127.434402,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "korea-kr",
+    "name": "Korea University- College of Engineering (KUCE)",
+    "moveOnName": "Korea University- College of Engineering (KUCE)",
+    "countryCode": "KR",
+    "city": "",
+    "lat": 37.532308,
+    "lng": 126.95744,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "postech-kr",
+    "name": "Pohang University of Science and Technology",
+    "moveOnName": "Pohang University of Science and Technology",
+    "countryCode": "KR",
+    "city": "",
+    "lat": 36.03653,
+    "lng": 129.376205,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "snu-kr",
+    "name": "Seoul National University",
+    "moveOnName": "Seoul National University",
+    "countryCode": "KR",
+    "city": "",
+    "lat": 37.45844,
+    "lng": 126.952257,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "ncku-tw",
+    "name": "National Cheng Kung University",
+    "moveOnName": "National Cheng Kung University",
+    "countryCode": "TW",
+    "city": "",
+    "lat": 23.001527,
+    "lng": 120.155986,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "ntu-tw",
+    "name": "National Taiwan University",
+    "moveOnName": "National Taiwan University",
+    "countryCode": "TW",
+    "city": "",
+    "lat": 25.091075,
+    "lng": 121.559834,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "ntust-tw",
+    "name": "National Taiwan University of Science and Technology (Taiwan Tech)",
+    "moveOnName": "National Taiwan University of Science and Technology (Taiwan Tech)",
+    "countryCode": "TW",
+    "city": "",
+    "lat": 25.091075,
+    "lng": 121.559834,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  },
+  {
+    "id": "nycu-tw",
+    "name": "National Yang Ming Chiao Tung University",
+    "moveOnName": "National Yang Ming Chiao Tung University",
+    "countryCode": "TW",
+    "city": "",
+    "lat": 0,
+    "lng": 0,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true
+  }
+]
