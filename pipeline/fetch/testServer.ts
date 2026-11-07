@@ -23,6 +23,13 @@ export async function startTestServer(): Promise<TestServer> {
     if (path === '/robots.txt') {
       res.setHeader('content-type', 'text/plain');
       res.end('User-agent: *\nDisallow: /prive\n');
+    } else if (route === '/echo') {
+      const chunks: Buffer[] = [];
+      req.on('data', (c: Buffer) => chunks.push(c));
+      req.on('end', () => {
+        res.setHeader('content-type', 'text/plain');
+        res.end(`${req.method} ${req.headers['content-type']} ${Buffer.concat(chunks).toString()}`);
+      });
     } else if (route === '/catalogue') {
       res.setHeader('content-type', 'text/html; charset=utf-8');
       res.end('<html><body>catalogue</body></html>');

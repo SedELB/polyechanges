@@ -111,3 +111,58 @@ describe('createPoliteFetcher : concurrence, délai dépassé et nouvelles tenta
     expect(server.hits.filter((h) => h === '/toujours503?k=a')).toHaveLength(3);
   });
 });
+
+describe('createPoliteFetcher : post', () => {
+  it('envoie le formulaire encodé et retourne la réponse', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0 });
+    const r = await fetcher.post(`${server.base}/echo`, { publisher_id: '10', keyword: 'a b&c' });
+    expect(r.body.toString()).toBe('POST application/x-www-form-urlencoded publisher_id=10&keyword=a+b%26c');
+    expect(r.contentType).toContain('text/plain');
+    expect(r.url).toBe(`${server.base}/echo`);
+  });
+
+  it('refuse une adresse interdite par robots.txt sans envoyer la requête', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0 });
+    server.hits.length = 0;
+    await expect(fetcher.post(`${server.base}/prive/x`, { a: '1' })).rejects.toBeInstanceOf(RobotsDisallowedError);
+    expect(server.hits).not.toContain('/prive/x');
+  });
+
+  it('envoie le User-Agent du projet et respecte le délai par hôte', async () => {
+    let t = 1_000_000;
+    const sleeps: number[] = [];
+    const fetcher = createPoliteFetcher({
+      now: () => t,
+      sleep: async (ms) => {
+        sleeps.push(ms);
+        t += ms;
+      },
+    });
+    server.userAgents.length = 0;
+    await fetcher.post(`${server.base}/echo`, { a: '1' });
+    await fetcher.post(`${server.base}/echo`, { a: '2' });
+    // robots.txt, post, post : 3 requêtes, donc 2 attentes
+    expect(sleeps).toEqual([3000, 3000]);
+    for (const ua of server.userAgents) {
+      expect(ua).toBe('polyechanges-collecteur/1.0 (projet etudiant non officiel)');
+    }
+  });
+
+  it('réessaie sur 5xx puis réussit, en renvoyant le même corps', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, retries: 2 });
+    const r = await fetcher.post(`${server.base}/panne?k=post`, { a: '1' });
+    expect(r.body.toString()).toBe('revenu');
+  });
+
+  it('ne réessaie pas sur 404 et échoue', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, retries: 2 });
+    server.hits.length = 0;
+    await expect(fetcher.post(`${server.base}/introuvable-post`, { a: '1' })).rejects.toThrow(/404/);
+    expect(server.hits.filter((h) => h === '/introuvable-post')).toHaveLength(1);
+  });
+
+  it("échoue quand l'hôte ne répond pas avant le délai", async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, timeoutMs: 50, retries: 0 });
+    await expect(fetcher.post(`${server.base}/suspendu`, { a: '1' })).rejects.toThrow();
+  });
+});

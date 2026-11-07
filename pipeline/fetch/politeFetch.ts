@@ -9,8 +9,16 @@ export class RobotsDisallowedError extends Error {
   }
 }
 
+export interface FetchResult {
+  body: Buffer;
+  contentType: string;
+  url: string;
+}
+
 export interface PoliteFetcher {
-  get(url: string): Promise<{ body: Buffer; contentType: string; url: string }>;
+  get(url: string): Promise<FetchResult>;
+  /** Envoie un formulaire (application/x-www-form-urlencoded) avec les mêmes règles que `get`. */
+  post(url: string, form: Record<string, string>): Promise<FetchResult>;
 }
 
 export interface PoliteFetcherOptions {
@@ -56,14 +64,18 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
   }
 
   /** Une requête vers l'hôte, lecture du corps comprise, avec délai et nouvelles tentatives (5xx, erreur réseau, délai dépassé). */
-  async function request(url: string): Promise<Fetched> {
+  async function request(url: string, form?: Record<string, string>): Promise<Fetched> {
     const origin = new URL(url).origin;
     let lastError: unknown;
     for (let attempt = 0; attempt <= retries; attempt++) {
       await waitTurn(origin);
       try {
         const res = await fetch(url, {
-          headers: { 'user-agent': USER_AGENT },
+          method: form ? 'POST' : 'GET',
+          headers: form
+            ? { 'user-agent': USER_AGENT, 'content-type': 'application/x-www-form-urlencoded' }
+            : { 'user-agent': USER_AGENT },
+          body: form ? new URLSearchParams(form).toString() : undefined,
           signal: AbortSignal.timeout(timeoutMs),
         });
         const body = Buffer.from(await res.arrayBuffer());
@@ -99,13 +111,16 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
     return cached;
   }
 
+  async function polite(url: string, form?: Record<string, string>): Promise<FetchResult> {
+    const robots = await getRobots(new URL(url).origin);
+    if (robots && robots.isAllowed(url, USER_AGENT) === false) throw new RobotsDisallowedError(url);
+    const res = await request(url, form);
+    if (!res.ok) throw new Error(`HTTP ${res.status} pour ${url}`);
+    return { body: res.body, contentType: res.contentType, url: res.url };
+  }
+
   return {
-    async get(url) {
-      const robots = await getRobots(new URL(url).origin);
-      if (robots && robots.isAllowed(url, USER_AGENT) === false) throw new RobotsDisallowedError(url);
-      const res = await request(url);
-      if (!res.ok) throw new Error(`HTTP ${res.status} pour ${url}`);
-      return { body: res.body, contentType: res.contentType, url: res.url };
-    },
+    get: (url) => polite(url),
+    post: (url, form) => polite(url, form),
   };
 }
