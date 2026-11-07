@@ -28,8 +28,6 @@ interface Robots {
 // Les types du paquet (CommonJS) ne décrivent pas l'import par défaut sous NodeNext.
 const robotsParser = robotsModule as unknown as (url: string, robotsTxt: string) => Robots;
 
-class RetryableError extends Error {}
-
 export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetcher {
   const minDelayMs = opts.minDelayMs ?? 3000;
   const timeoutMs = opts.timeoutMs ?? 30000;
@@ -41,16 +39,24 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
   const robotsByOrigin = new Map<string, Promise<Robots | null>>();
 
   async function waitTurn(origin: string): Promise<void> {
+    // Le créneau est réservé de façon synchrone : deux appels concurrents ne partagent jamais le même.
     const last = lastRequestAt.get(origin);
-    if (last !== undefined) {
-      const wait = last + minDelayMs - now();
-      if (wait > 0) await sleep(wait);
-    }
-    lastRequestAt.set(origin, now());
+    const t = now();
+    const slot = last === undefined ? t : Math.max(t, last + minDelayMs);
+    lastRequestAt.set(origin, slot);
+    if (slot > t) await sleep(slot - t);
   }
 
-  /** Une requête vers l'hôte, avec délai et nouvelles tentatives (5xx et erreur réseau seulement). */
-  async function request(url: string): Promise<Response> {
+  interface Fetched {
+    status: number;
+    ok: boolean;
+    contentType: string;
+    url: string;
+    body: Buffer;
+  }
+
+  /** Une requête vers l'hôte, lecture du corps comprise, avec délai et nouvelles tentatives (5xx, erreur réseau, délai dépassé). */
+  async function request(url: string): Promise<Fetched> {
     const origin = new URL(url).origin;
     let lastError: unknown;
     for (let attempt = 0; attempt <= retries; attempt++) {
@@ -60,11 +66,15 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
           headers: { 'user-agent': USER_AGENT },
           signal: AbortSignal.timeout(timeoutMs),
         });
-        if (res.status >= 500) {
-          await res.arrayBuffer();
-          throw new RetryableError(`HTTP ${res.status} pour ${url}`);
-        }
-        return res;
+        const body = Buffer.from(await res.arrayBuffer());
+        if (res.status >= 500) throw new Error(`HTTP ${res.status} pour ${url}`);
+        return {
+          status: res.status,
+          ok: res.ok,
+          contentType: res.headers.get('content-type') ?? '',
+          url: res.url || url,
+          body,
+        };
       } catch (err) {
         lastError = err;
       }
@@ -75,11 +85,8 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
   async function loadRobots(origin: string): Promise<Robots | null> {
     const robotsUrl = `${origin}/robots.txt`;
     const res = await request(robotsUrl);
-    if (!res.ok) {
-      await res.arrayBuffer();
-      return null; // pas de robots.txt (404 et autres 4xx) : tout est permis
-    }
-    return robotsParser(robotsUrl, await res.text());
+    if (!res.ok) return null; // pas de robots.txt (404 et autres 4xx) : tout est permis
+    return robotsParser(robotsUrl, res.body.toString('utf8'));
   }
 
   function getRobots(origin: string): Promise<Robots | null> {
@@ -97,15 +104,8 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
       const robots = await getRobots(new URL(url).origin);
       if (robots && robots.isAllowed(url, USER_AGENT) === false) throw new RobotsDisallowedError(url);
       const res = await request(url);
-      if (!res.ok) {
-        await res.arrayBuffer();
-        throw new Error(`HTTP ${res.status} pour ${url}`);
-      }
-      return {
-        body: Buffer.from(await res.arrayBuffer()),
-        contentType: res.headers.get('content-type') ?? '',
-        url: res.url || url,
-      };
+      if (!res.ok) throw new Error(`HTTP ${res.status} pour ${url}`);
+      return { body: res.body, contentType: res.contentType, url: res.url };
     },
   };
 }

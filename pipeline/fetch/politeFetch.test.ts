@@ -53,7 +53,7 @@ describe('createPoliteFetcher', () => {
 
   it('réessaie sur 5xx puis réussit', async () => {
     const fetcher = createPoliteFetcher({ minDelayMs: 0, retries: 2 });
-    const r = await fetcher.get(`${server.base}/panne`);
+    const r = await fetcher.get(`${server.base}/panne?k=a`);
     expect(r.body.toString()).toBe('revenu');
   });
 
@@ -62,5 +62,52 @@ describe('createPoliteFetcher', () => {
     server.hits.length = 0;
     await expect(fetcher.get(`${server.base}/introuvable`)).rejects.toThrow(/404/);
     expect(server.hits.filter((h) => h === '/introuvable')).toHaveLength(1);
+  });
+});
+
+describe('createPoliteFetcher : concurrence, délai dépassé et nouvelles tentatives', () => {
+  it('espace de 3000 ms au moins des appels concurrents vers le même hôte', async () => {
+    const t = 1_000_000;
+    const sleeps: number[] = [];
+    const fetcher = createPoliteFetcher({
+      now: () => t,
+      sleep: async (ms) => {
+        sleeps.push(ms);
+      },
+    });
+    await Promise.all([
+      fetcher.get(`${server.base}/catalogue?c=1`),
+      fetcher.get(`${server.base}/catalogue?c=2`),
+      fetcher.get(`${server.base}/catalogue?c=3`),
+    ]);
+    // robots.txt à t, puis les trois pages aux créneaux t+3000, t+6000, t+9000
+    expect([...sleeps].sort((a, b) => a - b)).toEqual([3000, 6000, 9000]);
+  });
+
+  it("échoue quand l'hôte ne répond pas avant le délai", async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, timeoutMs: 50, retries: 0 });
+    await expect(fetcher.get(`${server.base}/suspendu`)).rejects.toThrow();
+  });
+
+  it('échoue aussi quand le corps reste en suspens, et réessaie', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, timeoutMs: 50, retries: 1 });
+    server.hits.length = 0;
+    await expect(fetcher.get(`${server.base}/corps-suspendu`)).rejects.toThrow();
+    expect(server.hits.filter((h) => h === '/corps-suspendu')).toHaveLength(2);
+  });
+
+  it('réessaie après une erreur réseau puis réussit', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, retries: 2 });
+    server.hits.length = 0;
+    const r = await fetcher.get(`${server.base}/reseau?k=a`);
+    expect(r.body.toString()).toBe('rétabli');
+    expect(server.hits.filter((h) => h === '/reseau?k=a')).toHaveLength(2);
+  });
+
+  it('abandonne après 3 essais quand chaque réponse est un 5xx', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, retries: 2 });
+    server.hits.length = 0;
+    await expect(fetcher.get(`${server.base}/toujours503?k=a`)).rejects.toThrow(/503/);
+    expect(server.hits.filter((h) => h === '/toujours503?k=a')).toHaveLength(3);
   });
 });
