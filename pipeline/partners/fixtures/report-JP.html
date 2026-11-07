@@ -1,0 +1,2257 @@
+<script type="text/javascript">
+    var onscrollloadmoreoff = false;
+
+    function gotourldiv(getidname) {
+        if (jQuery("#" + getidname).length == 0) {
+            jQuery('html, body').animate({
+                scrollTop: jQuery("." + getidname + ":visible").offset().top
+            }, 1000);
+        } else {
+            jQuery('html, body').animate({
+                scrollTop: jQuery("#" + getidname).offset().top
+            }, 1000);
+        }
+    }
+
+    function showmaphidemapjs(dis) {
+        setTimeout(function() {
+            if (document.getElementById('showmaphidemap').checked) {
+                jQuery('._map_position_js').show('slow');
+                jQuery('._maptextshowhide_js').text('Afficher la carte');
+                return false;
+            } else {
+                jQuery('._map_position_js').hide('slow');
+                jQuery('._maptextshowhide_js').text('cacher la carte');
+                return false;
+            }
+        }, 100);
+    }
+
+    function openfiltersinmodal() {
+        jQuery('#myModal_irm_report_filter').modal();
+    }
+
+
+    jQuery(document).ready(function() {
+        jQuery('#remvoeclassmake100').addClass('_paddingbottom_200');
+
+        map.scrollWheelZoom.disable();
+        map.on('focus', function() {
+            map.scrollWheelZoom.enable();
+        });
+        map.on('mouseout', function() {
+            map.scrollWheelZoom.disable();
+        });
+
+        jQuery('#relation_external_institution_ids').on("change", function() {
+            var $self = jQuery(this);
+            window.external_inst_val = $self.val();
+        });
+    });
+
+
+
+    // document.getElementsByTagName("body")[0].setAttribute('data-spy', 'scroll');
+    // document.getElementsByTagName("body")[0].setAttribute('data-target', '#side');
+
+    var groupBy_irme_reportCountry_irm_report = '';
+    var countryarray_irm_report = [];
+    var countrylistGlobal = [];
+    var porgramlistGlobal = [];
+    var instilistGlobal = [];
+    var country_id_name_mappings = [];
+    var show_more_details_link_for = [];
+
+
+
+    if (jQuery("._applied_filters_js").html() == "") {
+        jQuery('.irm_filter_btn').html('<span class="lnr lnr-magnifier"></span> <span class="hideinmobilediv">Recherche</span>');
+    } else {
+        jQuery('.irm_filter_btn').html('<span class="lnr lnr-magnifier"></span> <span class="hideinmobilediv">Modifier la recherche</span>');
+    }
+
+    // Hide or show map by toggle button
+    var hide_map = document.getElementById("map_hide").value;
+    if (hide_map == 1) {
+        // jQuery('._map_position_js').hide('slow');
+        jQuery("._map_position_js").css("display", "none");
+        jQuery('._maptextshowhide_js').text('Hide Map');
+    }
+
+    
+
+    function showresults(dis, ajaxload) {
+
+        var currentSlug = window.location.pathname.split('/').filter(Boolean).pop();
+
+        jQuery.post(ajaxurl, {
+            action: 'check_old_ap_url',
+            slug: currentSlug
+        }, function(res) {
+
+            if (res.redirect) {
+
+                var currentUrl = window.location.origin + window.location.pathname.replace(/\/+$/, '');
+                var redirectUrl = res.redirect.replace(/\/+$/, '');
+
+                if (currentUrl !== redirectUrl) {
+
+                    var form = jQuery('<form>', {
+                        method: 'POST',
+                        action: res.redirect
+                    });
+
+                    jQuery("#myModal_irm_report_filter :input")
+                        .not(":button,:submit,:reset")
+                        .each(function() {
+
+                            if (jQuery(this).val() !== "") {
+                                form.append(
+                                    jQuery('<input>', {
+                                        type: 'hidden',
+                                        name: jQuery(this).attr('name'),
+                                        value: jQuery(this).val()
+                                    })
+                                );
+                            }
+
+                        });
+
+                    jQuery('body').append(form);
+                    form.submit();
+
+                    return;
+                }
+            }
+
+            runSearchLogic(dis, ajaxload);
+
+        });
+
+    }
+
+
+    // Filter function to get the search results
+    // By: Sanat Kumar Panda <sanat.panda@nettantra.net>
+    function runSearchLogic(dis, ajaxload) {
+        jQuery('._hidewhen_loaded_data').removeClass('d-none');
+        //Ajax Before load START
+        var jsonData = {"counters":{"countries":1,"institutions":4,"programs":1},"country_instn_counter":{"JP":4},"labelvalue":[{"latitude":"34.999624","longitude":"135.753244","flagname":"Japon - Doshisha University"},{"latitude":"35.675949","longitude":"139.769592","flagname":"Japon - Institute of Science Tokyo"},{"latitude":"35.155904","longitude":"136.915863","flagname":"Japon - Nagoya University"},{"latitude":"38.266572","longitude":"140.883246","flagname":"Japon - Tohoku University"}],"country_reltn_counter":{"JP":4},"country_id_name_mappings":{"JP":"Japon"}};
+        //console.log(jsonData);
+        //For MAP section START
+        if (!jQuery.isEmptyObject(jsonData)) {
+            var moreinformatics = jsonData.labelvalue;
+            getAllmarkersOnMapCustom(moreinformatics);
+            var countryCount = jsonData.counters.countries;
+            var institutionCount = jsonData.counters.institutions;
+            var programCount = jsonData.counters.programs;
+            if (countryCount != '' && countryCount != null) {
+                jQuery('._country_length_js').text(countryCount);
+            } else {
+                jQuery('._country_length_js').text('-');
+            }
+            if (institutionCount != '' && institutionCount != null) {
+                jQuery('._instn_counter_js').text(institutionCount);
+            } else {
+                jQuery('._instn_counter_js').text('-');
+            }
+            if (programCount != '' && programCount != null) {
+                jQuery('._progr_counter_js').text(programCount);
+            } else {
+                jQuery('._progr_counter_js').text('-');
+            }
+            //For MAP section END
+            //For Sidebar Section START
+            country_id_name_mappings = jsonData['country_id_name_mappings'];
+            groupBy_irme_reportCountry_irm_report = jsonData['country_instn_counter'];
+            countrylistGlobal = jsonData['country_instn_counter'];
+            //porgramlistGlobal = jsonData['country_program_counter'];
+            jQuery.each(groupBy_irme_reportCountry_irm_report, function(index, value) {
+                countryarray_irm_report.push(index);
+            });
+            loaduniversitySidebar_irm_report();
+            //For Sidebar Section END
+            //Ajax Before load END
+        }
+        onscrollloadmoreoff = false;
+        groupBy_irme_reportCountry_irm_report = '';
+        countryarray_irm_report = [];
+        allpostionsmarkers = [];
+        instn_counter = 0;
+        moreinformatics = '';
+        countryLoadedCount = 0;
+        countryToLoad = 7;
+        universitytoload = 7;
+        jQuery('#myModal_irm_report_filter').modal('hide');
+        //jQuery('#sidenav').empty();
+
+        var $form = jQuery("#irm_fiter_form");
+        var indexed_search_data = getIndexedFormData($form);
+        var countKey = Object.keys(indexed_search_data).length;
+        if (countKey > 1) {
+            var search_criteria = 1;
+        } else {
+            var search_criteria = 0;
+        }
+        // Check if form data is an object
+        if (typeof(indexed_search_data) == "object") {
+            jQuery.ajax({
+                url: ajaxurl,
+                type: 'POST',
+                data: {
+                    'action': 'load_report_data_on_ajax_load',
+                    'searched_data': indexed_search_data,
+                    'ajaxload': 0,
+                    // 1 or 2
+                    
+                },
+                success: function(data) {
+
+                    data = JSON.parse(data);
+                    // Carousal js for horizontal scroll
+                    var show_horizontal_scroll = document.getElementById("show_horizontal_scroll").value;
+                    if (show_horizontal_scroll == 1) {
+                        country_id_name_mappings = data['country_id_name_mappings'];
+                        groupByCountry = data['country_instn_counter'];
+                        groupByCountryProram = data['country_program_counter'];
+
+                        countryarray = [];
+                        countryarrayCounter = [];
+
+                        jQuery.each(groupByCountry, function(index, value) {
+                            countryarray.push(index);
+                        });
+
+                        jQuery.each(groupByCountry, function(index, value) {
+                            countryarrayCounter.push(value);
+                        });
+
+                        loadUniversitylist_relations();
+                        jQuery('._rightarrow_position_js').removeClass('d-none');
+
+                        var hidingarrowslength = 0;
+                        if (jQuery('.totalslides_js:last').length) {
+                            hidingarrowslength = jQuery('.totalslides_js:last').offset().left - jQuery('.totalslides_js:first').offset().left;
+                        }
+                        if (hidingarrowslength == 0) {
+                            jQuery('._rightarrow_position_js').addClass('d-none');
+                        }
+                    }
+
+                    // Hide or show map by toggle button
+                    // var hide_map = document.getElementById("map_hide").value;
+                    // if(hide_map == 1){
+                    //       jQuery('._map_position_js').hide('slow');
+                    //       jQuery('._maptextshowhide_js').text('Hide Map');
+                    // }
+                    if (data['labelvalue'].length == 0) {
+                        PopulateZeroResultHtml();
+                    } else {
+                        //alert("hello1");
+                        Populatedata(data, search_criteria, ajaxload);
+                    }
+                    if (jQuery("._applied_filters_js").html() == "") {
+                        jQuery('.irm_filter_btn').html('<span class="lnr lnr-magnifier"></span> <span>Recherche</span>');
+                    } else {
+                        jQuery('.irm_filter_btn').html('<span class="lnr lnr-magnifier"></span> <span>Modifier la recherche</span>');
+                    }
+                    //gotourldiv('forresults');
+                }
+            });
+        } //alert(jQuery("._applied_filters_js").html());
+        if (jQuery("._applied_filters_js").html() == "") {
+            jQuery('.irm_filter_btn').html('<span class="lnr lnr-magnifier"></span> <span>Recherche</span>');
+        } else {
+            jQuery('.irm_filter_btn').html('<span class="lnr lnr-magnifier"></span> <span>Modifier la recherche</span>');
+        }
+
+    }
+
+    // Function to get all the submitted form data
+    // By: Sanat Kumar Panda <sanat.panda@nettantra.net>
+    function getIndexedFormData($form) {
+        var unindexed_array = $form.serializeArray();
+        var indexed_array = {};
+        jQuery.map(unindexed_array, function(n, i) {
+            // Check if the values are not empty/blank and form the structured object
+            if (n['value'] != "")
+                indexed_array[n['name']] = n['value'];
+        });
+
+        if (jQuery('#relation_external_institution_ids').val() != null) {
+            window.external_inst_val = jQuery('#relation_external_institution_ids').val();
+        }
+        if (jQuery("#country_id").val() == "") {
+            window.external_inst_val = "";
+        }
+
+        if (typeof window.external_inst_val != "undefined" && window.external_inst_val != "") {
+            indexed_array['relation_external_institution_ids'] = window.external_inst_val;
+        }
+
+        return indexed_array;
+    }
+
+
+
+    // markers positions
+    var allpostionsmarkers = [];
+    var instn_counter = 0;
+
+    var moreinformatics = '';
+    jQuery(document).ready(function() {
+        // When "Open More Details in new tab" is used, skip showresults() to avoid resetting the session's
+        // allowed document file IDs — window.onload will load the specific relation data instead.
+        var urlParams = new URLSearchParams(window.location.search);
+        if (!urlParams.get('core_id') || !urlParams.get('relation_id')) {
+            setTimeout(function() {
+                showresults();
+            }, 100);
+        }
+    });
+    // To reset form fields
+    function clear_form() {
+        jQuery('._select_filterstyle').val('');
+        jQuery('._select_filterstyle').fSelect("reload");
+        jQuery('.md-form-control').val('');
+    }
+
+    // remove value from form and submit it
+    function removefilter(dis, inputname, ajaxload) {
+        //console.log(ajaxload);
+        jQuery('._hidewhen_loaded_data').removeClass('d-none');
+
+        jQuery('._applied_filters_js').empty();
+        jQuery('#irm_fiter_form input[name="' + inputname + '"]').val('');
+        jQuery('#irm_fiter_form select[name="' + inputname + '"]').val('');
+
+        jQuery('#irm_fiter_form select[name="' + inputname + '"]').fSelect("reload");
+
+        jQuery(dis).parent('._applied_text').remove();
+
+        getSelecteValues();
+        SelectedAppend_input();
+        SelectedAppend_select();
+        _setappliedfilters();
+        showresults(dis, ajaxload);
+    }
+
+    // Result page school / program card slide functionality
+    function carouselnavigate(direction, id, scrollamount) {
+        if (direction == 'left') {
+            jQuery('._irm_load_relations_countries_js_' + id).animate({
+                scrollLeft: '-=' + scrollamount
+            }, 500);
+        }
+        if (direction == 'right') {
+            jQuery('._irm_load_relations_countries_js_' + id).animate({
+                scrollLeft: '+=' + scrollamount
+            }, 500);
+        }
+    }
+
+
+    // Function for loading university with relation in carousal.
+    function loadUniversitylist_relations() {
+        jQuery('._irm_load_relations_countries_js').empty();
+        var country_full_name_arr = Object.entries(country_id_name_mappings || {}); // Making sure object is not empty or null
+        var specialarr = country_full_name_arr;
+        for (i = 0; i < specialarr.length; i++) {
+            [specialarr[i][0], specialarr[i][1]] = [specialarr[i][1], specialarr[i][0]];
+        }
+        var sortedspecialarr = specialarr.sort(Intl.Collator().compare);
+        for (var nn = 0; nn < countryarray.length; nn++) {
+            var maindata = countryarray[nn];
+
+            //  <!-- TO DO: To get full country name -->
+            if (nn == 0) {
+                var topscrollcountry = '<div class="trusted-top-univ-icons margintop15 xcnew-container totalslides_js totalslides_js_' + sortedspecialarr[nn][1] + ' active" tabindex="0" onclick=setcountrywise(\"' + sortedspecialarr[nn][1] + '\")><div class="flag-insti"><span class="phoca-box"><span class="phoca-flagbox"><span class="flag flag-' + sortedspecialarr[nn][1].toLowerCase() + '"></span></span></span></div><div class="_institutes_relations"><h3>' + sortedspecialarr[nn][0] + '</h3><p>' + groupByCountry[sortedspecialarr[nn][1]] + ' ' + ("Etablissement") + '</p></div></div>';
+            } else {
+                var topscrollcountry = '<div class="trusted-top-univ-icons margintop15 xcnew-container totalslides_js totalslides_js_' + sortedspecialarr[nn][1] + '" tabindex="0" onclick=setcountrywise(\"' + sortedspecialarr[nn][1] + '\")><div class="flag-insti"><span class="phoca-box"><span class="phoca-flagbox"><span class="flag flag-' + sortedspecialarr[nn][1].toLowerCase() + '"></span></span></span></div><div class="_institutes_relations"><h3>' + sortedspecialarr[nn][0] + '</h3><p>' + groupByCountry[sortedspecialarr[nn][1]] + ' ' + ("Etablissement") + '</p></div></div>';
+            }
+            jQuery('._irm_load_relations_countries_js').append(topscrollcountry);
+        }
+    }
+
+    // Function for showing left arrow icon in carousal.
+    jQuery('._irm_load_relations_countries_js').on('scroll', function() {
+        var distancefromleft = jQuery('._show_more_inDetails_js').offset().left;
+        var distancefromleft_scrolled = jQuery('.totalslides_js:first').offset().left;
+
+
+
+        var distancefromright_scrolled = jQuery('.totalslides_js:last').offset().left;
+
+        var rightcheck = distancefromleft - distancefromright_scrolled + jQuery('._show_more_inDetails_js').width() - 285;
+
+
+
+        if (distancefromleft - distancefromleft_scrolled > -15) {
+            jQuery('._leftarrow_position_js').removeClass('d-none');
+        } else {
+            jQuery('._leftarrow_position_js').addClass('d-none');
+        }
+
+
+        if (rightcheck > -15) {
+            jQuery('._rightarrow_position_js').addClass('d-none');
+        } else {
+            jQuery('._rightarrow_position_js').removeClass('d-none');
+        }
+
+    });
+
+
+    function PopulateZeroResultHtml() {
+        jQuery('._hidewhen_loaded_data').addClass('d-none');
+        jQuery('._showwhen_loaded_data').addClass('d-none');
+        jQuery('._showwhenempty_loaded_data').removeClass('d-none');
+
+        jQuery('._country_length_js').text('-');
+        jQuery('._instn_counter_js').text('-');
+        jQuery('._progr_counter_js').text('-');
+
+        getSelecteValues();
+        SelectedAppend_input();
+        SelectedAppend_select();
+        _setappliedfilters();
+        map.removeLayer(markers);
+
+    }
+
+    // populate data in html
+    function Populatedata(data, search_criteria, ajaxload) {
+        jQuery('._hidewhen_loaded_data').removeClass('d-none');
+        //jQuery('._showwhen_loaded_data').addClass('d-none');
+        jQuery('._showwhenempty_loaded_data').addClass('d-none');
+        jQuery('#sidenav').empty();
+        jQuery('#university_content').empty();
+        groupBy_irme_reportCountry_irm_report = data['country_instn_counter'];
+        country_id_name_mappings = data['country_id_name_mappings'];
+
+        moreinformatics = data['labelvalue'];
+        show_more_details_link_for = data['show_more_details_link_for'];
+
+        // institutions counter
+        var country_counter = data['counters'];
+        country_counter = country_counter['countries'];
+
+        var insti_counter = data['counters'];
+        insti_counter = insti_counter['institutions'];
+
+        var prog_counter = data['counters'];
+        prog_counter = prog_counter['programs'];
+
+        countrylistGlobal = data['country_instn_counter'];
+        porgramlistGlobal = data['country_program_counter'];
+        if (1 == 1) {
+            instilistGlobal = data['country_reltn_counter'];
+        } else {
+            instilistGlobal = data['country_instn_counter'];
+        }
+
+        jQuery.each(groupBy_irme_reportCountry_irm_report, function(index, value) {
+            countryarray_irm_report.push(index);
+        });
+
+        setTimeout(function() {
+            loaduniversitySidebar_irm_report();
+            loadUniversitylist_irm_report(search_criteria, ajaxload);
+        }, 100);
+
+        setTimeout(function() {
+            //getAllmarkersOnMap();
+            jQuery('._hidewhen_loaded_data').addClass('d-none');
+            jQuery('._showwhen_loaded_data').removeClass('d-none');
+            jQuery('._showwhenempty_loaded_data').addClass('d-none');
+            if (insti_counter != '' && insti_counter != null) {
+                if (1 == ajaxload) {
+                    jQuery('._country_length_js').text(country_counter);
+                }
+            } else {
+                jQuery('._country_length_js').text('-');
+            }
+
+            if (insti_counter != '' && insti_counter != null) {
+                if (1 == ajaxload) {
+                    jQuery('._instn_counter_js').text(insti_counter);
+                }
+            } else {
+                jQuery('._instn_counter_js').text('-');
+            }
+
+            if (prog_counter != '' && prog_counter != null) {
+                if (1 == ajaxload) {
+                    jQuery('._progr_counter_js').text(prog_counter);
+                }
+            } else {
+                jQuery('._progr_counter_js').text('-');
+            }
+        }, 100);
+
+        getSelecteValues();
+        SelectedAppend_input();
+        SelectedAppend_select();
+
+    }
+
+
+    var use_stadiamap = "1"; // To check if the map is to be used is Stadia maps or not
+    var map_language = "en"; // Get the set language for the Map in the instance
+
+    const stadia_key = ""; // Get the map key for Stadia Maps
+
+    const MAP_CONFIG = {
+        defaultZoom: 5,
+        maxZoom: 18,
+        defaultLat: -37.82,
+        defaultLong: 175.24
+    };
+
+    const LOCALE_TO_MAP_LANG = {
+        'de_DE': 'de',
+        'es_ES': 'es',
+        'en_US': 'en',
+        'fr_FR': 'fr'
+    };
+
+    //Get the instance language
+    var map_local = "";
+    // Get the local language of map according to instance language
+    mapLang = LOCALE_TO_MAP_LANG[map_local] || 'en';
+
+    // override the above language with the map language - The case where map language is set different from the locale language
+    if (map_language && map_language !== '') {
+        mapLang = map_language;
+    }
+
+    var stadia_map_url = 'https://tiles-eu.stadiamaps.com/styles/osm_bright.json';
+    if (stadia_key && stadia_key !== '') {
+        stadia_map_url = 'https://tiles-eu.stadiamaps.com/styles/osm_bright.json?api_key=' + stadia_key;
+    }
+
+    if (use_stadiamap && use_stadiamap == '1') {
+        // Use Vector tiles, as JSON, from Stadia Maps
+        var map = L.map('map', {
+            center: [MAP_CONFIG.defaultLat, MAP_CONFIG.defaultLong],
+            zoom: MAP_CONFIG.defaultZoom,
+            maxZoom: MAP_CONFIG.maxZoom
+        });
+        maplibregl.setRTLTextPlugin('https://unpkg.com/@mapbox/mapbox-gl-rtl-text@0.2.3/mapbox-gl-rtl-text.min.js');
+
+        var mapLibre = L.maplibreGL({
+            style: stadia_map_url,
+            attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank" aria-label="Stadia Maps (opens in a new tab)">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/" target="_blank" aria-label="OpenMapTiles (opens in a new tab)">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" aria-label="OpenStreetMap (opens in a new tab)">OpenStreetMap</a>',
+        }).addTo(map);
+
+        // Access the underlying MapLibre GL map instance
+        var maplibreMap = mapLibre.getMaplibreMap();
+        maplibreMap.on('load', function() {
+            // Modify the layers directly
+            maplibreMap.getStyle().layers.forEach(function(layer) {
+                if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
+                    maplibreMap.setLayoutProperty(layer.id, 'text-field', [
+                        'coalesce',
+                        ['get', 'name:' + mapLang], // Set Language first
+                        ['get', 'name:en'], // Fallback to English
+                        ['get', 'name:latin'], // Then try Latin script
+                        ['get', 'name'], // Finally fall back to default name
+                        '' // Empty string as final fallback if nothing exists
+                    ]);
+                    maplibreMap.setLayoutProperty(layer.id, 'text-size', 10);
+                }
+            });
+
+            var canvas = maplibreMap.getCanvas();
+            if (canvas) {
+                canvas.setAttribute('aria-hidden', 'true');
+            }
+
+            var canvasContainer = maplibreMap.getCanvasContainer();
+            if (canvasContainer) {
+                canvasContainer.setAttribute('aria-hidden', 'true');
+            }
+        });
+    } else {
+        // Use default map with Rastertiles from Basemaps
+        var tile_url = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png';
+
+        var tiles = L.tileLayer(tile_url, {
+                maxZoom: MAP_CONFIG.maxZoom,
+                attribution: '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+            }),
+            latlng = L.latLng(MAP_CONFIG.defaultLat, MAP_CONFIG.defaultLong);
+
+        var map = L.map('map', {
+            center: latlng,
+            zoom: MAP_CONFIG.defaultZoom,
+            layers: [tiles]
+        });
+    }
+
+    var newaddressPoints = [];
+    var mapbounds = [];
+    var markers = L.markerClusterGroup();
+    // retrieving all data points markers on map
+    function getAllmarkersOnMap() {
+        map.removeLayer(markers);
+        markers = L.markerClusterGroup();
+        newaddressPoints = [];
+        mapbounds = [];
+        //format of lat and lang [-37.8210922667, 175.2209316333, "2"]
+        jQuery.each(moreinformatics, function(index, value) {
+            var tempArray = [];
+            if (value['longitude'] != '' && value['latitude'] != '' && value['longitude'] != null && value['latitude'] != '' && value['flagname'] != '' && value['latitude'] != 0.0 && value['longitude'] != 0.0 && Math.abs(parseFloat(value['latitude'])) <= 90 && Math.abs(parseFloat(value['longitude'])) <= 180) {
+
+                tempArray.push(parseFloat(value['latitude']));
+                tempArray.push(parseFloat(value['longitude']));
+                tempArray.push(value['flagname']);
+                newaddressPoints.push(tempArray);
+
+            }
+        });
+
+        jQuery.each(moreinformatics, function(index, value) {
+            var tempArray = [];
+            if (value['longitude'] != '' && value['latitude'] != '' && value['longitude'] != null && value['latitude'] != '' && value['flagname'] != '' && value['latitude'] != 0.0 && value['longitude'] != 0.0 && Math.abs(parseFloat(value['latitude'])) <= 90 && Math.abs(parseFloat(value['longitude'])) <= 180) {
+
+                tempArray.push(parseFloat(value['latitude']));
+                tempArray.push(parseFloat(value['longitude']));
+
+                if (value['latitude'] < 180) {
+                    mapbounds.push(tempArray);
+                }
+            }
+        });
+
+
+        for (var i = 0; i < newaddressPoints.length; i++) {
+            var a = newaddressPoints[i];
+            var title = a[2];
+            var marker = L.marker(new L.LatLng(a[0], a[1]), {
+                title: title
+            });
+            marker.bindPopup(title);
+            markers.addLayer(marker);
+        }
+
+        map.addLayer(markers);
+        if (mapbounds.length > 0) {
+            map.fitBounds(mapbounds);
+        }
+    }
+    /// maps positions markers ends here
+
+    function getAllmarkersOnMapCustom(moreinformaticsnew) {
+        map.removeLayer(markers);
+        markers = L.markerClusterGroup();
+        newaddressPoints = [];
+        mapbounds = [];
+        //format of lat and lang [-37.8210922667, 175.2209316333, "2"]
+        jQuery.each(moreinformaticsnew, function(index, value) {
+            var tempArray = [];
+            if (value['longitude'] != '' && value['latitude'] != '' && value['longitude'] != null && value['latitude'] != '' && value['flagname'] != '' && value['latitude'] != 0.0 && value['longitude'] != 0.0 && Math.abs(parseFloat(value['latitude'])) <= 90 && Math.abs(parseFloat(value['longitude'])) <= 180) {
+
+                tempArray.push(parseFloat(value['latitude']));
+                tempArray.push(parseFloat(value['longitude']));
+                tempArray.push(value['flagname']);
+
+                newaddressPoints.push(tempArray);
+            }
+        });
+
+
+        jQuery.each(moreinformaticsnew, function(index, value) {
+            var tempArray = [];
+            if (value['longitude'] != '' && value['latitude'] != '' && value['longitude'] != null && value['latitude'] != '' && value['flagname'] != '' && value['latitude'] != 0.0 && value['longitude'] != 0.0 && Math.abs(parseFloat(value['latitude'])) <= 90 && Math.abs(parseFloat(value['longitude'])) <= 180) {
+
+                tempArray.push(parseFloat(value['latitude']));
+                tempArray.push(parseFloat(value['longitude']));
+
+                mapbounds.push(tempArray);
+            }
+        });
+
+        for (var i = 0; i < newaddressPoints.length; i++) {
+            var a = newaddressPoints[i];
+            var title = a[2];
+            var marker = L.marker(new L.LatLng(a[0], a[1]), {
+                title: title
+            });
+            marker.bindPopup(title);
+            markers.addLayer(marker);
+        }
+
+
+        map.addLayer(markers);
+        if (mapbounds.length > 0) {
+            map.fitBounds(mapbounds);
+        }
+
+    }
+
+    /*function setsoomForMap(latitude, longitude){
+      var map = window.WPLeafletMapPlugin.getCurrentMap();
+      map.setView([latitude, longitude], 15);
+    }*/
+
+    function setsoomForMap(latitude, longitude) {
+        var map = window.WPLeafletMapPlugin.getCurrentMap();
+        map.setView([latitude, longitude], 15);
+    }
+
+    function Moreinformations_irm_report(core_id, relation_id, whichtab) {
+        let publisher_id = 10;
+        //Save the value in localize javascript file START
+        let reportMoreDetails = {
+            r_core_id: core_id,
+            r_relation_id: relation_id,
+            r_publisher_id: publisher_id,
+            r_whichtab: whichtab,
+            r_sessionid: "jkvstnjqn77bjrhqmkc5qqhbl6"
+        };
+        // Saving data to localstorage
+        localStorage.setItem('reportMoreDetails', JSON.stringify(reportMoreDetails));
+        //Save the value in localize javascript file END
+
+        var appendto = '';
+        var counter = 0;
+        jQuery('._university_informatics_modal_js').empty();
+        jQuery('._moreinfo_link_js_irm_report').empty();
+        jQuery('._generate_tabscontent_js_irm_report').empty();
+
+
+        jQuery.ajax({
+            url: ajaxurl,
+            type: 'POST',
+            data: {
+                'action': 'load_report_data_on_ajax_load',
+                'searched_data': {
+                    core_id: core_id,
+                    relation_id: relation_id,
+                    publisher_id: 10                }
+            },
+            success: function(response) {
+
+                response = JSON.parse(response);
+                //console.log(response);
+                var moreinformaticsnewone = response['labelvalue'];
+
+                jQuery.each(moreinformaticsnewone, function(index, value) {
+
+                    if (core_id == value['core_id']) {
+                        jQuery('._irmuniversity_name_js_irm_report').html('' + value["universityname"] + ', <span class="_irmuniversityCountry">' + value["country_fullname"] + '</span>');
+                        jQuery.each(value['informatics'][0], function(index2, value2) {
+                            counter++;
+                            appendto = index2;
+                            var perfectname = 'Tab Name';
+                            if (index2 == 'contacts') {
+                                perfectname = "Contact";
+                            }
+
+                            if (index2 == 'institutions') {
+                                perfectname = "Etablissement";
+                            }
+
+                            if (index2 == 'relations') {
+                                perfectname = "Relations";
+                            }
+
+                            if (index2 == 'travelreports') {
+                                perfectname = "Rapports de séjour";
+                            }
+
+
+                            //Add disable tab class if show results by institution is enabled
+                            let customNavClass = '';
+                                                            if (whichtab !== 'institutions' && index2 == 'institutions') {
+                                    customNavClass = 'disable_tab';
+                                }
+                                if (whichtab == 'institutions' && index2 !== 'institutions') {
+                                    customNavClass = 'disable_tab';
+                                }
+                            
+
+                            var linknav_active = '<li class="nav-item ' + customNavClass + ' "><a class="nav-link ellipsis active" id="whichtab' + index2 + '" title="' + perfectname + '" data-toggle="tab" href="#moreinfo' + counter + '">' + perfectname + '</a></li>';
+                            var linknav = '<li class="nav-item ' + customNavClass + ' "><a class="nav-link ellipsis" id="whichtab' + index2 + '" title="' + perfectname + '" data-toggle="tab"  href="#moreinfo' + counter + '">' + perfectname + '</a></li>';
+
+                            var tabsgenerate_active = '<div class="tab-pane _mt_not_scrollbar  pane_container_modal style-8 _informatics_modal_js_' + index2 + ' active" id="moreinfo' + counter + '"></div>'
+                            var tabsgenerate = '<div class="tab-pane  _mt_not_scrollbar pane_container_modal style-8 _informatics_modal_js_' + index2 + '" id="moreinfo' + counter + '"></div>';
+
+                            if (counter == 1) {
+                                jQuery('._moreinfo_link_js_irm_report').append(linknav_active);
+                                jQuery('._generate_tabscontent_js_irm_report').append(tabsgenerate_active);
+                            } else {
+                                jQuery('._moreinfo_link_js_irm_report').append(linknav);
+                                jQuery('._generate_tabscontent_js_irm_report').append(tabsgenerate);
+                            }
+
+                            jQuery('._informatics_modal_js_' + counter + '').empty();
+
+                            if (appendto == 'travelreports' || appendto == 'contacts') {
+                                jQuery.each(value2, function(indexnewone, valuenewone) {
+                                    var idincrement = indexnewone + 1;
+                                    var titleinside = '';
+
+                                    if (appendto == 'travelreports') {
+                                        titleinside = htmlEntities("Rapports de séjour");
+                                    }
+                                    if (appendto == 'contacts') {
+                                        titleinside = htmlEntities("Contact");
+                                    }
+
+
+                                    if (value2.length > 1) {
+                                        jQuery('._informatics_modal_js_' + appendto + '').append('<div class="row"><div class="col-md-12"><p style="margin-top: 10px;margin-bottom: 10px;"> ' + titleinside + " - " + idincrement + '</p></div></div>');
+                                    }
+
+
+                                    jQuery.each(valuenewone, function(indexnew, valuenew) {
+                                        if (valuenew["fullname"] == null || valuenew["fullname"] == '' || valuenew["fullname"].length == 0) {
+                                            valuenew["fullname"] = '-';
+                                        }
+
+                                        var datapoints = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal"><div class="_title">' + valuenew["shortname"] + '</div></div></div><div class="col-md-8 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal"><div class="_title">' + valuenew["fullname"] + '</div></div></div></div>';
+                                        jQuery('._informatics_modal_js_' + appendto + '').append(datapoints);
+                                    });
+
+
+                                });
+
+
+                            } else {
+                                jQuery.each(value2, function(indexnew, valuenew) {
+                                    if (valuenew["fullname"] == null || valuenew["fullname"] == '' || valuenew["fullname"].length == 0) {
+                                        valuenew["fullname"] = '-';
+                                    }
+
+                                    var datapoints = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal"><div class="_title">' + valuenew["shortname"] + '</div></div></div><div class="col-md-8 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal"><div class="_title">' + valuenew["fullname"] + '</div></div></div></div>';
+                                    jQuery('._informatics_modal_js_' + appendto + '').append(datapoints);
+                                });
+
+                            }
+
+                        });
+                    }
+                });
+
+
+                if (whichtab == 'travel') {
+                    whichtab = 'travelreports';
+                }
+
+                jQuery('#whichtab' + whichtab).trigger('click');
+
+
+                setTimeout(function() {
+
+                    jQuery('.tab-pane.pane_container_modal.style-8').mCustomScrollbar();
+
+                }, 1000);
+
+            }
+        });
+
+    }
+
+    // Function to open the new tab with the specific content for More Details All Tabs
+    function openMoreDetailsInNewTab(core_id, relation_id, openwhichtab) {
+        var hideElements = true;
+        var baseurl = ""; // Ensure this outputs a valid URL string
+        var url = baseurl + '?core_id=' + core_id + '&relation_id=' + relation_id + '&openwhichtab=' + openwhichtab + '&hide_elements=' + hideElements + '&whichtab=all';
+
+        var newWindow = window.open(url, '_blank');
+
+        newWindow.onload = function() {
+            // Logic to load content...
+            loadContentInNewTab(core_id, relation_id, hideElements);
+        };
+    }
+
+    // Function to load the content for All Tabs
+    function loadContentInNewTab(core_id, relation_id, openwhichtab, hideElements) {
+        // Construct the HTML content for the new tab
+        // jQuery('._height_top ').css('display', 'none');
+        // jQuery('._irm_colleges').css('display', 'none');
+
+        // Show the modalgg
+        jQuery('#myModal_irm_report_new_tab_all').css('display', 'block');
+
+        let publisher_id = "10";
+
+        // Save the value in the localized JavaScript file START
+        let reportMoreDetails = {
+            r_core_id: core_id,
+            r_relation_id: relation_id,
+            r_publisher_id: publisher_id,
+            r_openwhichtab: openwhichtab,
+            r_sessionid: "jkvstnjqn77bjrhqmkc5qqhbl6"
+        };
+
+        localStorage.setItem('reportMoreDetails', JSON.stringify(reportMoreDetails));
+
+        var appendtonew = '';
+        var counternew = 0;
+        var moreinfoLink = jQuery('._moreinfo_link_js_irm_report_new_tab');
+        var generateTabsContent = jQuery('._generate_tabscontent_js_irm_report_new_tab');
+        moreinfoLink.empty();
+        generateTabsContent.empty();
+
+        if (window.jQuery) {
+            // AJAX call to fetch additional report data
+            window.jQuery.ajax({
+                url: ajaxurl,
+                type: 'POST',
+                data: {
+                    'action': 'load_report_data_on_ajax_load',
+                    'searched_data': {
+                        core_id: core_id,
+                        relation_id: relation_id,
+                        publisher_id: publisher_id
+                    }
+                },
+                success: function(response) {
+                    response = JSON.parse(response);
+                    var moreinformaticsnewoneTab = response['labelvalue'];
+                    // console.log(response);
+
+                    jQuery.each(moreinformaticsnewoneTab, function(index, value) {
+                        if (core_id == value['core_id']) {
+
+                            // Updating the title
+                            jQuery('.modal-title.modal-title-new._irmuniversity_name_js_irm_report_new_tab')
+                                .html(value["universityname"] + ', <span class="_irmuniversityCountry">' + value["country_fullname"] + '</span>');
+
+                            // jQuery('.pdf-test').append("All");
+
+                            jQuery.each(value['informatics'][0], function(indexnew2, valuenew2) {
+                                counternew++;
+                                appendtonew = indexnew2;
+                                var perfectnameNew = 'Tab Name';
+                                if (indexnew2 == 'contacts') {
+                                    perfectnameNew = "Contact";
+                                }
+                                if (indexnew2 == 'institutions') {
+                                    perfectnameNew = "Etablissement";
+                                }
+                                if (indexnew2 == 'relations') {
+                                    perfectnameNew = "Relations";
+                                }
+                                if (indexnew2 == 'travelreports') {
+                                    perfectnameNew = "Rapports de séjour";
+                                }
+
+                                let customNavClassNew = '';
+                                                                    if (openwhichtab !== 'institutions' && indexnew2 == 'institutions') {
+                                        customNavClassNew = 'disable_tab';
+                                    }
+                                    if (openwhichtab == 'institutions' && indexnew2 !== 'institutions') {
+                                        customNavClassNew = 'disable_tab';
+                                    }
+                                
+                                var linknav_active_new = '<li class="nav-item ' + customNavClassNew + ' "><a class="nav-link ellipsis active" id="openwhichtab' + indexnew2 + '" title="' + perfectnameNew + '" data-toggle="tab" href="#moreinfo' + counternew + '">' + perfectnameNew + '</a></li>';
+                                var linknav_new = '<li class="nav-item ' + customNavClassNew + ' "><a class="nav-link ellipsis" id="openwhichtab' + indexnew2 + '" title="' + perfectnameNew + '" data-toggle="tab" href="#moreinfo' + counternew + '">' + perfectnameNew + '</a></li>';
+                                var tabsgenerate_active_new = '<div class="tab-pane _mt_not_scrollbar  pane_container_modal pane_container_modal_new style-8 _informatics_modal_js_' + indexnew2 + ' active" id="moreinfo' + counternew + '"></div>';
+                                var tabsgenerate_new = '<div class="tab-pane  _mt_not_scrollbar pane_container_modal pane_container_modal_new style-8 _informatics_modal_js_' + indexnew2 + '" id="moreinfo' + counternew + '"></div>';
+
+                                if (counternew == 1) {
+                                    moreinfoLink.append(linknav_active_new);
+                                    generateTabsContent.append(tabsgenerate_active_new);
+                                } else {
+                                    moreinfoLink.append(linknav_new);
+                                    generateTabsContent.append(tabsgenerate_new);
+                                }
+
+                                jQuery('._informatics_modal_js_' + counternew + '').empty();
+
+                                if (appendtonew == 'travelreports' || appendtonew == 'contacts') {
+                                    jQuery.each(valuenew2, function(indexnewoneNew, valuenewoneNew) {
+                                        var idincrementNew = indexnewoneNew + 1;
+                                        var titleinsideNew = '';
+
+                                        if (appendtonew == 'travelreports') {
+                                            titleinsideNew = htmlEntities("Rapports de séjour");
+                                        }
+                                        if (appendtonew == 'contacts') {
+                                            titleinsideNew = htmlEntities("Contact");
+                                        }
+
+                                        if (valuenew2.length > 1) {
+                                            jQuery('._informatics_modal_js_' + appendtonew + '').append('<div class="row"><div class="col-md-12"><p style="margin:10px;"> ' + titleinsideNew + " - " + idincrementNew + '</p></div></div>');
+                                        }
+
+                                        jQuery.each(valuenewoneNew, function(indexnewTwo, valuenewTwo) {
+                                            if (valuenewTwo["fullname"] == null || valuenewTwo["fullname"] == '' || valuenewTwo["fullname"].length == 0) {
+                                                valuenewTwo["fullname"] = '-';
+                                            }
+
+                                            var datapointsNew = '<div class="row-border"><div class="row"><div class="col-md-4 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal university_stats_modal_new"><div class="_title">' + valuenewTwo["shortname"] + '</div></div></div><div class="col-md-8 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal university_stats_modal_new"><div class="_title">' + valuenewTwo["fullname"] + '</div></div></div></div></div>';
+                                            jQuery('._informatics_modal_js_' + appendtonew + '').append(datapointsNew);
+                                        });
+                                    });
+                                } else {
+                                    jQuery.each(valuenew2, function(indexnewTwo, valuenewTwo) {
+                                        if (valuenewTwo["fullname"] == null || valuenewTwo["fullname"] == '' || valuenewTwo["fullname"].length == 0) {
+                                            valuenewTwo["fullname"] = '-';
+                                        }
+
+                                        var datapointsNew = '<div class="row-border"><div class="row"><div class="col-md-4 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal university_stats_modal_new"><div class="_title">' + valuenewTwo["shortname"] + '</div></div></div><div class="col-md-8 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal university_stats_modal_new"><div class="_title">' + valuenewTwo["fullname"] + '</div></div></div></div></div>';
+                                        jQuery('._informatics_modal_js_' + appendtonew + '').append(datapointsNew);
+                                    });
+                                }
+                                // For the first tab element - all of data is added to DOM, and hence we can get the total tab area height
+                                if (counternew == 1) {
+                                    var defaultActiveTab = jQuery('._generate_tabscontent_js_irm_report_new_tab > div.active');
+                                    var childNodes = defaultActiveTab[0].children;
+                                    var totalHeight = 0;
+                                    for (let i = 0; i < childNodes.length; i++) {
+                                        totalHeight += childNodes[i].clientHeight;
+                                    }
+                                    // Add scrollbar if the total tab height exceeds the fixed height of 525px
+                                    if (totalHeight > 525) {
+                                        if (defaultActiveTab.hasClass('_mt_not_scrollbar')) {
+                                            defaultActiveTab.removeClass('_mt_not_scrollbar');
+                                        }
+                                    }
+                                }
+
+                            });
+
+                        }
+                    });
+                } // closing the success function
+            }); // closing the AJAX call
+        } // closing the if statement for checking jQuery
+
+    }
+
+    // Function to open the new tab with the specific content for More Details
+    function openInstituteDetailsInNewTab(core_id, relation_id, whichtab) {
+        var hideElements = false;
+        var baseurl = ""; // Ensure this outputs a valid URL string
+        var url = baseurl + '?core_id=' + core_id + '&relation_id=' + relation_id + '&tab=institutions&hide_elements=' + hideElements + '&whichtab=institutions';
+
+        var newWindow = window.open(url, '_blank');
+
+        newWindow.onload = function() {
+            // Logic to load content...
+            loadInstituteContentInNewTab(core_id, relation_id, hideElements);
+        };
+    }
+
+    // Function to load the content for Institutions tab
+    function loadInstituteContentInNewTab(core_id, relation_id, hideElements) {
+        // Construct the HTML content for the new tab
+        // jQuery('._height_top ').css('display', 'none');
+        // jQuery('._irm_colleges').css('display', 'none');
+
+        // Show the modalgg
+        jQuery('#myModal_irm_report_new_tab_ins').css('display', 'block');
+
+
+        // Append the content to the new tab's document body
+        // document.body.innerHTML = content;
+
+        let publisher_id = "10";
+
+        // Save the value in the localized JavaScript file START
+        let reportMoreDetailsins = {
+            r_core_id: core_id,
+            r_relation_id: relation_id,
+            r_publisher_id: publisher_id,
+            r_sessionid: "jkvstnjqn77bjrhqmkc5qqhbl6"
+        };
+
+        localStorage.setItem('reportMoreDetails', JSON.stringify(reportMoreDetailsins));
+
+        var appendtonewins = '';
+        var counternewins = 0;
+        var moreinfoLinkIns = jQuery('._moreinfo_link_js_irm_report_new_tab_ins');
+        var generateTabsContentIns = jQuery('._generate_tabscontent_js_irm_report_new_tab_ins');
+        moreinfoLinkIns.empty();
+        generateTabsContentIns.empty();
+
+        if (window.jQuery) {
+            // AJAX call to fetch additional report data
+            window.jQuery.ajax({
+                url: ajaxurl,
+                type: 'POST',
+                data: {
+                    'action': 'load_report_data_on_ajax_load',
+                    'searched_data': {
+                        core_id: core_id,
+                        relation_id: relation_id,
+                        publisher_id: publisher_id
+                    }
+                },
+                success: function(response) {
+                    response = JSON.parse(response);
+                    var moreinformaticsnewoneTab = response['labelvalue'];
+                    // console.log(response);
+
+                    jQuery.each(moreinformaticsnewoneTab, function(index, value) {
+                        if (core_id == value['core_id']) {
+                            // Updating the title
+                            jQuery('.modal-title.modal-title-new-ins._irmuniversity_name_js_irm_report_new_tab_ins')
+                                .html(value["universityname"] + ', <span class="_irmuniversityCountry">' + value["country_fullname"] + '</span>');
+
+                            // jQuery('.pdf-test').append("");
+
+                            jQuery.each(value['informatics'][0], function(indexnewins2, valuenewins2) {
+                                // Your logic inside the inner jQuery.each loop
+                                counternewins++;
+                                appendtonewins = indexnewins2;
+
+                                var perfectnameNew = 'Tab Name';
+                                if (indexnewins2 == 'contacts') {
+                                    perfectnameNew = "Contact";
+                                }
+                                if (indexnewins2 == 'institutions') {
+                                    perfectnameNew = "Etablissement";
+                                }
+                                if (indexnewins2 == 'relations') {
+                                    perfectnameNew = "Relations";
+                                }
+                                if (indexnewins2 == 'travelreports') {
+                                    perfectnameNew = "Rapports de séjour";
+                                }
+
+                                let customNavClassNew = '';
+                                let activeClass = "";
+
+                                                                if (indexnewins2 == 'relations' || indexnewins2 == 'contacts' || indexnewins2 == 'travelreports') {
+                                    customNavClassNew = 'disable_tab';
+
+                                }
+                                if (indexnewins2 == 'institutions') {
+                                    activeClass = 'active';
+                                }
+
+                                // 
+                                var linknav_active_new_ins = '<li class="nav-item ' + customNavClassNew + ' "><a class="nav-link ellipsis active" id="openwhichtab' + indexnewins2 + '" title="' + perfectnameNew + '" data-toggle="tab" href="#moreinfo' + counternewins + '">' + perfectnameNew + '</a></li>';
+                                var linknav_new_ins = '<li class="nav-item ' + customNavClassNew + ' "><a class="nav-link ellipsis ' + activeClass + '" id="openwhichtab' + indexnewins2 + '" title="' + perfectnameNew + '" data-toggle="tab" href="#moreinfo' + counternewins + '">' + perfectnameNew + '</a></li>';
+                                var tabsgenerate_active_new_ins = '<div class="tab-pane _mt_not_scrollbar  pane_container_modal pane_container_modal_new style-8 _informatics_modal_js_' + indexnewins2 + ' " id="moreinfo' + counternewins + '"></div>';
+                                var tabsgenerate_new_ins = '<div class="tab-pane  _mt_not_scrollbar pane_container_modal pane_container_modal_new style-8 _informatics_modal_js_' + indexnewins2 + ' active" id="moreinfo' + counternewins + '"></div>';
+
+                                if (counternewins == 1) {
+                                    moreinfoLinkIns.append(linknav_active_new_ins);
+                                    generateTabsContentIns.append(tabsgenerate_active_new_ins);
+                                } else {
+                                    moreinfoLinkIns.append(linknav_new_ins);
+                                    generateTabsContentIns.append(tabsgenerate_new_ins);
+                                }
+
+                                jQuery('._informatics_modal_js_' + counternewins + '').empty();
+
+
+                                if (appendtonewins == 'institutions') {
+                                    // console.log(appendtonewins);
+                                    jQuery.each(valuenewins2, function(indexnewoneNew, valuenewoneNew) {
+                                        var idincrementNewIns = indexnewoneNew + 1;
+                                        var titleinsideNewIns = '';
+
+                                        if (appendtonewins == 'institutions') {
+                                            titleinsideNewIns = htmlEntities("Etablissement");
+                                        }
+
+                                        var datapointsNew = '<div class="row-border"><div class="row"><div class="col-md-4 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal university_stats_modal_new"><div class="_title">' + valuenewoneNew["shortname"] + '</div></div></div><div class="col-md-8 col-sm-6 col-xs-6 col-6"><div class="university_stats_modal university_stats_modal_new"><div class="_title">' + valuenewoneNew["fullname"] + '</div></div></div></div></div>';
+                                        // console.log(appendtonewins);
+                                        jQuery('._informatics_modal_js_' + appendtonewins + '').append(datapointsNew);
+
+                                    });
+                                }
+
+                            }); // Closing inner jQuery.each loop
+                        }
+                    }); // Closing outer jQuery.each loop
+                } // Closing success function
+            }); // Closing AJAX call
+        } // Closing if statement for checking jQuery
+
+    }
+
+    // Ensure that the content loads correctly if the URL with parameters is accessed directly
+    window.onload = function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var core_id = urlParams.get('core_id');
+        var relation_id = urlParams.get('relation_id');
+        var whichtab = urlParams.get('whichtab');
+        var hideElements = urlParams.get('hide_elements');
+
+        // Check if all parameters are present
+        if (core_id && relation_id) {
+            // Check if openwhichtab parameter is present and equals 'institutions' (More Details button)
+            if (whichtab == 'institutions') {
+                // Load content for More Details button scenario
+                loadInstituteContentInNewTab(core_id, relation_id, hideElements);
+            } else {
+                // Load content for More Details All Tabs button scenario
+                loadContentInNewTab(core_id, relation_id, hideElements);
+            }
+        }
+    };
+
+    // number country loaded
+    var countryLoadedCount = 0;
+    var countryToLoad = 7;
+    var universitytoload = 7;
+    var uniqueunivload = [];
+    var openNewTabLinkEnable = '';
+
+
+    function addLoadMoreUniversity_irm_report(dis, countrylabel, appendid, search_criteria) {
+        var universitytoloadnew = 7;
+        jQuery(dis).parent().parent().remove();
+
+        var maindata = [];
+        jQuery.each(moreinformatics, function(index, value) {
+            if (value['country'] == countrylabel) {
+                maindata.push(value);
+            }
+        });
+        var universityloaded = 0;
+        if (onscrollloadmoreoff == true) {
+            var countryspecific = 1;
+        }
+        if (universitytoloadnew > maindata.length) {
+            universitytoloadnew = maindata.length
+        }
+
+        var startfrom = parseInt(appendid) + 1
+
+        for (var uu = startfrom; uu < startfrom + universitytoloadnew; uu++) {
+            if (typeof(maindata[uu]) == "undefined") {
+                continue;
+            }
+            universityloaded++;
+
+            var universitylogo = "";
+            if (maindata[uu]['logo'] != '' && maindata[uu]['logo'].length > 0) {
+                var universitylogo = maindata[uu]['logo'];
+            }
+            /**
+             * Set class as first_univesity if it is first in the loop
+             * Set class as last_univesity if it is not first in the loop
+             */
+            let customClass = '';
+                            if (uniqueunivload.includes(maindata[uu]['flagname'])) {
+                    customClass = 'last_university';
+                } else {
+                    uniqueunivload.push(maindata[uu]['flagname']);
+                    customClass = 'first_university';
+                }
+                                        if (maindata[uu]['informatics'].length != 0) {
+                    var data = maindata[uu]['informatics'][0]['institutions'];
+                }
+                //Remove blocks if only institution tab is enable
+                srbyins = show_more_details_link_for;
+                srbyinscss = '';
+                if (srbyins.includes('institutions') && !srbyins.includes('relations') && !srbyins.includes('travelreports') && !srbyins.includes('contacts')) {
+                    if (maindata[uu]['informatics'][0]['relations'] != '' && maindata[uu]['informatics'][0]['travelreports'] != '' && maindata[uu]['informatics'][0]['contacts'] != '') {
+                        srbyinscss = '_removeblock';
+                    }
+                }
+                if (jQuery.trim(universitylogo).length > 0) {
+                    var universityblock = '<div class="_university_block kk _loadmorejs_' + uu + '_' + countrylabel.toLowerCase() + '"><div class="row"><div class="col-sm-12 text-center"><div class="_universityLogo_img_mobile" style="background-image: url(' + universitylogo + ');"></div></div></div><div class="media  _media_js"><div class="_universityLogo_img" style="background-image: url(' + universitylogo + ');"></div><div class="media-body"><div class="row"><div class="col-12"><div class="_univname">' + maindata[uu]['universityname'] + '</div></div></div><div class=""><div id="_unique' + countrylabel + '' + uu + '"></div></div></div></div></div>';
+                } else {
+                    var universityblock = '<div class="_university_block_wrapper ' + customClass + ' ss _loadmorejs_' + uu + '_' + countrylabel.toLowerCase() + '"> <div class="row instspecific"> <div class="col-12"> <div class="_univname">' + maindata[uu]['universityname'] + '</div><div class="media" id="#_university_information_unique' + countrylabel + uu + '">' + render_institution_data(data, maindata[uu]["core_id"], maindata[uu]["relation_id"], srbyins) + '</div></div></div><div class="_university_block' + srbyinscss + ' ' + customClass + '"> <div class="row"><div class="col-sm-12 text-center"></div></div><div class="media _media_js"> <div class="media-body"><!--<div class="row"> <div class="col-12"><div class="_univname">' + maindata[uu]['universityname'] + '</div></div></div>--> <div class=""><div id="_unique' + countrylabel + '' + uu + '"></div></div></div></div></div></div>';
+                }
+            
+            jQuery('._loadmorejs_' + appendid + '_' + countrylabel.toLowerCase() + '').after(universityblock);
+
+            var active_tabs = show_more_details_link_for;
+            var moredetailsArray = new Array();
+            var first_active_tab = active_tabs[0];
+            var last_active_tab = active_tabs[active_tabs.length - 1];
+            //Check if Informatics is having any data or not?
+            if (maindata[uu]['informatics'].length != 0) {
+                //Set new row for More Details
+                if (active_tabs.length > 1) {
+                    if (openNewTabLinkEnable === '1') {
+                        var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 "><span class="more_info_text float-right"><a href="#" data-toggle="modal" tabindex="0" onclick="openMoreDetailsInNewTab(\'' + maindata[uu]["core_id"] + '\', \'' + maindata[uu]["relation_id"] + '\', \'' + first_active_tab + '\')">Plus de détails</a></span></div></div>';
+                    } else {
+                        var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 "><span class="more_info_text float-right"><a href="#" data-toggle="modal" data-target="#myModal_irm_report" onclick="Moreinformations_irm_report(' + maindata[uu]["core_id"] + ',' + maindata[uu]["relation_id"] + ',' + "'" + first_active_tab + "'" + ');">Plus de détails</a></span></div></div>';
+                    }
+                } else {
+                    if (openNewTabLinkEnable === '1') {
+                        var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 "><span class="more_info_text float-right"><a href="#" data-toggle="modal"  tabindex="0" onclick="openMoreDetailsInNewTab(\'' + maindata[uu]["core_id"] + '\', \'' + maindata[uu]["relation_id"] + '\', \'' + last_active_tab + '\')">Plus de détails</a></span></div></div>';
+                    } else {
+                        var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 "><span class="more_info_text float-right"><a href="#" data-toggle="modal" data-target="#myModal_irm_report" onclick="Moreinformations_irm_report(' + maindata[uu]["core_id"] + ',' + maindata[uu]["relation_id"] + ',' + "'" + last_active_tab + "'" + ');">Plus de détails</a></span></div></div>';
+                    }
+                }
+
+                moredetailsArray.push(moredetailscontent);
+
+                // institutions label value
+                if (maindata[uu]['informatics'][0]['institutions'] != '' &&
+                    maindata[uu]['informatics'][0]['institutions'] != null) {
+                    var institutionsArray = new Array();
+
+                    var institutionstitle = '<div class="row"><div class="col-md-6 col-sm-6 col-xs-6"><div class="university_stats_title"><p>' + ("Etablissement") + '</p></div></div><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats_title"><p></p></div></div></div>';
+                    institutionsArray.push(institutionstitle);
+                    var institutionsArrayCount = 0;
+                    jQuery.each(maindata[uu]['informatics'][0]['institutions'], function(index3, value3) {
+                        institutionsArrayCount++;
+                        var institutionscontent = '';
+
+                        if (maindata[uu]['informatics'][0]['institutions'].length == institutionsArrayCount) {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+                            if (active_tabs.includes('institutions') || (value3["fullname"] != null && value3["fullname"] != '')) {
+                                institutionscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                            }
+                        } else {
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            institutionscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                        }
+
+                        if (institutionscontent !== '') {
+                            institutionsArray.push(institutionscontent);
+                        }
+                    });
+
+                    
+                }
+
+                // relations label value
+                if (maindata[uu]['informatics'][0]['relations'] != '' &&
+                    maindata[uu]['informatics'][0]['relations'] != null) {
+                    var relationsArray = new Array();
+                    relationsArrayCount = 0;
+                    var relationstitle = '<div class="row"><div class="col-md-6 col-sm-6 col-xs-6 5"><div class="university_stats_title"><p>' + ("Relations") + '</p></div></div><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats_title"><p></p></div></div></div>';
+                    relationsArray.push(relationstitle);
+                    jQuery.each(maindata[uu]['informatics'][0]['relations'], function(index3, value3) {
+                        relationsArrayCount++;
+                        var relationscontent = '';
+                        if (maindata[uu]['informatics'][0]['relations'].length == relationsArrayCount) {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+                            if (active_tabs.includes('relations') || (value3["fullname"] != null && value3["fullname"] != '')) {
+                                relationscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                            }
+                        } else {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            relationscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                        }
+
+                        if (relationscontent !== '') {
+                            relationsArray.push(relationscontent);
+                        }
+                    });
+
+                    jQuery('#_unique' + countrylabel + uu).append('<div class="_university_informatics relations_info_js">' + relationsArray.join("") + '</div>');
+
+                }
+
+                // travel label value
+                if (maindata[uu]['informatics'][0]['travelreports'] != '' &&
+                    maindata[uu]['informatics'][0]['travelreports'] != null) {
+                    var travelreportArray = new Array();
+                    var travelreportArrayCount = 0;
+                    var travelreportstitle = '<div class="row"><div class="col-md-6 col-sm-6 col-xs-6"><div class="university_stats_title"><p>' + ("Rapports de séjour") + '</p></div></div><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats_title"><p></p></div></div></div>';
+                    travelreportArray.push(travelreportstitle);
+
+                    jQuery.each(maindata[uu]['informatics'][0]['travelreports'], function(index3, value3) {
+                        travelreportArrayCount++;
+                        var travelreportscontent = '';
+
+                        if (maindata[uu]["informatics"][0]['travelreports'].length == travelreportArrayCount) {
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+                            if (active_tabs.includes('travelreports') || (value3["fullname"] != null && value3["fullname"] != '')) {
+                                travelreportscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                            }
+                        } else {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            travelreportscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                        }
+
+                        if (travelreportscontent !== '') {
+                            travelreportArray.push(travelreportscontent);
+                        }
+                    });
+
+
+                    jQuery('#_unique' + countrylabel + uu).append('<div class="_university_informatics travel_info_js">' + travelreportArray.join("") + '</div>');
+
+                }
+
+                // contacts label value
+                if (maindata[uu]['informatics'][0]['contacts'] != '' &&
+                    maindata[uu]['informatics'][0]['contacts'] != null) {
+                    var contactsArray = new Array();
+                    contactsArrayCount = 0;
+                    var contactstitle = '<div class="row"><div class="col-md-6 col-sm-6 col-xs-6"><div class="university_stats_title"><p>' + ("Contact") + '</p></div></div><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats_title"><p></p></div></div></div>';
+                    contactsArray.push(contactstitle);
+                    jQuery.each(maindata[uu]['informatics'][0]['contacts'], function(index3, value3) {
+                        contactsArrayCount++;
+                        var contactscontent = '';
+                        if (maindata[uu]['informatics'][0]['contacts'].length == contactsArrayCount) {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+                            if (active_tabs.includes('contacts') || (value3["fullname"] != null && value3["fullname"] != '')) {
+                                contactscontent = '<div class="row 1"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                            }
+                        } else {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            contactscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                        }
+
+                        if (contactscontent !== '') {
+                            contactsArray.push(contactscontent);
+                        }
+                    });
+
+                    jQuery('#_unique' + countrylabel + uu).append('<div class="_university_informatics contacts_info_js">' + contactsArray.join("") + '</div>');
+                }
+
+                ////Show More Details independent of any condition
+                if ('') {
+                    jQuery('#moredetailsid').remove();
+                } else if (1 && (active_tabs.includes('institutions') && !active_tabs.includes('relations') && !active_tabs.includes('travelreports') && !active_tabs.includes('contacts'))) {
+                    jQuery('#moredetailsid').remove();
+                } else {
+                    jQuery('#_unique' + countrylabel + uu).append('<div id="moredetailsid" class="moredetails_info_js">' + moredetailsArray.join("") + '</div>');
+                }
+
+            }
+            appendid++;
+
+            // Condition to check if the div for university informatics is present or not
+            if (!jQuery('#_unique' + countrylabel + uu).children().length) {
+                jQuery('#_unique' + countrylabel + uu).closest('._university_block').hide();
+            }
+        }
+
+        if (startfrom != maindata.length - universityloaded) {
+            if (maindata.length > universityloaded && countryspecific != 1) {
+                jQuery('._loadmorejs_' + appendid + '_' + countrylabel.toLowerCase() + '').after('<div class="row" style="position:relative;top:-10px;margin-bottom:8px"><div class="col-sm-12"><a href="javascript:void(0)" class="showloadmorecss showmoretemp1" tabindex="0" onclick="addLoadMoreUniversity_irm_report(this, \'' + countrylabel + '\', \'' + appendid + '\',' + search_criteria + ')">Afficher plus <i class="lnr lnr-arrow-down"></i></a></div></div>');
+            } else {
+                jQuery('._loadmorejs_' + appendid + '_' + countrylabel.toLowerCase() + '').after('<div class="row countryspecific" style="position:relative;top:-10px;margin-bottom:8px"><div class="col-sm-12"><a href="javascript:void(0)" class="showloadmorecss showmoretemp1" tabindex="0" onclick="addLoadMoreUniversity_irm_report(this, \'' + countrylabel + '\', \'' + appendid + '\',' + search_criteria + ')">Afficher plus <i class="lnr lnr-arrow-down"></i></a></div></div>');
+            }
+        }
+
+
+        jQuery.each(jQuery('#sidenav > li'), function(index, value) {
+            jQuery(this).find('a').removeClass('active');
+        });
+        jQuery('._setcountryactive' + countrylabel.toLowerCase()).find('a').addClass('active');
+
+    }
+
+
+    //var openNewTabLinkCls = '//';
+    /**
+     * Function to render institute data from loop
+     */
+    function render_institution_data(data, core_id, relation_id, srbyins) {
+        let html = '';
+        if (typeof data === 'object' && data !== null) {
+            if (!Array.isArray(data)) {
+                data = Object.values(data);
+            }
+
+            if (data.length > 0) {
+                html += '<div class="row media-information">';
+                html += '<div class="col-md-6 col-sm-6 col-xs-6"><div class="university_stats_title"><p>' + ("Etablissement") + '</p></div></div><div class="col-md-6 col-sm-6 col-xs-6"></div>';
+                jQuery.each(data, function(index, element) {
+                    let shortname = (element['shortname'] == null) ? '-' : element['shortname'];
+                    let fullname = (element['fullname'] == null) ? '-' : element['fullname'];
+                    html += '<div class="col-md-4 col-sm-6 col-xs-6 media-data">';
+                    html += '<div class="university_stats">';
+                    html += '<p>' + shortname + '</p>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '<div class="col-md-6 col-sm-6 col-xs-6 media-data">';
+                    html += '<div class="university_stats">';
+                    html += renderOverviewFieldValue(fullname);
+                    html += '</div>';
+                    html += '</div>';
+                    html += '<div class="col-sm-2"></div>';
+                })
+                // if(srbyins.includes('institutions')){
+                //    html += '<span class="more_info_institute //"><a href="#" data-toggle="modal" data-target="#myModal_irm_report" onclick="openInstituteDetailsInNewTab('+core_id+','+relation_id+',\'institutions\');">//</a></span>';
+                //
+                //    html += '<span class="more_info_institute //"><a href="#" data-toggle="modal" data-target="#myModal_irm_report" onclick="Moreinformations_irm_report('+core_id+','+relation_id+',\'institutions\');">//</a></span>';
+                //
+                //}
+
+                if (srbyins.includes('institutions')) {
+                    if (openNewTabLinkEnable === '1') {
+                        html += '<span class="more_info_institute "><a href="#" data-toggle="modal" data-target="#myModal_irm_report_new_tab_ins" tabindex="0" onclick="openInstituteDetailsInNewTab(' + core_id + ',' + relation_id + ',\'institutions\');">Plus de détails</a></span>';
+                    } else {
+                        html += '<span class="more_info_institute "><a href="#" data-toggle="modal" data-target="#myModal_irm_report" tabindex="0" onclick="Moreinformations_irm_report(' + core_id + ',' + relation_id + ',\'institutions\');">Plus de détails</a></span>';
+                    }
+                }
+                html += '</div>';
+
+            }
+        }
+        return html;
+
+    }
+
+
+    function Listuniversity_irm_report(countrylabel, country, search_criteria, ajaxload) {
+        if (search_criteria == 1 && search_criteria != null) {
+            uniqueunivload = [];
+        } //array initialized
+        var maindata = [];
+
+        jQuery.each(moreinformatics, function(index, value) {
+            if (value['country'] == country) {
+                maindata.push(value);
+            }
+        });
+        var universityloaded = 0;
+
+        if (onscrollloadmoreoff == true) {
+            countryToLoad = 7;
+            universitytoload = 7;
+            universitytoload = universitytoload * countryToLoad;
+            var countryspecific = 1;
+
+        } else {
+            universitytoload = 7;
+            if (1 == ajaxload) {
+                getAllmarkersOnMapCustom(moreinformatics); // for showing map coordinated on default loading in template 1
+            }
+        }
+
+        if (universitytoload > maindata.length) {
+            universitytoload = maindata.length;
+        }
+
+        for (var uu = 0; uu < universitytoload; uu++) {
+            universityloaded++;
+            var universitylogo = "";
+            if (maindata[uu]['logo'] != '' && maindata[uu]['logo'].length > 0) {
+                universitylogo = maindata[uu]['logo'];
+            }
+
+            /**
+             * Set class as first_univesity if it is first in the loop
+             * Set class as last_univesity if it is not first in the loop
+             */
+            let customClass = '';
+                            //if(countryspecific == 1 || search_criteria == 1){
+                if (uniqueunivload.includes(maindata[uu]['flagname'])) {
+                    customClass = 'last_university';
+                } else {
+                    uniqueunivload.push(maindata[uu]['flagname']);
+                    customClass = 'first_university';
+                }
+                /*}else{
+                  customClass = ( uu == 0 ) ? 'first_university' : 'last_university';
+                }*/
+            
+                            if (maindata[uu]['informatics'].length != 0) {
+                    var data = maindata[uu]['informatics'][0]['institutions'];
+                }
+                //Remove blocks if only institution tab is enable
+                srbyins = show_more_details_link_for;
+                srbyinscss = '';
+                if (srbyins.includes('institutions') && !srbyins.includes('relations') && !srbyins.includes('travelreports') && !srbyins.includes('contacts')) {
+                    if (maindata[uu]['informatics'][0]['relations'] === undefined && maindata[uu]['informatics'][0]['travelreports'] === undefined && maindata[uu]['informatics'][0]['contacts'] === undefined) {
+                        srbyinscss = '_removeblock';
+                    }
+                }
+                if (jQuery.trim(universitylogo).length > 0) {
+                    var universityblock = '<div class="_university_block 11 _loadmorejs_' + uu + '_' + countrylabel + '"><div class="row"><div class="col-sm-12 text-center"><div class="_universityLogo_img_mobile" style="background-image: url(' + universitylogo + ');"></div></div></div><div class="media _media_js"><div class="_universityLogo_img" style="background-image: url(' + universitylogo + ');"></div><div class="media-body"><div class="row"><div class="col-12"><div class="_univname">' + maindata[uu]['universityname'] + '</div></div></div><div class=""><div id="_unique' + countrylabel + '' + uu + '"></div></div></div></div></div>';
+                } else {
+                    var universityblock = '<div class="_university_block_wrapper ' + customClass + ' "><div class="row instspecific"><div class="col-12"><div class="_univname">' + maindata[uu]['universityname'] + '</div><div class="media" id="#_university_information_unique' + countrylabel + uu + '">' + render_institution_data(data, maindata[uu]["core_id"], maindata[uu]["relation_id"], srbyins) + '</div></div></div><div class="_university_block' + srbyinscss + ' 22 ' + customClass + ' _loadmorejs_' + uu + '_' + countrylabel + '"><div class="row"><div class="col-sm-12 text-center"></div></div><div class="media _media_js"><div class="media-body"><div class=""><div id="_unique' + countrylabel + '' + uu + '"></div></div></div></div></div></div>';
+                }
+            
+            jQuery('#university_content').append(universityblock);
+
+            var active_tabs = show_more_details_link_for;
+            var moredetailsArray = new Array();
+            var first_active_tab = active_tabs[0];
+            var last_active_tab = active_tabs[active_tabs.length - 1];
+
+            //Check if Iformatics is having any data or not?
+            if (maindata[uu]['informatics'].length != 0) {
+                //Set new row for More Details
+                //if(active_tabs.length > 1){
+                //    var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 //"><span class="more_info_text float-right"><a href="#" data-toggle="modal" data-target="#myModal_irm_report" onclick="Moreinformations_irm_report('+maindata[uu]["core_id"]+','+maindata[uu]["relation_id"]+','+"'"+first_active_tab+"'"+');">//</a></span></div></div>';
+                //}else{
+                //    var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 //"><span class="more_info_text float-right"><a href="#" data-toggle="modal" data-target="#myModal_irm_report" onclick="Moreinformations_irm_report('+maindata[uu]["core_id"]+','+maindata[uu]["relation_id"]+','+"'"+last_active_tab+"'"+');">//</a></span></div></div>';
+                //}
+
+                if (active_tabs.length > 1) {
+                    if (openNewTabLinkEnable === '1') {
+                        var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 "><span class="more_info_text float-right"><a href="#" data-toggle="modal" tabindex="0" onclick="openMoreDetailsInNewTab(\'' + maindata[uu]["core_id"] + '\', \'' + maindata[uu]["relation_id"] + '\', \'' + first_active_tab + '\')">Plus de détails</a></span></div></div>';
+                    } else {
+                        var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 "><span class="more_info_text float-right"><a href="#" data-toggle="modal" data-target="#myModal_irm_report" onclick="Moreinformations_irm_report(' + maindata[uu]["core_id"] + ',' + maindata[uu]["relation_id"] + ',' + "'" + first_active_tab + "'" + ');">Plus de détails</a></span></div></div>';
+                    }
+                } else {
+                    if (openNewTabLinkEnable === '1') {
+                        var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 "><span class="more_info_text float-right"><a href="#" data-toggle="modal" tabindex="0" onclick="openMoreDetailsInNewTab(\'' + maindata[uu]["core_id"] + '\', \'' + maindata[uu]["relation_id"] + '\', \'' + last_active_tab + '\')">Plus de détails</a></span></div></div>';
+                    } else {
+                        var moredetailscontent = '<div class="row"><div class="col-lg-12 col-md-12 "><span class="more_info_text float-right"><a href="#" data-toggle="modal" data-target="#myModal_irm_report" onclick="Moreinformations_irm_report(' + maindata[uu]["core_id"] + ',' + maindata[uu]["relation_id"] + ',' + "'" + last_active_tab + "'" + ');">Plus de détails</a></span></div></div>';
+                    }
+                }
+
+
+                moredetailsArray.push(moredetailscontent);
+
+                // institutions label value
+                if (maindata[uu]['informatics'][0]['institutions'] != '' &&
+                    maindata[uu]['informatics'][0]['institutions'] != null) {
+
+                    var institutionsArray = new Array();
+
+                    var institutionstitle = '<div class="row"><div class="col-md-6 col-sm-6 col-xs-6"><div class="university_stats_title"><p>' + ("Etablissement") + '</p></div></div><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats_title"><p></p></div></div></div>';
+
+                    institutionsArray.push(institutionstitle);
+
+                    var institutionsArrayCount = 0;
+                    jQuery.each(maindata[uu]['informatics'][0]['institutions'], function(index3, value3) {
+
+                        institutionsArrayCount++;
+                        var institutionscontent = '';
+
+                        if (maindata[uu]['informatics'][0]['institutions'].length == institutionsArrayCount) {
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            if (active_tabs.includes('institutions') || (value3["fullname"] != null && value3["fullname"] != '')) {
+                                institutionscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6 9"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                            }
+
+                        } else {
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            institutionscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                        }
+                        if (institutionscontent !== '') {
+                            institutionsArray.push(institutionscontent);
+                        }
+                    });
+
+
+                    
+                }
+
+                // relations label value
+                if (maindata[uu]['informatics'][0]['relations'] != '' &&
+                    maindata[uu]['informatics'][0]['relations'] != null) {
+                    var relationsArray = new Array();
+                    relationsArrayCount = 0;
+                    var relationstitle = '<div class="row"><div class="col-md-6 col-sm-6 col-xs-6"><div class="university_stats_title"><p>' + ("Relations") + '</p></div></div><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats_title"><p></p></div></div></div>';
+                    relationsArray.push(relationstitle);
+                    jQuery.each(maindata[uu]['informatics'][0]['relations'], function(index3, value3) {
+                        relationsArrayCount++;
+                        var relationscontent = '';
+
+                        if (maindata[uu]['informatics'][0]['relations'].length == relationsArrayCount) {
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+                            if (active_tabs.includes('relations') || (value3["fullname"] != null && value3["fullname"] != '')) {
+                                relationscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6 11"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                            }
+                        } else {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            relationscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                        }
+
+                        if (relationscontent !== '') {
+                            relationsArray.push(relationscontent);
+                        }
+                    });
+
+                    if (relationsArray.length == 1) {
+                        var relationscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>-</p></div></div><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>-</p></div></div><div class="col-sm-3"></div></div>';
+                        relationsArray.push(relationscontent);
+                    }
+
+                    jQuery('#_unique' + countrylabel + uu).append('<div class="_university_informatics relations_info_js">' + relationsArray.join("") + '</div>');
+
+                }
+
+
+                /// travel label value
+                if (maindata[uu]['informatics'][0]['travelreports'] != '' &&
+                    maindata[uu]['informatics'][0]['travelreports'] != null) {
+                    var travelreportArray = new Array();
+                    var travelreportArrayCount = 0;
+                    var travelreportstitle = '<div class="row"><div class="col-md-6 col-sm-6 col-xs-6"><div class="university_stats_title"><p>' + ("Rapports de séjour") + '</p></div></div><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats_title"><p></p></div></div></div>';
+                    travelreportArray.push(travelreportstitle);
+
+                    jQuery.each(maindata[uu]['informatics'][0]['travelreports'], function(index3, value3) {
+                        travelreportArrayCount++;
+                        var travelreportscontent = '';
+                        if (maindata[uu]["informatics"][0]['travelreports'].length == travelreportArrayCount) {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+                            if (active_tabs.includes('travelreports') || (value3["fullname"] != null && value3["fullname"] != '')) {
+                                travelreportscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6 13"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                            }
+                        } else {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            travelreportscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                        }
+
+                        if (travelreportscontent !== '') {
+                            travelreportArray.push(travelreportscontent);
+                        }
+
+                    });
+
+
+                    jQuery('#_unique' + countrylabel + uu).append('<div class="_university_informatics travel_info_js">' + travelreportArray.join("") + '</div>');
+
+                }
+
+                // contacts label value
+                if (maindata[uu]['informatics'][0]['contacts'] != '' &&
+                    maindata[uu]['informatics'][0]['contacts'] != null) {
+                    var contactsArray = new Array();
+                    contactsArrayCount = 0;
+                    var contactstitle = '<div class="row"><div class="col-md-6 col-sm-6 col-xs-6"><div class="university_stats_title"><p>' + ("Contact") + '</p></div></div><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats_title"><p></p></div></div></div>';
+                    contactsArray.push(contactstitle);
+
+                    jQuery.each(maindata[uu]['informatics'][0]['contacts'], function(index3, value3) {
+                        contactsArrayCount++;
+                        var contactscontent = '';
+                        if (maindata[uu]['informatics'][0]['contacts'].length == contactsArrayCount) {
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            if (active_tabs.includes('contacts') || (value3["fullname"] != null && value3["fullname"] != '')) {
+                                contactscontent = '<div class="row 3"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                            }
+                        } else {
+
+                            if (value3["fullname"] == null || value3["fullname"] == '' || value3["fullname"].length == 0) {
+                                value3["fullname"] = '-';
+                            }
+
+                            contactscontent = '<div class="row"><div class="col-md-4 col-sm-6 col-xs-6"><div class="university_stats"><p>' + value3['shortname'] + '</p></div></div><div class="col-md-8 col-sm-6 col-xs-6"><div class="university_stats">' + renderOverviewFieldValue(value3['fullname']) + '</div></div></div>';
+                        }
+
+                        if (contactscontent !== '') {
+                            contactsArray.push(contactscontent);
+                        }
+                    });
+
+                    jQuery('#_unique' + countrylabel + uu).append('<div class="_university_informatics contacts_info_js">' + contactsArray.join("") + '</div>');
+
+                }
+                //Show More Details independent of any condition
+                if ('') {
+                    jQuery('#moredetailsid').remove();
+                } else if (1 && (active_tabs.includes('institutions') && !active_tabs.includes('relations') && !active_tabs.includes('travelreports') && !active_tabs.includes('contacts'))) {
+                    jQuery('#moredetailsid').remove();
+                } else {
+                    jQuery('#_unique' + countrylabel + uu).append('<div id="moredetailsid" class="moredetails_info_js">' + moredetailsArray.join("") + '</div>');
+                }
+
+            }
+            // Condition to check if the div for university informatics is present or not
+            if (!jQuery('#_unique' + countrylabel + uu).children().length) {
+                jQuery('#_unique' + countrylabel + uu).closest('._university_block').hide();
+            }
+        }
+        if (maindata.length > universityloaded) {
+            var appendid = uu - 1;
+            if (countryspecific == 1 || search_criteria == 1) {
+                jQuery('._loadmorejs_' + appendid + '_' + countrylabel + '').after(`<div class="row countryspecific" style="position:relative;top:-10px;margin-bottom:8px"><div class="col-sm-12"><a href="javascript:void(0)" class="showloadmorecss showmoretemp1" tabindex="0" onclick="addLoadMoreUniversity_irm_report(this, '${country}', '${appendid}', '${search_criteria}')">Afficher plus <i class="lnr lnr-arrow-down"></i></a></div></div>`);
+            } else {
+                jQuery('._loadmorejs_' + appendid + '_' + countrylabel + '').after(`<div class="row" style="position:relative;top:-10px;margin-bottom:8px"><div class="col-sm-12"><a href="javascript:void(0)" class="showloadmorecss showmoretemp1" tabindex="0" onclick="addLoadMoreUniversity_irm_report(this, '${country}', '${appendid}', '${search_criteria}')">Afficher plus <i class="lnr lnr-arrow-down"></i></a></div></div>`);
+            }
+        }
+    }
+
+
+
+    function loaduniversitySidebar_irm_report() {
+        var country_full_name_arr = Object.entries(country_id_name_mappings || {});
+        var nnn = 0;
+        var left_counter = 0;
+        var specialarr = country_full_name_arr;
+
+        for (i = 0; i < specialarr.length; i++) {
+            [specialarr[i][0], specialarr[i][1]] = [specialarr[i][1], specialarr[i][0]];
+        }
+        var sortedspecialarr = specialarr.sort(Intl.Collator().compare);
+
+        jQuery.each(countrylistGlobal, function(index, value) {
+
+            // TO DO: To get full country name
+            // var country_full_name = country_id_name_mappings[index];
+
+            if (nnn == 0) {
+                var leftnavli = '<ul class="navigation-list" role="navigation" aria-label="Country List"><li class="nav-item _setcountryactive' + sortedspecialarr[nnn][1].toLowerCase() + '" tabindex="0" onclick=setcountrywise(\'' + sortedspecialarr[nnn][1] + '\')><a href="javascript:void(0)" tabindex="0" class="nav-link active pl-0"><div class="_university_names" countryid="' + specialarr[nnn][0] + '"><p class="_name">' + sortedspecialarr[nnn][0] + '</p><p class="_count">' + groupBy_irme_reportCountry_irm_report[sortedspecialarr[nnn][1]] + ' ' + ("Etablissement") + '</p></div></a></li></ul>';
+
+            } else {
+                var leftnavli = '<ul class="navigation-list" role="navigation" aria-label="Country List"><li class="nav-item _setcountryactive' + sortedspecialarr[nnn][1].toLowerCase() + '" tabindex="0" onclick=setcountrywise(\'' + sortedspecialarr[nnn][1] + '\')><a href="javascript:void(0)" tabindex="0" class="nav-link  pl-0"><div class="_university_names" countryid="' + sortedspecialarr[nnn][0] + '"><p class="_name">' + sortedspecialarr[nnn][0] + '</p><p class="_count">' + groupBy_irme_reportCountry_irm_report[sortedspecialarr[nnn][1]] + ' ' + ("Etablissement") + '</p></div></a></li></ul>';
+            }
+            nnn++;
+
+            jQuery('#sidenav').append(leftnavli);
+        });
+
+    }
+
+
+    function loadUniversitylist_irm_report(search_criteria, ajaxload) {
+        if (countryarray_irm_report.length < countryToLoad) {
+            countryToLoad = countryarray_irm_report.length
+        }
+
+        var country_full_name_arr = Object.entries(country_id_name_mappings || {}); // Making sure object is not empty or null
+        var specialarr = country_full_name_arr;
+
+        for (i = 0; i < specialarr.length; i++) {
+            [specialarr[i][0], specialarr[i][1]] = [specialarr[i][1], specialarr[i][0]];
+        }
+        var sortedspecialarr = specialarr.sort(Intl.Collator().compare);
+        for (var pp = countryLoadedCount; pp < countryToLoad; pp++) {
+            countryLoadedCount++;
+            var countrypassinfunc = jQuery.trim(countryarray_irm_report[pp]);
+            var countrylabel = countryarray_irm_report[pp].toLowerCase();
+            var country_full_name = country_id_name_mappings[countrypassinfunc];
+
+            var country_label = '<div class="row"><div class="col-sm-12"><div class="anchor" id="' + sortedspecialarr[pp][1] + '"></div><div class="_country_university"><h3 class="_country_name"><span class="phoca-box"><span class="phoca-flagbox"><span class="flag flag-' + sortedspecialarr[pp][1].toLowerCase() + '"></span></span></span>' + sortedspecialarr[pp][0] + '</h3></div></div></div>';
+
+            jQuery('#university_content').append(country_label);
+
+            Listuniversity_irm_report(countrylabel, countrypassinfunc, search_criteria, ajaxload);
+
+        }
+        countryToLoad = countryToLoad + 3;
+        load_wait = 0;
+    }
+
+
+    function loadUniversitylist_irm_reportNEW() {
+        for (var pp = countryLoadedCount; pp < countryToLoad; pp++) {
+            countryLoadedCount++;
+
+            var countrypassinfunc = countryarray_irm_report[pp];
+            var countrylabel = countryarray_irm_report[pp].toLowerCase();
+
+            var country_label = '<div class="row"><div class="col-sm-12"><div class="anchor" id="' + countrylabel + '"></div><div class="_country_university"><h3 class="_country_name"><span class="phoca-box"><span class="phoca-flagbox"><span class="flag flag-' + countrylabel + '"></span></span></span>' + countrylabel + '</h3></div></div></div>';
+
+            jQuery('#university_content').append(country_label);
+
+            Listuniversity_irm_report(countrylabel, countrypassinfunc);
+
+        }
+        countryToLoad = countryToLoad + 3;
+        load_wait = 0;
+    }
+
+
+    function setcountrywise(countrylabel) {
+        uniqueunivload = []; //To empty the array if another country is selected
+        jQuery('._applied_filters_js').find('.country_id').remove();
+
+        var country_id = jQuery(this).attr('countryid');
+        var stringappend = '<span class="_applied_text country_id"> <span>' + country_id_name_mappings[countrylabel] + '</span> <i class="fal fa-times-circle" tabindex="0" onclick="removefilter(this, ' + country_id + ', 1)"></i></span>';
+        jQuery('._applied_filters_js').append(stringappend);
+        onscrollloadmoreoff = true;
+        jQuery('#university_content').empty();
+
+        countryLoadedCount = countryarray_irm_report.indexOf(countrylabel) + 1;
+
+        // TO DO: To get full country name
+        var country_full_name = country_id_name_mappings[countrylabel];
+
+        var country_label = '<div class="row"><div class="col-sm-12"><div class="anchor" id="' + countrylabel + '"></div><div class="_country_university"><h3 class="_country_name"><span class="phoca-box"><span class="phoca-flagbox"><span class="flag flag-' + countrylabel.toLowerCase() + '"></span></span></span>' + country_full_name + '</h3></div></div></div>';
+
+        jQuery('#university_content').append(country_label);
+
+        Listuniversity_irm_report(countrylabel.toLowerCase(), countrylabel);
+
+        var moreinformaticsnew = [];
+        jQuery.each(moreinformatics, function(index, value) {
+            if (value['country'] == countrylabel) {
+                moreinformaticsnew.push(value);
+            }
+        });
+
+        jQuery('.spinner_js').addClass('d-none');
+
+        gotourldiv('forresults');
+
+
+        jQuery.each(jQuery('#sidenav > li'), function(index, value) {
+            jQuery(this).find('a').removeClass('active');
+        });
+        jQuery(this).find('a').addClass('active');
+
+
+
+        if (groupBy_irme_reportCountry_irm_report[countrylabel] != null && groupBy_irme_reportCountry_irm_report[countrylabel] != '') {
+            jQuery('._instn_counter_js').text(instilistGlobal[countrylabel]);
+        } else {
+            jQuery('._instn_counter_js').text('-');
+        }
+
+        if (porgramlistGlobal[countrylabel] != null && porgramlistGlobal[countrylabel] != '') {
+            jQuery('._progr_counter_js').text(porgramlistGlobal[countrylabel]);
+        } else {
+            jQuery('._progr_counter_js').text('-');
+        }
+
+        jQuery('._country_length_js').text(1);
+        getAllmarkersOnMapCustom(moreinformaticsnew);
+    }
+
+
+
+    jQuery.fn.isInViewport = function() {
+        var elementTop = jQuery(this).offset().top;
+        var elementBottom = elementTop + jQuery(this).outerHeight();
+
+        var viewportTop = jQuery(window).scrollTop();
+        var viewportBottom = viewportTop + jQuery(window).height();
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+    var load_wait = 0;
+    jQuery(window).on('resize scroll', function() {
+
+        if (onscrollloadmoreoff == false) {
+            if (jQuery('._more_informations_js').isInViewport()) {
+                if (load_wait == 0) {
+                    load_wait++;
+                    if (countryLoadedCount != countryarray_irm_report.length) {
+                        jQuery('.spinner_js').removeClass('d-none');
+                    }
+
+                    setTimeout(function() {
+                        jQuery('.spinner_js').addClass('d-none');
+                        loadUniversitylist_irm_report();
+                    }, 1000);
+                }
+            }
+        }
+    });
+
+    // Function to add scrollbar to tab contents - when view more opens in new tab
+    jQuery(window).on('load resize', function() {
+        if (jQuery('._generate_tabscontent_js_irm_report_new_tab').isInViewport()) {
+            jQuery('ul._moreinfo_link_js_irm_report_new_tab').click(function(e) {
+                setTimeout(function() {
+                    var activeTab = jQuery('._generate_tabscontent_js_irm_report_new_tab > div.active');
+                    var childrenNodes = activeTab[0].children;
+                    var totalHeight = 0;
+                    for (let i = 0; i < childrenNodes.length; i++) {
+                        totalHeight += childrenNodes[i].clientHeight;
+                    }
+                    // Add scrollbar if the total tab height exceeds the fixed height of 525px
+                    if (totalHeight > 525) {
+                        if (activeTab.hasClass('_mt_not_scrollbar')) {
+                            activeTab.removeClass('_mt_not_scrollbar');
+                        }
+                    } else {
+                        // Case of screen resize - when the data fits in a particular resolution,
+                        // but was overflowing in another resolution
+                        if (!activeTab.hasClass('_mt_not_scrollbar')) {
+                            activeTab.addClass('_mt_not_scrollbar');
+                        }
+                    }
+                }, 200);
+            });
+        }
+    });
+
+    ///from this onwards theme second starts
+    // Load countries list ._irm_load_relations_countries_js
+    function loadUniversitylist_irm_report_relations() {
+        for (var nn = 0; nn < countryarray_irm_report.length; nn++) {
+            var maindata = groupBy_irme_reportCountry_irm_report[countryarray_irm_report[nn]];
+            console.log(maindata);
+            var countrypassinfunc = maindata[0]['country'];
+            var countrylabel = maindata[0]['country'].toLowerCase();
+            var countrylabel_full = maindata[0]['country_fullname'];
+
+            if (nn == 0) {
+                var topscrollcountry = '<div class="trusted-top-univ-icons xcnew-container totalslides_js totalslides_js_' + countrypassinfunc + ' active" onclick=loadrelationsbycontry_irm_report(\"' + countrypassinfunc + '\")><div class="flag-insti"><span class="phoca-box"><span class="phoca-flagbox"><span class="flag flag-' + countrylabel + '"></span></span></span></div><div class="_institutes_relations"><h3>' + countrylabel_full + '</h3><p>' + maindata.length + ' Relations</p></div></div>';
+            } else {
+                var topscrollcountry = '<div class="trusted-top-univ-icons xcnew-container totalslides_js totalslides_js_' + countrypassinfunc + '" onclick=loadrelationsbycontry_irm_report(\"' + countrypassinfunc + '\")><div class="flag-insti"><span class="phoca-box"><span class="phoca-flagbox"><span class="flag flag-' + countrylabel + '"></span></span></span></div><div class="_institutes_relations"><h3>' + countrylabel_full + '</h3><p>' + maindata.length + ' Relations</p></div></div>';
+            }
+
+            jQuery('._irm_load_relations_countries_js').append(topscrollcountry);
+        }
+    }
+
+
+    function loadrelationsbycontry_irm_report(countrylabel) {
+        jQuery('._irm_colleges_relations_js').empty();
+        jQuery('.totalslides_js').removeClass('active');
+        jQuery('.totalslides_js_' + countrylabel).addClass('active');
+
+        jQuery('.spinner_js_relations').removeClass('d-none');
+
+        setTimeout(function() {
+            jQuery('.spinner_js_relations').addClass('d-none');
+            var maindata = groupBy_irme_reportCountry_irm_report[countrylabel];
+            for (var uu = 0; uu < maindata.length; uu++) {
+
+                var universitylogo = "";
+                if (maindata[uu]['logo'] != '' && maindata[uu]['logo'].length > 0) {
+                    var universitylogo = maindata[uu]['logo'];
+                }
+                if (jQuery.trim(universitylogo).length > 0) {
+                    var collegecard = '<div class="col-sm-6"><div class="_relations_card"><div class="_logo_for_rel" style="background-image: url(' + universitylogo + ');"></div><div class="_relations_card_info"><h2>' + maindata[uu]["universityname"] + '</h2><p>Type of Global Engagement - General Agreement</p><span class="more_info_text"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal_irm_report" tabindex="0" onclick="Moreinformations_irm_report(' + maindata[uu]["core_id"] + ',' + maindata[uu]["relation_id"] + ',\'relations\');">Plus de détails <i class="lnr lnr-arrow-right"></i></a></span></div></div></div>';
+                } else {
+                    var collegecard = '<div class="col-sm-6"><div class="_relations_card"><div class="_relations_card_info"><h2>' + maindata[uu]["universityname"] + '</h2><p>Type of Global Engagement - General Agreement</p><span class="more_info_text"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal_irm_report" tabindex="0" onclick="Moreinformations_irm_report(' + maindata[uu]["core_id"] + ',' + maindata[uu]["relation_id"] + ',\'relations\');">Plus de détails <i class="lnr lnr-arrow-right"></i></a></span></div></div></div>';
+                }
+
+                jQuery('._irm_colleges_relations_js').append(collegecard);
+            }
+
+        }, 1000);
+    }
+
+    function showmoreRelations_irm_report(dis) {
+
+        if (jQuery('._show_more_inDetails_js').hasClass('d-none')) {
+            jQuery(dis).text("Cacher les détails");
+        } else {
+            jQuery(dis).text("Show Details");
+        }
+
+        jQuery('._show_more_inDetails_js').toggleClass('d-none');
+
+    }
+
+    var fromrequestloaded = 0;
+
+    function getSelecteValues() {
+        jQuery('._applied_filters_js').empty();
+        if (fromrequestloaded == 0) {
+                                        jQuery("select[name='country_id']").val('108');
+                            jQuery("input[name='country_id']").val('108');
+
+                            var selectdata = jQuery("select[name='country_id']").children("option:selected").text();
+                            var inputdata = jQuery("input[name='country_id']");
+                        fromrequestloaded = 1;
+        }
+
+    }
+
+    function SelectedAppend_select() {
+        jQuery('#irm_fiter_form select').each(
+            function(index) {
+                var input = jQuery(this);
+                var inputname = input.attr('name');
+                var selectdata = jQuery("select[name=" + inputname + "]").children("option:selected").text();
+
+                if (selectdata != '' && selectdata != null) {
+                    var stringappend = '<span class="_applied_text ' + inputname + '"> <span>' + selectdata + '</span> <i class="fal fa-times-circle" tabindex="0" onclick="removefilter(this,\'' + inputname + '\', 1)"></i></span>';
+                    jQuery('._applied_filters_js').append(stringappend);
+                }
+            }
+        );
+    }
+
+    function htmlEntities(str) {
+        return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function renderOverviewFieldValue(value) {
+        if (value == null || value === '' || value.length === 0) {
+            value = '-';
+        }
+
+        if (/<\/?(?:div|p|br|font|span|b|strong|ul|ol|li|a)\b/i.test(value)) {
+            return '<div class="university_stats_html_content">' + value + '</div>';
+        }
+
+        return '<p>' + value + '</p>';
+    }
+
+
+    function SelectedAppend_input() {
+        jQuery('#irm_fiter_form input').each(
+            function(index) {
+                var input = jQuery(this);
+                var inputname = input.attr('name');
+                var inputdata = jQuery("input[name=" + inputname + "]").val();
+                var inputtype = input.attr('type');
+
+                if (inputdata != '' && inputdata != null && inputname != 'publisher_id' && inputtype != 'hidden') {
+                    inputdata = htmlEntities(inputdata);
+                    var stringappend = '<span class="_applied_text ' + inputname + '"><span>' + inputdata + '</span><i class="fal fa-times-circle" tabindex="0" onclick="removefilter(this,\'' + inputname + '\', 1)"></i></span>';
+                    jQuery('._applied_filters_js').append(stringappend);
+                }
+            }
+        );
+
+    }
+
+    // show more for _applied_filters_js
+    // Keyboard activation (Enter / Space) for applied-filter close icons
+    jQuery(document).on('keydown', '._applied_filters_js .fal.fa-times-circle', function(e) {
+        if (e.key === 'Enter' || e.key === ' ' || e.which === 13 || e.which === 32) {
+            e.preventDefault();
+            jQuery(this).trigger('click');
+        }
+    });
+
+    function _setappliedfilters() {
+        jQuery('._applied_filters_js').css('height', 'auto');
+        var heightfilterdiv = jQuery('._applied_filters_js').height();
+        if (heightfilterdiv > 80) {
+            jQuery('.show_more_js_link').removeClass('d-none');
+            jQuery('._applied_filters_js').css('height', '40px');
+        } else {
+            jQuery('.show_more_js_link').addClass('d-none');
+        }
+    }
+
+    function setheightfordiv() {
+        if (!jQuery('.show_more_js_link').find('a').hasClass('open')) {
+            jQuery('.show_more_js_link').find('a').html('Afficher moins <i class="lnr lnr-arrow-up"></i>');
+            jQuery('.show_more_js_link').find('a').addClass('open');
+            jQuery('._applied_filters_js').css('height', 'auto');
+        } else {
+            jQuery('.show_more_js_link').find('a').html('Afficher plus <i class="lnr lnr-arrow-down"></i>');
+            jQuery('.show_more_js_link').find('a').removeClass('open');
+            jQuery('._applied_filters_js').css('height', '40px');
+        }
+    }
+
+    jQuery(document).ready(function() {
+        getSelecteValues();
+        SelectedAppend_input();
+        SelectedAppend_select();
+
+        jQuery(".modal-body._modal_univ_more_filter.style-8").mCustomScrollbar();
+
+        // Disabled edit mode and show message
+        if (jQuery('body').hasClass('vcwb') || jQuery('body').hasClass('customize-support')) {
+            if (jQuery("#dashboard-bar-edit_with_visual_composer").length > 0) {
+                jQuery("#dashboard-bar-edit_with_visual_composer").remove();
+            }
+        }
+
+    });
+
+    function removePdf(cleanup_token) {
+        // AJAX Call to delete the pdf file - after it is downloaded.
+        jQuery.ajax({
+            url: ajaxurl,
+            type: 'POST',
+            data: {
+                'action': 'pdf_moredetails_clear',
+                'cleanup_token': cleanup_token
+            },
+            success: function(response) {
+                console.log(response.message);
+            }
+        });
+    }
+
+
+    //PDF Download functionality
+    jQuery(document).ready(function($) {
+        $('#pdf-download').on('click', function(e) {
+            e.preventDefault();
+            let reportMoreDetails = JSON.parse(window.localStorage.getItem('reportMoreDetails'));
+            jQuery.ajax({
+                url: ajaxurl,
+                type: 'POST',
+                data: {
+                    'action': 'load_report_data_on_ajax_load',
+                    'action_type': 'download',
+                    'searched_data': {
+                        core_id: reportMoreDetails.r_core_id,
+                        relation_id: reportMoreDetails.r_relation_id,
+                        publisher_id: reportMoreDetails.r_publisher_id
+                    }
+                },
+                success: function(response) {
+                    console.log(response);
+                    var blob = new Blob([response], {
+                        type: 'application/pdf'
+                    });
+                    var link = document.createElement('a');
+                    link.href = response.pdf_path;
+                    link.download = "moredetails.pdf";
+                    link.click();
+                    // Delete the file after 5 Seconds
+                    setTimeout(function() {
+                        removePdf(response.cleanup_token);
+                    }, 5000);
+                }
+            });
+        });
+    });
+
+    jQuery(document).ready(function($) {
+        // Use event delegation to handle click events for dynamically generated .modified-pdf-link
+        $(document).on('click', '.modified-pdf-link', function(e) {
+            e.preventDefault();
+            var fileId = $(this).attr('data-id');
+            // AJAX request using WordPress AJAX URL to fetch the PDF data
+            $.ajax({
+                url: ajaxurl, // Use the WordPress AJAX URL
+                method: 'POST',
+                xhrFields: {
+                    responseType: 'blob' // important part handling binary PDF data
+                },
+                data: {
+                    action: 'fetch_pdf_data', // WordPress AJAX action name
+                    fileId: fileId,
+                    publisherId: 10                },
+                success: function(response) {
+                    //console.log(response); // Log the response to debug
+                    var blob = new Blob([response], {
+                        type: 'application/pdf'
+                    });
+                    var url = URL.createObjectURL(blob);
+                    var newTab = window.open();
+                    newTab.location = url;
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error fetching PDF data:', error);
+                    var msg = xhr.getResponseHeader('X-AP-Error-Message');
+                    if (msg) alert(msg);
+                }
+            });
+        });
+    });
+</script>

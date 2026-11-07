@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
-    "collect": "tsx pipeline/cli/collect.ts"
+    "collect": "tsx pipeline/cli/collect.ts",
+    "partners:init": "tsx pipeline/cli/partners.ts init",
+    "partners:check": "tsx pipeline/cli/partners.ts check"
   },
   "dependencies": {
     "better-sqlite3": "^13.0.3",

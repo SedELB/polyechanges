@@ -28,3 +28,17 @@ export function loadSourceFiles(dir: string): SourceFile[] {
     .sort()
     .map((f) => parseSourceFile(JSON.parse(readFileSync(join(dir, f), 'utf8'))));
 }
+
+/** Une seule fiche par université (une fiche peut lister plusieurs adresses). */
+export function assertOneSourcePerUniversity(sources: SourceFile[]): void {
+  const byUniversity = new Map<string, string>();
+  for (const s of sources) {
+    const other = byUniversity.get(s.universityId);
+    if (other !== undefined) {
+      throw new Error(
+        `Les fiches de source ${other} et ${s.id} ont le même universityId (${s.universityId}) : une seule fiche par université`,
+      );
+    }
+    byUniversity.set(s.universityId, s.id);
+  }
+}
