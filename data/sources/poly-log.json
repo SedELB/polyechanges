@@ -1,0 +1,8 @@
+{
+  "id": "poly-log",
+  "universityId": null,
+  "kind": "saved",
+  "urls": ["https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"],
+  "files": ["data/manual/poly/programme-LOG.html"],
+  "reader": "poly"
+}

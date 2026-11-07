@@ -13,3 +13,35 @@ describe('assertOneSourcePerUniversity', () => {
     expect(() => assertOneSourcePerUniversity([source('a', 'u1'), source('b', 'u1')])).toThrow(/a et b.*u1/);
   });
 });
+
+describe('parseSourceFile', () => {
+  const poly = {
+    id: 'poly-log',
+    universityId: null,
+    kind: 'saved',
+    urls: ['https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel'],
+    files: ['data/manual/poly/programme-LOG.html'],
+    reader: 'poly',
+  };
+
+  it('accepte la source enregistrée de Poly, sans université', () => {
+    expect(parseSourceFile(poly)).toMatchObject({ universityId: null, kind: 'saved', files: poly.files });
+  });
+
+  it('exige un fichier par adresse pour une source enregistrée', () => {
+    expect(() => parseSourceFile({ ...poly, files: undefined })).toThrow(/un fichier par adresse/);
+    expect(() => parseSourceFile({ ...poly, files: [] })).toThrow(/un fichier par adresse/);
+    expect(() => parseSourceFile({ ...poly, files: ['a.html', 'b.html'] })).toThrow(/un fichier par adresse/);
+  });
+
+  it("refuse l'absence d'université pour une autre source que celle de Poly", () => {
+    expect(() => parseSourceFile({ ...poly, reader: 'ntu-tw' })).toThrow(/pas d'université/);
+    expect(() =>
+      parseSourceFile({ id: 'x', universityId: null, kind: 'html', urls: ['https://example.org'], reader: 'r' }),
+    ).toThrow(/pas d'université/);
+  });
+
+  it("assertOneSourcePerUniversity ignore la source de Poly", () => {
+    expect(() => assertOneSourcePerUniversity([parseSourceFile(poly), source('a', 'u1')])).not.toThrow();
+  });
+});

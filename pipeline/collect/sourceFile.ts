@@ -2,11 +2,18 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { z } from 'zod';
 
+/** Lecteur de la source de Poly : la seule fiche sans université. */
+export const POLY_READER = 'poly';
+
 const sourceFileSchema = z.object({
   id: z.string().min(1),
-  universityId: z.string().min(1),
-  kind: z.enum(['html', 'pdf', 'manual']),
+  /** Nul seulement pour la source de Poly. */
+  universityId: z.string().min(1).nullable(),
+  /** `saved` : page enregistrée à la main depuis un navigateur, jamais téléchargée par le pipeline. */
+  kind: z.enum(['html', 'pdf', 'manual', 'saved']),
   urls: z.array(z.string().url()),
+  /** Source `saved` seulement : un fichier par adresse, dans le même ordre. */
+  files: z.array(z.string().min(1)).optional(),
   reader: z.string().min(1),
 });
 
@@ -17,6 +24,12 @@ export function parseSourceFile(raw: unknown): SourceFile {
   const source = sourceFileSchema.parse(raw);
   if (source.kind !== 'manual' && source.urls.length === 0) {
     throw new Error(`La fiche de source ${source.id} n'a aucune adresse`);
+  }
+  if (source.kind === 'saved' && (source.files === undefined || source.files.length !== source.urls.length)) {
+    throw new Error(`La fiche de source ${source.id} (saved) doit lister un fichier par adresse`);
+  }
+  if (source.universityId === null && source.reader !== POLY_READER) {
+    throw new Error(`La fiche de source ${source.id} n'a pas d'université : seule la source de Poly peut en être dépourvue`);
   }
   return source;
 }
@@ -33,6 +46,7 @@ export function loadSourceFiles(dir: string): SourceFile[] {
 export function assertOneSourcePerUniversity(sources: SourceFile[]): void {
   const byUniversity = new Map<string, string>();
   for (const s of sources) {
+    if (s.universityId === null) continue;
     const other = byUniversity.get(s.universityId);
     if (other !== undefined) {
       throw new Error(

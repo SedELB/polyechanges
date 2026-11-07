@@ -27,7 +27,7 @@ export interface CollectOptions {
 
 type Page = { url: string; body: Buffer; contentType: string };
 
-function recordFailure(db: Db, source: SourceFile, now: string, reason: string, previous: number): CollectResult {
+export function recordFailure(db: Db, source: SourceFile, now: string, reason: string, previous: number): CollectResult {
   recordRun(db, {
     sourceId: source.id,
     startedAt: now,
@@ -54,13 +54,15 @@ export async function collectSource(
   now: string,
   opts?: CollectOptions,
 ): Promise<CollectResult> {
+  if (source.universityId === null) throw new Error(`La source ${source.id} n'a pas d'université`);
+  const universityId = source.universityId;
   db.prepare(
     `INSERT INTO sources (id, university_id, kind, url, reader) VALUES (?, ?, ?, ?, ?)
      ON CONFLICT(id) DO UPDATE SET university_id = excluded.university_id, kind = excluded.kind,
        url = excluded.url, reader = excluded.reader`,
-  ).run(source.id, source.universityId, source.kind, source.urls[0] ?? `manual:${source.id}`, source.reader);
+  ).run(source.id, universityId, source.kind, source.urls[0] ?? `manual:${source.id}`, source.reader);
 
-  const previous = activeHostCourses(db, source.universityId).length;
+  const previous = activeHostCourses(db, universityId).length;
   let found: HostCourseInput[];
   const snapshots: RawSnapshot[] = [];
   try {
@@ -93,7 +95,7 @@ export async function collectSource(
     snapshots.find((s) => s.url === c.sourceUrl)?.id ?? snapshots[0]?.id ?? null;
 
   const diff = db.transaction(() => {
-    const d = applyCollection(db, source.universityId, found, snapshotFor, now);
+    const d = applyCollection(db, universityId, found, snapshotFor, now);
     recordRun(db, {
       sourceId: source.id,
       startedAt: now,

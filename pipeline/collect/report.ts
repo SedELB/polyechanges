@@ -10,6 +10,8 @@ export interface ReportInput {
   courseCount: number;
   diff: CollectionDiff | null;
   reason: string | null;
+  /** Lignes de détail ajoutées à la fin du rapport. */
+  notes?: string[];
 }
 
 const list = (label: string, codes: string[]) =>
@@ -25,6 +27,7 @@ export function renderReport(r: ReportInput): string {
   if (r.diff) {
     lines.push(list('Ajoutés', r.diff.added), list('Retirés', r.diff.removed), list('Modifiés', r.diff.modified));
   }
+  if (r.notes) lines.push(...r.notes);
   if (r.reason) lines.push(`Raison de l’échec : ${r.reason}`);
   return lines.join('\n') + '\n';
 }
