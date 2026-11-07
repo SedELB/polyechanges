@@ -55,6 +55,8 @@ export interface PolyCourse {
   eligible: boolean;
   ineligibleReason: string | null;
   compared: boolean;
+  /** Titres des sections du programme où le cours apparaît, dans l'ordre de la page. */
+  groups: string[];
   sourceUrl: string;
   collectedAt: string;
 }
