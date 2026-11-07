@@ -244,19 +244,27 @@
     "name": "National Taiwan University",
     "moveOnName": "National Taiwan University",
     "countryCode": "TW",
-    "city": "",
-    "lat": 25.091075,
-    "lng": 121.559834,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Taipei",
+    "lat": 25.0174,
+    "lng": 121.5397,
+    "website": "https://www.ntu.edu.tw/english/",
+    "catalogUrl": "https://nol.ntu.edu.tw/nol/coursesearch/search_for_13_eng.php?lang=EN",
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 16,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2026-09-07",
+        "end": "2026-12-18",
+        "examsEnd": "2026-12-25"
+      },
+      "spring": {
+        "start": "2027-02-22",
+        "end": "2027-06-04",
+        "examsEnd": "2027-06-11"
+      }
     },
-    "restrictions": null,
-    "exchangeContact": null,
+    "restrictions": "Dates des trimestres : année 2026-2027, la dernière publiée (le calendrier 2027-2028 n'existe pas encore). Source : https://www.aca.ntu.edu.tw/w/acaEN/Calendar. Crédit : 1 crédit = 1 heure de contact par semaine sur 16 semaines (fiche d'information des échanges de NTU, https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcaOverview) ; les directives de NTU sur la reconnaissance des crédits comptent 18 heures de cours par crédit, d'où 16 ou 18 selon la lecture. Cours listés : liste officielle des cours donnés en anglais (informatique, génie électrique, mathématiques). Restrictions de programme MoveOn non vérifiées : la fiche MoveOn n'est pas accessible à la collecte.",
+    "exchangeContact": "Office of International Affairs, National Taiwan University : intstudent@ntu.edu.tw, +886-2-3366-2007 (https://oia.ntu.edu.tw/en/apply-at-ntu/contact)",
     "catalogPublic": true
   },
   {

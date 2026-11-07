@@ -7,6 +7,7 @@ import { collectSource } from '../collect/collect.js';
 import { writeReport } from '../collect/report.js';
 import { assertOneSourcePerUniversity, loadSourceFiles } from '../collect/sourceFile.js';
 import { syncUniversities } from '../partners/registry.js';
+import '../readers/index.js';
 
 async function main(): Promise<number> {
   const target = process.argv[2];
