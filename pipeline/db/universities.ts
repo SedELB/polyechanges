@@ -71,7 +71,7 @@ export function getUniversity(db: Db, id: string): University | null {
     catalogUrl: r.catalog_url,
     creditSystem: r.credit_system,
     contactHoursPerCredit: r.contact_hours_per_credit,
-    terms: JSON.parse(r.terms_json),
+    terms: JSON.parse(r.terms_json) as University['terms'],
     restrictions: r.restrictions,
     exchangeContact: r.exchange_contact,
     catalogPublic: r.catalog_public === 1,

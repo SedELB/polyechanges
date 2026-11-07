@@ -54,4 +54,14 @@ describe('base de données', () => {
     expect(listPolyCourses(db)[0].triplet).toEqual([3, 1.5, 4.5]);
     expect(listPolyCourses(db)[0]).toEqual(inf3710Fixture);
   });
+  it('accepte une version de critère en texte', () => {
+    const db = openDb(':memory:');
+    upsertUniversity(db, ntuFixture);
+    upsertPolyCourses(db, [inf3710Fixture]);
+    db.prepare("INSERT INTO criterion_versions (version, params_hash, params_json) VALUES ('v0', 'h', '{}')").run();
+    db.prepare("INSERT INTO host_courses (id, university_id, code, title, description, language, terms_json, level, source_url, collected_at) VALUES (1, 'ntu-tw', 'CSIE1000', 't', 'd', 'en', '[]', 'undergrad', 'https://example.org', '2026-11-10')").run();
+    db.prepare("INSERT INTO matches (poly_sigle, host_course_id, criterion_version, notions_found, notions_missing, notion_sims, content_score, content_band, workload, text_used) VALUES ('INF3710', 1, 'v0', '[]', '[]', '{}', 0.5, 'partiel', 'conforme', 'd')").run();
+    expect(db.prepare('SELECT version FROM criterion_versions').get()).toEqual({ version: 'v0' });
+    expect(db.prepare('SELECT criterion_version FROM matches').get()).toEqual({ criterion_version: 'v0' });
+  });
 });

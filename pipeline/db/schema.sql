@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS collection_runs (
 );
 
 CREATE TABLE IF NOT EXISTS criterion_versions (
-  version INTEGER PRIMARY KEY,
+  version TEXT PRIMARY KEY,
   params_hash TEXT NOT NULL,
   params_json TEXT NOT NULL,
   frozen_at TEXT
@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS embeddings (
 CREATE TABLE IF NOT EXISTS matches (
   poly_sigle TEXT NOT NULL REFERENCES poly_courses(sigle),
   host_course_id INTEGER NOT NULL REFERENCES host_courses(id),
-  criterion_version INTEGER NOT NULL REFERENCES criterion_versions(version),
+  criterion_version TEXT NOT NULL REFERENCES criterion_versions(version),
   notions_found TEXT NOT NULL,
   notions_missing TEXT NOT NULL,
   notion_sims TEXT NOT NULL,
