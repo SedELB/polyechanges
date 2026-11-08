@@ -59,3 +59,19 @@
 .pair__workload[data-workload='trop_lourde'] {
   color: var(--level-mid);
 }
+
+.pair__descs {
+  display: grid;
+  gap: var(--space-3);
+}
+
+@media (min-width: 720px) {
+  .pair__descs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pair__calc {
+  margin: 0;
+  padding-left: var(--space-5);
+}

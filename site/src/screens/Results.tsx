@@ -13,6 +13,7 @@ export function Results({
   term,
   selectedSigles,
   departureYear,
+  today,
   onTermChange,
   onOtherCountry,
 }: {
@@ -21,6 +22,7 @@ export function Results({
   term: PolyTerm;
   selectedSigles: string[];
   departureYear?: number;
+  today?: Date;
   onTermChange: (term: PolyTerm) => void;
   onOtherCountry: () => void;
 }) {
@@ -28,7 +30,7 @@ export function Results({
     () => rankUniversities({ data, countryCode, term, selectedSigles }),
     [data, countryCode, term, selectedSigles],
   );
-  const year = departureYear ?? defaultDepartureYear(term);
+  const year = departureYear ?? defaultDepartureYear(term, today);
   const nothingCovered = ranked.every((r) => r.covered === 0);
 
   return (

@@ -1,10 +1,12 @@
 import type { PolyTerm, TermDates } from '../../../shared/types';
 
-/** Année du prochain départ : l'automne commence en septembre, l'hiver en janvier. */
+/**
+ * Année du départ : l'automne commence en septembre (avant septembre, c'est l'année en cours),
+ * l'hiver suivant commence l'année d'après.
+ */
 export function departureYear(term: PolyTerm, now: Date = new Date()): number {
-  const year = now.getFullYear();
-  if (term === 'automne') return now.getMonth() < 8 ? year : year + 1;
-  return now.getMonth() < 1 ? year : year + 1;
+  const fall = now.getMonth() < 8 ? now.getFullYear() : now.getFullYear() + 1;
+  return term === 'automne' ? fall : fall + 1;
 }
 
 /** « 2026-2027 » quand les dates datent d'une année antérieure au départ, sinon null. */

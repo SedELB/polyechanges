@@ -6,7 +6,7 @@ import { expectNoForbiddenWords } from './test/forbiddenWords';
 
 describe('App', () => {
   it('affiche le bandeau et la première question', async () => {
-    render(<App load={async () => fixtureData} />);
+    render(<App load={async () => fixtureData} today={new Date('2026-11-10T12:00:00')} />);
     expect(await screen.findByText('Où voulez-vous aller ?')).toBeInTheDocument();
     expect(screen.getByText(/Projet étudiant non officiel/)).toBeInTheDocument();
     expect(screen.getByText(/critère v0/)).toBeInTheDocument();
@@ -21,14 +21,14 @@ describe('App', () => {
   });
 
   it('choisir un pays dans la carte quitte le premier écran', async () => {
-    render(<App load={async () => fixtureData} />);
+    render(<App load={async () => fixtureData} today={new Date('2026-11-10T12:00:00')} />);
     fireEvent.click(await screen.findByRole('button', { name: 'Taïwan, 3 universités' }));
     expect(screen.queryByText('Où voulez-vous aller ?')).toBeNull();
     expect(screen.getByText(/Projet étudiant non officiel/)).toBeInTheDocument();
   });
 
   it('de la carte aux cours : choisir des cours active le bouton, et on peut revenir', async () => {
-    render(<App load={async () => fixtureData} />);
+    render(<App load={async () => fixtureData} today={new Date('2026-11-10T12:00:00')} />);
     fireEvent.click(await screen.findByRole('button', { name: 'Taïwan, 3 universités' }));
     expect(screen.getByRole('heading', { name: 'Quels cours veux-tu faire là-bas ?' })).toBeInTheDocument();
     const next = screen.getByRole('button', { name: 'Voir les universités' });
@@ -51,7 +51,7 @@ describe('App', () => {
 
 describe('App : résultats', () => {
   it('des cours aux résultats, et retour', async () => {
-    render(<App load={async () => fixtureData} />);
+    render(<App load={async () => fixtureData} today={new Date('2026-11-10T12:00:00')} />);
     fireEvent.click(await screen.findByRole('button', { name: 'Taïwan, 3 universités' }));
     fireEvent.click(screen.getByRole('checkbox', { name: /INF3710/ }));
     fireEvent.click(screen.getByRole('checkbox', { name: /LOG3430/ }));
@@ -70,7 +70,7 @@ describe('App : résultats', () => {
   });
 
   it('sans équivalent, « Choisir un autre pays » ramène à la carte', async () => {
-    render(<App load={async () => fixtureData} />);
+    render(<App load={async () => fixtureData} today={new Date('2026-11-10T12:00:00')} />);
     fireEvent.click(await screen.findByRole('button', { name: 'Japon, 1 université' }));
     fireEvent.click(screen.getByRole('checkbox', { name: /INF2610/ }));
     fireEvent.click(screen.getByRole('button', { name: 'Voir les universités' }));

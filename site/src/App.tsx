@@ -11,7 +11,7 @@ type Loaded = { status: 'loading' } | { status: 'error' } | { status: 'ready'; d
 
 const defaultLoad = () => loadSiteData(import.meta.env.BASE_URL);
 
-export function App({ load = defaultLoad }: { load?: () => Promise<SiteData> }) {
+export function App({ load = defaultLoad, today = new Date() }: { load?: () => Promise<SiteData>; today?: Date }) {
   const [loaded, setLoaded] = useState<Loaded>({ status: 'loading' });
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -72,6 +72,7 @@ export function App({ load = defaultLoad }: { load?: () => Promise<SiteData> }) 
               countryCode={state.countryCode}
               term={state.term}
               selectedSigles={state.selectedSigles}
+              today={today}
               onTermChange={(term) => dispatch({ type: 'setTerm', term })}
               onOtherCountry={() => dispatch({ type: 'goto', step: 'pays' })}
             />

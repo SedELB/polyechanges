@@ -74,9 +74,14 @@ describe('rankUniversities', () => {
 });
 
 describe('departureYear', () => {
-  it('donne l’année du prochain départ', () => {
-    expect(departureYear('automne', new Date('2026-11-10'))).toBe(2027);
-    expect(departureYear('automne', new Date('2026-03-01'))).toBe(2026);
-    expect(departureYear('hiver', new Date('2026-11-10'))).toBe(2027);
+  it.each([
+    ['2026-03-01', 2026, 2027],
+    ['2026-11-10', 2027, 2028],
+    ['2026-12-31', 2027, 2028],
+    ['2027-01-15', 2027, 2028],
+    ['2027-09-01', 2028, 2029],
+  ])('le %s : automne %i, hiver %i', (day, fall, winter) => {
+    expect(departureYear('automne', new Date(day + 'T12:00:00'))).toBe(fall);
+    expect(departureYear('hiver', new Date(day + 'T12:00:00'))).toBe(winter);
   });
 });

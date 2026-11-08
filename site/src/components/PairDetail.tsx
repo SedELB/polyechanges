@@ -1,4 +1,4 @@
-import { hostContactHours } from '../../../shared/workload';
+import { explainWorkload, hostContactHours } from '../../../shared/workload';
 import type { SiteData } from '../../../shared/siteData';
 import type { HostTerm, Level, PolyCourse, University, Workload } from '../../../shared/types';
 import type { Candidate, PairResult } from '../logic/rank';
@@ -15,41 +15,53 @@ const WORKLOAD_TEXT: Record<Workload, string> = {
   inconnue: 'Charge inconnue : crédits ou heures non publiés',
 };
 
+const fmt = (n: number): string => String(Math.round(n * 10) / 10).replace(".", ",");
+const pct = (g: number): string => `${g > 0 ? "+" : g < 0 ? "−" : ""}${fmt(Math.abs(g) * 100)} %`;
+
 function WorkloadBlock({ candidate, poly, university, data }: { candidate: Candidate; poly: PolyCourse; university: University; data: SiteData }) {
-  const { course, match } = candidate;
+  const { course } = candidate;
   const tolerance = Math.round(data.meta.workloadTolerance * 100);
   const [lecture, lab] = poly.triplet;
-  let host: string;
-  let rule: string;
-  if (university.creditSystem === 'ECTS') {
-    host = course.credits === null ? 'ECTS non publiés' : `${course.credits} ECTS`;
-    rule = `Poly : ${poly.credits} crédits, comparés aux ECTS d’accueil`;
-  } else {
-    const hours = hostContactHours(course, university.contactHoursPerCredit);
-    const derived = course.contactHours === null && course.credits !== null && hours !== null;
-    host =
-      hours === null
-        ? 'heures de contact non publiées'
-        : derived
-          ? `${course.credits} crédits × ${university.contactHoursPerCredit} h = ${hours} h de contact`
-          : `${hours} h de contact`;
-    rule = `Poly : ${poly.credits} crédits (cours ${lecture} h, labo ${lab} h par semaine, ${data.meta.polyWeeks} semaines)`;
-  }
+  const hours = hostContactHours(course, university.contactHoursPerCredit);
+  const ects = university.creditSystem === "ECTS";
+  const e = explainWorkload(
+    ects
+      ? { system: "ECTS", hostEcts: course.credits, polyCredits: poly.credits }
+      : { system: "local", hostContactHours: hours, polyTriplet: poly.triplet, polyWeeks: data.meta.polyWeeks },
+    data.meta.workloadTolerance,
+  );
+  const unit = ects ? "ECTS" : "h";
+  const expectedHow = ects
+    ? `2 × ${poly.credits} crédits Poly`
+    : `${lecture} h de cours + ${lab} h de labo × ${data.meta.polyWeeks} semaines`;
+  const hereHow = ects
+    ? "ECTS publiés"
+    : course.contactHours !== null
+      ? "heures de contact publiées"
+      : `${course.credits} crédits × ${university.contactHoursPerCredit} h`;
   return (
     <div className="pair__block">
-      <p className="pair__workload" data-workload={match.workload}>
-        {WORKLOAD_TEXT[match.workload]}
+      <p className="pair__workload" data-workload={e.status}>
+        {WORKLOAD_TEXT[e.status]}
       </p>
+      <ul className="pair__calc small">
+        <li>
+          Attendu : {fmt(e.expected)} {unit}
+          {ects ? "" : " de contact"} ({expectedHow})
+        </li>
+        <li>{e.actual === null ? "Ici : non publié" : `Ici : ${fmt(e.actual)} ${unit} (${hereHow})`}</li>
+        <li>
+          Accepté : entre {fmt(e.low)} {unit} et {fmt(e.high)} {unit} (tolérance {tolerance} %)
+        </li>
+        {e.gap !== null && <li>Écart : {pct(e.gap)}</li>}
+      </ul>
       <p className="small">
-        Université d’accueil : {host}. {rule}. Tolérance {tolerance} %.
-      </p>
-      <p className="small">
-        Système de crédits : {university.creditSystem}{' '}
+        Système de crédits : {university.creditSystem}{" "}
         <FactSource label="système de crédits" provenance={university.provenance.creditSystem} />
-        {university.creditSystem === 'local' && university.contactHoursPerCredit !== null && (
+        {university.creditSystem === "local" && university.contactHoursPerCredit !== null && (
           <>
-            {' '}
-            · {university.contactHoursPerCredit} h de contact par crédit{' '}
+            {" "}
+            · {university.contactHoursPerCredit} h de contact par crédit{" "}
             <FactSource label="heures par crédit" provenance={university.provenance.contactHoursPerCredit} />
           </>
         )}
@@ -90,7 +102,18 @@ function CandidateDetail({ candidate, poly, university, data, heading }: { candi
         </span>{' '}
         <span className="small">contenu couvert à {Math.round(match.contentScore * 100)} %</span>
       </p>
-      <p className="pair__desc">{course.description}</p>
+      <div className="pair__descs">
+        <div>
+          <strong>
+            À Poly : {poly.sigle}, {poly.title}
+          </strong>
+          <p className="pair__desc">{poly.description}</p>
+        </div>
+        <div>
+          <strong>Ici : {course.code}</strong>
+          <p className="pair__desc">{course.description}</p>
+        </div>
+      </div>
       <div className="pair__notions">
         <NotionList title="Notions trouvées" ids={match.notionsFound} label={label} />
         <NotionList title="Notions manquantes" ids={match.notionsMissing} label={label} />
@@ -120,12 +143,6 @@ function CandidateDetail({ candidate, poly, university, data, heading }: { candi
 export function PairDetail({ pair, poly, university, data }: { pair: PairResult; poly: PolyCourse; university: University; data: SiteData }) {
   return (
     <div className="pair">
-      <div className="pair__block">
-        <h4 className="pair__cand-title">
-          {poly.sigle}, {poly.title}
-        </h4>
-        <p className="pair__desc">{poly.description}</p>
-      </div>
       {pair.best ? (
         <CandidateDetail candidate={pair.best} poly={poly} university={university} data={data} heading="Meilleur candidat" />
       ) : (
