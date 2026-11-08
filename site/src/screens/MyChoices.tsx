@@ -1,7 +1,8 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { SiteData } from '../../../shared/siteData';
 import type { PolyTerm } from '../../../shared/types';
 import { ContractDraftView } from '../components/ContractDraft';
+import { loadManual, saveManual } from '../logic/choices';
 import { buildContractDraft, type ManualEntry } from '../logic/contract';
 import { rankUniversities, type RankedUniversity } from '../logic/rank';
 import './MyChoices.css';
@@ -21,7 +22,17 @@ export function MyChoices({
   onRemove: (id: string) => void;
   onBack: () => void;
 }) {
-  const [manual, setManual] = useState<Record<string, ManualEntry[]>>({});
+  const [manual, setManual] = useState<Record<string, ManualEntry[]>>(() => loadManual());
+
+  // Les ajouts des universités qui ne sont plus gardées sont oubliés.
+  useEffect(() => {
+    setManual((prev) => {
+      const kept = Object.fromEntries(Object.entries(prev).filter(([id]) => ids.includes(id)));
+      if (Object.keys(kept).length === Object.keys(prev).length) return prev;
+      saveManual(kept);
+      return kept;
+    });
+  }, [ids]);
 
   const chosen = useMemo(() => {
     const out: RankedUniversity[] = [];
@@ -65,7 +76,12 @@ export function MyChoices({
           manual: entries,
           meta: data.meta,
         });
-        const update = (next: ManualEntry[]) => setManual((prev) => ({ ...prev, [r.university.id]: next }));
+        const update = (next: ManualEntry[]) => {
+          const all = { ...manual, [r.university.id]: next };
+          if (next.length === 0) delete all[r.university.id];
+          setManual(all);
+          saveManual(all);
+        };
         return (
           <article key={r.university.id} className="choices__uni card" aria-label={r.university.name}>
             <header className="choices__head">

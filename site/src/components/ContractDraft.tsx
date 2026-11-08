@@ -18,6 +18,30 @@ export const CONTRACT_REMINDER =
 
 const HEADER = ['Cours d’accueil', 'Titre d’accueil', 'Crédits d’accueil', 'Cours Poly', 'Titre Poly', 'Crédits Poly'];
 
+/** Copie via l’API du presse-papiers, sinon via un champ temporaire. Lève une erreur si les deux échouent. */
+export async function copyText(text: string): Promise<void> {
+  if (navigator.clipboard?.writeText) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return;
+    } catch {
+      // on essaie la méthode de secours
+    }
+  }
+  const area = document.createElement('textarea');
+  area.value = text;
+  area.setAttribute('readonly', '');
+  area.style.position = 'fixed';
+  area.style.opacity = '0';
+  document.body.appendChild(area);
+  try {
+    area.select();
+    if (!document.execCommand('copy')) throw new Error('copie refusée');
+  } finally {
+    document.body.removeChild(area);
+  }
+}
+
 /** Tableau en texte tabulé, collable dans un tableur. */
 export function draftToText(draft: Draft): string {
   const lines = draft.rows.map((r) =>
@@ -106,14 +130,13 @@ export function ContractDraftView({
   const printRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState<'ok' | 'fail' | null>(null);
   const bySigle = new Map(pairs.map((p) => [p.polySigle, p.best?.course]));
-  const firstManual = draft.rows.findIndex((r) => r.manual);
   const e = draft.explanation;
   const unit = e.kind === 'ECTS' ? 'ECTS' : 'h';
   const tableName = `Ébauche de contrat, ${university.name}`;
 
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(draftToText(draft));
+      await copyText(draftToText(draft));
       setCopied('ok');
     } catch {
       setCopied('fail');
@@ -149,9 +172,10 @@ export function ContractDraftView({
             </thead>
             <tbody>
               {draft.rows.map((r, i) => {
+                const manualIndex = r.manual ? draft.rows.slice(0, i).filter((x) => x.manual).length : -1;
                 const course = r.manual ? undefined : bySigle.get(r.polyCode);
                 return (
-                  <tr key={`${r.polyCode}-${r.hostCode}-${i}`}>
+                  <tr key={r.manual ? `manuel-${manualIndex}-${r.hostCode}` : `${r.polyCode}-${r.hostCode}`}>
                     <td>
                       {course ? (
                         <a href={course.sourceUrl} target="_blank" rel="noreferrer">
@@ -171,7 +195,7 @@ export function ContractDraftView({
                     <td>{r.polyCredits}</td>
                     <td className="contract__noprint">
                       {r.manual && (
-                        <button type="button" className="btn btn--ghost contract__remove" onClick={() => onRemoveManual(i - firstManual)}>
+                        <button type="button" className="btn btn--ghost contract__remove" onClick={() => onRemoveManual(manualIndex)}>
                           <span aria-hidden="true">×</span>
                           <span className="visually-hidden">Retirer {r.hostCode}</span>
                         </button>

@@ -85,3 +85,37 @@ describe('departureYear', () => {
     expect(departureYear('hiver', new Date(day + 'T12:00:00'))).toBe(winter);
   });
 });
+
+describe('un cours d’accueil pour un seul cours de Poly', () => {
+  // CSIE3010 (id 1) est le meilleur candidat de INF3710 ; on en fait aussi le meilleur de LOG3430 (même niveau et même score : INF3710 passe avant par son sigle).
+  const m = fixtureData.matches.find((x) => x.polySigle === 'INF3710' && x.hostCourseId === 1)!;
+  const data = {
+    ...fixtureData,
+    matches: [...fixtureData.matches, { ...m, polySigle: 'LOG3430', hostCourseId: 1, contentScore: 1 }],
+  };
+  const ntu = (sigles: string[]) =>
+    rankUniversities({ data, countryCode: 'TW', term: 'automne', selectedSigles: sigles }).find((u) => u.university.id === 'ntu-tw')!;
+
+  it('ne donne le cours qu’à une paire, l’autre prend son candidat suivant', () => {
+    const r = ntu(['INF3710', 'LOG3430']);
+    const [inf, log] = r.pairs;
+    expect(inf!.best?.course.code).toBe('CSIE3010');
+    expect(log!.best?.course.code).toBe('CSIE3020');
+    expect(r.covered).toBe(2);
+  });
+
+  it('sans autre candidat, la paire reste non couverte', () => {
+    const only = { ...data, matches: data.matches.filter((x) => !(x.polySigle === 'LOG3430' && x.hostCourseId !== 1)) };
+    const r = rankUniversities({ data: only, countryCode: 'TW', term: 'automne', selectedSigles: ['INF3710', 'LOG3430'] }).find((u) => u.university.id === 'ntu-tw')!;
+    expect(r.pairs[0]!.best?.course.code).toBe('CSIE3010');
+    expect(r.pairs[1]!.best).toBeNull();
+    expect(r.covered).toBe(1);
+  });
+
+  it('un cours déjà attribué n’est plus proposé en alternative', () => {
+    const r = ntu(['INF3710', 'LOG3430']);
+    const ids = r.pairs.flatMap((p) => [p.best, ...p.alternatives]).filter(Boolean).map((c) => c!.course.id);
+    expect(r.pairs[1]!.alternatives.map((c) => c.course.code)).toEqual(['CSIE3030']);
+    expect(ids.filter((id) => id === 1)).toHaveLength(1);
+  });
+});

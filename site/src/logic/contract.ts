@@ -58,9 +58,14 @@ export function buildContractDraft(input: {
   const polyBySigle = new Map(polyCourses.map((c) => [c.sigle, c]));
 
   const matched: { host: HostCourseOut; poly: PolyCourse }[] = [];
+  const usedHosts = new Set<number>();
   for (const pair of pairs) {
     const poly = polyBySigle.get(pair.polySigle);
-    if (pair.best && poly) matched.push({ host: pair.best.course, poly });
+    // Sécurité : un cours d’accueil ne compte jamais deux fois (le classement l’évite déjà).
+    if (pair.best && poly && !usedHosts.has(pair.best.course.id)) {
+      usedHosts.add(pair.best.course.id);
+      matched.push({ host: pair.best.course, poly });
+    }
   }
 
   const rows: ContractRow[] = [

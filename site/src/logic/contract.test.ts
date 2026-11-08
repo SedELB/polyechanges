@@ -71,6 +71,13 @@ describe('buildContractDraft', () => {
     expect(d.explanation).toMatchObject({ kind: 'heures', expected: 130, actual: 108, gap: -0.169 });
   });
 
+  it('ne compte jamais deux fois le même cours d’accueil', () => {
+    const shared = host(1, 'A1', 'ntu-tw', 3);
+    const d = buildContractDraft({ university: ntu, pairs: [pair('INF3710', shared), pair('LOG3430', shared)], polyCourses, manual: [], meta });
+    expect(d.rows.filter((r) => !r.manual).map((r) => r.hostCode)).toEqual(['A1']);
+    expect(d.totalPolyCredits).toBe(3);
+  });
+
   it('ECTS : somme des crédits d’accueil contre 2 × crédits Poly', () => {
     const e = [pair('INF3710', host(7, 'D1', 'nycu-tw', 6)), pair('LOG3430', host(8, 'D2', 'nycu-tw', 6))];
     const d = buildContractDraft({ university: nycu, pairs: e, polyCourses, manual: [], meta });

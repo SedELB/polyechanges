@@ -50,7 +50,8 @@ export function rankUniversities(input: {
   const ranked = data.universities
     .filter((u) => u.countryCode === countryCode)
     .map((university): RankedUniversity => {
-      const pairs = sigles.map((polySigle): PairResult => {
+      const candidatesBySigle = new Map<string, Candidate[]>();
+      for (const polySigle of sigles) {
         const candidates: Candidate[] = [];
         for (const match of data.matches) {
           if (match.polySigle !== polySigle) continue;
@@ -60,7 +61,32 @@ export function rankUniversities(input: {
           else if (course.terms.includes(hostTerm)) candidates.push({ match, course, termUnknown: false });
         }
         candidates.sort(compareCandidates);
-        return { polySigle, best: candidates[0] ?? null, alternatives: candidates.slice(1, 1 + MAX_ALTERNATIVES) };
+        candidatesBySigle.set(polySigle, candidates);
+      }
+
+      // Un cours d'accueil n'est attribué qu'à un seul cours de Poly : on attribue d'abord les meilleures paires.
+      const all = sigles.flatMap((polySigle) => (candidatesBySigle.get(polySigle) ?? []).map((c) => ({ polySigle, c })));
+      all.sort(
+        (x, y) =>
+          LEVEL_RANK[y.c.match.level] - LEVEL_RANK[x.c.match.level] ||
+          y.c.match.contentScore - x.c.match.contentScore ||
+          (x.polySigle < y.polySigle ? -1 : x.polySigle > y.polySigle ? 1 : 0) ||
+          (x.c.course.code < y.c.course.code ? -1 : x.c.course.code > y.c.course.code ? 1 : 0),
+      );
+      const bestBySigle = new Map<string, Candidate>();
+      const hostOwner = new Map<number, string>();
+      for (const { polySigle, c } of all) {
+        if (bestBySigle.has(polySigle) || hostOwner.has(c.course.id)) continue;
+        bestBySigle.set(polySigle, c);
+        hostOwner.set(c.course.id, polySigle);
+      }
+
+      const pairs = sigles.map((polySigle): PairResult => {
+        const best = bestBySigle.get(polySigle) ?? null;
+        const alternatives = (candidatesBySigle.get(polySigle) ?? [])
+          .filter((c) => c !== best && !hostOwner.has(c.course.id))
+          .slice(0, MAX_ALTERNATIVES);
+        return { polySigle, best, alternatives };
       });
       return {
         university,

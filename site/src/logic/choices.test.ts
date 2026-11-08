@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { addChoice, loadChoices, saveChoices, STORAGE_KEY } from './choices';
+import { addChoice, loadChoices, loadManual, MANUAL_STORAGE_KEY, saveChoices, saveManual, STORAGE_KEY } from './choices';
 
 beforeEach(() => localStorage.clear());
 
@@ -26,5 +26,37 @@ describe('choix', () => {
     expect(loadChoices(localStorage)).toEqual([]);
     localStorage.setItem(STORAGE_KEY, '["a","b","c","d"]');
     expect(loadChoices(localStorage)).toEqual(['a', 'b', 'c']);
+  });
+});
+
+describe('cours ajoutés à la main', () => {
+  const entry = { kind: 'hors_genie' as const, hostCode: 'CHN101', hostTitle: 'Mandarin', hostCredits: null, polyCredits: 2 };
+  it('enregistre et relit', () => {
+    saveManual({ 'ntu-tw': [entry] }, localStorage);
+    expect(localStorage.getItem(MANUAL_STORAGE_KEY)).toContain('CHN101');
+    expect(loadManual(localStorage)).toEqual({ 'ntu-tw': [entry] });
+  });
+  it('écarte le contenu invalide', () => {
+    localStorage.setItem(MANUAL_STORAGE_KEY, '{oups');
+    expect(loadManual(localStorage)).toEqual({});
+    localStorage.setItem(MANUAL_STORAGE_KEY, '[1]');
+    expect(loadManual(localStorage)).toEqual({});
+    const bad = [
+      { ...entry, kind: 'autre' },
+      { ...entry, hostCode: ' ' },
+      { ...entry, hostCredits: -1 },
+      { ...entry, hostCredits: 'x' },
+      { ...entry, polyCredits: 0 },
+      { ...entry, polyCredits: 10 },
+      { ...entry, polyCredits: 2.5 },
+      null,
+    ];
+    localStorage.setItem(MANUAL_STORAGE_KEY, JSON.stringify({ 'ntu-tw': [...bad, entry], 'nycu-tw': bad, x: 3 }));
+    expect(loadManual(localStorage)).toEqual({ 'ntu-tw': [entry] });
+  });
+  it('marche sans stockage du navigateur', () => {
+    const broken = { getItem() { throw new Error('bloqué'); }, setItem() { throw new Error('bloqué'); } } as unknown as Storage;
+    expect(loadManual(broken)).toEqual({});
+    expect(() => saveManual({ 'ntu-tw': [entry] }, broken)).not.toThrow();
   });
 });

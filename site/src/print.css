@@ -1,5 +1,6 @@
 /* À l’impression, seul le tableau de l’ébauche choisie est imprimé. */
 @media print {
+  /* Filet de sécurité : tout ce qui reste en dehors du tableau est invisible. */
   body * {
     visibility: hidden;
   }
@@ -9,15 +10,30 @@
     visibility: visible;
   }
 
+  /* Le reste de la page ne prend aucune place, pour éviter les pages blanches. */
+  body:has(.is-printing) .banner,
+  body:has(.is-printing) main.page > :not(.choices),
+  body:has(.is-printing) .choices > :not(.choices__uni),
+  body:has(.is-printing) .choices__uni:not(:has(.is-printing)),
+  body:has(.is-printing) .choices__head,
+  body:has(.is-printing) .contract > :not(.contract-print),
+  .contract__noprint {
+    display: none !important;
+  }
+
+  .contract__scroll {
+    overflow: visible;
+  }
+
+  .choices__uni {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
   .contract-print.is-printing {
-    position: absolute;
-    inset: 0 auto auto 0;
     width: 100%;
     background: #fff;
     color: #000;
-  }
-
-  .contract__noprint {
-    display: none;
   }
 }
