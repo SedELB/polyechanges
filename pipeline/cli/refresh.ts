@@ -1,13 +1,36 @@
 import { spawnSync } from 'node:child_process';
+import { openDb } from '../db/open.js';
 
-/** Étapes du rafraîchissement, dans l'ordre. La comparaison et l'export s'y ajouteront. */
-const STEPS: { label: string; args: string[] }[] = [
+/** Étapes de collecte, dans l'ordre. La comparaison et l'export suivent, pour une version du critère. */
+const COLLECT_STEPS: { label: string; args: string[] }[] = [
   { label: 'partners:check', args: ['run', 'partners:check'] },
   { label: 'collect -- all', args: ['run', 'collect', '--', 'all'] },
   { label: 'refresh-sources', args: ['run', 'refresh-sources'] },
 ];
 
+/** Version gelée la plus récente de la base, ou nulle. */
+function latestFrozenVersion(): string | null {
+  const db = openDb('data/polyechanges.sqlite');
+  try {
+    const rows = db.prepare('SELECT version FROM criterion_versions WHERE frozen_at IS NOT NULL').all() as { version: string }[];
+    const numbers = rows.map((r) => ({ v: r.version, n: Number(r.version.slice(1)) })).sort((a, b) => b.n - a.n);
+    return numbers[0]?.v ?? null;
+  } finally {
+    db.close();
+  }
+}
+
 function main(): number {
+  const version = latestFrozenVersion() ?? process.argv[2];
+  if (!version) {
+    console.error('Aucune version du critère gelée : indique la version à comparer et exporter (npm run refresh -- v0).');
+    return 1;
+  }
+  const STEPS = [
+    ...COLLECT_STEPS,
+    { label: `compare -- ${version}`, args: ['run', 'compare', '--', version] },
+    { label: `export -- ${version}`, args: ['run', 'export', '--', version] },
+  ];
   for (const [i, step] of STEPS.entries()) {
     console.log(`Étape ${i + 1} sur ${STEPS.length} : ${step.label}`);
     const r = spawnSync('npm', step.args, { stdio: 'inherit', shell: true });

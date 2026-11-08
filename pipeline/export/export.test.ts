@@ -1,0 +1,175 @@
+import { mkdirSync, mkdtempSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { basename, join } from 'node:path';
+import { beforeEach, describe, expect, it } from 'vitest';
+import { SITE_DATA_FILES } from '../../shared/siteData.js';
+import type { HostCourseInput, PolyCourse, Provenance, University } from '../../shared/types.js';
+import { applyCollection } from '../db/hostCourses.js';
+import { replaceMatches, type MatchRow } from '../db/matches.js';
+import { openDb, type Db } from '../db/open.js';
+import { upsertPolyCourses } from '../db/polyCourses.js';
+import { recordRun } from '../db/runs.js';
+import { upsertUniversity } from '../db/universities.js';
+import { exportSiteData } from './export.js';
+
+const prov: Provenance = {
+  url: 'https://u.example', retrievedAt: '2026-01-01', sha256: 'abc', locator: { page: 1, line: 2 }, quote: 'Taipei',
+};
+
+const uni = (id: string, provenance: University['provenance'] = { city: prov }): University => ({
+  id, name: id, moveOnName: id, countryCode: 'TW', city: 'x', lat: 0, lng: 0, website: 'https://x',
+  catalogUrl: null, creditSystem: 'ECTS', contactHoursPerCredit: null,
+  terms: { fall: null, spring: null }, restrictions: null, exchangeContact: null, catalogPublic: true, provenance,
+});
+
+const poly = (sigle: string, eligible = true): PolyCourse => ({
+  sigle, title: 'T', description: 'D', credits: 3, triplet: [3, 1.5, 4.5], prerequisites: '',
+  status: 'optionnel', eligible, ineligibleReason: eligible ? null : 'non', compared: eligible,
+  groups: ['Bloc A'], sourceUrl: 'https://poly.example', collectedAt: '2026-01-01',
+  sourceLocator: { sha256: 'def', page: 1, line: 3 },
+});
+
+const course = (code: string, over: Partial<HostCourseInput> = {}): HostCourseInput => ({
+  code, title: 'Databases', description: 'SQL', outline: null, credits: 6, contactHours: null,
+  language: 'en', terms: ['fall'], level: 'undergrad', sourceUrl: 'https://h.example/' + code, ...over,
+});
+
+const match = (polySigle: string, hostCourseId: number, level: MatchRow['level']): MatchRow => ({
+  polySigle, hostCourseId, notionsFound: ['sql'], notionsMissing: [], notionSims: { sql: 0.9 },
+  contentScore: 1, contentBand: 'tres', workload: 'conforme', level, textUsed: 'description',
+});
+
+const hostId = (db: Db, code: string) =>
+  (db.prepare('SELECT id FROM host_courses WHERE code = ?').get(code) as { id: number }).id;
+
+let db: Db;
+let tmp: string;
+let criterionDir: string;
+
+beforeEach(() => {
+  tmp = mkdtempSync(join(tmpdir(), 'export-'));
+  criterionDir = mkdtempSync(join(tmpdir(), 'criterion-'));
+  mkdirSync(join(criterionDir, 'v0'));
+  writeFileSync(
+    join(criterionDir, 'v0', 'criterion.json'),
+    JSON.stringify({
+      version: 'v0',
+      model: {
+        slug: 'm', id: 'm', revision: 'r', dtype: 'fp32', pooling: 'mean', prefixes: { notion: '', passage: '' },
+        sizeMillions: 1, library: '@huggingface/transformers@4.3.2',
+      },
+      detectThreshold: 0.5, bandHigh: 0.7, bandLow: 0.4, workloadTolerance: 0.15, polyWeeks: 13,
+    }),
+  );
+  writeFileSync(join(criterionDir, 'v0', 'notions.json'), JSON.stringify({ INF3710: [{ id: 'sql', fr: 'SQL', en: 'SQL' }] }));
+
+  db = openDb(':memory:');
+  upsertUniversity(db, uni('ntu-tw'));
+  upsertUniversity(db, uni('a-tw'));
+  upsertPolyCourses(db, [poly('INF3710'), poly('ABC1000', false)]);
+  db.prepare("INSERT INTO sources (id, university_id, kind, url, reader) VALUES ('ntu-tw','ntu-tw','html','https://x','r')").run();
+  db.prepare(
+    "INSERT INTO snapshots (id, source_id, url, fetched_at, sha256, path, content_type) VALUES (1,'ntu-tw','https://x','2026-01-02','shaX','p','text/html')",
+  ).run();
+  applyCollection(
+    db, 'ntu-tw',
+    [course('B2'), course('A1', { language: 'unknown' }), course('O1', { language: 'other' })],
+    () => 1, '2026-01-02', () => ({ page: 2, line: 5 }),
+  );
+  // Cours retiré de la page : désactivé, jamais exporté.
+  applyCollection(db, 'a-tw', [course('Z9')], () => null, '2026-01-01');
+  db.prepare("UPDATE host_courses SET active = 0 WHERE code = 'Z9'").run();
+  db.prepare("INSERT INTO criterion_versions (version, params_hash, params_json) VALUES ('v0','h','{}')").run();
+  replaceMatches(db, 'v0', [
+    match('INF3710', hostId(db, 'B2'), 'elevee'),
+    match('INF3710', hostId(db, 'A1'), 'moyenne'),
+    match('INF3710', hostId(db, 'O1'), null),
+  ]);
+  recordRun(db, {
+    sourceId: 'ntu-tw', startedAt: '2026-01-02', status: 'ok', coursesFound: 3, previousCount: 3,
+    added: 0, removed: 0, modified: 0, failureReason: null,
+  });
+});
+
+const read = (name: string) => JSON.parse(readFileSync(join(tmp, `${name}.json`), 'utf8'));
+
+describe('exportSiteData', () => {
+  it('écrit les six fichiers, indentés de 2 espaces, avec saut de ligne final', async () => {
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    expect(readdirSync(tmp).sort()).toEqual(SITE_DATA_FILES.map((f) => `${f}.json`).sort());
+    const text = readFileSync(join(tmp, 'meta.json'), 'utf8');
+    expect(text.endsWith('}\n')).toBe(true);
+    expect(text).toContain('\n  "criterionVersion": "v0"');
+  });
+
+  it('deux exports successifs sont identiques octet par octet', async () => {
+    const other = mkdtempSync(join(tmpdir(), 'export-b-'));
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    await new Promise((r) => setTimeout(r, 5));
+    await exportSiteData(db, 'v0', other, criterionDir);
+    for (const f of SITE_DATA_FILES) {
+      expect(readFileSync(join(other, `${f}.json`)).equals(readFileSync(join(tmp, `${f}.json`)))).toBe(true);
+    }
+  });
+
+  it('remplace un export précédent sans laisser de dossier temporaire', async () => {
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    expect(readdirSync(tmp).sort()).toEqual(SITE_DATA_FILES.map((f) => `${f}.json`).sort());
+    expect(readdirSync(join(tmp, '..')).filter((n) => n === basename(tmp) + '.tmp' || n === basename(tmp) + '.old')).toEqual([]);
+  });
+
+  it('meta : date de collecte la plus récente, semaines et tolérance', async () => {
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    expect(read('meta')).toEqual({
+      criterionVersion: 'v0', generatedAt: '2026-01-02', polyWeeks: 13, workloadTolerance: 0.15,
+    });
+  });
+
+  it('n’exporte pas les paires de niveau null, triées par sigle puis cours d’accueil', async () => {
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    const matches = read('matches');
+    expect(matches).toHaveLength(2);
+    expect(matches.every((m: { level: unknown }) => m.level !== null)).toBe(true);
+    const ids = matches.map((m: { hostCourseId: number }) => m.hostCourseId);
+    expect(ids).toEqual([...ids].sort((a, b) => a - b));
+  });
+
+  it('exporte tous les cours de Poly, avec sections et position', async () => {
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    const list = read('poly-courses');
+    expect(list.map((c: PolyCourse) => c.sigle)).toEqual(['ABC1000', 'INF3710']);
+    expect(list[1].groups).toEqual(['Bloc A']);
+    expect(list[1].sourceLocator).toEqual({ sha256: 'def', page: 1, line: 3 });
+  });
+
+  it('exporte les cours d’accueil actifs en anglais ou de langue inconnue, avec leur copie brute', async () => {
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    const hosts = read('host-courses');
+    expect(hosts.map((h: { code: string }) => h.code)).toEqual(['B2', 'A1']);
+    expect(hosts[0]).toMatchObject({ sourcePage: 2, sourceLine: 5, snapshotSha256: 'shaX', collectedAt: '2026-01-02' });
+    expect(hosts[0]).not.toHaveProperty('outline');
+  });
+
+  it('exporte les universités avec leur provenance et les notions', async () => {
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    expect(read('universities').map((u: University) => u.id)).toEqual(['a-tw', 'ntu-tw']);
+    expect(read('universities')[0].provenance.city.quote).toBe('Taipei');
+    expect(read('notions').INF3710[0].id).toBe('sql');
+  });
+
+  it('bloque l’export si la dernière collecte a échoué', async () => {
+    recordRun(db, {
+      sourceId: 'ntu-tw', startedAt: '2026-01-05', status: 'failed', coursesFound: 0, previousCount: 3,
+      added: 0, removed: 0, modified: 0, failureReason: 'x',
+    });
+    await expect(exportSiteData(db, 'v0', tmp, criterionDir)).rejects.toThrow('ntu-tw');
+    expect(readdirSync(tmp)).toHaveLength(0);
+  });
+
+  it('bloque l’export si un fait d’université est périmé', async () => {
+    upsertUniversity(db, uni('a-tw', { city: { ...prov, stale: true } }));
+    await expect(exportSiteData(db, 'v0', tmp, criterionDir)).rejects.toThrow(/city.*a-tw/);
+    expect(readdirSync(tmp)).toHaveLength(0);
+  });
+});

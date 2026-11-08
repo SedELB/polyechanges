@@ -14,6 +14,7 @@
     "refresh-sources": "tsx pipeline/cli/sources.ts refresh",
     "refresh": "tsx pipeline/cli/refresh.ts",
     "compare": "tsx pipeline/cli/compare.ts",
+    "export": "tsx pipeline/cli/export.ts",
     "freeze": "tsx pipeline/cli/freeze.ts",
     "test:model": "cross-env RUN_MODEL_TESTS=1 vitest run pipeline/compare/determinism.model.test.ts"
   },
