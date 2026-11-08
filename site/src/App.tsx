@@ -2,6 +2,7 @@ import { useEffect, useReducer, useState } from 'react';
 import type { SiteData } from '../../shared/siteData';
 import { Banner } from './components/Banner';
 import { loadSiteData } from './data/loadSiteData';
+import { CoursePicker } from './screens/CoursePicker';
 import { WorldMap } from './screens/WorldMap';
 import { initialState, reducer } from './state';
 
@@ -44,6 +45,19 @@ export function App({ load = defaultLoad }: { load?: () => Promise<SiteData> }) 
             <WorldMap
               universities={loaded.data.universities}
               onSelect={(countryCode) => dispatch({ type: 'chooseCountry', countryCode })}
+            />
+          </>
+        )}
+        {loaded.status === 'ready' && state.step === 'cours' && (
+          <>
+            <button type="button" className="btn btn--ghost" onClick={() => dispatch({ type: 'goto', step: 'pays' })}>
+              Retour
+            </button>
+            <CoursePicker
+              courses={loaded.data.polyCourses}
+              selected={state.selectedSigles}
+              onChange={(sigles) => dispatch({ type: 'setCourses', sigles })}
+              onNext={() => dispatch({ type: 'goto', step: 'resultats' })}
             />
           </>
         )}

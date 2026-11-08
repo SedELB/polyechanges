@@ -26,4 +26,25 @@ describe('App', () => {
     expect(screen.queryByText('Où voulez-vous aller ?')).toBeNull();
     expect(screen.getByText(/Projet étudiant non officiel/)).toBeInTheDocument();
   });
+
+  it('de la carte aux cours : choisir des cours active le bouton, et on peut revenir', async () => {
+    render(<App load={async () => fixtureData} />);
+    fireEvent.click(await screen.findByRole('button', { name: 'Taïwan, 3 universités' }));
+    expect(screen.getByRole('heading', { name: 'Quels cours veux-tu faire là-bas ?' })).toBeInTheDocument();
+    const next = screen.getByRole('button', { name: 'Voir les universités' });
+    expect(next).toBeDisabled();
+    fireEvent.click(screen.getByRole('checkbox', { name: /INF3710/ }));
+    fireEvent.click(screen.getByRole('checkbox', { name: /LOG3430/ }));
+    expect(screen.getByText('6 crédits Poly')).toBeInTheDocument();
+    expect(next).toBeEnabled();
+    expectNoForbiddenWords(document.body);
+
+    fireEvent.click(screen.getByRole('button', { name: 'Retour' }));
+    expect(screen.getByText('Où voulez-vous aller ?')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Taïwan, 3 universités' }));
+    expect(screen.getByText('6 crédits Poly')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: 'Voir les universités' }));
+    expect(screen.queryByRole('heading', { name: 'Quels cours veux-tu faire là-bas ?' })).toBeNull();
+  });
 });

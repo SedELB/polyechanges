@@ -13,6 +13,7 @@ export type Action =
   | { type: 'goto'; step: Step }
   | { type: 'chooseCountry'; countryCode: CountryCode }
   | { type: 'toggleCourse'; sigle: string }
+  | { type: 'setCourses'; sigles: string[] }
   | { type: 'setTerm'; term: PolyTerm };
 
 export const initialState: AppState = { step: 'pays', countryCode: null, selectedSigles: [], term: 'automne' };
@@ -30,6 +31,8 @@ export function reducer(state: AppState, action: Action): AppState {
           ? state.selectedSigles.filter((s) => s !== action.sigle)
           : [...state.selectedSigles, action.sigle],
       };
+    case 'setCourses':
+      return { ...state, selectedSigles: action.sigles };
     case 'setTerm':
       return { ...state, term: action.term };
   }
