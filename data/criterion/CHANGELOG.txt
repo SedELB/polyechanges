@@ -1,0 +1,8 @@
+Journal des versions du critère de comparaison.
+
+v0 - 2026-11-10
+  Première version, provisoire.
+  Modèle : Xenova/all-MiniLM-L6-v2 (révision 751bff37182d3f1213fa05d7196b954e230abad9, fp32, moyenne des vecteurs, sans préfixe), via @huggingface/transformers 4.3.2.
+  Seuils de départ : détection d'une notion 0.55, contenu « très » à partir de 0.7, « partiel » à partir de 0.4, tolérance de charge 15 %.
+  Semaines de session à Poly : 13 (à vérifier : aucune source plus précise n'a été trouvée).
+  Grilles de notions : INF3710, LOG3430 et INF2610 seulement. Les grilles des autres cours comparés viendront plus tard.

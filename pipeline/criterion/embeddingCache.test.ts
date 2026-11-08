@@ -29,4 +29,13 @@ describe('createCachedEmbedder', () => {
     expect(await createCachedEmbedder(db, b).embed(['x'], 'passage')).toEqual([[2]]);
     expect(a.embed).toHaveBeenCalledTimes(2);
   });
+
+  it('arrondit les vecteurs neufs en Float32, comme ceux relus depuis la base', async () => {
+    const inner = { key: 'm@r@fp32', embed: vi.fn(async (t: string[]) => t.map(() => [0.1, 1 / 3])) };
+    const cached = createCachedEmbedder(openDb(':memory:'), inner);
+    const fresh = await cached.embed(['x'], 'passage');
+    const reread = await cached.embed(['x'], 'passage');
+    expect(fresh).toEqual(reread);
+    expect(fresh[0][0]).toBe(Math.fround(0.1));
+  });
 });

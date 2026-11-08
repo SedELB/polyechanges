@@ -26,7 +26,8 @@ export function createCachedEmbedder(db: Db, inner: Embedder): Embedder {
         if (vectors.length !== missing.length) {
           throw new Error(`L'embedder a renvoyé ${vectors.length} vecteurs pour ${missing.length} textes`);
         }
-        const rows = missing.map((m, i) => ({ hash: m.hash, vector: vectors[i] }));
+        // Float32 comme les vecteurs relus depuis la base : même valeur, qu'il soit neuf ou en cache.
+        const rows = missing.map((m, i) => ({ hash: m.hash, vector: vectors[i].map(Math.fround) }));
         putEmbeddings(db, inner.key, kind, rows);
         for (const r of rows) cached.set(r.hash, r.vector);
       }

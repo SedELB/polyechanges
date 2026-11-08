@@ -1,3 +1,5 @@
+import { createHash } from 'node:crypto';
+
 export interface ModelConfig {
   slug: string;
   id: string;
@@ -11,13 +13,19 @@ export interface ModelConfig {
 export type EmbedKind = 'notion' | 'passage';
 
 export interface Embedder {
-  /** `${id}@${revision}@${dtype}` */
+  /** `${id}@${revision}@${dtype}@${hash des réglages}` */
   key: string;
   embed(texts: string[], kind: EmbedKind): Promise<number[][]>;
 }
 
-export const embedderKey = (m: Pick<ModelConfig, 'id' | 'revision' | 'dtype'>): string =>
-  `${m.id}@${m.revision}@${m.dtype}`;
+/** Le court hash couvre pooling et préfixes : un réglage changé ne réutilise jamais d'anciens vecteurs. */
+export const embedderKey = (m: Pick<ModelConfig, 'id' | 'revision' | 'dtype' | 'pooling' | 'prefixes'>): string => {
+  const settings = createHash('sha256')
+    .update(JSON.stringify({ pooling: m.pooling, prefixes: m.prefixes }))
+    .digest('hex')
+    .slice(0, 8);
+  return `${m.id}@${m.revision}@${m.dtype}@${settings}`;
+};
 
 /** Embedder local (transformers.js). Le modèle est téléchargé une fois dans `cacheDir`. */
 export async function createLocalEmbedder(model: ModelConfig, cacheDir: string): Promise<Embedder> {
@@ -30,13 +38,13 @@ export async function createLocalEmbedder(model: ModelConfig, cacheDir: string):
   return {
     key: embedderKey(model),
     async embed(texts, kind) {
-      if (texts.length === 0) return [];
-      const prefix = model.prefixes[kind];
-      const output = await extractor(
-        texts.map((t) => prefix + t),
-        { pooling: model.pooling, normalize: true },
-      );
-      return output.tolist() as number[][];
+      const vectors: number[][] = [];
+      // Un texte à la fois : la composition d'un lot ne doit pas pouvoir modifier les vecteurs.
+      for (const t of texts) {
+        const output = await extractor([model.prefixes[kind] + t], { pooling: model.pooling, normalize: true });
+        vectors.push((output.tolist() as number[][])[0]);
+      }
+      return vectors;
     },
   };
 }

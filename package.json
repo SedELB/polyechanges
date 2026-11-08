@@ -12,7 +12,10 @@
     "source:find": "tsx pipeline/cli/sources.ts find",
     "verify-sources": "tsx pipeline/cli/sources.ts verify",
     "refresh-sources": "tsx pipeline/cli/sources.ts refresh",
-    "refresh": "tsx pipeline/cli/refresh.ts"
+    "refresh": "tsx pipeline/cli/refresh.ts",
+    "compare": "tsx pipeline/cli/compare.ts",
+    "freeze": "tsx pipeline/cli/freeze.ts",
+    "test:model": "cross-env RUN_MODEL_TESTS=1 vitest run pipeline/compare/determinism.model.test.ts"
   },
   "dependencies": {
     "@huggingface/transformers": "4.3.2",
@@ -25,6 +28,7 @@
   "devDependencies": {
     "@types/better-sqlite3": "^9.6.0",
     "@types/node": "^26.6.6",
+    "cross-env": "^10.1.0",
     "jsdom": "^29.1.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
