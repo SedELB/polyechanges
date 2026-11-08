@@ -1,0 +1,40 @@
+.termtoggle {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.termtoggle__label {
+  font-weight: 900;
+}
+
+.termtoggle__btn {
+  width: auto;
+  min-height: var(--tap);
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--text-md);
+}
+
+.termdates__list {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.termdates__uni {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-4);
+  align-items: baseline;
+}
+
+.termdates__row {
+  font-size: var(--text-sm);
+}
+
+.termdates__warn {
+  flex-basis: 100%;
+  color: var(--level-mid);
+  font-weight: 800;
+}

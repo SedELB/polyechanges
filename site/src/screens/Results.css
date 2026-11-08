@@ -1,0 +1,14 @@
+.results__note {
+  border-left-color: var(--teal);
+}
+
+.results__empty {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: start;
+}
+
+.results__list {
+  display: grid;
+  gap: var(--space-4);
+}

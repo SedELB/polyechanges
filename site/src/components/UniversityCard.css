@@ -1,0 +1,56 @@
+.ucard {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.ucard__head {
+  display: grid;
+  gap: var(--space-1);
+  justify-items: start;
+}
+
+.ucard__name {
+  font-size: var(--text-lg);
+  font-weight: 900;
+}
+
+.ucard__pairs {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ucard__pair {
+  border-top: 2px dashed var(--line);
+  padding-top: var(--space-2);
+}
+
+.ucard__toggle {
+  display: grid;
+  gap: var(--space-1);
+  width: 100%;
+  min-height: var(--tap);
+  padding: var(--space-2);
+  font: inherit;
+  text-align: left;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.ucard__toggle:hover {
+  background: var(--paper-2);
+}
+
+.ucard__pair[data-covered='false'] .ucard__summary {
+  color: var(--level-low);
+}
+
+.ucard__body {
+  display: grid;
+  gap: var(--space-2);
+}

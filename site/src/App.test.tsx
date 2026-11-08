@@ -48,3 +48,33 @@ describe('App', () => {
     expect(screen.queryByRole('heading', { name: 'Quels cours veux-tu faire là-bas ?' })).toBeNull();
   });
 });
+
+describe('App : résultats', () => {
+  it('des cours aux résultats, et retour', async () => {
+    render(<App load={async () => fixtureData} />);
+    fireEvent.click(await screen.findByRole('button', { name: 'Taïwan, 3 universités' }));
+    fireEvent.click(screen.getByRole('checkbox', { name: /INF3710/ }));
+    fireEvent.click(screen.getByRole('checkbox', { name: /LOG3430/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Voir les universités' }));
+
+    expect(screen.getByText('Niveaux calculés automatiquement, non vérifiés par un humain')).toBeInTheDocument();
+    expect(screen.getAllByRole('article')).toHaveLength(3);
+    expect(screen.getByText('2 cours sur 2 couverts')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'hiver' }));
+    expect(screen.getByRole('button', { name: 'hiver' })).toHaveAttribute('aria-pressed', 'true');
+    expectNoForbiddenWords(document.body);
+
+    fireEvent.click(screen.getByRole('button', { name: 'Retour' }));
+    expect(screen.getByRole('heading', { name: 'Quels cours veux-tu faire là-bas ?' })).toBeInTheDocument();
+    expect(screen.getByText('6 crédits Poly')).toBeInTheDocument();
+  });
+
+  it('sans équivalent, « Choisir un autre pays » ramène à la carte', async () => {
+    render(<App load={async () => fixtureData} />);
+    fireEvent.click(await screen.findByRole('button', { name: 'Japon, 1 université' }));
+    fireEvent.click(screen.getByRole('checkbox', { name: /INF2610/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Voir les universités' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Choisir un autre pays' }));
+    expect(screen.getByText('Où voulez-vous aller ?')).toBeInTheDocument();
+  });
+});

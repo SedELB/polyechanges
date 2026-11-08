@@ -1,0 +1,36 @@
+.fact-source {
+  display: inline-block;
+  font-size: var(--text-xs);
+  vertical-align: baseline;
+}
+
+.fact-source--missing {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.fact-source summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 var(--space-2);
+  color: var(--violet);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.fact-source__panel {
+  display: grid;
+  gap: var(--space-1);
+  max-width: 100%;
+  padding: var(--space-3);
+  background: var(--paper-2);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.fact-source__quote {
+  font-style: italic;
+}
