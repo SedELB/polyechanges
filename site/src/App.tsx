@@ -2,6 +2,7 @@ import { useEffect, useReducer, useState } from 'react';
 import type { SiteData } from '../../shared/siteData';
 import { Banner } from './components/Banner';
 import { loadSiteData } from './data/loadSiteData';
+import { WorldMap } from './screens/WorldMap';
 import { initialState, reducer } from './state';
 
 type Loaded = { status: 'loading' } | { status: 'error' } | { status: 'ready'; data: SiteData };
@@ -10,7 +11,7 @@ const defaultLoad = () => loadSiteData(import.meta.env.BASE_URL);
 
 export function App({ load = defaultLoad }: { load?: () => Promise<SiteData> }) {
   const [loaded, setLoaded] = useState<Loaded>({ status: 'loading' });
-  const [state] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
     let cancelled = false;
@@ -37,7 +38,15 @@ export function App({ load = defaultLoad }: { load?: () => Promise<SiteData> }) 
             Impossible de charger les données. Recharge la page.
           </p>
         )}
-        {loaded.status === 'ready' && state.step === 'pays' && <h1 className="question">Où voulez-vous aller ?</h1>}
+        {loaded.status === 'ready' && state.step === 'pays' && (
+          <>
+            <h1 className="question">Où voulez-vous aller ?</h1>
+            <WorldMap
+              universities={loaded.data.universities}
+              onSelect={(countryCode) => dispatch({ type: 'chooseCountry', countryCode })}
+            />
+          </>
+        )}
       </main>
     </>
   );

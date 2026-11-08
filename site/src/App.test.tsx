@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { App } from './App';
 import { fixtureData } from './test/fixtures';
@@ -17,6 +17,13 @@ describe('App', () => {
   it('affiche une erreur claire si les données ne chargent pas', async () => {
     render(<App load={async () => { throw new Error('404'); }} />);
     expect(await screen.findByText('Impossible de charger les données. Recharge la page.')).toBeInTheDocument();
+    expect(screen.getByText(/Projet étudiant non officiel/)).toBeInTheDocument();
+  });
+
+  it('choisir un pays dans la carte quitte le premier écran', async () => {
+    render(<App load={async () => fixtureData} />);
+    fireEvent.click(await screen.findByRole('button', { name: 'Taïwan, 3 universités' }));
+    expect(screen.queryByText('Où voulez-vous aller ?')).toBeNull();
     expect(screen.getByText(/Projet étudiant non officiel/)).toBeInTheDocument();
   });
 });
