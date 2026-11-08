@@ -66,18 +66,26 @@ export const readNtuSyllabi: Reader = (pages) => {
     const code = field($, 'Curriculum Number').replace(/\s+/g, '');
     const title = field($, 'Course title');
     if (!code || !title) throw new Error(`Fiche de cours illisible : ${page.url}`);
+    const rawDescription = field($, 'Course Description');
+    const objective = field($, 'Course Objective');
+    const description =
+      rawDescription.length >= 80 || !objective ? rawDescription : [rawDescription, objective].filter(Boolean).join('\n\n');
     const existing = byCode.get(code);
     if (existing) {
       if (!existing.terms.includes(term)) existing.terms.push(term);
+      // Le même cours vu à un autre trimestre : on garde la description la plus complète, avec sa page.
+      if (description.length > existing.description.length) {
+        existing.description = description;
+        existing.outline = progress($);
+        existing.sourceUrl = page.url;
+      }
       continue;
     }
     const creditsRaw = Number(field($, 'Credits'));
-    const description = field($, 'Course Description');
-    const objective = field($, 'Course Objective');
     byCode.set(code, {
       code,
       title,
-      description: description.length >= 80 || !objective ? description : [description, objective].filter(Boolean).join('\n\n'),
+      description,
       outline: progress($),
       credits: Number.isFinite(creditsRaw) && creditsRaw > 0 ? creditsRaw : null,
       contactHours: null,

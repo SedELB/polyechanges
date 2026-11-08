@@ -95,3 +95,26 @@ describe('liste des cours en anglais', () => {
     expect(['FL8071', 'OE5011', 'EEX1000', 'CSIE'].some(matchesPrefix)).toBe(false);
   });
 });
+
+describe('fusion des trimestres d un même code', () => {
+  const longer = Buffer.from(
+    fixture('ntu-tw-csie3110-115-1.html')
+      .toString('utf8')
+      .replace('See course page:', 'Longue description du printemps : ' + 'un cours complet sur les automates et les langages formels. '.repeat(10) + 'See course page:'),
+  );
+  const springLonger = page('', 'course_id=902%2043500&class=01&semester=114-2', longer);
+
+  it('garde la description la plus longue et l adresse de sa page', () => {
+    const [course] = readNtuSyllabi([csieFall, springLonger]);
+    expect(course!.terms).toEqual(['fall', 'spring']);
+    expect(course!.description).toContain('Longue description du printemps');
+    expect(course!.sourceUrl).toBe(springLonger.url);
+  });
+
+  it('garde la première page quand la seconde n a pas de description plus longue', () => {
+    const [course] = readNtuSyllabi([springLonger, csieFall]);
+    expect(course!.description).toContain('Longue description du printemps');
+    expect(course!.sourceUrl).toBe(springLonger.url);
+    expect(course!.terms).toEqual(['fall', 'spring']);
+  });
+});

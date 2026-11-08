@@ -2,6 +2,31 @@ Rapport de collecte : ntu-tw
 Date : 2026-11-10
 Statut : ok
 Cours actifs : 96
-Ajoutés (96) : CSIE3110, CSIE3310, CSIE3512, CSIE5047, CSIE5054, CSIE5060, CSIE5117, CSIE5122, CSIE5213, CSIE5310, CSIE5315, CSIE5320, CSIE5322, CSIE5375, CSIE5421, CSIE5439, CSIE5647, CSIE5648, CSIE7641, CSIE7644, CSIE7645, CSIE7990, EE1002, EE1004, EE2003, EE2004, EE2007, EE2008, EE2010, EE2011, EE2012, EE2021, EE2022, EE3004, EE3008, EE3013, EE3014, EE3015, EE3018, EE3024, EE3037, EE4010, EE4020, EE4021, EE4033, EE4039, EE5002, EE5010, EE5027, EE5041, EE5043, EE5055, EE5066, EE5076, EE5078, EE5105, EE5113, EE5114, EE5122, EE5183, EE5184, EE5204, EEE5001, EEE5011, EEE5022, EEE5026, EEE5028, EEE5055, EEE5066, EEE5067, EEE5072, MATH1008, MATH2114, MATH2502, MATH3003, MATH3604, MATH4006, MATH4007, MATH4008, MATH4009, MATH4018, MATH4022, MATH5229, MATH5249, MATH5359, MATH5379, MATH5381, MATH5383, MATH5385, MATH5389, MATH5390, MATH7201, MATH7419, MATH7509, MATH7702, MATH8003
+Ajoutés (0) : aucun
 Retirés (0) : aucun
 Modifiés (0) : aucun
+
+Vérification de 5 cours tirés au hasard (2026-11-10)
+Chaque cours est relu sur sa propre fiche (print_table.php, téléchargée de nouveau) : titre, crédits, trimestre
+affiché sur la fiche. La fiche ne donne pas la langue d'enseignement ; elle est vérifiée dans la liste
+officielle « Courses conducted in English » du même trimestre (mention « The course is conducted in English »).
+- EE2010 : « Electromagnetics (Ⅰ) », 3.0 crédits, trimestre 115-1 (automne), anglais. Conforme.
+- MATH5385 : « Modern Algebra – Representation Theory and Lie Algebras », 4.0 crédits, 115-1 (automne), anglais. Conforme.
+- EE5002 : « Power Electronics », 3.0 crédits, 115-1 (automne), anglais. Conforme.
+- EEE5022 : « Computer-aided Vlsi System Design », 3.0 crédits, 115-1 (automne), anglais. Conforme.
+- CSIE7645 : « Advanced Interactive Technologies », 3.0 crédits, 115-1 (automne), anglais. Conforme.
+Résultat : 5 sur 5 conformes. Limite : seules les fiches de 115-1 sont tombées au tirage ; le trimestre
+d'un cours présent aux deux trimestres vient de la fiche lue pour chacun.
+
+Notes sur la fiche de l'université (hors restrictions de programme)
+- Années : cours d'automne = 115-1 (automne 2026), cours de printemps = 114-2 (printemps 2026), les derniers publiés.
+  Les dates de trimestre viennent de la page du calendrier des échanges de NTU : automne 2026 (7 septembre au
+  18 décembre, examens jusqu'au 25 décembre) et printemps 2026 (23 février au 5 juin, examens jusqu'au 12 juin).
+  Le calendrier 2026-2027 complet (printemps 2027) n'existe que dans un tableur .xlsx, non lisible par la
+  chaîne de sources ; il donne 22 février au 4 juin 2027, examens du 7 au 11 juin.
+- Crédit : 1 crédit = 1 heure de contact par semaine sur 16 semaines (page des échanges de NTU). Les directives de
+  reconnaissance des crédits parlent de 18 heures par crédit ; 16 retenu.
+- Aucune restriction de programme publiée pour les étudiants en échange trouvée (la fiche MoveOn publique ne
+  contient que les coordonnées) : restrictions = null.
+- Site web laissé vide : aucune page ne donne l'adresse dans une ligne de plus d'un mot. Coordonnées :
+  25.016, 121.536 (Wikipédia), précision d'environ 200 m.
