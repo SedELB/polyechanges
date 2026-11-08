@@ -55,7 +55,7 @@ const manualCourse = (code: string, line: number) => ({
     retrievedAt: '2026-11-10T00:00:00.000Z',
     sha256: 'c'.repeat(64),
     locator: { page: 1, line },
-    quote: code,
+    quote: `Course code ${code}`,
   },
 });
 

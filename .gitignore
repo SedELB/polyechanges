@@ -4,6 +4,6 @@ docs/
 node_modules/
 data/raw/
 data/models/
-data/*.sqlite
+data/*.sqlite*
 site/dist/
 data/manual/poly/

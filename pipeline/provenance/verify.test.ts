@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import type { Provenance, University } from '../../shared/types.js';
 import { makePdf } from './testPdf.js';
-import { missingProvenance, verifyProvenance } from './verify.js';
+import { missingProvenance, verifyAll, verifyProvenance } from './verify.js';
 
 const html = '<html><body><h1>Academic Calendar</h1><ul><li>Fall semester begins: September 7, 2026</li><li>Final exams end: January 8, 2027</li></ul></body></html>';
 const sha = (b: Buffer) => createHash('sha256').update(b).digest('hex');
@@ -62,5 +62,34 @@ describe('missingProvenance', () => {
   it('ignore les faits vides et exige une source pour ceux qui sont remplis', () => {
     const u: University = { ...base, city: '', website: '', terms: { fall: null, spring: null }, restrictions: 'Aucune', contactHoursPerCredit: 1 };
     expect(missingProvenance(u)).toEqual(['name', 'coordinates', 'creditSystem', 'contactHoursPerCredit', 'restrictions', 'catalogPublic']);
+  });
+});
+
+describe('verifyAll', () => {
+  const uni = (provenance: Record<string, Provenance>): University => ({
+    id: 'x', name: 'X University', moveOnName: 'X', countryCode: 'TW', city: '', lat: 1, lng: 2,
+    website: '', catalogUrl: null, creditSystem: 'local', contactHoursPerCredit: null,
+    terms: { fall: null, spring: null }, restrictions: null, exchangeContact: null, catalogPublic: true, provenance,
+  });
+  it('liste les faits stale, introuvables et sans copie, et ignore les autres', async () => {
+    const hash = store(Buffer.from(html), 'html');
+    const q = 'Fall semester begins: September 7, 2026';
+    const res = await verifyAll(
+      [uni({
+        name: prov(hash, 2, q),
+        city: prov(hash, 3, q),
+        website: { ...prov(hash, 2, q), stale: true },
+        catalogUrl: prov(hash, 2, 'Fall semester begins: October 1'),
+        restrictions: prov('f'.repeat(64), 2, q),
+      })],
+      rawDir,
+    );
+    expect(res.total).toBe(5);
+    expect(res.moved.map((m) => m.fact)).toEqual(['city']);
+    expect(res.problems.map((p) => [p.fact, p.status])).toEqual([
+      ['website', 'stale'],
+      ['catalogUrl', 'introuvable'],
+      ['restrictions', 'copie_absente'],
+    ]);
   });
 });

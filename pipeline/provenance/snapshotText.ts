@@ -74,14 +74,26 @@ export function findQuote(pages: string[][], quote: string): { page: number; lin
   return found;
 }
 
-/** Comme `findQuote`, sans tenir compte des espaces (codes de cours écrits avec ou sans espace). */
+/** Extrait assez précis pour être cherché : au moins 8 caractères et 2 mots, après normalisation. */
+export function isSubstantialQuote(quote: string): boolean {
+  const q = normalizeText(quote);
+  return q.length >= 8 && q.split(' ').length >= 2;
+}
+
+const escapeRegex = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * Positions des lignes où le code apparaît comme mot entier (ni lettre ni chiffre de part et d'autre),
+ * sans tenir compte des espaces à l'intérieur du code (codes écrits avec ou sans espace).
+ */
 export function findCode(pages: string[][], code: string): { page: number; line: number }[] {
-  const c = code.replace(/\s+/g, '');
+  const chars = [...code.replace(/\s+/g, '')];
   const found: { page: number; line: number }[] = [];
-  if (c === '') return found;
+  if (chars.length === 0) return found;
+  const re = new RegExp(`(?<![\\p{L}\\p{N}])${chars.map(escapeRegex).join('\\s*')}(?![\\p{L}\\p{N}])`, 'u');
   pages.forEach((lines, p) => {
     lines.forEach((line, l) => {
-      if (line.replace(/\s+/g, '').includes(c)) found.push({ page: p + 1, line: l + 1 });
+      if (re.test(line)) found.push({ page: p + 1, line: l + 1 });
     });
   });
   return found;

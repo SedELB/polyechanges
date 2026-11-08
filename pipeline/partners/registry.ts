@@ -3,6 +3,7 @@ import { z } from 'zod';
 import type { Db } from '../db/open.js';
 import { upsertUniversity } from '../db/universities.js';
 import { UNIVERSITY_FACTS, type University } from '../../shared/types.js';
+import { isSubstantialQuote } from '../provenance/snapshotText.js';
 import { normalizeName, type MoveOnPartner } from './moveOn.js';
 
 export const UNIVERSITIES_PATH = 'data/universities.json';
@@ -14,7 +15,7 @@ export const provenanceSchema = z.object({
   retrievedAt: z.string().min(1),
   sha256: z.string().regex(/^[0-9a-f]{64}$/, 'empreinte sha256 de 64 caractères hexadécimaux'),
   locator: z.object({ page: z.number().int().min(1), line: z.number().int().min(1) }),
-  quote: z.string().min(1),
+  quote: z.string().refine(isSubstantialQuote, 'extrait trop court : au moins 8 caractères et 2 mots'),
   stale: z.literal(true).optional(),
 });
 

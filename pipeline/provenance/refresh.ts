@@ -1,5 +1,5 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
 import type { Db } from '../db/open.js';
 import type { PoliteFetcher } from '../fetch/politeFetch.js';
 import { readSnapshot, takeSnapshot } from '../fetch/snapshots.js';
@@ -26,6 +26,8 @@ export interface MissingFact {
   url: string;
   quote: string;
   nearest: string[];
+  /** Adresse injoignable : pourquoi le fait n'a pas pu être confirmé. */
+  error?: string;
 }
 
 export interface RefreshResult {
@@ -84,7 +86,7 @@ export async function refreshFactSources(
     missing: [],
     errors: [],
   };
-  const pagesByUrl = new Map<string, { sha256: string; pages: string[][] } | null>();
+  const pagesByUrl = new Map<string, { sha256: string; pages: string[][] } | { error: string }>();
   let changed = false;
 
   for (const u of raw) {
@@ -97,14 +99,17 @@ export async function refreshFactSources(
           const pages = await snapshotText(readSnapshot(snap, rawDir), snap.contentType);
           pagesByUrl.set(p.url, { sha256: snap.sha256, pages });
         } catch (err) {
-          pagesByUrl.set(p.url, null);
-          result.errors.push(`${p.url} : ${err instanceof Error ? err.message : String(err)}`);
+          const error = err instanceof Error ? err.message : String(err);
+          pagesByUrl.set(p.url, { error });
+          result.errors.push(`${p.url} : ${error}`);
         }
       }
       const page = pagesByUrl.get(p.url);
-      if (!page) {
+      if (!page || 'error' in page) {
+        // Le fait ne peut plus être confirmé : valeur et copie intactes, marqué périmé.
         result.counts.copie_absente++;
-        next[fact] = p;
+        next[fact] = ordered(p, true);
+        result.missing.push({ universityId: u.id, fact, url: p.url, quote: p.quote, nearest: [], error: page?.error });
         continue;
       }
       const { status, found } = locateInPages(page.pages, p);
@@ -122,7 +127,10 @@ export async function refreshFactSources(
     }
   }
   if (changed) {
-    writeFileSync(universitiesPath, `${JSON.stringify(raw, null, 2)}\n`);
+    // Écriture atomique : fichier temporaire dans le même dossier, puis renommage.
+    const tmp = join(dirname(universitiesPath), `.${process.pid}-universities.tmp`);
+    writeFileSync(tmp, `${JSON.stringify(raw, null, 2)}\n`);
+    renameSync(tmp, universitiesPath);
     syncUniversities(db, universitiesPath);
   }
   return result;
@@ -139,7 +147,12 @@ export function formatSourcesReport(date: string, r: RefreshResult): string {
   ];
   for (const e of r.errors) out.push(`Échec de téléchargement : ${e}`);
   for (const m of r.missing) {
-    out.push('', `Introuvable : ${m.universityId}, ${m.fact}`, `Adresse : ${m.url}`, `Ancien extrait : ${m.quote}`, 'Lignes proches :');
+    out.push('', `${m.error === undefined ? 'Introuvable' : 'Non confirmé'} : ${m.universityId}, ${m.fact}`, `Adresse : ${m.url}`, `Ancien extrait : ${m.quote}`);
+    if (m.error !== undefined) {
+      out.push(`Erreur : ${m.error}`);
+      continue;
+    }
+    out.push('Lignes proches :');
     if (m.nearest.length === 0) out.push('  (aucune)');
     for (const l of m.nearest) out.push(`  - ${l}`);
   }

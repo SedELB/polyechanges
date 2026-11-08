@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { makePdf } from './testPdf.js';
-import { findCode, findQuote, linesListing, snapshotText } from './snapshotText.js';
+import { findCode, findQuote, isSubstantialQuote, linesListing, snapshotText } from './snapshotText.js';
 
 describe('snapshotText', () => {
   it('extrait les lignes d’une page HTML', async () => {
@@ -36,6 +36,14 @@ describe('findQuote', () => {
   });
   it('findCode ignore les espaces du code', () => {
     expect(findCode([['Curriculum Number 901 10040']], '90110040')).toEqual([{ page: 1, line: 1 }]);
+  });
+  it('findCode exige un mot entier', () => {
+    expect(findCode([['CS1010 Intro', 'CS101 Data Structures']], 'CS101')).toEqual([{ page: 1, line: 2 }]);
+    expect(findCode([['XCS101', 'Code: CS101.', 'CS 101 bis']], 'CS101')).toEqual([{ page: 1, line: 2 }, { page: 1, line: 3 }]);
+  });
+  it('refuse les extraits trop courts', () => {
+    for (const q of ['2', 'Fall', '   ', 'a b', 'Fall   2']) expect(isSubstantialQuote(q), q).toBe(false);
+    expect(isSubstantialQuote('Fall semester begins: September 7, 2026')).toBe(true);
   });
   it('liste les lignes avec leur position', () => {
     expect(linesListing(pages)).toBe(

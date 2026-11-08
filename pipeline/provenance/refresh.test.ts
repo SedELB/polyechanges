@@ -1,4 +1,4 @@
-import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it } from 'vitest';
@@ -105,16 +105,23 @@ describe('refreshFactSources', () => {
     expect(file[1].provenance).toEqual(p2); // u2 intact
   });
 
-  it('compte une adresse injoignable sans rien modifier', async () => {
+  it('marque périmé un fait dont l’adresse est injoignable, sans toucher à sa valeur', async () => {
     server.pages.set('/cal', page([START]));
     const provenance = await seed('u1', '/cal', { 'terms.fall.start': [START, 2] });
     const bad = { ...provenance['terms.fall.start'], url: `${server.base}/absent` };
-    const before = JSON.stringify([university('u1', { 'terms.fall.start': bad })], null, 2) + '\n';
-    writeFileSync(path, before);
+    writeFileSync(path, JSON.stringify([university('u1', { 'terms.fall.start': bad })], null, 2) + '\n');
     const res = await refreshFactSources(db, fetcher, path, rawDir, '2026-11-12T10:00:00.000Z');
     expect(res.counts.copie_absente).toBe(1);
     expect(res.errors).toHaveLength(1);
-    expect(readFileSync(path, 'utf8')).toBe(before);
+    const file = JSON.parse(readFileSync(path, 'utf8'));
+    expect(file[0].provenance['terms.fall.start']).toEqual({ ...bad, stale: true });
+    expect(file[0].terms.fall.start).toBe('2026-09-07');
+    expect(res.missing).toHaveLength(1);
+    expect(res.missing[0].error).toBeTruthy();
+    const report = formatSourcesReport('2026-11-12', res);
+    expect(report).toContain('Non confirmé');
+    expect(report).toContain(res.missing[0].error as string);
+    expect(readdirSync(tmp).filter((f) => f.endsWith('.tmp'))).toEqual([]);
   });
 
   it('refuse une université inconnue', async () => {

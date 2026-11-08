@@ -47,9 +47,20 @@ export async function collectPoly(db: Db, source: SourceFile, rawDir: string, no
     for (const [i, file] of source.files.entries()) {
       const snap = takeSavedSnapshot(db, source.id, source.urls[i], file, rawDir);
       const body = readSnapshot(snap, rawDir);
-      const text = await snapshotText(body, 'text/html');
+      // Les positions ne doivent jamais faire échouer la collecte : en cas d'erreur, elles restent nulles.
+      let text: string[][] = [];
+      try {
+        text = await snapshotText(body, 'text/html');
+      } catch {
+        text = [];
+      }
       for (const c of readPolyCourses(body.toString('utf8'), source.urls[i], snap.fetchedAt)) {
-        const hit = findCode(text, c.sigle)[0];
+        let hit: { page: number; line: number } | undefined;
+        try {
+          hit = findCode(text, c.sigle)[0];
+        } catch {
+          hit = undefined;
+        }
         const here = hit ? { sha256: snap.sha256, page: hit.page, line: hit.line } : null;
         const seen = bySigle.get(c.sigle);
         if (seen) {

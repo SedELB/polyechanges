@@ -6,8 +6,7 @@ import { readSnapshot, takeSnapshot } from '../fetch/snapshots.js';
 import { UNIVERSITIES_PATH, loadUniversities, syncUniversities } from '../partners/registry.js';
 import { ensureFactsSource, refreshFactSources, writeSourcesReport } from '../provenance/refresh.js';
 import { findQuote, linesListing, snapshotText } from '../provenance/snapshotText.js';
-import { findRawCopy, verifyProvenance } from '../provenance/verify.js';
-import type { Provenance, UniversityFact } from '../../shared/types.js';
+import { findRawCopy, verifyAll } from '../provenance/verify.js';
 
 const DATA_DIR = 'data';
 const RAW_DIR = join(DATA_DIR, 'raw');
@@ -52,24 +51,17 @@ async function find(sha256: string, text: string): Promise<number> {
   return hits.length === 0 ? 1 : 0;
 }
 
-/** Hors ligne : chaque source de chaque université contre sa copie brute. */
+/** Hors ligne : chaque source de chaque université contre sa copie brute ; signale aussi les faits `stale`. */
 async function verify(): Promise<number> {
-  let total = 0;
-  let bad = 0;
-  for (const u of loadUniversities()) {
-    for (const [fact, p] of Object.entries(u.provenance) as [UniversityFact, Provenance][]) {
-      total++;
-      const { status, found } = await verifyProvenance(p, RAW_DIR);
-      if (status === 'introuvable' || status === 'copie_absente') {
-        bad++;
-        console.log(`${status} : ${u.id}, ${fact}, ${p.url} (${p.sha256.slice(0, 12)}) « ${p.quote} »`);
-      } else if (status === 'déplacé') {
-        console.log(`déplacé : ${u.id}, ${fact} (p${p.locator.page}:l${p.locator.line} -> p${found?.page}:l${found?.line})`);
-      }
-    }
+  const { total, moved, problems } = await verifyAll(loadUniversities(), RAW_DIR);
+  for (const m of moved) {
+    console.log(`déplacé : ${m.universityId}, ${m.fact} (p${m.from.page}:l${m.from.line} -> p${m.to.page}:l${m.to.line})`);
   }
-  console.log(`${total} source(s) vérifiée(s), ${bad} à corriger.`);
-  return bad > 0 ? 1 : 0;
+  for (const p of problems) {
+    console.log(`${p.status} : ${p.universityId}, ${p.fact}, ${p.provenance.url} (${p.provenance.sha256.slice(0, 12)}) « ${p.provenance.quote} »`);
+  }
+  console.log(`${total} source(s) vérifiée(s), ${problems.length} problème(s).`);
+  return problems.length > 0 ? 1 : 0;
 }
 
 /** En ligne : retélécharge les sources des faits, met à jour le fichier et écrit le rapport. */

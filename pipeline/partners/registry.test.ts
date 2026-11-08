@@ -56,6 +56,8 @@ describe('loadUniversities', () => {
     const bad = (p: object) => () => loadUniversities(write([{ ...entry, provenance: { name: { ...prov, ...p } } }]));
     expect(bad({ sha256: 'xyz' })).toThrow();
     expect(bad({ locator: { page: 0, line: 1 } })).toThrow();
+    for (const quote of ['2', 'Fall', '   ']) expect(bad({ quote }), quote).toThrow();
+    expect(bad({ quote: 'Fall semester begins: September 7, 2026' })).not.toThrow();
     expect(bad({ locator: { page: 1, line: 1.5 } })).toThrow();
     expect(() => loadUniversities(write([{ ...entry, provenance: { inconnu: prov } }]))).toThrow();
   });
