@@ -1,3 +1,4 @@
+import { round3 } from '../../../shared/workload';
 import type { HostCourseOut, MatchOut, SiteData } from '../../../shared/siteData';
 import type { PolyCourse, Provenance, TermDates, University } from '../../../shared/types';
 
@@ -139,8 +140,8 @@ function host(id: number, universityId: string, code: string, title: string, des
     code,
     title,
     description,
-    credits: 3,
-    contactHours: 54,
+    credits: universityId === 'ntu-tw' ? 3 : 6,
+    contactHours: universityId === 'ntu-tw' ? 60 : null,
     language: 'en',
     terms: ['fall'],
     sourceUrl: `https://www.${universityId.split('-')[0]}.example/catalog/${code}`,
@@ -155,7 +156,7 @@ function host(id: number, universityId: string, code: string, title: string, des
 const hostCourses: HostCourseOut[] = [
   host(1, 'ntu-tw', 'CSIE3010', 'Database Systems', 'Relational model, SQL, normalization and transactions.'),
   host(2, 'ntu-tw', 'CSIE3020', 'Software Testing', 'Unit testing, coverage, integration and regression testing.'),
-  host(3, 'ntu-tw', 'CSIE3030', 'Computer Networks', 'Layered model, TCP/IP and routing.', { terms: [] }),
+  host(3, 'ntu-tw', 'CSIE3030', 'Software Verification', 'Verification of programs.', { terms: [], credits: null, contactHours: null }),
   host(4, 'ntu-tw', 'CSIE3040', 'Introduction to Databases', 'Relational model and SQL queries.', { terms: ['spring'] }),
   host(5, 'ntu-tw', 'CSIE3050', 'Network Programming', 'Sockets and basic protocols.', { contactHours: 30 }),
   host(6, 'ntu-tw', 'CSIE3060', 'Network Architecture', 'Protocol stacks and routing.', { language: 'unknown' }),
@@ -163,13 +164,13 @@ const hostCourses: HostCourseOut[] = [
   host(8, 'tohoku-jp', 'ENG201', 'Thermodynamics', 'Heat, work and the laws of thermodynamics.'),
 ];
 
-function match(polySigle: string, hostCourseId: number, over: Partial<MatchOut> = {}): MatchOut {
+function match(polySigle: string, hostCourseId: number, notionsFound: string[], notionsMissing: string[], over: Partial<MatchOut> = {}): MatchOut {
   return {
     polySigle,
     hostCourseId,
-    notionsFound: ['sql', 'modele-relationnel'],
-    notionsMissing: [],
-    contentScore: 0.8,
+    notionsFound,
+    notionsMissing,
+    contentScore: round3(notionsFound.length / (notionsFound.length + notionsMissing.length)),
     workload: 'conforme',
     level: 'elevee',
     textUsed: 'description',
@@ -177,14 +178,16 @@ function match(polySigle: string, hostCourseId: number, over: Partial<MatchOut> 
   };
 }
 
+const INF3710_ALL = ['sql', 'modele-relationnel', 'normalisation', 'transactions'];
+
 const matches: MatchOut[] = [
-  match('INF3710', 1),
-  match('LOG3430', 2, { notionsFound: ['tests-unitaires'], notionsMissing: ['tests-regression'], contentScore: 0.55, level: 'moyenne' }),
-  match('INF3710', 7, { contentScore: 0.7, level: 'moyenne', textUsed: 'description+plan' }),
-  match('INF3710', 4, { contentScore: 0.6, level: 'moyenne' }),
-  match('LOG3430', 3, { notionsFound: [], notionsMissing: ['tests-unitaires', 'tests-regression'], contentScore: 0.2, workload: 'inconnue', level: 'faible' }),
-  match('INF3405', 5, { notionsFound: ['sockets'], notionsMissing: ['routage'], contentScore: 0.5, workload: 'trop_legere', level: 'faible' }),
-  match('INF3405', 6, { notionsFound: ['routage'], notionsMissing: ['sockets'], contentScore: 0.5, level: 'moyenne' }),
+  match('INF3710', 1, INF3710_ALL, []),
+  match('LOG3430', 2, ['tests-unitaires', 'couverture'], ['tests-regression'], { level: 'moyenne' }),
+  match('INF3710', 7, ['sql', 'modele-relationnel', 'normalisation'], ['transactions'], { textUsed: 'description+plan' }),
+  match('INF3710', 4, ['sql', 'modele-relationnel'], ['normalisation', 'transactions'], { level: 'moyenne' }),
+  match('LOG3430', 3, ['tests-unitaires', 'couverture'], ['tests-regression'], { workload: 'inconnue', level: 'faible' }),
+  match('INF3405', 5, ['sockets'], ['routage'], { workload: 'trop_legere', level: 'faible' }),
+  match('INF3405', 6, ['routage'], ['sockets'], { level: 'moyenne' }),
 ];
 
 export const fixtureData: SiteData = {
@@ -197,9 +200,12 @@ export const fixtureData: SiteData = {
     INF3710: [
       { id: 'sql', fr: 'SQL', en: 'SQL' },
       { id: 'modele-relationnel', fr: 'Modèle relationnel', en: 'Relational model' },
+      { id: 'normalisation', fr: 'Normalisation', en: 'Normalization' },
+      { id: 'transactions', fr: 'Transactions', en: 'Transactions' },
     ],
     LOG3430: [
       { id: 'tests-unitaires', fr: 'Tests unitaires', en: 'Unit testing' },
+      { id: 'couverture', fr: 'Couverture de tests', en: 'Test coverage' },
       { id: 'tests-regression', fr: 'Tests de régression', en: 'Regression testing' },
     ],
     INF3405: [
