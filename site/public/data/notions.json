@@ -36,9 +36,9 @@
       "en": "battery operation"
     },
     {
-      "id": "server-room-balances",
+      "id": "server-room-mass-and-energy-balances",
       "fr": "bilans de matière et d'énergie dans une salle de serveurs",
-      "en": "server room balances"
+      "en": "server room mass and energy balances"
     },
     {
       "id": "sustainable-development",
@@ -1093,14 +1093,9 @@
       "en": "mandatory access control"
     },
     {
-      "id": "control-flow-integrity",
-      "fr": "intégrité de flux de contrôle",
-      "en": "control flow integrity"
-    },
-    {
-      "id": "control-flow-attacks-and-countermeasures",
-      "fr": "attaques et contremesures sur le flux de contrôle",
-      "en": "control-flow attacks and countermeasures"
+      "id": "control-flow-integrity-attacks-and-countermeasures",
+      "fr": "intégrité de flux de contrôle : attaques et contremesures",
+      "en": "control-flow integrity attacks and countermeasures"
     },
     {
       "id": "security-kernels",
@@ -1727,11 +1722,6 @@
       "en": "integration and installation testing strategies"
     },
     {
-      "id": "procedural-and-object-oriented-testing",
-      "fr": "tests pour programmation procédurale et orientée objet",
-      "en": "procedural and object-oriented testing"
-    },
-    {
       "id": "statistical-validation",
       "fr": "approches statistiques en validation",
       "en": "statistical validation"
@@ -1749,9 +1739,14 @@
   ],
   "LOG4715": [
     {
-      "id": "video-game-history-and-genres",
-      "fr": "historique et types de jeux vidéo",
-      "en": "video game history and genres"
+      "id": "video-game-history",
+      "fr": "historique des jeux vidéo",
+      "en": "video game history"
+    },
+    {
+      "id": "video-game-genres",
+      "fr": "types de jeux vidéo",
+      "en": "video game genres"
     },
     {
       "id": "game-development-roles",
@@ -1772,11 +1767,6 @@
       "id": "game-rules-and-mechanics",
       "fr": "règles et mécaniques de jeu",
       "en": "game rules and mechanics"
-    },
-    {
-      "id": "progression-mechanics",
-      "fr": "mécanismes de progression",
-      "en": "progression mechanics"
     },
     {
       "id": "in-game-economy",
@@ -2061,9 +2051,19 @@
   ],
   "LOG8704": [
     {
-      "id": "extended-reality-trends",
-      "fr": "tendances en réalité virtuelle, augmentée et mixte",
-      "en": "extended reality trends"
+      "id": "virtual-reality",
+      "fr": "réalité virtuelle : tendances et applications",
+      "en": "virtual reality"
+    },
+    {
+      "id": "augmented-reality",
+      "fr": "réalité augmentée : tendances et applications",
+      "en": "augmented reality"
+    },
+    {
+      "id": "mixed-reality",
+      "fr": "réalité mixte",
+      "en": "mixed reality"
     },
     {
       "id": "extended-reality-development-cycle",
@@ -2079,16 +2079,6 @@
       "id": "camera-and-control",
       "fr": "caméra et contrôle",
       "en": "camera and control"
-    },
-    {
-      "id": "virtual-reality-applications",
-      "fr": "applications de réalité virtuelle",
-      "en": "virtual reality applications"
-    },
-    {
-      "id": "augmented-reality-applications",
-      "fr": "applications de réalité augmentée",
-      "en": "augmented reality applications"
     },
     {
       "id": "extended-reality-use-cases",

@@ -221,7 +221,7 @@
     "polySigle": "INF8602",
     "hostCourseId": 78,
     "notionsFound": [
-      "control-flow-attacks-and-countermeasures",
+      "control-flow-integrity-attacks-and-countermeasures",
       "general-purpose-os-security",
       "software-containers",
       "virtual-machines"
@@ -230,11 +230,10 @@
       "security-evaluation-methods",
       "discretionary-access-control",
       "mandatory-access-control",
-      "control-flow-integrity",
       "security-kernels",
       "sandboxing"
     ],
-    "contentScore": 0.4,
+    "contentScore": 0.444,
     "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description+plan"
@@ -419,17 +418,17 @@
     "polySigle": "LOG8704",
     "hostCourseId": 80,
     "notionsFound": [
-      "extended-reality-design-techniques",
-      "virtual-reality-applications",
-      "augmented-reality-applications"
+      "virtual-reality",
+      "augmented-reality",
+      "mixed-reality",
+      "extended-reality-design-techniques"
     ],
     "notionsMissing": [
-      "extended-reality-trends",
       "extended-reality-development-cycle",
       "camera-and-control",
       "extended-reality-use-cases"
     ],
-    "contentScore": 0.429,
+    "contentScore": 0.571,
     "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description+plan"

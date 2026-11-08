@@ -109,21 +109,102 @@
     "name": "National Cheng Kung University",
     "moveOnName": "National Cheng Kung University",
     "countryCode": "TW",
-    "city": "",
-    "lat": 23.001527,
-    "lng": 120.155986,
-    "website": "",
+    "city": "Tainan",
+    "lat": 23,
+    "lng": 120.217,
+    "website": "https://web.ncku.edu.tw/index.php?Lang=en",
     "catalogUrl": null,
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 18,
     "terms": {
       "fall": null,
       "spring": null
     },
     "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true,
-    "provenance": {}
+    "exchangeContact": "Division of Study Abroad, National Cheng Kung University : em50961@email.ncku.edu.tw",
+    "catalogPublic": false,
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/National_Cheng_Kung_University",
+        "retrievedAt": "2026-11-10T19:34:49.766Z",
+        "sha256": "8cd60fcc32fb9049ccfd06727fcfc70f26bf750ea83b6b91fb6c02b10d36b59d",
+        "locator": {
+          "page": 1,
+          "line": 183
+        },
+        "quote": "National Cheng Kung University (NCKU; Chinese:"
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/National_Cheng_Kung_University",
+        "retrievedAt": "2026-11-10T19:34:49.766Z",
+        "sha256": "8cd60fcc32fb9049ccfd06727fcfc70f26bf750ea83b6b91fb6c02b10d36b59d",
+        "locator": {
+          "page": 1,
+          "line": 119
+        },
+        "quote": "Public research university in Tainan, Taiwan"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/National_Cheng_Kung_University",
+        "retrievedAt": "2026-11-10T19:34:49.766Z",
+        "sha256": "8cd60fcc32fb9049ccfd06727fcfc70f26bf750ea83b6b91fb6c02b10d36b59d",
+        "locator": {
+          "page": 1,
+          "line": 117
+        },
+        "quote": "23.000°N 120.217°E"
+      },
+      "website": {
+        "url": "https://web.ncku.edu.tw/index.php?Lang=en",
+        "retrievedAt": "2026-11-10T19:37:05.621Z",
+        "sha256": "f288820f48c0bf6df85ebbb8f02e5d3ce5ab152fcd8f2dbf67f1c6010590ab35",
+        "locator": {
+          "page": 1,
+          "line": 16
+        },
+        "quote": "About NCKU"
+      },
+      "contactHoursPerCredit": {
+        "url": "https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en",
+        "retrievedAt": "2026-11-10T19:34:35.051Z",
+        "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
+        "locator": {
+          "page": 1,
+          "line": 257
+        },
+        "quote": "1 credit = 1 lecture hour/week, totaling at least 18 hours per semester."
+      },
+      "exchangeContact": {
+        "url": "https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en",
+        "retrievedAt": "2026-11-10T19:34:35.051Z",
+        "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
+        "locator": {
+          "page": 1,
+          "line": 184
+        },
+        "quote": "Student Exchange Program Contact – Division of Study Abroad"
+      },
+      "creditSystem": {
+        "url": "https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en",
+        "retrievedAt": "2026-11-10T19:34:35.051Z",
+        "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
+        "locator": {
+          "page": 1,
+          "line": 257
+        },
+        "quote": "1 credit = 1 lecture hour/week, totaling at least 18 hours per semester."
+      },
+      "catalogPublic": {
+        "url": "https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en",
+        "retrievedAt": "2026-11-10T19:34:35.051Z",
+        "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
+        "locator": {
+          "page": 1,
+          "line": 216
+        },
+        "quote": "Primarily Chinese, with some courses offered in English as a supplement."
+      }
+    }
   },
   {
     "id": "ntu-tw",
@@ -133,7 +214,7 @@
     "city": "Taipei",
     "lat": 25.016,
     "lng": 121.536,
-    "website": "",
+    "website": "https://www.ntu.edu.tw/english/",
     "catalogUrl": "https://nol.ntu.edu.tw/nol/coursesearch/search_for_13_eng.php?lang=EN",
     "creditSystem": "local",
     "contactHoursPerCredit": 16,
@@ -292,6 +373,16 @@
           "line": 83
         },
         "quote": "courses found in total"
+      },
+      "website": {
+        "url": "https://www.ntu.edu.tw/english/",
+        "retrievedAt": "2026-11-10T19:33:50.523Z",
+        "sha256": "2c2c335e7d4e0f0df8b2d5c945fec5a4e50af4cfb038dd80f7602c8e54171f1a",
+        "locator": {
+          "page": 1,
+          "line": 13
+        },
+        "quote": "Sustainable NTU"
       }
     }
   },

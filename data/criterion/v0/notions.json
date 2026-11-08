@@ -7,7 +7,7 @@
     { "id": "first-law-of-thermodynamics", "fr": "premier principe de la thermodynamique", "en": "first law of thermodynamics" },
     { "id": "electrochemistry", "fr": "électrochimie", "en": "electrochemistry" },
     { "id": "battery-operation", "fr": "fonctionnement d'une pile", "en": "battery operation" },
-    { "id": "server-room-balances", "fr": "bilans de matière et d'énergie dans une salle de serveurs", "en": "server room balances" },
+    { "id": "server-room-mass-and-energy-balances", "fr": "bilans de matière et d'énergie dans une salle de serveurs", "en": "server room mass and energy balances" },
     { "id": "sustainable-development", "fr": "développement durable", "en": "sustainable development" },
     { "id": "life-cycle-analysis", "fr": "analyse du cycle de vie", "en": "life cycle analysis" }
   ],
@@ -252,8 +252,7 @@
     { "id": "security-evaluation-methods", "fr": "méthodes d'évaluation de la sécurité", "en": "security evaluation methods" },
     { "id": "discretionary-access-control", "fr": "contrôle d'accès discrétionnaire", "en": "discretionary access control" },
     { "id": "mandatory-access-control", "fr": "contrôle d'accès obligatoire", "en": "mandatory access control" },
-    { "id": "control-flow-integrity", "fr": "intégrité de flux de contrôle", "en": "control flow integrity" },
-    { "id": "control-flow-attacks-and-countermeasures", "fr": "attaques et contremesures sur le flux de contrôle", "en": "control-flow attacks and countermeasures" },
+    { "id": "control-flow-integrity-attacks-and-countermeasures", "fr": "intégrité de flux de contrôle : attaques et contremesures", "en": "control-flow integrity attacks and countermeasures" },
     { "id": "security-kernels", "fr": "noyaux de sécurité", "en": "security kernels" },
     { "id": "general-purpose-os-security", "fr": "sécurité des systèmes d'usage général", "en": "general-purpose OS security" },
     { "id": "software-containers", "fr": "conteneurs logiciels", "en": "software containers" },
@@ -398,18 +397,17 @@
     { "id": "functional-testing", "fr": "test fonctionnel", "en": "functional testing" },
     { "id": "finite-state-machine-testing", "fr": "tests pour automates finis", "en": "finite state machine testing" },
     { "id": "integration-and-installation-testing-strategies", "fr": "stratégies de tests d'intégration et d'installation", "en": "integration and installation testing strategies" },
-    { "id": "procedural-and-object-oriented-testing", "fr": "tests pour programmation procédurale et orientée objet", "en": "procedural and object-oriented testing" },
     { "id": "statistical-validation", "fr": "approches statistiques en validation", "en": "statistical validation" },
     { "id": "software-reliability", "fr": "fiabilité du logiciel", "en": "software reliability" },
     { "id": "test-planning", "fr": "planification des tests", "en": "test planning" }
   ],
   "LOG4715": [
-    { "id": "video-game-history-and-genres", "fr": "historique et types de jeux vidéo", "en": "video game history and genres" },
+    { "id": "video-game-history", "fr": "historique des jeux vidéo", "en": "video game history" },
+    { "id": "video-game-genres", "fr": "types de jeux vidéo", "en": "video game genres" },
     { "id": "game-development-roles", "fr": "rôles dans la création de jeux vidéo", "en": "game development roles" },
     { "id": "game-design-document", "fr": "document de conception de jeu", "en": "game design document" },
     { "id": "character-camera-and-control", "fr": "personnage, caméra et contrôle", "en": "character, camera and control" },
     { "id": "game-rules-and-mechanics", "fr": "règles et mécaniques de jeu", "en": "game rules and mechanics" },
-    { "id": "progression-mechanics", "fr": "mécanismes de progression", "en": "progression mechanics" },
     { "id": "in-game-economy", "fr": "économie interne", "en": "in-game economy" },
     { "id": "monetization", "fr": "monétisation", "en": "monetization" },
     { "id": "level-design", "fr": "conception de niveaux", "en": "level design" },
@@ -476,12 +474,12 @@
     { "id": "service-oriented-architecture", "fr": "architecture orientée services", "en": "service-oriented architecture" }
   ],
   "LOG8704": [
-    { "id": "extended-reality-trends", "fr": "tendances en réalité virtuelle, augmentée et mixte", "en": "extended reality trends" },
+    { "id": "virtual-reality", "fr": "réalité virtuelle : tendances et applications", "en": "virtual reality" },
+    { "id": "augmented-reality", "fr": "réalité augmentée : tendances et applications", "en": "augmented reality" },
+    { "id": "mixed-reality", "fr": "réalité mixte", "en": "mixed reality" },
     { "id": "extended-reality-development-cycle", "fr": "cycle de développement en réalité étendue", "en": "extended reality development cycle" },
     { "id": "extended-reality-design-techniques", "fr": "techniques de conception en réalité étendue", "en": "extended reality design techniques" },
     { "id": "camera-and-control", "fr": "caméra et contrôle", "en": "camera and control" },
-    { "id": "virtual-reality-applications", "fr": "applications de réalité virtuelle", "en": "virtual reality applications" },
-    { "id": "augmented-reality-applications", "fr": "applications de réalité augmentée", "en": "augmented reality applications" },
     { "id": "extended-reality-use-cases", "fr": "usages de la réalité étendue", "en": "extended reality use cases" }
   ],
   "LOG8715": [
