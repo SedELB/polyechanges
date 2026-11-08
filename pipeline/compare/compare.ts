@@ -1,6 +1,6 @@
 import { checkWorkload, hostContactHours } from '../../shared/workload.js';
 import type { University } from '../../shared/types.js';
-import { detectNotions } from '../criterion/content.js';
+import { scoreNotions } from '../criterion/content.js';
 import type { Embedder } from '../criterion/embedder.js';
 import { createCachedEmbedder } from '../criterion/embeddingCache.js';
 import { contentBand, contentScore, levelFor } from '../criterion/levels.js';
@@ -31,15 +31,27 @@ export async function runCompare(db: Db, criterion: LoadedCriterion, embedder: E
     return universities.get(id) ?? null;
   };
 
-  const rows: MatchRow[] = [];
-  for (const poly of listPolyCourses(db)) {
-    const notions = criterion.notions[poly.sigle];
-    if (!poly.compared || !notions || notions.length === 0) continue;
-    for (const host of hosts) {
-      const university = universityOf(host.universityId);
-      if (!university) continue;
-      const passages = splitPassages(host);
-      const { found, missing, maxSim } = await detectNotions(notions, passages, cached, params.detectThreshold);
+  const polys = listPolyCourses(db).filter((p) => p.compared && (criterion.notions[p.sigle]?.length ?? 0) > 0);
+  // Une seule demande de vecteurs par grille et par cours d'accueil : les paires n'ont plus qu'à calculer des cosinus.
+  const notionVecs = new Map<string, number[][]>();
+  for (const poly of polys) {
+    notionVecs.set(poly.sigle, await cached.embed(criterion.notions[poly.sigle].map((n) => n.en), 'notion'));
+  }
+
+  const rowsByPoly = new Map<string, MatchRow[]>(polys.map((p) => [p.sigle, []]));
+  for (const host of hosts) {
+    const university = universityOf(host.universityId);
+    if (!university) continue;
+    const passages = splitPassages(host);
+    const passageVecs = passages.length > 0 ? await cached.embed(passages, 'passage') : [];
+    for (const poly of polys) {
+      const notions = criterion.notions[poly.sigle];
+      const { found, missing, maxSim } = scoreNotions(
+        notions,
+        notionVecs.get(poly.sigle) as number[][],
+        passageVecs,
+        params.detectThreshold,
+      );
       const score = contentScore(found.length, notions.length);
       const band = contentBand(score, params.bandHigh, params.bandLow);
       const workload =
@@ -54,7 +66,7 @@ export async function runCompare(db: Db, criterion: LoadedCriterion, embedder: E
               },
               params.workloadTolerance,
             );
-      rows.push({
+      (rowsByPoly.get(poly.sigle) as MatchRow[]).push({
         polySigle: poly.sigle,
         hostCourseId: host.id,
         notionsFound: found,
@@ -68,6 +80,7 @@ export async function runCompare(db: Db, criterion: LoadedCriterion, embedder: E
       });
     }
   }
+  const rows = polys.flatMap((p) => rowsByPoly.get(p.sigle) as MatchRow[]);
 
   db.transaction(() => {
     upsertCriterionVersion(db, params.version, paramsHash, JSON.stringify(params));

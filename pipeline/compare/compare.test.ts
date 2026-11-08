@@ -6,6 +6,8 @@ import { upsertPolyCourses } from '../db/polyCourses.js';
 import { upsertUniversity } from '../db/universities.js';
 import type { HostCourseInput, PolyCourse, University } from '../../shared/types.js';
 import type { LoadedCriterion } from '../criterion/loadCriterion.js';
+import { detectNotions } from '../criterion/content.js';
+import { splitPassages } from '../criterion/passages.js';
 import { CriterionFrozenError, freezeCriterion, runCompare } from './compare.js';
 
 /** Vecteur déterministe : un axe par mot-clé connu. */
@@ -144,5 +146,41 @@ describe('freezeCriterion', () => {
     await runCompare(db, v0, fake);
     freezeCriterion(db, 'v0', '2026-12-10');
     expect((db.prepare('SELECT frozen_at FROM criterion_versions').get() as { frozen_at: string }).frozen_at).toBe('2026-12-10');
+  });
+});
+
+describe('runCompare : une seule demande par texte', () => {
+  it('donne exactement les lignes du calcul paire par paire (detectNotions)', async () => {
+    await runCompare(db, v0, fake);
+    const hosts = db.prepare('SELECT * FROM host_courses ORDER BY id').all() as { id: number; title: string; description: string; outline: string | null }[];
+    for (const h of hosts.filter((x) => x.id)) {
+      const row = db.prepare('SELECT * FROM matches WHERE host_course_id = ?').get(h.id) as Record<string, string> | undefined;
+      if (!row) continue;
+      const expected = await detectNotions(v0.notions.INF3710, splitPassages(h), fake, v0.params.detectThreshold);
+      expect(JSON.parse(row.notions_found)).toEqual(expected.found);
+      expect(JSON.parse(row.notions_missing)).toEqual(expected.missing);
+      expect(JSON.parse(row.notion_sims)).toEqual(expected.maxSim);
+    }
+    expect(rows().length).toBeGreaterThan(0);
+  });
+
+  it('appelle l\'embedder interne au plus une fois par texte et par type', async () => {
+    const seen = new Set<string>();
+    let repeated = 0;
+    const counting: Embedder = {
+      key: fake.key,
+      async embed(texts, kind) {
+        for (const t of texts) {
+          const k = kind + '|' + t;
+          if (seen.has(k)) repeated++;
+          seen.add(k);
+        }
+        return fake.embed(texts, kind);
+      },
+    };
+    applyCollection(db, 'ntu', [course('A1'), course('A4', { description: 'SQL and transaction processing' })], () => null, '2026-01-03');
+    await runCompare(db, v0, counting);
+    expect(repeated).toBe(0);
+    expect(seen.size).toBeGreaterThan(0);
   });
 });
