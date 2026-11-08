@@ -75,6 +75,28 @@ describe('CoursePicker', () => {
     expect(screen.getByText('Aucun cours ne correspond.')).toBeInTheDocument();
   });
 
+  it('liste les cours cochés en pastilles retirables, dans l’ordre où ils ont été cochés', () => {
+    renderPicker(['LOG3430', 'INF3710']);
+    const chips = within(screen.getByRole('list', { name: 'Cours choisis' })).getAllByRole('button');
+    expect(chips.map((b) => b.getAttribute('aria-label'))).toEqual(['Retirer LOG3430', 'Retirer INF3710']);
+    fireEvent.click(screen.getByRole('button', { name: 'Retirer LOG3430' }));
+    expect(onChange).toHaveBeenCalledWith(['INF3710']);
+  });
+
+  it('une pastille reste visible quand la recherche masque le cours', () => {
+    renderPicker(['INF3710']);
+    fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'réseaux' } });
+    expect(screen.queryByRole('checkbox', { name: /INF3710/ })).toBeNull();
+    expect(screen.getByRole('button', { name: 'Retirer INF3710' })).toBeInTheDocument();
+  });
+
+  it('la recherche ignore les accents', () => {
+    const sys = { ...courses[0]!, sigle: 'SYS1000', title: 'Système embarqué' };
+    renderPicker([], [...courses, sys]);
+    fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'systeme' } });
+    expect(screen.getByRole('checkbox', { name: /SYS1000/ })).toBeInTheDocument();
+  });
+
   describe('sections', () => {
     const mk = (sigle: string, groups: string[]): PolyCourse => ({ ...courses[0]!, sigle, title: `Titre ${sigle}`, groups });
     const list = [
@@ -95,6 +117,23 @@ describe('CoursePicker', () => {
       expect(energy).not.toHaveAttribute('open');
       expect(within(energy).getByText('1 cours')).toBeInTheDocument();
       expect(screen.getByText(/^Multimédia/).closest('details')).toHaveAttribute('open');
+    });
+
+    it('le résumé de section indique combien de cours sont cochés', () => {
+      renderPicker(['CCC1000', 'AAA1000'], list);
+      expect(screen.getByText(/^Multimédia/).closest('summary')).toHaveTextContent('1 coché · 1 cours');
+      expect(screen.getByText(/^Filière classique/).closest('summary')).toHaveTextContent('1 coché · 1 cours');
+      expect(screen.getByText(/^7. Génie/).closest('summary')).not.toHaveTextContent('coché');
+    });
+
+    it('une section ouverte à la main reste ouverte après une recherche effacée', () => {
+      renderPicker([], list);
+      const energy = () => screen.getByText(/^7. Génie énergétique/).closest('details')!;
+      energy().open = true;
+      fireEvent(energy(), new Event('toggle'));
+      fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'AAA' } });
+      fireEvent.change(screen.getByRole('searchbox'), { target: { value: '' } });
+      expect(energy()).toHaveAttribute('open');
     });
 
     it('un cours présent dans plusieurs sections n’apparaît qu’une fois, avec une mention', () => {

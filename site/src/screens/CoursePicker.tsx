@@ -83,6 +83,7 @@ export function CoursePicker({
   onNext: () => void;
 }) {
   const [query, setQuery] = useState('');
+  const [userOpen, setUserOpen] = useState<Record<string, boolean>>({});
 
   const sections = useMemo(() => buildSections(courses.filter(isActive)), [courses]);
   const needle = normalize(query.trim());
@@ -99,6 +100,9 @@ export function CoursePicker({
 
   const credits = courses.filter((c) => selected.includes(c.sigle)).reduce((sum, c) => sum + c.credits, 0);
 
+  const checkedIn = (section: Section) => section.courses.filter((c) => selected.includes(c.sigle)).length;
+  const chips = selected.flatMap((sigle) => courses.filter((c) => c.sigle === sigle));
+
   const toggle = (sigle: string) =>
     onChange(selected.includes(sigle) ? selected.filter((s) => s !== sigle) : [...selected, sigle]);
 
@@ -114,6 +118,17 @@ export function CoursePicker({
         </p>
         {credits < MIN_FULL_TIME_CREDITS && (
           <p className="small">Il te faut au moins 12 crédits pour être à temps plein.</p>
+        )}
+        {chips.length > 0 && (
+          <ul className="picker__chips" aria-label="Cours choisis">
+            {chips.map((c) => (
+              <li key={c.sigle}>
+                <button type="button" className="picker__chip" aria-label={`Retirer ${c.sigle}`} onClick={() => toggle(c.sigle)}>
+                  {c.sigle} <span aria-hidden="true">×</span>
+                </button>
+              </li>
+            ))}
+          </ul>
         )}
         <button type="button" className="btn" disabled={selected.length === 0} onClick={onNext}>
           Voir les universités
@@ -132,10 +147,19 @@ export function CoursePicker({
       {visible.length === 0 && <p className="notice">Aucun cours ne correspond.</p>}
 
       {visible.map((section) => (
-        <details key={section.title} className="picker__section card" open={needle ? true : isOpenByDefault(section.title)}>
+        <details key={section.title} className="picker__section card" open={needle ? true : (userOpen[section.title] ?? isOpenByDefault(section.title))}
+          onToggle={(e) => {
+            const open = e.currentTarget.open;
+            if (!needle) setUserOpen((prev) => (prev[section.title] === open ? prev : { ...prev, [section.title]: open }));
+          }}
+        >
           <summary className="picker__summary">
+            <span className="picker__chevron" aria-hidden="true" />
             <span className="picker__section-title">{section.title}</span>
-            <span className="badge">{section.courses.length} cours</span>
+            <span className="badge">
+              {checkedIn(section) > 0 && `${checkedIn(section)} ${checkedIn(section) > 1 ? 'cochés' : 'coché'} · `}
+              {section.courses.length} cours
+            </span>
           </summary>
           <ul className="picker__list">
             {section.courses.map((course) => (
