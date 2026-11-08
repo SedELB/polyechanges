@@ -51,6 +51,28 @@ describe('WorldMap', () => {
     expect(screen.getByRole('button', { name: 'Taïwan, 5 universités' })).toBeInTheDocument();
   });
 
+  it('Taïwan, trop petit pour le doigt, a une zone de toucher invisible plus grande', () => {
+    const { container } = render(<WorldMap universities={fixtureData.universities} onSelect={onSelect} />);
+    const hit = container.querySelector('[data-hit="TW"]')!;
+    expect(Number(hit.getAttribute('r'))).toBeGreaterThanOrEqual(12);
+    expect(container.querySelector('[data-hit="CN"]')).toBeNull();
+    fireEvent.click(hit);
+    expect(onSelect).toHaveBeenCalledWith('TW');
+    expect(container.querySelectorAll('[data-country]')).toHaveLength(4);
+    expect(screen.getByText('Touche un pays en couleur sur la carte, ou choisis-le ci-dessous.')).toBeInTheDocument();
+  });
+
+  it('retire la mise en évidence quand le pointeur part ou que le toucher se termine', () => {
+    const { container } = render(<WorldMap universities={fixtureData.universities} onSelect={onSelect} />);
+    const jp = container.querySelector('[data-country="JP"]')!;
+    fireEvent.mouseEnter(jp);
+    fireEvent.mouseLeave(jp);
+    expect(jp).not.toHaveAttribute('data-active');
+    fireEvent.mouseEnter(jp);
+    fireEvent.touchEnd(jp);
+    expect(jp).not.toHaveAttribute('data-active');
+  });
+
   it('indique le pays survolé ou ciblé au clavier, sans mot interdit', () => {
     const { container } = render(<WorldMap universities={fixtureData.universities} onSelect={onSelect} />);
     fireEvent.focus(screen.getByRole('button', { name: 'Japon, 1 université' }));

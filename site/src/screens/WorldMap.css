@@ -39,6 +39,11 @@
   stroke-width: 2;
 }
 
+.worldmap__hit {
+  fill: transparent;
+  cursor: pointer;
+}
+
 .worldmap__dot {
   fill: var(--ink);
   stroke: var(--paper);

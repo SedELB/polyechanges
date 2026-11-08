@@ -35,7 +35,15 @@ interface Shape {
   name: string;
   code: CountryCode | null;
   d: string;
+  /** Centre du pays si sa forme est trop petite pour être touchée au doigt. */
+  hitCenter: [number, number] | null;
 }
+
+/** Largeur de la carte à l’écran sur un téléphone de 375 px, et taille minimale d’une cible tactile. */
+const PHONE_MAP_PX = 340;
+const MIN_TARGET_PX = 24;
+const HIT_RADIUS = Math.max(12, (MIN_TARGET_PX / 2) * (VIEW_BOX.w / PHONE_MAP_PX));
+const MIN_TARGET_UNITS = MIN_TARGET_PX * (VIEW_BOX.w / PHONE_MAP_PX);
 
 const SHAPES: Shape[] = (() => {
   const topology = worldTopology as unknown as Topology;
@@ -45,11 +53,16 @@ const SHAPES: Shape[] = (() => {
     const d = toPath(country);
     if (!d) continue;
     const iso = String(country.id ?? '');
+    const code = CODE_BY_ISO.get(iso) ?? null;
+    const [[x0, y0], [x1, y1]] = toPath.bounds(country);
+    const small = code !== null && (x1 - x0 < MIN_TARGET_UNITS || y1 - y0 < MIN_TARGET_UNITS);
+    const centroid = toPath.centroid(country);
     shapes.push({
       key: iso || country.properties.name,
       name: country.properties.name,
-      code: CODE_BY_ISO.get(iso) ?? null,
+      code,
       d,
+      hitCenter: small && centroid.every(Number.isFinite) ? [centroid[0]!, centroid[1]!] : null,
     });
   }
   return shapes;
@@ -88,7 +101,7 @@ export function WorldMap({ universities, onSelect }: { universities: University[
     [universities],
   );
 
-  const caption = active ? `${COUNTRY_NAMES_FR[active]} · ${countLabel(counts[active])}` : 'Touche un pays coloré pour commencer';
+  const caption = active ? `${COUNTRY_NAMES_FR[active]} · ${countLabel(counts[active])}` : 'Touche un pays en couleur sur la carte, ou choisis-le ci-dessous.';
 
   return (
     <section className="worldmap" aria-label="Carte du monde">
@@ -115,6 +128,21 @@ export function WorldMap({ universities, onSelect }: { universities: University[
               onClick={() => onSelect(s.code!)}
               onMouseEnter={() => setActive(s.code)}
               onMouseLeave={() => setActive(null)}
+              onTouchEnd={() => setActive(null)}
+            />
+          ))}
+          {SHAPES.filter((s) => s.hitCenter).map((s) => (
+            <circle
+              key={`hit-${s.key}`}
+              className="worldmap__hit"
+              cx={s.hitCenter![0]}
+              cy={s.hitCenter![1]}
+              r={HIT_RADIUS}
+              data-hit={s.code!}
+              onClick={() => onSelect(s.code!)}
+              onMouseEnter={() => setActive(s.code)}
+              onMouseLeave={() => setActive(null)}
+              onTouchEnd={() => setActive(null)}
             />
           ))}
           {dots.map((dot) => (
@@ -150,6 +178,7 @@ export function WorldMap({ universities, onSelect }: { universities: University[
               onBlur={() => setActive(null)}
               onMouseEnter={() => setActive(code)}
               onMouseLeave={() => setActive(null)}
+              onTouchEnd={() => setActive(null)}
             >
               <span className="worldmap__button-name">{COUNTRY_NAMES_FR[code]}</span>
               <span className="worldmap__button-count">{countLabel(counts[code])}</span>
