@@ -1,0 +1,148 @@
+{
+  "INF2610": [
+    {
+      "id": "operating-system-structure",
+      "fr": "structure des systèmes d'exploitation",
+      "en": "operating system structure"
+    },
+    {
+      "id": "process-management",
+      "fr": "gestion de processus",
+      "en": "process management"
+    },
+    {
+      "id": "process-synchronization",
+      "fr": "synchronisation de processus",
+      "en": "process synchronization"
+    },
+    {
+      "id": "process-scheduling",
+      "fr": "ordonnancement de processus",
+      "en": "process scheduling"
+    },
+    {
+      "id": "threads",
+      "fr": "processus légers",
+      "en": "threads"
+    },
+    {
+      "id": "deadlocks",
+      "fr": "interblocage",
+      "en": "deadlocks"
+    },
+    {
+      "id": "memory-management",
+      "fr": "gestion de la mémoire",
+      "en": "memory management"
+    },
+    {
+      "id": "real-time-operating-systems",
+      "fr": "systèmes d'exploitation temps réel",
+      "en": "real-time operating systems"
+    }
+  ],
+  "INF3710": [
+    {
+      "id": "entity-relationship-model",
+      "fr": "modèle entité-association",
+      "en": "entity-relationship model"
+    },
+    {
+      "id": "relational-model",
+      "fr": "modèle relationnel",
+      "en": "relational model"
+    },
+    {
+      "id": "relational-algebra",
+      "fr": "algèbre relationnelle",
+      "en": "relational algebra"
+    },
+    {
+      "id": "sql-queries",
+      "fr": "langage SQL",
+      "en": "SQL queries"
+    },
+    {
+      "id": "embedded-sql",
+      "fr": "SQL enchâssé",
+      "en": "embedded SQL"
+    },
+    {
+      "id": "transaction-management",
+      "fr": "gestion de transactions",
+      "en": "transaction management"
+    },
+    {
+      "id": "concurrency-control",
+      "fr": "contrôle de la concurrence",
+      "en": "concurrency control"
+    },
+    {
+      "id": "normal-forms",
+      "fr": "dépendances fonctionnelles et formes normales",
+      "en": "functional dependencies and normal forms"
+    },
+    {
+      "id": "file-storage-structures",
+      "fr": "modèles de stockage de fichiers",
+      "en": "file storage structures"
+    },
+    {
+      "id": "indexing-hashing",
+      "fr": "indexage et adressage dispersé",
+      "en": "indexing and hashing"
+    }
+  ],
+  "LOG3430": [
+    {
+      "id": "software-verification-validation",
+      "fr": "vérification et validation du logiciel",
+      "en": "software verification and validation"
+    },
+    {
+      "id": "software-testing-methods",
+      "fr": "méthodes de test",
+      "en": "software testing methods"
+    },
+    {
+      "id": "structural-testing",
+      "fr": "test structurel",
+      "en": "structural testing"
+    },
+    {
+      "id": "functional-testing",
+      "fr": "test fonctionnel",
+      "en": "functional testing"
+    },
+    {
+      "id": "finite-state-machine-testing",
+      "fr": "tests pour automates finis",
+      "en": "finite state machine testing"
+    },
+    {
+      "id": "integration-testing",
+      "fr": "tests d'intégration",
+      "en": "integration testing"
+    },
+    {
+      "id": "object-oriented-testing",
+      "fr": "tests de programmes orientés objet",
+      "en": "object-oriented testing"
+    },
+    {
+      "id": "statistical-validation",
+      "fr": "approches statistiques en validation",
+      "en": "statistical validation"
+    },
+    {
+      "id": "software-reliability",
+      "fr": "fiabilité du logiciel",
+      "en": "software reliability"
+    },
+    {
+      "id": "test-planning",
+      "fr": "planification des tests",
+      "en": "test planning"
+    }
+  ]
+}

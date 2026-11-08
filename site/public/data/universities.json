@@ -1,0 +1,466 @@
+[
+  {
+    "id": "cityu-hk",
+    "name": "City University of Hong Kong",
+    "moveOnName": "City University of Hong Kong",
+    "countryCode": "CN",
+    "city": "",
+    "lat": 22.320336,
+    "lng": 114.23905,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "doshisha-jp",
+    "name": "Doshisha University",
+    "moveOnName": "Doshisha University",
+    "countryCode": "JP",
+    "city": "",
+    "lat": 34.999624,
+    "lng": 135.753244,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "kaist-kr",
+    "name": "Korea Advanced Institute of Science and Technology",
+    "moveOnName": "Korea Advanced Institute of Science and Technology",
+    "countryCode": "KR",
+    "city": "",
+    "lat": 36.324299,
+    "lng": 127.434402,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "korea-kr",
+    "name": "Korea University- College of Engineering (KUCE)",
+    "moveOnName": "Korea University- College of Engineering (KUCE)",
+    "countryCode": "KR",
+    "city": "",
+    "lat": 37.532308,
+    "lng": 126.95744,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "nagoya-jp",
+    "name": "Nagoya University",
+    "moveOnName": "Nagoya University",
+    "countryCode": "JP",
+    "city": "",
+    "lat": 35.155904,
+    "lng": 136.915863,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "ncku-tw",
+    "name": "National Cheng Kung University",
+    "moveOnName": "National Cheng Kung University",
+    "countryCode": "TW",
+    "city": "",
+    "lat": 23.001527,
+    "lng": 120.155986,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "ntu-tw",
+    "name": "National Taiwan University",
+    "moveOnName": "National Taiwan University",
+    "countryCode": "TW",
+    "city": "Taipei",
+    "lat": 25.016,
+    "lng": 121.536,
+    "website": "",
+    "catalogUrl": "https://nol.ntu.edu.tw/nol/coursesearch/search_for_13_eng.php?lang=EN",
+    "creditSystem": "local",
+    "contactHoursPerCredit": 16,
+    "terms": {
+      "fall": {
+        "start": "2026-09-07",
+        "end": "2026-12-18",
+        "examsEnd": "2026-12-25"
+      },
+      "spring": {
+        "start": "2026-02-23",
+        "end": "2026-06-05",
+        "examsEnd": "2026-06-12"
+      }
+    },
+    "restrictions": null,
+    "exchangeContact": "Office of International Affairs, National Taiwan University : oia@ntu.edu.tw",
+    "catalogPublic": true,
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/National_Taiwan_University",
+        "retrievedAt": "2026-11-10T18:24:13.637Z",
+        "sha256": "f74584713434f5d506ce5033c8bdeee63a9077fedbd977510f64d572f03da594",
+        "locator": {
+          "page": 1,
+          "line": 261
+        },
+        "quote": "National Taiwan University (NTU; Chinese:"
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/National_Taiwan_University",
+        "retrievedAt": "2026-11-10T18:24:13.637Z",
+        "sha256": "f74584713434f5d506ce5033c8bdeee63a9077fedbd977510f64d572f03da594",
+        "locator": {
+          "page": 1,
+          "line": 261
+        },
+        "quote": "public research university in Taipei, Taiwan"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/National_Taiwan_University",
+        "retrievedAt": "2026-11-10T18:24:13.637Z",
+        "sha256": "f74584713434f5d506ce5033c8bdeee63a9077fedbd977510f64d572f03da594",
+        "locator": {
+          "page": 1,
+          "line": 192
+        },
+        "quote": "25.016°N 121.536°E"
+      },
+      "catalogUrl": {
+        "url": "https://nol.ntu.edu.tw/nol/coursesearch/search_for_13_eng.php?lang=EN",
+        "retrievedAt": "2026-11-10T18:25:23.142Z",
+        "sha256": "461140b799f9e7ac70cf72febf9d2c96b0007975e3cea802a7e13239aeb2daab",
+        "locator": {
+          "page": 1,
+          "line": 15
+        },
+        "quote": "Courses conducted in English"
+      },
+      "creditSystem": {
+        "url": "https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcaOverview",
+        "retrievedAt": "2026-11-10T18:24:03.502Z",
+        "sha256": "5ea514a155d0baac9c7a798bf379655af80fe1af940a1c8279030680fd79e046",
+        "locator": {
+          "page": 1,
+          "line": 72
+        },
+        "quote": "each course is normally worth 3 credits"
+      },
+      "contactHoursPerCredit": {
+        "url": "https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcaOverview",
+        "retrievedAt": "2026-11-10T18:24:03.502Z",
+        "sha256": "5ea514a155d0baac9c7a798bf379655af80fe1af940a1c8279030680fd79e046",
+        "locator": {
+          "page": 1,
+          "line": 73
+        },
+        "quote": "1 credit = 1 contact hour per week over 16 weeks"
+      },
+      "terms.fall.start": {
+        "url": "https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcademicCalendar",
+        "retrievedAt": "2026-11-10T18:23:58.478Z",
+        "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
+        "locator": {
+          "page": 1,
+          "line": 86
+        },
+        "quote": "September 7, 2026"
+      },
+      "terms.fall.end": {
+        "url": "https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcademicCalendar",
+        "retrievedAt": "2026-11-10T18:23:58.478Z",
+        "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
+        "locator": {
+          "page": 1,
+          "line": 117
+        },
+        "quote": "December 18, 2026"
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcademicCalendar",
+        "retrievedAt": "2026-11-10T18:23:58.478Z",
+        "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
+        "locator": {
+          "page": 1,
+          "line": 119
+        },
+        "quote": "December 21-25, 2026"
+      },
+      "terms.spring.start": {
+        "url": "https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcademicCalendar",
+        "retrievedAt": "2026-11-10T18:23:58.478Z",
+        "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
+        "locator": {
+          "page": 1,
+          "line": 161
+        },
+        "quote": "February 23, 2026"
+      },
+      "terms.spring.end": {
+        "url": "https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcademicCalendar",
+        "retrievedAt": "2026-11-10T18:23:58.478Z",
+        "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
+        "locator": {
+          "page": 1,
+          "line": 196
+        },
+        "quote": "June 5, 2026"
+      },
+      "terms.spring.examsEnd": {
+        "url": "https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcademicCalendar",
+        "retrievedAt": "2026-11-10T18:23:58.478Z",
+        "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
+        "locator": {
+          "page": 1,
+          "line": 198
+        },
+        "quote": "June 8-12, 2026"
+      },
+      "exchangeContact": {
+        "url": "https://www.ntu.edu.tw/english/contact.html",
+        "retrievedAt": "2026-11-10T18:24:37.124Z",
+        "sha256": "4d48147e5b3ba65b0b887a6e104aca0299cc97abc9f296fd8e61a92a9e9a919a",
+        "locator": {
+          "page": 1,
+          "line": 59
+        },
+        "quote": "please contact oia@ntu.edu.tw, the Office of International Affairs"
+      },
+      "catalogPublic": {
+        "url": "https://nol.ntu.edu.tw/nol/coursesearch/search_for_13_eng.php?lang=EN",
+        "retrievedAt": "2026-11-10T18:25:23.142Z",
+        "sha256": "461140b799f9e7ac70cf72febf9d2c96b0007975e3cea802a7e13239aeb2daab",
+        "locator": {
+          "page": 1,
+          "line": 83
+        },
+        "quote": "courses found in total"
+      }
+    }
+  },
+  {
+    "id": "ntust-tw",
+    "name": "National Taiwan University of Science and Technology (Taiwan Tech)",
+    "moveOnName": "National Taiwan University of Science and Technology (Taiwan Tech)",
+    "countryCode": "TW",
+    "city": "",
+    "lat": 25.091075,
+    "lng": 121.559834,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "nycu-tw",
+    "name": "National Yang Ming Chiao Tung University",
+    "moveOnName": "National Yang Ming Chiao Tung University",
+    "countryCode": "TW",
+    "city": "",
+    "lat": 0,
+    "lng": 0,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "postech-kr",
+    "name": "Pohang University of Science and Technology",
+    "moveOnName": "Pohang University of Science and Technology",
+    "countryCode": "KR",
+    "city": "",
+    "lat": 36.03653,
+    "lng": 129.376205,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "sciencetokyo-jp",
+    "name": "Institute of Science Tokyo",
+    "moveOnName": "Institute of Science Tokyo",
+    "countryCode": "JP",
+    "city": "",
+    "lat": 35.675949,
+    "lng": 139.769592,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "sjtu-cn",
+    "name": "Shanghai Jiao Tong University",
+    "moveOnName": "Shanghai Jiao Tong University",
+    "countryCode": "CN",
+    "city": "",
+    "lat": 31.0252,
+    "lng": 121.4338,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "snu-kr",
+    "name": "Seoul National University",
+    "moveOnName": "Seoul National University",
+    "countryCode": "KR",
+    "city": "",
+    "lat": 37.45844,
+    "lng": 126.952257,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "tohoku-jp",
+    "name": "Tohoku University",
+    "moveOnName": "Tohoku University",
+    "countryCode": "JP",
+    "city": "",
+    "lat": 38.266572,
+    "lng": 140.883246,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  },
+  {
+    "id": "tongji-cn",
+    "name": "Tongji University",
+    "moveOnName": "Tongji University",
+    "countryCode": "CN",
+    "city": "",
+    "lat": 31.262,
+    "lng": 121.459,
+    "website": "",
+    "catalogUrl": null,
+    "creditSystem": "local",
+    "contactHoursPerCredit": null,
+    "terms": {
+      "fall": null,
+      "spring": null
+    },
+    "restrictions": null,
+    "exchangeContact": null,
+    "catalogPublic": true,
+    "provenance": {}
+  }
+]

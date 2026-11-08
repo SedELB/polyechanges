@@ -1,0 +1,1735 @@
+[
+  {
+    "id": 1,
+    "universityId": "ntu-tw",
+    "code": "MATH1008",
+    "title": "Elementary Analysis: Introduction to Metric Spaces",
+    "description": "This course bridges the gap between the computation-focused calculus courses (MATH4006–4009) and rigorous mathematical foundations, responding to the growing interest among students from diverse fields—for instance, physics students who work intensively with Hilbert spaces and economics students who require point-set topology for advanced courses.\nThe course introduces essential concepts of analysis, including metric spaces (exemplified by R^n  with the Euclidean metric and function spaces with the supremum metric), convergence, continuity, connectedness, and compactness. We will demonstrate that the last two properties are preserved under continuous mappings, thereby generalizing two fundamental theorems from elementary calculus—the Intermediate Value Theorem and the Extreme Value Theorem.\nStudents will gain experience in rigorous argumentation, preparing them for advanced mathematics courses.\n本課程旨於銜接目前以計算為主的微積分課程（MATH4006–4009）與更嚴謹的數學課程，回應來自多元領域學生日益增長的需求——例如，需要了解希爾伯特空間（Hilbert Space) 的物理系學生，以及需要點集拓撲 (Point Set Topology) 以修讀更高階課程的經濟系學生。\n課程將介紹分析的核心概念，包括賦距空間（以歐幾里得度量的 R^n  與以上確界度量的函數空間為例）、數列收斂性、函數連續性、集合連通性與緊緻性。我們將說明集合連通性和緊緻性在連續映射下依然保持不變，推廣基礎微積分中的兩個重要定理——中間值定理與極值定理。\n透過這門課程，同學將累積嚴謹數學論證經驗，為日後更高階的數學課程做好準備。\nProvisional Syllabus :\n- Metric spaces (Definition of a metric, Examples)\n- Convergence of sequences (Definition, Examples)\n- Open and closed sets (Definition of open & closed balls, open & closed sets, limit points, interior & closure)\n- Continuous functions (three definitions : classical, sequential continuity and in terms of preimage of open sets)\n- Complete metric spaces (Cauchy sequences, Axiom of completeness of R, proof that C[a,b] is complete)\n- Contraction Mapping Theorem (Statement and proof)\n- Compactness (Definition, sequential compactness, compactness preserved by continuity, EVT)\n- Weierstrass Approximation Theorem (Statement and examples)\n- Connectedness (Connectedness and Path-connectedness, connectedness preserved by continuity, IVT)\n- Arzelà-Ascoli Theorem (Equicontinuity, statement and proof)",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2010600&class=&dpt_code=2010&ser_no=43257&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "b35fb74914e8da80ebe4f386248c24575aea7fe2d1f0bb7bbca09d8cecd9d9df"
+  },
+  {
+    "id": 2,
+    "universityId": "ntu-tw",
+    "code": "MATH3003",
+    "title": "Special Project for Undergraduate (Ⅱ)",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2045170&class=04&dpt_code=2010&ser_no=35204&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "cf9e9f5e13c7ee03c0013548470570d01f831d70552380ee423eda3f243b7388"
+  },
+  {
+    "id": 3,
+    "universityId": "ntu-tw",
+    "code": "MATH2114",
+    "title": "Introduction to Algebra(Ⅱ)",
+    "description": "Field Theory, Galois Theory, Module Theory, and Homological Algebra\n\nThe purpose of this course is to introduce basic concepts and notions of modern abstract algebra. In this semester, we will work on field theory, Galois theory, module theory, and some further topics.",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2049620&class=&dpt_code=2010&ser_no=19398&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "176e52700604ce893c6a45b1040f4d6e844ca38be1c0ecf9df569e2f9631ebee"
+  },
+  {
+    "id": 4,
+    "universityId": "ntu-tw",
+    "code": "MATH3604",
+    "title": "Introduction to Computational Mathematics",
+    "description": "This course provides an introduction to computational mathematics through the study of approximation and numerical algorithms. The course begins with approximation theory for functions of a single variable and explores its applications to root-finding, interpolation, differentiation, integration, and the construction of numerical approximations of solutions to ordinary differential equations. In addition, we further discuss how these computations can be made mathematically rigorous, yielding a powerful and versatile framework for computer-assisted proofs. Throughout, mathematical theory is paired with hands-on implementation in Julia.",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2049730&class=&dpt_code=2010&ser_no=52376&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "09b17d6953f27eb3f7576af5b12355ed1a66d047ee85278075278b4bba441228"
+  },
+  {
+    "id": 5,
+    "universityId": "ntu-tw",
+    "code": "MATH2502",
+    "title": "Introduction to Probability Theory",
+    "description": "Probability Theory is the mathematics of uncertainty, providing a rigorous mathematical framework through which we can study randomness. In this course, we will present the fundamental axioms of probability theory and introduce some of the most important and widely-used distributions, and prove some fundamental theorems. We will learn how to analyse probabilistic situations, and lay the groundwork for further, more advanced, courses in the subject.",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2049740&class=&dpt_code=2010&ser_no=41164&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "daa904361e6122ec970bc10e7fba5326b4f6a82dcddca8b0395a50d58edeea47"
+  },
+  {
+    "id": 6,
+    "universityId": "ntu-tw",
+    "code": "MATH4006",
+    "title": "CALCULUS (1)",
+    "description": "This course will be conducted in English.\nCalculus was independently founded by Isaac Newton and Gottfried Leibniz to describe and study the change of functions with respect to their variables. This subject has found applications and become fundamental in fields such as physics, chemistry, and engineering. In the first module of this Calculus series (MATH4006-4009), we will introduce differentiation of functions in one real variable.\nSpecifically, we will define the derivative of a function, derive basic rules and techniques of differentiation, analyze extrema of a function, discuss the statement and applications of the Mean Value Theorem(s), and sketch the graph of a function.\nKey definitions are discussed, and important theorems are derived in lectures to help students develop their abilities in logical deduction and analysis. Practical applications of Calculus in various fields are illustrated to promote an organic interaction between the theory of Calculus and students’ own fields of study.\nThis course also provides TA classes, where students can enhance their proficiency in handling Calculus calculations under the guidance of our teaching assistants.\nProvisional Schedule :\nWeek 1 Functions and Their Limits\nWeek 2 Continuity\nWeek 3 Differentiation (I) : Definition and Technique\nWeek 4 Differentiation (II) : Chain Rule and Implicit\nWeek 5 Mean Value Theorem and L’Hospital’s Rule\nWeek 6 Curve Sketching\nWeek 7 Optimisation Problems\nWeek 8 Exam Week",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2049810&class=03&dpt_code=9010&ser_no=21319&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "efcb50648d6ba37b1e41709234a38e8eea00ac4b17b44dd6235e2f8125b4b9a2"
+  },
+  {
+    "id": 7,
+    "universityId": "ntu-tw",
+    "code": "MATH4007",
+    "title": "CALCULUS (2)",
+    "description": "This course will be lectured in English.\nIn this course, we will continue our journey in Calculus and turn our attention to the theory of integration (à la Riemann). We shall begin with the definition and techniques of integration, derive the Fundamental Theorem of Calculus that provides an important link between integration & differentiation, compute areas and volumes of some 2D/3D objects, solve certain first and second order differential equations.\nDefinitions are discussed and the most important theorems are derived in the lectures with a view to help students to develop their abilities in logical deduction and analysis. Practical applications of Calculus in various fields are illustrated in order to promote a more organic interaction between the theory of Calculus and students' own fields of study.\nThis course also provides TA classes in which students are able to make their skills in handling calculations in Calculus more proficient under the guidance of our teaching assistants.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2049820&class=03&dpt_code=9010&ser_no=57131&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "a25f8e5fe19e08b4cc18df59f41034141a0f66a39f5cbd8ada5cf7144c4c3219"
+  },
+  {
+    "id": 8,
+    "universityId": "ntu-tw",
+    "code": "MATH4008",
+    "title": "CALCULUS (3)",
+    "description": "Building upon the foundation laid in MATH4006-7, which focused on Calculus of functions with a single real variable, MATH4008 delves into the principles and applications of multivariable calculus, particularly in the context of 2-variable functions. This course serves as a crucial cornerstone for future courses in quantitative sciences.\nKey topics include :\n1. Introduction to Curves and Surfaces\n2. Partial Derivatives\n3. Chain Rule and Directional Derivatives\n4. Optimizations in Multivariables\n5. Multiple Integrations\nApplications of multivariable calculus, including, the meaning of partial derivatives in and the concept of a shadow price in economics, the principle of linear regression will also be discussed in the course.\nDefinitions are thoroughly discussed, and key theorems are derived during lectures to foster logical deduction and analytical skills among students. Practical applications of calculus are highlighted to establish a meaningful connection between theoretical concepts and their relevance to various scientific and engineering fields. To enhance students' proficiency in calculus, TA classes are incorporated into the course. Here, students have the opportunity to refine their calculation skills under the guidance of experienced teaching assistants. These sessions aim to reinforce theoretical concepts and provide practical insights into problem-solving techniques.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2049830&class=03&dpt_code=9010&ser_no=31260&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "9828fea1fbd8a0c1a7e89f04f87e29af79e7cc372e283c05ee28855e1be7bccc"
+  },
+  {
+    "id": 9,
+    "universityId": "ntu-tw",
+    "code": "MATH4009",
+    "title": "CALCULUS (4)",
+    "description": "In the final segment of Calculus (MATH4009), two main topics will be discussed.\nFirstly the course focuses on how calculus can be applied to 'vector fields.' Vector fields, which are vector-valued functions originated from Physics, will be thoroughly examined with an emphasis on understanding integrals over curves and surfaces. In particular, Green’s, Stokes', and Divergence Theorem will be presented as generalizations of the Fundamental Theorem of Calculus for, respectively, line and surface integrals. An application, we will derive the Gauss' Law, offering insights into the flux of an inverse square field across a closed surface.\nTo conclude our study of Calculus, we will introduce the definitions of limits for sequences and series, addressing the theoretical foundations for the introduction of 'power series.' As a generalization of `polynomials', power series find application in representing both elementary and advanced functions, thereby laying the groundwork for a more sophisticated analysis of functions, essential in practical contexts.\nThe key topics covered include:\n1. Line integrals\n2. Green’s Theorem and Conservative vector fields\n3. Surface integrals and Flux\n4. Stokes’ and Divergence Theorem\n5. Series : definition and convergence tests\n6. Power series : radius of convergence and their calculus\n7. Taylor's theorem and its applications",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2049840&class=03&dpt_code=9010&ser_no=10515&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "0290ae24c5c715151dc6b37ffbada6af10c35a70ab8e59bfcf4722b5c8c85fab"
+  },
+  {
+    "id": 10,
+    "universityId": "ntu-tw",
+    "code": "MATH4018",
+    "title": "Introduction to Linear Algebra Ⅰ(Ⅰ)",
+    "description": "Many problems in science are often resolved by firstly linearizing them. For instance, in calculus, differentiation can be seen as a process of locally approximating functions with linear functions. This process of linearization often sheds new light into the original problem. Linear algebra, the branch of mathematics that systematically deals with linearized functions, is now considered the fundamental language in almost all quantitative scientific studies.\nThe objective of this course is to introduce the fundamental ideas of linear algebra. In the first semester, our focus will be on studying vector spaces and the linear maps defined between them. Although these concepts are defined in abstract and general terms, we will approach them in a concrete and computable manner using matrices. By the end of the first semester, we will discover that every linear map on a finite dimensional vector space can be represented by an upper triangular matrix, and in some cases, even better, by a diagonal matrix, depending on the choice of a `basis’.\nThis course primarily focuses on pure mathematics. Theorems will be rigorously proven in their most general form, but key concepts and results will be illustrated through concrete examples from various disciplines.\n在自然科學中，許多問題常透過「線性化」方法獲得初步的理解與處理。例如，在微積分中，微分可視為以線性函數對原函數在局部進行近似的一種過程。此種線性化的過程，常能為原問題帶來新的洞見。而線性代數正是系統性研究線性函數與線性結構的數學分支，現今已被視為幾乎所有定量科學領域之基礎語言。\n本課程旨在介紹線性代數的基本概念與理論。第一學期將以向量空間（vector spaces）及其間的線性映射（linear maps）為主軸。儘管這些概念具有高度的抽象性與一般性，課程中將透過矩陣（matrices）進行具體且可計算的操作，以幫助學生掌握其本質。於本學期結束時，學生將理解：任一有限維向量空間上的線性映射皆可表為上三角矩陣（upper triangular matrix），在某些條件下，甚至可進一步簡化為對角矩陣（diagonal matrix），這取決於所選取之基底（basis）。\n本課程以純數學之觀點為主軸，重視理論之嚴謹推導與一般性敘述，並將輔以來自不同學科領域之具體例子，以加深學生對關鍵概念與主要結果之理解與應用。\nSyllabus :\n(Part I. Vocabulary in Linear Algebra)\nWeek 1. Fields and Vector spaces, Subspaces\nWeek 2. Linear independence, Spanning, Basis and Dimension\nWeek 3. Direct sums and complementary subspaces\nWeek 4. Linear maps (I) : kernel and image, rank and nullity theorem\nWeek 5. Linear maps (II) : representation by matrices\nWeek 6. Linear maps (III) : Gaussian elimination, rank of a matrix\nWeek 7. Linear maps (IV) : inverse of a linear map, transition matrices\nWeek 8. Midterm Exam Week\n(Part II. Theory of Diagonalization)\nWeek 9. Determinants (I) :  Definitions, properties, Cramer's rule\nWeek 10. Determinants (II) : Multi-linearity, Block matrices\nWeek 11. Diagonalization (I) : Eigenvalues, eigenvectors and eigenspaces\nWeek 12. Diagonalization (II) : algebraic and geometric multiplicities\nWeek 13. Diagonalization (III) : Cayley-Hamilton, minimal polynomials\nWeek 14. Applications to differential and difference equations\nWeek 15. Dual spaces and duality theorems\nWeek 16. Final Exam Week",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2049950&class=&dpt_code=2010&ser_no=46578&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "2e47e7fbc6533213a8dde2b37b4397a08787e162d090c0c420519d2bf7828ea5"
+  },
+  {
+    "id": 11,
+    "universityId": "ntu-tw",
+    "code": "MATH4022",
+    "title": "Introduction to Linear Algebra (II)",
+    "description": "This is a second course in linear algebra. In this course, three main topics will be discussed in detail.\nThe first topic focuses on the Jordan canonical form and its related results. For an endomorphism on a finite-dimensional complex vector space, neither its geometric multiplicities nor its minimal polynomial is sufficient to characterize it up to conjugation by invertible matrices. The theory of the Jordan canonical form completely resolves this issue and provides deeper insights into linear operators that are not necessarily diagonalizable.\nThe second topic involves (real or complex) vector spaces equipped with an appropriately defined “inner product.” Such structures are ubiquitous and fundamental in mathematics and many areas of science. Topics include orthonormal bases, the Gram-Schmidt process, spectral theorems, singular value decomposition (SVD), Moore–Penrose inverses, and their applications, among others.\nThe final part of the course explores contemporary topics in linear algebra. Applications will include Markov chains, stochastic matrices, and the Perron-Frobenius theorem, which underpins the mathematics behind Google’s search algorithms.\n這是線性代數的第二門課程。在這門課程中，我們將詳細探討三個主要主題。\n第一個主題是有關 Jordan Canonical Form及其相關結果。對於有限維複向量空間上的一個自同態 (endomorphism)，其幾何重數或最小多項式都不足以透過共軛來完全描述。Jordan Canonical Form 的理論完全解決了這個問題，並為我們理解不一定可對角化的線性算子提供了新的視角。\n第二個主題涉及賦予適當內積（inner product）的（實或複）向量空間。這些結構在數學及許多科學領域中具有普遍性和基礎性。我們將探討正交規範基底（orthonormal basis）、Gram-Schmidt 正交化過程、譜定理（spectral theorem）、奇異值分解（SVD）、Moore–Penrose 偽逆及其應用等內容。\n最後一部分的課程將討論線性代數中的一些當代主題。應用範疇將涵蓋馬可夫鏈（Markov chain）、隨機矩陣（stochastic matrix），並證明 Perron-Frobenius 定理，該定理是 Google 搜索算法背後的數學基礎。\nThe provisional syllabus can be found below.\n(Part III - Jordan Canonical Form)\nWeek 1. Jordan Canonical Form (I) : The statement, examples and applications\nWeek 2. Jordan Canonical Form (II) : Jordan chains and generalized eigenspaces\nWeek 3. Jordan Canonical Form (III) : The proof\n(Part IV - Inner Product Spaces)\nWeek 4. Inner product space (I) : definition and examples\nWeek 5. Inner product space (II) : Gram-Schmidt process\nWeek 6. Adjoint operators : normal, unitary, self-adjoint\nWeek 7. Spectral Theorem : statement and proof\n(Part V - Applications of Linear Algebra)\nWeek 9. Singular value decomposition (SVD)\nWeek 10.\tMoore-Penrose's inverse\nWeek 11.\tBilinear and quadratic forms\nWeek 12.\tDefiniteness of matrices, Second derivative tests\nWeek 13.\tMarkov chain\nWeek 14.\tPerron-Frobenius Theorem and mathematics behind Google\nWeek 15.\tMatrix Calculus",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=201%2049990&class=01&dpt_code=2010&ser_no=20389&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "b3d8f2c02cf1203fb8630f01343928c2698ae6e2ec4bb220781b1a8e97ebb0ca"
+  },
+  {
+    "id": 12,
+    "universityId": "ntu-tw",
+    "code": "MATH7201",
+    "title": "Real Analysis (Ⅰ)",
+    "description": "This is an introductory course to real analysis, primarily intended for students in mathematics departments, applied mathematics departments, and other departments who require rigorous analytical tools. Real analysis is the foundation of advanced analytical theories and an important tool commonly used in other fields, such as harmonic analysis, partial differential equations, and probability theory. The first semester will focus on the fundamental Lebesgue measure theory. Understanding this theory is very helpful for entering more abstract measure theories. We will introduce Lebesgue measure, delving into measurable functions and Lebesgue integral theory. The advantage of Lebesgue integrals lies in their powerful convergence theorems, which are commonly used tools in problem analysis. Familiarity with these operations is crucial for subsequent learning. With Lebesgue integral theory, we can introduce L^p spaces and even more abstract function spaces. L^2 spaces have many excellent properties, and basic Fourier analysis is built upon these spaces. We will also introduce Lebesgue differential theory, which is introductory material to harmonic analysis. In addition, we will introduce the Radon-Nikodym theorem and the theory of other measures.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U2870&class=&dpt_code=2210&ser_no=41174&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "4f6b04e3d69efd0042ffe6b3831fe35e97c7941c94a792a87fb6c2723a2d9196"
+  },
+  {
+    "id": 13,
+    "universityId": "ntu-tw",
+    "code": "MATH7702",
+    "title": "Combinatorics (Ⅱ)",
+    "description": "In this course, we will study the use of algorithms in combinatorics. We will begin by\nanalysing some important algorithms on graphs, introducing the basics of complexity theory in the process. The main part of the course, though, will concern the use of algorithmic thinking to prove theoretical results. For example, we will see how one can use network flows and the Ford-Fulkerson algorithm to prove results about graph connectivity, or how linear programming can be applied to several problems in the field. Finally, we will discuss probabilistic algorithms, and to what extent they can be derandomized for applications.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U3300&class=&dpt_code=2210&ser_no=39062&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "e54262e8a4c5866f423a4e045640787fcddceee53d5755e3c5a61bd957abae97"
+  },
+  {
+    "id": 14,
+    "universityId": "ntu-tw",
+    "code": "MATH7509",
+    "title": "Probability Theory (Ⅰ)",
+    "description": "This course is the first-half of a yearly sequence of measure-theoretic probability theory. Tentative topics include: basics of probability, notions from measure theory, random variables, distribution, law of large numbers, central limit theorem, etc.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U3410&class=&dpt_code=2210&ser_no=51319&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "0b85c620c5ba06a18597a0deb246269d885b319b6f4d7ec65098f5b2c1d9afd3"
+  },
+  {
+    "id": 15,
+    "universityId": "ntu-tw",
+    "code": "MATH8003",
+    "title": "Colloquium (Ⅱ)",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U3860&class=01&dpt_code=2210&ser_no=57118&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "cc4abe5e5345eb34581b62fc4d854304229df2d55f67f2aa1a320d1a39630e1b"
+  },
+  {
+    "id": 16,
+    "universityId": "ntu-tw",
+    "code": "MATH7419",
+    "title": "Equations of Mathematical Physics (Ⅰ)",
+    "description": "This course introduces mathematical methods for application to problems arising from physical and biological processes in terms of Nonlinear Partial Differential Equations (PDEs). It is addressed to graduate students and anyone with an interest in mathematical physics.\nThe content is built around the following topics: first-order quasilinear equations, reaction-diffusion equations, aggregation-diffusion equations, free boundary problems and phase transitions,  dispersive and wave equations. By PDE methodology, we study and solve these problems within a mathematically rigorous framework. The course also introduces simulation and symbolic calculation from Matlab Toolbox for solving PDEs.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U5780&class=&dpt_code=2210&ser_no=46236&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "e44b528b4d33430c390c527c83cd79effe0771369de8f855b01af7fcf6bf1d97"
+  },
+  {
+    "id": 17,
+    "universityId": "ntu-tw",
+    "code": "MATH5229",
+    "title": "Analysis(Honor Program)(Ⅱ)",
+    "description": "This is a continuation of Analysis (I). In this semester, we will first cover basic measure theory. After that, we will talk about some advanced topics in analysis. Tentative topics include fractal geometry and ergodic theory.",
+    "credits": 5,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U6550&class=&dpt_code=2010&ser_no=13558&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "23985861cc05cbdee3dee49911b29779b43bf38cf426ecaf496262bc75d611d2"
+  },
+  {
+    "id": 18,
+    "universityId": "ntu-tw",
+    "code": "MATH5249",
+    "title": "Multiple zeta values and iterated integrals",
+    "description": "This course explores various aspects of multiple zeta values (MZVs) and their analogs. Multiple zeta values are real numbers defined by nested series, and they can be interpreted as periods of the fundamental group of the projective line minus three points. Despite their seemingly specialized definition, MZVs appear in a surprisingly wide range of mathematical fields, revealing deep and intricate connections among diverse areas of research.\nThe course will begin with an introduction to classical theories surrounding MZVs. We will then delve into their geometric aspects, focusing on the Knizhnik–Zamolodchikov (KZ) equation and related differential equations. In the later part of the course, we will discuss recent developments such as q-analogs and iterated beta integrals, which open new and intriguing directions for study. If time permits, we will also touch on topics including multiple modular values, graph integrals, and Feynman amplitudes, and their profound connections to multiple zeta values.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U8860&class=&dpt_code=2010&ser_no=39353&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "46cc30a0a075b4a53739dcf61dea0945097d3f6cff9219fa78d2ba1aa546c8f8"
+  },
+  {
+    "id": 19,
+    "universityId": "ntu-tw",
+    "code": "MATH5359",
+    "title": "Advanced Topics in Combinatorics (Ⅰ)",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U9440&class=&dpt_code=2210&ser_no=95007&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "d8b481ac51602df6d5837f6e4a64a6a6f028631dab6ce27b686aa5ee8af47ed5"
+  },
+  {
+    "id": 20,
+    "universityId": "ntu-tw",
+    "code": "MATH5379",
+    "title": "Structure theory of p-adic reductive groups",
+    "description": "For a reductive group defined over a non-archimedean local field, the group of its rational points\nis called a p-adic reductive group. A p-adic reductive group is a locally compact (profinite) group\nequipped with a lot of interesting open compact subgroups. It is known that those open compact\nsubgroups can be nicely described by appealing to a combinatorial object called the Bruhat-Tits\nbuilding (Bruhat-Tits theory). The importance of Bruhat-Tits theory has been increasing in recent\nyears, especially from the viewpoint of representation theory of p-adic groups.\nThe aim of this course is to understand these topics. The contents are as follows:\n- Quick review of theory of algebraic (reductive) groups\n- Quick review of theory of non-archimedean local fields\n- Bruhat-Tits buidings\n- Integral (Neron) models\n- Moy-Prasad filtrations\n- Application: construction of supercuspidal representations",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U9680&class=&dpt_code=2010&ser_no=34284&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "8d8b876adcf61cb2a8075c2271a8310517d39a10988ef6f77f1a0b2cf09883a0"
+  },
+  {
+    "id": 21,
+    "universityId": "ntu-tw",
+    "code": "MATH5381",
+    "title": "Rigorous Numerics in Dynamical Systems(Ⅱ)",
+    "description": "Many models in physics, biology, engineering, and other sciences take the form of ordinary differential equations (ODEs) that describe the time evolution of a system. In nonlinear systems, explicit solutions are rarely available, and as a result, the analysis typically shifts toward a qualitative understanding of the dynamics. This involves identifying invariant sets such as equilibria, periodic orbits, and invariant manifolds, which serve as organizing centers for the flow. The goal of this course is to combine analytical techniques from pure mathematics with validated computational methods from applied mathematics which leads to computer-assisted proofs of existence for dynamical objects in ODEs. Students will learn and implement these methods using the Julia programming language, gaining experience with interval arithmetic and validated numerics. Topics include the existence and validation of steady states, periodic orbits, and solutions to initial and boundary value problems. The course also covers the linear stability theory for equilibria and periodic orbits, as well as the rigorous computation of their stable and unstable manifolds. Then, students will study the existence of connecting orbits, including homoclinic and heteroclinic trajectories, and their relation to chaotic dynamics. Finally, they will learn about rigorous continuation techniques.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U9710&class=&dpt_code=2010&ser_no=22439&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "42cb47f341d1c52508ab6a024595cbe077e24fe1a2d87fde785d9f59058e0dbb"
+  },
+  {
+    "id": 22,
+    "universityId": "ntu-tw",
+    "code": "MATH5383",
+    "title": "Comparison geometry with synthetic Ricci curvature bound",
+    "description": "In this series lectures, we introduce Gromov-Hausdorff convergence and comparison geometry with\nsynthetic treatments of Ricci curvature. The precise contents are the following\ni) Gromov-Hausdorff convergence\nii) Basics of metric and Riemannian geometry\niii) Comparison geometry of Ricci curvature\niv) Synthetic treatments of Ricci curvature; Optimal transportation theory and Bakry-Emery theory\nv) Recent developments/application to complex geometry\n*This is an intensive course offered by Prof. Shouhei Honda, who will be an exchange professor from the\nUniversity of Tokyo to NTU. The lectures will be held in the following weeks:\nMar 23 (Mon.) Mar 25 (Wed.)\nMar 30 (Mon) Apr 1 (Wed.)\nMay 25 (Mon.) May 27 (Wed.)\nJune 1 (Mon.) June 3 (Wed.)\nThe lecture time will be 13:20-15:10 each day.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U9730&class=&dpt_code=2010&ser_no=50133&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "e745d65ffb4883ec3c1aefbf06720a18b0852cf3f383e03e335b80115598b016"
+  },
+  {
+    "id": 23,
+    "universityId": "ntu-tw",
+    "code": "MATH5385",
+    "title": "Modern Algebra – Representation Theory and Lie Algebras",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U9750&class=&dpt_code=2210&ser_no=21580&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "fc880749ac142be38efcc84be3813ff8adc7cde6739e75fed77968ef7b775fe0"
+  },
+  {
+    "id": 24,
+    "universityId": "ntu-tw",
+    "code": "MATH5389",
+    "title": "Mod p representation theory of p-adic reductive groups",
+    "description": "This course introduces the theory of mod p representations (smooth representation over a field of characteristic p) of p-adic reductive groups, focusing mainly on concrete groups such as GL_n. The keywords of the courses are: irreducible admissible representations, parabolic induction, Satake parameters, supersingular representations, pro-p Iwahori Hecke algebra. A central goal of the course is to explain the structure of the parabolic induction and the theorem that reduces the classification of irreducible representations to the classification of irreducible supersingular representations.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U9790&class=&dpt_code=2010&ser_no=27047&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "008de054bdbcf4710004ae482a5a6feca08457696561593bd9a43b8eda58266c"
+  },
+  {
+    "id": 25,
+    "universityId": "ntu-tw",
+    "code": "MATH5390",
+    "title": "Probabilistic Combinatorics",
+    "description": "In this course, students will master techniques used for research in probabilistic combinatorics and random graph theory. We will begin with the basics of the probabilistic method, covering the first moment method, the method of alterations, the second moment method. We then progress to more advanced techniques, such as the Lovász Local Lemma, correlation inequalities, martingales and concentration inequalities. Each of these techniques will be demonstrated with several applications to graph theory, combinatorics, combinatorial geometry and combinatorial number theory.\nIn the later part of the course, we will introduce some recent breakthroughs in probabilistic combinatorics. These include the Park-Pham proof of the Kahn-Kalai conjecture regarding thresholds in random graphs, advances on the sunflower conjecture via p-spread distributions, and the method of hypergraph containers, crucial to much recent research.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U9800&class=&dpt_code=2210&ser_no=95008&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "f09ba24793d71d2de19565223cfd53a975f688ee7f5bf924a0ff5b92a746ee2a"
+  },
+  {
+    "id": 26,
+    "universityId": "ntu-tw",
+    "code": "EE1002",
+    "title": "Engineering Mathematics-linear Algebra",
+    "description": "This is a first course on linear algebra. It gives a comprehensive coverage on the basics Of linear algebra by using a matrix approach. The topics to be covered include: (1) Systems of Linear Equations; (2) Linear Transformations; (3) Determinants; (4) Subspaces; (5) Eigenvalues and Eigenvectors; (6) Orthogonality;\n(7) Vector Spaces",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2010030&class=05&dpt_code=9010&ser_no=18482&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "b76950de4cb2894efe0f1df88a284cb3046ee6b728610e874c712b47ceabf276"
+  },
+  {
+    "id": 27,
+    "universityId": "ntu-tw",
+    "code": "EE2003",
+    "title": "Engineering Mathematics-complex Variables",
+    "description": "-\nENGINEERING MATHEMATICS - COMPLEX VARIABLES\nENGLISH-TAUGHT\nComplex numbers and complex functions are very useful in EE.\nThey are used in RLC circuits, EM waves, and control systems.\nIt is also the foundation of modern magics, especially quantum mechanics,\nwhich are useful in semiconductor and photonics industries.\nIn this course, we want to equip students with complex tools.\n-",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2010040&class=&dpt_code=9010&ser_no=46568&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "3c93ed96603b0eca8abd49248105ef04a9e1fd512cec787b3df5c3242c7b3ce1"
+  },
+  {
+    "id": 28,
+    "universityId": "ntu-tw",
+    "code": "EE1004",
+    "title": "Computer Programming",
+    "description": "This is an introductory course on computer and computer programming. The course is designed for entry-level students who are interested in both the theory and practical aspects of the computers. The goal is two-fold: to communicate the technical essence and to foster development skill. Such design is based on two observations -- (1) programming language fluency depends on a solid understanding of computers and (2) communication of the knowledge is more effective when it is put into use. To leverage the two (theory and practice), the course features lectures that pass on the knowledge and labs that take you into the world of Go, a programming language adopted widely for server/cloud-side implementations.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2010210&class=04&dpt_code=9010&ser_no=53525&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "b3a38a20c845e4b8760e59b1fd544dff4be4fc22a002ec78c3bc8cacd83f4280"
+  },
+  {
+    "id": 29,
+    "universityId": "ntu-tw",
+    "code": "EE2004",
+    "title": "Electronic Circuits",
+    "description": "This course is one of the fundamental core courses in the field of electrical engineering, aiming to introduce basic concepts and methods for circuit analysis. The course will utilize mathematical tools such as differential equations, phasors, and Laplace transforms to address circuit-related problems.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2020100&class=02&dpt_code=9010&ser_no=11331&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "1418e8285f36a25a873a31ed3fe66b5cc55a50051660bc42757616cbbb667246"
+  },
+  {
+    "id": 30,
+    "universityId": "ntu-tw",
+    "code": "EE2021",
+    "title": "Engineering Mathematics-Differential Equation(Ⅰ)",
+    "description": "Differential equations are ways to describe continuous objects (like EM waves).\nIn fact, differential equations are used even if the object we care is too many to count (like water molecules).\nIn this course, we go over basic differential equations and basic techniques.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2020130&class=05&dpt_code=9010&ser_no=11403&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "dfb47154584b18e838495b96eb2ad0611c24b87a871375cf0e52d041aee2b66e"
+  },
+  {
+    "id": 31,
+    "universityId": "ntu-tw",
+    "code": "EE2022",
+    "title": "Electronics (Ⅰ)",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2020140&class=05&dpt_code=9010&ser_no=29691&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "8ee31d3c1f4d1e5dbc1b925baabae24ca8b5fb864378dff6e676185d714c4ebc"
+  },
+  {
+    "id": 32,
+    "universityId": "ntu-tw",
+    "code": "EE2007",
+    "title": "Probability and Statistics",
+    "description": "1. Experiments, Models, and Probabilities\n2. Random Variables (I)\n3. Random Variables (II)\n4. Pair of Random Variables\n5. Sums of Random Variables\n6. Hypothesis Testing\n7. Parameter Estimation",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2021000&class=05&dpt_code=9010&ser_no=42099&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "006341c728cc5217069f581199b99c24d76265a55e1f9431b365eee0d8da75b7"
+  },
+  {
+    "id": 33,
+    "universityId": "ntu-tw",
+    "code": "EE2008",
+    "title": "Discrete Mathematics",
+    "description": "Outline of Topics to be Covered (Subject to Change)\n\u000f Formal Logic\n– Propositional Logic\n– Predicate Logic\n\u000f Sets, Functions and Relations\n– Definitions\n– Countable/Uncountable Sets\n\u000f Number Theory\n– Modular Arithmetic\n– Chinese Remaindering Theorem\n– Fermat’s Little Theorem\n– Applications in Cryptography (if time permits)\n\u000f Recurrence Relations\n– The Growth of Functions\n– Linear Recurrence Relations\n– Generating Functions (if time permits)\n\u000f Relations\n– Basic Definitions\n– Closure\n– Equivalence and Partial Ordering\n\u000f Graphs\n– Definitions\n– Connectivity\n– Euler/Hamiltonian Paths\n– Planar Graphs\n– Coloring\n– Trees (if time permits)",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2021100&class=01&dpt_code=9010&ser_no=45668&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "22387d6812e48c89fdc3071950f2330879494f726c5898e5ce97098e81ec82bd"
+  },
+  {
+    "id": 34,
+    "universityId": "ntu-tw",
+    "code": "EE4010",
+    "title": "Introduction to Power Electronics",
+    "description": "Introduction to Power Electronics is an upper-level undergraduate course that will introduce the basics of power electronics. This course takes a flipped-learning approach that involves pre-class, in-class, and post-class activities. There will also be a number of problem sets and online simulation problems to solidify the concepts covered in this course and exams to evaluate students’ understanding.  There will also be a group project with a final presentation.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2024120&class=&dpt_code=9010&ser_no=47940&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "a0dd3b044ab47e7455d45fd9eae73b54349b0c9b4466f3d4acf23d4a388d2f5c"
+  },
+  {
+    "id": 35,
+    "universityId": "ntu-tw",
+    "code": "EE2010",
+    "title": "Electromagnetics (Ⅰ)",
+    "description": "This course will introduce the fundamental principles of electromagnetic fields and waves that underpin modern electrical, electronic, computer, communication, and energy systems. Starting with the mathematical tools such as vector analysis and field concepts, this course will then go through the Maxwell’s equations, and eventually discuss how electromagnetic fields and waves behave in various systems.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2025110&class=05&dpt_code=9010&ser_no=54751&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "e8a7ed82b6075eb82fc788ebb5a628403edccea1854356e6e8ddeb37931aab6a"
+  },
+  {
+    "id": 36,
+    "universityId": "ntu-tw",
+    "code": "EE3004",
+    "title": "Electromagnetics (Ⅱ)",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2025120&class=05&dpt_code=9010&ser_no=50269&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "07601a2aac11bbe97fc056975002038d0684f3f110236615b092ef069b253f72"
+  },
+  {
+    "id": 37,
+    "universityId": "ntu-tw",
+    "code": "EE3008",
+    "title": "Rf Microwave Wireless Systems",
+    "description": "Wireless communication is widely applied in mobile communication, local area network (WiFi) and many different applications.\nThis course will introduce many different components and techniques used in wireless communication.\nCovered topics are:\n1. Introduction to wireless systems\n2. Transmission lines and microwave networks\n3. Noise and distortion in microwave system\n4. Antennas and propagation for wireless systems\n5. Filters\n6. Amplifiers\n7. Mixers\n8. Transistor oscillators and frequency synthesizers\n9. Modulation techniques\n10. Receiver Design",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2031100&class=&dpt_code=9010&ser_no=11489&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "f92021472ea538a9c4a7e27481e8ed67d970b4104f367d8f10d12abdbcb42bea"
+  },
+  {
+    "id": 38,
+    "universityId": "ntu-tw",
+    "code": "EE4020",
+    "title": "Introduction to Computer Networks",
+    "description": "This is an introductory course on computer networks, largely the Internet. The course is designed for undergraduate students who are interested in the science and engineering aspects of the Internet. The goal is two-fold: to communicate the technical essence and to foster development skill.\nWe will take the top-down approach this semester. Following a (hopefully) brief overview, the lectures will go right into the Internet applications most of us are familiar with, e.g., the WWW and the HTTP protocol that is supporting the operation of WWW. HTTP there is referred to as an Application layer protocol. The intention is to go 3-4 weeks per layer, digging in to the low-level details one layer at a time, e.g., the TCP protocol running at the Transport layer, and the BGP routing running at the Network layer. When time permits, we shall look into the Ethernet protocol running at the Link Layer.\nCommunication of knowledge is often more effective when it's put into use. Eying also the job prospective, the course features a series of programming assignments (PAs) and accompanying videos to lead you into the world of network and web programming with Go, a programming language adopted widely by the major Internet companies, e.g., Google and Facebook, for server-side implementations.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2031110&class=&dpt_code=9010&ser_no=15382&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "ab306e27da1dcc6c7025562c3aaf6436cfbd15f489292ed4cd2a2e13c87036a0"
+  },
+  {
+    "id": 39,
+    "universityId": "ntu-tw",
+    "code": "EE2011",
+    "title": "Signals and Systems",
+    "description": "Required course for 2nd-year NTU EE students teaching fundamentals of analytical framework to handle continuous-time and discrete-time signals and systems, such as Discrete Fourier Transform, Laplace Transform and Z-Transform.\n? A required course for 2nd-year NTUEE students\n? The course will be conducted in English\n?  No need to sign up for the other courses if you \u000bprefer a Mandarin version; you just go there\n?  09:10-11:00 Mon, 14:20-15:10 Thu\n?  Signals and Systems 一23 四7\n?  Probability and Statistics 一4 四89\n?  Course website\n?  https://cool.ntu.edu.tw/courses/25125/\n?  Number of students taken in this course\n?  Possibly at most 80\n?  Instructor\n?  Yi-Hsuan (Eric) Yang\n?  Office: EE2-337\n?  Office hours: 2-4 pm Monday\n?  Grading (same exam/homeworks across classes)\n?  Midterm exam: 35%\n?  Final exam: 35%\n?  Written homeworks: 10%\n?  MATLAB homeworks: 20%\n?  Class participation (bonus)\n?  Important Dates\n?  Midterm exam: official date (April 10)\n?  Final exam: official date (June 5)\n?  TA\n?  Wilbur Chen (陳祈瑋) wilbur@access.ee.ntu.edu.tw\n?  Office: EE2-232\n?  Office hours: 3~4 pm Monday",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2031400&class=02&dpt_code=9010&ser_no=44129&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "7dd8d63c47300ca4c05a78dc239d337dbe057b2982f92b872596012e1702a83f"
+  },
+  {
+    "id": 40,
+    "universityId": "ntu-tw",
+    "code": "EE4021",
+    "title": "Numerical Method",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2032000&class=&dpt_code=9010&ser_no=46464&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "5e167895f288825bbef414d006fd53e2b9f6992defb64b1d3cd9b7d48a6b0854"
+  },
+  {
+    "id": 41,
+    "universityId": "ntu-tw",
+    "code": "EE2012",
+    "title": "Switching Circuit and Logic Design",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2032300&class=05&dpt_code=9010&ser_no=43675&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "c989523a846c3bf997bb2d011560cc61d25becb10e46752cf6c161293067803d"
+  },
+  {
+    "id": 42,
+    "universityId": "ntu-tw",
+    "code": "EE3037",
+    "title": "Computer Programming Laboratory",
+    "description": "This is a part of the course -- Computer Programming (EE 1004). Please refer to the course syllabus for details.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2033940&class=04&dpt_code=9010&ser_no=12705&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "50e31efaff9a9553bdf81bee9309a37b47c8c5f2a27b78d2816ea0de41d1f6bf"
+  },
+  {
+    "id": 43,
+    "universityId": "ntu-tw",
+    "code": "EE3013",
+    "title": "Solid State Electronics",
+    "description": "The purpose of this course is to provide a basis for understanding the characteristics, operation, and limitations of semiconductor devices. The course content includes (1) an introduction to the crystal structure of solids leading to the ideal single-crystal semiconductor material, (2) quantum mechanics and the quantum theory of solids, (3) introduction of semiconductor material physics, (4) the physics of the semiconductor in thermal equilibrium, (5) the transport phenomena of the charge carriers in a semiconductor, (6) the nonequilibrium excess carrier characteristics, (7) electrostatics and current-voltage of the basic pn junction, and (8) metal–semiconductor junctions and semiconductor heterojunctions.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2037300&class=01&dpt_code=9010&ser_no=43000&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "86213b63b6a3ed413418a7fa0c159cd010002b762c006535c15d5da57f79d03a"
+  },
+  {
+    "id": 44,
+    "universityId": "ntu-tw",
+    "code": "EE3014",
+    "title": "Fundamentals of Electro-optics",
+    "description": "Introduction to Optoelectronics\nOptoelectronics brings together electronics and light. While students in Electrical Engineering are generally familiar with electronic devices and systems, many have had less exposure to the optical side of the field—such as cameras, holography, optical coatings, lasers, optical fiber communications, and other key optoelectronic technologies.\nThis course provides an accessible introduction to the fundamental principles of optics and optoelectronics and shows how these principles lead to important technologies used in modern engineering.\nWe will begin with geometrical optics and image formation, including cameras and the human eye. We will then introduce beam optics and Gaussian beams, providing students with a glimpse of emerging technologies such as co-packaged optics (CPO) for advanced AI computing systems.\nThe discussion of imaging will then be extended to diffraction, optical Fourier transforms, image processing, holography, and photolithography. From there, we will study two-beam and multiple-beam interference. Two-beam interference provides powerful techniques for evaluating optical quality and developing optical sensors, while multiple-beam interference forms the foundation of optical thin-film coatings, resonators, and lasers.\nThe course will conclude with an introduction to optical fibers and fiber-based active and passive optoelectronic components, together with contemporary applications in transoceanic communications, biomedical sensing, quantum technologies, silicon photonics, and AI optical interconnects.\nBecause this is an introductory course, the material is presented from an intuitive and engineering-oriented perspective. The course is designed to be accessible even to students with limited prior background in optics. In previous years, even first-year students from different departments have successfully completed the course and achieved excellent results.\nThe course does not require an in-depth background in semiconductor physics. Relevant semiconductor concepts will be introduced as needed to explain important optoelectronic devices and applications.\nCourse Scope\nThe basic operating principles of optoelectronic devices will be introduced, with emphasis on how fundamental optical principles are transformed into practical devices and systems such as LEDs, lasers, photodetectors, solar cells, optical fibers, modulators, and optical sensors.\nThe following topics are planned, but will be adjusted to fit the real ongoing siutation:\n1. Fundamentals of Light and Optical Devices\nBasic properties of light and ray optics\nCameras, imaging systems, and the human eye\nDiffraction and Fourier optics\nOptical image processing and holography\nPhotolithography\nOptical interferometers and sensing\nOptical thin films and coatings\nLasers and Gaussian beams\nPolarization, polarizers, and liquid crystals\nLEDs, photodetectors, and solar cells\n2. Fiber Optics and Modern Applications\nFundamentals of optical fibers\nPassive and active fiber-optic components\nOptical fiber communication systems\nTransoceanic optical communications\nFiber-optic sensing and biomedical applications\nSilicon photonics and optical interconnects\nCo-packaged optics for AI computing\nIntroduction to photonics for quantum technologies",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2037500&class=01&dpt_code=9010&ser_no=15127&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "baa0b555fb66b1fc47dcbc25db479ee1b08ea09c958c35386f54bb032615bff4"
+  },
+  {
+    "id": 45,
+    "universityId": "ntu-tw",
+    "code": "EE3015",
+    "title": "Modern Physics",
+    "description": "An introductory course to Modern Physics, explaining the main results of Quantum Mechanics and how to describe quantum phenomena in model systems, atoms and solid state systems.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2038100&class=01&dpt_code=9010&ser_no=43416&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "9af47e1a4098f46a51379ba3aafed58020cc2d1aa520480ea13170f36310d1bc"
+  },
+  {
+    "id": 46,
+    "universityId": "ntu-tw",
+    "code": "EE4033",
+    "title": "Algorithms",
+    "description": "This course provides an introduction to the design and analysis of computer algorithms. We will cover topics including concepts of algorithm complexity, and various algorithms such as divide-and-conquer, dynamic programming, sorting, and greedy algorithms.\nClassroom: Room118, MK Innovation Hall (https://maps.app.goo.gl/wu7HJokQBFaRBbpV7)\nFor those who would like to enroll in this course (加簽), please fill in this Google form and follow the instructions: https://forms.gle/uCu9QtMvjJHAh7ik6",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2039000&class=01&dpt_code=9010&ser_no=53176&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "c7953e42b430c3ffa3aff19be3bec3a0b040c30587909723f5fa92456b55f50c"
+  },
+  {
+    "id": 47,
+    "universityId": "ntu-tw",
+    "code": "EE3018",
+    "title": "Electrical Engineering Lab (topics on Communication System)",
+    "description": "Electrical Engineering Lab (topics on Communication System) is a lab course offered to third and fourth-year students in the Electrical Engineering Department. The course consists of two main components: (1) Perform the main steps of digital wireless transmissions, and (2) Critique experimental methodologies and results in state-of-the-art wireless network papers.\n(1)\tPerform the main steps of digital wireless transmissions\n[First half of the semester: Individual MATLAB simulation]\nIn the first half of the semester, each student learns to use MATLAB to generate and process wireless signals, and simulate wireless transmission and reception. Course topics include digital modulation and demodulation, up-sampling and down-sampling, filtering, frequency conversion, synchronization, channel estimation, and orthogonal frequency-division multiplexing (OFDM). The generated waveform and the signal processing blocks developed in MATLAB will be used for transmission and reception on USRPs.\n[Second half of the semester: Team USRP experiment]\nIn the second half of the semester, students use USRPs to observe the impacts of common hardware impairments on wireless communications, and perform over-the-air transmission and reception. The USRP lab will be team-based with 2-3 people per group. Course participants can find teammates on their own. Once the course starts the USRP experiments, an additional lab session led by the TA will be on either Monday or Tuesday evening, with the exact time decided by all course participants.\n(2)\tCritique experimental methodologies and results in state-of-the-art wireless network papers\nThroughout the semester, students review one paper on wireless communications and networking every two weeks, focusing on the experimental methodologies and results. Papers are selected from top conferences in the wireless field. The selected papers either relate to course topics or propose unique ideas.\nStudents write paper reviews and participate in team debates on the papers. More specifically, all students submit their paper reviews, except for people who debate in the class that week. Team debate assignments are based on students’ preference for the papers. All papers and their corresponding debate dates will be announced in the first week of class. Students will submit their preferences, with which the TA assigns debate teams. Each student will debate twice, once on the champion team and once on the opposing team.\nAssignments\nLab assignments and paper reviews will alternate throughout the semester, with one assignment per week starting from the third week of class.\n[Lab Assignments]\nMATLAB individual assignments x4\nUSRP team assignments x2\n[Paper Reviews]\nIndividual paper reviews x5\nTeam debates x2",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2039800&class=&dpt_code=9010&ser_no=39251&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "f55cc38410958a8d5b6e6f3d28580154bf7aab802eb0853dd74642996222f603"
+  },
+  {
+    "id": 48,
+    "universityId": "ntu-tw",
+    "code": "EE3024",
+    "title": "Control Systems",
+    "description": "[Course description]\nControl is the action of causing a system variable to approach some desired value. It is also a fundamental and universal problem-solving approach in many traditional and interdisciplinary fields.\nA control system, in a very general sense, is a system with an (reference) input that can be applied per the desired value and an output from which how well the system variable matches to the desired value (e.g., errors) can be determined. It can be found in daily life, almost all engineering disciplines, and even biological and social studies. For examples, bicycle riding involves with a control system comprising of a bicycle and a rider, with inputs and outputs associated with the desired attitude, speed, and direction of the bicycle. Temperature control systems have applications in household, automobile, aerospace, office, factory, and agriculture environments. Motion control systems are critical to factory automation and precision instruments, such as industrial robots, atomic-force microscopes, and step-and-scan photolithography exposure systems. Many modern cameras equip with autofocus and vibration compensation systems to minimize image blur. Many kinds of circuits such as phase lock loops, operational amplifiers, and voltage regulators rely on control to ensure their functions and performance. A living body is a complex control system where many critical variables such as heart beat rate, blood pressure, and body temperature are regulated constantly for health. Central banks of most countries around the world set interest rates as a way to control inflation.\nThis undergraduate course is designed for junior and senior (3rd/4th yr.) students to apprehend basic modeling, simulation, analysis, and design techniques for control systems. It intends to cover fundamentals of “classical control” that primarily focuses on frequency domain feedback control approaches for single-input-single-output systems. When time permits, some essential elements in modern-day control engineering such as state-space approaches, discrete-time digital control, and numerical methods will also be briefly introduced.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2043100&class=&dpt_code=9010&ser_no=52796&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "08a75d6be2eb28c3652b5c37ca5c098e067a895b036b8117509104583ea720a2"
+  },
+  {
+    "id": 49,
+    "universityId": "ntu-tw",
+    "code": "EE4039",
+    "title": "Computer Architecture",
+    "description": "Topics covered in this course are as follows:\n- Computer Abstractions and Technology (Chapter 1)\n- Instructions: Language of the Computer (Chapter 2)\n- Arithmetic for Computers (Chapter 3)\n- The Processor (Chapter 4)\n- Large and Fast: Exploiting Memory Hierarchy (Chapter 5)\n- Parallel Processors from Client to Cloud (Chapter 6)\n**IMPORTANT**: This course does not follow the university's mapping from hundred-point grades to letter grades.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2043200&class=&dpt_code=9010&ser_no=57903&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "39ca788d568c98c2a05d43f1192d39c56ee4d265b7458d0a161b5177c585418b"
+  },
+  {
+    "id": 50,
+    "universityId": "ntu-tw",
+    "code": "CSIE3310",
+    "title": "Operating Systems",
+    "description": "Lecture session: The fundamental knowledge of operating systems will be established in the lecture session. It covers the following parts:\n‧\tPart 1: Introduction to Operating Systems\n‧\tPart 2: Process Management\n‧\tPart 3: Process Synchronization\n‧\tPart 4: Memory Management\n‧\tPart 5: Storage Management\n‧\tPart 6: File Systems\nHands-on assignments: This practical session covers how the design of operating systems affects the system-level and user-level performance.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=902%2036700&class=02&dpt_code=9020&ser_no=46054&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "8bb17721f243ba7cb8d9664ec02c1a31986fe42bd9c61d6feefc34e660b65974"
+  },
+  {
+    "id": 51,
+    "universityId": "ntu-tw",
+    "code": "CSIE3512",
+    "title": "Special Research",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=902%2037000&class=74&dpt_code=9020&ser_no=26165&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "cea5b2aadb97372216c2797c9bca31670cd24737c60110f2775653566f9b0505"
+  },
+  {
+    "id": 52,
+    "universityId": "ntu-tw",
+    "code": "CSIE3110",
+    "title": "Formal Languages and Automata Theory",
+    "description": "See course page: https://www.csie.ntu.edu.tw/~cjlin/courses/comptheory2026/\n\nAutomata and Languages\nMathematical models of computation\nComputability Theory\nCourse\nProblems CAN and CANNOT be solved by computers\nObjectives\nComplexity Theory\nWhy some problems are hard but some are easy",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=902%2043500&class=01&dpt_code=9020&ser_no=28040&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "e4e1bd8dc210d41031d4714658c6ac4955b7381d3620caf315907f4733bdb720"
+  },
+  {
+    "id": 53,
+    "universityId": "ntu-tw",
+    "code": "EE5002",
+    "title": "Power Electronics",
+    "description": "This course introduces basic power converter circuits, feedback control for regulators, and magnetic components used in power circuits",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U0080&class=&dpt_code=9210&ser_no=17372&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "86f1add3124c5b872561de123652cd143ddcf98b1c4350c113babe6546970739"
+  },
+  {
+    "id": 54,
+    "universityId": "ntu-tw",
+    "code": "EE5010",
+    "title": "Antenna",
+    "description": "This course will cover the following topics:\n1. Introduction\n2. Antenna Basics\n3. The Antenna Family\n4. Point Source\n5. Array of Point Sources (Phase distribution)\n6. Array of Point Sources (Amplitude distribution)\n7. Thin Linear Antennas\n(The following sections are optional, depending on our progress.)\n8. Loop Antennas\n9. End-Fire Antennas\n10. Slot and Patch Antennas\nThis course will employ a flipped classroom (翻轉教室) approach. Before each class, you are required to watch the assigned instructional videos. In class, we will engage in group discussions and presentations related to your hands-on projects. Therefore, a proactive learning attitude (主動積極的學習態度) is crutial. Additionally, this course will be conducted primarily in English. Course materials and in-class lectures will be delivered in English. However, the language you used for in-class discussions and presentations will be adjusted as needed to optimize learning outcomes.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U0570&class=&dpt_code=9210&ser_no=58764&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "7804519616456ea3d1b799264d4f4189a2cf4bbc81e857388d5c38a8f19a4061"
+  },
+  {
+    "id": 55,
+    "universityId": "ntu-tw",
+    "code": "EE5027",
+    "title": "Adaptive Signal Processing",
+    "description": "\"Adaptive Signal Processing\" is a graduate-level course for graduate students. This course focuses on designing filters based on the statistical information of the input and desired signals. This concept is fundamental to various research topics in communication and signal processing. Notable applications include adaptive equalization, spectrum analysis, adaptive noise cancellation, and adaptive beamforming.\nThe course topics include the following items:\n1. Stochastic processes and models\n2. Wiener filters\n3. Linear prediction\n4. Method of steepest descent\n5. Least-mean-square adaptive filters\n6. Block adaptive filters\n7. Least Squares and Recursive Least Squares filters\n8. Kalman filters\n9. Adaptive beamforming\n---\nScheme for the final grades: The instructor may set his own standards for converting raw scores into letter grades.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U1170&class=&dpt_code=9210&ser_no=41481&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "cfb75848cae2125a6f8b35a7614a8b71d588a70832180ba5871da9041d70aaea"
+  },
+  {
+    "id": 56,
+    "universityId": "ntu-tw",
+    "code": "EE5041",
+    "title": "Stochastic Processes and Applications",
+    "description": "1. Review of Random Variables (Papoulis, Chaps. 1-7, and class note)\n2. Introduction to Random Processes: General Concepts and Spectral Analysis (Papoulis, Chap. 9, and class note)\n3. Gaussian Random Vectors and Gaussian Random Processes (Larson & Shubert, class note)\n4. Signal Representation -- Karhunen-Love Expansion (Papoulis, Chap. 11, and class note)\n5. Narrowband Processes and Bandpass Systems (Davenport and Root, and class note)\n6. Poisson Processes (Larson & Shubert, Leon-Garcia, and class note)\n7. Markov Processes and Markov Chains (Larson & Shubert, Leon-Garcia, and class note)\n8. Queuing Systems (Leon-Garcia)\n9. Random Walk Processes and Brownian Motion Processes (Leon-Garcia)",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U1890&class=&dpt_code=9210&ser_no=19947&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "124834f80eaeb37059a68c97833f6bccf8a951abb43a1982b9fe89099aa735df"
+  },
+  {
+    "id": 57,
+    "universityId": "ntu-tw",
+    "code": "EE5043",
+    "title": "Computer Aided Analysis & Optimization of Integrated Circuit",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U1980&class=&dpt_code=9210&ser_no=20451&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "5443c326223e2eb720eb65efc930a1ebd53db873eeb61bda970d2d47c091ec75"
+  },
+  {
+    "id": 58,
+    "universityId": "ntu-tw",
+    "code": "EE5055",
+    "title": "Micro Sensors",
+    "description": "Based on semiconductor fabrication technologies, this course first introduces bulk micromachinig. Then the fabrication methods, operation principles, and applications of different kinds of micro sensors will be introduced to establish fundamental knowledge for interdisciplinary technologies. It should be noted that this is an intensive course at this semester. This course will be co-instructed in English with Prof. Tim Yeh from UT Austin. The course time is at Mon. 9 am – 12 pm, Mon. 2 pm – 5 pm, Wed. 9 am – 12 pm, and Thu. 9 am – 12 pm from 2026/5/7 to 2026/6/3.\nThe course topic includes\n1.\tPressure sensor\n2.\tAccelerometer\n3.\tGyroscope\n4.\tUltrasonic sensor\n5.\tHumidity sensor\n6.\tGas sensor\n7.\tMolecular sensor",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U2510&class=&dpt_code=9210&ser_no=12646&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "36f3a0f9e61a7f484c162f87f28a7d11e5f54983ef047b6e4bed2f39526e636b"
+  },
+  {
+    "id": 59,
+    "universityId": "ntu-tw",
+    "code": "EE5183",
+    "title": "Financial Technology",
+    "description": "- Financial technology (Fintech) is a broad category that refers to the innovative use of technology in the design and delivery of financial services and products.\n- While many technology innovations play important parts in revolutionizing financial services, this course focuses on deep learning (DL) and its applications in FinTech.\n- DL is a form of machine learning that enables computers to learn from experience and understand the world in terms of a hierarchy of concepts with a deep representation of many layers.\n- In this course, we hope to demonstrate how DL can be applied to achieve superior predictive performance in FinTech applications.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U2610&class=&dpt_code=9210&ser_no=47649&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "7aee260f7b6bcb997a9e1e427bf34ae8e3242bbd0efade3a472fc4a169e4513d"
+  },
+  {
+    "id": 60,
+    "universityId": "ntu-tw",
+    "code": "EE5184",
+    "title": "Machine Learning",
+    "description": "The machine learning course is a comprehensive program designed to engage in data-driven decision-making. Throughout the course, students will learn to understand the fundamental principles and techniques that underpin modern machine learning. We will explore topics such as supervised and unsupervised learning, Bayesian and non-Bayesian approaches. The curriculum also includes hands-on practical exercises, enabling students to develop a strong foundation in data preprocessing, model selection, and evaluation on real-world applications.",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U2620&class=01&dpt_code=9210&ser_no=13707&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "ec9bb4a725ddc04945c8fc1950af6f5514ae1901caedf96fbe5f9d5ef3683b6a"
+  },
+  {
+    "id": 61,
+    "universityId": "ntu-tw",
+    "code": "EE5066",
+    "title": "Switching Power Supply",
+    "description": "This course introduces PFC, power semiconductors, and resonant power converters\n\nWeek\tDate\tSubject\n1\t2/24\tSyllabus, Introduction of converter nonidealities (10 min. quiz)\n2\t3/3\tPower semiconductor: diode physics, power MOSFET, device characteristics (HW1)\n3\t3/10\tSwitching characteristics, gate driving\n4\t3/17\tDC/AC inverter\n5\t3/24\t(APEC conference. Video class) Introduction of resonant converters and soft-switching converters (HW2)\n6\t3/31\tResonant converters: SRC, PRC, SPRC\n7\t4/7\tLLC resonant converter\n8\t4/14\tMidterm\n9\t4/21\tZVS/ZCS quasi-resonant converters\n10\t4/28\tZero-Voltage-Transition PWM converters (HW3)\n11\t5/5\tPower Factor Correction (PFC) fundamentals\n12\t5/12\tPFC circuits and control (HW4)\n13\t5/19\tModel and Simulation for PFC Converters\n14\t5/26\tGaN, SiC devices\n15\t6/2\tFinal\n16\t6/9\tFinal group presentation",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U3010&class=&dpt_code=9210&ser_no=34709&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "adb7932f2daf6b66608c9afdf8439fb540c2120a07813fd5d72b2cf365c49633"
+  },
+  {
+    "id": 62,
+    "universityId": "ntu-tw",
+    "code": "EE5076",
+    "title": "Nonlinear System Analysis",
+    "description": "This course is offered for graduate students interested in control engineering. Main object of this course is focused on nonlinear system analysis with some nonlinear controller design tools provided. As a core course of control system theory, we will give a solid basis on control system theory and discuss both basic and advanced stability analysis techniques for nonlinear systems. The course outlines are:\nIntroduction and mathematical preliminaries\nNonlinear dynamical system exploration\nLyapunov stability and input-output stability\nStability of perturbed systems\nNonlinear controller design\nApplications to practical nonlinear systems",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U3390&class=&dpt_code=9210&ser_no=15894&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "5f4458ca8d3694f147879501bf8b065cc2221e6d1e27622cc9b66ed8ea992e2a"
+  },
+  {
+    "id": 63,
+    "universityId": "ntu-tw",
+    "code": "EE5078",
+    "title": "Digital Ic Engineering",
+    "description": "The rapid growth of the integrated circuit (IC) industry has led to the emergence of nanoelectronics process engineering as a new advanced discipline. This course introduces nanoelectronics, CMOS scaling according to the ITRS roadmap and International Roadmap for Devices and Systems (IRDS), current FinFET technology, and challenges ahead for further scaling. This course provides fundamental CMOS digital IC engineering knowledge, including introducing three essential elements- technology, device, and circuit.\nTable of Contents\n1. Introduction\n2. Technology scaling and trend\n3. Semiconductor device physics\n4. FEOL/BEOL technologies\n5. FinFET and thin-body transistors\n6. CMOS device models and logic circuits",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U3430&class=&dpt_code=9210&ser_no=35711&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "a2300ffa2633a34d79830e0d6b3013469272b87e791874f5da088ae95d3c22a5"
+  },
+  {
+    "id": 64,
+    "universityId": "ntu-tw",
+    "code": "EE5204",
+    "title": "Cryptographic Engineering",
+    "description": "Cryptographic Engineering covers how modern cryptographic algorithms are implemented efficiently and securely in software, with an emphasis on embedded platforms such as Arm Cortex-M microcontrollers. Topics include symmetric primitives (AES, SHA-3/SHAKE), elliptic-curve cryptography and multiprecision arithmetic, post-quantum schemes (ML-KEM, ML-DSA, and hash-based signatures), and the implementation attacks these constructions must withstand, including side-channel and fault-injection attacks. Students apply the material in a hands-on final project, optimizing a cryptographic implementation on real STM32F4 hardware and presenting their results.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U3620&class=&dpt_code=9210&ser_no=31065&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "a0dfdb06f991a503f3b36c0a014c4c2578ed8a17267510c30423b375e84dc7d1"
+  },
+  {
+    "id": 65,
+    "universityId": "ntu-tw",
+    "code": "EE5105",
+    "title": "Special Topics in Quantum Information Science",
+    "description": "The course will cover a subset of the following topics:\nMathematical preliminaries\nClifford+T circuit synthesis\nLearning properties of quantum states and systems\nQuantum algorithms for algebraic problems\nQuantum walk algorithms\nQuantum query complexity and lower bound methods\nHamiltonian simulation algorithms\nQuantum singular value transform\nOther selected topics",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U6400&class=&dpt_code=9210&ser_no=25706&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "63793400ab4741255b424ecf4400183552588aac9ba918c207ea57f77729fe08"
+  },
+  {
+    "id": 66,
+    "universityId": "ntu-tw",
+    "code": "EE5113",
+    "title": "Physics of Semiconductor Devices",
+    "description": "We will cover the fundamental physical principles that govern the device operation and the application. Emphasis is placed on understanding background of the individual device operation. First part of the class will cover topics include basic carrier transports in semiconductors, including conduction electrons, and holes; Boltzman Transport Equation (BTE).  Non-ideal properties of transistor, including heat, carrier scattering, defect trapping and recombination will be discussed in details. Latter part of the class will cover novel device physics and technology focusing front-end technology: MOSFET/FinFET/NSFET,  Short Channel effect, ballistic transport, electron tunneling.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U7110&class=&dpt_code=9210&ser_no=19785&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "afb5f2027a4c4942539688b37b004f9cb0d262f3a2da3cb61d9cba02a7f05092"
+  },
+  {
+    "id": 67,
+    "universityId": "ntu-tw",
+    "code": "EE5114",
+    "title": "Integrated Circuit Technology",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U7120&class=&dpt_code=9210&ser_no=59533&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "17958bbabd6ab1f6067de2fca36e99590b4aeb1c7deafbb0bbc869304f789eab"
+  },
+  {
+    "id": 68,
+    "universityId": "ntu-tw",
+    "code": "EE5122",
+    "title": "Formal Methods",
+    "description": "Formal methods represent an important research field in computer science where techniques with mathematical rigor are studied for the specification, design, analysis, and validation of computing systems. This course will cover formal methods for program analysis, especially those in the field of software model checking: Given a program and a specification, automatically decide whether the program satisfies the specification or not.\nThe model-checking algorithms we will introduce in this course include:\n- Abstract interpretation\n- Symbolic execution\n- k-Induction\n- Predicate abstraction\n- Trace abstraction\n- Interpolation-based approaches\nCompared to software testing, software model checking can prove the correctness of a program with mathematical rigor. Software model checking is rooted in a solid theoretical foundation, requires advanced software engineering for tool implementation, and has profound impact on both academia and industry: The inventors of model checking won the 2007 Turing Award, and leading software companies, such as Meta and Amazon, use formal methods to assure the quality of their products.\n**IMPORTANT**: This course does not follow the mapping from point grades to letter grades provided by NTU.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=921%20U7600&class=&dpt_code=9210&ser_no=34352&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "09a625b3f4c53b1fde44b641987f505ef17518fcb7fe9474a54504825d67f1ba"
+  },
+  {
+    "id": 69,
+    "universityId": "ntu-tw",
+    "code": "CSIE7990",
+    "title": "Special Project",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20M0020&class=77&dpt_code=9220&ser_no=46851&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "1c7300a9b2fe3e65ec423954892fa7cf84388126586c880a49aeea6b97b19359"
+  },
+  {
+    "id": 70,
+    "universityId": "ntu-tw",
+    "code": "CSIE7641",
+    "title": "Multimodal Human-Computer Interaction",
+    "description": "Humans perform physical tasks with abundant multimodal information from visual, auditory, tactile, and more senses. Mainstream computers still offer very limited input and output capabilities when interacting with the users (e.g., multitouch gestures, speech input). This course provides project-based knowledge on human sensory perception & cognition and technologies that accommodate these, including topics on eye-tracking, auditory, robotic touch interfaces.  Students will conduct user studies and develop software-hardware systems that explore and leverage multimodal interaction in these projects. Later in the course, students will explore an open-ended research project guided by the instructor. This course will take place in Make Reality Space. No prerequisite needed while programming skills are required.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20M1520&class=&dpt_code=9220&ser_no=45813&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "4d4210fa686a17e557541dd8e163081e9520b3b2419756e9bceaaed3b0a6c5f3"
+  },
+  {
+    "id": 71,
+    "universityId": "ntu-tw",
+    "code": "CSIE5047",
+    "title": "Robotics",
+    "description": "This course will provide an introduction to the key issues involved in the development of intelligent robots. We will explore issues such as spatial transformation, kinematics, software control architectures, sensing, localization, and navigation. Evaluation will be through homework (which will often include programming), exams, and a final project.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U1070&class=&dpt_code=9020&ser_no=40688&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "14719637feb534111a6d892308c53ad346a159d94dee08987ca2d01b7e75c930"
+  },
+  {
+    "id": 72,
+    "universityId": "ntu-tw",
+    "code": "CSIE5054",
+    "title": "Advanced Compiler Design",
+    "description": "See the 課程資訊.\n\nSee the 課程資訊.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U1220&class=&dpt_code=9020&ser_no=26729&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "998476d1e4c138479c7bf6abd010d487099653f3caedce874af5df00cd526547"
+  },
+  {
+    "id": 73,
+    "universityId": "ntu-tw",
+    "code": "CSIE5213",
+    "title": "Parallel Programming",
+    "description": "*** We welcome and encourage all sophomore students to take this course.   All the necessary fundamental backgrounds will be covered.  :)  ***\nThis course offers an in-depth exploration of parallel computing, a field of increasing significance in contemporary computer science. As the number of processor cores in both server and desktop environments continues to grow, the challenge of efficiently harnessing these abundant computational resources has become paramount. The course addresses this challenge by providing students with a comprehensive understanding of parallel programming paradigms and the underlying architectures of parallel multi-core processors, including both Central Processing Units (CPUs) and Graphics Processing Units (GPUs).\nThe curriculum is structured to progress from fundamental concepts to advanced topics in parallel computing. Students will acquire not only software-related skills crucial for writing efficient parallel programs but also gain insights into the hardware architectures that support parallelism. This dual focus enables students to develop strategies for accelerating existing programs, optimizing the utilization of computational resources, and enhancing the computation-to-communication ratio — all critical factors in maximizing system performance.\nThroughout the course, emphasis will be placed on practical applications of parallel computing principles. Students will engage with real-world scenarios that demonstrate the importance of parallel programming in addressing complex computational problems. The course will also explore current trends and future directions in parallel computing, preparing students for the evolving landscape of high-performance computing.\nBy the conclusion of this course, students will possess a robust foundation in parallel computing, equipped with the knowledge and skills necessary to design, implement, and optimize parallel algorithms across a variety of computational platforms. This expertise will position students at the forefront of a critical area in computer science, ready to tackle the computational challenges of the future.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U1520&class=&dpt_code=9020&ser_no=49231&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "33eab59928abd21774d970961095df696cbf6ae617d73a719f883ef345811b24"
+  },
+  {
+    "id": 74,
+    "universityId": "ntu-tw",
+    "code": "CSIE5117",
+    "title": "Robot Perception and Learning",
+    "description": "Building a robot to function in the real-world remains challenging, which requires (1) perception, that recognizes the hidden states of the embodied scene, (2) decision making, that generates optimal plans to achieve tasks, and (3) action, that controls robot’s machinery to navigate in/interact with the environment. With decades of efforts, scientists have introduced numerous techniques that enable robots working in a controlled and known environment (e.g. industrial robots). However, these techniques fail in non-controlled and non-structured environments, such as streets/kitchens/homes/offices that are noisy, complex and constantly changing. Moreover, these techniques are incapable of building robots that continually learn new tasks, adapt effectively to new environments, and achieve each user’s individual need.\nThis course provides a technical overview of decision making and action control in robotics with an emphasis on the development of generalist robots. The course covers: (1) fundamental robot kinematics that discusses geometric relationships between the robot’s body and the end effector, (2) classical control and planning, that provides a theoretical basis, and (3) state-of-the-art robot learning that facilitate adaptive and continual learning of robot tasks.\nStarting from 2026, we introduce hands-on contents into the course: in addition to implementing algorithms in simulation, students will build a real inverted pendulum from scratch.  In each of the two/three assignments, students will implement control programs or train robot policies, testing them on the pendulum robot.  We will provide 3D-printed robot bodies, and required electronic components & motors.  Students have to assemble the robot themselves.\nNote: The perceptual components of robot systems will be discussed in the course of Embodied Vision (CSIE5421).\nNote: Submite the form (https://forms.gle/rQdoweAm6TXJxvry5) for enrolling the course",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U3430&class=&dpt_code=9020&ser_no=33531&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "0a64c716e5a2da4abfadb1ff1a19a0e0a6d138e6d9b8c72393db1110c46a8a61"
+  },
+  {
+    "id": 75,
+    "universityId": "ntu-tw",
+    "code": "CSIE5122",
+    "title": "Introduction to Biomedical Informatics",
+    "description": "This course will discuss the basic principles and practical applications of bioinformatics. After the semester, students can fully grasp how to use the processing power of computers to effectively solve data analysis in biomedical research, application analysis of biomedical databases, and biomolecular structure analysis and functions prediction.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U3490&class=&dpt_code=9020&ser_no=10359&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "c8c052898456294a3e2b037a2455f25f0e79a255c0bb146397e2220b80abe228"
+  },
+  {
+    "id": 76,
+    "universityId": "ntu-tw",
+    "code": "CSIE7644",
+    "title": "Advanced Human Computer Interaction",
+    "description": "[Classes will be held at 學新館 R523, please come to the first class to enroll]\nThis is a project-oriented class focusing on trending and novel Human-Computer Interaction (HCI) research topics.\nThis year, we will focus on Human-centered AI research.\nWe will also explore how to best use AI to accelerate all phases of research: from deep researching of relevant work to using Codex/Claude Code to implement prototypes and data analysis.\nThe class will first survey recent award-winning HCI papers for insight.\nFollowed by going through a complete HCI research cycle: from identifying a research question and reviewing related work to exploring solution design spaces, prototyping, conducting user studies, and writing a short paper.\nPrevious class projects have been published in top HCI conferences (e.g., ACM CHI, UIST, SIGGRAPH, DIS, and MobileHCI) and have received multiple Best Paper/Honorable Mention awards.\nSee [[ https://mikechen.com ]]  for enrollment and additional info.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U3740&class=&dpt_code=9020&ser_no=53298&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "25de3de2199f653bc83432651bb167d5ef40341699da7560145fc5d6fc9ebfe6"
+  },
+  {
+    "id": 77,
+    "universityId": "ntu-tw",
+    "code": "CSIE5322",
+    "title": "Big Data Systems",
+    "description": "See 課程資訊 (中文)\n\nSee 課程資訊 (中文)",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4120&class=&dpt_code=9020&ser_no=18468&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "9e33e7aa1336503ccf84492ba4898c0571aede920ec151f22b94d7c47ec721aa"
+  },
+  {
+    "id": 78,
+    "universityId": "ntu-tw",
+    "code": "CSIE5310",
+    "title": "Virtual Machines",
+    "description": "Virtualization is an essential technology used by many computer systems for innovation. For instance, cloud computing platforms, including Amazon AWS, Google Cloud, and Microsoft Azure, build on virtualization to virtualize the hardware abstraction, allowing multiple virtual machines to run on a single piece of hardware. Typically, virtual machine monitors (hypervisors), such as KVM, Xen, Azure, and VMware, expose the virtual machine interface. In addition, the recent development of containers virtualizes the kernel interface language virtual machines: Furthermore, language virtual machines such as JVM and DVM effectively improve the program portability and support program execution across incompatible computer architectures. In this course, we will introduce the principles of virtualization. We will focus on various perspectives, including the security and performance of different virtualization systems. Students who take this course are expected to get hands-on experience in using and developing virtualization systems software.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4140&class=&dpt_code=9020&ser_no=51006&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "3e048478ad40be0b6f74930b1a42dd1f74b31a383d449a3734fd49ac8273010a"
+  },
+  {
+    "id": 79,
+    "universityId": "ntu-tw",
+    "code": "CSIE5315",
+    "title": "Bitcoin in the Big Data Era",
+    "description": "See COOL.\n\nSee COOL.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4260&class=&dpt_code=9020&ser_no=19278&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "3167d3e49c9fef8753d628e982bc625b18bcdb40e17f855b4eec40ad51f07b09"
+  },
+  {
+    "id": 80,
+    "universityId": "ntu-tw",
+    "code": "CSIE7645",
+    "title": "Advanced Interactive Technologies",
+    "description": "This course covers fundamental and advanced domains in human-computer interaction. Topics include interactive technologies, such as multi-touch, augmented/virtual reality, haptics, wearables, and fabrication.\nPlease come to the first class to get the registration code.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4560&class=&dpt_code=9020&ser_no=39849&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "07a1fb6049fefa51ef169239b5b99e124b0370ccb6eaaf751aa0363e8a8dbb70"
+  },
+  {
+    "id": 81,
+    "universityId": "ntu-tw",
+    "code": "CSIE5060",
+    "title": "Introduction to Decentralized Finance",
+    "description": "See COOL\n\nSee COOL",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4780&class=&dpt_code=9020&ser_no=50829&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "b20eceb805992f952486b89f4b51e54c2eeb601292496edaf7696552444a9903"
+  },
+  {
+    "id": 82,
+    "universityId": "ntu-tw",
+    "code": "CSIE5375",
+    "title": "Design for Smart Sensing Systems",
+    "description": "Smart sensing systems have the capability of processing the sensing data on the device and the capability of providing the detected events as the outputs. This type of sensing system is required to generate accurate sensing events in real time. The systems are also required to minimize their energy consumption in specific application scenarios. With smart sensing systems, the faults can be contaminated, the system can be more robust and easy to develop. Finally, the systems can be certified for medical use.\nThe course is designed for senior and graduate students majoring in Computer Science to learn the design philosophy, practice, and research challenges for software design for smart sensing systems. Specifically, this course will aim at smart medical sensing systems and teach how to design smart medical sensing systems.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4880&class=&dpt_code=9020&ser_no=24953&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "a272cd18344764850c92f40509706963eb91695ffdc1174a2b70931507d15833"
+  },
+  {
+    "id": 83,
+    "universityId": "ntu-tw",
+    "code": "CSIE5439",
+    "title": "Deep Reinforcement Learning",
+    "description": "Welcome to Deep Reinforcement Learning: Where Cutting-Edge Artificial Intelligence Meets Real-World Problem Solving!\nThis course is designed primarily for junior and senior undergraduate students who are serious about building expertise in one of AI's most exciting frontiers. Graduate students from the College of EECS may request enrollment after the semester begins, subject to capacity and background requirements.\nDeep reinforcement learning powers some of AI's most celebrated achievements: AlphaGo's superhuman game play, ChatGPT's alignment through RLHF, Boston Dynamics robots learning to navigate complex terrain, and autonomous vehicles making split-second decisions. This semester, we go beyond classical algorithms to explore the techniques driving today's breakthroughs, including reinforcement learning from human feedback for large language models, diffusion policies for robotic manipulation, multi-agent coordination in complex environments, offline reinforcement learning and decision transformers, and sim-to-real transfer that bridges simulation and reality.\nStarting from first principles, we build understanding step by step. Students discover how AI agents learn to make decisions through interaction, beginning with core concepts in Markov decision processes and deep learning, then progressing to value-based methods, policy optimization, and the advanced strategies used in state-of-the-art systems. Throughout the course, we emphasize practical understanding through hands-on implementation, giving students direct experience with the same techniques used at leading AI labs.\nThis course demands significant commitment. Students should expect to invest ten to fifteen hours per week outside of class, including intensive programming assignments and a substantial final project. The workload is concentrated in the second half of the semester, with early assignments designed to build foundations and allow students to assess whether this course matches their available time and preparation. Students currently enrolled in more than twenty credits or carrying multiple project-heavy courses should carefully evaluate whether this is the right semester to take this class. Past students have described this course as challenging but transformative, with projects that became conference papers, competition entries, and career-defining portfolio pieces.\nWe look forward to working with students who are ready for this journey.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4960&class=&dpt_code=9020&ser_no=53087&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "a40a0c454ac2a875e5a27e2c5e28618a49a4e1b7fe546f2be264d1f82f77b87d"
+  },
+  {
+    "id": 84,
+    "universityId": "ntu-tw",
+    "code": "CSIE5421",
+    "title": "Embodied Vision",
+    "description": "The computer vision has gained great success since the re-invention of deep neural networks.  However, the success only happens in passive perception, where the recognizer passively receives and parses the visual information without interacting with the environment.  This set up oversimplifies perception, separating it from other functionalities.  Humans are embodied agents in a physical world. Our actions and physics change the environment, and our perceptions facilitates adaptation of actions in the changing environment.  In other words, perception should take actions and physics into consideration.\nIn this class, we aim to study embodied (action- and physic-aware) perception.  We provides a technical overview over: (1) 4D modeling, (2) Dynamic simulation, (3) Multi-sensory perception, and (4) Action-centric perception.\nPlease fill in this google form if you are interested in extra enrollment (https://tinyurl.com/af3pj8sw)!",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4970&class=&dpt_code=9020&ser_no=18128&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "6f9329713ef6df8c3525f3a375ce3b3c5e7af965580fbdf6f89f307bebdba05e"
+  },
+  {
+    "id": 85,
+    "universityId": "ntu-tw",
+    "code": "CSIE5320",
+    "title": "Middleware for Software Defined Vehicle",
+    "description": "This course is designed for senior undergraduate and graduate students with an engineering background — computer science, electrical engineering, mechanical engineering, control, or\nmechatronics — to learn the design philosophy, practice, and research challenges of designing and programming software-defined vehicles.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4990&class=&dpt_code=9020&ser_no=37110&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "6bae1a14d690592569746f9768f4daa9d5ae53d6b41a9649b0f4ec8c70899436"
+  },
+  {
+    "id": 86,
+    "universityId": "ntu-tw",
+    "code": "CSIE5647",
+    "title": "Making and Inventing Interactive Devices",
+    "description": "The lecture covers fundamental principles of interactive devices and fabrication techniques along with state-of-the-art research and applications in the field of Human-Computer Interaction (HCI). The course will involve hands-on instructions to create custom interactive devices (e.g., touch sensors, haptic actuators, circuits) using digital fabrication machines (e.g., 3D printers, 2D routers). Based on the knowledge and inspiration, students are guided to invent new interactive devices in their final project (e.g., wearable devices). The course will take place in CSIE Make Reality Space. Class website: https://lab.tengshanyuan.info/class/making-devices",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U5010&class=&dpt_code=9020&ser_no=31619&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "d8a9abb1d19cd183ee5fb818e106e1fe45545b628fa85307e755c8b9b36d0449"
+  },
+  {
+    "id": 87,
+    "universityId": "ntu-tw",
+    "code": "CSIE5648",
+    "title": "Human-AI Interaction and Collaboration",
+    "description": "Human-AI Interaction and Collaboration (HAICO) introduces the principles and practical skills needed to design, build, and evaluate modern AI-native interactive systems. The course begins with foundations in human–computer interaction, user-centered design, evaluation methods, and modern AI models, before exploring how humans can effectively work with and harness AI.\nStudents will gain hands-on experience working with modern AI; the technical skills covered in the course including prompting, in-context learning, RAG, model APIs, fine-tuning and LoRA, tool use, and agentic AI systems. The course also covers the evaluation, failure modes, responsible use, trust, and explainability of AI-based systems. Through practical exercises and a semester-long group project, students will learn to make informed decisions about when and how to use AI, and develop a working Human-AI system addressing a real-world need.\n=== REGISTRATION INFO ===\nThe course is intended for students above the sophomore level, including junior, senior, and master’s students.\nThe course *does NOT accept pre-registration*. **Please attend the first lecture to receive the registration code.**\nThe course has a capacity of 45 students:\n- 35 seats are reserved for CSIE and GINM students.\n- 10 seats are reserved for students from other departments and universities.\nYou can find detailed course information, including the topics, grading, project requirements, and schedule here:\nhttps://tinyurl.com/u5jrvyk5\nIf you have any questions, contact Yi-Chi Liao (yichi@csie.ntu.edu.tw).",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U5110&class=&dpt_code=9020&ser_no=95048&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "20bc4f12afae34089b05c29d8dcac0836ac8a85fbfaa2f1df455af06ae4a141e"
+  },
+  {
+    "id": 88,
+    "universityId": "ntu-tw",
+    "code": "EEE5001",
+    "title": "Vlsi Testing",
+    "description": "This course introduce basic concepts of VLSI testing.   This course will cover both theoretic and practical aspects of testing techniques of VLSI circuits from EDA (electronic design automation) point of view.  The course focuses mainly on digital VLSI circuits.  This course requires students to  implement a mini EDA tool, automatic test generator (ATPG).   This course requires a final group project.\nThis is a flipped classroom where students are required to watch video at home and attend the class for group discussion.\n*** Students are required to attend the first class and form a group of three students  to sign up for this course.  ***",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0010&class=&dpt_code=9210&ser_no=54126&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "1a7b21bea194a90017a6fdd2c58eafce79488505f6e610c91af72e27fb3bc57a"
+  },
+  {
+    "id": 89,
+    "universityId": "ntu-tw",
+    "code": "EEE5011",
+    "title": "Vlsi System Testing",
+    "description": "With the advance in IC fabrication and integration technologies, design-for-test and system-level testing have become indispensable. This course discusses concepts and technologies in VLSI testing. It starts with fault modeling, fault simulation, and test pattern generation. Then, design-for-test, built-in-self-test, and memory testing are introduced. Finally, challenges for and solutions to system-level tests are discussed.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0110&class=&dpt_code=9210&ser_no=28910&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "92e5893ef2a8e40471b2a9114e58b37fe56c16b1ad4182efe43aecc174fbaff0"
+  },
+  {
+    "id": 90,
+    "universityId": "ntu-tw",
+    "code": "EEE5022",
+    "title": "Computer-aided Vlsi System Design",
+    "description": "Computer-Aided VLSI System Design\n\n在此門課中，學生將學會如何設計超大型積體電路與系統 (VLSI circuit and system)，並且使用標準邏輯單元設計的正規流程，學期中也會大量使用到電子設計自動化軟體 (EDA tool)。",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0240&class=&dpt_code=9210&ser_no=21324&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "ba894b0cc35fe2ea487e0b629abd35222cc5ad30ce63ca5084554c76142dfcce"
+  },
+  {
+    "id": 91,
+    "universityId": "ntu-tw",
+    "code": "EEE5026",
+    "title": "Physical Design for Nanometer Ics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0280&class=&dpt_code=9210&ser_no=43294&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "2eb5d01a39801fc7458d2bf931e3c5625c072edba059ad4866137620315386e2"
+  },
+  {
+    "id": 92,
+    "universityId": "ntu-tw",
+    "code": "EEE5028",
+    "title": "Logic Synthesis and Verification",
+    "description": "Logic Synthesis and Verification are essential steps in Electronic Design Automation (EDA).  They also play important roles in extension to automated reasoning and software engineering. This course is devoted to introduce some classical problems and modern solutions in synthesizing and verifying logic circuits.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0300&class=&dpt_code=9210&ser_no=22699&semester=115-1&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "2a88694bce626a2bb4c7f947cbbf2a46f3e43e8cfe42a79391cb44982c38b453"
+  },
+  {
+    "id": 93,
+    "universityId": "ntu-tw",
+    "code": "EEE5055",
+    "title": "Thin-Film And Flexible Electronics",
+    "description": "This course will broadly review the current progress of flexible/wearable electronics. Provide the background and essential knowledge to understand the related skills and ability to identify ,renovate, and even create new applications.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0570&class=&dpt_code=9210&ser_no=16261&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "b68fce80a232ee823a3c1fee1bce85ff6ec879cc4d192ec759f19c5c35934ea4"
+  },
+  {
+    "id": 94,
+    "universityId": "ntu-tw",
+    "code": "EEE5066",
+    "title": "Advanced IC Devices and Technologies",
+    "description": "Contents\n- Semiconductor Scaling Landscape/roadmap\n- What is inside the chip; building blocks\n- Advanced CMOS Transistors\n- Planar; FinFET; GAA/nanosheet/nanowires; 3D Stacking/CFETs, UTB/2D-Material Channel FET\n- Device design and electrical parameters 101\n- SCE Lg; low-K Sp/Epi, Gate stack/Vt tuning, and contact resistance\n- Device and process variability; Layout Effects\n- Reliability and thermal modeling\n- Advanced Interconnect including EUV, airgap, and material improvement\n- Digital Logic Lib\n- SRAM\n- Analog, Mixed Signals and RF\n- Diode (Thermal and ESD), MIMCAP, Precision Resistor, MCAP, Varactors\n- PDK SPICE Model, IP core in Semiconductors\n- DTCO; Ground Rules; and PPAC\n- 3DIC and System Integration",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0680&class=&dpt_code=9210&ser_no=58407&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "61a7152fe447363f73b1d8a36c1e454a38ddbf8034d2d88dbcff39f519458566"
+  },
+  {
+    "id": 95,
+    "universityId": "ntu-tw",
+    "code": "EEE5067",
+    "title": "Schematic MOS Devices",
+    "description": "Course Outline\n- Electrons and Holes in Semiconductors, E(k) Band Structure\n- Drift and Diffusion of Electrons and Holes\n- Metal–Semiconductor Junctions: ohmic contact of S/D, depletion region, tunneling\n- MOS Capacitor: Draw the band diagram at flat band, accumulation, weak inversion, and strong inversion. Vt tuning by flat band\n- MOS Transistor:  planar/SOI/FinFET/Nanosheets/CFET/transistor stacking and drain current/delay/power equations (PPA)\n- MOSFETs in ICs: Scaling, Leakage, SS\n- High Mobility (strain/SiGe), High K, and nanosheet/FinFET will be embedded in relevant chapters\nThis course will be taught in Chinese during the first semester and in English during the second semester (if any).\nTo strengthen students’ foundational knowledge of advanced semiconductor devices, particularly three-dimensional transistors, and prepare them for a smooth transition into industry after graduation. Transistor concepts are taught in a clear and accessible manner, thereby reducing the gap between academic learning and practical application.\nUnlike conventional device physics courses, this course does not emphasize rigorous derivation of complex physical equations. It focuses on building a solid understanding of fundamental physics and chemistry through intuitive methods, such as simple graphical analysis (e.g., band diagrams), using visual explanations to convey various physical and chemical phenomena.\nDuring winter and summer breaks, students are guided to study short courses from leading conferences such as IEDM and VLSI, allowing them to engage with cutting-edge research in state-of-the-art semiconductor processes and broaden their perspectives. Participation is optional.\nRequirements: Homework/Midterm Report (ppt)/Final (close book examination)",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0690&class=&dpt_code=9210&ser_no=20020&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "dc26f46c88d00494172054b85761f13bd34eaf25ed6611ebba2c3d2f338b9cc1"
+  },
+  {
+    "id": 96,
+    "universityId": "ntu-tw",
+    "code": "EEE5072",
+    "title": "Special Topics on Electronic Design Automation",
+    "description": "This graduate project-oriented course explores the application of machine learning (ML) techniques to solve NP-complete optimization problems in Electronic Design Automation (EDA). Students will learn to formulate classical EDA problems as Markov Decision Processes and develop learning-based solutions that can replace or augment traditional heuristic methods. The course emphasizes hands-on implementation through team projects addressing real EDA challenges, such as SAT solving, technology mapping, placement, and sparse matrix ordering for circuit simulation.\nThe course will consist of lectures on ML fundamentals, presentations by domain experts on state-of-the-art EDA algorithms that heuristically explore exponentially large search spaces, and reviews of selected papers from the relevant literature.\nThe main emphasis of the course will be the team projects: sessions will be allocated to project proposals, progress reports, and final presentations.\nAs part of this course, students will:\n• Formulate EDA optimization problems as machine learning tasks with appropriate method and model selection.\n• Analyze traditional heuristic algorithms to identify decision points suitable for learning-based approaches.\n• Design and implement reinforcement learning solutions for combinatorial optimization problems with exponentially large search spaces.\n• Evaluate the trade-offs between learned and traditional heuristic approaches in terms of solution quality, computational cost, and generalization.\n• Conduct experimental evaluations using standard benchmarks (ICCAD CAD Contest, ISPD, IWLS, SAT/QBF Competition).\n• Critique recent research literature at the intersection of machine learning and design automation.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0740&class=&dpt_code=9210&ser_no=30828&semester=114-2&lang=EN",
+    "collectedAt": "2026-11-10T18:26:41.134Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "c876dc95fd307e4b4afa7acff11940b34f9f086b9a8b16e4acbc898f30ba20a9"
+  }
+]

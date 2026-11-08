@@ -1,0 +1,44 @@
+[
+  {
+    "polySigle": "INF2610",
+    "hostCourseId": 50,
+    "notionsFound": [
+      "operating-system-structure",
+      "process-management",
+      "process-synchronization",
+      "process-scheduling",
+      "memory-management",
+      "real-time-operating-systems"
+    ],
+    "notionsMissing": [
+      "threads",
+      "deadlocks"
+    ],
+    "contentScore": 0.75,
+    "workload": "trop_legere",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3430",
+    "hostCourseId": 89,
+    "notionsFound": [
+      "software-testing-methods",
+      "functional-testing",
+      "object-oriented-testing",
+      "test-planning"
+    ],
+    "notionsMissing": [
+      "software-verification-validation",
+      "structural-testing",
+      "finite-state-machine-testing",
+      "integration-testing",
+      "statistical-validation",
+      "software-reliability"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  }
+]
