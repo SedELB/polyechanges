@@ -7,13 +7,13 @@
     { "id": "first-law-of-thermodynamics", "fr": "premier principe de la thermodynamique", "en": "first law of thermodynamics" },
     { "id": "electrochemistry", "fr": "électrochimie", "en": "electrochemistry" },
     { "id": "battery-operation", "fr": "fonctionnement d'une pile", "en": "battery operation" },
-    { "id": "server-room-energy", "fr": "salle de serveurs", "en": "server room energy" },
+    { "id": "server-room-balances", "fr": "bilans de matière et d'énergie dans une salle de serveurs", "en": "server room balances" },
     { "id": "sustainable-development", "fr": "développement durable", "en": "sustainable development" },
     { "id": "life-cycle-analysis", "fr": "analyse du cycle de vie", "en": "life cycle analysis" }
   ],
   "INF2010": [
-    { "id": "sequential-data-structures", "fr": "structures de données séquentielles", "en": "sequential data structures" },
-    { "id": "lists-stacks-and-queues", "fr": "listes, piles et files", "en": "lists, stacks and queues" },
+    { "id": "sequential-data-structures", "fr": "structures séquentielles : listes, piles, files, vecteurs", "en": "sequential data structures" },
+    { "id": "element-insertion-search-and-removal", "fr": "insertion, recherche et retrait d'éléments", "en": "element insertion, search and removal" },
     { "id": "sorting-algorithms", "fr": "algorithmes de tri", "en": "sorting algorithms" },
     { "id": "binary-trees", "fr": "arbres binaires", "en": "binary trees" },
     { "id": "balanced-trees", "fr": "arbres équilibrés", "en": "balanced trees" },
@@ -21,7 +21,7 @@
     { "id": "string-algorithms", "fr": "algorithmes sur chaînes de caractères", "en": "string algorithms" },
     { "id": "graph-implementation", "fr": "implémentation de graphes", "en": "graph implementation" },
     { "id": "graph-traversal", "fr": "parcours de graphes", "en": "graph traversal" },
-    { "id": "sets", "fr": "ensembles", "en": "sets" }
+    { "id": "set-data-structures", "fr": "ensembles", "en": "set data structures" }
   ],
   "INF2610": [
     { "id": "operating-system-structure", "fr": "structure des systèmes d'exploitation", "en": "operating system structure" },
@@ -38,12 +38,12 @@
     { "id": "affine-transformations", "fr": "transformations affines", "en": "affine transformations" },
     { "id": "parallel-and-perspective-projections", "fr": "projections parallèles et perspective", "en": "parallel and perspective projections" },
     { "id": "transformation-pipeline", "fr": "pipeline des transformations", "en": "transformation pipeline" },
-    { "id": "programmable-graphics-pipeline", "fr": "pipeline graphique programmable", "en": "programmable graphics pipeline" },
-    { "id": "shaders", "fr": "nuanceurs", "en": "shaders" },
+    { "id": "programmable-pipeline-and-shaders", "fr": "pipeline graphique programmable et nuanceurs", "en": "programmable pipeline and shaders" },
     { "id": "illumination-models", "fr": "modèles d'illumination", "en": "illumination models" },
     { "id": "color-models", "fr": "modèles de couleurs", "en": "color models" },
     { "id": "graphical-picking", "fr": "sélection graphique", "en": "graphical picking" },
-    { "id": "bezier-curves-and-b-splines", "fr": "courbes de Bézier et B-splines", "en": "Bezier curves and B-splines" }
+    { "id": "bezier-curves", "fr": "courbes de Bézier", "en": "Bezier curves" },
+    { "id": "b-splines", "fr": "B-splines", "en": "B-splines" }
   ],
   "INF3405": [
     { "id": "network-classification", "fr": "classification des réseaux", "en": "network classification" },
@@ -61,12 +61,12 @@
     { "id": "entity-relationship-model", "fr": "modèle entité-association", "en": "entity-relationship model" },
     { "id": "relational-model", "fr": "modèle relationnel", "en": "relational model" },
     { "id": "relational-algebra", "fr": "algèbre relationnelle", "en": "relational algebra" },
-    { "id": "sql-queries", "fr": "langage SQL", "en": "SQL queries" },
+    { "id": "sql-definition-manipulation-and-control", "fr": "langages SQL de définition, de manipulation et de contrôle", "en": "SQL definition, manipulation and control" },
     { "id": "embedded-sql", "fr": "SQL enchâssé", "en": "embedded SQL" },
     { "id": "transaction-management", "fr": "gestion de transactions", "en": "transaction management" },
     { "id": "concurrency-control", "fr": "contrôle de la concurrence", "en": "concurrency control" },
     { "id": "normal-forms", "fr": "dépendances fonctionnelles et formes normales", "en": "functional dependencies and normal forms" },
-    { "id": "file-storage-structures", "fr": "modèles de stockage de fichiers", "en": "file storage structures" },
+    { "id": "relation-and-file-storage-models", "fr": "modèles de stockage de relations et de fichiers", "en": "relation and file storage models" },
     { "id": "indexing-hashing", "fr": "indexage et adressage dispersé", "en": "indexing and hashing" }
   ],
   "INF8085": [
@@ -83,20 +83,20 @@
   ],
   "INF8102": [
     { "id": "cloud-computing-concepts", "fr": "concepts de l'infonuagique", "en": "cloud computing concepts" },
-    { "id": "dependability", "fr": "sûreté de fonctionnement", "en": "dependability" },
-    { "id": "cloud-security", "fr": "sécurité dans le nuage", "en": "cloud security" },
+    { "id": "cloud-dependability-and-security", "fr": "sûreté de fonctionnement et sécurité dans le nuage", "en": "cloud dependability and security" },
     { "id": "identity-and-access-management", "fr": "gestion des identités et des accès", "en": "identity and access management" },
     { "id": "secure-configuration-management", "fr": "gestion sécurisée des configurations", "en": "secure configuration management" },
     { "id": "data-protection", "fr": "protection des données", "en": "data protection" },
-    { "id": "logging-and-networking", "fr": "mise en réseau et journalisation", "en": "logging and networking" },
+    { "id": "cloud-networking", "fr": "mise en réseau", "en": "cloud networking" },
+    { "id": "logging", "fr": "journalisation", "en": "logging" },
     { "id": "regulatory-compliance", "fr": "conformité", "en": "regulatory compliance" },
     { "id": "incident-response", "fr": "réponse aux incidents", "en": "incident response" },
     { "id": "penetration-testing", "fr": "tests de pénétration", "en": "penetration testing" }
   ],
   "INF8103": [
-    { "id": "cybersecurity-organizational-model", "fr": "modèle organisationnel de la cybersécurité", "en": "cybersecurity organizational model" },
-    { "id": "decentralized-and-centralized-models", "fr": "modèles décentralisé et centralisé", "en": "decentralized and centralized models" },
-    { "id": "cybersecurity-team-roles", "fr": "équipe de cybersécurité", "en": "cybersecurity team roles" },
+    { "id": "cybersecurity-organizational-models", "fr": "modèles organisationnels de la cybersécurité", "en": "cybersecurity organizational models" },
+    { "id": "employee-role-in-cybersecurity", "fr": "rôle de l'ensemble des employés", "en": "employee role in cybersecurity" },
+    { "id": "cybersecurity-team-roles-and-responsibilities", "fr": "rôle et responsabilité d'une équipe de cybersécurité", "en": "cybersecurity team roles and responsibilities" },
     { "id": "governance-and-compliance", "fr": "gouvernance et conformité", "en": "governance and compliance" },
     { "id": "red-blue-and-purple-teams", "fr": "équipes rouge, bleue et violette", "en": "red, blue and purple teams" },
     { "id": "cyber-strategy-and-business-objectives", "fr": "cyberstratégie et objectifs d'affaires", "en": "cyber strategy and business objectives" },
@@ -118,9 +118,8 @@
     { "id": "cyber-incident-response", "fr": "réponse aux cyberincidents", "en": "cyber incident response" }
   ],
   "INF8111": [
-    { "id": "data-preparation", "fr": "préparation des données", "en": "data preparation" },
+    { "id": "data-preparation-and-transformation", "fr": "préparation et transformation des données", "en": "data preparation and transformation" },
     { "id": "data-reduction", "fr": "réduction de données", "en": "data reduction" },
-    { "id": "data-transformation", "fr": "transformation de données", "en": "data transformation" },
     { "id": "data-mining-tasks", "fr": "tâches de fouille de données", "en": "data mining tasks" },
     { "id": "outlier-detection", "fr": "détection de données aberrantes", "en": "outlier detection" },
     { "id": "graph-mining", "fr": "fouille de graphes", "en": "graph mining" },
@@ -157,10 +156,10 @@
     { "id": "bayesian-networks", "fr": "réseaux bayésiens", "en": "Bayesian networks" },
     { "id": "hidden-markov-models", "fr": "modèles de Markov cachés", "en": "hidden Markov models" },
     { "id": "markov-random-fields", "fr": "champs aléatoires de Markov", "en": "Markov random fields" },
-    { "id": "probabilistic-inference", "fr": "inférence probabiliste", "en": "probabilistic inference" },
+    { "id": "inference-in-probabilistic-models", "fr": "inférence dans les modèles probabilistes", "en": "inference in probabilistic models" },
     { "id": "statistical-decision-theory", "fr": "théorie de la décision statistique", "en": "statistical decision theory" },
     { "id": "decision-networks", "fr": "réseaux de décision", "en": "decision networks" },
-    { "id": "machine-learning-algorithms", "fr": "algorithmes d'apprentissage automatique", "en": "machine learning algorithms" },
+    { "id": "structured-classifiers", "fr": "classificateurs structurés", "en": "structured classifiers" },
     { "id": "deep-learning", "fr": "apprentissage profond", "en": "deep learning" },
     { "id": "probabilistic-natural-language-processing", "fr": "traitement probabiliste de la langue naturelle", "en": "probabilistic natural language processing" },
     { "id": "computer-vision", "fr": "vision par ordinateur", "en": "computer vision" }
@@ -187,7 +186,7 @@
     { "id": "temporal-difference-learning", "fr": "apprentissage par différence temporelle", "en": "temporal difference learning" },
     { "id": "function-approximation", "fr": "approximation de fonctions", "en": "function approximation" },
     { "id": "policy-gradient-methods", "fr": "méthodes de gradient de politique", "en": "policy gradient methods" },
-    { "id": "exploration-in-reinforcement-learning", "fr": "exploration", "en": "exploration in reinforcement learning" }
+    { "id": "exploration-in-reinforcement-learning", "fr": "exploration en apprentissage par renforcement", "en": "exploration in reinforcement learning" }
   ],
   "INF8402": [
     { "id": "network-security-standards", "fr": "normes de sécurité des réseaux", "en": "network security standards" },
@@ -216,11 +215,11 @@
   "INF8430": [
     { "id": "digital-forensic-techniques", "fr": "techniques d'investigation numérique", "en": "digital forensic techniques" },
     { "id": "digital-evidence-collection", "fr": "collecte des données numériques", "en": "digital evidence collection" },
-    { "id": "evidence-preservation", "fr": "sécurisation des données", "en": "evidence preservation" },
-    { "id": "data-extraction", "fr": "extraction de données", "en": "data extraction" },
-    { "id": "evidence-authentication", "fr": "authentification des données", "en": "evidence authentication" },
+    { "id": "securing-digital-data", "fr": "sécurisation des données numériques", "en": "securing digital data" },
+    { "id": "data-interpretation-and-explanation", "fr": "interprétation et explication des données", "en": "data interpretation and explanation" },
+    { "id": "data-authentication", "fr": "authentification des données", "en": "data authentication" },
     { "id": "digital-data-analysis", "fr": "analyse des données numériques", "en": "digital data analysis" },
-    { "id": "storage-devices", "fr": "périphériques de stockage", "en": "storage devices" },
+    { "id": "storage-device-analysis", "fr": "analyse des périphériques de stockage", "en": "storage device analysis" },
     { "id": "volatile-data-capture", "fr": "données volatiles", "en": "volatile data capture" },
     { "id": "live-network-session-analysis", "fr": "analyse de séances réseau actives", "en": "live network session analysis" },
     { "id": "browser-forensics", "fr": "collecte d'informations des navigateurs", "en": "browser forensics" }
@@ -243,7 +242,7 @@
     { "id": "client-server-architecture", "fr": "architecture client-serveur", "en": "client-server architecture" },
     { "id": "peer-to-peer-architecture", "fr": "architecture pair-à-pair", "en": "peer-to-peer architecture" },
     { "id": "service-oriented-architecture", "fr": "architecture orientée services", "en": "service-oriented architecture" },
-    { "id": "cloud-service-models", "fr": "infrastructure, plateforme et logiciel en tant que services", "en": "cloud service models" },
+    { "id": "cloud-service-models", "fr": "infrastructure, plateforme et applications en tant que services", "en": "cloud service models" },
     { "id": "remote-objects-and-middleware", "fr": "objets distants et intergiciels", "en": "remote objects and middleware" },
     { "id": "virtualization", "fr": "virtualisation", "en": "virtualization" },
     { "id": "time-synchronization", "fr": "synchronisation du temps", "en": "time synchronization" },
@@ -254,12 +253,12 @@
     { "id": "discretionary-access-control", "fr": "contrôle d'accès discrétionnaire", "en": "discretionary access control" },
     { "id": "mandatory-access-control", "fr": "contrôle d'accès obligatoire", "en": "mandatory access control" },
     { "id": "control-flow-integrity", "fr": "intégrité de flux de contrôle", "en": "control flow integrity" },
-    { "id": "attacks-and-countermeasures", "fr": "attaques et contremesures", "en": "attacks and countermeasures" },
+    { "id": "control-flow-attacks-and-countermeasures", "fr": "attaques et contremesures sur le flux de contrôle", "en": "control-flow attacks and countermeasures" },
     { "id": "security-kernels", "fr": "noyaux de sécurité", "en": "security kernels" },
     { "id": "general-purpose-os-security", "fr": "sécurité des systèmes d'usage général", "en": "general-purpose OS security" },
-    { "id": "process-isolation", "fr": "isolation de processus", "en": "process isolation" },
     { "id": "software-containers", "fr": "conteneurs logiciels", "en": "software containers" },
-    { "id": "virtual-machines-and-sandboxing", "fr": "machines virtuelles et bac à sable", "en": "virtual machines and sandboxing" }
+    { "id": "virtual-machines", "fr": "machines virtuelles", "en": "virtual machines" },
+    { "id": "sandboxing", "fr": "isolation en bac à sable", "en": "sandboxing" }
   ],
   "INF8725": [
     { "id": "digital-signals", "fr": "signaux numériques", "en": "digital signals" },
@@ -298,7 +297,7 @@
     { "id": "decidability", "fr": "décidabilité", "en": "decidability" }
   ],
   "INF8801A": [
-    { "id": "content-based-retrieval", "fr": "recherche par le contenu", "en": "content-based retrieval" },
+    { "id": "content-based-multimedia-retrieval", "fr": "recherche par le contenu dans des bases multimédias", "en": "content-based multimedia retrieval" },
     { "id": "query-by-example-and-sketch", "fr": "recherche par l'exemple et par croquis", "en": "query by example and sketch" },
     { "id": "visual-big-data", "fr": "mégadonnées visuelles", "en": "visual big data" },
     { "id": "bilateral-image-filter", "fr": "filtre bilatéral d'image", "en": "bilateral image filter" },
@@ -307,21 +306,23 @@
     { "id": "video-stylization", "fr": "stylisation de vidéos", "en": "video stylization" },
     { "id": "content-aware-retargeting", "fr": "recadrage basé sur le contenu", "en": "content-aware retargeting" },
     { "id": "texture-synthesis", "fr": "synthèse de textures", "en": "texture synthesis" },
-    { "id": "3d-object-retrieval", "fr": "recherche d'objets 3D", "en": "3D object retrieval" }
+    { "id": "search-criteria-taxonomy", "fr": "taxonomie des critères de recherche", "en": "search criteria taxonomy" }
   ],
   "INF8808": [
     { "id": "graphic-design-principles", "fr": "principes de design graphique", "en": "graphic design principles" },
     { "id": "visual-data-types", "fr": "types de données visuelles", "en": "visual data types" },
-    { "id": "interaction-and-animation", "fr": "interaction et animation", "en": "interaction and animation" },
+    { "id": "interaction-in-visualization", "fr": "interaction dans la visualisation", "en": "interaction in visualization" },
+    { "id": "animation-in-visualization", "fr": "animation dans la visualisation", "en": "animation in visualization" },
     { "id": "tree-and-network-visualization", "fr": "visualisation d'arbres et réseaux", "en": "tree and network visualization" },
     { "id": "geovisualization", "fr": "géovisualisation", "en": "geovisualization" },
     { "id": "multidimensional-data", "fr": "données multidimensionnelles", "en": "multidimensional data" },
-    { "id": "color-and-perception", "fr": "couleur et perception", "en": "color and perception" },
-    { "id": "library-based-programming", "fr": "programmation avec une librairie", "en": "library-based programming" }
+    { "id": "color-in-visualization", "fr": "couleur dans la visualisation", "en": "color in visualization" },
+    { "id": "perception-and-cognition", "fr": "perception et cognition", "en": "perception and cognition" },
+    { "id": "multimedia-data-visualization", "fr": "visualisation de données multimédias", "en": "multimedia data visualization" }
   ],
   "LOG2400": [
-    { "id": "software-engineering-process", "fr": "processus du génie logiciel", "en": "software engineering process" },
-    { "id": "software-life-cycle", "fr": "cycle de vie du logiciel", "en": "software life cycle" },
+    { "id": "software-process-and-life-cycle", "fr": "processus et cycle de vie du génie logiciel", "en": "software process and life cycle" },
+    { "id": "standard-modeling-notation", "fr": "langages et notation standards", "en": "standard modeling notation" },
     { "id": "software-analysis-and-design", "fr": "analyse et conception", "en": "software analysis and design" },
     { "id": "object-oriented-design", "fr": "conception orientée objet", "en": "object-oriented design" },
     { "id": "structural-modeling", "fr": "modélisation structurelle", "en": "structural modeling" },
@@ -343,7 +344,7 @@
     { "id": "personalization-and-user-assistance", "fr": "personnalisation et assistance", "en": "personalization and user assistance" }
   ],
   "LOG2440": [
-    { "id": "web-software", "fr": "logiciels pour le Web", "en": "web software" },
+    { "id": "dynamic-content-generation", "fr": "génération dynamique de contenu", "en": "dynamic content generation" },
     { "id": "client-server-architecture", "fr": "architecture client-serveur", "en": "client-server architecture" },
     { "id": "html-document-structure", "fr": "structure d'un document HTML", "en": "HTML document structure" },
     { "id": "css-styling", "fr": "mise en forme CSS", "en": "CSS styling" },
@@ -385,26 +386,26 @@
     { "id": "requirements-validation", "fr": "validation des exigences", "en": "requirements validation" },
     { "id": "requirements-specification", "fr": "spécification des exigences", "en": "requirements specification" },
     { "id": "software-prototyping", "fr": "prototypage", "en": "software prototyping" },
-    { "id": "negotiation-and-risk-assessment", "fr": "négociation et évaluation du risque", "en": "negotiation and risk assessment" },
+    { "id": "requirements-negotiation", "fr": "négociation des exigences", "en": "requirements negotiation" },
+    { "id": "risk-assessment", "fr": "évaluation du risque", "en": "risk assessment" },
     { "id": "requirements-and-agile-methods", "fr": "exigences et méthodes agiles", "en": "requirements and agile methods" },
-    { "id": "requirements-management", "fr": "gestion des exigences", "en": "requirements management" },
-    { "id": "reviews-and-inspections", "fr": "revues et inspections", "en": "reviews and inspections" }
+    { "id": "requirements-management", "fr": "gestion des exigences", "en": "requirements management" }
   ],
   "LOG3430": [
     { "id": "software-verification-validation", "fr": "vérification et validation du logiciel", "en": "software verification and validation" },
-    { "id": "software-testing-methods", "fr": "méthodes de test", "en": "software testing methods" },
+    { "id": "testing-method-classification", "fr": "classification des méthodes de test", "en": "testing method classification" },
     { "id": "structural-testing", "fr": "test structurel", "en": "structural testing" },
     { "id": "functional-testing", "fr": "test fonctionnel", "en": "functional testing" },
     { "id": "finite-state-machine-testing", "fr": "tests pour automates finis", "en": "finite state machine testing" },
-    { "id": "integration-testing", "fr": "tests d'intégration", "en": "integration testing" },
-    { "id": "object-oriented-testing", "fr": "tests de programmes orientés objet", "en": "object-oriented testing" },
+    { "id": "integration-and-installation-testing-strategies", "fr": "stratégies de tests d'intégration et d'installation", "en": "integration and installation testing strategies" },
+    { "id": "procedural-and-object-oriented-testing", "fr": "tests pour programmation procédurale et orientée objet", "en": "procedural and object-oriented testing" },
     { "id": "statistical-validation", "fr": "approches statistiques en validation", "en": "statistical validation" },
     { "id": "software-reliability", "fr": "fiabilité du logiciel", "en": "software reliability" },
     { "id": "test-planning", "fr": "planification des tests", "en": "test planning" }
   ],
   "LOG4715": [
-    { "id": "video-game-history", "fr": "historique des jeux vidéo", "en": "video game history" },
-    { "id": "video-game-genres", "fr": "types de jeux vidéo", "en": "video game genres" },
+    { "id": "video-game-history-and-genres", "fr": "historique et types de jeux vidéo", "en": "video game history and genres" },
+    { "id": "game-development-roles", "fr": "rôles dans la création de jeux vidéo", "en": "game development roles" },
     { "id": "game-design-document", "fr": "document de conception de jeu", "en": "game design document" },
     { "id": "character-camera-and-control", "fr": "personnage, caméra et contrôle", "en": "character, camera and control" },
     { "id": "game-rules-and-mechanics", "fr": "règles et mécaniques de jeu", "en": "game rules and mechanics" },
@@ -415,7 +416,6 @@
     { "id": "multiplayer-games", "fr": "jeux multijoueurs", "en": "multiplayer games" }
   ],
   "LOG8100": [
-    { "id": "software-security", "fr": "sécurité logicielle", "en": "software security" },
     { "id": "vulnerability-analysis", "fr": "analyse des vulnérabilités", "en": "vulnerability analysis" },
     { "id": "security-testing", "fr": "testing de sécurité", "en": "security testing" },
     { "id": "multi-level-security", "fr": "sécurité multi-niveau", "en": "multi-level security" },
@@ -424,7 +424,8 @@
     { "id": "security-requirements", "fr": "exigences de sécurité", "en": "security requirements" },
     { "id": "security-by-design", "fr": "sécurité par conception", "en": "security by design" },
     { "id": "devops-and-continuous-deployment", "fr": "DevOps et déploiement continu", "en": "DevOps and continuous deployment" },
-    { "id": "containers-and-microservices", "fr": "conteneurs et microservices", "en": "containers and microservices" }
+    { "id": "containers", "fr": "conteneurs", "en": "containers" },
+    { "id": "microservices", "fr": "microservices", "en": "microservices" }
   ],
   "LOG8235": [
     { "id": "character-artificial-intelligence", "fr": "intelligence artificielle des personnages", "en": "character artificial intelligence" },
@@ -435,7 +436,7 @@
     { "id": "facial-animation", "fr": "animation faciale", "en": "facial animation" },
     { "id": "procedural-content-generation", "fr": "génération procédurale de contenu", "en": "procedural content generation" },
     { "id": "dynamic-difficulty-adjustment", "fr": "contrôle dynamique de la difficulté", "en": "dynamic difficulty adjustment" },
-    { "id": "character-navigation", "fr": "navigation de personnages", "en": "character navigation" },
+    { "id": "game-navigation", "fr": "navigation dans le jeu", "en": "game navigation" },
     { "id": "perception-decision-action-loop", "fr": "boucle perception-décision-action", "en": "perception-decision-action loop" }
   ],
   "LOG8371": [
@@ -458,12 +459,12 @@
     { "id": "mapreduce-and-nosql", "fr": "MapReduce et NoSQL", "en": "MapReduce and NoSQL" },
     { "id": "cloud-migration", "fr": "migration vers le nuage", "en": "cloud migration" },
     { "id": "cloud-computing-patterns", "fr": "patrons infonuagiques", "en": "cloud computing patterns" },
-    { "id": "cloud-interoperability", "fr": "interopérabilité", "en": "cloud interoperability" },
+    { "id": "cloud-interoperability-issues", "fr": "problèmes d'interopérabilité dans le nuage", "en": "cloud interoperability issues" },
     { "id": "service-level-agreement", "fr": "accord de niveau de service", "en": "service level agreement" },
-    { "id": "mobile-cloud-computing", "fr": "informatique mobile infonuagique", "en": "mobile cloud computing" }
+    { "id": "mobile-cloud-computing", "fr": "infonuagique mobile", "en": "mobile cloud computing" }
   ],
   "LOG8430": [
-    { "id": "advanced-design-methods", "fr": "méthodes de conception avancées", "en": "advanced design methods" },
+    { "id": "architecture-selection", "fr": "choix d'architecture", "en": "architecture selection" },
     { "id": "multi-tier-architecture", "fr": "architectures multi-niveaux", "en": "multi-tier architecture" },
     { "id": "client-server-architecture", "fr": "architecture client-serveur", "en": "client-server architecture" },
     { "id": "dynamic-component-loading", "fr": "chargement de composantes dynamiques", "en": "dynamic component loading" },
@@ -475,9 +476,7 @@
     { "id": "service-oriented-architecture", "fr": "architecture orientée services", "en": "service-oriented architecture" }
   ],
   "LOG8704": [
-    { "id": "virtual-reality", "fr": "réalité virtuelle", "en": "virtual reality" },
-    { "id": "augmented-reality", "fr": "réalité augmentée", "en": "augmented reality" },
-    { "id": "mixed-reality", "fr": "réalité mixte", "en": "mixed reality" },
+    { "id": "extended-reality-trends", "fr": "tendances en réalité virtuelle, augmentée et mixte", "en": "extended reality trends" },
     { "id": "extended-reality-development-cycle", "fr": "cycle de développement en réalité étendue", "en": "extended reality development cycle" },
     { "id": "extended-reality-design-techniques", "fr": "techniques de conception en réalité étendue", "en": "extended reality design techniques" },
     { "id": "camera-and-control", "fr": "caméra et contrôle", "en": "camera and control" },

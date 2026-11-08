@@ -1,22 +1,44 @@
 [
   {
     "polySigle": "INF2010",
+    "hostCourseId": 28,
+    "notionsFound": [
+      "sequential-data-structures",
+      "sorting-algorithms",
+      "string-algorithms",
+      "set-data-structures"
+    ],
+    "notionsMissing": [
+      "element-insertion-search-and-removal",
+      "binary-trees",
+      "balanced-trees",
+      "priority-queues",
+      "graph-implementation",
+      "graph-traversal"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF2010",
     "hostCourseId": 33,
     "notionsFound": [
       "binary-trees",
       "balanced-trees",
       "graph-implementation",
-      "graph-traversal",
-      "sets"
+      "graph-traversal"
     ],
     "notionsMissing": [
       "sequential-data-structures",
-      "lists-stacks-and-queues",
+      "element-insertion-search-and-removal",
       "sorting-algorithms",
       "priority-queues",
-      "string-algorithms"
+      "string-algorithms",
+      "set-data-structures"
     ],
-    "contentScore": 0.5,
+    "contentScore": 0.4,
     "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description"
@@ -30,17 +52,17 @@
       "balanced-trees",
       "string-algorithms",
       "graph-implementation",
-      "graph-traversal",
-      "sets"
+      "graph-traversal"
     ],
     "notionsMissing": [
       "sequential-data-structures",
-      "lists-stacks-and-queues",
-      "priority-queues"
+      "element-insertion-search-and-removal",
+      "priority-queues",
+      "set-data-structures"
     ],
-    "contentScore": 0.7,
+    "contentScore": 0.6,
     "workload": "trop_legere",
-    "level": "moyenne",
+    "level": "faible",
     "textUsed": "description+plan"
   },
   {
@@ -196,6 +218,28 @@
     "textUsed": "description+plan"
   },
   {
+    "polySigle": "INF8602",
+    "hostCourseId": 78,
+    "notionsFound": [
+      "control-flow-attacks-and-countermeasures",
+      "general-purpose-os-security",
+      "software-containers",
+      "virtual-machines"
+    ],
+    "notionsMissing": [
+      "security-evaluation-methods",
+      "discretionary-access-control",
+      "mandatory-access-control",
+      "control-flow-integrity",
+      "security-kernels",
+      "sandboxing"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
     "polySigle": "INF8725",
     "hostCourseId": 44,
     "notionsFound": [
@@ -313,16 +357,16 @@
       "requirements-elicitation",
       "requirements-analysis",
       "requirements-specification",
+      "requirements-negotiation",
       "requirements-management"
     ],
     "notionsMissing": [
       "requirements-validation",
       "software-prototyping",
-      "negotiation-and-risk-assessment",
-      "requirements-and-agile-methods",
-      "reviews-and-inspections"
+      "risk-assessment",
+      "requirements-and-agile-methods"
     ],
-    "contentScore": 0.5,
+    "contentScore": 0.6,
     "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description"
@@ -336,39 +380,17 @@
       "requirements-analysis",
       "requirements-validation",
       "requirements-specification",
+      "requirements-negotiation",
       "requirements-management"
     ],
     "notionsMissing": [
       "software-prototyping",
-      "negotiation-and-risk-assessment",
-      "requirements-and-agile-methods",
-      "reviews-and-inspections"
+      "risk-assessment",
+      "requirements-and-agile-methods"
     ],
-    "contentScore": 0.6,
+    "contentScore": 0.7,
     "workload": "trop_legere",
-    "level": "faible",
-    "textUsed": "description"
-  },
-  {
-    "polySigle": "LOG3430",
-    "hostCourseId": 89,
-    "notionsFound": [
-      "software-testing-methods",
-      "functional-testing",
-      "object-oriented-testing",
-      "test-planning"
-    ],
-    "notionsMissing": [
-      "software-verification-validation",
-      "structural-testing",
-      "finite-state-machine-testing",
-      "integration-testing",
-      "statistical-validation",
-      "software-reliability"
-    ],
-    "contentScore": 0.4,
-    "workload": "trop_legere",
-    "level": "faible",
+    "level": "moyenne",
     "textUsed": "description"
   },
   {
@@ -380,36 +402,34 @@
       "virtualization",
       "cloud-migration",
       "cloud-computing-patterns",
-      "cloud-interoperability",
       "mobile-cloud-computing"
     ],
     "notionsMissing": [
       "service-delivery-models",
       "mapreduce-and-nosql",
+      "cloud-interoperability-issues",
       "service-level-agreement"
     ],
-    "contentScore": 0.7,
+    "contentScore": 0.6,
     "workload": "trop_legere",
-    "level": "moyenne",
+    "level": "faible",
     "textUsed": "description+plan"
   },
   {
     "polySigle": "LOG8704",
     "hostCourseId": 80,
     "notionsFound": [
-      "virtual-reality",
-      "augmented-reality",
-      "mixed-reality",
       "extended-reality-design-techniques",
       "virtual-reality-applications",
       "augmented-reality-applications"
     ],
     "notionsMissing": [
+      "extended-reality-trends",
       "extended-reality-development-cycle",
       "camera-and-control",
       "extended-reality-use-cases"
     ],
-    "contentScore": 0.667,
+    "contentScore": 0.429,
     "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description+plan"

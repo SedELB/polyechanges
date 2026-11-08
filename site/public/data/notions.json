@@ -36,9 +36,9 @@
       "en": "battery operation"
     },
     {
-      "id": "server-room-energy",
-      "fr": "salle de serveurs",
-      "en": "server room energy"
+      "id": "server-room-balances",
+      "fr": "bilans de matière et d'énergie dans une salle de serveurs",
+      "en": "server room balances"
     },
     {
       "id": "sustainable-development",
@@ -54,13 +54,13 @@
   "INF2010": [
     {
       "id": "sequential-data-structures",
-      "fr": "structures de données séquentielles",
+      "fr": "structures séquentielles : listes, piles, files, vecteurs",
       "en": "sequential data structures"
     },
     {
-      "id": "lists-stacks-and-queues",
-      "fr": "listes, piles et files",
-      "en": "lists, stacks and queues"
+      "id": "element-insertion-search-and-removal",
+      "fr": "insertion, recherche et retrait d'éléments",
+      "en": "element insertion, search and removal"
     },
     {
       "id": "sorting-algorithms",
@@ -98,9 +98,9 @@
       "en": "graph traversal"
     },
     {
-      "id": "sets",
+      "id": "set-data-structures",
       "fr": "ensembles",
-      "en": "sets"
+      "en": "set data structures"
     }
   ],
   "INF2610": [
@@ -167,14 +167,9 @@
       "en": "transformation pipeline"
     },
     {
-      "id": "programmable-graphics-pipeline",
-      "fr": "pipeline graphique programmable",
-      "en": "programmable graphics pipeline"
-    },
-    {
-      "id": "shaders",
-      "fr": "nuanceurs",
-      "en": "shaders"
+      "id": "programmable-pipeline-and-shaders",
+      "fr": "pipeline graphique programmable et nuanceurs",
+      "en": "programmable pipeline and shaders"
     },
     {
       "id": "illumination-models",
@@ -192,9 +187,14 @@
       "en": "graphical picking"
     },
     {
-      "id": "bezier-curves-and-b-splines",
-      "fr": "courbes de Bézier et B-splines",
-      "en": "Bezier curves and B-splines"
+      "id": "bezier-curves",
+      "fr": "courbes de Bézier",
+      "en": "Bezier curves"
+    },
+    {
+      "id": "b-splines",
+      "fr": "B-splines",
+      "en": "B-splines"
     }
   ],
   "INF3405": [
@@ -266,9 +266,9 @@
       "en": "relational algebra"
     },
     {
-      "id": "sql-queries",
-      "fr": "langage SQL",
-      "en": "SQL queries"
+      "id": "sql-definition-manipulation-and-control",
+      "fr": "langages SQL de définition, de manipulation et de contrôle",
+      "en": "SQL definition, manipulation and control"
     },
     {
       "id": "embedded-sql",
@@ -291,9 +291,9 @@
       "en": "functional dependencies and normal forms"
     },
     {
-      "id": "file-storage-structures",
-      "fr": "modèles de stockage de fichiers",
-      "en": "file storage structures"
+      "id": "relation-and-file-storage-models",
+      "fr": "modèles de stockage de relations et de fichiers",
+      "en": "relation and file storage models"
     },
     {
       "id": "indexing-hashing",
@@ -360,14 +360,9 @@
       "en": "cloud computing concepts"
     },
     {
-      "id": "dependability",
-      "fr": "sûreté de fonctionnement",
-      "en": "dependability"
-    },
-    {
-      "id": "cloud-security",
-      "fr": "sécurité dans le nuage",
-      "en": "cloud security"
+      "id": "cloud-dependability-and-security",
+      "fr": "sûreté de fonctionnement et sécurité dans le nuage",
+      "en": "cloud dependability and security"
     },
     {
       "id": "identity-and-access-management",
@@ -385,9 +380,14 @@
       "en": "data protection"
     },
     {
-      "id": "logging-and-networking",
-      "fr": "mise en réseau et journalisation",
-      "en": "logging and networking"
+      "id": "cloud-networking",
+      "fr": "mise en réseau",
+      "en": "cloud networking"
+    },
+    {
+      "id": "logging",
+      "fr": "journalisation",
+      "en": "logging"
     },
     {
       "id": "regulatory-compliance",
@@ -407,19 +407,19 @@
   ],
   "INF8103": [
     {
-      "id": "cybersecurity-organizational-model",
-      "fr": "modèle organisationnel de la cybersécurité",
-      "en": "cybersecurity organizational model"
+      "id": "cybersecurity-organizational-models",
+      "fr": "modèles organisationnels de la cybersécurité",
+      "en": "cybersecurity organizational models"
     },
     {
-      "id": "decentralized-and-centralized-models",
-      "fr": "modèles décentralisé et centralisé",
-      "en": "decentralized and centralized models"
+      "id": "employee-role-in-cybersecurity",
+      "fr": "rôle de l'ensemble des employés",
+      "en": "employee role in cybersecurity"
     },
     {
-      "id": "cybersecurity-team-roles",
-      "fr": "équipe de cybersécurité",
-      "en": "cybersecurity team roles"
+      "id": "cybersecurity-team-roles-and-responsibilities",
+      "fr": "rôle et responsabilité d'une équipe de cybersécurité",
+      "en": "cybersecurity team roles and responsibilities"
     },
     {
       "id": "governance-and-compliance",
@@ -511,19 +511,14 @@
   ],
   "INF8111": [
     {
-      "id": "data-preparation",
-      "fr": "préparation des données",
-      "en": "data preparation"
+      "id": "data-preparation-and-transformation",
+      "fr": "préparation et transformation des données",
+      "en": "data preparation and transformation"
     },
     {
       "id": "data-reduction",
       "fr": "réduction de données",
       "en": "data reduction"
-    },
-    {
-      "id": "data-transformation",
-      "fr": "transformation de données",
-      "en": "data transformation"
     },
     {
       "id": "data-mining-tasks",
@@ -682,9 +677,9 @@
       "en": "Markov random fields"
     },
     {
-      "id": "probabilistic-inference",
-      "fr": "inférence probabiliste",
-      "en": "probabilistic inference"
+      "id": "inference-in-probabilistic-models",
+      "fr": "inférence dans les modèles probabilistes",
+      "en": "inference in probabilistic models"
     },
     {
       "id": "statistical-decision-theory",
@@ -697,9 +692,9 @@
       "en": "decision networks"
     },
     {
-      "id": "machine-learning-algorithms",
-      "fr": "algorithmes d'apprentissage automatique",
-      "en": "machine learning algorithms"
+      "id": "structured-classifiers",
+      "fr": "classificateurs structurés",
+      "en": "structured classifiers"
     },
     {
       "id": "deep-learning",
@@ -817,7 +812,7 @@
     },
     {
       "id": "exploration-in-reinforcement-learning",
-      "fr": "exploration",
+      "fr": "exploration en apprentissage par renforcement",
       "en": "exploration in reinforcement learning"
     }
   ],
@@ -937,19 +932,19 @@
       "en": "digital evidence collection"
     },
     {
-      "id": "evidence-preservation",
-      "fr": "sécurisation des données",
-      "en": "evidence preservation"
+      "id": "securing-digital-data",
+      "fr": "sécurisation des données numériques",
+      "en": "securing digital data"
     },
     {
-      "id": "data-extraction",
-      "fr": "extraction de données",
-      "en": "data extraction"
+      "id": "data-interpretation-and-explanation",
+      "fr": "interprétation et explication des données",
+      "en": "data interpretation and explanation"
     },
     {
-      "id": "evidence-authentication",
+      "id": "data-authentication",
       "fr": "authentification des données",
-      "en": "evidence authentication"
+      "en": "data authentication"
     },
     {
       "id": "digital-data-analysis",
@@ -957,9 +952,9 @@
       "en": "digital data analysis"
     },
     {
-      "id": "storage-devices",
-      "fr": "périphériques de stockage",
-      "en": "storage devices"
+      "id": "storage-device-analysis",
+      "fr": "analyse des périphériques de stockage",
+      "en": "storage device analysis"
     },
     {
       "id": "volatile-data-capture",
@@ -1057,7 +1052,7 @@
     },
     {
       "id": "cloud-service-models",
-      "fr": "infrastructure, plateforme et logiciel en tant que services",
+      "fr": "infrastructure, plateforme et applications en tant que services",
       "en": "cloud service models"
     },
     {
@@ -1103,9 +1098,9 @@
       "en": "control flow integrity"
     },
     {
-      "id": "attacks-and-countermeasures",
-      "fr": "attaques et contremesures",
-      "en": "attacks and countermeasures"
+      "id": "control-flow-attacks-and-countermeasures",
+      "fr": "attaques et contremesures sur le flux de contrôle",
+      "en": "control-flow attacks and countermeasures"
     },
     {
       "id": "security-kernels",
@@ -1118,19 +1113,19 @@
       "en": "general-purpose OS security"
     },
     {
-      "id": "process-isolation",
-      "fr": "isolation de processus",
-      "en": "process isolation"
-    },
-    {
       "id": "software-containers",
       "fr": "conteneurs logiciels",
       "en": "software containers"
     },
     {
-      "id": "virtual-machines-and-sandboxing",
-      "fr": "machines virtuelles et bac à sable",
-      "en": "virtual machines and sandboxing"
+      "id": "virtual-machines",
+      "fr": "machines virtuelles",
+      "en": "virtual machines"
+    },
+    {
+      "id": "sandboxing",
+      "fr": "isolation en bac à sable",
+      "en": "sandboxing"
     }
   ],
   "INF8725": [
@@ -1291,9 +1286,9 @@
   ],
   "INF8801A": [
     {
-      "id": "content-based-retrieval",
-      "fr": "recherche par le contenu",
-      "en": "content-based retrieval"
+      "id": "content-based-multimedia-retrieval",
+      "fr": "recherche par le contenu dans des bases multimédias",
+      "en": "content-based multimedia retrieval"
     },
     {
       "id": "query-by-example-and-sketch",
@@ -1336,9 +1331,9 @@
       "en": "texture synthesis"
     },
     {
-      "id": "3d-object-retrieval",
-      "fr": "recherche d'objets 3D",
-      "en": "3D object retrieval"
+      "id": "search-criteria-taxonomy",
+      "fr": "taxonomie des critères de recherche",
+      "en": "search criteria taxonomy"
     }
   ],
   "INF8808": [
@@ -1353,9 +1348,14 @@
       "en": "visual data types"
     },
     {
-      "id": "interaction-and-animation",
-      "fr": "interaction et animation",
-      "en": "interaction and animation"
+      "id": "interaction-in-visualization",
+      "fr": "interaction dans la visualisation",
+      "en": "interaction in visualization"
+    },
+    {
+      "id": "animation-in-visualization",
+      "fr": "animation dans la visualisation",
+      "en": "animation in visualization"
     },
     {
       "id": "tree-and-network-visualization",
@@ -1373,26 +1373,31 @@
       "en": "multidimensional data"
     },
     {
-      "id": "color-and-perception",
-      "fr": "couleur et perception",
-      "en": "color and perception"
+      "id": "color-in-visualization",
+      "fr": "couleur dans la visualisation",
+      "en": "color in visualization"
     },
     {
-      "id": "library-based-programming",
-      "fr": "programmation avec une librairie",
-      "en": "library-based programming"
+      "id": "perception-and-cognition",
+      "fr": "perception et cognition",
+      "en": "perception and cognition"
+    },
+    {
+      "id": "multimedia-data-visualization",
+      "fr": "visualisation de données multimédias",
+      "en": "multimedia data visualization"
     }
   ],
   "LOG2400": [
     {
-      "id": "software-engineering-process",
-      "fr": "processus du génie logiciel",
-      "en": "software engineering process"
+      "id": "software-process-and-life-cycle",
+      "fr": "processus et cycle de vie du génie logiciel",
+      "en": "software process and life cycle"
     },
     {
-      "id": "software-life-cycle",
-      "fr": "cycle de vie du logiciel",
-      "en": "software life cycle"
+      "id": "standard-modeling-notation",
+      "fr": "langages et notation standards",
+      "en": "standard modeling notation"
     },
     {
       "id": "software-analysis-and-design",
@@ -1484,9 +1489,9 @@
   ],
   "LOG2440": [
     {
-      "id": "web-software",
-      "fr": "logiciels pour le Web",
-      "en": "web software"
+      "id": "dynamic-content-generation",
+      "fr": "génération dynamique de contenu",
+      "en": "dynamic content generation"
     },
     {
       "id": "client-server-architecture",
@@ -1670,9 +1675,14 @@
       "en": "software prototyping"
     },
     {
-      "id": "negotiation-and-risk-assessment",
-      "fr": "négociation et évaluation du risque",
-      "en": "negotiation and risk assessment"
+      "id": "requirements-negotiation",
+      "fr": "négociation des exigences",
+      "en": "requirements negotiation"
+    },
+    {
+      "id": "risk-assessment",
+      "fr": "évaluation du risque",
+      "en": "risk assessment"
     },
     {
       "id": "requirements-and-agile-methods",
@@ -1683,11 +1693,6 @@
       "id": "requirements-management",
       "fr": "gestion des exigences",
       "en": "requirements management"
-    },
-    {
-      "id": "reviews-and-inspections",
-      "fr": "revues et inspections",
-      "en": "reviews and inspections"
     }
   ],
   "LOG3430": [
@@ -1697,9 +1702,9 @@
       "en": "software verification and validation"
     },
     {
-      "id": "software-testing-methods",
-      "fr": "méthodes de test",
-      "en": "software testing methods"
+      "id": "testing-method-classification",
+      "fr": "classification des méthodes de test",
+      "en": "testing method classification"
     },
     {
       "id": "structural-testing",
@@ -1717,14 +1722,14 @@
       "en": "finite state machine testing"
     },
     {
-      "id": "integration-testing",
-      "fr": "tests d'intégration",
-      "en": "integration testing"
+      "id": "integration-and-installation-testing-strategies",
+      "fr": "stratégies de tests d'intégration et d'installation",
+      "en": "integration and installation testing strategies"
     },
     {
-      "id": "object-oriented-testing",
-      "fr": "tests de programmes orientés objet",
-      "en": "object-oriented testing"
+      "id": "procedural-and-object-oriented-testing",
+      "fr": "tests pour programmation procédurale et orientée objet",
+      "en": "procedural and object-oriented testing"
     },
     {
       "id": "statistical-validation",
@@ -1744,14 +1749,14 @@
   ],
   "LOG4715": [
     {
-      "id": "video-game-history",
-      "fr": "historique des jeux vidéo",
-      "en": "video game history"
+      "id": "video-game-history-and-genres",
+      "fr": "historique et types de jeux vidéo",
+      "en": "video game history and genres"
     },
     {
-      "id": "video-game-genres",
-      "fr": "types de jeux vidéo",
-      "en": "video game genres"
+      "id": "game-development-roles",
+      "fr": "rôles dans la création de jeux vidéo",
+      "en": "game development roles"
     },
     {
       "id": "game-design-document",
@@ -1796,11 +1801,6 @@
   ],
   "LOG8100": [
     {
-      "id": "software-security",
-      "fr": "sécurité logicielle",
-      "en": "software security"
-    },
-    {
       "id": "vulnerability-analysis",
       "fr": "analyse des vulnérabilités",
       "en": "vulnerability analysis"
@@ -1841,9 +1841,14 @@
       "en": "DevOps and continuous deployment"
     },
     {
-      "id": "containers-and-microservices",
-      "fr": "conteneurs et microservices",
-      "en": "containers and microservices"
+      "id": "containers",
+      "fr": "conteneurs",
+      "en": "containers"
+    },
+    {
+      "id": "microservices",
+      "fr": "microservices",
+      "en": "microservices"
     }
   ],
   "LOG8235": [
@@ -1888,9 +1893,9 @@
       "en": "dynamic difficulty adjustment"
     },
     {
-      "id": "character-navigation",
-      "fr": "navigation de personnages",
-      "en": "character navigation"
+      "id": "game-navigation",
+      "fr": "navigation dans le jeu",
+      "en": "game navigation"
     },
     {
       "id": "perception-decision-action-loop",
@@ -1987,9 +1992,9 @@
       "en": "cloud computing patterns"
     },
     {
-      "id": "cloud-interoperability",
-      "fr": "interopérabilité",
-      "en": "cloud interoperability"
+      "id": "cloud-interoperability-issues",
+      "fr": "problèmes d'interopérabilité dans le nuage",
+      "en": "cloud interoperability issues"
     },
     {
       "id": "service-level-agreement",
@@ -1998,15 +2003,15 @@
     },
     {
       "id": "mobile-cloud-computing",
-      "fr": "informatique mobile infonuagique",
+      "fr": "infonuagique mobile",
       "en": "mobile cloud computing"
     }
   ],
   "LOG8430": [
     {
-      "id": "advanced-design-methods",
-      "fr": "méthodes de conception avancées",
-      "en": "advanced design methods"
+      "id": "architecture-selection",
+      "fr": "choix d'architecture",
+      "en": "architecture selection"
     },
     {
       "id": "multi-tier-architecture",
@@ -2056,19 +2061,9 @@
   ],
   "LOG8704": [
     {
-      "id": "virtual-reality",
-      "fr": "réalité virtuelle",
-      "en": "virtual reality"
-    },
-    {
-      "id": "augmented-reality",
-      "fr": "réalité augmentée",
-      "en": "augmented reality"
-    },
-    {
-      "id": "mixed-reality",
-      "fr": "réalité mixte",
-      "en": "mixed reality"
+      "id": "extended-reality-trends",
+      "fr": "tendances en réalité virtuelle, augmentée et mixte",
+      "en": "extended reality trends"
     },
     {
       "id": "extended-reality-development-cycle",
