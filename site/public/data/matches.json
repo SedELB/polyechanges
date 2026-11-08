@@ -1,5 +1,49 @@
 [
   {
+    "polySigle": "INF2010",
+    "hostCourseId": 33,
+    "notionsFound": [
+      "binary-trees",
+      "balanced-trees",
+      "graph-implementation",
+      "graph-traversal",
+      "sets"
+    ],
+    "notionsMissing": [
+      "sequential-data-structures",
+      "lists-stacks-and-queues",
+      "sorting-algorithms",
+      "priority-queues",
+      "string-algorithms"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2010",
+    "hostCourseId": 46,
+    "notionsFound": [
+      "sorting-algorithms",
+      "binary-trees",
+      "balanced-trees",
+      "string-algorithms",
+      "graph-implementation",
+      "graph-traversal",
+      "sets"
+    ],
+    "notionsMissing": [
+      "sequential-data-structures",
+      "lists-stacks-and-queues",
+      "priority-queues"
+    ],
+    "contentScore": 0.7,
+    "workload": "trop_legere",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
     "polySigle": "INF2610",
     "hostCourseId": 50,
     "notionsFound": [
@@ -17,6 +61,292 @@
     "contentScore": 0.75,
     "workload": "trop_legere",
     "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8175",
+    "hostCourseId": 60,
+    "notionsFound": [
+      "adversarial-search",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "intelligent-agents",
+      "search-strategies",
+      "local-search",
+      "constraint-programming",
+      "propositional-logic",
+      "knowledge-representation"
+    ],
+    "contentScore": 0.4,
+    "workload": "conforme",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8215",
+    "hostCourseId": 60,
+    "notionsFound": [
+      "adversarial-search",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "intelligent-agents",
+      "search-strategies",
+      "local-search",
+      "constraint-programming",
+      "propositional-logic",
+      "knowledge-representation"
+    ],
+    "contentScore": 0.4,
+    "workload": "conforme",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 60,
+    "notionsFound": [
+      "linear-regression",
+      "logistic-regression",
+      "support-vector-machines",
+      "decision-trees",
+      "ensemble-learning",
+      "neural-networks",
+      "kernel-methods"
+    ],
+    "notionsMissing": [
+      "statistical-decision-theory",
+      "bias-variance-tradeoff",
+      "maximum-likelihood-estimation"
+    ],
+    "contentScore": 0.7,
+    "workload": "trop_legere",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8250E",
+    "hostCourseId": 74,
+    "notionsFound": [
+      "markov-decision-processes",
+      "policy-and-value-iteration",
+      "monte-carlo-methods",
+      "policy-gradient-methods",
+      "exploration-in-reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "multi-armed-bandits",
+      "contextual-bandits",
+      "dynamic-programming",
+      "temporal-difference-learning",
+      "function-approximation"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8250E",
+    "hostCourseId": 83,
+    "notionsFound": [
+      "markov-decision-processes",
+      "dynamic-programming",
+      "policy-and-value-iteration",
+      "monte-carlo-methods",
+      "function-approximation",
+      "policy-gradient-methods",
+      "exploration-in-reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "multi-armed-bandits",
+      "contextual-bandits",
+      "temporal-difference-learning"
+    ],
+    "contentScore": 0.7,
+    "workload": "trop_legere",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8405",
+    "hostCourseId": 28,
+    "notionsFound": [
+      "wireless-networks",
+      "mobile-network-architectures",
+      "mobile-operating-systems",
+      "next-generation-networks"
+    ],
+    "notionsMissing": [
+      "mobility-and-location-management",
+      "mobile-application-characterization",
+      "cellular-systems",
+      "ad-hoc-network-deployment",
+      "quality-of-service-and-routing",
+      "internet-of-things"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8725",
+    "hostCourseId": 44,
+    "notionsFound": [
+      "fourier-transform",
+      "image-filtering",
+      "image-restoration",
+      "image-segmentation"
+    ],
+    "notionsMissing": [
+      "digital-signals",
+      "signal-to-noise-ratio",
+      "signal-convolution",
+      "spectral-analysis",
+      "sampling-theorem",
+      "digital-filters"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8725",
+    "hostCourseId": 47,
+    "notionsFound": [
+      "digital-signals",
+      "sampling-theorem",
+      "digital-filters",
+      "image-filtering"
+    ],
+    "notionsMissing": [
+      "signal-to-noise-ratio",
+      "signal-convolution",
+      "spectral-analysis",
+      "fourier-transform",
+      "image-restoration",
+      "image-segmentation"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8775",
+    "hostCourseId": 46,
+    "notionsFound": [
+      "asymptotic-notation",
+      "worst-case-and-amortized-analysis",
+      "greedy-algorithms",
+      "divide-and-conquer",
+      "dynamic-programming",
+      "metaheuristics",
+      "complexity-classes-p-and-np"
+    ],
+    "notionsMissing": [
+      "resource-consumption-analysis",
+      "empirical-and-theoretical-analysis",
+      "decidability"
+    ],
+    "contentScore": 0.7,
+    "workload": "trop_legere",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "LOG2420",
+    "hostCourseId": 87,
+    "notionsFound": [
+      "user-requirements-analysis",
+      "user-centered-design",
+      "heuristic-evaluation",
+      "user-interface-toolkits"
+    ],
+    "notionsMissing": [
+      "cost-benefit-analysis",
+      "cognitive-ergonomics",
+      "interface-design-principles",
+      "user-testing",
+      "windowing-systems",
+      "personalization-and-user-assistance"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3000",
+    "hostCourseId": 50,
+    "notionsFound": [
+      "software-process-activities",
+      "process-assessment",
+      "process-improvement",
+      "empirical-process-analysis"
+    ],
+    "notionsMissing": [
+      "software-life-cycle",
+      "development-process-philosophies",
+      "configuration-management",
+      "change-request-management",
+      "project-management",
+      "team-management"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3420",
+    "hostCourseId": 87,
+    "notionsFound": [
+      "requirements-classification",
+      "requirements-elicitation",
+      "requirements-analysis",
+      "requirements-specification",
+      "requirements-management"
+    ],
+    "notionsMissing": [
+      "requirements-validation",
+      "software-prototyping",
+      "negotiation-and-risk-assessment",
+      "requirements-and-agile-methods",
+      "reviews-and-inspections"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3420",
+    "hostCourseId": 95,
+    "notionsFound": [
+      "requirements-classification",
+      "requirements-elicitation",
+      "requirements-analysis",
+      "requirements-validation",
+      "requirements-specification",
+      "requirements-management"
+    ],
+    "notionsMissing": [
+      "software-prototyping",
+      "negotiation-and-risk-assessment",
+      "requirements-and-agile-methods",
+      "reviews-and-inspections"
+    ],
+    "contentScore": 0.6,
+    "workload": "trop_legere",
+    "level": "faible",
     "textUsed": "description"
   },
   {
@@ -40,5 +370,114 @@
     "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8415E",
+    "hostCourseId": 78,
+    "notionsFound": [
+      "cloud-computing-concepts",
+      "cloud-architectures",
+      "virtualization",
+      "cloud-migration",
+      "cloud-computing-patterns",
+      "cloud-interoperability",
+      "mobile-cloud-computing"
+    ],
+    "notionsMissing": [
+      "service-delivery-models",
+      "mapreduce-and-nosql",
+      "service-level-agreement"
+    ],
+    "contentScore": 0.7,
+    "workload": "trop_legere",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "LOG8704",
+    "hostCourseId": 80,
+    "notionsFound": [
+      "virtual-reality",
+      "augmented-reality",
+      "mixed-reality",
+      "extended-reality-design-techniques",
+      "virtual-reality-applications",
+      "augmented-reality-applications"
+    ],
+    "notionsMissing": [
+      "extended-reality-development-cycle",
+      "camera-and-control",
+      "extended-reality-use-cases"
+    ],
+    "contentScore": 0.667,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "MTH2304",
+    "hostCourseId": 14,
+    "notionsFound": [
+      "probability-theory",
+      "conditional-probability-and-bayes-theorem",
+      "random-variables",
+      "random-vectors",
+      "convergence-of-random-variables",
+      "central-limit-theorem"
+    ],
+    "notionsMissing": [
+      "descriptive-statistics",
+      "point-and-interval-estimation",
+      "hypothesis-testing",
+      "simple-linear-regression"
+    ],
+    "contentScore": 0.6,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "MTH2304",
+    "hostCourseId": 32,
+    "notionsFound": [
+      "probability-theory",
+      "random-variables",
+      "random-vectors",
+      "convergence-of-random-variables",
+      "descriptive-statistics",
+      "hypothesis-testing"
+    ],
+    "notionsMissing": [
+      "conditional-probability-and-bayes-theorem",
+      "central-limit-theorem",
+      "point-and-interval-estimation",
+      "simple-linear-regression"
+    ],
+    "contentScore": 0.6,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "MTH3302",
+    "hostCourseId": 60,
+    "notionsFound": [
+      "linear-regression",
+      "logistic-regression",
+      "poisson-regression",
+      "principal-component-analysis"
+    ],
+    "notionsMissing": [
+      "multicollinearity",
+      "generalized-linear-models",
+      "bayesian-statistics",
+      "markov-chain-monte-carlo",
+      "penalized-regression",
+      "information-theory"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
   }
 ]
