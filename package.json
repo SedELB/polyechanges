@@ -7,7 +7,12 @@
     "test": "vitest run",
     "collect": "tsx pipeline/cli/collect.ts",
     "partners:init": "tsx pipeline/cli/partners.ts init",
-    "partners:check": "tsx pipeline/cli/partners.ts check"
+    "partners:check": "tsx pipeline/cli/partners.ts check",
+    "source:add": "tsx pipeline/cli/sources.ts add",
+    "source:find": "tsx pipeline/cli/sources.ts find",
+    "verify-sources": "tsx pipeline/cli/sources.ts verify",
+    "refresh-sources": "tsx pipeline/cli/sources.ts refresh",
+    "refresh": "tsx pipeline/cli/refresh.ts"
   },
   "dependencies": {
     "better-sqlite3": "^13.0.3",
