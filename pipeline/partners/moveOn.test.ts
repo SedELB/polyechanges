@@ -29,6 +29,7 @@ function uni(moveOnName: string): University {
     restrictions: null,
     exchangeContact: null,
     catalogPublic: true,
+    provenance: {},
   };
 }
 

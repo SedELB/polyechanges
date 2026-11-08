@@ -4,16 +4,17 @@ import type { PolyCourse } from '../../shared/types.js';
 export function upsertPolyCourses(db: Db, courses: PolyCourse[]): void {
   const stmt = db.prepare(
     `INSERT INTO poly_courses (sigle, title, description, credits, triplet_json, prerequisites,
-       status, eligible, ineligible_reason, compared, groups_json, active, source_url, collected_at)
+       status, eligible, ineligible_reason, compared, groups_json, active, source_url, collected_at, source_locator_json)
      VALUES (@sigle, @title, @description, @credits, @triplet, @prerequisites,
-       @status, @eligible, @ineligibleReason, @compared, @groups, 1, @sourceUrl, @collectedAt)
+       @status, @eligible, @ineligibleReason, @compared, @groups, 1, @sourceUrl, @collectedAt, @sourceLocator)
      ON CONFLICT(sigle) DO UPDATE SET
        title = excluded.title, description = excluded.description, credits = excluded.credits,
        triplet_json = excluded.triplet_json, prerequisites = excluded.prerequisites,
        status = excluded.status, eligible = excluded.eligible,
        ineligible_reason = excluded.ineligible_reason, compared = excluded.compared,
        groups_json = excluded.groups_json, active = 1,
-       source_url = excluded.source_url, collected_at = excluded.collected_at`,
+       source_url = excluded.source_url, collected_at = excluded.collected_at,
+       source_locator_json = excluded.source_locator_json`,
   );
   db.transaction((rows: PolyCourse[]) => {
     for (const c of rows) {
@@ -31,6 +32,7 @@ export function upsertPolyCourses(db: Db, courses: PolyCourse[]): void {
         groups: JSON.stringify(c.groups),
         sourceUrl: c.sourceUrl,
         collectedAt: c.collectedAt,
+        sourceLocator: c.sourceLocator ? JSON.stringify(c.sourceLocator) : null,
       });
     }
   })(courses);
@@ -50,6 +52,7 @@ interface PolyCourseRow {
   groups_json: string;
   source_url: string;
   collected_at: string;
+  source_locator_json: string | null;
 }
 
 /** Cours de Poly encore présents sur la page du programme. */
@@ -69,5 +72,6 @@ export function listPolyCourses(db: Db): PolyCourse[] {
     groups: JSON.parse(r.groups_json) as string[],
     sourceUrl: r.source_url,
     collectedAt: r.collected_at,
+    sourceLocator: r.source_locator_json ? (JSON.parse(r.source_locator_json) as PolyCourse['sourceLocator']) : null,
   }));
 }

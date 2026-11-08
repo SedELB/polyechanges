@@ -30,6 +30,7 @@ const university: University = {
   restrictions: null,
   exchangeContact: null,
   catalogPublic: true,
+  provenance: {},
 };
 
 function course(code: string, title = `Titre ${code}`): HostCourseInput {
@@ -46,6 +47,17 @@ function course(code: string, title = `Titre ${code}`): HostCourseInput {
     sourceUrl: 'https://example.org/' + code,
   };
 }
+
+const manualCourse = (code: string, line: number) => ({
+  ...course(code),
+  provenance: {
+    url: 'https://example.org/catalogue',
+    retrievedAt: '2026-11-10T00:00:00.000Z',
+    sha256: 'c'.repeat(64),
+    locator: { page: 1, line },
+    quote: code,
+  },
+});
 
 let server: TestServer;
 let tmp: string;
@@ -127,7 +139,7 @@ describe('collectSource', () => {
   it('lit une source manuelle sans téléchargement', async () => {
     const manualDir = join(tmp, 'manual');
     mkdirSync(manualDir);
-    writeFileSync(join(manualDir, 'ntu-manuel.json'), JSON.stringify([course('M1'), course('M2')]));
+    writeFileSync(join(manualDir, 'ntu-manuel.json'), JSON.stringify([manualCourse('M1', 4), manualCourse('M2', 9)]));
     const source: SourceFile = {
       id: 'ntu-manuel',
       universityId: 'ntu',
@@ -139,10 +151,41 @@ describe('collectSource', () => {
     const res = await collectSource(db, fetcher, source, tmp, '2026-11-10T10:00:00.000Z', { manualDir });
     expect(res.status).toBe('ok');
     expect(res.diff?.added).toEqual(['M1', 'M2']);
-    const rows = db.prepare('SELECT snapshot_id FROM host_courses').all() as { snapshot_id: number | null }[];
+    const rows = db.prepare('SELECT snapshot_id, source_page, source_line FROM host_courses ORDER BY code').all() as {
+      snapshot_id: number | null;
+      source_page: number | null;
+      source_line: number | null;
+    }[];
     expect(rows).toHaveLength(2);
     expect(rows.every((r) => r.snapshot_id === null)).toBe(true);
+    expect(rows.map((r) => [r.source_page, r.source_line])).toEqual([[1, 4], [1, 9]]);
     expect(server.hits.length).toBe(hitsBefore);
+  });
+
+  it('refuse une saisie manuelle sans provenance', async () => {
+    const manualDir = join(tmp, 'manual');
+    mkdirSync(manualDir);
+    writeFileSync(join(manualDir, 'ntu-manuel.json'), JSON.stringify([course('M1')]));
+    const source: SourceFile = { id: 'ntu-manuel', universityId: 'ntu', kind: 'manual', urls: [], reader: 'manual' };
+    const res = await collectSource(db, fetcher, source, tmp, '2026-11-10T10:00:00.000Z', { manualDir });
+    expect(res.status).toBe('failed');
+    expect(res.reason).toContain('provenance');
+  });
+
+  it('enregistre la position de chaque cours dans sa copie brute', async () => {
+    server.pages.set('/liste', '<html><body><h1>Cours</h1><ul><li>A1 - Intro</li><li>B2 - Algo</li></ul></body></html>');
+    const source = { ...htmlSource(), urls: [`${server.base}/liste`] };
+    current = [course('A1'), course('B2'), course('Z9')];
+    const res = await collectSource(db, fetcher, source, tmp, '2026-11-10T10:00:00.000Z');
+    expect(res.status).toBe('ok');
+    const rows = db.prepare('SELECT code, source_page, source_line FROM host_courses ORDER BY code').all();
+    expect(rows).toEqual([
+      { code: 'A1', source_page: 1, source_line: 2 },
+      { code: 'B2', source_page: 1, source_line: 3 },
+      { code: 'Z9', source_page: null, source_line: null },
+    ]);
+    const stored = activeHostCourses(db, 'ntu').find((c) => c.code === 'A1');
+    expect([stored?.sourcePage, stored?.sourceLine]).toEqual([1, 2]);
   });
 
   it('échoue si le fichier manuel est invalide', async () => {

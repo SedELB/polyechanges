@@ -2,12 +2,21 @@ import { readFileSync } from 'node:fs';
 import { z } from 'zod';
 import type { Db } from '../db/open.js';
 import { upsertUniversity } from '../db/universities.js';
-import type { University } from '../../shared/types.js';
+import { UNIVERSITY_FACTS, type University } from '../../shared/types.js';
 import { normalizeName, type MoveOnPartner } from './moveOn.js';
 
 export const UNIVERSITIES_PATH = 'data/universities.json';
 
 const termDatesSchema = z.object({ start: z.string(), end: z.string(), examsEnd: z.string() });
+
+export const provenanceSchema = z.object({
+  url: z.string().min(1),
+  retrievedAt: z.string().min(1),
+  sha256: z.string().regex(/^[0-9a-f]{64}$/, 'empreinte sha256 de 64 caractères hexadécimaux'),
+  locator: z.object({ page: z.number().int().min(1), line: z.number().int().min(1) }),
+  quote: z.string().min(1),
+  stale: z.literal(true).optional(),
+});
 
 const universitySchema = z.object({
   id: z.string().min(1),
@@ -25,6 +34,8 @@ const universitySchema = z.object({
   restrictions: z.string().nullable(),
   exchangeContact: z.string().nullable(),
   catalogPublic: z.boolean(),
+  /** Facultatif dans le fichier : absent = aucune source. */
+  provenance: z.partialRecord(z.enum(UNIVERSITY_FACTS), provenanceSchema).default({}),
 });
 
 export function parseUniversities(raw: unknown): University[] {
@@ -91,6 +102,7 @@ export function buildSkeleton(partners: MoveOnPartner[]): University[] {
       restrictions: null,
       exchangeContact: null,
       catalogPublic: true,
+      provenance: {},
     };
   });
 }

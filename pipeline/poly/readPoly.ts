@@ -3,7 +3,7 @@ import type { PolyCourse } from '../../shared/types.js';
 import { applyEligibility } from './eligibility.js';
 
 /** Cours lu sur la page du programme, avant les règles d'admissibilité. */
-export type ParsedPolyCourse = Omit<PolyCourse, 'eligible' | 'ineligibleReason' | 'compared'>;
+export type ParsedPolyCourse = Omit<PolyCourse, 'eligible' | 'ineligibleReason' | 'compared' | 'sourceLocator'>;
 
 const clean = (s: string): string => s.replace(/[\s\u00a0]+/g, ' ').trim();
 

@@ -6,6 +6,7 @@ import { checkGuards } from '../collect/guards.js';
 import { recordFailure, type CollectResult } from '../collect/collect.js';
 import type { SourceFile } from '../collect/sourceFile.js';
 import type { PolyCourse } from '../../shared/types.js';
+import { findCode, snapshotText } from '../provenance/snapshotText.js';
 import { readPolyCourses } from './readPoly.js';
 
 /** Contenu comparé champ par champ (l'ordre des clés ne compte pas ; la date de collecte est ignorée). */
@@ -45,11 +46,16 @@ export async function collectPoly(db: Db, source: SourceFile, rawDir: string, no
     const bySigle = new Map<string, PolyCourse>();
     for (const [i, file] of source.files.entries()) {
       const snap = takeSavedSnapshot(db, source.id, source.urls[i], file, rawDir);
-      const html = readSnapshot(snap, rawDir).toString('utf8');
-      for (const c of readPolyCourses(html, source.urls[i], snap.fetchedAt)) {
+      const body = readSnapshot(snap, rawDir);
+      const text = await snapshotText(body, 'text/html');
+      for (const c of readPolyCourses(body.toString('utf8'), source.urls[i], snap.fetchedAt)) {
+        const hit = findCode(text, c.sigle)[0];
+        const here = hit ? { sha256: snap.sha256, page: hit.page, line: hit.line } : null;
         const seen = bySigle.get(c.sigle);
-        if (seen) seen.groups.push(...c.groups.filter((g) => !seen.groups.includes(g)));
-        else bySigle.set(c.sigle, c);
+        if (seen) {
+          seen.groups.push(...c.groups.filter((g) => !seen.groups.includes(g)));
+          seen.sourceLocator ??= here;
+        } else bySigle.set(c.sigle, { ...c, sourceLocator: here });
       }
     }
     found = [...bySigle.values()];

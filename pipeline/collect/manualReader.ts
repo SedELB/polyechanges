@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import type { HostCourseInput } from '../../shared/types.js';
+import { provenanceSchema } from '../partners/registry.js';
 import type { Reader } from './readers.js';
 
 const manualCourseSchema = z.object({
@@ -13,6 +14,8 @@ const manualCourseSchema = z.object({
   terms: z.array(z.enum(['fall', 'spring'])),
   level: z.enum(['undergrad', 'grad']),
   sourceUrl: z.string().min(1),
+  /** D'où vient la position du cours : copie brute (empreinte) et ligne de son texte extrait. */
+  provenance: provenanceSchema,
 });
 
 /** Lecteur `manual` : la première page contient le JSON de `data/manual/<sourceId>.json`. */

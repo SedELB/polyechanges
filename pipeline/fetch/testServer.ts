@@ -5,6 +5,8 @@ export interface TestServer {
   base: string;
   userAgents: string[];
   hits: string[];
+  /** Pages HTML servies à la demande : chemin (ex. `/page`) → contenu. Modifiable pendant le test. */
+  pages: Map<string, string>;
   close(): Promise<void>;
 }
 
@@ -13,6 +15,7 @@ export async function startTestServer(): Promise<TestServer> {
   const userAgents: string[] = [];
   const hits: string[] = [];
   const appels = new Map<string, number>();
+  const pages = new Map<string, string>();
   const server: Server = createServer((req, res) => {
     const path = req.url ?? '/';
     hits.push(path);
@@ -66,6 +69,9 @@ export async function startTestServer(): Promise<TestServer> {
       res.setHeader('content-type', 'text/html');
       res.setHeader('content-length', '100');
       res.write('debut');
+    } else if (pages.has(route)) {
+      res.setHeader('content-type', 'text/html; charset=utf-8');
+      res.end(pages.get(route));
     } else {
       res.statusCode = 404;
       res.end('absent');
@@ -77,6 +83,7 @@ export async function startTestServer(): Promise<TestServer> {
     base: `http://127.0.0.1:${port}`,
     userAgents,
     hits,
+    pages,
     close: () =>
       new Promise<void>((resolve) => {
         server.close(() => resolve());

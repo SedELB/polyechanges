@@ -5,10 +5,10 @@ export function upsertUniversity(db: Db, u: University): void {
   db.prepare(
     `INSERT INTO universities (id, name, move_on_name, country_code, city, lat, lng, website,
        catalog_url, credit_system, contact_hours_per_credit, terms_json, restrictions,
-       exchange_contact, catalog_public)
+       exchange_contact, catalog_public, provenance_json)
      VALUES (@id, @name, @moveOnName, @countryCode, @city, @lat, @lng, @website,
        @catalogUrl, @creditSystem, @contactHoursPerCredit, @terms, @restrictions,
-       @exchangeContact, @catalogPublic)
+       @exchangeContact, @catalogPublic, @provenance)
      ON CONFLICT(id) DO UPDATE SET
        name = excluded.name, move_on_name = excluded.move_on_name,
        country_code = excluded.country_code, city = excluded.city, lat = excluded.lat,
@@ -16,7 +16,8 @@ export function upsertUniversity(db: Db, u: University): void {
        credit_system = excluded.credit_system,
        contact_hours_per_credit = excluded.contact_hours_per_credit,
        terms_json = excluded.terms_json, restrictions = excluded.restrictions,
-       exchange_contact = excluded.exchange_contact, catalog_public = excluded.catalog_public`,
+       exchange_contact = excluded.exchange_contact, catalog_public = excluded.catalog_public,
+       provenance_json = excluded.provenance_json`,
   ).run({
     id: u.id,
     name: u.name,
@@ -33,6 +34,7 @@ export function upsertUniversity(db: Db, u: University): void {
     restrictions: u.restrictions,
     exchangeContact: u.exchangeContact,
     catalogPublic: u.catalogPublic ? 1 : 0,
+    provenance: JSON.stringify(u.provenance),
   });
 }
 
@@ -52,6 +54,7 @@ interface UniversityRow {
   restrictions: string | null;
   exchange_contact: string | null;
   catalog_public: number;
+  provenance_json: string;
 }
 
 export function getUniversity(db: Db, id: string): University | null {
@@ -75,5 +78,6 @@ export function getUniversity(db: Db, id: string): University | null {
     restrictions: r.restrictions,
     exchangeContact: r.exchange_contact,
     catalogPublic: r.catalog_public === 1,
+    provenance: JSON.parse(r.provenance_json) as University['provenance'],
   };
 }

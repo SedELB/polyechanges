@@ -32,6 +32,15 @@ const migrations: ((db: Db) => void)[] = [
       ALTER TABLE poly_courses ADD COLUMN active INTEGER NOT NULL DEFAULT 1;
     `);
   },
+  // 3 : sources de chaque fait d'université et position de chaque cours dans sa copie brute
+  (db) => {
+    db.exec(`
+      ALTER TABLE universities ADD COLUMN provenance_json TEXT NOT NULL DEFAULT '{}';
+      ALTER TABLE host_courses ADD COLUMN source_page INTEGER;
+      ALTER TABLE host_courses ADD COLUMN source_line INTEGER;
+      ALTER TABLE poly_courses ADD COLUMN source_locator_json TEXT;
+    `);
+  },
 ];
 
 function migrate(db: Db): void {
@@ -43,11 +52,14 @@ function migrate(db: Db): void {
     for (; version < migrations.length; version++) {
       db.transaction(() => {
         migrations[version](db);
+        // Dans la transaction : une violation annule la migration au lieu de laisser la base à moitié migrée.
+        const broken = db.pragma('foreign_key_check') as unknown[];
+        if (broken.length > 0) {
+          throw new Error(`Migration ${version + 1} : clés étrangères violées (${broken.length})`);
+        }
         db.pragma(`user_version = ${version + 1}`);
       })();
     }
-    const broken = db.pragma('foreign_key_check') as unknown[];
-    if (broken.length > 0) throw new Error(`Migration : clés étrangères violées (${broken.length})`);
   } finally {
     db.pragma('foreign_keys = ON');
   }
@@ -57,7 +69,12 @@ function migrate(db: Db): void {
 export function openDb(path: string): Db {
   const db = new Database(path);
   if (path !== ':memory:') db.pragma('journal_mode = WAL');
-  migrate(db);
+  try {
+    migrate(db);
+  } catch (err) {
+    db.close();
+    throw err;
+  }
   db.pragma('foreign_keys = ON');
   return db;
 }

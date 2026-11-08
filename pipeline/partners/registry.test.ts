@@ -40,7 +40,24 @@ function write(content: unknown): string {
 
 describe('loadUniversities', () => {
   it('lit un registre valide', () => {
-    expect(loadUniversities(write([entry]))).toEqual([entry]);
+    expect(loadUniversities(write([entry]))).toEqual([{ ...entry, provenance: {} }]);
+  });
+
+  const prov = {
+    url: 'https://example.org/a',
+    retrievedAt: '2026-11-10T00:00:00.000Z',
+    sha256: 'a'.repeat(64),
+    locator: { page: 1, line: 3 },
+    quote: 'Doshisha University',
+  };
+  it('lit et valide les sources des faits', () => {
+    const ok = { ...entry, provenance: { name: prov } };
+    expect(loadUniversities(write([ok]))[0].provenance).toEqual({ name: prov });
+    const bad = (p: object) => () => loadUniversities(write([{ ...entry, provenance: { name: { ...prov, ...p } } }]));
+    expect(bad({ sha256: 'xyz' })).toThrow();
+    expect(bad({ locator: { page: 0, line: 1 } })).toThrow();
+    expect(bad({ locator: { page: 1, line: 1.5 } })).toThrow();
+    expect(() => loadUniversities(write([{ ...entry, provenance: { inconnu: prov } }]))).toThrow();
   });
 
   it('refuse une entrée invalide', () => {
@@ -89,6 +106,7 @@ describe('buildSkeleton', () => {
       restrictions: null,
       exchangeContact: null,
       catalogPublic: true,
+      provenance: {},
     });
   });
 

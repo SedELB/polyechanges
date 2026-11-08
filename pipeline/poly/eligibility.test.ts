@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { PolyCourse } from '../../shared/types.js';
 import { COMPARED_GROUP_PREFIXES, applyEligibility } from './eligibility.js';
 
-type Input = Omit<PolyCourse, 'eligible' | 'ineligibleReason' | 'compared'>;
+type Input = Omit<PolyCourse, 'eligible' | 'ineligibleReason' | 'compared' | 'sourceLocator'>;
 
 const base: Input = {
   sigle: 'LOG3430',

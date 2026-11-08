@@ -26,7 +26,7 @@ const normalizeGroup = (g: string): string =>
 
 const prefixes = COMPARED_GROUP_PREFIXES.map(normalizeGroup);
 
-type EligibilityInput = Omit<PolyCourse, 'eligible' | 'ineligibleReason' | 'compared'>;
+type EligibilityInput = Omit<PolyCourse, 'eligible' | 'ineligibleReason' | 'compared' | 'sourceLocator'>;
 
 /** Admissibilité au contrat d'études et appartenance à la comparaison. */
 export function applyEligibility(c: EligibilityInput): PolyCourse {
@@ -46,5 +46,5 @@ export function applyEligibility(c: EligibilityInput): PolyCourse {
       const n = normalizeGroup(g);
       return prefixes.some((p) => n.startsWith(p));
     });
-  return { ...c, eligible, ineligibleReason: eligible ? null : NEVER_ELIGIBLE_REASON, compared };
+  return { ...c, eligible, ineligibleReason: eligible ? null : NEVER_ELIGIBLE_REASON, compared, sourceLocator: null };
 }

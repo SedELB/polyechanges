@@ -6,6 +6,7 @@ import { recordRun } from '../db/runs.js';
 import { readSnapshot, takeSnapshot, type RawSnapshot } from '../fetch/snapshots.js';
 import type { PoliteFetcher } from '../fetch/politeFetch.js';
 import type { HostCourseInput } from '../../shared/types.js';
+import { findCode, snapshotText } from '../provenance/snapshotText.js';
 import { checkGuards } from './guards.js';
 import { getReader } from './readers.js';
 import type { SourceFile } from './sourceFile.js';
@@ -43,6 +44,31 @@ export function recordFailure(db: Db, source: SourceFile, now: string, reason: s
 }
 
 /**
+ * Position (1-based) du code de chaque cours dans le texte de sa copie brute : la page d'où il vient
+ * d'abord, puis les autres. Nulle si le code n'y est pas ; une saisie manuelle donne sa position elle-même.
+ */
+async function courseLocators(
+  source: SourceFile,
+  pages: Page[],
+  found: HostCourseInput[],
+): Promise<(c: HostCourseInput) => { page: number; line: number } | null> {
+  if (source.kind === 'manual') return (c) => c.provenance?.locator ?? null;
+  const texts = await Promise.all(pages.map((p) => snapshotText(p.body, p.contentType)));
+  const result = new Map<string, { page: number; line: number } | null>();
+  for (const c of found) {
+    const own = pages.findIndex((p) => p.url === c.sourceUrl);
+    const order = [...(own >= 0 ? [own] : []), ...texts.keys()].filter((v, i, a) => a.indexOf(v) === i);
+    let hit: { page: number; line: number } | null = null;
+    for (const i of order) {
+      hit = findCode(texts[i], c.code)[0] ?? null;
+      if (hit) break;
+    }
+    result.set(c.code, hit);
+  }
+  return (c) => result.get(c.code) ?? null;
+}
+
+/**
  * Collecte une source : téléchargement, lecture, garde-fous, puis une seule transaction.
  * Un échec n'écrit que la ligne d'historique de la collecte.
  */
@@ -65,8 +91,8 @@ export async function collectSource(
   const previous = activeHostCourses(db, universityId).length;
   let found: HostCourseInput[];
   const snapshots: RawSnapshot[] = [];
+  const pages: Page[] = [];
   try {
-    const pages: Page[] = [];
     if (source.kind === 'manual') {
       const path = join(opts?.manualDir ?? join('data', 'manual'), `${source.id}.json`);
       pages.push({ url: path, body: readFileSync(path), contentType: 'application/json' });
@@ -94,8 +120,15 @@ export async function collectSource(
   const snapshotFor = (c: HostCourseInput): number | null =>
     snapshots.find((s) => s.url === c.sourceUrl)?.id ?? snapshots[0]?.id ?? null;
 
+  let locatorFor: (c: HostCourseInput) => { page: number; line: number } | null;
+  try {
+    locatorFor = await courseLocators(source, pages, found);
+  } catch {
+    locatorFor = () => null;
+  }
+
   const diff = db.transaction(() => {
-    const d = applyCollection(db, universityId, found, snapshotFor, now);
+    const d = applyCollection(db, universityId, found, snapshotFor, now, locatorFor);
     recordRun(db, {
       sourceId: source.id,
       startedAt: now,

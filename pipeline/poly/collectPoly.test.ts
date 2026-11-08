@@ -7,6 +7,7 @@ import { openDb, type Db } from '../db/open.js';
 import { listPolyCourses } from '../db/polyCourses.js';
 import { lastRun } from '../db/runs.js';
 import { parseSourceFile, type SourceFile } from '../collect/sourceFile.js';
+import { snapshotText } from '../provenance/snapshotText.js';
 import { collectPoly, polySummary } from './collectPoly.js';
 
 const fixture = new URL('./fixtures/programme-extrait.html', import.meta.url);
@@ -75,6 +76,17 @@ describe('collectPoly', () => {
     expect(courses.find((c) => c.sigle === 'SSH3501')).toMatchObject({ eligible: false, compared: false });
     expect(lastRun(db, 'poly-log')).toEqual({ status: 'ok', startedAt: '2026-11-10T10:00:00.000Z' });
     expect(polySummary(db)).toMatchObject({ imported: 16, ineligible: 2, obligatoire: 9 });
+  });
+
+  it('enregistre la position du sigle dans la copie brute de la page', async () => {
+    await collectPoly(db, source, rawDir, '2026-11-10T10:00:00.000Z');
+    const sha = createHash('sha256').update(readFileSync(page)).digest('hex');
+    const courses = listPolyCourses(db);
+    expect(courses.every((c) => c.sourceLocator !== null && c.sourceLocator.sha256 === sha)).toBe(true);
+    const loc = courses.find((c) => c.sigle === 'LOG3430')?.sourceLocator;
+    expect(loc?.page).toBe(1);
+    const lines = (await snapshotText(readFileSync(page), 'text/html'))[0];
+    expect(lines[(loc?.line ?? 0) - 1]).toContain('LOG3430');
   });
 
   it('une deuxième collecte de la même page ne change rien', async () => {

@@ -12,6 +12,9 @@ export type StoredHostCourse = HostCourseInput & {
   universityId: string;
   collectedAt: string;
   snapshotId: number | null;
+  /** Position du code du cours dans le texte de sa copie brute (1-based), nulle si introuvable. */
+  sourcePage: number | null;
+  sourceLine: number | null;
 };
 
 interface Row {
@@ -29,6 +32,8 @@ interface Row {
   source_url: string;
   snapshot_id: number | null;
   collected_at: string;
+  source_page: number | null;
+  source_line: number | null;
 }
 
 function fromRow(r: Row): StoredHostCourse {
@@ -47,6 +52,8 @@ function fromRow(r: Row): StoredHostCourse {
     sourceUrl: r.source_url,
     snapshotId: r.snapshot_id,
     collectedAt: r.collected_at,
+    sourcePage: r.source_page,
+    sourceLine: r.source_line,
   };
 }
 
@@ -82,24 +89,27 @@ export function applyCollection(
   found: HostCourseInput[],
   snapshotFor: (c: HostCourseInput) => number | null,
   collectedAt: string,
+  locatorFor: (c: HostCourseInput) => { page: number; line: number } | null = () => null,
 ): CollectionDiff {
   const previous = new Map(activeHostCourses(db, universityId).map((c) => [c.code, c]));
   const diff: CollectionDiff = { added: [], removed: [], modified: [] };
   const upsert = db.prepare(
     `INSERT INTO host_courses (university_id, code, title, description, outline, credits, contact_hours,
-       language, terms_json, level, source_url, snapshot_id, collected_at, active)
+       language, terms_json, level, source_url, snapshot_id, collected_at, active, source_page, source_line)
      VALUES (@universityId, @code, @title, @description, @outline, @credits, @contactHours,
-       @language, @terms, @level, @sourceUrl, @snapshotId, @collectedAt, 1)
+       @language, @terms, @level, @sourceUrl, @snapshotId, @collectedAt, 1, @sourcePage, @sourceLine)
      ON CONFLICT(university_id, code) DO UPDATE SET
        title = excluded.title, description = excluded.description, outline = excluded.outline,
        credits = excluded.credits, contact_hours = excluded.contact_hours, language = excluded.language,
        terms_json = excluded.terms_json, level = excluded.level, source_url = excluded.source_url,
-       snapshot_id = excluded.snapshot_id, collected_at = excluded.collected_at, active = 1`,
+       snapshot_id = excluded.snapshot_id, collected_at = excluded.collected_at, active = 1,
+       source_page = excluded.source_page, source_line = excluded.source_line`,
   );
   for (const c of found) {
     const before = previous.get(c.code);
     if (!before) diff.added.push(c.code);
     else if (differs(before, c)) diff.modified.push(c.code);
+    const locator = locatorFor(c);
     upsert.run({
       universityId,
       code: c.code,
@@ -114,6 +124,8 @@ export function applyCollection(
       sourceUrl: c.sourceUrl,
       snapshotId: snapshotFor(c),
       collectedAt,
+      sourcePage: locator?.page ?? null,
+      sourceLine: locator?.line ?? null,
     });
   }
   const foundCodes = new Set(found.map((c) => c.code));
