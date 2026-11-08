@@ -1,0 +1,23 @@
+/* À l’impression, seul le tableau de l’ébauche choisie est imprimé. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .contract-print.is-printing,
+  .contract-print.is-printing * {
+    visibility: visible;
+  }
+
+  .contract-print.is-printing {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    background: #fff;
+    color: #000;
+  }
+
+  .contract__noprint {
+    display: none;
+  }
+}

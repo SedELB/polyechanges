@@ -2,6 +2,7 @@ import { explainWorkload, hostContactHours } from '../../../shared/workload';
 import type { SiteData } from '../../../shared/siteData';
 import type { HostTerm, Level, PolyCourse, University, Workload } from '../../../shared/types';
 import type { Candidate, PairResult } from '../logic/rank';
+import { formatGap, formatHigh, formatLow, formatNumber as fmt } from '../logic/format';
 import { FactSource } from './FactSource';
 import './PairDetail.css';
 
@@ -15,8 +16,6 @@ const WORKLOAD_TEXT: Record<Workload, string> = {
   inconnue: 'Charge inconnue : crédits ou heures non publiés',
 };
 
-const fmt = (n: number): string => String(Math.round(n * 10) / 10).replace(".", ",");
-const pct = (g: number): string => `${g > 0 ? "+" : g < 0 ? "−" : ""}${fmt(Math.abs(g) * 100)} %`;
 
 function WorkloadBlock({ candidate, poly, university, data }: { candidate: Candidate; poly: PolyCourse; university: University; data: SiteData }) {
   const { course } = candidate;
@@ -51,9 +50,9 @@ function WorkloadBlock({ candidate, poly, university, data }: { candidate: Candi
         </li>
         <li>{e.actual === null ? "Ici : non publié" : `Ici : ${fmt(e.actual)} ${unit} (${hereHow})`}</li>
         <li>
-          Accepté : entre {fmt(e.low)} {unit} et {fmt(e.high)} {unit} (tolérance {tolerance} %)
+          Accepté : entre {formatLow(e.low)} {unit} et {formatHigh(e.high)} {unit} (tolérance {tolerance} %)
         </li>
-        {e.gap !== null && <li>Écart : {pct(e.gap)}</li>}
+        {e.gap !== null && <li>Écart : {formatGap(e.gap)}</li>}
       </ul>
       <p className="small">
         Système de crédits : {university.creditSystem}{" "}

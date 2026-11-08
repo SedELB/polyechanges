@@ -78,3 +78,39 @@ describe('App : résultats', () => {
     expect(screen.getByText('Où voulez-vous aller ?')).toBeInTheDocument();
   });
 });
+
+describe('App : mes choix', () => {
+  async function toResults() {
+    render(<App load={async () => fixtureData} today={new Date('2026-11-10T12:00:00')} />);
+    fireEvent.click(await screen.findByRole('button', { name: 'Taïwan, 3 universités' }));
+    fireEvent.click(screen.getByRole('checkbox', { name: /INF3710/ }));
+    fireEvent.click(screen.getByRole('checkbox', { name: /LOG3430/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Voir les universités' }));
+  }
+
+  it('garder une université mène à Mes choix, qui se souvient et permet de revenir', async () => {
+    localStorage.clear();
+    await toResults();
+    expect(screen.queryByRole('button', { name: /Voir mes choix/ })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: 'Garder National Taiwan University' }));
+    expect(screen.getByRole('button', { name: 'Retirer National Taiwan University' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Voir mes choix (1)' }));
+
+    expect(screen.getByRole('heading', { name: 'Mes choix' })).toBeInTheDocument();
+    expect(screen.getByRole('table', { name: /National Taiwan University/ })).toBeInTheDocument();
+    expect(screen.getByText(/Ébauche à recopier dans le formulaire officiel/)).toBeInTheDocument();
+    expectNoForbiddenWords(document.body);
+
+    fireEvent.click(screen.getByRole('button', { name: 'Retour' }));
+    expect(screen.getByText('Niveaux calculés automatiquement, non vérifiés par un humain')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Retirer National Taiwan University' })).toBeInTheDocument();
+  });
+
+  it('un 4e choix est refusé avec un message clair', async () => {
+    localStorage.setItem('polyechanges.choix.v1', JSON.stringify(['nycu-tw', 'ncku-tw', 'tohoku-jp']));
+    await toResults();
+    fireEvent.click(screen.getByRole('button', { name: 'Garder National Taiwan University' }));
+    expect(screen.getByRole('alert')).toHaveTextContent('3 universités au maximum, comme la demande officielle');
+    localStorage.clear();
+  });
+});

@@ -1,0 +1,95 @@
+.contract {
+  padding-top: var(--space-3);
+}
+
+.contract__title {
+  margin: 0;
+  font-size: var(--text-md);
+}
+
+.contract__scroll {
+  overflow-x: auto;
+}
+
+.contract__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 2px solid var(--line);
+  font-size: var(--text-sm);
+}
+
+.contract__table th,
+.contract__table td {
+  padding: var(--space-2);
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+
+.contract__table thead th {
+  background: var(--paper-2);
+}
+
+.contract__source {
+  display: block;
+}
+
+.contract__remove {
+  min-width: var(--tap);
+  padding: 0 var(--space-2);
+}
+
+.contract__calc {
+  margin: 0;
+  padding-left: var(--space-5);
+}
+
+.contract__warnings {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contract__manual summary {
+  min-height: var(--tap);
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.contract__form {
+  display: grid;
+  gap: var(--space-3);
+  padding-top: var(--space-3);
+}
+
+.contract__form label {
+  display: grid;
+  gap: var(--space-1);
+  font-weight: 700;
+}
+
+.contract__form input,
+.contract__form select {
+  min-height: var(--tap);
+  padding: 0 var(--space-3);
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.contract__workload {
+  font-weight: 800;
+}
+
+.contract__workload[data-workload='trop_legere'],
+.contract__workload[data-workload='trop_lourde'] {
+  color: var(--level-mid);
+}

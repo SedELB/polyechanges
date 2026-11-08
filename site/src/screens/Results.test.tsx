@@ -78,7 +78,7 @@ describe('Results', () => {
     fireEvent.click(within(c).getByRole('button', { name: /INF3405/ }));
     expect(within(c).getAllByText("Attendu : 65 h de contact (3 h de cours + 2 h de labo × 13 semaines)")[0]).toBeInTheDocument();
     expect(within(c).getAllByText('Ici : 30 h (heures de contact publiées)')[0]).toBeInTheDocument();
-    expect(within(c).getAllByText("Accepté : entre 55,3 h et 74,8 h (tolérance 15 %)")[0]).toBeInTheDocument();
+    expect(within(c).getAllByText("Accepté : entre 55,3 h et 74,7 h (tolérance 15 %)")[0]).toBeInTheDocument();
     expect(within(c).getAllByText('Écart : −53,8 %')[0]).toBeInTheDocument();
   });
 

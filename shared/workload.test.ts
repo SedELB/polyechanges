@@ -35,3 +35,13 @@ describe('explainWorkload', () => {
     expect(r).toMatchObject({ actual: null, gap: null, status: 'inconnue' });
   });
 });
+
+describe('bornes de tolérance', () => {
+  it('55,25 h pour 65 h attendues est conforme', () => {
+    expect(checkWorkload({ system: 'local', hostContactHours: 55.25, polyTriplet: [3, 2, 4], polyWeeks: 13 }, 0.15)).toBe('conforme');
+  });
+
+  it('ECTS 5,1 pour 3 crédits est conforme', () => {
+    expect(checkWorkload({ system: 'ECTS', hostEcts: 5.1, polyCredits: 3 }, 0.15)).toBe('conforme');
+  });
+});

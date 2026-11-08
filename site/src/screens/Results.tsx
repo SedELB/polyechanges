@@ -16,6 +16,10 @@ export function Results({
   today,
   onTermChange,
   onOtherCountry,
+  choices = [],
+  choiceError = null,
+  onToggleChoice,
+  onOpenChoices,
 }: {
   data: SiteData;
   countryCode: CountryCode;
@@ -25,6 +29,10 @@ export function Results({
   today?: Date;
   onTermChange: (term: PolyTerm) => void;
   onOtherCountry: () => void;
+  choices?: string[];
+  choiceError?: string | null;
+  onToggleChoice?: (universityId: string) => void;
+  onOpenChoices?: () => void;
 }) {
   const ranked = useMemo(
     () => rankUniversities({ data, countryCode, term, selectedSigles }),
@@ -48,9 +56,25 @@ export function Results({
           </button>
         </div>
       )}
+      {choiceError && (
+        <p role="alert" className="notice">
+          {choiceError}
+        </p>
+      )}
+      {onOpenChoices && choices.length > 0 && (
+        <button type="button" className="btn" onClick={onOpenChoices}>
+          {`Voir mes choix (${choices.length})`}
+        </button>
+      )}
       <div className="results__list">
         {ranked.map((r) => (
-          <UniversityCard key={r.university.id} ranked={r} data={data} />
+          <UniversityCard
+            key={r.university.id}
+            ranked={r}
+            data={data}
+            chosen={choices.includes(r.university.id)}
+            onToggleChoice={onToggleChoice ? () => onToggleChoice(r.university.id) : undefined}
+          />
         ))}
       </div>
     </section>

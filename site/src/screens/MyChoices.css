@@ -1,0 +1,12 @@
+.choices__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.choices__name {
+  margin: 0;
+  font-size: var(--text-lg);
+}

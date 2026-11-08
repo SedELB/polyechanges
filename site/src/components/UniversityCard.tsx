@@ -6,7 +6,17 @@ import { FactSource } from './FactSource';
 import { LEVEL_LABEL, PairDetail } from './PairDetail';
 import './UniversityCard.css';
 
-export function UniversityCard({ ranked, data }: { ranked: RankedUniversity; data: SiteData }) {
+export function UniversityCard({
+  ranked,
+  data,
+  chosen = false,
+  onToggleChoice,
+}: {
+  ranked: RankedUniversity;
+  data: SiteData;
+  chosen?: boolean;
+  onToggleChoice?: () => void;
+}) {
   const { university, covered, total, pairs, status } = ranked;
   const [open, setOpen] = useState<Set<string>>(new Set());
   const titleId = `uni-${university.id}`;
@@ -30,6 +40,11 @@ export function UniversityCard({ ranked, data }: { ranked: RankedUniversity; dat
           <p className="badge">{`${covered} cours sur ${total} ${covered > 1 ? 'couverts' : 'couvert'}`}</p>
         ) : (
           <p className="badge">Catalogue non public</p>
+        )}
+        {onToggleChoice && (
+          <button type="button" className={chosen ? "btn btn--ghost" : "btn"} onClick={onToggleChoice}>
+            {chosen ? `Retirer ${university.name}` : `Garder ${university.name}`}
+          </button>
         )}
       </header>
 
