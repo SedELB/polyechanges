@@ -153,11 +153,15 @@
     "contactHoursPerCredit": null,
     "terms": {
       "fall": {
-        "start": null,
-        "end": null,
+        "start": "2027-08-30",
+        "end": "2027-12-17",
         "examsEnd": "2027-12-17"
       },
-      "spring": null
+      "spring": {
+        "start": "2028-02-28",
+        "end": null,
+        "examsEnd": null
+      }
     },
     "restrictions": "Please make sure that 50% of the courses you take are from your major (department at KAIST).",
     "exchangeContact": "irt@kaist.ac.kr",
@@ -225,13 +229,13 @@
       },
       "terms.fall.examsEnd": {
         "url": "https://www.kaist.ac.kr/en/html/edu/03100101.html?year=2027",
-        "retrievedAt": "2026-11-10T20:38:28.803Z",
+        "retrievedAt": "2026-11-10T20:49:16.117Z",
         "sha256": "499db3e01731bcbe23f35e6d59c0fcf45bd8d07de1f280d28ede02fa76808119",
         "locator": {
           "page": 1,
           "line": 349
         },
-        "quote": "12-13(Mon) ~ 12-17(Fri)"
+        "quote": "12-13(Mon) ~ 12-17(Fri) | Fall 2027 final exams"
       },
       "restrictions": {
         "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
@@ -262,6 +266,36 @@
           "line": 51
         },
         "quote": "Course Information - http://cais.kaist.ac.kr/totalOpeningCourse"
+      },
+      "terms.fall.start": {
+        "url": "https://www.kaist.ac.kr/en/html/edu/03100101.html?year=2027",
+        "retrievedAt": "2026-11-10T20:49:16.117Z",
+        "sha256": "499db3e01731bcbe23f35e6d59c0fcf45bd8d07de1f280d28ede02fa76808119",
+        "locator": {
+          "page": 1,
+          "line": 273
+        },
+        "quote": "08-30(Mon) | Beginning of Fall 2027 classes"
+      },
+      "terms.fall.end": {
+        "url": "https://www.kaist.ac.kr/en/html/edu/03100101.html?year=2027",
+        "retrievedAt": "2026-11-10T20:49:16.117Z",
+        "sha256": "499db3e01731bcbe23f35e6d59c0fcf45bd8d07de1f280d28ede02fa76808119",
+        "locator": {
+          "page": 1,
+          "line": 352
+        },
+        "quote": "12-17(Fri) | End of Fall 2027 classes"
+      },
+      "terms.spring.start": {
+        "url": "https://www.kaist.ac.kr/en/html/edu/03100101.html?year=2028",
+        "retrievedAt": "2026-11-10T20:49:22.484Z",
+        "sha256": "0ce42d3a9854d9ff97ffa09cbe726f601f675a7f47600b1102c00753ae506049",
+        "locator": {
+          "page": 1,
+          "line": 146
+        },
+        "quote": "02-28(Mon) | Beginning of Spring 2028 classes"
       }
     }
   },
