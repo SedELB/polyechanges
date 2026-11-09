@@ -510,13 +510,13 @@
         "examsEnd": "2026-12-25"
       },
       "spring": {
-        "start": "2027-02-22",
+        "start": null,
         "end": null,
         "examsEnd": "2027-06-11"
       }
     },
     "restrictions": null,
-    "exchangeContact": "Office of International Affairs, National Taiwan University of Science and Technology : oia@mail.ntust.edu.tw",
+    "exchangeContact": "oia@mail.ntust.edu.tw",
     "catalogPublic": true,
     "provenance": {
       "name": {
@@ -608,16 +608,6 @@
           "line": 37
         },
         "quote": "Final exams begin (and ends on December 25)"
-      },
-      "terms.spring.start": {
-        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
-        "retrievedAt": "2026-11-10T20:10:24.833Z",
-        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
-        "locator": {
-          "page": 2,
-          "line": 11
-        },
-        "quote": "22 Mon. 1. Classes begin"
       },
       "terms.spring.examsEnd": {
         "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
