@@ -1,0 +1,47 @@
+Rapport de collecte : ntust-tw
+Date : 2026-11-10
+Statut : ok
+Cours actifs : 129
+Ajoutés (129) : AC5004, AC5503, AC5512, AC5607, AC5611, AC5716, AC6502, AS5036, AS5304, AS5362, CS1003, CS1004, CS1006, CS161A, CS161B, CS2001, CS2008, CS3001, CS3004, CS3006, CS3032, CS3059, CS3805, CS3806, CS3813, CS3814, CS3819, CS4001, CS4801, CS4802, CS4805, CS4806, CS4807, CS4808, CS4809, CS4810, CS4811, CS490A, CS490B, CS5008, CS5024, CS5068, CS5087, CS5095, CS5101, CS5128, CS5156, CS5169, CS5173, EC1011, EC1012, EC161A, EC161B, EC163A, EC163B, EC2003, EC2107, EC3006, EC3404, EC5001, EC5002, EC5012, EE1408, EE161A, EE161B, EE2021, EE2022, EE2201, EE2217, EE2218, EE3201, EE3206, EE3403, EE3405, EE3410, EE3603, EE4005, EE5036, EE5106, EE5301, EE5313, EE5515, EE5607, EE5609, EE5628, EE5813, ET161A, ET161B, ET163A, ET163B, ET2107, ET2703, ET3001, ET3002, ET3103, ET3105, ET3305, ET3405, ET3708, ET4810, ET4930, ET5115, ET5116, ET5121, ET5127, ET5304, ET5310, ET5317, ET5347, ET5507, ET5510, ET5511, ET5516, ET5703, ET5907, ET5921, ET5923, ET6207, ET6408, IC1131, IC114A, IC114B, IC1812, IC2001, IC2002, IC2003, IC3004, IC3011, IC3012
+Retirés (0) : aucun
+Modifiés (0) : aucun
+
+Vérification de 5 cours tirés au hasard (2026-11-10)
+Chaque cours est relu sur sa page de cours (plan de cours de la recherche de cours, interface coursedetials, la
+même qui alimente la page) : titre, crédits et trimestre offert (le plan d'un trimestre où le cours n'est pas
+donné est vide). La page du plan de cours ne donne pas la langue ; elle vient de l'étiquette « English Program »
+(« 英語授課 ») de la liste officielle de la recherche de cours, qui est la désignation des cours en anglais.
+- CS1004 : « Lab. of Computer Programming », 1 crédit, 1151 (automne), seulement à l'automne, anglais. Conforme.
+- ET161B : « Calculus (II) », 4 crédits, 1142 (printemps), seulement au printemps, anglais. Conforme.
+- CS5024 : « Computer Graphics », 3 crédits, 1142 (printemps), seulement au printemps, anglais. Conforme.
+- EC161A : « Calculus (I) », 4 crédits, 1151 (automne), seulement à l'automne, anglais. Conforme.
+- EE5628 : « Machine Learning Techniques and Applications », 3 crédits, 1151 et 1142 (automne et printemps), anglais. Conforme.
+Résultat : 5 sur 5 conformes.
+
+Notes sur la fiche de l'université et la collecte
+- Années : cours d'automne = 1151 (automne 2026), cours de printemps = 1142 (printemps 2026), les derniers publiés.
+  Dates de trimestre : calendrier 2026-2027 de Taiwan Tech (PDF), le calendrier 2027-2028 n'étant pas publié.
+  Automne 2026 : cours le 7 septembre, examens finaux jusqu'au 25 décembre, fin du trimestre le 31 janvier 2027.
+  Printemps 2027 : cours le 22 février, examens finaux jusqu'au 11 juin, fin du trimestre le 31 juillet 2027.
+  Toutes les dates sont écrites dans le calendrier. Réserve : dans le PDF, la ligne d'une date de fin de
+  trimestre (« 31 Sun. 1. The last day for Thesis (Oral) Defenses ») est séparée par l'extraction de la ligne
+  « 2. First semester ends » qui lui correspond dans la même case ; le mois n'est pas sur la même ligne que le
+  jour pour la date de début du printemps (« 22 Mon. 1. Classes begin », mois Feb. sur une ligne voisine).
+- Crédit : « 1 credit = 18 teaching hours » (page des échanges entrants), 18 retenu tel quel ; la même page
+  indique des semestres de 16 semaines et 1 crédit = 2 ECTS.
+- Coordonnées : campus de Gongguan (Taipei), prises sur la page Wikipédia de l'université (25.013686, 121.540535) ;
+  les valeurs venues de MoveOn, copiées de NTU, sont remplacées.
+- Catalogue : la recherche de cours est une application web dont la liste ne répond qu'à une requête POST.
+  La saisie data/manual/ntust-tw.json est produite par pipeline/readers/ntust-tw.build.ts (requêtes polies,
+  réponses de liste brutes rangées dans data/raw/ntust-tw). Sections marquées « English Program » aux trimestres
+  1151 et 1142, départements CS, EE, ET, EC, IC, AC, AS (informatique, génie électrique, électronique et
+  informatique, programme ECE, TIC, automatique, semi-conducteurs), 1er cycle (numéro de cours commençant par
+  1 à 4 après le département) et cycles supérieurs (5 et plus). Un code regroupe toutes les sections.
+- catalogUrl laissé vide : la page https://querycourse.ntust.edu.tw/querycourse/ est une application sans texte
+  dans le HTML, aucun extrait mot pour mot ne peut l'identifier. catalogPublic reste vrai (la recherche répond
+  sans connexion ; la page des échanges parle du catalogue des cours).
+- Aucun département de mathématiques ne figure dans la liste des cours en anglais de 1151 ; les cours de mathématiques
+  couverts sont ceux des départements retenus (calcul, mathématiques de l'ingénieur).
+- Aucune restriction de programme lisible pour les étudiants d'échange (9 crédits au 1er cycle, 1 cours aux
+  cycles supérieurs, cours de départements et niveaux différents permis) : restrictions laissé vide.
+- Contact des échanges : bureau des affaires internationales, oia@mail.ntust.edu.tw (page des échanges entrants).
