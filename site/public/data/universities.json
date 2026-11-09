@@ -46,21 +46,126 @@
     "name": "Korea Advanced Institute of Science and Technology",
     "moveOnName": "Korea Advanced Institute of Science and Technology",
     "countryCode": "KR",
-    "city": "",
-    "lat": 36.324299,
-    "lng": 127.434402,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Daejeon",
+    "lat": 36.372,
+    "lng": 127.363,
+    "website": "https://www.kaist.ac.kr/en/",
+    "catalogUrl": "http://cais.kaist.ac.kr/totalOpeningCourse",
     "creditSystem": "local",
     "contactHoursPerCredit": null,
     "terms": {
-      "fall": null,
+      "fall": {
+        "start": null,
+        "end": null,
+        "examsEnd": "2027-12-17"
+      },
       "spring": null
     },
-    "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true,
-    "provenance": {}
+    "restrictions": "Please make sure that 50% of the courses you take are from your major (department at KAIST).",
+    "exchangeContact": "irt@kaist.ac.kr",
+    "catalogPublic": false,
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/KAIST",
+        "retrievedAt": "2026-11-10T20:38:12.703Z",
+        "sha256": "ae0708a5be685636a5f57efb143297e561c12169ba4bd48b3a06a4626280e873",
+        "locator": {
+          "page": 1,
+          "line": 169
+        },
+        "quote": "KAIST (formerly the Korea Advanced Institute of Science and Technology)"
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/KAIST",
+        "retrievedAt": "2026-11-10T20:38:12.703Z",
+        "sha256": "ae0708a5be685636a5f57efb143297e561c12169ba4bd48b3a06a4626280e873",
+        "locator": {
+          "page": 1,
+          "line": 169
+        },
+        "quote": "located in Daedeok Innopolis, Daejeon, South Korea"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/KAIST",
+        "retrievedAt": "2026-11-10T20:38:12.703Z",
+        "sha256": "ae0708a5be685636a5f57efb143297e561c12169ba4bd48b3a06a4626280e873",
+        "locator": {
+          "page": 1,
+          "line": 139
+        },
+        "quote": "36.372°N 127.363°E"
+      },
+      "website": {
+        "url": "https://www.kaist.ac.kr/en/",
+        "retrievedAt": "2026-11-10T20:38:07.932Z",
+        "sha256": "90a135a12ef1146c27332bd0ce612353523d27645c4e61a4e924fb1f3d7e00cc",
+        "locator": {
+          "page": 1,
+          "line": 7
+        },
+        "quote": "Global Value-Creative Leading University"
+      },
+      "catalogUrl": {
+        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
+        "retrievedAt": "2026-11-10T20:40:17.130Z",
+        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "locator": {
+          "page": 1,
+          "line": 51
+        },
+        "quote": "Course Information - http://cais.kaist.ac.kr/totalOpeningCourse"
+      },
+      "creditSystem": {
+        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
+        "retrievedAt": "2026-11-10T20:40:17.130Z",
+        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "locator": {
+          "page": 1,
+          "line": 82
+        },
+        "quote": "There is no official calculation to define the equivalence of ECTS and KAIST credits."
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://www.kaist.ac.kr/en/html/edu/03100101.html?year=2027",
+        "retrievedAt": "2026-11-10T20:38:28.803Z",
+        "sha256": "499db3e01731bcbe23f35e6d59c0fcf45bd8d07de1f280d28ede02fa76808119",
+        "locator": {
+          "page": 1,
+          "line": 349
+        },
+        "quote": "12-13(Mon) ~ 12-17(Fri)"
+      },
+      "restrictions": {
+        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
+        "retrievedAt": "2026-11-10T20:40:17.130Z",
+        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "locator": {
+          "page": 1,
+          "line": 66
+        },
+        "quote": "Please make sure that 50% of the courses you take are from your major (department at KAIST)."
+      },
+      "exchangeContact": {
+        "url": "https://io.kaist.ac.kr/about/contact.do",
+        "retrievedAt": "2026-11-10T20:38:17.721Z",
+        "sha256": "763a38c6c94d13eafac7d55315628ddc975195d4929834ae1d9b7c7f0f9b53e4",
+        "locator": {
+          "page": 1,
+          "line": 36
+        },
+        "quote": "+82-42-350-4930 irt@kaist.ac.kr"
+      },
+      "catalogPublic": {
+        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
+        "retrievedAt": "2026-11-10T20:40:17.130Z",
+        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "locator": {
+          "page": 1,
+          "line": 51
+        },
+        "quote": "Course Information - http://cais.kaist.ac.kr/totalOpeningCourse"
+      }
+    }
   },
   {
     "id": "korea-kr",
@@ -121,7 +226,7 @@
       "spring": null
     },
     "restrictions": null,
-    "exchangeContact": "Division of Study Abroad, National Cheng Kung University : em50961@email.ncku.edu.tw",
+    "exchangeContact": "Division of Study Abroad",
     "catalogPublic": false,
     "provenance": {
       "name": {
@@ -130,7 +235,7 @@
         "sha256": "8cd60fcc32fb9049ccfd06727fcfc70f26bf750ea83b6b91fb6c02b10d36b59d",
         "locator": {
           "page": 1,
-          "line": 183
+          "line": 142
         },
         "quote": "National Cheng Kung University (NCKU; Chinese:"
       },
@@ -170,7 +275,7 @@
         "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
         "locator": {
           "page": 1,
-          "line": 257
+          "line": 195
         },
         "quote": "1 credit = 1 lecture hour/week, totaling at least 18 hours per semester."
       },
@@ -180,7 +285,7 @@
         "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
         "locator": {
           "page": 1,
-          "line": 184
+          "line": 158
         },
         "quote": "Student Exchange Program Contact – Division of Study Abroad"
       },
@@ -190,7 +295,7 @@
         "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
         "locator": {
           "page": 1,
-          "line": 257
+          "line": 195
         },
         "quote": "1 credit = 1 lecture hour/week, totaling at least 18 hours per semester."
       },
@@ -200,7 +305,7 @@
         "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
         "locator": {
           "page": 1,
-          "line": 216
+          "line": 175
         },
         "quote": "Primarily Chinese, with some courses offered in English as a supplement."
       }
@@ -240,7 +345,7 @@
         "sha256": "f74584713434f5d506ce5033c8bdeee63a9077fedbd977510f64d572f03da594",
         "locator": {
           "page": 1,
-          "line": 261
+          "line": 185
         },
         "quote": "National Taiwan University (NTU; Chinese:"
       },
@@ -250,7 +355,7 @@
         "sha256": "f74584713434f5d506ce5033c8bdeee63a9077fedbd977510f64d572f03da594",
         "locator": {
           "page": 1,
-          "line": 261
+          "line": 185
         },
         "quote": "public research university in Taipei, Taiwan"
       },
@@ -260,7 +365,7 @@
         "sha256": "f74584713434f5d506ce5033c8bdeee63a9077fedbd977510f64d572f03da594",
         "locator": {
           "page": 1,
-          "line": 192
+          "line": 170
         },
         "quote": "25.016°N 121.536°E"
       },
@@ -270,7 +375,7 @@
         "sha256": "461140b799f9e7ac70cf72febf9d2c96b0007975e3cea802a7e13239aeb2daab",
         "locator": {
           "page": 1,
-          "line": 15
+          "line": 1
         },
         "quote": "Courses conducted in English"
       },
@@ -300,7 +405,7 @@
         "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
         "locator": {
           "page": 1,
-          "line": 86
+          "line": 68
         },
         "quote": "September 7, 2026"
       },
@@ -310,7 +415,7 @@
         "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
         "locator": {
           "page": 1,
-          "line": 117
+          "line": 82
         },
         "quote": "December 18, 2026"
       },
@@ -320,7 +425,7 @@
         "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
         "locator": {
           "page": 1,
-          "line": 119
+          "line": 83
         },
         "quote": "December 21-25, 2026"
       },
@@ -330,7 +435,7 @@
         "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
         "locator": {
           "page": 1,
-          "line": 161
+          "line": 100
         },
         "quote": "February 23, 2026"
       },
@@ -340,7 +445,7 @@
         "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
         "locator": {
           "page": 1,
-          "line": 196
+          "line": 116
         },
         "quote": "June 5, 2026"
       },
@@ -350,7 +455,7 @@
         "sha256": "2a04eb44a0b3b160d39b96fc317527da20b809ac67ae78161d0690b25e0acded",
         "locator": {
           "page": 1,
-          "line": 198
+          "line": 117
         },
         "quote": "June 8-12, 2026"
       },
@@ -370,7 +475,7 @@
         "sha256": "461140b799f9e7ac70cf72febf9d2c96b0007975e3cea802a7e13239aeb2daab",
         "locator": {
           "page": 1,
-          "line": 83
+          "line": 3
         },
         "quote": "courses found in total"
       },
@@ -391,42 +496,310 @@
     "name": "National Taiwan University of Science and Technology (Taiwan Tech)",
     "moveOnName": "National Taiwan University of Science and Technology (Taiwan Tech)",
     "countryCode": "TW",
-    "city": "",
-    "lat": 25.091075,
-    "lng": 121.559834,
-    "website": "",
+    "city": "Taipei",
+    "lat": 25.013686,
+    "lng": 121.540535,
+    "website": "https://www.ntust.edu.tw/home.php?Lang=en",
     "catalogUrl": null,
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 18,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2026-09-07",
+        "end": null,
+        "examsEnd": "2026-12-25"
+      },
+      "spring": {
+        "start": "2027-02-22",
+        "end": null,
+        "examsEnd": "2027-06-11"
+      }
     },
     "restrictions": null,
-    "exchangeContact": null,
+    "exchangeContact": "Office of International Affairs, National Taiwan University of Science and Technology : oia@mail.ntust.edu.tw",
     "catalogPublic": true,
-    "provenance": {}
+    "provenance": {
+      "name": {
+        "url": "https://www.ntust.edu.tw/home.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:11:39.954Z",
+        "sha256": "487f73a57570208cab2d08580a6ad8789e7b3a491c6eac2200d1b8994d0c59bc",
+        "locator": {
+          "page": 1,
+          "line": 83
+        },
+        "quote": "National Taiwan University of Science and Technology"
+      },
+      "city": {
+        "url": "https://www.ntust.edu.tw/home.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:11:39.954Z",
+        "sha256": "487f73a57570208cab2d08580a6ad8789e7b3a491c6eac2200d1b8994d0c59bc",
+        "locator": {
+          "page": 1,
+          "line": 84
+        },
+        "quote": "Taipei City 106335, Taiwan"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/National_Taiwan_University_of_Science_and_Technology",
+        "retrievedAt": "2026-11-10T20:09:12.926Z",
+        "sha256": "ea6edd006cfecade789456e51c4332ffbd75af2ed8a813fccbac780a15012634",
+        "locator": {
+          "page": 1,
+          "line": 105
+        },
+        "quote": "25.013686°N 121.540535°E"
+      },
+      "website": {
+        "url": "https://www.ntust.edu.tw/home.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:11:39.954Z",
+        "sha256": "487f73a57570208cab2d08580a6ad8789e7b3a491c6eac2200d1b8994d0c59bc",
+        "locator": {
+          "page": 1,
+          "line": 89
+        },
+        "quote": "Copyright © 2024 National Taiwan University of Science and Technology"
+      },
+      "catalogPublic": {
+        "url": "https://oia.ntust.edu.tw/p/412-1060-8919.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:09:59.824Z",
+        "sha256": "ca558eabd33e0d4b66a35fcb8df75e6fc11699ca23b08809049c94b8bc31eea2",
+        "locator": {
+          "page": 1,
+          "line": 67
+        },
+        "quote": "The latest course catalog is usually available 1 or 2 months prior to the semester start."
+      },
+      "creditSystem": {
+        "url": "https://oia.ntust.edu.tw/p/412-1060-8919.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:09:59.824Z",
+        "sha256": "ca558eabd33e0d4b66a35fcb8df75e6fc11699ca23b08809049c94b8bc31eea2",
+        "locator": {
+          "page": 1,
+          "line": 59
+        },
+        "quote": "1 credit is equal to 2 ECTS credits"
+      },
+      "contactHoursPerCredit": {
+        "url": "https://oia.ntust.edu.tw/p/412-1060-8919.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:09:59.824Z",
+        "sha256": "ca558eabd33e0d4b66a35fcb8df75e6fc11699ca23b08809049c94b8bc31eea2",
+        "locator": {
+          "page": 1,
+          "line": 59
+        },
+        "quote": "1 credit = 18 teaching hours"
+      },
+      "terms.fall.start": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 1,
+          "line": 16
+        },
+        "quote": "Sep. 7 Mon. 1. Classes begin"
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 1,
+          "line": 37
+        },
+        "quote": "Final exams begin (and ends on December 25)"
+      },
+      "terms.spring.start": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 2,
+          "line": 11
+        },
+        "quote": "22 Mon. 1. Classes begin"
+      },
+      "terms.spring.examsEnd": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 2,
+          "line": 34
+        },
+        "quote": "Final exams begin (and ends on June11)"
+      },
+      "exchangeContact": {
+        "url": "https://oia.ntust.edu.tw/p/412-1060-8919.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:09:59.824Z",
+        "sha256": "ca558eabd33e0d4b66a35fcb8df75e6fc11699ca23b08809049c94b8bc31eea2",
+        "locator": {
+          "page": 1,
+          "line": 86
+        },
+        "quote": "Email: oia@mail.ntust.edu.tw"
+      }
+    }
   },
   {
     "id": "nycu-tw",
     "name": "National Yang Ming Chiao Tung University",
     "moveOnName": "National Yang Ming Chiao Tung University",
     "countryCode": "TW",
-    "city": "",
-    "lat": 0,
-    "lng": 0,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Hsinchu",
+    "lat": 24.796,
+    "lng": 120.985,
+    "website": "https://www.nycu.edu.tw/nycu/en/index",
+    "catalogUrl": "https://timetable.nycu.edu.tw/",
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 16,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2026-09-07",
+        "end": null,
+        "examsEnd": "2026-12-24"
+      },
+      "spring": {
+        "start": "2027-02-15",
+        "end": null,
+        "examsEnd": "2027-06-04"
+      }
     },
     "restrictions": null,
-    "exchangeContact": null,
+    "exchangeContact": "Ms. Meggie Peng",
     "catalogPublic": true,
-    "provenance": {}
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/National_Yang_Ming_Chiao_Tung_University",
+        "retrievedAt": "2026-11-10T19:47:09.336Z",
+        "sha256": "a82c51194c0d499c45d39db0d73f06c2924e9d78f0e8cb07a4e54a8ed2eb4242",
+        "locator": {
+          "page": 1,
+          "line": 133
+        },
+        "quote": "National Yang Ming Chiao Tung University (NYCU; Chinese:"
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/National_Yang_Ming_Chiao_Tung_University",
+        "retrievedAt": "2026-11-10T19:47:09.336Z",
+        "sha256": "a82c51194c0d499c45d39db0d73f06c2924e9d78f0e8cb07a4e54a8ed2eb4242",
+        "locator": {
+          "page": 1,
+          "line": 112
+        },
+        "quote": "Hsinchu, Taiwan"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/National_Chiao_Tung_University",
+        "retrievedAt": "2026-11-10T19:47:45.577Z",
+        "sha256": "b1668a61f8a019c31dc668f50ab80e531767e1785a68961c5267cd292d803ccf",
+        "locator": {
+          "page": 1,
+          "line": 106
+        },
+        "quote": "24.795861°N 120.9847659°E"
+      },
+      "website": {
+        "url": "https://www.nycu.edu.tw/nycu/en/index",
+        "retrievedAt": "2026-11-10T19:51:45.279Z",
+        "sha256": "e9ca10fe81f3cdce283ea1e80c5f1ed52efd33e698dc61ec94fefd0d06a3780a",
+        "locator": {
+          "page": 1,
+          "line": 171
+        },
+        "quote": "Copyright © 2023 National Yang Ming Chiao Tung University. All rights reserved."
+      },
+      "catalogUrl": {
+        "url": "https://timetable.nycu.edu.tw/",
+        "retrievedAt": "2026-11-10T19:51:50.152Z",
+        "sha256": "97264ed02c33b4d9f70a975626af0fb3b1f661f13e32c95d58c83d612e50ec2d",
+        "locator": {
+          "page": 1,
+          "line": 1
+        },
+        "quote": "國立陽明交通大學 課程時間表"
+      },
+      "catalogPublic": {
+        "url": "https://timetable.nycu.edu.tw/",
+        "retrievedAt": "2026-11-10T19:51:50.152Z",
+        "sha256": "97264ed02c33b4d9f70a975626af0fb3b1f661f13e32c95d58c83d612e50ec2d",
+        "locator": {
+          "page": 1,
+          "line": 1
+        },
+        "quote": "國立陽明交通大學 課程時間表"
+      },
+      "creditSystem": {
+        "url": "https://imp-mm.nycu.edu.tw/wp-content/uploads/2024/11/%E5%9C%8B%E7%AB%8B%E9%99%BD%E6%98%8E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B8%E5%AD%B8%E5%89%87En20240705.pdf",
+        "retrievedAt": "2026-11-10T19:51:31.158Z",
+        "sha256": "cd0817642098725e5f100074ffa78830a37070c30828dc7a44751c00ba41c59d",
+        "locator": {
+          "page": 15,
+          "line": 6
+        },
+        "quote": "Courses of NYCU are calculated by credits."
+      },
+      "contactHoursPerCredit": {
+        "url": "https://imp-mm.nycu.edu.tw/wp-content/uploads/2024/11/%E5%9C%8B%E7%AB%8B%E9%99%BD%E6%98%8E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B8%E5%AD%B8%E5%89%87En20240705.pdf",
+        "retrievedAt": "2026-11-10T19:51:31.158Z",
+        "sha256": "cd0817642098725e5f100074ffa78830a37070c30828dc7a44751c00ba41c59d",
+        "locator": {
+          "page": 15,
+          "line": 9
+        },
+        "quote": "In principle, the maximum duration of aforementioned course is 16 weeks."
+      },
+      "terms.fall.start": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1169090024096927744&type=s",
+        "retrievedAt": "2026-11-10T19:50:15.977Z",
+        "sha256": "0b6134292a1eee9b9c9dcc8d8b2e591cae0623fb4c1a2047593ee29f82838dbf",
+        "locator": {
+          "page": 1,
+          "line": 12
+        },
+        "quote": "Fall Semester classes begin"
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1169090024096927744&type=s",
+        "retrievedAt": "2026-11-10T19:50:15.977Z",
+        "sha256": "0b6134292a1eee9b9c9dcc8d8b2e591cae0623fb4c1a2047593ee29f82838dbf",
+        "locator": {
+          "page": 1,
+          "line": 46
+        },
+        "quote": "Final Exams (Dec.21-24)"
+      },
+      "terms.spring.start": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1504744174291783680&type=s",
+        "retrievedAt": "2026-11-10T19:50:21.813Z",
+        "sha256": "a7d09cb3ceb71d765144cdfba4d3c0d81860df3adf9bf84d503b18594d50450a",
+        "locator": {
+          "page": 1,
+          "line": 7
+        },
+        "quote": "Spring Semester classes begin"
+      },
+      "terms.spring.examsEnd": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1504744174291783680&type=s",
+        "retrievedAt": "2026-11-10T19:50:21.813Z",
+        "sha256": "a7d09cb3ceb71d765144cdfba4d3c0d81860df3adf9bf84d503b18594d50450a",
+        "locator": {
+          "page": 1,
+          "line": 43
+        },
+        "quote": "Final Exams (May.31-Jun.4)"
+      },
+      "exchangeContact": {
+        "url": "https://oia.nycu.edu.tw/oia/en/app/artwebsite/view?module=artwebsite&id=821&serno=a277c341-8d25-4a51-8495-58d1d58bbc5d",
+        "retrievedAt": "2026-11-10T19:49:28.851Z",
+        "sha256": "b8413481d0d68590290ad899ef284ef9b7b860574c0fcfbd8144582a6df17e51",
+        "locator": {
+          "page": 1,
+          "line": 175
+        },
+        "quote": "Contact：Ms. Meggie Peng"
+      }
+    }
   },
   {
     "id": "postech-kr",
