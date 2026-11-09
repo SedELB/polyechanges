@@ -301,23 +301,143 @@
   },
   {
     "id": "korea-kr",
-    "name": "Korea University- College of Engineering (KUCE)",
+    "name": "Korea University College of Engineering",
     "moveOnName": "Korea University- College of Engineering (KUCE)",
     "countryCode": "KR",
-    "city": "",
-    "lat": 37.532308,
-    "lng": 126.95744,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Seoul",
+    "lat": 37.59056,
+    "lng": 127.03639,
+    "website": "https://eng.korea.ac.kr/main/main.html",
+    "catalogUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do",
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 15,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2026-09-01",
+        "end": null,
+        "examsEnd": null
+      },
+      "spring": {
+        "start": null,
+        "end": null,
+        "examsEnd": null
+      }
     },
-    "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true
+    "restrictions": "Students must be currently enrolled in a Bachelor's program at their home university during the entire exchange period (Note: Specific agreements may define the required level)",
+    "exchangeContact": "syson@korea.ac.kr",
+    "catalogPublic": true,
+    "provenance": {
+      "name": {
+        "url": "https://eng.korea.ac.kr/education/exchange_in.html",
+        "retrievedAt": "2026-11-10T20:51:03.800Z",
+        "sha256": "99e87af6aa185aac8e5b7b96e3129ee69486d0e1b42f5df21ca09d690c28f1a4",
+        "locator": {
+          "page": 1,
+          "line": 145
+        },
+        "quote": "Korea University College of Engineering (KU COE) Exchange Program"
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/Korea_University",
+        "retrievedAt": "2026-11-10T20:54:47.983Z",
+        "sha256": "cca5ce3538ecad5d36b6d5aef6cccc34100eaa7f56e4b4be6953b8e9b995b4d2",
+        "locator": {
+          "page": 1,
+          "line": 155
+        },
+        "quote": "Private university in Seoul, South Korea"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/Korea_University_station",
+        "retrievedAt": "2026-11-10T20:55:24.053Z",
+        "sha256": "4f8fd6910ebdc6865826b9989fc4e19a582a70280093fc36800813976fdb0613",
+        "locator": {
+          "page": 1,
+          "line": 80
+        },
+        "quote": "37.59056°N 127.03639°E"
+      },
+      "website": {
+        "url": "https://eng.korea.ac.kr/main/main.html",
+        "retrievedAt": "2026-11-10T20:55:35.935Z",
+        "sha256": "2d3498093df1adbf2f669612965430e1e6969593fbd468de7c8739a3f8fa2e94",
+        "locator": {
+          "page": 1,
+          "line": 126
+        },
+        "quote": "Empowering Humanity through Engineering"
+      },
+      "catalogUrl": {
+        "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do",
+        "retrievedAt": "2026-11-10T20:54:58.774Z",
+        "sha256": "729bd65ea932fe1e4ea7edc218bf56d952dbd38965bc7e96807d2d1f8b8f7d7a",
+        "locator": {
+          "page": 1,
+          "line": 71
+        },
+        "quote": "2026-2 Course Catalog"
+      },
+      "creditSystem": {
+        "url": "https://registrar.korea.edu/eduinfo_en/info/grade_overview.do",
+        "retrievedAt": "2026-11-10T20:53:19.307Z",
+        "sha256": "61a6c9fd03c48f5a863d08f2b19c97ec29b78f8a4a144b3dcc897e73a20fa344",
+        "locator": {
+          "page": 1,
+          "line": 189
+        },
+        "quote": "1 credit is equal to 15 course hours (or more) per semester"
+      },
+      "contactHoursPerCredit": {
+        "url": "https://registrar.korea.edu/eduinfo_en/info/grade_overview.do",
+        "retrievedAt": "2026-11-10T20:53:19.307Z",
+        "sha256": "61a6c9fd03c48f5a863d08f2b19c97ec29b78f8a4a144b3dcc897e73a20fa344",
+        "locator": {
+          "page": 1,
+          "line": 189
+        },
+        "quote": "1 credit is equal to 15 course hours (or more) per semester"
+      },
+      "terms.fall.start": {
+        "url": "https://registrar.korea.edu/eduinfo_en/affairs/schedule.do",
+        "retrievedAt": "2026-11-10T20:53:53.935Z",
+        "sha256": "6115fa2cd46477343ac1005ce3d471e58248153d403579afb4518f819ac6d5f9",
+        "locator": {
+          "page": 1,
+          "line": 184
+        },
+        "quote": "SEP | 1(화) | Fall Semester 2026 Begins"
+      },
+      "restrictions": {
+        "url": "https://eng.korea.ac.kr/education/exchange_in.html",
+        "retrievedAt": "2026-11-10T20:51:03.800Z",
+        "sha256": "99e87af6aa185aac8e5b7b96e3129ee69486d0e1b42f5df21ca09d690c28f1a4",
+        "locator": {
+          "page": 1,
+          "line": 173
+        },
+        "quote": "Students must be currently enrolled in a Bachelor's program at their home university during the entire exchange period (Note: Specific agreements may define the required level)"
+      },
+      "exchangeContact": {
+        "url": "https://eng.korea.ac.kr/education/exchange_in.html",
+        "retrievedAt": "2026-11-10T20:51:03.800Z",
+        "sha256": "99e87af6aa185aac8e5b7b96e3129ee69486d0e1b42f5df21ca09d690c28f1a4",
+        "locator": {
+          "page": 1,
+          "line": 204
+        },
+        "quote": "EMAIL: syson@korea.ac.kr"
+      },
+      "catalogPublic": {
+        "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do",
+        "retrievedAt": "2026-11-10T20:54:58.774Z",
+        "sha256": "729bd65ea932fe1e4ea7edc218bf56d952dbd38965bc7e96807d2d1f8b8f7d7a",
+        "locator": {
+          "page": 1,
+          "line": 71
+        },
+        "quote": "2026-2 Course Catalog"
+      }
+    }
   },
   {
     "id": "postech-kr",

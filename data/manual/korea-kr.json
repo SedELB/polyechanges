@@ -1,0 +1,3981 @@
+[
+  {
+    "code": "AAA519",
+    "title": "DESIGN AND ANALYSIS OF ALGORITHMS",
+    "description": "DESIGN AND ANALYSIS OF ALGORITHMS (알고리즘설계및분석)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1943
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 컴퓨터학과 | AAA519 | 00 | 알고리즘설계및분석(영강) | DESIGN AND ANALYSIS OF ALGORITHMS(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "AAA536",
+    "title": "INTRODUCTION TO VIRTUAL AND AUGMENTED REALITY",
+    "description": "INTRODUCTION TO VIRTUAL AND AUGMENTED REALITY (가상증강현실기초)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 96
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | AAA536 | 00 | 가상증강현실기초(영강) | INTRODUCTION TO VIRTUAL AND AUGMENTED REALITY(English) | 3"
+    }
+  },
+  {
+    "code": "AAA551",
+    "title": "PROGRAMMING LANGUAGE THEORY",
+    "description": "PROGRAMMING LANGUAGE THEORY (프로그래밍언어론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 97
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | AAA551 | 00 | 프로그래밍언어론(영강) | PROGRAMMING LANGUAGE THEORY(English) | 3"
+    }
+  },
+  {
+    "code": "AAA607",
+    "title": "MOBILE COMPUTING",
+    "description": "MOBILE COMPUTING (모바일컴퓨팅)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 98
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | AAA607 | 00 | 모바일컴퓨팅(영강) | MOBILE COMPUTING(English) | 3"
+    }
+  },
+  {
+    "code": "AAA611",
+    "title": "OPERATING SYSTEM DESIGN",
+    "description": "OPERATING SYSTEM DESIGN (운영체제설계)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1946
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 컴퓨터학과 | AAA611 | 00 | 운영체제설계(영강) | OPERATING SYSTEM DESIGN(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "AAA623",
+    "title": "SOFTWARE SECURITY",
+    "description": "SOFTWARE SECURITY (소프트웨어보안)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1948
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 컴퓨터학과 | AAA623 | 00 | 소프트웨어보안(영강) | SOFTWARE SECURITY(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "AAA648",
+    "title": "DATA SECURITY CHALLENGE",
+    "description": "DATA SECURITY CHALLENGE (데이터보안챌린지)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 99
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | AAA648 | 00 | 데이터보안챌린지(영강) | DATA SECURITY CHALLENGE(English) | 3"
+    }
+  },
+  {
+    "code": "AAA652",
+    "title": "STOCHASTIC OPTIMIZATION FOR DYNAMIC SYSTEMS",
+    "description": "STOCHASTIC OPTIMIZATION FOR DYNAMIC SYSTEMS (동적시스템을위한확률적최적화)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1950
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 컴퓨터학과 | AAA652 | 00 | 동적시스템을위한확률적최적화(영강) | STOCHASTIC OPTIMIZATION FOR DYNAMIC SYSTEMS(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "AAA705",
+    "title": "SOFTWARE TESTING AND QUALITY ASSURANCE",
+    "description": "SOFTWARE TESTING AND QUALITY ASSURANCE (소프트웨어테스팅및품질보증)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1954
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 컴퓨터학과 | AAA705 | 00 | 소프트웨어테스팅및품질보증(영강) | SOFTWARE TESTING AND QUALITY ASSURANCE(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "AAA708",
+    "title": "APPLIED MICROPROCESSOR DESIGN",
+    "description": "APPLIED MICROPROCESSOR DESIGN (마이크로프로세서응용설계)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1955
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 컴퓨터학과 | AAA708 | 00 | 마이크로프로세서응용설계(영강) | APPLIED MICROPROCESSOR DESIGN(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "AAA711",
+    "title": "ADVANCED EMBEDDED SYSTEM",
+    "description": "ADVANCED EMBEDDED SYSTEM (고급임베디드시스템)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 100
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | AAA711 | 00 | 고급임베디드시스템(영강) | ADVANCED EMBEDDED SYSTEM(English) | 3"
+    }
+  },
+  {
+    "code": "AAA715",
+    "title": "MALWARE",
+    "description": "MALWARE (악성코드)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1956
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 컴퓨터학과 | AAA715 | 00 | 악성코드(영강) | MALWARE(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "AAA716",
+    "title": "CPS SECURITY OPERATION",
+    "description": "CPS SECURITY OPERATION (CPS보안운용)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 101
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | AAA716 | 00 | CPS보안운용(영강) | CPS SECURITY OPERATION(English) | 3"
+    }
+  },
+  {
+    "code": "AAA740",
+    "title": "SPECIAL TOPICS IN ARTIFICIAL INTELLIGENCE",
+    "description": "SPECIAL TOPICS IN ARTIFICIAL INTELLIGENCE (인공지능(초지능)특론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1960
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 컴퓨터학과 | AAA740 | 00 | 인공지능(초지능)특론(영강) | SPECIAL TOPICS IN ARTIFICIAL INTELLIGENCE(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "COSE102",
+    "title": "COMPUTER PROGRAMMING II",
+    "description": "COMPUTER PROGRAMMING II (컴퓨터프로그래밍II)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1911
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE102 | 01 | 컴퓨터프로그래밍II(영강) | COMPUTER PROGRAMMING II(English) | 학문의기초 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE211",
+    "title": "DISCRETE MATHEMATICS",
+    "description": "DISCRETE MATHEMATICS (이산수학)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1851
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE211 | 01 | 이산수학(영강) | DISCRETE MATHEMATICS(English) | 전공선택 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE212",
+    "title": "PROGRAMMING LANGUAGE",
+    "description": "PROGRAMMING LANGUAGE (프로그래밍언어)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1855
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE212 | 02 | 프로그래밍언어(영강) | PROGRAMMING LANGUAGE(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE213",
+    "title": "DATA STRUCTURE",
+    "description": "DATA STRUCTURE (자료구조)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1892
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE213 | 01 | 자료구조(영강) | DATA STRUCTURE(English) | 전공필수 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE214",
+    "title": "ALGORITHMS",
+    "description": "ALGORITHMS (알고리즘)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1895
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE214 | 01 | 알고리즘(영강) | ALGORITHMS(English) | 전공필수 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE215",
+    "title": "THEORY OF COMPUTATION",
+    "description": "THEORY OF COMPUTATION (계산이론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1857
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE215 | 00 | 계산이론(영강) | THEORY OF COMPUTATION(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE221",
+    "title": "DIGITAL LOGIC DESIGN",
+    "description": "DIGITAL LOGIC DESIGN (논리설계)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 205
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE221 | 02 | 논리설계(영강) | DIGITAL LOGIC DESIGN(English) | 3"
+    }
+  },
+  {
+    "code": "COSE222",
+    "title": "COMPUTER ARCHITECTURE",
+    "description": "COMPUTER ARCHITECTURE (컴퓨터구조)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1899
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE222 | 01 | 컴퓨터구조(영강) | COMPUTER ARCHITECTURE(English) | 전공필수 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE242",
+    "title": "DATA COMMUNICATIONS",
+    "description": "DATA COMMUNICATIONS (데이터통신)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1860
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE242 | 02 | 데이터통신(영강) | DATA COMMUNICATIONS(English) | 전공선택 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE312",
+    "title": "COMPILER",
+    "description": "COMPILER (컴파일러)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 208
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE312 | 00 | 컴파일러(영강) | COMPILER(English) | 3"
+    }
+  },
+  {
+    "code": "COSE321",
+    "title": "COMPUTER SYSTEM DESIGN",
+    "description": "COMPUTER SYSTEM DESIGN (컴퓨터시스템설계)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 209
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE321 | 00 | 컴퓨터시스템설계(영강) | COMPUTER SYSTEM DESIGN(English) | 3"
+    }
+  },
+  {
+    "code": "COSE322",
+    "title": "SYSTEM PROGRAMMING",
+    "description": "SYSTEM PROGRAMMING (시스템프로그래밍)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 210
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE322 | 00 | 시스템프로그래밍(영강) | SYSTEM PROGRAMMING(English) | 3"
+    }
+  },
+  {
+    "code": "COSE341",
+    "title": "OPERATING SYSTEMS",
+    "description": "OPERATING SYSTEMS (운영체제)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1903
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE341 | 01 | 운영체제(영강) | OPERATING SYSTEMS(English) | 전공필수 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE352",
+    "title": "SOFTWARE ENGINEERING",
+    "description": "SOFTWARE ENGINEERING (소프트웨어공학)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1865
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE352 | 02 | 소프트웨어공학(영강) | SOFTWARE ENGINEERING(English) | 전공선택 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE354",
+    "title": "INFORMATION SECURITY",
+    "description": "INFORMATION SECURITY (정보보호)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1866
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE354 | 01 | 정보보호(영강) | INFORMATION SECURITY(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE361",
+    "title": "ARTIFICIAL INTELLIGENCE",
+    "description": "ARTIFICIAL INTELLIGENCE (인공지능)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1907
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE361 | 01 | 인공지능(영강) | ARTIFICIAL INTELLIGENCE(English) | 전공필수 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE362",
+    "title": "MACHINE LEARNING",
+    "description": "MACHINE LEARNING (기계학습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 213
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE362 | 00 | 기계학습(영강) | MACHINE LEARNING(English) | 3"
+    }
+  },
+  {
+    "code": "COSE371",
+    "title": "DATABASES",
+    "description": "DATABASES (데이터베이스)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1870
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE371 | 00 | 데이터베이스(영강) | DATABASES(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "COSE405",
+    "title": "COMPUTER SCIENCE COLLOQUIUM",
+    "description": "COMPUTER SCIENCE COLLOQUIUM (컴퓨터학콜로키움)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1881
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE405 | 00 | 컴퓨터학콜로키움(영강) | COMPUTER SCIENCE COLLOQUIUM(English) | 전공선택 | 3 | 1 | 5 | ● | P/F"
+    }
+  },
+  {
+    "code": "COSE407",
+    "title": "INDEPENDENT STUDY PROJECT",
+    "description": "INDEPENDENT STUDY PROJECT (개별연구프로젝트)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1882
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE407 | 00 | 개별연구프로젝트(영강) | INDEPENDENT STUDY PROJECT(English) | 전공선택 | 3 | 1 | 5 | ● | P/F"
+    }
+  },
+  {
+    "code": "COSE419",
+    "title": "SOFTWARE VERIFICATION",
+    "description": "SOFTWARE VERIFICATION (소프트웨어검증)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 216
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE419 | 00 | 소프트웨어검증(영강) | SOFTWARE VERIFICATION(English) | 3"
+    }
+  },
+  {
+    "code": "COSE421",
+    "title": "EMBEDDED SYSTEMS",
+    "description": "EMBEDDED SYSTEMS (임베디드시스템)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 217
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE421 | 00 | 임베디드시스템(영강) | EMBEDDED SYSTEMS(English) | 3"
+    }
+  },
+  {
+    "code": "COSE432",
+    "title": "HUMAN COMPUTER INTERACTION",
+    "description": "HUMAN COMPUTER INTERACTION (인간컴퓨터상호작용입문)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 218
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE432 | 00 | 인간컴퓨터상호작용입문(영강) | HUMAN COMPUTER INTERACTION(English) | 3"
+    }
+  },
+  {
+    "code": "COSE441",
+    "title": "INTERNET PROTOCOLS",
+    "description": "INTERNET PROTOCOLS (인터넷프로토콜)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 219
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE441 | 00 | 인터넷프로토콜(영강) | INTERNET PROTOCOLS(English) | 3"
+    }
+  },
+  {
+    "code": "COSE451",
+    "title": "SOFTWARE SECURITY",
+    "description": "SOFTWARE SECURITY (소프트웨어보안)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 220
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE451 | 00 | 소프트웨어보안(영강) | SOFTWARE SECURITY(English) | 3"
+    }
+  },
+  {
+    "code": "COSE461",
+    "title": "NATURAL LANGUAGE PROCESSING",
+    "description": "NATURAL LANGUAGE PROCESSING (자연어처리)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 221
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE461 | 01 | 자연어처리(영강) | NATURAL LANGUAGE PROCESSING(English) | 3"
+    }
+  },
+  {
+    "code": "COSE474",
+    "title": "DEEP LEARNING",
+    "description": "DEEP LEARNING (딥러닝)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 222
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | COSE474 | 00 | 딥러닝(영강) | DEEP LEARNING(English) | 3"
+    }
+  },
+  {
+    "code": "COSE490",
+    "title": "SPECIAL LECTURE FOR COMPUTER SCIENCE",
+    "description": "SPECIAL LECTURE FOR COMPUTER SCIENCE (전산학특강)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1891
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 컴퓨터학과 | COSE490 | 00 | 전산학특강(영강) | SPECIAL LECTURE FOR COMPUTER SCIENCE(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "CSAI202",
+    "title": "INTRODUCTION TO DEEP LEARNING",
+    "description": "INTRODUCTION TO DEEP LEARNING (기초딥러닝)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1929
+      },
+      "quote": "2026 | 2학기 | 서울 | 정보대학 | 인공지능학과 | CSAI202 | 01 | 기초딥러닝(영강) | INTRODUCTION TO DEEP LEARNING(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "ECE502",
+    "title": "ADVANCED SEMICONDUCTOR DEVICE",
+    "description": "ADVANCED SEMICONDUCTOR DEVICE (반도체소자특론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2258
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE502 | 00 | 반도체소자특론(영강) | ADVANCED SEMICONDUCTOR DEVICE(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE503",
+    "title": "ADVANCED PATTERN RECOGNITION",
+    "description": "ADVANCED PATTERN RECOGNITION (패턴인식특론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2259
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE503 | 00 | 패턴인식특론(영강) | ADVANCED PATTERN RECOGNITION(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE505",
+    "title": "POWER SYSTEM STABILITY I",
+    "description": "POWER SYSTEM STABILITY I (계통안정도I)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 41
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE505 | 00 | 계통안정도I(영강) | POWER SYSTEM STABILITY I(English) | 3"
+    }
+  },
+  {
+    "code": "ECE509",
+    "title": "ELECTROMECHANICAL ENERGY CONVERSION",
+    "description": "ELECTROMECHANICAL ENERGY CONVERSION (에너지변환론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 42
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE509 | 00 | 에너지변환론(영강) | ELECTROMECHANICAL ENERGY CONVERSION(English) | 3"
+    }
+  },
+  {
+    "code": "ECE511",
+    "title": "LINEAR SYSTEM",
+    "description": "LINEAR SYSTEM (선형시스템)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2260
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE511 | 00 | 선형시스템(영강) | LINEAR SYSTEM(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE537",
+    "title": "OPTIMIZATION METHODS",
+    "description": "OPTIMIZATION METHODS (최적화기법)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 43
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE537 | 00 | 최적화기법(영강) | OPTIMIZATION METHODS(English) | 3"
+    }
+  },
+  {
+    "code": "ECE632",
+    "title": "MONITORING AND DIAGNOSTICS FOR ENERGY CONVERSION SYSTEM",
+    "description": "MONITORING AND DIAGNOSTICS FOR ENERGY CONVERSION SYSTEM (에너지변환시스템의상태및고장진단)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2264
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE632 | 00 | 에너지변환시스템의상태및고장진단(영강) | MONITORING AND DIAGNOSTICS FOR ENERGY CONVERSION SYSTEM(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE652",
+    "title": "ADVANCED COMPUTER SYSTEM ARCHITECTURE",
+    "description": "ADVANCED COMPUTER SYSTEM ARCHITECTURE (컴퓨터시스템구조)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 44
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE652 | 00 | 컴퓨터시스템구조(영강) | ADVANCED COMPUTER SYSTEM ARCHITECTURE(English) | 3"
+    }
+  },
+  {
+    "code": "ECE660",
+    "title": "MOBILE COMMUNICATION SYSTEMS",
+    "description": "MOBILE COMMUNICATION SYSTEMS (이동통신시스템)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 45
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE660 | 00 | 이동통신시스템(영강) | MOBILE COMMUNICATION SYSTEMS(English) | 3"
+    }
+  },
+  {
+    "code": "ECE666",
+    "title": "COMMUNICATION SIGNAL PROCESSING 2 (OFDM)",
+    "description": "COMMUNICATION SIGNAL PROCESSING 2 (OFDM) (통신신호처리2(OFDM))",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2270
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE666 | 00 | 통신신호처리2(OFDM)(영강) | COMMUNICATION SIGNAL PROCESSING 2 (OFDM)(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE668",
+    "title": "INFORMATION THEORY",
+    "description": "INFORMATION THEORY (정보이론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2271
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE668 | 00 | 정보이론(영강) | INFORMATION THEORY(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE674",
+    "title": "UNDERSTANDING OF DEEP LEARNING",
+    "description": "UNDERSTANDING OF DEEP LEARNING (심층신경망의이해)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 46
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE674 | 00 | 심층신경망의이해(영강) | UNDERSTANDING OF DEEP LEARNING(English) | 3"
+    }
+  },
+  {
+    "code": "ECE681",
+    "title": "ADJUSTABLE SPEED DRIVES",
+    "description": "ADJUSTABLE SPEED DRIVES (전기기기제어론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2274
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE681 | 00 | 전기기기제어론(영강) | ADJUSTABLE SPEED DRIVES(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "ECE686",
+    "title": "SPECIAL TOPICS IN COMPUTER SYSTEMS",
+    "description": "SPECIAL TOPICS IN COMPUTER SYSTEMS (컴퓨터시스템특론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2275
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE686 | 00 | 컴퓨터시스템특론(영강) | SPECIAL TOPICS IN COMPUTER SYSTEMS(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "ECE691",
+    "title": "ADVANCED SENSOR ENGINEERING",
+    "description": "ADVANCED SENSOR ENGINEERING (센서공학특론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2276
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE691 | 00 | 센서공학특론(영강) | ADVANCED SENSOR ENGINEERING(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "ECE692",
+    "title": "BAYESIAN MACHINE LEARNING",
+    "description": "BAYESIAN MACHINE LEARNING (베이지안기계학습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 47
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE692 | 00 | 베이지안기계학습(영강) | BAYESIAN MACHINE LEARNING(English) | 3"
+    }
+  },
+  {
+    "code": "ECE694",
+    "title": "TOPICS OF NEW ELECTRONIC MATERIALS ENGINEERING",
+    "description": "TOPICS OF NEW ELECTRONIC MATERIALS ENGINEERING (전자신소재공학특론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 48
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE694 | 00 | 전자신소재공학특론(영강) | TOPICS OF NEW ELECTRONIC MATERIALS ENGINEERING(English) | 3"
+    }
+  },
+  {
+    "code": "ECE705",
+    "title": "ADVANCED TOPICS IN COMPUTER VISION",
+    "description": "ADVANCED TOPICS IN COMPUTER VISION (컴퓨터비젼특론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2279
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE705 | 00 | 컴퓨터비젼특론(영강) | ADVANCED TOPICS IN COMPUTER VISION(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE708",
+    "title": "POWER ELECTRONICS SYSTEM APPLICATIONS",
+    "description": "POWER ELECTRONICS SYSTEM APPLICATIONS (응용전력전자시스템)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 49
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE708 | 00 | 응용전력전자시스템(영강) | POWER ELECTRONICS SYSTEM APPLICATIONS(English) | 3"
+    }
+  },
+  {
+    "code": "ECE714",
+    "title": "SPECIAL TOPICS IN PROCESSOR ARCHITECTURE",
+    "description": "SPECIAL TOPICS IN PROCESSOR ARCHITECTURE (차세대컴퓨팅특론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2280
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE714 | 00 | 차세대컴퓨팅특론(영강) | SPECIAL TOPICS IN PROCESSOR ARCHITECTURE(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE724",
+    "title": "MULTIPLE ANTENNA THEORY",
+    "description": "MULTIPLE ANTENNA THEORY (다중안테나이론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 50
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE724 | 00 | 다중안테나이론(영강) | MULTIPLE ANTENNA THEORY(English) | 3"
+    }
+  },
+  {
+    "code": "ECE736",
+    "title": "SPECIAL TOPICS IN CONTROL AND SYSTEM ENGINEERINGⅡ",
+    "description": "SPECIAL TOPICS IN CONTROL AND SYSTEM ENGINEERINGⅡ (제어및시스템공학특론Ⅱ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2282
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE736 | 00 | 제어및시스템공학특론Ⅱ(영강) | SPECIAL TOPICS IN CONTROL AND SYSTEM ENGINEERINGⅡ(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE738",
+    "title": "SOFT ROBOTICS",
+    "description": "SOFT ROBOTICS (소프트로봇)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 51
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE738 | 00 | 소프트로봇(영강) | SOFT ROBOTICS(English) | 3"
+    }
+  },
+  {
+    "code": "ECE745",
+    "title": "ADVANCED DESIGN OF GENERATION NANO-PHOTONIC DEVICES",
+    "description": "ADVANCED DESIGN OF GENERATION NANO-PHOTONIC DEVICES (차세대나노광소자설계특론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2284
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE745 | 00 | 차세대나노광소자설계특론(영강) | ADVANCED DESIGN OF GENERATION NANO-PHOTONIC DEVICES(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE747",
+    "title": "GRID-CONNECTED POWER CONVERSION SYSTEM",
+    "description": "GRID-CONNECTED POWER CONVERSION SYSTEM (계통연계형전력변환시스템)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2286
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE747 | 00 | 계통연계형전력변환시스템(영강) | GRID-CONNECTED POWER CONVERSION SYSTEM(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE756",
+    "title": "EFFICIENT AI AND HARDWARE DESIGN",
+    "description": "EFFICIENT AI AND HARDWARE DESIGN (AI경량화및하드웨어)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2288
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 전기전자공학과 | ECE756 | 00 | AI경량화및하드웨어(영강) | EFFICIENT AI AND HARDWARE DESIGN(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "ECE803",
+    "title": "TECHNICAL WRITING IN ENGLISH",
+    "description": "TECHNICAL WRITING IN ENGLISH (영어논문작성법)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 52
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | ECE803 | 00 | 영어논문작성법(영강) | TECHNICAL WRITING IN ENGLISH(English) | 3"
+    }
+  },
+  {
+    "code": "KECE205",
+    "title": "CIRCUIT THEORY AND LABORATORY",
+    "description": "CIRCUIT THEORY AND LABORATORY (전기회로실험)",
+    "outline": null,
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 99
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE205 | 02 | 전기회로실험(영강) | CIRCUIT THEORY AND LABORATORY(English) | 1"
+    }
+  },
+  {
+    "code": "KECE206",
+    "title": "ENGINEERING ELECTROMAGNETICS",
+    "description": "ENGINEERING ELECTROMAGNETICS (전자기학)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1450
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE206 | 04 | 전자기학(영강) | ENGINEERING ELECTROMAGNETICS(English) | 전공필수 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE207",
+    "title": "DIGITAL SYSTEM DESIGN",
+    "description": "DIGITAL SYSTEM DESIGN (디지털시스템)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 100
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE207 | 01 | 디지털시스템(영강) | DIGITAL SYSTEM DESIGN(English) | 3"
+    }
+  },
+  {
+    "code": "KECE208",
+    "title": "DATA STRUCTURE AND ALGORITHM",
+    "description": "DATA STRUCTURE AND ALGORITHM (데이터구조및알고리즘)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1411
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE208 | 04 | 데이터구조및알고리즘(영강) | DATA STRUCTURE AND ALGORITHM(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE209",
+    "title": "PROBABILITY AND RANDOM PROCESS",
+    "description": "PROBABILITY AND RANDOM PROCESS (확률및랜덤프로세스)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 103
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE209 | 01 | 확률및랜덤프로세스(영강) | PROBABILITY AND RANDOM PROCESS(English) | 3"
+    }
+  },
+  {
+    "code": "KECE210",
+    "title": "DIGITAL SYSTEM DESIGN AND LABORATORY",
+    "description": "DIGITAL SYSTEM DESIGN AND LABORATORY (디지털시스템실험)",
+    "outline": null,
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1457
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE210 | 07 | 디지털시스템실험(영강) | DIGITAL SYSTEM DESIGN AND LABORATORY(English) | 전공필수 | 1 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE211",
+    "title": "CIRCUIT THEORY",
+    "description": "CIRCUIT THEORY (전기회로)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 106
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE211 | 02 | 전기회로(영강) | CIRCUIT THEORY(English) | 3"
+    }
+  },
+  {
+    "code": "KECE212",
+    "title": "PHYSICAL ELECTRONICS",
+    "description": "PHYSICAL ELECTRONICS (물성전자공학)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1413
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE212 | 02 | 물성전자공학(영강) | PHYSICAL ELECTRONICS(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE232",
+    "title": "ENGINEERING MATHEMATICS Ⅱ",
+    "description": "ENGINEERING MATHEMATICS Ⅱ (공학수학Ⅱ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1462
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE232 | 01 | 공학수학Ⅱ(영강) | ENGINEERING MATHEMATICS Ⅱ(English) | 전공필수 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE301",
+    "title": "ELECTRONIC CIRCUITS I",
+    "description": "ELECTRONIC CIRCUITS I (전자회로I)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 107
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE301 | 01 | 전자회로I(영강) | ELECTRONIC CIRCUITS I(English) | 3"
+    }
+  },
+  {
+    "code": "KECE302",
+    "title": "ELECTRONIC CIRCUITS 2",
+    "description": "ELECTRONIC CIRCUITS 2 (전자회로Ⅱ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1416
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE302 | 03 | 전자회로Ⅱ(영강) | ELECTRONIC CIRCUITS 2(English) | 전공선택 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE303",
+    "title": "ELECTRONIC CIRCUITS AND LABORATORYI",
+    "description": "ELECTRONIC CIRCUITS AND LABORATORYI (전자회로설계및실험I)",
+    "outline": null,
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 110
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE303 | 03 | 전자회로설계및실험I(영강) | ELECTRONIC CIRCUITS AND LABORATORYI(English) | 1"
+    }
+  },
+  {
+    "code": "KECE304",
+    "title": "ELECTRONIC CIRCUITS AND LABORATORY Ⅱ",
+    "description": "ELECTRONIC CIRCUITS AND LABORATORY Ⅱ (전자회로설계및실험II)",
+    "outline": null,
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1419
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE304 | 02 | 전자회로설계및실험II(영강) | ELECTRONIC CIRCUITS AND LABORATORY Ⅱ(English) | 전공선택 | 1 | 0 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE313",
+    "title": "SIGNAL AND SYSTEMS",
+    "description": "SIGNAL AND SYSTEMS (신호와시스템)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 111
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE313 | 01 | 신호와시스템(영강) | SIGNAL AND SYSTEMS(English) | 3"
+    }
+  },
+  {
+    "code": "KECE331",
+    "title": "SEMICONDUCTOR DEVICESⅠ",
+    "description": "SEMICONDUCTOR DEVICESⅠ (반도체공학Ⅰ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 115
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE331 | 03 | 반도체공학Ⅰ(영강) | SEMICONDUCTOR DEVICESⅠ(English) | 3"
+    }
+  },
+  {
+    "code": "KECE343",
+    "title": "COMPUTER ARCHITECTURE",
+    "description": "COMPUTER ARCHITECTURE (컴퓨터구조)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 117
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE343 | 02 | 컴퓨터구조(영강) | COMPUTER ARCHITECTURE(English) | 3"
+    }
+  },
+  {
+    "code": "KECE345",
+    "title": "MACHINE LEARNING AND INTELLIGENCE FOR ELECTRICAL ENGINEERS",
+    "description": "MACHINE LEARNING AND INTELLIGENCE FOR ELECTRICAL ENGINEERS (전기전자공학도를위한기계학습과지능)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 118
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE345 | 00 | 전기전자공학도를위한기계학습과지능(영강) | MACHINE LEARNING AND INTELLIGENCE FOR ELECTRICAL ENGINEERS(English) | 3"
+    }
+  },
+  {
+    "code": "KECE359",
+    "title": "ELECTRICAL ENERGY ENGINEERING",
+    "description": "ELECTRICAL ENERGY ENGINEERING (전기에너지공학)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 119
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE359 | 01 | 전기에너지공학(영강) | ELECTRICAL ENERGY ENGINEERING(English) | 3"
+    }
+  },
+  {
+    "code": "KECE364",
+    "title": "ELECTRIC MACHINES Ⅰ",
+    "description": "ELECTRIC MACHINES Ⅰ (전기기기Ⅰ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1431
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE364 | 01 | 전기기기Ⅰ(영강) | ELECTRIC MACHINES Ⅰ(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE370",
+    "title": "DIGITAL SIGNAL PROCESSING",
+    "description": "DIGITAL SIGNAL PROCESSING (디지털신호처리)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1435
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE370 | 03 | 디지털신호처리(영강) | DIGITAL SIGNAL PROCESSING(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE419",
+    "title": "ELECTRIC MACHINES Ⅱ",
+    "description": "ELECTRIC MACHINES Ⅱ (전기기기Ⅱ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 120
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE419 | 00 | 전기기기Ⅱ(영강) | ELECTRIC MACHINES Ⅱ(English) | 3"
+    }
+  },
+  {
+    "code": "KECE438",
+    "title": "INTRODUCTION TO QUANTUM ELECTRONICS",
+    "description": "INTRODUCTION TO QUANTUM ELECTRONICS (기초양자전자공학)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1438
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE438 | 00 | 기초양자전자공학(영강) | INTRODUCTION TO QUANTUM ELECTRONICS(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE440",
+    "title": "INTRODUCTION TO OPTOELECTRONICS",
+    "description": "INTRODUCTION TO OPTOELECTRONICS (광전자공학)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1439
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE440 | 00 | 광전자공학(영강) | INTRODUCTION TO OPTOELECTRONICS(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE448",
+    "title": "PLATFORM PROGRAMMING",
+    "description": "PLATFORM PROGRAMMING (플랫폼프로그래밍)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1440
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE448 | 00 | 플랫폼프로그래밍(영강) | PLATFORM PROGRAMMING(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE462",
+    "title": "ASIC DESIGN",
+    "description": "ASIC DESIGN (ASIC설계)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1443
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE462 | 00 | ASIC설계(영강) | ASIC DESIGN(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE470",
+    "title": "PATTERN RECOGNITION",
+    "description": "PATTERN RECOGNITION (패턴인식)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1444
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 전기전자공학부 | KECE470 | 00 | 패턴인식(영강) | PATTERN RECOGNITION(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "KECE493",
+    "title": "SEMICONDUCTOR PROCESSING",
+    "description": "SEMICONDUCTOR PROCESSING (반도체프로세스)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 121
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE493 | 00 | 반도체프로세스(영강) | SEMICONDUCTOR PROCESSING(English) | 3"
+    }
+  },
+  {
+    "code": "KECE495",
+    "title": "POWER ELECTRONICS",
+    "description": "POWER ELECTRONICS (전력전자공학)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 122
+      },
+      "quote": "2026 | 1 | Seoul | College of Engineering | KECE495 | 00 | 전력전자공학(영강) | POWER ELECTRONICS(English) | 3"
+    }
+  },
+  {
+    "code": "MATH161",
+    "title": "CALCULUS WITH LAB I",
+    "description": "CALCULUS WITH LAB I (미적분학및연습I)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1063
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH161 | 04 | 미적분학및연습I(영강) | CALCULUS WITH LAB I(English) | 교양 | 3 | 3 | 1 | ● | 상대평가"
+    }
+  },
+  {
+    "code": "MATH162",
+    "title": "CALCULUS WITH LAB II",
+    "description": "CALCULUS WITH LAB II (미적분학및연습II)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1089
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH162 | 22 | 미적분학및연습II(영강) | CALCULUS WITH LAB II(English) | 교양 | 3 | 3 | 1 | ● | 상대평가"
+    }
+  },
+  {
+    "code": "MATH201",
+    "title": "SET THEORY",
+    "description": "SET THEORY (집합론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1090
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH201 | 01 | 집합론(영강) | SET THEORY(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH203",
+    "title": "DISCRETE MATHEMATICS",
+    "description": "DISCRETE MATHEMATICS (이산수학)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 440
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MATH203 | 01 | 이산수학(영강) | DISCRETE MATHEMATICS(English) | 3"
+    }
+  },
+  {
+    "code": "MATH211",
+    "title": "ANALYSISⅠ WITH LAB",
+    "description": "ANALYSISⅠ WITH LAB (해석학Ⅰ및연습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 441
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MATH211 | 01 | 해석학Ⅰ및연습(영강) | ANALYSISⅠ WITH LAB(English) | 3"
+    }
+  },
+  {
+    "code": "MATH212",
+    "title": "ANALYSISⅡ WITH LAB",
+    "description": "ANALYSISⅡ WITH LAB (해석학Ⅱ및연습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1106
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH212 | 01 | 해석학Ⅱ및연습(영강) | ANALYSISⅡ WITH LAB(English) | 전공필수 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH221",
+    "title": "LINEAR ALGEBRAⅠ WITH LAB",
+    "description": "LINEAR ALGEBRAⅠ WITH LAB (선형대수Ⅰ및연습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1108
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH221 | 01 | 선형대수Ⅰ및연습(영강) | LINEAR ALGEBRAⅠ WITH LAB(English) | 전공필수 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH222",
+    "title": "LINEAR ALGEBRAⅡ WITH LAB",
+    "description": "LINEAR ALGEBRAⅡ WITH LAB (선형대수Ⅱ및연습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1109
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH222 | 01 | 선형대수Ⅱ및연습(영강) | LINEAR ALGEBRAⅡ WITH LAB(English) | 전공필수 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH292",
+    "title": "MATHEMATICS FOR AI",
+    "description": "MATHEMATICS FOR AI (인공지능의수학적기초)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1094
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH292 | 01 | 인공지능의수학적기초(영강) | MATHEMATICS FOR AI(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH321",
+    "title": "ALGEBRAⅠ",
+    "description": "ALGEBRAⅠ (대수학Ⅰ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 444
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MATH321 | 01 | 대수학Ⅰ(영강) | ALGEBRAⅠ(English) | 3"
+    }
+  },
+  {
+    "code": "MATH333",
+    "title": "TOPOLOGYⅠ",
+    "description": "TOPOLOGYⅠ (위상수학Ⅰ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 445
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MATH333 | 01 | 위상수학Ⅰ(영강) | TOPOLOGYⅠ(English) | 3"
+    }
+  },
+  {
+    "code": "MATH342",
+    "title": "NUMERICAL ANALYSIS AND COMPUTER EXPERIMENT",
+    "description": "NUMERICAL ANALYSIS AND COMPUTER EXPERIMENT (수치해석및연습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1095
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH342 | 01 | 수치해석및연습(영강) | NUMERICAL ANALYSIS AND COMPUTER EXPERIMENT(English) | 전공선택 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH362",
+    "title": "ALGEBRAⅡ",
+    "description": "ALGEBRAⅡ (대수학Ⅱ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1099
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH362 | 01 | 대수학Ⅱ(영강) | ALGEBRAⅡ(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH374",
+    "title": "TOPOLOGYII",
+    "description": "TOPOLOGYII (위상수학II)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1101
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH374 | 01 | 위상수학II(영강) | TOPOLOGYII(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH462",
+    "title": "APPLIED NUMBER THEORY",
+    "description": "APPLIED NUMBER THEORY (응용정수론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1103
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH462 | 01 | 응용정수론(영강) | APPLIED NUMBER THEORY(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH464",
+    "title": "COMBINATORICS",
+    "description": "COMBINATORICS (조합론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1104
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH464 | 01 | 조합론(영강) | COMBINATORICS(English) | 전공선택 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH469",
+    "title": "TOPICS IN ALGEBRA",
+    "description": "TOPICS IN ALGEBRA (대수학특강)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1105
+      },
+      "quote": "2026 | 2학기 | 서울 | 이과대학 | 수학과 | MATH469 | 01 | 대수학특강(영강) | TOPICS IN ALGEBRA(English) | 전공선택 | 3 | 3 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "MATH487",
+    "title": "TOPICS IN APPLIED MATHEMATICS",
+    "description": "TOPICS IN APPLIED MATHEMATICS (응용수학특강)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 446
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MATH487 | 01 | 응용수학특강(영강) | TOPICS IN APPLIED MATHEMATICS(English) | 3"
+    }
+  },
+  {
+    "code": "MATH491",
+    "title": "THEORETICAL MACHINE LEARNING",
+    "description": "THEORETICAL MACHINE LEARNING (인공지능의수학적기법)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "e761ce9a363763789a873d4e2a0f864fc1a293f328f4c801399f89c4493952dc",
+      "locator": {
+        "page": 1,
+        "line": 447
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MATH491 | 01 | 인공지능의수학적기법(영강) | THEORETICAL MACHINE LEARNING(English) | 3"
+    }
+  },
+  {
+    "code": "MTH501",
+    "title": "ALGEBRA I",
+    "description": "ALGEBRA I (대수학I)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 226
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MTH501 | 01 | 대수학I(영강) | ALGEBRA I(English) | 3"
+    }
+  },
+  {
+    "code": "MTH505",
+    "title": "PROBABILITY I",
+    "description": "PROBABILITY I (확률론I)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 227
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MTH505 | 01 | 확률론I(영강) | PROBABILITY I(English) | 3"
+    }
+  },
+  {
+    "code": "MTH614",
+    "title": "NUMERICAL ANALYSIS",
+    "description": "NUMERICAL ANALYSIS (수치해석)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 228
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MTH614 | 01 | 수치해석(영강) | NUMERICAL ANALYSIS(English) | 3"
+    }
+  },
+  {
+    "code": "MTH618",
+    "title": "NUMERICAL PARTIAL DIFFERENTIAL EQUATION",
+    "description": "NUMERICAL PARTIAL DIFFERENTIAL EQUATION (수치적편미분방정식)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1875
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 수학과 | MTH618 | 01 | 수치적편미분방정식(영강) | NUMERICAL PARTIAL DIFFERENTIAL EQUATION(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "MTH701",
+    "title": "REPRESENTATION THEORY OF GROUPS",
+    "description": "REPRESENTATION THEORY OF GROUPS (군표현론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 229
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MTH701 | 01 | 군표현론(영강) | REPRESENTATION THEORY OF GROUPS(English) | 3"
+    }
+  },
+  {
+    "code": "MTH731",
+    "title": "THEORY OF PARTIAL DIFFERENTIAL EQUATIONS I",
+    "description": "THEORY OF PARTIAL DIFFERENTIAL EQUATIONS I (편미분방정식론I)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1876
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 수학과 | MTH731 | 01 | 편미분방정식론I(영강) | THEORY OF PARTIAL DIFFERENTIAL EQUATIONS I(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "MTH759",
+    "title": "ALGEBRAIC NUMBER THEORY II",
+    "description": "ALGEBRAIC NUMBER THEORY II (대수적정수론II)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1877
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 수학과 | MTH759 | 01 | 대수적정수론II(영강) | ALGEBRAIC NUMBER THEORY II(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "MTH801",
+    "title": "RESEARCH IN ALGEBRA I",
+    "description": "RESEARCH IN ALGEBRA I (대수학특수연구I)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 1880
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 수학과 | MTH801 | 01 | 대수학특수연구I(영강) | RESEARCH IN ALGEBRA I(English) | 3 | 3 | ●"
+    }
+  },
+  {
+    "code": "MTH811",
+    "title": "RESEARCH IN APPLIED MATHEMATICS I",
+    "description": "RESEARCH IN APPLIED MATHEMATICS I (응용수학특수연구I)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 230
+      },
+      "quote": "2026 | 1 | Seoul | College of Science | MTH811 | 01 | 응용수학특수연구I(영강) | RESEARCH IN APPLIED MATHEMATICS I(English) | 3"
+    }
+  },
+  {
+    "code": "SEMI102",
+    "title": "ENGINEERING MATHEMATICS II",
+    "description": "ENGINEERING MATHEMATICS II (공학수학Ⅱ)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324852&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "dab006303bd1d98835677c84ab49f44145cdae84133e587702ee58645fc17d85",
+      "locator": {
+        "page": 1,
+        "line": 1470
+      },
+      "quote": "2026 | 2학기 | 서울 | 공과대학 | 반도체공학과 | SEMI102 | 00 | 공학수학Ⅱ(영강) | ENGINEERING MATHEMATICS II(English) | 전공필수 | 3 | 3 | 0 | ● | 절대평가"
+    }
+  },
+  {
+    "code": "XAI501",
+    "title": "MACHINE LEARNING",
+    "description": "MACHINE LEARNING (기계학습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2436
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI501 | 00 | 기계학습(영강) | MACHINE LEARNING(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI503",
+    "title": "OPTIMIZATION THEORY",
+    "description": "OPTIMIZATION THEORY (최적화이론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2437
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI503 | 00 | 최적화이론(영강) | OPTIMIZATION THEORY(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI505",
+    "title": "CALCULUS",
+    "description": "CALCULUS (미적분)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2438
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI505 | 00 | 미적분(영강) | CALCULUS(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI506",
+    "title": "DEEP LEARNING",
+    "description": "DEEP LEARNING (딥러닝)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2439
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI506 | 00 | 딥러닝(영강) | DEEP LEARNING(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI507",
+    "title": "COMPUTER VISION",
+    "description": "COMPUTER VISION (컴퓨터비전)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2440
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI507 | 00 | 컴퓨터비전(영강) | COMPUTER VISION(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI508",
+    "title": "NATURAL LANGUAGE PROCESSING",
+    "description": "NATURAL LANGUAGE PROCESSING (자연언어처리)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2441
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI508 | 00 | 자연언어처리(영강) | NATURAL LANGUAGE PROCESSING(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI509",
+    "title": "AUTOMATIC SPEECH RECOGNITION",
+    "description": "AUTOMATIC SPEECH RECOGNITION (음성인식)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 112
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | XAI509 | 00 | 음성인식(영강) | AUTOMATIC SPEECH RECOGNITION(English) | 3"
+    }
+  },
+  {
+    "code": "XAI511",
+    "title": "NEURAL NETWORKS",
+    "description": "NEURAL NETWORKS (신경망)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2442
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI511 | 00 | 신경망(영강) | NEURAL NETWORKS(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI518",
+    "title": "INFORMATION THEORY",
+    "description": "INFORMATION THEORY (정보이론)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2444
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI518 | 00 | 정보이론(영강) | INFORMATION THEORY(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI519",
+    "title": "GENERATIVE ARTIFICIAL INTELLIGENCE",
+    "description": "GENERATIVE ARTIFICIAL INTELLIGENCE (생성형인공지능)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 113
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | XAI519 | 00 | 생성형인공지능(영강) | GENERATIVE ARTIFICIAL INTELLIGENCE(English) | 3"
+    }
+  },
+  {
+    "code": "XAI520",
+    "title": "ALGORITHM FOR AI",
+    "description": "ALGORITHM FOR AI (인공지능을위한알고리즘)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2445
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI520 | 00 | 인공지능을위한알고리즘(영강) | ALGORITHM FOR AI(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI602",
+    "title": "COMPUTER VISION APPLICATION AND PRACTICE",
+    "description": "COMPUTER VISION APPLICATION AND PRACTICE (컴퓨터비전응용및실습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2446
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI602 | 00 | 컴퓨터비전응용및실습(영강) | COMPUTER VISION APPLICATION AND PRACTICE(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI603",
+    "title": "NATURAL LANGUAGE PROCESSING APPLICATION AND PRACTICE",
+    "description": "NATURAL LANGUAGE PROCESSING APPLICATION AND PRACTICE (자연어처리응용및실습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2447
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI603 | 00 | 자연어처리응용및실습(영강) | NATURAL LANGUAGE PROCESSING APPLICATION AND PRACTICE(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI604",
+    "title": "AUTOMATIC SPEECH RECOGNITION APPLICATION AND PRACTICE",
+    "description": "AUTOMATIC SPEECH RECOGNITION APPLICATION AND PRACTICE (음성인식응용및실습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 116
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | XAI604 | 00 | 음성인식응용및실습(영강) | AUTOMATIC SPEECH RECOGNITION APPLICATION AND PRACTICE(English) | 3"
+    }
+  },
+  {
+    "code": "XAI606",
+    "title": "APPLICATIONS AND PRACTICE IN NEURAL NETWORKS",
+    "description": "APPLICATIONS AND PRACTICE IN NEURAL NETWORKS (신경망응용및실습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2448
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI606 | 00 | 신경망응용및실습(영강) | APPLICATIONS AND PRACTICE IN NEURAL NETWORKS(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI607",
+    "title": "ADVANCED DEEP LEARNING",
+    "description": "ADVANCED DEEP LEARNING (고급딥러닝)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2449
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI607 | 00 | 고급딥러닝(영강) | ADVANCED DEEP LEARNING(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI608",
+    "title": "ADVANCED COMPUTER VISION",
+    "description": "ADVANCED COMPUTER VISION (고급컴퓨터비전)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 117
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | XAI608 | 00 | 고급컴퓨터비전(영강) | ADVANCED COMPUTER VISION(English) | 3"
+    }
+  },
+  {
+    "code": "XAI609",
+    "title": "ADVANCED NATURAL LANGUAGE PROCESSING",
+    "description": "ADVANCED NATURAL LANGUAGE PROCESSING (고급자연언어처리)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2450
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI609 | 00 | 고급자연언어처리(영강) | ADVANCED NATURAL LANGUAGE PROCESSING(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI610",
+    "title": "ADVANCED AUTOMATIC SPEECH RECOGNITION",
+    "description": "ADVANCED AUTOMATIC SPEECH RECOGNITION (고급음성인식)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2451
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI610 | 00 | 고급음성인식(영강) | ADVANCED AUTOMATIC SPEECH RECOGNITION(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI611",
+    "title": "ADVANCED BIG DATA ANALYSIS",
+    "description": "ADVANCED BIG DATA ANALYSIS (고급빅데이터분석)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 118
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | XAI611 | 00 | 고급빅데이터분석(영강) | ADVANCED BIG DATA ANALYSIS(English) | 3"
+    }
+  },
+  {
+    "code": "XAI612",
+    "title": "ADVANCED NEURAL NETWORK",
+    "description": "ADVANCED NEURAL NETWORK (고급신경망)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 119
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | XAI612 | 00 | 고급신경망(영강) | ADVANCED NEURAL NETWORK(English) | 3"
+    }
+  },
+  {
+    "code": "XAI613",
+    "title": "REINFORCEMENT LEARNING",
+    "description": "REINFORCEMENT LEARNING (강화학습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2452
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI613 | 00 | 강화학습(영강) | REINFORCEMENT LEARNING(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI616",
+    "title": "KNOWLEDGE BASED SYSTEM",
+    "description": "KNOWLEDGE BASED SYSTEM (지식기반시스템)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2453
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI616 | 00 | 지식기반시스템(영강) | KNOWLEDGE BASED SYSTEM(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI617",
+    "title": "ARTIFICIAL INTELLIGENCE FOR HEALTHCARE",
+    "description": "ARTIFICIAL INTELLIGENCE FOR HEALTHCARE (헬스케어인공지능)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2454
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI617 | 00 | 헬스케어인공지능(영강) | ARTIFICIAL INTELLIGENCE FOR HEALTHCARE(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI622",
+    "title": "GAME ARTIFICIAL INTELLIGENCE",
+    "description": "GAME ARTIFICIAL INTELLIGENCE (게임인공지능)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2455
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI622 | 00 | 게임인공지능(영강) | GAME ARTIFICIAL INTELLIGENCE(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI624",
+    "title": "ADVANCED BAYESIAN MACHINE LEARNING",
+    "description": "ADVANCED BAYESIAN MACHINE LEARNING (고급베이지안기계학습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 120
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | XAI624 | 00 | 고급베이지안기계학습(영강) | ADVANCED BAYESIAN MACHINE LEARNING(English) | 3"
+    }
+  },
+  {
+    "code": "XAI625",
+    "title": "REINFORCEMENT LEARNING APPLICATION AND PRACTICE",
+    "description": "REINFORCEMENT LEARNING APPLICATION AND PRACTICE (강화학습응용및실습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2456
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI625 | 00 | 강화학습응용및실습(영강) | REINFORCEMENT LEARNING APPLICATION AND PRACTICE(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI626",
+    "title": "ADVANCED REINFORCEMENT LEARNING",
+    "description": "ADVANCED REINFORCEMENT LEARNING (고급강화학습)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 121
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | XAI626 | 00 | 고급강화학습(영강) | ADVANCED REINFORCEMENT LEARNING(English) | 3"
+    }
+  },
+  {
+    "code": "XAI628",
+    "title": "DIGITAL TWIN",
+    "description": "DIGITAL TWIN (디지털트윈)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2457
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI628 | 00 | 디지털트윈(영강) | DIGITAL TWIN(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI629",
+    "title": "INTELLIGENT MOBILITY",
+    "description": "INTELLIGENT MOBILITY (지능형모빌리티)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2458
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI629 | 00 | 지능형모빌리티(영강) | INTELLIGENT MOBILITY(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI630",
+    "title": "META LEARNING",
+    "description": "META LEARNING (메타러닝)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2459
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI630 | 00 | 메타러닝(영강) | META LEARNING(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI631",
+    "title": "ADVANCED META LEARNING",
+    "description": "ADVANCED META LEARNING (고급메타러닝)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2460
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI631 | 00 | 고급메타러닝(영강) | ADVANCED META LEARNING(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI634",
+    "title": "EDGE NEURAL NETWORK",
+    "description": "EDGE NEURAL NETWORK (에지인공지능)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2461
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI634 | 00 | 에지인공지능(영강) | EDGE NEURAL NETWORK(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI635",
+    "title": "AI SAFETY",
+    "description": "AI SAFETY (인공지능안전)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=811985&attachNo=316930&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "a5e544ee3ddb55fc76f2f71c531592716add73840755e386049c38c131e62f5d",
+      "locator": {
+        "page": 1,
+        "line": 122
+      },
+      "quote": "2026 | 1 | Seoul | College of Informatics | XAI635 | 00 | 인공지능안전(영강) | AI SAFETY(English) | 3"
+    }
+  },
+  {
+    "code": "XAI636",
+    "title": "COPYRIGHT PROTECTION IN AI",
+    "description": "COPYRIGHT PROTECTION IN AI (인공지능과저작권보호)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2462
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI636 | 00 | 인공지능과저작권보호(영강) | COPYRIGHT PROTECTION IN AI(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI638",
+    "title": "ADVANCED HEALTHCARE ARTIFICIAL INTELLIGENCE",
+    "description": "ADVANCED HEALTHCARE ARTIFICIAL INTELLIGENCE (고급헬스케어인공지능)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2463
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI638 | 00 | 고급헬스케어인공지능(영강) | ADVANCED HEALTHCARE ARTIFICIAL INTELLIGENCE(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI639",
+    "title": "UNDERSTANDING DIGITAL DATA",
+    "description": "UNDERSTANDING DIGITAL DATA (디지털데이터이해)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2464
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI639 | 00 | 디지털데이터이해(영강) | UNDERSTANDING DIGITAL DATA(English) | 3 | 3 | 0 | ●"
+    }
+  },
+  {
+    "code": "XAI707",
+    "title": "CREATIVE LEARNING PROJECT II",
+    "description": "CREATIVE LEARNING PROJECT II (창의학습프로젝트II)",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "provenance": {
+      "url": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=download&articleNo=1587482&attachNo=324855&totalNoticeYn=&totalBoardNo=",
+      "retrievedAt": "2026-11-10T20:59:10.733Z",
+      "sha256": "116273ab4ea561efba35667453f1d51dea826acbabbfb878cf9fda8a8b83bb6a",
+      "locator": {
+        "page": 1,
+        "line": 2465
+      },
+      "quote": "2026 | 2학기 | 서울 | 대학원 | 인공지능학과 | XAI707 | 00 | 창의학습프로젝트II(영강) | CREATIVE LEARNING PROJECT II(English) | 3 | 3 | 0 | ●"
+    }
+  }
+]
