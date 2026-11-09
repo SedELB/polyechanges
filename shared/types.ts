@@ -8,9 +8,9 @@ export type Level = 'elevee' | 'moyenne' | 'faible';
 
 /** Dates ISO AAAA-MM-JJ. */
 export interface TermDates {
-  start: string;
-  end: string;
-  examsEnd: string;
+  start: string | null;
+  end: string | null;
+  examsEnd: string | null;
 }
 
 /** Où un fait a été lu : copie brute identifiée par son empreinte, position dans son texte extrait. */

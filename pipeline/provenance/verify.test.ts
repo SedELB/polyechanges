@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import type { Provenance, University } from '../../shared/types.js';
+import { parseUniversities } from '../partners/registry.js';
 import { makePdf } from './testPdf.js';
 import { missingProvenance, verifyAll, verifyProvenance } from './verify.js';
 
@@ -58,6 +59,15 @@ describe('missingProvenance', () => {
     expect(missingProvenance(u)).toEqual([
       'name', 'city', 'coordinates', 'website', 'creditSystem', 'terms.fall.end', 'terms.fall.examsEnd', 'catalogPublic',
     ]);
+  });
+  it('une date de fin nulle est valide et sans source exigée', () => {
+    const u: University = {
+      ...base,
+      terms: { fall: { start: '2026-09-07', end: null, examsEnd: '2027-01-08' }, spring: null },
+      provenance: {},
+    };
+    expect(parseUniversities([u])).toHaveLength(1);
+    expect(missingProvenance(u)).toEqual(['name', 'city', 'coordinates', 'website', 'creditSystem', 'terms.fall.start', 'terms.fall.examsEnd', 'catalogPublic']);
   });
   it('ignore les faits vides et exige une source pour ceux qui sont remplis', () => {
     const u: University = { ...base, city: '', website: '', terms: { fall: null, spring: null }, restrictions: 'Aucune', contactHoursPerCredit: 1 };

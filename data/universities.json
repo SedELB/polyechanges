@@ -236,7 +236,7 @@
       "spring": null
     },
     "restrictions": null,
-    "exchangeContact": "Division of Study Abroad, National Cheng Kung University : em50961@email.ncku.edu.tw",
+    "exchangeContact": "Division of Study Abroad",
     "catalogPublic": false,
     "provenance": {
       "name": {
@@ -516,12 +516,12 @@
     "terms": {
       "fall": {
         "start": "2026-09-07",
-        "end": "2027-01-31",
+        "end": null,
         "examsEnd": "2026-12-25"
       },
       "spring": {
         "start": "2027-02-22",
-        "end": "2027-07-31",
+        "end": null,
         "examsEnd": "2027-06-11"
       }
     },
@@ -609,16 +609,6 @@
         },
         "quote": "Sep. 7 Mon. 1. Classes begin"
       },
-      "terms.fall.end": {
-        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
-        "retrievedAt": "2026-11-10T20:10:24.833Z",
-        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
-        "locator": {
-          "page": 1,
-          "line": 42
-        },
-        "quote": "31 Sun. 1. The last day for Thesis (Oral) Defenses (graduate students)"
-      },
       "terms.fall.examsEnd": {
         "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
         "retrievedAt": "2026-11-10T20:10:24.833Z",
@@ -638,16 +628,6 @@
           "line": 11
         },
         "quote": "22 Mon. 1. Classes begin"
-      },
-      "terms.spring.end": {
-        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
-        "retrievedAt": "2026-11-10T20:10:24.833Z",
-        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
-        "locator": {
-          "page": 2,
-          "line": 41
-        },
-        "quote": "31 Sat. 1.The last day for Thesis (Oral) Defenses (graduate students)"
       },
       "terms.spring.examsEnd": {
         "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
@@ -686,17 +666,17 @@
     "terms": {
       "fall": {
         "start": "2026-09-07",
-        "end": "2026-12-18",
+        "end": null,
         "examsEnd": "2026-12-24"
       },
       "spring": {
         "start": "2027-02-15",
-        "end": "2027-05-28",
+        "end": null,
         "examsEnd": "2027-06-04"
       }
     },
     "restrictions": null,
-    "exchangeContact": "Office of International Affairs, National Yang Ming Chiao Tung University : Ms. Meggie Peng, ex-in@nycu.edu.tw, +886-3-5131253",
+    "exchangeContact": "Ms. Meggie Peng",
     "catalogPublic": true,
     "provenance": {
       "name": {
@@ -775,9 +755,9 @@
         "sha256": "cd0817642098725e5f100074ffa78830a37070c30828dc7a44751c00ba41c59d",
         "locator": {
           "page": 15,
-          "line": 6
+          "line": 9
         },
-        "quote": "each hour of class per week"
+        "quote": "In principle, the maximum duration of aforementioned course is 16 weeks."
       },
       "terms.fall.start": {
         "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1169090024096927744&type=s",
@@ -788,16 +768,6 @@
           "line": 12
         },
         "quote": "Fall Semester classes begin"
-      },
-      "terms.fall.end": {
-        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1169090024096927744&type=s",
-        "retrievedAt": "2026-11-10T19:50:15.977Z",
-        "sha256": "0b6134292a1eee9b9c9dcc8d8b2e591cae0623fb4c1a2047593ee29f82838dbf",
-        "locator": {
-          "page": 1,
-          "line": 46
-        },
-        "quote": "Final Exams (Dec.21-24)"
       },
       "terms.fall.examsEnd": {
         "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1169090024096927744&type=s",
@@ -818,16 +788,6 @@
           "line": 7
         },
         "quote": "Spring Semester classes begin"
-      },
-      "terms.spring.end": {
-        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1504744174291783680&type=s",
-        "retrievedAt": "2026-11-10T19:50:21.813Z",
-        "sha256": "a7d09cb3ceb71d765144cdfba4d3c0d81860df3adf9bf84d503b18594d50450a",
-        "locator": {
-          "page": 1,
-          "line": 43
-        },
-        "quote": "Final Exams (May.31-Jun.4)"
       },
       "terms.spring.examsEnd": {
         "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1504744174291783680&type=s",

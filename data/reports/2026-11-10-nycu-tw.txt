@@ -22,8 +22,7 @@ Notes sur la fiche de l'université et la collecte
 - Années : cours d'automne = 115-1 (automne 2026), cours de printemps = 114-2 (printemps 2026), les derniers publiés.
   Dates de trimestre : calendrier 2026-2027 de NYCU (le calendrier 2027-2028 n'est pas publié). Automne 2026 :
   cours du 7 septembre, examens finaux du 21 au 24 décembre 2026. Printemps 2027 : cours du 15 février,
-  examens finaux du 31 mai au 4 juin 2027. La dernière journée de cours (18 décembre 2026, 28 mai 2027) est le
-  vendredi précédant la semaine d'examens : elle est déduite, non écrite sur le calendrier.
+  examens finaux du 31 mai au 4 juin 2027. La dernière journée de cours n'est pas écrite sur le calendrier : la fin des cours est laissée vide (non publiée).
 - Crédit : 1 heure de cours par semaine = 1 crédit par trimestre, durée maximale de 16 semaines (règlement des
   études, article 31) ; 16 retenu.
 - Coordonnées : campus principal de Guangfu (Hsinchu), prises sur la page Wikipédia de National Chiao Tung
@@ -36,6 +35,6 @@ Notes sur la fiche de l'université et la collecte
   et maîtrise), cours marqués « English Medium » aux trimestres 115-1 et 114-2.
 - Limites : 14 cours sans texte de plan de cours publié ; plusieurs plans sont rédigés en chinois même pour un
   cours donné en anglais. Les doctorats, le département de physique et les statistiques ne sont pas couverts.
-- Contact des échanges : ex-in@nycu.edu.tw (page des échanges entrants) ; l'extrait cité est la ligne
-  « Contact：Ms. Meggie Peng », l'adresse suit deux lignes plus bas sur la même page.
+- Contact des échanges : seul le nom (« Contact：Ms. Meggie Peng ») est cité ; l'adresse ex-in@nycu.edu.tw est sur une ligne
+  isolée de la même page, sans libellé, et n'est donc pas conservée.
 - Aucune restriction de programme lisible : la liste des départements ouverts aux échanges est un fichier Drive.

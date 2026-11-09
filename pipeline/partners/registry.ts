@@ -8,7 +8,7 @@ import { normalizeName, type MoveOnPartner } from './moveOn.js';
 
 export const UNIVERSITIES_PATH = 'data/universities.json';
 
-const termDatesSchema = z.object({ start: z.string(), end: z.string(), examsEnd: z.string() });
+const termDatesSchema = z.object({ start: z.string().nullable(), end: z.string().nullable(), examsEnd: z.string().nullable() });
 
 export const provenanceSchema = z.object({
   url: z.string().min(1),

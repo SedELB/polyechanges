@@ -24,10 +24,10 @@ function UniversityDates({ university, term, year }: { university: University; t
         {dates &&
           rows.map((row) => (
             <span key={row.key} className="termdates__row">
-              {row.label} : {formatDate(dates[row.key])}{' '}
+              {row.label} : {dates[row.key] === null ? 'non publiée' : formatDate(dates[row.key] as string)}{' '}
               <FactSource
                 label={row.source}
-                provenance={university.provenance[`terms.${host}.${row.key}` as UniversityFact]}
+                provenance={dates[row.key] === null ? undefined : university.provenance[`terms.${host}.${row.key}` as UniversityFact]}
               />
             </span>
           ))}
