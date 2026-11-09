@@ -526,19 +526,179 @@
     "name": "National Yang Ming Chiao Tung University",
     "moveOnName": "National Yang Ming Chiao Tung University",
     "countryCode": "TW",
-    "city": "",
-    "lat": 0,
-    "lng": 0,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Hsinchu",
+    "lat": 24.796,
+    "lng": 120.985,
+    "website": "https://www.nycu.edu.tw/nycu/en/index",
+    "catalogUrl": "https://timetable.nycu.edu.tw/",
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 16,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2026-09-07",
+        "end": "2026-12-18",
+        "examsEnd": "2026-12-24"
+      },
+      "spring": {
+        "start": "2027-02-15",
+        "end": "2027-05-28",
+        "examsEnd": "2027-06-04"
+      }
     },
     "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true
+    "exchangeContact": "Office of International Affairs, National Yang Ming Chiao Tung University : Ms. Meggie Peng, ex-in@nycu.edu.tw, +886-3-5131253",
+    "catalogPublic": true,
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/National_Yang_Ming_Chiao_Tung_University",
+        "retrievedAt": "2026-11-10T19:47:09.336Z",
+        "sha256": "a82c51194c0d499c45d39db0d73f06c2924e9d78f0e8cb07a4e54a8ed2eb4242",
+        "locator": {
+          "page": 1,
+          "line": 157
+        },
+        "quote": "National Yang Ming Chiao Tung University (NYCU; Chinese:"
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/National_Yang_Ming_Chiao_Tung_University",
+        "retrievedAt": "2026-11-10T19:47:09.336Z",
+        "sha256": "a82c51194c0d499c45d39db0d73f06c2924e9d78f0e8cb07a4e54a8ed2eb4242",
+        "locator": {
+          "page": 1,
+          "line": 112
+        },
+        "quote": "Hsinchu, Taiwan"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/National_Chiao_Tung_University",
+        "retrievedAt": "2026-11-10T19:47:45.577Z",
+        "sha256": "b1668a61f8a019c31dc668f50ab80e531767e1785a68961c5267cd292d803ccf",
+        "locator": {
+          "page": 1,
+          "line": 106
+        },
+        "quote": "24.795861°N 120.9847659°E"
+      },
+      "website": {
+        "url": "https://www.nycu.edu.tw/nycu/en/index",
+        "retrievedAt": "2026-11-10T19:51:45.279Z",
+        "sha256": "e9ca10fe81f3cdce283ea1e80c5f1ed52efd33e698dc61ec94fefd0d06a3780a",
+        "locator": {
+          "page": 1,
+          "line": 171
+        },
+        "quote": "Copyright © 2023 National Yang Ming Chiao Tung University. All rights reserved."
+      },
+      "catalogUrl": {
+        "url": "https://timetable.nycu.edu.tw/",
+        "retrievedAt": "2026-11-10T19:51:50.152Z",
+        "sha256": "97264ed02c33b4d9f70a975626af0fb3b1f661f13e32c95d58c83d612e50ec2d",
+        "locator": {
+          "page": 1,
+          "line": 1
+        },
+        "quote": "國立陽明交通大學 課程時間表"
+      },
+      "catalogPublic": {
+        "url": "https://timetable.nycu.edu.tw/",
+        "retrievedAt": "2026-11-10T19:51:50.152Z",
+        "sha256": "97264ed02c33b4d9f70a975626af0fb3b1f661f13e32c95d58c83d612e50ec2d",
+        "locator": {
+          "page": 1,
+          "line": 1
+        },
+        "quote": "國立陽明交通大學 課程時間表"
+      },
+      "creditSystem": {
+        "url": "https://imp-mm.nycu.edu.tw/wp-content/uploads/2024/11/%E5%9C%8B%E7%AB%8B%E9%99%BD%E6%98%8E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B8%E5%AD%B8%E5%89%87En20240705.pdf",
+        "retrievedAt": "2026-11-10T19:51:31.158Z",
+        "sha256": "cd0817642098725e5f100074ffa78830a37070c30828dc7a44751c00ba41c59d",
+        "locator": {
+          "page": 15,
+          "line": 6
+        },
+        "quote": "Courses of NYCU are calculated by credits."
+      },
+      "contactHoursPerCredit": {
+        "url": "https://imp-mm.nycu.edu.tw/wp-content/uploads/2024/11/%E5%9C%8B%E7%AB%8B%E9%99%BD%E6%98%8E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B8%E5%AD%B8%E5%89%87En20240705.pdf",
+        "retrievedAt": "2026-11-10T19:51:31.158Z",
+        "sha256": "cd0817642098725e5f100074ffa78830a37070c30828dc7a44751c00ba41c59d",
+        "locator": {
+          "page": 15,
+          "line": 6
+        },
+        "quote": "each hour of class per week"
+      },
+      "terms.fall.start": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1169090024096927744&type=s",
+        "retrievedAt": "2026-11-10T19:50:15.977Z",
+        "sha256": "0b6134292a1eee9b9c9dcc8d8b2e591cae0623fb4c1a2047593ee29f82838dbf",
+        "locator": {
+          "page": 1,
+          "line": 12
+        },
+        "quote": "Fall Semester classes begin"
+      },
+      "terms.fall.end": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1169090024096927744&type=s",
+        "retrievedAt": "2026-11-10T19:50:15.977Z",
+        "sha256": "0b6134292a1eee9b9c9dcc8d8b2e591cae0623fb4c1a2047593ee29f82838dbf",
+        "locator": {
+          "page": 1,
+          "line": 46
+        },
+        "quote": "Final Exams (Dec.21-24)"
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1169090024096927744&type=s",
+        "retrievedAt": "2026-11-10T19:50:15.977Z",
+        "sha256": "0b6134292a1eee9b9c9dcc8d8b2e591cae0623fb4c1a2047593ee29f82838dbf",
+        "locator": {
+          "page": 1,
+          "line": 46
+        },
+        "quote": "Final Exams (Dec.21-24)"
+      },
+      "terms.spring.start": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1504744174291783680&type=s",
+        "retrievedAt": "2026-11-10T19:50:21.813Z",
+        "sha256": "a7d09cb3ceb71d765144cdfba4d3c0d81860df3adf9bf84d503b18594d50450a",
+        "locator": {
+          "page": 1,
+          "line": 7
+        },
+        "quote": "Spring Semester classes begin"
+      },
+      "terms.spring.end": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1504744174291783680&type=s",
+        "retrievedAt": "2026-11-10T19:50:21.813Z",
+        "sha256": "a7d09cb3ceb71d765144cdfba4d3c0d81860df3adf9bf84d503b18594d50450a",
+        "locator": {
+          "page": 1,
+          "line": 43
+        },
+        "quote": "Final Exams (May.31-Jun.4)"
+      },
+      "terms.spring.examsEnd": {
+        "url": "https://www.nycu.edu.tw/nycu/en/app/artwebsite/doc?module=artwebsite&detailNo=1504744174291783680&type=s",
+        "retrievedAt": "2026-11-10T19:50:21.813Z",
+        "sha256": "a7d09cb3ceb71d765144cdfba4d3c0d81860df3adf9bf84d503b18594d50450a",
+        "locator": {
+          "page": 1,
+          "line": 43
+        },
+        "quote": "Final Exams (May.31-Jun.4)"
+      },
+      "exchangeContact": {
+        "url": "https://oia.nycu.edu.tw/oia/en/app/artwebsite/view?module=artwebsite&id=821&serno=a277c341-8d25-4a51-8495-58d1d58bbc5d",
+        "retrievedAt": "2026-11-10T19:49:28.851Z",
+        "sha256": "b8413481d0d68590290ad899ef284ef9b7b860574c0fcfbd8144582a6df17e51",
+        "locator": {
+          "page": 1,
+          "line": 175
+        },
+        "quote": "Contact：Ms. Meggie Peng"
+      }
+    }
   }
 ]
