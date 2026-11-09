@@ -1,0 +1,27 @@
+KAIST (kaist-kr) : catalogue non collecté (2026-11-10)
+
+Aucun cours collecté : la liste des cours de KAIST n'a pas pu être lue.
+- Page de liste officielle (lien de la page des échanges entrants https://io.kaist.ac.kr/mobi/incoming_app.do) :
+  http://cais.kaist.ac.kr/totalOpeningCourse (https://cais.kaist.ac.kr/totalOpeningCourse). Le serveur cais.kaist.ac.kr
+  ne répond pas depuis ce réseau (délai dépassé sur les ports 80 et 443, adresse résolue en 143.248.5.179) ; ce n'est pas
+  une page anti-robots, mais la page est inaccessible. Le catalogue du bulletin (bulletin.kaist.ac.kr) redirige vers
+  une connexion (SSO).
+- catalogPublic est donc faux de façon provisoire. À enregistrer depuis un navigateur : la page de liste des cours
+  ouverts (totalOpeningCourse), trimestres d'automne et de printemps, cours donnés en anglais, départements
+  d'informatique (School of Computing), de génie électrique (EE) et de mathématiques, 1er cycle (les échanges
+  suivent les cours de 1er cycle), puis la fiche de chaque cours.
+
+Notes sur la fiche
+- Dates : calendrier académique officiel, années 2027 et 2028 (publiées). Automne 2027 : examens finaux du 13 au
+  17 décembre 2027 (écrit tel quel). Les dates de début et de fin de cours sont sur des lignes d'un seul mot
+  (« 08-30(Mon) », « 12-17(Fri) ») que la règle des extraits (2 mots) refuse : laissées vides. Printemps 2028 :
+  seul le début des cours est publié (28 février), même raison : vide.
+- Crédit : aucune définition officielle des heures de contact par crédit trouvée sur les pages lisibles (la seule
+  mention, « 1 crédit = 16 heures de contact », est dans une fiche de l'école de gestion dont robots.txt interdit
+  le téléchargement). contactHoursPerCredit laissé vide. Système local : « no official calculation to define the
+  equivalence of ECTS and KAIST credits ».
+- Coordonnées : campus principal de Daejeon, 36.372 N 127.363 E (Wikipédia) ; les valeurs de MoveOn (36.324, 127.434)
+  sont remplacées.
+- Restriction : 50 % des cours dans la majorité (département à KAIST) ; la page indique aussi que les cours de thèse
+  ne sont pas ouverts aux échanges.
+- Contact des échanges entrants : International Relations Team, irt@kaist.ac.kr.
