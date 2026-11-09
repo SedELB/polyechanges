@@ -506,20 +506,170 @@
     "name": "National Taiwan University of Science and Technology (Taiwan Tech)",
     "moveOnName": "National Taiwan University of Science and Technology (Taiwan Tech)",
     "countryCode": "TW",
-    "city": "",
-    "lat": 25.091075,
-    "lng": 121.559834,
-    "website": "",
+    "city": "Taipei",
+    "lat": 25.013686,
+    "lng": 121.540535,
+    "website": "https://www.ntust.edu.tw/home.php?Lang=en",
     "catalogUrl": null,
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 18,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2026-09-07",
+        "end": "2027-01-31",
+        "examsEnd": "2026-12-25"
+      },
+      "spring": {
+        "start": "2027-02-22",
+        "end": "2027-07-31",
+        "examsEnd": "2027-06-11"
+      }
     },
     "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true
+    "exchangeContact": "Office of International Affairs, National Taiwan University of Science and Technology : oia@mail.ntust.edu.tw",
+    "catalogPublic": true,
+    "provenance": {
+      "name": {
+        "url": "https://www.ntust.edu.tw/home.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:11:39.954Z",
+        "sha256": "487f73a57570208cab2d08580a6ad8789e7b3a491c6eac2200d1b8994d0c59bc",
+        "locator": {
+          "page": 1,
+          "line": 98
+        },
+        "quote": "National Taiwan University of Science and Technology"
+      },
+      "city": {
+        "url": "https://www.ntust.edu.tw/home.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:11:39.954Z",
+        "sha256": "487f73a57570208cab2d08580a6ad8789e7b3a491c6eac2200d1b8994d0c59bc",
+        "locator": {
+          "page": 1,
+          "line": 99
+        },
+        "quote": "Taipei City 106335, Taiwan"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/National_Taiwan_University_of_Science_and_Technology",
+        "retrievedAt": "2026-11-10T20:09:12.926Z",
+        "sha256": "ea6edd006cfecade789456e51c4332ffbd75af2ed8a813fccbac780a15012634",
+        "locator": {
+          "page": 1,
+          "line": 105
+        },
+        "quote": "25.013686°N 121.540535°E"
+      },
+      "website": {
+        "url": "https://www.ntust.edu.tw/home.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:11:39.954Z",
+        "sha256": "487f73a57570208cab2d08580a6ad8789e7b3a491c6eac2200d1b8994d0c59bc",
+        "locator": {
+          "page": 1,
+          "line": 104
+        },
+        "quote": "Copyright © 2024 National Taiwan University of Science and Technology"
+      },
+      "catalogPublic": {
+        "url": "https://oia.ntust.edu.tw/p/412-1060-8919.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:09:59.824Z",
+        "sha256": "ca558eabd33e0d4b66a35fcb8df75e6fc11699ca23b08809049c94b8bc31eea2",
+        "locator": {
+          "page": 1,
+          "line": 87
+        },
+        "quote": "The latest course catalog is usually available 1 or 2 months prior to the semester start."
+      },
+      "creditSystem": {
+        "url": "https://oia.ntust.edu.tw/p/412-1060-8919.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:09:59.824Z",
+        "sha256": "ca558eabd33e0d4b66a35fcb8df75e6fc11699ca23b08809049c94b8bc31eea2",
+        "locator": {
+          "page": 1,
+          "line": 65
+        },
+        "quote": "1 credit is equal to 2 ECTS credits"
+      },
+      "contactHoursPerCredit": {
+        "url": "https://oia.ntust.edu.tw/p/412-1060-8919.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:09:59.824Z",
+        "sha256": "ca558eabd33e0d4b66a35fcb8df75e6fc11699ca23b08809049c94b8bc31eea2",
+        "locator": {
+          "page": 1,
+          "line": 63
+        },
+        "quote": "1 credit = 18 teaching hours"
+      },
+      "terms.fall.start": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 1,
+          "line": 16
+        },
+        "quote": "Sep. 7 Mon. 1. Classes begin"
+      },
+      "terms.fall.end": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 1,
+          "line": 42
+        },
+        "quote": "31 Sun. 1. The last day for Thesis (Oral) Defenses (graduate students)"
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 1,
+          "line": 37
+        },
+        "quote": "Final exams begin (and ends on December 25)"
+      },
+      "terms.spring.start": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 2,
+          "line": 11
+        },
+        "quote": "22 Mon. 1. Classes begin"
+      },
+      "terms.spring.end": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 2,
+          "line": 41
+        },
+        "quote": "31 Sat. 1.The last day for Thesis (Oral) Defenses (graduate students)"
+      },
+      "terms.spring.examsEnd": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 2,
+          "line": 34
+        },
+        "quote": "Final exams begin (and ends on June11)"
+      },
+      "exchangeContact": {
+        "url": "https://oia.ntust.edu.tw/p/412-1060-8919.php?Lang=en",
+        "retrievedAt": "2026-11-10T20:09:59.824Z",
+        "sha256": "ca558eabd33e0d4b66a35fcb8df75e6fc11699ca23b08809049c94b8bc31eea2",
+        "locator": {
+          "page": 1,
+          "line": 152
+        },
+        "quote": "Email: oia@mail.ntust.edu.tw"
+      }
+    }
   },
   {
     "id": "nycu-tw",
