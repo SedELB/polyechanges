@@ -144,20 +144,126 @@
     "name": "Korea Advanced Institute of Science and Technology",
     "moveOnName": "Korea Advanced Institute of Science and Technology",
     "countryCode": "KR",
-    "city": "",
-    "lat": 36.324299,
-    "lng": 127.434402,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Daejeon",
+    "lat": 36.372,
+    "lng": 127.363,
+    "website": "https://www.kaist.ac.kr/en/",
+    "catalogUrl": "http://cais.kaist.ac.kr/totalOpeningCourse",
     "creditSystem": "local",
     "contactHoursPerCredit": null,
     "terms": {
-      "fall": null,
+      "fall": {
+        "start": null,
+        "end": null,
+        "examsEnd": "2027-12-17"
+      },
       "spring": null
     },
-    "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true
+    "restrictions": "Please make sure that 50% of the courses you take are from your major (department at KAIST).",
+    "exchangeContact": "irt@kaist.ac.kr",
+    "catalogPublic": false,
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/KAIST",
+        "retrievedAt": "2026-11-10T20:38:12.703Z",
+        "sha256": "ae0708a5be685636a5f57efb143297e561c12169ba4bd48b3a06a4626280e873",
+        "locator": {
+          "page": 1,
+          "line": 200
+        },
+        "quote": "KAIST (formerly the Korea Advanced Institute of Science and Technology)"
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/KAIST",
+        "retrievedAt": "2026-11-10T20:38:12.703Z",
+        "sha256": "ae0708a5be685636a5f57efb143297e561c12169ba4bd48b3a06a4626280e873",
+        "locator": {
+          "page": 1,
+          "line": 200
+        },
+        "quote": "located in Daedeok Innopolis, Daejeon, South Korea"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/KAIST",
+        "retrievedAt": "2026-11-10T20:38:12.703Z",
+        "sha256": "ae0708a5be685636a5f57efb143297e561c12169ba4bd48b3a06a4626280e873",
+        "locator": {
+          "page": 1,
+          "line": 139
+        },
+        "quote": "36.372°N 127.363°E"
+      },
+      "website": {
+        "url": "https://www.kaist.ac.kr/en/",
+        "retrievedAt": "2026-11-10T20:38:07.932Z",
+        "sha256": "90a135a12ef1146c27332bd0ce612353523d27645c4e61a4e924fb1f3d7e00cc",
+        "locator": {
+          "page": 1,
+          "line": 7
+        },
+        "quote": "Global Value-Creative Leading University"
+      },
+      "catalogUrl": {
+        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
+        "retrievedAt": "2026-11-10T20:40:17.130Z",
+        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "locator": {
+          "page": 1,
+          "line": 51
+        },
+        "quote": "Course Information - http://cais.kaist.ac.kr/totalOpeningCourse"
+      },
+      "creditSystem": {
+        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
+        "retrievedAt": "2026-11-10T20:40:17.130Z",
+        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "locator": {
+          "page": 1,
+          "line": 96
+        },
+        "quote": "There is no official calculation to define the equivalence of ECTS and KAIST credits."
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://www.kaist.ac.kr/en/html/edu/03100101.html?year=2027",
+        "retrievedAt": "2026-11-10T20:38:28.803Z",
+        "sha256": "499db3e01731bcbe23f35e6d59c0fcf45bd8d07de1f280d28ede02fa76808119",
+        "locator": {
+          "page": 1,
+          "line": 853
+        },
+        "quote": "12-13(Mon) ~ 12-17(Fri)"
+      },
+      "restrictions": {
+        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
+        "retrievedAt": "2026-11-10T20:40:17.130Z",
+        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "locator": {
+          "page": 1,
+          "line": 80
+        },
+        "quote": "Please make sure that 50% of the courses you take are from your major (department at KAIST)."
+      },
+      "exchangeContact": {
+        "url": "https://io.kaist.ac.kr/about/contact.do",
+        "retrievedAt": "2026-11-10T20:38:17.721Z",
+        "sha256": "763a38c6c94d13eafac7d55315628ddc975195d4929834ae1d9b7c7f0f9b53e4",
+        "locator": {
+          "page": 1,
+          "line": 36
+        },
+        "quote": "+82-42-350-4930 irt@kaist.ac.kr"
+      },
+      "catalogPublic": {
+        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
+        "retrievedAt": "2026-11-10T20:40:17.130Z",
+        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "locator": {
+          "page": 1,
+          "line": 51
+        },
+        "quote": "Course Information - http://cais.kaist.ac.kr/totalOpeningCourse"
+      }
+    }
   },
   {
     "id": "korea-kr",
