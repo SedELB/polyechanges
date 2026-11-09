@@ -20,6 +20,22 @@ interface DomNode {
   children?: DomNode[];
 }
 
+/** Texte à plat d'un nœud : le contenu bloc et les `br` y sont séparés par une espace. */
+function flatText(node: DomNode): string {
+  if (node.type === 'text') return node.data ?? '';
+  if (node.type !== 'tag') return '';
+  const name = node.name?.toLowerCase() ?? '';
+  if (SKIP.has(name)) return '';
+  const inner = (node.children ?? []).map(flatText).join('');
+  return name === 'br' || BLOCK.has(name) ? ` ${inner} ` : inner;
+}
+
+/** Une rangée de tableau en une ligne : ses cellules non vides, jointes par « | ». */
+function rowLine(row: DomNode): string {
+  const cells = (row.children ?? []).filter((c) => c.type === 'tag' && (c.name === 'td' || c.name === 'th'));
+  return cells.map((c) => normalizeText(flatText(c))).filter((t) => t !== '').join(' | ');
+}
+
 function htmlLines(html: string): string[] {
   const $ = cheerio.load(html);
   const lines: string[] = [];
@@ -38,6 +54,12 @@ function htmlLines(html: string): string[] {
     const name = node.name?.toLowerCase() ?? '';
     if (SKIP.has(name)) return;
     if (name === 'br') {
+      flush();
+      return;
+    }
+    if (name === 'tr') {
+      flush();
+      current = rowLine(node);
       flush();
       return;
     }

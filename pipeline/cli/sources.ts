@@ -6,6 +6,7 @@ import { readSnapshot, takeSnapshot } from '../fetch/snapshots.js';
 import { UNIVERSITIES_PATH, loadUniversities, syncUniversities } from '../partners/registry.js';
 import { ensureFactsSource, refreshFactSources, writeSourcesReport } from '../provenance/refresh.js';
 import { findQuote, linesListing, snapshotText } from '../provenance/snapshotText.js';
+import { relocateCourses, relocateFactSources } from '../provenance/relocate.js';
 import { findRawCopy, verifyAll } from '../provenance/verify.js';
 
 const DATA_DIR = 'data';
@@ -64,6 +65,27 @@ async function verify(): Promise<number> {
   return problems.length > 0 ? 1 : 0;
 }
 
+/** Hors ligne : recale les positions des faits et des cours sur les copies brutes locales. */
+async function fix(): Promise<number> {
+  const r = await relocateFactSources(UNIVERSITIES_PATH, RAW_DIR);
+  for (const m of r.moved) {
+    console.log(`recalé : ${m.universityId}, ${m.fact} (p${m.from.page}:l${m.from.line} -> p${m.to.page}:l${m.to.line})`);
+  }
+  for (const p of r.problems) {
+    console.log(`${p.status} : ${p.universityId}, ${p.fact}, ${p.provenance.url} (${p.provenance.sha256.slice(0, 12)}) « ${p.provenance.quote} »`);
+  }
+  console.log(`faits : ${r.total} source(s), ${r.moved.length} recalée(s), ${r.unchanged} inchangée(s), ${r.problems.length} problème(s).`);
+  const db = openDb(DB_PATH);
+  try {
+    const c = await relocateCourses(db, RAW_DIR);
+    console.log(`cours d'accueil : ${c.host.changed} position(s) recalculée(s) sur ${c.host.total}`);
+    console.log(`cours de Poly : ${c.poly.changed} position(s) recalculée(s) sur ${c.poly.total}`);
+  } finally {
+    db.close();
+  }
+  return r.problems.length > 0 ? 1 : 0;
+}
+
 /** En ligne : retélécharge les sources des faits, met à jour le fichier et écrit le rapport. */
 async function refresh(only?: string): Promise<number> {
   mkdirSync(DATA_DIR, { recursive: true });
@@ -85,10 +107,11 @@ async function main(): Promise<number> {
   const [command, ...args] = process.argv.slice(2);
   if (command === 'add' && args.length === 2) return add(args[0], args[1]);
   if (command === 'find' && args.length === 2) return find(args[0], args[1]);
-  if (command === 'verify') return verify();
+  if (command === 'verify' && args.length === 0) return verify();
+  if (command === 'verify' && args.length === 1 && args[0] === '--fix') return fix();
   if (command === 'refresh') return refresh(args[0]);
   console.error(
-    'Usage : npm run source:add -- <universityId> <url> | npm run source:find -- <sha256> "<texte>" | npm run verify-sources | npm run refresh-sources [-- <universityId>]',
+    'Usage : npm run source:add -- <universityId> <url> | npm run source:find -- <sha256> "<texte>" | npm run verify-sources [-- --fix] | npm run refresh-sources [-- <universityId>]',
   );
   return 2;
 }

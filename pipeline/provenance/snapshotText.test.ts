@@ -15,13 +15,33 @@ describe('snapshotText', () => {
     const html =
       '<body><script>var a = 1;</script><style>p{}</style><p>un<br>deux</p><table><tr><td>a</td><th>b</th></tr></table><div>x<div>y</div></div><dl><dt>t</dt><dd>d</dd></dl><p>  </p><p>&nbsp;</p></body>';
     expect(await snapshotText(Buffer.from(html), 'text/html; charset=utf-8')).toEqual([
-      ['un', 'deux', 'a', 'b', 'x', 'y', 't', 'd'],
+      ['un', 'deux', 'a | b', 'x', 'y', 't', 'd'],
     ]);
   });
 
   it('extrait une page par page de PDF', async () => {
     const pages = await snapshotText(makePdf([['Calendar  2026', 'Fall begins: September 7'], ['Spring begins: February 1']]), 'application/pdf');
     expect(pages).toEqual([['Calendar 2026', 'Fall begins: September 7'], ['Spring begins: February 1']]);
+  });
+});
+
+describe('lignes de tableau', () => {
+  it('met une rangée sur une ligne, cellules vides ignorées', async () => {
+    const html =
+      '<table><tr><td>08-30(Mon)</td><td>Fall semester classes begin</td></tr><tr><td></td><td>Holiday</td></tr></table>';
+    expect(await snapshotText(Buffer.from(html), 'text/html')).toEqual([['08-30(Mon) | Fall semester classes begin', 'Holiday']]);
+  });
+  it('aplatit le contenu bloc d’une cellule', async () => {
+    const html = '<table><tr><td><p>a</p><p>b</p></td><td>c<br>d</td><th><ul><li>e</li><li>f</li></ul></th></tr></table>';
+    expect(await snapshotText(Buffer.from(html), 'text/html')).toEqual([['a b | c d | e f']]);
+  });
+  it('findQuote retrouve un extrait de cellule et la date avec son événement', async () => {
+    const pages = await snapshotText(
+      Buffer.from('<p>x</p><table><tbody><tr><td>08-30(Mon)</td><td>Classes begin</td></tr></tbody></table>'),
+      'text/html',
+    );
+    expect(findQuote(pages, 'Classes begin')).toEqual([{ page: 1, line: 2 }]);
+    expect(findQuote(pages, '08-30(Mon) | Classes begin')).toEqual([{ page: 1, line: 2 }]);
   });
 });
 
