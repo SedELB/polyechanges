@@ -62,6 +62,15 @@ export async function startTestServer(): Promise<TestServer> {
         res.setHeader('content-type', 'text/html');
         res.end('rétabli');
       }
+    } else if (route === '/gros-declare') {
+      res.setHeader('content-type', 'text/plain');
+      res.setHeader('content-length', '1000');
+      res.end('x'.repeat(1000));
+    } else if (route === '/gros-continu') {
+      // pas de content-length : corps en morceaux
+      res.setHeader('content-type', 'text/plain');
+      res.write('x'.repeat(600));
+      res.end('x'.repeat(600));
     } else if (route === '/suspendu') {
       // ne répond jamais
     } else if (route === '/corps-suspendu') {

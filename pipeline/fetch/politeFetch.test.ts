@@ -1,5 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { createPoliteFetcher, RobotsDisallowedError } from './politeFetch.js';
+import { createPoliteFetcher, ResponseTooLargeError, RobotsDisallowedError } from './politeFetch.js';
 import { startTestServer, type TestServer } from './testServer.js';
 
 let server: TestServer;
@@ -164,5 +164,24 @@ describe('createPoliteFetcher : post', () => {
   it("échoue quand l'hôte ne répond pas avant le délai", async () => {
     const fetcher = createPoliteFetcher({ minDelayMs: 0, timeoutMs: 50, retries: 0 });
     await expect(fetcher.post(`${server.base}/suspendu`, { a: '1' })).rejects.toThrow();
+  });
+});
+
+describe('taille maximale des réponses', () => {
+  it('refuse tôt une réponse dont le content-length dépasse le maximum, sans nouvelle tentative', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, maxBytes: 500 });
+    const before = server.hits.filter((h) => h === '/gros-declare').length;
+    await expect(fetcher.get(`${server.base}/gros-declare`)).rejects.toBeInstanceOf(ResponseTooLargeError);
+    expect(server.hits.filter((h) => h === '/gros-declare').length - before).toBe(1);
+  });
+  it('arrête la lecture d’un corps en morceaux qui dépasse le maximum', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, maxBytes: 1000 });
+    const before = server.hits.filter((h) => h === '/gros-continu').length;
+    await expect(fetcher.get(`${server.base}/gros-continu`)).rejects.toThrow(/trop volumineuse/);
+    expect(server.hits.filter((h) => h === '/gros-continu').length - before).toBe(1);
+  });
+  it('accepte une réponse sous le maximum', async () => {
+    const fetcher = createPoliteFetcher({ minDelayMs: 0, maxBytes: 2000 });
+    expect((await fetcher.get(`${server.base}/gros-continu`)).body.length).toBe(1200);
   });
 });

@@ -41,11 +41,25 @@ function zipEntries(buf: Buffer): Map<string, ZipEntry> {
   return entries;
 }
 
-function textOf(entries: Map<string, ZipEntry>, name: string): string {
+/** Taille maximale d'une partie décompressée : un classeur corrompu ou hostile ne doit pas saturer la mémoire. */
+export const MAX_ENTRY_BYTES = 64 * 1024 * 1024;
+
+function textOf(entries: Map<string, ZipEntry>, name: string, maxBytes: number): string {
   const e = entries.get(name);
   if (!e) throw new Error(`Partie absente du classeur : ${name}`);
-  if (e.method === 0) return e.compressed.toString('utf8');
-  if (e.method === 8) return inflateRawSync(e.compressed).toString('utf8');
+  const tooBig = () => new Error(`Partie du classeur trop volumineuse une fois décompressée (plus de ${maxBytes} octets) : ${name}`);
+  if (e.method === 0) {
+    if (e.compressed.length > maxBytes) throw tooBig();
+    return e.compressed.toString('utf8');
+  }
+  if (e.method === 8) {
+    try {
+      return inflateRawSync(e.compressed, { maxOutputLength: maxBytes }).toString('utf8');
+    } catch (err) {
+      if ((err as NodeJS.ErrnoException).code === 'ERR_BUFFER_TOO_LARGE') throw tooBig();
+      throw err;
+    }
+  }
   throw new Error(`Méthode de compression non prise en charge : ${e.method}`);
 }
 
@@ -67,27 +81,27 @@ function columnIndex(letters: string): number {
 }
 
 /** Feuilles d'un classeur .xlsx (texte et nombres tels qu'écrits ; les formules ne sont pas évaluées). */
-export function readXlsx(buf: Buffer): Sheet[] {
+export function readXlsx(buf: Buffer, maxEntryBytes = MAX_ENTRY_BYTES): Sheet[] {
   const entries = zipEntries(buf);
   const shared = entries.has('xl/sharedStrings.xml')
-    ? [...textOf(entries, 'xl/sharedStrings.xml').matchAll(/<si>([\s\S]*?)<\/si>/g)].map((m) =>
+    ? [...textOf(entries, 'xl/sharedStrings.xml', maxEntryBytes).matchAll(/<si>([\s\S]*?)<\/si>/g)].map((m) =>
         unescapeXml([...m[1]!.matchAll(/<t[^>]*>([\s\S]*?)<\/t>/g)].map((t) => t[1]).join('')),
       )
     : [];
   const rels = new Map<string, string>();
-  for (const m of textOf(entries, 'xl/_rels/workbook.xml.rels').matchAll(/<Relationship\b[^>]*>/g)) {
+  for (const m of textOf(entries, 'xl/_rels/workbook.xml.rels', maxEntryBytes).matchAll(/<Relationship\b[^>]*>/g)) {
     const id = /\bId="([^"]*)"/.exec(m[0]!)?.[1];
     const target = /\bTarget="([^"]*)"/.exec(m[0]!)?.[1];
     if (id && target) rels.set(id, target.replace(/^\/?(xl\/)?/, 'xl/'));
   }
   const sheets: Sheet[] = [];
-  for (const m of textOf(entries, 'xl/workbook.xml').matchAll(/<sheet\b[^>]*>/g)) {
+  for (const m of textOf(entries, 'xl/workbook.xml', maxEntryBytes).matchAll(/<sheet\b[^>]*>/g)) {
     const name = unescapeXml(/\bname="([^"]*)"/.exec(m[0]!)?.[1] ?? '');
     const rid = /\br:id="([^"]*)"/.exec(m[0]!)?.[1] ?? '';
     const path = rels.get(rid);
     if (!path) continue;
     const rows: (string | undefined)[][] = [];
-    for (const r of textOf(entries, path).matchAll(/<row\b[^>]*>([\s\S]*?)<\/row>/g)) {
+    for (const r of textOf(entries, path, maxEntryBytes).matchAll(/<row\b[^>]*>([\s\S]*?)<\/row>/g)) {
       const row: (string | undefined)[] = [];
       for (const c of r[1]!.matchAll(/<c r="([A-Z]+)\d+"([^>]*?)(?:\/>|>([\s\S]*?)<\/c>)/g)) {
         const body = c[3] ?? '';

@@ -9,6 +9,13 @@ export class RobotsDisallowedError extends Error {
   }
 }
 
+export class ResponseTooLargeError extends Error {
+  constructor(url: string, max: number) {
+    super(`Réponse de ${url} trop volumineuse (plus de ${max} octets)`);
+    this.name = 'ResponseTooLargeError';
+  }
+}
+
 export interface FetchResult {
   body: Buffer;
   contentType: string;
@@ -25,6 +32,8 @@ export interface PoliteFetcherOptions {
   minDelayMs?: number;
   timeoutMs?: number;
   retries?: number;
+  /** Taille maximale d'une réponse, en octets (défaut 50 Mo). */
+  maxBytes?: number;
   now?: () => number;
   sleep?: (ms: number) => Promise<void>;
 }
@@ -40,6 +49,7 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
   const minDelayMs = opts.minDelayMs ?? 3000;
   const timeoutMs = opts.timeoutMs ?? 30000;
   const retries = opts.retries ?? 2;
+  const maxBytes = opts.maxBytes ?? 50 * 1024 * 1024;
   const now = opts.now ?? Date.now;
   const sleep = opts.sleep ?? ((ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms)));
 
@@ -63,6 +73,30 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
     body: Buffer;
   }
 
+  /** Lit le corps en s'arrêtant dès que la taille maximale est dépassée. */
+  async function readBody(res: Response, url: string): Promise<Buffer> {
+    const declared = Number(res.headers.get('content-length'));
+    if (Number.isFinite(declared) && declared > maxBytes) {
+      await res.body?.cancel();
+      throw new ResponseTooLargeError(url, maxBytes);
+    }
+    if (!res.body) return Buffer.alloc(0);
+    const reader = res.body.getReader();
+    const chunks: Buffer[] = [];
+    let total = 0;
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      total += value.length;
+      if (total > maxBytes) {
+        await reader.cancel();
+        throw new ResponseTooLargeError(url, maxBytes);
+      }
+      chunks.push(Buffer.from(value));
+    }
+    return Buffer.concat(chunks);
+  }
+
   /** Une requête vers l'hôte, lecture du corps comprise, avec délai et nouvelles tentatives (5xx, erreur réseau, délai dépassé). */
   async function request(url: string, form?: Record<string, string>): Promise<Fetched> {
     const origin = new URL(url).origin;
@@ -78,7 +112,7 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
           body: form ? new URLSearchParams(form).toString() : undefined,
           signal: AbortSignal.timeout(timeoutMs),
         });
-        const body = Buffer.from(await res.arrayBuffer());
+        const body = await readBody(res, url);
         if (res.status >= 500) throw new Error(`HTTP ${res.status} pour ${url}`);
         return {
           status: res.status,
@@ -88,6 +122,7 @@ export function createPoliteFetcher(opts: PoliteFetcherOptions = {}): PoliteFetc
           body,
         };
       } catch (err) {
+        if (err instanceof ResponseTooLargeError) throw err;
         lastError = err;
       }
     }

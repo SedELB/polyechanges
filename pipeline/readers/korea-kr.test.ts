@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { findQuote, snapshotText } from '../provenance/snapshotText.js';
+import { readXlsx } from './xlsx.js';
 import { listRows, mergeRows, readSheets, sheetHtml, toCourse } from './korea-kr.build.js';
 
 function fixture(name: string): Buffer {
@@ -85,5 +86,14 @@ describe('lecture des classeurs de Korea University', () => {
       expect(hits).toEqual([{ page: 1, line: r.line }]);
       expect(r.quote).toContain(r.code);
     }
+  });
+});
+
+describe('limite de taille des classeurs', () => {
+  it('refuse une partie dont la taille décompressée dépasse le maximum', () => {
+    expect(() => readXlsx(fixture('korea-kr-fall-undergraduate.xlsx'), 100)).toThrow(/trop volumineuse/);
+  });
+  it('lit le classeur sous le maximum', () => {
+    expect(readXlsx(fixture('korea-kr-fall-undergraduate.xlsx')).length).toBeGreaterThan(0);
   });
 });
