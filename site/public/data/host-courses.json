@@ -12707,5 +12707,959 @@
     "sourcePage": 2,
     "sourceLine": 22,
     "snapshotSha256": null
+  },
+  {
+    "id": 704,
+    "universityId": "sciencetokyo-jp",
+    "code": "CSC.T421",
+    "title": "Human Computer Interaction",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-23-442323-0-0/202604903?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 705,
+    "universityId": "sciencetokyo-jp",
+    "code": "CSC.T422",
+    "title": "Mathematical Theory of Programs",
+    "description": "Mathematical Theory of Programs is an area of theoretical computer science to build mathematical models of computer programs and to give a basis for analyzing, verifying and understanding their properties. In this course, you learn basic theories such as operational semantics, denotational semantics, axiomatic semantics and formal verification techniques for program behaviors. As applications of basic theories, you also learn domain theory.\nThe main theme of this lecture is to build a basis to apply concept and theory of program theories such as operational semantics, denotational semantics, axiomatic semantics. Through this course, you learn the formal definitions of programming languages. You also learn techniques of proof for validations of program behavior in a level that you can apply them to another area of computer science through exercises.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-23-442323-0-0/202604850?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 706,
+    "universityId": "sciencetokyo-jp",
+    "code": "CSC.T426",
+    "title": "Software Development Methodology",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-23-442323-0-0/202604854?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 707,
+    "universityId": "sciencetokyo-jp",
+    "code": "CSC.T431",
+    "title": "Cyber-Physical Systems",
+    "description": "A cyber-physical system (CPS) is a collection of computational entities that communicate with one other and interact with the physical world via sensors and actuators. Such systems are omnipresent today, from automobiles to smart cities. In this course, basic concepts, theory, and issues of cyber-physical systems are examined. The course aims to ensure that students not only grasp the concepts, but also obtain basic skills to formally model and verify cyber-physical systems.\nBy the end of the course students should be able to:(1) explain the basic concepts of cyber-physical systems, reactive systems, synchronous/asynchronous computation models, dynamical systems, timed model, and hybrid systems.(2) have an understanding of safety/liveness properties of syncronous/asynchronous computation models.(3) have an understanding of the properties of dynamical systems, timed model, and hybrid systems.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-23-442323-0-0/202604862?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 708,
+    "universityId": "sciencetokyo-jp",
+    "code": "CSC.T438",
+    "title": "Distributed Algorithms",
+    "description": "Distributed algorithms form the basis of cloud computing systems and networked applications. The primary objective of this course is to present the basic concepts, theory, and techniques that are at the heart of distributed systems.As much as possible, the course tries to relate algorithms and their proofs, with practical implementations, by interleaving coursework with occasional practical exercises.This course extends basic lectures on operating systems concepts (in particular about concurrency) and presents the fundamental aspects of distributed algorithms, such as causality, resource allocation, the evaluation of global predicates, and message ordering, as well as the most common approaches used to solve them.IMPORTANT: This course is NOT HyFlex.\nUpon completing this course, the student will be able to understand how distributed systems work and what problems these systems need to address. This understanding will be a useful tool to formalize ideas and acquire a sharper and deeper understanding of the issues involved in more specific areas of asynchronous concurrent systems, such as cloud computing systems, peer-to-peer systems, cluster computing, IoT, system-on-chip, etc.In addition and more importantly, the student will acquire a modular view of algorithms by being able to decompose classical algorithms into their basic parts and recombine them to address new problems or new environments.At the end of the course, the student should be able to read and quickly understand most of the recent literature on distributed algorithms.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-23-442323-0-0/202610377?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 709,
+    "universityId": "sciencetokyo-jp",
+    "code": "CSC.T440",
+    "title": "Computer Organization and Architecture",
+    "description": "This course aims to provide students with cutting-edge technologies and future trends in computer architecture, with a focus on the microprocessor, which plays a crucial role in the downsizing, personalization, and improvement of performance and power consumption in computer systems such as PCs, personal mobile devices, and embedded systems.In this course, students will first learn about instruction set architectures and mechanisms for extracting instruction-level parallelism used in out-of-order superscalar processors. After that, students will learn mechanisms for exploiting thread level parallelism adopted in multi-processors and multi-core processors.\nBy taking this course, students will learn:(1) Organization and architecture for today's high-performance processors(2) Mechanisms for extracting instruction level parallelism used in high-performance microprocessors(3) Methods for exploiting thread level parallelism adopted in multi-processors and multi-core processors",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-23-442323-0-0/202637926?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 710,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.C441",
+    "title": "VLSI Technology I",
+    "description": "It is very important to understand the large-scale integrated circuit (VLSI) technology to support the modern society in the underlying. Therefore, the CMOS integrated circuit will be discussed, in particular, scaling techniques, miniaturization technology (exposure technique, film forming technique, an etching technique, ion-implantation, CMP techniques, etc.), memory device technology, sensor technology, actuator technology, interconnect technology, passive device technology, packaging technology, and others.\nBy course of this lecture, the goals is to understand the large-scale integrated circuits that support modern society. In addition, we aim to be able to apply to the actual integrated circuit design.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202606894?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 711,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.D402",
+    "title": "Fundamentals of Electronic Materials I",
+    "description": "Band structure of electronic materials has an essential role as a basis for various electronic devices. We can extract important properties for device applications from the band structure. However, it is not easy to understand the physical interpretation of the band structure. In this course, we focus on learning how the band structures of crystalline solids are formed and how the band structures can be calculated. Through this course, students will be able to gain a better understanding of the physical interpretation of band structure. This course covers band theories of solids. The concepts of Brillouin zone, Bloch theorem, empty lattice approximation, and chemical bonds in solids are introduced as a basis for the band theories. Then, students learn nearly-free-electron methods using empty-lattice and perturbation-potential approximations and tight binding theory that can accurately reproduce the band structures of semiconductors. In particular, we learn the calculation methodology of the band structures of diamond- and zincblend-type semiconductors, based on semi-empirical tight binding theory.\n1. To understand the generation of band structures in periodic lattice potentials using the nearly-free-electron model of crystalline solids based on perturbation theory.2. To comprehend the concept and methodology of tight binding theory.3. To understand the band structures of diamond- and zincblend-type semiconductors.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202638195?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 712,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.D422",
+    "title": "Fundamentals of Organic Electronics",
+    "description": "This course aims to provide students with a systematic understanding of the electronic properties of organic semiconductors and dielectric materials, as well as the operating principles of electronic devices based on these materials. Beginning with fundamental dielectric properties such as polarization and dielectric response, the course covers a broad range of essential concepts in device physics, including molecular orbitals derived from the Hückel method, the HOMO/LUMO framework, charge carrier transport in amorphous and crystalline materials, charge carrier injection from electrodes, and optical absorption and exciton generation.\nBuilding on these fundamentals, the course also examines representative application devices—such as electrophotography, organic light-emitting diodes (OLEDs), organic field-effect transistors (OFETs), and organic photovoltaic cells (OPVs)—with the goal of developing a unified understanding of the relationships between material properties and device performance. By linking key elements including dielectric behavior, electronic states in organic materials, carrier transport, injection interfaces, and photoexcitation processes, students will acquire perspectives necessary for material selection and device design. Upon completion of the course, students are expected to gain advanced and practical knowledge that connects “understanding of material properties” with “understanding of device operation,” enabling them to apply these insights to analysis, design, and problem identification in research on electronic devices.\n1. Explain the fundamental material properties of dielectric materials and organic electronic materials.2. Understand and appropriately apply charge-transport models in organic materials (i.e., distinguish and use suitable models depending on the situation).3. Describe charge injection from electrodes and the relevant interfacial properties.4. Explain the processes of optical absorption, exciton formation, and charge generation.5. Explain the operating principles of various devices based on the underlying material properties.6. Understand causal relationships between material properties and device characteristics, and apply this understanding to device design and analysis.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202640680?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 713,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.D431",
+    "title": "Fundamentals of Light and Matter I",
+    "description": "Fundamentals of optics and optical properties of matters are lectured for the students who major in electronics and applied physics. It is also open for the students in other departments who are interested in the optics and optical properties of matters. The lecture is divided into three parts: (a) electromagnetic wave and matter by Prof. Toma (b) fundamentals of quantum optics by Prof. Arai and (c) photoelectric conversion devices by Prof. Arai. In (a), the students learn light propagation in a matter, refractive index, polarization, light reflection and refraction, optical waveguide, optical fiber and spectroscopy. In (b), we quantize electric magnetic fields and examine photon number states and coherent states using an operator method. Then, we learn the relation between atomic energy structures and orbital and spin angular momenta, and solve selection rules on optical transitions. We also learn the fundamentals of laser oscillation. In (c), students will learn the fundamentals of light emitting and photodetecting devices through lectures on the principles of photo carrier generation and light emission in inorganic and organic semiconductors.This lecture is for the students in Department of Electrical and Electronic Engineering. The students belonging to other courses are also recommended to have this lecture who are going to learn Fundamentals of Light and Matter IIa, IIb and IIc.\nThe students will understand：(a) propagation in a matter, refractive index, polarization, light reflection and refraction, optical waveguide, optical fiber and spectroscopy.(b) algebraic calculations with creation and annihilation operators, photon number states and coherent states, label of atomic energy levels with angular momenta, selection rules, and lasing property.(c) the differences in the mechanisms of photocarrier generation in inorganic and organic semiconductors.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202606902?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 714,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.D442",
+    "title": "Special Seminar on Semiconductor Memory",
+    "description": "In electrical/electronic engineering and information/communication engineering, it is important to understand the semiconductor memory technology to support the current electronics industry. Specific topics of lectures relate to semiconductor memory circuits, structures, manufacturing methods, design technology, testing technology, reliability, packaging technology and their production methods will be discussed to comprehensively understand.\n[Target] To understand the semiconductor memory to support the current electronics industry. In addition, we aim to be able to apply to the actual memory circuit design.[Theme] In this lecture on semiconductor memory circuits, their structures, production method, design technology, test technology, reliability, packaging technology and their production methods will be discussed to comprehensively understand for the foundamental on the electrical/electronic engineering and information communication engineering.Corresponding educational goals are:(1) Specialist skills: Fundamental specialist skills(4) Applied skills (inquisitive thinking and/or problem-finding skills) Organization and analysis(7) Skills acquiring a wide range of expertise, and expanding it into more advanced and other specialized areas",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202630334?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 715,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.D443",
+    "title": "Special Lecture I on Integrated Green-niX",
+    "description": "This course provides a comprehensive overview of technological trends in integrated semiconductor devices, which support modern society, from a wide range of perspectives, including devices, processes, design, simulation and applications. These lectures will be provided by lecturers from various companies that are leading the semiconductor industry. In addition to providing an overview of the basics of technology in each field, students can listen to the lecturers' talks based on their own experiences, such as what is important as industrial technology on the hot trends in the semiconductor industry and what perspectives those who are responsible for technology development should have. In addition, students will learn through practical examples the importance of collaboration between different fields in the development of semiconductor technology, which is a comprehensive technology that spans a wide range of fields. Through this course, students will learn about the various technological elements that support semiconductor devices and the efforts of each company, and will understand the relationship between their own field of expertise and the semiconductor industry, and will develop their ability to develop technology with an eye on the market. Through these lectures, students can acquire the knowledge and skills necessary to realize their own career designs and develop the ability to collaborate with others to solve problems. This lecture (Special Lecture I on Integrated Green-niX) and the Special Lecture II on Integrated Green-niX to be held in the 3Q will be offered side by side with a common concept, and will be structured to cover a wide range of content. This course can be considered as an entrepreneurship course (corresponding GA is GA1M).\nThrough this course, the goal is to understand cutting-edge technology trends in semiconductor devices and acquire the skills to develop technology from a bird's-eye view with market awareness in mind. In addition, we aim to gain an understanding of the diverse career paths in the semiconductor industry through experiences in semiconductor technology development provided by corporate instructors from various specialized fields.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202636463?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 716,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.D444",
+    "title": "Special Lecture II on Integrated Green-niX",
+    "description": "This course provides a comprehensive overview of technological trends in integrated semiconductor devices, which support modern society, from a wide range of perspectives, including devices, processes, design, metrology, inspection and applications. These lectures will be provided by lecturers from various companies that are leading the semiconductor industry. In addition to providing an overview of the basics of technology in each field, students can listen to the lecturers' talks based on their own experiences, such as what is important as industrial technology on the hot trends in the semiconductor industry and what perspectives those who are responsible for technology development should have. In addition, students will learn through practical examples the importance of collaboration between different fields in the development of semiconductor technology, which is a comprehensive technology that spans a wide range of fields. Through this course, students will learn about the various technological elements that support semiconductor devices and the efforts of each company, and will understand the relationship between their own field of expertise and the semiconductor industry, and will develop their ability to develop technology with an eye on the market. Through these lectures, students can acquire the knowledge and skills necessary to realize their own career designs and develop the ability to collaborate with others to solve problems. This lecture (Special Lecture II on Integrated Green-niX) and the Special Lecture I on Integrated Green-niX held in the 1Q will be offered side by side with a common concept, and will be structured to cover a wide range of content. This course can be considered as an entrepreneurship course (corresponding GA is GA1M).\nThrough this course, the goal is to understand cutting-edge technology trends in semiconductor devices and acquire the skills to develop technology from a bird's-eye view with market awareness in mind. In addition, we aim to gain an understanding of the diverse career paths in the semiconductor industry through experiences in semiconductor technology development provided by corporate lecturers from various specialized fields.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202636835?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 717,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.D471",
+    "title": "Physics and Applications of Silicon Devices",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202644003?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 718,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.P402",
+    "title": "Control and analysis of power and motor drive systems",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202628030?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 719,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.P412",
+    "title": "Power electronics circuits and systems",
+    "description": "This course presents analysis and control methods of power electronics circuits converting and controlling of electric power by using semiconductor switching power devices. It deals with switching transitions in MOSFETs and IGBTs, commutation in voltage-source bridge converters, voltage and current feedback control, applications to grid-connected converters, various grid-connection converters and related emerging technologies.Analysis of power electronics circuit requires consideration of transient response in a very wide range of time scale from a utility grid period of 20 milli seconds to a switching transition of several hundred nano seconds. Although recent computers have a high calculation performance, a lot of computation would be required to analyze the dynamic response in a long duration with a quire small time step. This course introduces some analysis and modeling methods to solve the dynamic response of the power electronics converters effectively. These methods are also valuable for controlling these converters. Student are expected to study these fundamental methods as well as their applications to various other practical problems.\nBy the end of the course, students will be able to:1) Understand the basic structure and driving methods for power MOSFETs and insulated gate bipolar transistors (IGBTs).2) Understand the circuit topology and operating principles in basic power electronics circuits.3) Analyze the operating characteristics of basic power electronics circuits.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202628032?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 720,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.P414",
+    "title": "Power electronics control and analysis",
+    "description": "This course presents analysis and control methods of power electronics circuits converting and controlling of electric power by using semiconductor switching power devices. It deals with switching transitions in MOSFETs and IGBTs, commutation in voltage-source bridge converters, voltage and current feedback control, applications to grid-connected converters, various grid-connection converters and related emerging technologies.Analysis of power electronics circuit requires consideration of transient response in a very wide range of time scale from a utility grid period of 20 milli seconds to a switching transition of several hundred nano seconds. Although recent computers have a high calculation performance, a lot of computation would be required to analyze the dynamic response in a long duration with a quire small time step. This course introduces some analysis and modeling methods to solve the dynamic response of the power electronics converters effectively. These methods are also valuable for controlling these converters. Student are expected to study these fundamental methods as well as their applications to various other practical problems.\nBy the end of the course, students will be able to:1) Understand the circuit topology and operating principles in basic power electronics circuits.2) Analyze and control basic power electronics circuits.3) Understand the control strategy for grid connection converters.4) Design the main circuit and the controller in a simple grid connection converter.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202628034?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 721,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.P451",
+    "title": "Plasma Engineering",
+    "description": "Plasma is electrically neutral ionized gas consisting of electrons and ions. Plasma plays an important role in modern engineering. Theory and concepts dealing with the plasma are fairly common in the electrical and electronic engineering.In this course, students will learn from the basics of plasma physics, plasma generation, measurement, to industrial applications of plasma.It includes excitation and ionization, motion of charged particles in electromagnetic fields, plasma as particles, plasma as fluid, collision and transportation, confinement of plasma, wave in the plasma, and plasma measurement.\nThe concept and discussion of plasma physics have become one of the fundamentals in all aspects of science and engineering. In particular, electrical and electronic engineers and researchers must learn plasma physics as well as electromagnetism. The goal is to understand fundamentals and applications of plasmas from the viewpoints of engineering, starting from movement of charged particles in electromagnetic field, characteristics as a group of charged particles, and ionization phenomena.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202606901?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 722,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.P461",
+    "title": "Pulsed Power Technology",
+    "description": "This lecture provides the generation, diagnostics, and applications of high power electrical pulses. A wide range of pulsed power technology will be discussed, including fundamental as well as advanced concept. Topics covered are high-voltage generators, energy storage devices and circuits, high power switches, pulse forming networks, pulse forming lines, magnetic pulse compression circuits, and the electromagnetic and optical diagnostics of pulsed power systems. Applications of pulsed power technology for lasers, non-thermal plasma, and environmental and medical applications will be discussed. Students are required to simulate typical pulsed power circuits and gas breakdown.The students will comprehensively understand pulsed power technologies, which have been widely used in industry, through the generation, diagnostics, and applications of high power electrical pulses.\nUpon completion of this lecture students should be able to design pulsed power circuits including high-power switches, pulse forming networks/lines with discharge loads, using LTSpice circuit simulator or MATLAB software to solve various pulsed power circuits and gas breakdown. They should also be able to choose appropriate methods of measuring, grounding and shielding techniques for pulsed large currents and high voltages, and understand the applications of pulsed power technology.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202606898?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 723,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.S401",
+    "title": "Advanced Electromagnetic Waves",
+    "description": "This course focuses on direct solution to Maxwell's equation, diffraction and scattering of electromagnetic wave. Topics include the derivation and the interpretation of solution to wave equation, field equivalent theorem, and scattering in cylindrical coordinate system and its interpretation. By combining lectures and reports, the course enables students to understand the analysis methods of electromagnetic wave and their interpretations. The course follows electricity and magnetism, electromagnetic fields and waves and waveguide engineering and gives students deep interpretations on radiation and scattering of electromagnetic waves and is followed by advanced courses such as guided waveguide circuit theory, electrical modelling and simulations and RF measurement engineering.\nBy the end of this course, students will be able to:1) Derive wave equation from Maxwell's equation and understand the meaning of its solution.2) Understand the meaning of field equivalent theorem.3) Solve scattering problems in cylindrical coordinate system.4) Understand the meaning of diffraction and scattering of electromagnetic wave.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202606911?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 724,
+    "universityId": "sciencetokyo-jp",
+    "code": "EEE.S451",
+    "title": "Wireless Communication Engineering",
+    "description": "This course enables students to have basic techniques to design wireless communication systems such as wireless LANs and cellular systems as in our daily lives. By picking up IEEE802.11a as a representative of modern wireless communication system, the course gives details about technologies used in the system such as interference management, diversity combining, and multiplexing. At the end of the course, students will be able to understand the design concept, transceiver architecture, role of components, and specifications of IEEE802.11a wireless LAN. In the class, advanced knowledge on channel propagation, modulation/demodulation, diversity combining, error correction coding, adaptive modulation coding, adaptive equalizer, orthogonal frequency multiplexing, array signal processing, and MIMO multiplexing are lectured and all of them are mandatory technologies for modern wireless communication systems.\nBy the end of this course, students will be able to: 1) Design link budget of wireless communication systems at given environments.2) Understand transceiver architecture and its specifications of modern wireless LANs and cellular systems.3) Describe wireless communication systems mathematically by utilizing Fourier transform and applied probability and statistics4) Understand general technologies for interference, channel fading, and multiplexing used in modern wireless communication systems.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202606905?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 725,
+    "universityId": "sciencetokyo-jp",
+    "code": "ICT.A406",
+    "title": "Human-Centric Information Systems I",
+    "description": "In the field of human-centric information systems, the instructor gives lectures on selected topics from media information processing, intelligent information processing, sensory information processing and biological information processing. The background science and the technologies of both hardware and software are discussed.This course is aiming at providing the basic knowledge to understand human-centric information systems.\nBy completing this course, students will be able to (1) Have an understanding of fundamentals on psychophysics, statistics, measurement engineering, multivariate analysis, display engineering, and human interface. (2) Then based on (1), find the relations of those methodologies to media information processing, intelligent information processing, sensory information processing and biological information processing,(3) Apply those methodologies to their own researches.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202604680?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 726,
+    "universityId": "sciencetokyo-jp",
+    "code": "ICT.A418",
+    "title": "Human-Centric Information Systems II",
+    "description": "In the field of human-centric information systems, the instructor gives lectures on the topics include information processing, network, human interface, wave analysis, acoustic systems, signal processing, information theory, information processing system, and pattern recognition. The background science and hardware/software technologies related to information systems, and also the latest trends in this field, are introduced.This course is aiming at overviewing the research, development, and use of human-centric information systems, as well as complehensively understanding the technologies that support those systems.\nBy completing this course, students will be able to (1) Have a comprehensive understanding of modern information system technology such as fundamentals on psychophysics, statistics, measurement engineering, display engineering, and human interface. (2) Learn the background science and hardware/software technologies related to information systems, such as information processing, network, and human interface, together with the up-to-date trends in this field.(3) Apply those knowledge to their own researches.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202604681?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 727,
+    "universityId": "sciencetokyo-jp",
+    "code": "ICT.C401",
+    "title": "Modern Cryptography",
+    "description": "Models, security definitions, and security proofs of cryptographic techniques such as encryption schemes, message authentication, digital signature, secret sharing, are explained.Cryptography deals not only encryption system but also message authentication,digital signature, user authentication, etc. The security of these techniques is guaranteed by mathematics, especially number theory. Students are expected to learn the theory behind their techniques.\nAt the end of this course, students will be able to 1) explain the mechanism of fundamental cryptographic technology, 2) explain the security background of cryptographic techniques, 3) explain the difference between computational security and information theoretical security, 4) distinguish what we can achieve by using modern cryptograph.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202604669?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 728,
+    "universityId": "sciencetokyo-jp",
+    "code": "ICT.H409",
+    "title": "Optics in Information Processing",
+    "description": "[Course description]Starting with the physical meaning of digital image information, the relation between radiometry and photometry is discussed. Next, the fundamental knowledge required for understanding image acquisition, processing, and display systems is explained, such as geometrical optics and aberration theory, basics of wave optics, Fourier analysis of optical imaging systems. According to this theoretical background, the characteristics of an imaging system are discussed, such as the resolution and the depth of field of an imaging system, along with the examples of a digital camera, video, and microscope. In addition, the basic theory of color science is introduced along with the application to the color imaging and display. Finally, the principle and limitations of 3D image acquisition and display technology are discussed based on the knowledge of geometrical and wave optics.[Aim]Based on the concept of optics as information media, students will understand the characteristics of optical imaging systems by learning the fundamentals of geometrical optics, wave optics, radiometry, and photometry. Since the transmission of visual information is mainly mediated by light, gaining the knowledge of optics enables students to deal with the visual information systems, optical measurement devices, and other related systems. Moreover, the students will grasp the technical components required for the development of practical systems.\nBy the end of this course, students will be able to 1. Explain the fundamentals of geometrical optics, wave optics, radiometry, and photometry, 2. Comprehend the concept of optics as information media, and apply it to understand the characteristics of optical imaging systems,3. Find the appropriate direction to learn more details for the development of practical imaging systems.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202604739?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 729,
+    "universityId": "sciencetokyo-jp",
+    "code": "ICT.H411",
+    "title": "Basic Sensation Informatics",
+    "description": "It is described how human perceptual system obtains, transfers, analyzes and integrates information from the outside world so that a final perceptual image can be created in human brain. Fundamental aspects of visual and other sensory systems, including the structures, methods for measuring the perceptual responses and psychophysical and physiological functions, are explained showing many experimental data.This will allow them to understand basic knowledge about the functions and structures of human sensory systems and the way of thinking when studying human sensory systems.\nBy the end of this course, students will be able to 1) understand the basic properties of human sensory systems such as vision and hearing and 2) explain the relationship between the properties and information systems.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202604741?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 730,
+    "universityId": "sciencetokyo-jp",
+    "code": "ICT.I415",
+    "title": "VLSI System Design",
+    "description": "This course is designed to cover the underlining theories and technologies which support the systematic design process of current VLSIs.\nDevelop deep understanding of mathematical theories and algorithms for solving important CAD problems for VLSI system designs, especially in logic synthesis and high-level synthesis.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202604743?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 731,
+    "universityId": "sciencetokyo-jp",
+    "code": "ICT.I419",
+    "title": "VLSI Layout Design",
+    "description": "VLSIs that support information and communications engineering are realized through system and behavior design, logic and circuit design, layout design, and performance verification. Among these design stages, layout design is often called physical design or place and route by the procedures included in it. The purpose of this lecture is to understand the fact that layout design is one of the most important design stages by which the performance of VLSI is highly affected, and to acquire basic layout design methods.\nBy the end of this course, students will be able to:1) Understand and explain the overview of VLSI layout design2) Acquire basic design methods and apply them to solove basic problems 3) Understandand explain the most of layout design problems are formulated by utilizing combinational aspect of them 4) Understand and explain approaches to tackle unsolved problems.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202604674?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 732,
+    "universityId": "sciencetokyo-jp",
+    "code": "ICT.I420",
+    "title": "Analog Integrated Circuit Design",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202638929?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 733,
+    "universityId": "sciencetokyo-jp",
+    "code": "ICT.S407",
+    "title": "Wireless Signal Processing",
+    "description": "The course focuses on applications of signal processing to wireless digital communications such as equalization, adaptive array antennas, and interference cancellation. In addition, adaptive algorithms, which estimate parameters of these items, are detailed. A major aim of the lecture is to help students gain a deep understanding of important transmission techniques for wireless digital communications.\nMajor aims of this course are as follows:1) To be able to deeply understand principles of equalization, adaptive array antennas, and interference cancellation as signal processing techniques.2) To be able to deeply comprehend principles of adaptive algorithms that estimate parameters of the above items.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202604673?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 734,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.M421",
+    "title": "Discrete Optimization",
+    "description": "This course introduces a mathematical structure called matroids. To solve discrete optimization problems efficiently, we need to investigate structure of problems. A matroid, which is an abstraction of the notion of linear independence in vector spaces, is a fundamental structure in discrete optimization theory. This course begins with the definition and characterizations of matroids, and then shows properties of matroids and algorithms to solve discrete optimization problems with a matroid structure. The course also explains related topics and concepts such as the polyhedral aspects of matroids and submodular functions.\nThe aim of this course is to let students recognize that the matroid structure is essential for solving discrete optimization problem. It is often said that matroids appear in most of efficiently solvable discrete optimization problems. Knowledge on structures behind efficiently solvable problems will help you to solve your problem efficiently as much as possible.\nThe goals of this course are the following.1. Students explain basic properties of matroids and the importance in discrete optimization theory2. Students recognize basic discrete optimization problems having matroid structures3. Students explain algorithms for basic discrete optimization problems having matroid strictures",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202631041?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 735,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.M428",
+    "title": "Programming Language Theory",
+    "description": "Programming languages are a tool for humans to communicate with computers. Just like natural language, programming languages have underlying theories, with which one can reason rigorously about complex programs. This course aims to equip students with fundamental knowledge of programming language theory. Specifically, we discuss how to define the syntax, evaluation, and typing of several small programming languages.\nStudents are expected to be able to explain the behavior of programs from a mathematical point of view.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202636459?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 736,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.M429",
+    "title": "Distributed Systems",
+    "description": "This year, this lecture will be given in English.This lecture will introduce the architecture, communication, process, naming, consistency, security, and fault tolerance that are the foundations of distributed systems. Students will learn practical aspects of building and operating distributed systems using microservices as examples. Learn about orchestration tools and service meshes for efficient operation of microservices, and experience microservices by introducing Kubernetes and Istio. Furthermore, the course introduces the details of container and network configuration.\nYou will be able to acquire the following skills:1. You will learn about the architecture, processes, communications, security, etc. that support distributed systems.2. You will be able to operate microservices.3. You will be able to evaluate and improve the performance of distributed systems.4. You will be able to debug and analyze distributed systems using service meshes.5. You will be able to understand and correctly use the container virtualization and network configuration that support microservices.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202636460?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 737,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.M430",
+    "title": "Cryptocurrency and Blockchain Technology",
+    "description": "Cryptocurrency, as the newest term is used, is an old dream for engineers and researchers, in particular, cryptographers. In the old days several other terms were also coined, as for example, electronic cash and digital money, however is that the most successful term, and piece of engineering, is what we see nowadays in the news: Cryptocurrency. In this course, students will learn history, theory, and practice of cryptocurrencies: components of cryptocurrency including wallets, mining, blockchain, and ledgers, and also cryptographic primitives including security models, commitments, secret sharing, and zero knowledge proofs.\nBy the end of this course, students will be able to understand:1) History, theory, and design of cryptocurrencies2) Practical description of cryptocurrencies3) Components of cryptocurrency and cryptographic primitives",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202636461?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 738,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.M431",
+    "title": "Nonlinear Diffusion Equations",
+    "description": "Linear and nonlinear diffusion equations are typical example of parabolic partial differential equations and appear in various kinds of mathematical models of diffusion phenomena. In this course, we give mathematical methods for analyzing the behavior of solutions. In particular, we study analytical methods based on the scaling invariance structure of equations.\nThe goal is to understand methods for analyzing the behavior of solutions of the linear diffusion equation (heat equation). Based on the method, we aim for analyzing nonlinear diffusion equations (porous medium equation and semilinear heat equation) in practice.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202637661?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 739,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.T403",
+    "title": "Statistical Learning Theory",
+    "description": "Advanced topics in the theory of statistics and machine learning are covered. Specifically, students learn about nonparametric learning methods known as kernel methods, the universal approximation theorem for neural network models, the statistical properties of training and prediction errors, and methods for analyzing generalization error.\n[Objectives] Statistical science and machine learning are disciplines in which useful information is extracted from data to aidprediction and decision making. Students will learn methodology not simply as knowledge but also learning the background theory including the validity of those methods to promote understanding the essence. Students will broadly apply all kinds of techniques to a variety of problems, learning to construct new techniques on one's own.[Topics] Students in this course will learn several of statistical science's more advanced techniques, based on their connection to various application fields. We will focus in particular on the connection with machine learning, introducing central topics from both statistical science and machine learning.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202604059?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 740,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.T408",
+    "title": "Discrete, Algebraic and Geometric Structures",
+    "description": "This course introduces algebraic and geometric structures arising in knot theory and quantum topology from the viewpoint of category theory. Topics include monoidal categories, braid and tangle categories, dualities, pivotal categories, and ribbon categories. We also study Hopf algebras and their representation categories to understand how these categorical structures arise from algebra. Through concrete examples and graphical calculus, students will explore the common mathematical structures underlying discrete, algebraic, and geometric objects.\nBy taking this course, students will understand the basic concepts of categories, functors, natural transformations, monoidal categories, braided categories, dualities, pivotal categories, and ribbon categories, and will be able to work with these structures in concrete examples. Students will also learn to use graphical calculus and understand monoidal structures, dualities, and braidings arising in representation categories of Hopf algebras.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202604013?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 741,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.T410",
+    "title": "Applied Probability",
+    "description": "This course focuses on stochastic processes and its applications. In this year, topics include the theory of point processes and its application to modeling and analysis of wireless networks.\nAt the end of this course, students will be able to understand the fundamental theory of point processes, one of the basic stochastic processes, and its application to modeling and analysis of wireless communication networks.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202604015?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 742,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.T412",
+    "title": "Information Visualization",
+    "description": "This course outlines the basics and the recent trends in information visualization and visual analytics (visual data analysis). It also gives the participants required practical skills.\n(1) Understand the concepts of information visualization and visual analytics(2) Acquire the data processing technique required for information visualization and visual analytics(3) Understand various visualization methods employed in information visualization and visual analytics",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202621757?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 743,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.T416",
+    "title": "Logic and Computation",
+    "description": "This course covers the intersection of programming language theory and mathematical logic.The key notion is \"Curry-Howard correspondence\", which shows the direct relationship between computer programs and mathematical proofs.Topics include syntax and semantics of classical and intuitionistic logics, various proof systems (natural deduction, sequent calculus, etc.), and lambda calculus (Church–Rosser theorem, type-free and typed lambda calculus, strong normalization theorem, etc.).\nStudents will acquire an insight into the logical foundations of computation.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202604060?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 744,
+    "universityId": "sciencetokyo-jp",
+    "code": "MCS.T419",
+    "title": "Stochastic differential equations",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202617437?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 745,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.A401",
+    "title": "Advanced topics in Algebra A",
+    "description": "This course provides an introduction to the fundamentals of perfectoid theory, a field of growing importance across algebraic geometry, number theory, and commutative algebra. In conjunction with the curriculum of \"Advanced Topics in Algebra B,\" the lectures will cover the essentials of commutative algebra, Banach modules, and adic spaces.\nThis course explores the structural properties of commutative rings across different characteristics. We begin by utilizing the Frobenius endomorphism as a fundamental tool for analyzing rings of positive characteristic. Building on this, we introduce the theory of Tight Closure, developed by Hochster and Huneke, to study singularities and homological conjectures.The final portion of the course bridges the gap between positive characteristic and characteristic zero by examining mixed characteristic rings. We will delve into the foundations of Perfectoid Theory, focusing on how non-Noetherian commutative algebra facilitates the \"Almost Mathematics\" necessary to relate these disparate algebraic worlds.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603869?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 746,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.A402",
+    "title": "Advanced topics in Algebra B",
+    "description": "Building upon the material covered in 'Advanced Topics in Algebra A,' this course introduces the foundations of Almost Mathematics. Furthermore, after discussing continuous valuations, Banach rings、Tate rings, and perfectoid rings, we will provide an exposition of the Almost Purity Theorem.\nStudents will become proficient in Almost Mathematics and the handling of perfectoid algebras via the Frobenius map. Additionally, the course aims to deepen understanding of the concept of perfectoid spaces and the tilting equivalence (tilting functor).",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603870?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 747,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.A403",
+    "title": "Advanced topics in Algebra C",
+    "description": "This is an introductory course on the representation theory of quantum groups. The quantum groups in this course are the Drinfeld–Jimbo quantum groups (quantized enveloping algebras), which are Hopf algebras that can be regarded as a \"q-deformation\" of the universal enveloping algebras of semisimple Lie algebras. The representation theory of quantum groups can be viewed as a deformation of the representation theory of semisimple Lie algebras by a parameter q. It provides many important topics, including the construction of nontrivial solutions to the quantum Yang–Baxter equation, the theory of crystal bases and canonical bases, and analogies with modular representation theory through the specialization of q to the roots of unity.\nIn this course, we will start from the definition of quantum groups, and learn the basics of their representation theory. We also provide an overview of the theory of crystal bases and canonical bases. The aim of this course is to understand how the parameter q deforms the theory of semisimple Lie algebras and to study the applications of such deformations.\nThis course is followed by “Advanced Topics in Algebra D”.\n- To be able to explain the definition of quantized enveloping algebras associated with root data.- To be able to explain the classification of integrable highest weight modules over quantized enveloping algebras.- To be able to explain the construction of universal R-matrix.- To be able to explain the properties of crystal bases and canonical bases.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603871?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 748,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.A404",
+    "title": "Advanced topics in Algebra D",
+    "description": "This course follows “Advanced Topics in Algebra C” and provides an exposition of the representation theory of quantum groups together with related advanced topics. The aim of this course is to learn the theory of crystal bases and canonical bases, as well as a quantization of spaces via the representation theory of quantum groups.\n- To be able to explain the relations between quantized enveloping algebras and modified quantized enveloping algebras.- To be able to explain the properties of canonical bases of modified quantized enveloping algebras.- To be able to explain the definition of quantized coordinate rings.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603872?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 749,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.B401",
+    "title": "Advanced topics in Geometry A",
+    "description": "This course is an introduction to the cohomology of groups and provides the necessary background for working in this field. Group cohomology has a long history and is utilized in various areas such as geometry, characteristic classes, and number theory. It is studied from both algebraic and topological perspectives, sometimes independently. In this course, after introducing definitions and examples, we will cover the fundamental results, including Hopf’s Theorem. The course also aims to cover the basics of covering spaces, fundamental groups, and CW complexes.\nStudents will understand the fundamentals of group cohomology. The final goal of the course is to understand Hopf's Theorem and its applications.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603873?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 750,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.B402",
+    "title": "Advanced topics in Geometry B",
+    "description": "This class introduces (higher) product structures in group cohomology (such as cup products and Massey products), and then shows research examples and applications of group cohomology. For example, we will mention applications to Fox dirivatives and 2- and 3-dimensional topology. We plan to cover one topic in about two sessions.This class is a continuation of the \"Special Topics in Geometry\" course taught in the first quarter.\nThe goal of this class is to learn the usefulness and range of applications of group cohomology through cup products and application examples of group cohomology. Examples of the use and calculation of group cohomology will also be studied.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603874?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 751,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.B403",
+    "title": "Advanced topics in Geometry C",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603875?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 752,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.B404",
+    "title": "Advanced topics in Geometry D",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603876?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 753,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.C401",
+    "title": "Advanced topics in Analysis A",
+    "description": "This course covers the basic theory of second-order elliptic PDEs. Using the Dirichlet problem as a central example, we introduce standard techniques including the maximum principle, Perron’s method, variational approaches, and the method of sub- and super-solutions. We will also explore qualitative aspects of solutions, such as symmetry. This course is designed to be followed by \"Advanced Topics in Analysis B\".\nUnderstanding of the basic theory of second order elliptic partial differential equations with emphasis on maximum principles",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603877?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 754,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.C402",
+    "title": "Advanced topics in Analysis B",
+    "description": "This course provides an exposition of the fundamental theory of second-order elliptic partial differential equations. In particular, we will discuss in detail the theory of weak solutions based on Sobolev spaces, and examine the existence and regularity of solutions using functional analysis and variational methods. Furthermore, we will cover the De Giorgi-Nash-Moser theory, which is an essential tool for investigating the regularity of solutions to nonlinear equations. This course is designed as a continuation of \"Advanced Topics in Analysis A\".\nUnderstanding of the basic theory of overdetermined problems for elliptic partial differential equations",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603878?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 755,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.C403",
+    "title": "Advanced topics in Analysis C",
+    "description": "This course is concerned with fundamental methods in the mathematical analysis of nonlinear partial differential equtiaons. More concretely, I will explain introductory topics from fixed point theorems, degree theory, variational method method and bifurcation theory. This course is followed by Advanced topics in Analysis D.\nUnderstanding of fundamental methods in nonlinear functional analysis and their applications to nonlinear partial differential equations",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603879?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 756,
+    "universityId": "sciencetokyo-jp",
+    "code": "MTH.C404",
+    "title": "Advanced topics in Analysis D",
+    "description": "This course is concerned with fundamental methods in the mathematical analysis of nonlinear partial differential equations. More concretely, I will explain introductory topics from fixed point theorems, degree theory, variational method and bifurcation theory.This course is following Advanced topics in Analysis C.\nUnderstanding of fundamental methods in nonlinear functional analysis and their applications to nonlinear partial differential equations",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/1/1-11-411111-0-0/202603880?hl=en",
+    "collectedAt": "2026-11-10T22:04:39.635Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
   }
 ]
