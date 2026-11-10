@@ -1,0 +1,28 @@
+Rapport de collecte : postech-kr
+Date : 2026-11-10
+Statut : ok
+Cours actifs : 179
+Ajoutés (179) : CSED100, CSED101, CSED103, CSED105, CSED199, CSED211, CSED226, CSED232, CSED233, CSED261, CSED311, CSED312, CSED321, CSED331, CSED341, CSED342, CSED353, CSED354, CSED355, CSED356, CSED357, CSED401, CSED404, CSED415, CSED423, CSED441, CSED451, CSED490D, CSED490E, CSED490F, CSED490G, CSED490H, CSED490J, CSED490K, CSED490M, CSED490V, CSED500, CSED504, CSED510, CSED515, CSED520, CSED527, CSED530, CSED536, CSED537, CSED538, CSED554, CSED559, CSED603, CSED700G, CSED702A, CSED703M, CSED703Q, CSED800A, CSED800B, DISU101, DISU231, DISU301, DISU361, DISU402, DISU404, DISU421, DISU431, DISU434, EECE100, EECE199, EECE202, EECE211, EECE231, EECE233, EECE261, EECE274, EECE276, EECE305, EECE306, EECE308, EECE309, EECE310, EECE312, EECE320, EECE331, EECE336, EECE338, EECE341, EECE361, EECE372, EECE375, EECE376, EECE391, EECE411, EECE412, EECE414, EECE417, EECE418, EECE419, EECE434, EECE442, EECE443, EECE480, EECE482, EECE490A, EECE490B, EECE490D, EECE490E, EECE490F, EECE490G, EECE490H, EECE490U, EECE492, EECE564, EECE565, EECE574, EECE575, EECE576, EECE577, EECE583, EECE588, EECE592, EECE645, EECE651, EECE659, EECE667, EECE695A, EECE695B, EECE695C, EECE695D, EECE695E, EECE695G, EECE695I, EECE695J, EECE695L, EECE695N, EECE695O, EECE695P, EECE695Y, MATH100, MATH101, MATH102, MATH199, MATH200, MATH203, MATH210, MATH230, MATH261, MATH301, MATH302, MATH304, MATH311, MATH312, MATH321, MATH351, MATH400, MATH401, MATH402, MATH415, MATH422, MATH426, MATH432, MATH442, MATH443, MATH472, MATH491A, MATH501, MATH502, MATH506, MATH510, MATH514, MATH517, MATH519, MATH520, MATH524, MATH530, MATH532, MATH551, MATH606, MATH621, MATH719A, NGCN301, NGCN302
+Retirés (0) : aucun
+Modifiés (0) : aucun
+Descriptions non publiées : La liste officielle des cours (plms.postech.ac.kr) et la fiche de chaque cours ne publient aucune description : la fiche (« plan de cours ») ne donne que les informations de base.
+
+Notes sur la collecte
+- Source : liste officielle des cours (plms.postech.ac.kr, « Information on Courses Offered »), filtre « EN », départements
+  de mathématiques, de génie électrique et d'informatique et génie informatique, automne 2026 (code 20) et printemps 2026
+  (code 10). Les trimestres 2027 ne sont pas encore publiés. Chaque cours a sa fiche (titre anglais, crédits, niveau, langue).
+- Les trimestres d'un même code sont fusionnés ; les descriptions ne sont pas publiées (laissées vides).
+- Dates : calendrier officiel 2027 (le calendrier 2028 s'arrête en février). Automne 2027 : début le 1er septembre,
+  examens finaux du 15 au 21 décembre. Printemps : dernière année publiée, 2027 (début le 2 mars, examens du 15 au 21 juin).
+  Le dernier jour de cours n'est écrit nulle part : vide.
+- Crédit : « one credit unit shall represent a minimum of 15 class hours in one semester » (statut de l'école des cycles
+  supérieurs ; aucune règle de 1er cycle trouvée) : 15 h par crédit.
+- Contact : seul le nom « POSTECH International Relations » est lisible ; la page de contact est interdite par robots.txt
+  (/comm) et aucune adresse courriel d'échanges entrants n'est publiée ailleurs.
+
+Vérification de 5 cours sur leur propre fiche (relues le 2026-11-10)
+- CSED232 Principles of Software Construction : 3 crédits, niveau 200, english, printemps 2026 : conforme.
+- CSED527 Introduction to Haptics : 3 crédits, niveau 500 (cycles supérieurs), english, printemps 2026 : conforme.
+- EECE341 Intro. to Communication Sys. : 3 crédits, niveau 300, english, automne 2026 : conforme.
+- EECE667 VLSI Ana.&Design Software : 3 crédits, niveau 600 (cycles supérieurs), english, automne 2026 : conforme.
+- MATH472 Introduction to Financial Engineering : 3 crédits, niveau 400, english, automne 2026 : conforme.

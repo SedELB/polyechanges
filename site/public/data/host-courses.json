@@ -9395,5 +9395,3244 @@
     "sourcePage": 1,
     "sourceLine": 2465,
     "snapshotSha256": null
+  },
+  {
+    "id": 521,
+    "universityId": "postech-kr",
+    "code": "CSED100",
+    "title": "Intro. to Computer Science & Eng.",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15786",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 522,
+    "universityId": "postech-kr",
+    "code": "CSED101",
+    "title": "Programming & Problem solving",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=16368",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 523,
+    "universityId": "postech-kr",
+    "code": "CSED103",
+    "title": "Introduction to Programming",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15738",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 524,
+    "universityId": "postech-kr",
+    "code": "CSED105",
+    "title": "Introduction to Artificial Intelligence",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15790",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 525,
+    "universityId": "postech-kr",
+    "code": "CSED199",
+    "title": "Freshman Research Participation",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15787",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 526,
+    "universityId": "postech-kr",
+    "code": "CSED211",
+    "title": "Introduction to Computer Systems",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15720",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 527,
+    "universityId": "postech-kr",
+    "code": "CSED226",
+    "title": "Introduction to Data Analysis",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14778",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 528,
+    "universityId": "postech-kr",
+    "code": "CSED232",
+    "title": "Principles of Software Construction",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14718",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 529,
+    "universityId": "postech-kr",
+    "code": "CSED233",
+    "title": "Data Structure",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15765",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 530,
+    "universityId": "postech-kr",
+    "code": "CSED261",
+    "title": "Discrete Math. for Computer Science",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14760",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 531,
+    "universityId": "postech-kr",
+    "code": "CSED311",
+    "title": "Computer Architecture",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14761",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 532,
+    "universityId": "postech-kr",
+    "code": "CSED312",
+    "title": "Operating Systems",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15766",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 533,
+    "universityId": "postech-kr",
+    "code": "CSED321",
+    "title": "Programming Languages",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14720",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 534,
+    "universityId": "postech-kr",
+    "code": "CSED331",
+    "title": "Algorithms",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15727",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 535,
+    "universityId": "postech-kr",
+    "code": "CSED341",
+    "title": "Automata & Formal Languages",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14721",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 536,
+    "universityId": "postech-kr",
+    "code": "CSED342",
+    "title": "Artificial Intelligence",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15730",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 537,
+    "universityId": "postech-kr",
+    "code": "CSED353",
+    "title": "Computer Network",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14727",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 538,
+    "universityId": "postech-kr",
+    "code": "CSED354",
+    "title": "Introduction to Research Areas in CSE",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15736",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 539,
+    "universityId": "postech-kr",
+    "code": "CSED355",
+    "title": "Computational Signal Processing",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15735",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 540,
+    "universityId": "postech-kr",
+    "code": "CSED356",
+    "title": "Human-Computer Interaction",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15780",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 541,
+    "universityId": "postech-kr",
+    "code": "CSED357",
+    "title": "Database Systems",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15725",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 542,
+    "universityId": "postech-kr",
+    "code": "CSED401",
+    "title": "Computer and Society",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14726",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 543,
+    "universityId": "postech-kr",
+    "code": "CSED404",
+    "title": "Mobile & Ubiquitous Computing",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15733",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 544,
+    "universityId": "postech-kr",
+    "code": "CSED415",
+    "title": "Computer Security",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14929",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 545,
+    "universityId": "postech-kr",
+    "code": "CSED423",
+    "title": "Design of Compiler",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15726",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 546,
+    "universityId": "postech-kr",
+    "code": "CSED441",
+    "title": "Introduction to Computer Vision",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15779",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 547,
+    "universityId": "postech-kr",
+    "code": "CSED451",
+    "title": "Computer Graphics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14742",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 548,
+    "universityId": "postech-kr",
+    "code": "CSED490D",
+    "title": "ST: Information Visualization",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14816",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 549,
+    "universityId": "postech-kr",
+    "code": "CSED490E",
+    "title": "ST: Intro. to Natural Language Process",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15794",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 550,
+    "universityId": "postech-kr",
+    "code": "CSED490F",
+    "title": "ST: Deep Learning Implementation",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=16416",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 551,
+    "universityId": "postech-kr",
+    "code": "CSED490G",
+    "title": "ST: Optimization for Data Science",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14945",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 552,
+    "universityId": "postech-kr",
+    "code": "CSED490H",
+    "title": "ST: AI Security",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14944",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 553,
+    "universityId": "postech-kr",
+    "code": "CSED490J",
+    "title": "ST: Introduction to Medical AI",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=15399",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 554,
+    "universityId": "postech-kr",
+    "code": "CSED490K",
+    "title": "ST: Parallel and Distributed Computing",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14815",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 555,
+    "universityId": "postech-kr",
+    "code": "CSED490M",
+    "title": "ST: Principles of Deep Learning",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15796",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 556,
+    "universityId": "postech-kr",
+    "code": "CSED490V",
+    "title": "ST: Fndns. of Continuous Computation",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15739",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 557,
+    "universityId": "postech-kr",
+    "code": "CSED500",
+    "title": "Advanced Linear Algebra for CSE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14774",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 558,
+    "universityId": "postech-kr",
+    "code": "CSED504",
+    "title": "Advanced Operating System",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14750",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 559,
+    "universityId": "postech-kr",
+    "code": "CSED510",
+    "title": "Implem. & Accel. for Machine Learning",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14779",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 560,
+    "universityId": "postech-kr",
+    "code": "CSED515",
+    "title": "Machine Learning",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15778",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 561,
+    "universityId": "postech-kr",
+    "code": "CSED520",
+    "title": "Computational Imaging",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15737",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 562,
+    "universityId": "postech-kr",
+    "code": "CSED527",
+    "title": "Introduction to Haptics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14762",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 563,
+    "universityId": "postech-kr",
+    "code": "CSED530",
+    "title": "Advanced Probability Theory for CSE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15732",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 564,
+    "universityId": "postech-kr",
+    "code": "CSED536",
+    "title": "Advanced Algorithms",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15729",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 565,
+    "universityId": "postech-kr",
+    "code": "CSED537",
+    "title": "Artificial Intelligence & Data Science",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14936",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 566,
+    "universityId": "postech-kr",
+    "code": "CSED538",
+    "title": "Deep Learning",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14775",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 567,
+    "universityId": "postech-kr",
+    "code": "CSED554",
+    "title": "Deep Learning NLP",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14776",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 568,
+    "universityId": "postech-kr",
+    "code": "CSED559",
+    "title": "Software Vul. Analysis & Exploitation",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15792",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 569,
+    "universityId": "postech-kr",
+    "code": "CSED603",
+    "title": "Vision and Language",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&id=15734",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 570,
+    "universityId": "postech-kr",
+    "code": "CSED700G",
+    "title": "ST: Research Topics & Methods in HCI",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15797",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 571,
+    "universityId": "postech-kr",
+    "code": "CSED702A",
+    "title": "ST: Memory & Storage System",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14793",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 572,
+    "universityId": "postech-kr",
+    "code": "CSED703M",
+    "title": "ST: 3D Medical Image Proc. & Analysis",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=14800",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 573,
+    "universityId": "postech-kr",
+    "code": "CSED703Q",
+    "title": "ST: Practical Theories in Modern ML",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&page=2&id=15400",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 574,
+    "universityId": "postech-kr",
+    "code": "CSED800A",
+    "title": "Computer Science Colloquium A",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00039100&id=14743",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 575,
+    "universityId": "postech-kr",
+    "code": "CSED800B",
+    "title": "Computer Sci. Colloquium B",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00039100&page=2&id=15775",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 576,
+    "universityId": "postech-kr",
+    "code": "DISU101",
+    "title": "Introduction to Electrical Engineering",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15827",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 577,
+    "universityId": "postech-kr",
+    "code": "DISU231",
+    "title": "Electric Circuits",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15828",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 578,
+    "universityId": "postech-kr",
+    "code": "DISU301",
+    "title": "Semiconductor Fabrication Laboratory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=15860",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 579,
+    "universityId": "postech-kr",
+    "code": "DISU361",
+    "title": "Theory and Appl. of Microwave Eng.",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15135",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 580,
+    "universityId": "postech-kr",
+    "code": "DISU402",
+    "title": "High-Speed Semiconductor I/O Circuits",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=16275",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 581,
+    "universityId": "postech-kr",
+    "code": "DISU404",
+    "title": "Analog Amplifier Analysis and Design",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15147",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 582,
+    "universityId": "postech-kr",
+    "code": "DISU421",
+    "title": "Basis Quantum Information",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15140",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 583,
+    "universityId": "postech-kr",
+    "code": "DISU431",
+    "title": "Neuromorphic Semiconductor Device",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15139",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 584,
+    "universityId": "postech-kr",
+    "code": "DISU434",
+    "title": "VLSI System Design",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=15019",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 585,
+    "universityId": "postech-kr",
+    "code": "EECE100",
+    "title": "Introduction to Electrical Engineering",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15815",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 586,
+    "universityId": "postech-kr",
+    "code": "EECE199",
+    "title": "Freshman Research Participation",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15816",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 587,
+    "universityId": "postech-kr",
+    "code": "EECE202",
+    "title": "Intro. to Probability & Random Processes",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15088",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 588,
+    "universityId": "postech-kr",
+    "code": "EECE211",
+    "title": "Semiconductor Electronics I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15802",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 589,
+    "universityId": "postech-kr",
+    "code": "EECE231",
+    "title": "Circuit Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15807",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 590,
+    "universityId": "postech-kr",
+    "code": "EECE233",
+    "title": "Signals & Systems",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15800",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 591,
+    "universityId": "postech-kr",
+    "code": "EECE261",
+    "title": "Introduction to Electromagnetism",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15801",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 592,
+    "universityId": "postech-kr",
+    "code": "EECE274",
+    "title": "Digital System Design",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15818",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 593,
+    "universityId": "postech-kr",
+    "code": "EECE276",
+    "title": "Electronics & Electrical Eng. LabⅠ",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15819",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 594,
+    "universityId": "postech-kr",
+    "code": "EECE305",
+    "title": "Power Electronics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15067",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 595,
+    "universityId": "postech-kr",
+    "code": "EECE306",
+    "title": "Introduction to Radar Engineering",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=14995",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 596,
+    "universityId": "postech-kr",
+    "code": "EECE308",
+    "title": "Intro. to Digital Communication",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15068",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 597,
+    "universityId": "postech-kr",
+    "code": "EECE309",
+    "title": "Modern Control Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=14961",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 598,
+    "universityId": "postech-kr",
+    "code": "EECE310",
+    "title": "Int to Electric Power Sys Ctrl & Oper",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15814",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 599,
+    "universityId": "postech-kr",
+    "code": "EECE312",
+    "title": "Intro. to Machine Learning Systems",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15813",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 600,
+    "universityId": "postech-kr",
+    "code": "EECE320",
+    "title": "Intro. to Automatic Control",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15820",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 601,
+    "universityId": "postech-kr",
+    "code": "EECE331",
+    "title": "Electronic Circuits I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15073",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 602,
+    "universityId": "postech-kr",
+    "code": "EECE336",
+    "title": "Electronic Circuits II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15824",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 603,
+    "universityId": "postech-kr",
+    "code": "EECE338",
+    "title": "Electronics & Electrical Eng. LabⅡ",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15117",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 604,
+    "universityId": "postech-kr",
+    "code": "EECE341",
+    "title": "Intro. to Communication Sys.",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15804",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 605,
+    "universityId": "postech-kr",
+    "code": "EECE361",
+    "title": "Applied Electromagnetic Waves",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15065",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 606,
+    "universityId": "postech-kr",
+    "code": "EECE372",
+    "title": "Microproc. Architect. & Appl.",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15118",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 607,
+    "universityId": "postech-kr",
+    "code": "EECE375",
+    "title": "Computer Design",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15821",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 608,
+    "universityId": "postech-kr",
+    "code": "EECE376",
+    "title": "Electronics & Electrical Eng. LabⅢ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15822",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 609,
+    "universityId": "postech-kr",
+    "code": "EECE391",
+    "title": "Capstone Design Project I",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15805",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 610,
+    "universityId": "postech-kr",
+    "code": "EECE411",
+    "title": "Display EngineeringⅠ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15803",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 611,
+    "universityId": "postech-kr",
+    "code": "EECE412",
+    "title": "Display EngineeringⅡ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15127",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 612,
+    "universityId": "postech-kr",
+    "code": "EECE414",
+    "title": "Intro. to RF and Analog Circuit Design",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15122",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 613,
+    "universityId": "postech-kr",
+    "code": "EECE417",
+    "title": "Intro.to Nanoscale Science & Engineering",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15043",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 614,
+    "universityId": "postech-kr",
+    "code": "EECE418",
+    "title": "Basic quantum information",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15121",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 615,
+    "universityId": "postech-kr",
+    "code": "EECE419",
+    "title": "Advanced Electronic Circuits",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15143",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 616,
+    "universityId": "postech-kr",
+    "code": "EECE434",
+    "title": "Introduction to VLSI Design",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=15002",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 617,
+    "universityId": "postech-kr",
+    "code": "EECE442",
+    "title": "Intro. to Communications and Network",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15134",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 618,
+    "universityId": "postech-kr",
+    "code": "EECE443",
+    "title": "Communications and Network Lab",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=16077",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 619,
+    "universityId": "postech-kr",
+    "code": "EECE480",
+    "title": "Intro. To Biomedical Eng.",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=15012",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 620,
+    "universityId": "postech-kr",
+    "code": "EECE482",
+    "title": "Biomedical Systems & Signal Processing",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=15021",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 621,
+    "universityId": "postech-kr",
+    "code": "EECE490A",
+    "title": "Eng. Math. for Communications and AI",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15044",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 622,
+    "universityId": "postech-kr",
+    "code": "EECE490B",
+    "title": "ST: AI Systems: Effi., Perf., & Desi.",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15390",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 623,
+    "universityId": "postech-kr",
+    "code": "EECE490D",
+    "title": "ST: Neuromorphic Semiconductor Device",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15137",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 624,
+    "universityId": "postech-kr",
+    "code": "EECE490E",
+    "title": "ST: Semiconductor Fabrication Laboratory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15817",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 625,
+    "universityId": "postech-kr",
+    "code": "EECE490F",
+    "title": "ST: Introduction to AI Programming",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15829",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 626,
+    "universityId": "postech-kr",
+    "code": "EECE490G",
+    "title": "ST: Robot Learning",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15836",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 627,
+    "universityId": "postech-kr",
+    "code": "EECE490H",
+    "title": "ST: Fundamentals of AC Circuit Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15039",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 628,
+    "universityId": "postech-kr",
+    "code": "EECE490U",
+    "title": "ST: Visual Intelligence",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=15011",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 629,
+    "universityId": "postech-kr",
+    "code": "EECE492",
+    "title": "Capstone Design Project II",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15806",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 630,
+    "universityId": "postech-kr",
+    "code": "EECE564",
+    "title": "Linear Sys. Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15082",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 631,
+    "universityId": "postech-kr",
+    "code": "EECE565",
+    "title": "Robotics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=14977",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 632,
+    "universityId": "postech-kr",
+    "code": "EECE574",
+    "title": "Probability & Random Process",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15809",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 633,
+    "universityId": "postech-kr",
+    "code": "EECE575",
+    "title": "Communication & Sensing Systems",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=16015",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 634,
+    "universityId": "postech-kr",
+    "code": "EECE576",
+    "title": "Statistical Communication Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15084",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 635,
+    "universityId": "postech-kr",
+    "code": "EECE577",
+    "title": "Information Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=16439",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 636,
+    "universityId": "postech-kr",
+    "code": "EECE583",
+    "title": "Advanced Linear Algebra",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15086",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 637,
+    "universityId": "postech-kr",
+    "code": "EECE588",
+    "title": "Antenna Theory & Design I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15810",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 638,
+    "universityId": "postech-kr",
+    "code": "EECE592",
+    "title": "Semiconductor Transport Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15226",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 639,
+    "universityId": "postech-kr",
+    "code": "EECE645",
+    "title": "Statistical Signal Processing",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=4&id=15397",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 640,
+    "universityId": "postech-kr",
+    "code": "EECE651",
+    "title": "Computational Intelligence",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15811",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 641,
+    "universityId": "postech-kr",
+    "code": "EECE659",
+    "title": "Nonlinear System Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&id=15808",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 642,
+    "universityId": "postech-kr",
+    "code": "EECE667",
+    "title": "VLSI Ana.&Design Software",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15852",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 643,
+    "universityId": "postech-kr",
+    "code": "EECE695A",
+    "title": "ST: Introduction to Convex Optimization",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=15862",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 644,
+    "universityId": "postech-kr",
+    "code": "EECE695B",
+    "title": "ST: Advanced Topics in GPU Computing",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=15869",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 645,
+    "universityId": "postech-kr",
+    "code": "EECE695C",
+    "title": "ST: Design&Ctrl of Swithing PE Conv.",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=15870",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 646,
+    "universityId": "postech-kr",
+    "code": "EECE695D",
+    "title": "ST: Efficient Machine Learning Systems",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15136",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 647,
+    "universityId": "postech-kr",
+    "code": "EECE695E",
+    "title": "ST: Advanced RF Circuit Design",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15858",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 648,
+    "universityId": "postech-kr",
+    "code": "EECE695G",
+    "title": "Radar Imaging",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=2&id=15857",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 649,
+    "universityId": "postech-kr",
+    "code": "EECE695I",
+    "title": "ST: Stretchable Soft Electonics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=15865",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 650,
+    "universityId": "postech-kr",
+    "code": "EECE695J",
+    "title": "ST: Advanced Topics in Machine Learning",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=15023",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 651,
+    "universityId": "postech-kr",
+    "code": "EECE695L",
+    "title": "ST: Adv. Semicond. Dev. & Character.",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=16096",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 652,
+    "universityId": "postech-kr",
+    "code": "EECE695N",
+    "title": "ST: Drone-based IT convergence app.",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=15859",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 653,
+    "universityId": "postech-kr",
+    "code": "EECE695O",
+    "title": "ST: Power Sys. Reliability& Elec.Markets",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=2&id=15040",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 654,
+    "universityId": "postech-kr",
+    "code": "EECE695P",
+    "title": "ST: AI Constellator Design Studio",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=16430",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 655,
+    "universityId": "postech-kr",
+    "code": "EECE695Y",
+    "title": "ST: EE Horiz.&Vertical Converg. Seminar",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&id=15030",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 656,
+    "universityId": "postech-kr",
+    "code": "MATH100",
+    "title": "Introduction to Mathematics",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=15942",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 657,
+    "universityId": "postech-kr",
+    "code": "MATH101",
+    "title": "Calculus I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=15947",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 658,
+    "universityId": "postech-kr",
+    "code": "MATH102",
+    "title": "Calculus II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=15948",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 659,
+    "universityId": "postech-kr",
+    "code": "MATH199",
+    "title": "Freshman Research Participation",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=15957",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 660,
+    "universityId": "postech-kr",
+    "code": "MATH200",
+    "title": "Differential Equations",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15918",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 661,
+    "universityId": "postech-kr",
+    "code": "MATH203",
+    "title": "Applied Linear Algebra",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15923",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 662,
+    "universityId": "postech-kr",
+    "code": "MATH210",
+    "title": "Applied Complex Variables",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15926",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 663,
+    "universityId": "postech-kr",
+    "code": "MATH230",
+    "title": "Probability & Statistics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15920",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 664,
+    "universityId": "postech-kr",
+    "code": "MATH261",
+    "title": "Discrete Mathematics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15922",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 665,
+    "universityId": "postech-kr",
+    "code": "MATH301",
+    "title": "Modern Algebra I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15925",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 666,
+    "universityId": "postech-kr",
+    "code": "MATH302",
+    "title": "Modern Algebra II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&id=14858",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 667,
+    "universityId": "postech-kr",
+    "code": "MATH304",
+    "title": "Intro. to Number Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14859",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 668,
+    "universityId": "postech-kr",
+    "code": "MATH311",
+    "title": "Analysis I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14860",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 669,
+    "universityId": "postech-kr",
+    "code": "MATH312",
+    "title": "Analysis II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15927",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 670,
+    "universityId": "postech-kr",
+    "code": "MATH321",
+    "title": "General Topology",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15931",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 671,
+    "universityId": "postech-kr",
+    "code": "MATH351",
+    "title": "Intro. to Numerical Analysis",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14870",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 672,
+    "universityId": "postech-kr",
+    "code": "MATH400",
+    "title": "Linear Algebra",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15928",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 673,
+    "universityId": "postech-kr",
+    "code": "MATH401",
+    "title": "Algebraic Curves",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15929",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 674,
+    "universityId": "postech-kr",
+    "code": "MATH402",
+    "title": "Comput. Linear Algebra and its App.",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=15967",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 675,
+    "universityId": "postech-kr",
+    "code": "MATH415",
+    "title": "Fourier Series",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14885",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 676,
+    "universityId": "postech-kr",
+    "code": "MATH422",
+    "title": "Intro to Geometric Topology",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14861",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 677,
+    "universityId": "postech-kr",
+    "code": "MATH426",
+    "title": "Introduction to Differential Geometry",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15935",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 678,
+    "universityId": "postech-kr",
+    "code": "MATH432",
+    "title": "Mathematical Data Science",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=15966",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 679,
+    "universityId": "postech-kr",
+    "code": "MATH442",
+    "title": "Mathematics for AI",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=15961",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 680,
+    "universityId": "postech-kr",
+    "code": "MATH443",
+    "title": "Mathematical Modelling",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14862",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 681,
+    "universityId": "postech-kr",
+    "code": "MATH472",
+    "title": "Introduction to Financial Engineering",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&id=15937",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 682,
+    "universityId": "postech-kr",
+    "code": "MATH491A",
+    "title": "Independent study A",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=3&id=16079",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 683,
+    "universityId": "postech-kr",
+    "code": "MATH501",
+    "title": "Algebra I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14871",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 684,
+    "universityId": "postech-kr",
+    "code": "MATH502",
+    "title": "Algebra II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=16007",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 685,
+    "universityId": "postech-kr",
+    "code": "MATH506",
+    "title": "Analytic Number Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=16008",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 686,
+    "universityId": "postech-kr",
+    "code": "MATH510",
+    "title": "Complex Analysis",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=2&id=16009",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 687,
+    "universityId": "postech-kr",
+    "code": "MATH514",
+    "title": "Real Analysis I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14872",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 688,
+    "universityId": "postech-kr",
+    "code": "MATH517",
+    "title": "Partial Differential Equations",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=3&id=16010",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 689,
+    "universityId": "postech-kr",
+    "code": "MATH519",
+    "title": "Functional Analysis",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14873",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 690,
+    "universityId": "postech-kr",
+    "code": "MATH520",
+    "title": "Differentiable Manifolds",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14874",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 691,
+    "universityId": "postech-kr",
+    "code": "MATH524",
+    "title": "Algebraic Topology I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=3&id=16011",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 692,
+    "universityId": "postech-kr",
+    "code": "MATH530",
+    "title": "Mathematical Statistics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=3&id=16012",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 693,
+    "universityId": "postech-kr",
+    "code": "MATH532",
+    "title": "App. of Mathematics and Big Data",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14894",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 694,
+    "universityId": "postech-kr",
+    "code": "MATH551",
+    "title": "Numerical Analysis",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14875",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 695,
+    "universityId": "postech-kr",
+    "code": "MATH606",
+    "title": "Automorphic Forms",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00031000&page=2&id=14880",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 696,
+    "universityId": "postech-kr",
+    "code": "MATH621",
+    "title": "Riemannian Geometry",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=3&id=16013",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 697,
+    "universityId": "postech-kr",
+    "code": "MATH719A",
+    "title": "ST: Brownian motion and Stochastic",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00031000&page=3&id=16082",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 698,
+    "universityId": "postech-kr",
+    "code": "NGCN301",
+    "title": "Intro. to Communications and Network",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=10&dept=00038000&page=3&id=15133",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 699,
+    "universityId": "postech-kr",
+    "code": "NGCN302",
+    "title": "Communications and Network Lab",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://plms.postech.ac.kr/local/ubion/course/lists_view.php?lang=Y&year=2026&semester=20&dept=00038000&page=3&id=15863",
+    "collectedAt": "2026-11-10T21:26:15.036Z",
+    "sourcePage": 1,
+    "sourceLine": 31,
+    "snapshotSha256": null
   }
 ]

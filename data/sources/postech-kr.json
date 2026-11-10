@@ -1,0 +1,9 @@
+{
+  "id": "postech-kr",
+  "universityId": "postech-kr",
+  "kind": "manual",
+  "urls": [],
+  "reader": "manual",
+  "descriptions": "none",
+  "descriptionsNote": "La liste officielle des cours (plms.postech.ac.kr) et la fiche de chaque cours ne publient aucune description : la fiche (« plan de cours ») ne donne que les informations de base."
+}

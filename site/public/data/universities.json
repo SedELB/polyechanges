@@ -949,21 +949,160 @@
     "name": "Pohang University of Science and Technology",
     "moveOnName": "Pohang University of Science and Technology",
     "countryCode": "KR",
-    "city": "",
-    "lat": 36.03653,
-    "lng": 129.376205,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Pohang",
+    "lat": 36.0108833,
+    "lng": 129.3226694,
+    "website": "https://www.postech.ac.kr/eng/",
+    "catalogUrl": "https://plms.postech.ac.kr/local/ubion/course/lists.php?lang=en",
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 15,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2027-09-01",
+        "end": null,
+        "examsEnd": "2027-12-21"
+      },
+      "spring": {
+        "start": "2027-03-02",
+        "end": null,
+        "examsEnd": "2027-06-21"
+      }
     },
     "restrictions": null,
-    "exchangeContact": null,
+    "exchangeContact": "POSTECH International Relations",
     "catalogPublic": true,
-    "provenance": {}
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/POSTECH",
+        "retrievedAt": "2026-11-10T21:09:34.926Z",
+        "sha256": "faf2888c64696b236e5d974dafe08301530e542dcbdf63b87021fc173076f6e3",
+        "locator": {
+          "page": 1,
+          "line": 129
+        },
+        "quote": "Pohang University of Science and Technology (POSTECH, Korean: 포항공과대학교) is a private research university in Pohang, South Korea."
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/POSTECH",
+        "retrievedAt": "2026-11-10T21:09:34.926Z",
+        "sha256": "faf2888c64696b236e5d974dafe08301530e542dcbdf63b87021fc173076f6e3",
+        "locator": {
+          "page": 1,
+          "line": 115
+        },
+        "quote": "Location | Pohang , Gyeongbuk Province , South Korea"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/POSTECH",
+        "retrievedAt": "2026-11-10T21:09:34.926Z",
+        "sha256": "faf2888c64696b236e5d974dafe08301530e542dcbdf63b87021fc173076f6e3",
+        "locator": {
+          "page": 1,
+          "line": 100
+        },
+        "quote": "36.0108833°N 129.3226694°E"
+      },
+      "website": {
+        "url": "https://www.postech.ac.kr/eng/",
+        "retrievedAt": "2026-11-10T21:09:47.152Z",
+        "sha256": "58dee664dc320a56588668fab9bfce81ac66340438d265e20c0d19d2d6be49f3",
+        "locator": {
+          "page": 1,
+          "line": 314
+        },
+        "quote": "COPYRIGHT 2025 Pohang University of Science and Technology. ALL RIGHTS RESERVED."
+      },
+      "catalogUrl": {
+        "url": "https://plms.postech.ac.kr/local/ubion/course/lists.php?lang=en",
+        "retrievedAt": "2026-11-10T21:09:52.076Z",
+        "sha256": "744c08f7024680bb833c2a668f5cf274381d42ed8847a2d6916da11d16192a5d",
+        "locator": {
+          "page": 1,
+          "line": 14
+        },
+        "quote": "Information on Courses Offered"
+      },
+      "creditSystem": {
+        "url": "https://www.postech.ac.kr/app/board/regulations/pdf/reg_2914.do",
+        "retrievedAt": "2026-11-10T21:09:18.101Z",
+        "sha256": "cf8119bc48ec251aa96d218cf54c9a29da928ac477b8baa3109f7c6187fdc118",
+        "locator": {
+          "page": 4,
+          "line": 38
+        },
+        "quote": "Article 26 (Credit Units) For course credits, one credit unit shall represent a minimum of 15 class hours in one"
+      },
+      "contactHoursPerCredit": {
+        "url": "https://www.postech.ac.kr/app/board/regulations/pdf/reg_2914.do",
+        "retrievedAt": "2026-11-10T21:09:18.101Z",
+        "sha256": "cf8119bc48ec251aa96d218cf54c9a29da928ac477b8baa3109f7c6187fdc118",
+        "locator": {
+          "page": 4,
+          "line": 38
+        },
+        "quote": "Article 26 (Credit Units) For course credits, one credit unit shall represent a minimum of 15 class hours in one"
+      },
+      "terms.fall.start": {
+        "url": "https://www.postech.ac.kr/eng/academics/academic_schedule.do?mode=list&selectedYear=2027",
+        "retrievedAt": "2026-11-10T21:08:37.761Z",
+        "sha256": "2938a25a6d808193f3ae46fde3e9c550cabd804a2a962951f408ff7bfb3767e9",
+        "locator": {
+          "page": 1,
+          "line": 248
+        },
+        "quote": "September | 09. 01 First Day of Fall Semester 09. 03 ~ 09. 10 Course Registration Confirmation and Add/Drop Period 09. 14 ~ 09. 16 National Holiday: Chuseok (Korean Thanksgiving Day) 09. 22 ~ 11. 02 Course Withdrawal Period 09. 24 ~ 09. 25 POSTECH-KAIST Science War (No Classes for Undergraduates) 09. 28 1/4 of Semester, Last Day to Apply for Transfer of Credits"
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://www.postech.ac.kr/eng/academics/academic_schedule.do?mode=list&selectedYear=2027",
+        "retrievedAt": "2026-11-10T21:08:37.761Z",
+        "sha256": "2938a25a6d808193f3ae46fde3e9c550cabd804a2a962951f408ff7bfb3767e9",
+        "locator": {
+          "page": 1,
+          "line": 251
+        },
+        "quote": "December | 12. 01 ~ 12. 09 Spring 2028 Double Major/Minor Application Period 12. 01 ~ 12. 21 Spring 2028 Major Selection Period for Mueunjae School of Undergraduate Studies 12. 03 University Foundation Day 12. 15 ~ 12. 21 Final Examinations 12. 20 First Day to Browse Course Catalog for Spring Semester 12. 20 ~ 12. 31 Spring 2028 MS-PhD Integrated Program Withdrawal Period 12. 22 ~ 02. 29 Winter Recess 12. 25 National Holiday: Christmas 12. 27 Substitute Holiday: Christmas 12. 28 Last Day to Submit Grades 12. 28 ~ 02. 04 Winter Session 12. 31 Last Day to Petition for Readmission (for Spring 2028) 12. 31 Last Day to Submit Thesis/Dissertation Defense and Comprehensive Examination Reports (for February Degree Candidates)"
+      },
+      "terms.spring.start": {
+        "url": "https://www.postech.ac.kr/eng/academics/academic_schedule.do?mode=list&selectedYear=2027",
+        "retrievedAt": "2026-11-10T21:08:37.761Z",
+        "sha256": "2938a25a6d808193f3ae46fde3e9c550cabd804a2a962951f408ff7bfb3767e9",
+        "locator": {
+          "page": 1,
+          "line": 242
+        },
+        "quote": "March | 03. 01 National Holiday: Independence Movement Day 03. 02 First Day of Spring Semester 03. 04 ~ 03. 12 Course Registration Confirmation and Add/Drop Period 03. 23 ~ 05. 03 Course Withdrawal Period 03. 29 1/4 of Semester, Last Day to Apply for Transfer of Credits"
+      },
+      "terms.spring.examsEnd": {
+        "url": "https://www.postech.ac.kr/eng/academics/academic_schedule.do?mode=list&selectedYear=2027",
+        "retrievedAt": "2026-11-10T21:08:37.761Z",
+        "sha256": "2938a25a6d808193f3ae46fde3e9c550cabd804a2a962951f408ff7bfb3767e9",
+        "locator": {
+          "page": 1,
+          "line": 245
+        },
+        "quote": "June | 06. 01 ~ 06. 09 Fall 2027 Double Major/Minor Application Period 06. 01 ~ 06. 21 Fall 2027 Major Selection Period for Mueunjae School of Undergraduate Studies 06. 06 National Holiday: Memorial Day 06. 15 ~ 06. 21 Final Examinations 06. 21 First Day to Browse Course Catalog for Fall Semester 06. 21 ~ 07. 02 Fall 2027 MS-PhD Integrated Program Withdrawal Period 06. 22 ~ 08. 31 Summer Recess 06. 28 Last Day to Submit Grades 06. 28 ~ 08. 06 Summer Session 06. 30 Last Day to Petition for Readmission (for Fall 2027) 06. 30 Last Day to Submit Thesis/Dissertation Defense and Comprehensive Examination Reports (for August Degree Candidates)"
+      },
+      "exchangeContact": {
+        "url": "https://international.postech.ac.kr/user/admission/exchange/html/index.do",
+        "retrievedAt": "2026-11-10T21:07:52.144Z",
+        "sha256": "5ea70cc7bb2ca78d8ceb1082b17f6d5d843309ce6ba59bc27c13635e9beb4dca",
+        "locator": {
+          "page": 1,
+          "line": 161
+        },
+        "quote": "POSTECH International Relations"
+      },
+      "catalogPublic": {
+        "url": "https://plms.postech.ac.kr/local/ubion/course/lists.php?lang=en",
+        "retrievedAt": "2026-11-10T21:09:52.076Z",
+        "sha256": "744c08f7024680bb833c2a668f5cf274381d42ed8847a2d6916da11d16192a5d",
+        "locator": {
+          "page": 1,
+          "line": 14
+        },
+        "quote": "Information on Courses Offered"
+      }
+    }
   },
   {
     "id": "sciencetokyo-jp",
