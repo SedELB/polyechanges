@@ -114,7 +114,7 @@ export async function collectSource(
     seen.add(c.code);
   }
 
-  const guard = checkGuards(found, previous);
+  const guard = checkGuards(found, previous, { descriptionsPublished: source.descriptions !== 'none' });
   if (!guard.ok) return recordFailure(db, source, now, guard.reason, previous);
 
   const snapshotFor = (c: HostCourseInput): number | null =>

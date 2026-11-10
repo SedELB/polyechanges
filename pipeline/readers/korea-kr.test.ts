@@ -72,8 +72,7 @@ describe('lecture des classeurs de Korea University', () => {
       level: 'undergrad',
       sourceUrl: 'https://example.org/fall',
     });
-    expect(course.description).toContain('DISCRETE MATHEMATICS');
-    expect(course.description).toContain('이산수학');
+    expect(course.description).toBe('');
     expect(course.provenance).toMatchObject({ url: 'https://example.org/fall.xlsx', sha256: 'a'.repeat(64), locator: { page: 1, line: 2 } });
     expect(course.provenance!.quote).toContain('COSE211');
   });

@@ -184,3 +184,18 @@ describe('runCompare : une seule demande par texte', () => {
     expect(seen.size).toBeGreaterThan(0);
   });
 });
+
+describe('runCompare, cours sans description', () => {
+  it('compare le titre seul et note text_used « titre »', async () => {
+    applyCollection(db, 'ntu', [course('T1', { title: 'SQL and transaction', description: '', outline: null })], () => null, '2026-01-03');
+    await runCompare(db, v0, fake);
+    const t1 = byCode('T1');
+    expect(t1.text_used).toBe('titre');
+    expect(t1.content_score).toBe(1);
+  });
+  it('un plan sans description reste « description+plan »', async () => {
+    applyCollection(db, 'ntu', [course('T2', { description: '', outline: 'Indexes' })], () => null, '2026-01-03');
+    await runCompare(db, v0, fake);
+    expect(byCode('T2').text_used).toBe('description+plan');
+  });
+});

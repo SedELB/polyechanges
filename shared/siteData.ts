@@ -34,7 +34,7 @@ export interface MatchOut {
   contentScore: number;
   workload: Workload;
   level: Level;
-  textUsed: 'description' | 'description+plan';
+  textUsed: 'description' | 'description+plan' | 'titre';
 }
 
 export interface SiteData {

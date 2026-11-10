@@ -173,8 +173,8 @@ export interface TermSource {
 }
 
 /**
- * Les listes ne donnent ni description ni plan de cours : la description reprend les deux titres officiels
- * (anglais et coréen), sans rien ajouter.
+ * Les listes ne donnent ni description ni plan de cours : la description reste vide (la fiche de la source
+ * le déclare), jamais remplie avec le titre.
  */
 export function toCourse(
   m: Merged,
@@ -186,7 +186,7 @@ export function toCourse(
   return {
     code: m.code,
     title: m.title,
-    description: m.korean ? `${m.title} (${m.korean})` : m.title,
+    description: '',
     outline: null,
     credits: m.credits,
     contactHours: null,

@@ -110,7 +110,9 @@ function CandidateDetail({ candidate, poly, university, data, heading }: { candi
         </div>
         <div>
           <strong>Ici : {course.code}</strong>
-          <p className="pair__desc">{course.description}</p>
+          <p className="pair__desc">
+            {course.description.trim() === '' ? 'Description non publiée par l’université : seul le titre a été comparé.' : course.description}
+          </p>
         </div>
       </div>
       <div className="pair__notions">

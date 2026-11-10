@@ -20,3 +20,16 @@ describe('checkGuards', () => {
     expect(checkGuards(courses(5), 0)).toEqual({ ok: true });
   });
 });
+
+describe('checkGuards, source sans descriptions publiées', () => {
+  it('ne contrôle pas les descriptions vides', () => {
+    expect(checkGuards(courses(10, 10), 0, { descriptionsPublished: false })).toEqual({ ok: true });
+  });
+  it('garde les autres garde-fous', () => {
+    expect(checkGuards([], 0, { descriptionsPublished: false }).ok).toBe(false);
+    expect(checkGuards(courses(69, 69), 100, { descriptionsPublished: false }).ok).toBe(false);
+  });
+  it('contrôle toujours les descriptions par défaut', () => {
+    expect(checkGuards(courses(10, 10), 0).ok).toBe(false);
+  });
+});

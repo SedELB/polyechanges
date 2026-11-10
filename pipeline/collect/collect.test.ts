@@ -233,3 +233,40 @@ describe('renderReport', () => {
     expect(text).toContain('Raison de l’échec : Aucun cours lu');
   });
 });
+
+describe('source sans descriptions publiées', () => {
+  const noDescriptions = (): SourceFile => ({
+    ...htmlSource(),
+    descriptions: 'none',
+    descriptionsNote: 'Seulement les titres.',
+  });
+  const titleOnly = (code: string): HostCourseInput => ({ ...course(code), description: '' });
+
+  it('accepte des descriptions toutes vides', async () => {
+    current = [titleOnly('A'), titleOnly('B'), titleOnly('C')];
+    const res = await collectSource(db, fetcher, noDescriptions(), tmp, '2026-11-10T10:00:00.000Z');
+    expect(res.status).toBe('ok');
+  });
+
+  it('garde le contrôle des descriptions vides pour les autres sources', async () => {
+    current = [titleOnly('A'), titleOnly('B'), titleOnly('C')];
+    const res = await collectSource(db, fetcher, htmlSource(), tmp, '2026-11-10T10:00:00.000Z');
+    expect(res).toMatchObject({ status: 'failed', reason: '3 descriptions vides sur 3' });
+  });
+
+  it('garde les autres garde-fous', async () => {
+    current = [];
+    const res = await collectSource(db, fetcher, noDescriptions(), tmp, '2026-11-10T10:00:00.000Z');
+    expect(res.status).toBe('failed');
+  });
+});
+
+describe('renderReport, note de descriptions', () => {
+  it('écrit la note de la source', () => {
+    const text = renderReport({
+      sourceId: 's', date: '2026-11-11', status: 'ok', courseCount: 1, diff: null, reason: null,
+      descriptionsNote: 'Seulement les titres.',
+    });
+    expect(text).toContain('Descriptions non publiées : Seulement les titres.');
+  });
+});

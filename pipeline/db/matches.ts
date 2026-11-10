@@ -11,7 +11,7 @@ export interface MatchRow {
   contentBand: ContentBand;
   workload: Workload;
   level: Level | null;
-  textUsed: 'description' | 'description+plan';
+  textUsed: 'description' | 'description+plan' | 'titre';
 }
 
 /** Remplace d'un coup toutes les lignes d'une version du critère. */

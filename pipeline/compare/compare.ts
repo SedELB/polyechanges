@@ -76,7 +76,7 @@ export async function runCompare(db: Db, criterion: LoadedCriterion, embedder: E
         contentBand: band,
         workload,
         level: levelFor(band, workload),
-        textUsed: host.outline && host.outline.trim() !== '' ? 'description+plan' : 'description',
+        textUsed: textUsedFor(host),
       });
     }
   }
@@ -95,4 +95,10 @@ export function freezeCriterion(db: Db, version: string, now: string): void {
     throw new Error(`Le critère ${version} n'a jamais été calculé : lance d'abord « npm run compare -- ${version} »`);
   }
   setFrozen(db, version, now);
+}
+
+/** Texte réellement comparé : le plan s'ajoute à la description ; sans l'un ni l'autre, il ne reste que le titre. */
+function textUsedFor(host: { description: string; outline: string | null }): MatchRow['textUsed'] {
+  if (host.outline && host.outline.trim() !== '') return 'description+plan';
+  return host.description.trim() === '' ? 'titre' : 'description';
 }

@@ -15,6 +15,10 @@ const sourceFileSchema = z.object({
   /** Source `saved` seulement : un fichier par adresse, dans le même ordre. */
   files: z.array(z.string().min(1)).optional(),
   reader: z.string().min(1),
+  /** `none` : la source ne publie aucune description, seulement des titres. */
+  descriptions: z.literal('none').optional(),
+  /** Explication en français, obligatoire quand `descriptions` vaut `none`. */
+  descriptionsNote: z.string().optional(),
 });
 
 export type SourceFile = z.infer<typeof sourceFileSchema>;
@@ -27,6 +31,9 @@ export function parseSourceFile(raw: unknown): SourceFile {
   }
   if (source.kind === 'saved' && (source.files === undefined || source.files.length !== source.urls.length)) {
     throw new Error(`La fiche de source ${source.id} (saved) doit lister un fichier par adresse`);
+  }
+  if (source.descriptions === 'none' && (source.descriptionsNote === undefined || source.descriptionsNote.trim() === '')) {
+    throw new Error(`La fiche de source ${source.id} (descriptions: none) doit avoir une descriptionsNote`);
   }
   if (source.universityId === null && source.reader !== POLY_READER) {
     throw new Error(`La fiche de source ${source.id} n'a pas d'université : seule la source de Poly peut en être dépourvue`);

@@ -45,3 +45,23 @@ describe('parseSourceFile', () => {
     expect(() => assertOneSourcePerUniversity([parseSourceFile(poly), source('a', 'u1')])).not.toThrow();
   });
 });
+
+describe('parseSourceFile, descriptions non publiées', () => {
+  const base = { id: 'k', universityId: 'u', kind: 'manual', urls: [], reader: 'manual' };
+  it('accepte descriptions none avec une note', () => {
+    expect(parseSourceFile({ ...base, descriptions: 'none', descriptionsNote: 'Seulement les titres.' })).toMatchObject({
+      descriptions: 'none',
+      descriptionsNote: 'Seulement les titres.',
+    });
+  });
+  it('refuse descriptions none sans note ou avec une note vide', () => {
+    expect(() => parseSourceFile({ ...base, descriptions: 'none' })).toThrow(/descriptionsNote/);
+    expect(() => parseSourceFile({ ...base, descriptions: 'none', descriptionsNote: '  ' })).toThrow(/descriptionsNote/);
+  });
+  it('refuse une autre valeur', () => {
+    expect(() => parseSourceFile({ ...base, descriptions: 'some', descriptionsNote: 'x' })).toThrow();
+  });
+  it('sans le champ, rien ne change', () => {
+    expect(parseSourceFile(base).descriptions).toBeUndefined();
+  });
+});

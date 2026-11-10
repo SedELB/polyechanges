@@ -52,6 +52,7 @@ async function main(): Promise<number> {
           courseCount: poly ? poly.imported : activeHostCourses(db, source.universityId ?? undefined).length,
           diff: result.diff,
           reason: result.reason,
+          descriptionsNote: source.descriptions === 'none' ? source.descriptionsNote : undefined,
           notes: poly
             ? [
                 `Comparés : ${poly.compared}`,

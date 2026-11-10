@@ -12,6 +12,8 @@ export interface ReportInput {
   reason: string | null;
   /** Lignes de détail ajoutées à la fin du rapport. */
   notes?: string[];
+  /** Note de la fiche d'une source qui ne publie pas de descriptions. */
+  descriptionsNote?: string;
 }
 
 const list = (label: string, codes: string[]) =>
@@ -27,6 +29,7 @@ export function renderReport(r: ReportInput): string {
   if (r.diff) {
     lines.push(list('Ajoutés', r.diff.added), list('Retirés', r.diff.removed), list('Modifiés', r.diff.modified));
   }
+  if (r.descriptionsNote) lines.push(`Descriptions non publiées : ${r.descriptionsNote}`);
   if (r.notes) lines.push(...r.notes);
   if (r.reason) lines.push(`Raison de l’échec : ${r.reason}`);
   return lines.join('\n') + '\n';
