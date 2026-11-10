@@ -13661,5 +13661,707 @@
     "sourcePage": 1,
     "sourceLine": 9,
     "snapshotSha256": null
+  },
+  {
+    "id": 757,
+    "universityId": "nagoya-jp",
+    "code": "0055222",
+    "title": "Introduction to Data Science",
+    "description": "【Standardized across all programs】 The goal of this course is to acquire basic knowledge and general-purpose analytical skills in order to acquire data analysis capabilities that will serves the foundation for creating new value in various situations in the society. For this goal, students will learn computer literacy, data description and visualization, and basic concepts of probability and statistics. If necessary, explanations using high school level mathematics will be given, but priority will be given to students' intuitive understanding of the outline.\n\nWeek 1 – Introduction to data science: 1. Guidance 2. The role of data science\nWeek 2 – Introduction to data science: Data acquisition and management\nWeek 3 – Artificial intelligence\nWeek 4 - Computer literacy: 1. Information ethics and related regulations 2. Information security 3. Regulations regarding personal data 4. Ethical data collection and utilization 5. Data anonymization 6. Various biases regarding data science\nWeek 5 – Data description and visualization; Mean, variance / standard deviation, correlation coefficient: 1. Types of data 2. Basic statistics 3. Statistical graphs 4. Probability distribution graphs 5. Correlation (correlation and causality, covariance, etc.)\nWeek 6 – Random variables and probability distributions: 1. Probability 2. Probability distribution, random variables\nWeek 7 – Population and sample; Statistical inference and testing: 1. Sampling 2. Sampling distribution 3. Point estimation, interval estimation\nWeek 8 – Statistical inference and testing: The concept of hypothesis testing",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W15000055222.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "68568d24eb3a46b4c3c01b694d9516a30814473a3e3494f18691761ae87135d9"
+  },
+  {
+    "id": 758,
+    "universityId": "nagoya-jp",
+    "code": "0055223",
+    "title": "Data Science Exercise A",
+    "description": "【Standardized across all programs】 The goal of this course is for students to acquire basic skills in data analysis using programming and computer tools based on the knowledge acquired in the lectures in order to acquire data analysis skills that will become the foundation for creating new values in various situations in the society. Students will execute the calculations and analysis methods learned in the lecture by themselves using R and Excel (Mostly for students in the humanities).\n\nWeek 1 - Computer literacy and basic Excel operations\nWeek 2 - Visualizing and summarizing data with Excel\nWeek 3 - Data analysis with Excel: t-test, analysis of variance, regression analysis\nWeek 4 - Basic operation of R, basic operation of Google Collaboratory\nWeek 5 - Visualization and Summarization with R\nWeek 6 - Statistical estimation, tests, t-test, analysis of variance, chi-square test in R\nWeek 7 - Multivariate data analysis, regression analysis, and cluster analysis with R\nWeek 8 - Elementary programming with R",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W15000055223.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "269a00434643f642c43d29b1e44ed163506a7f95cafb48f435748e37360817fb"
+  },
+  {
+    "id": 759,
+    "universityId": "nagoya-jp",
+    "code": "0051321",
+    "title": "Linear Algebra II",
+    "description": "【Standardized across all programs】 \"Linearity\" is the most basic concept of quantitative treatment in modern science and is used in all fields. Linear algebra is a method of mathematically dealing with the linearity. The goal of this course is to understand the concept of vector space and its linear transformation and to familiarize yourself with mathematical treatment using matrices as the latter half of the year-round lecture. In particular, we emphasize understanding and handling of basic concepts such as basis, standardization, orthogonality, and eigenvalues.\n\nVector spaces, determinants and their applications, eigenvalues and eigenvectors, applications of eigenvalue theory, continuous dynamical systems, linear differential equations.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000051321.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "be56da416daeb9b7a22881a9afd0efbd0fde8acc0b5083684da9970b61de251a"
+  },
+  {
+    "id": 760,
+    "universityId": "nagoya-jp",
+    "code": "0053621",
+    "title": "Special Mathematics Lecture (Introduction to probability)",
+    "description": "【Standardized across all programs】 In a global and interconnected society, mathematics play a central role. They are at the root of all communications tools, and serve as a universal language for natural and social sciences. All current technological developments are based on them. Mathematics can also be learned, enjoyed, and shared by everybody. Studying mathematics is also learning humility, tolerance, and diversity.\nThe aim of these Special Mathematics Lectures is to provide a solid knowledge on various mathematical topics. Concomitantly, students will develop a rigorous argumentation and a critical thinking. Each semester, a new subject is proposed, and these lectures are accessible to all students of Nagoya University, independently of their major and of their academic age. These special lectures also offer a unique opportunity to study in an international, transdisciplinary, and friendly environment.\n\nThe main topics covered will be (tentative program)\n1) Events and probabilities\n2) Discrete valued random variables\n3) Multivariate discrete distributions\n4) Probability generating function\n5) Distribution function and density function\n6) Multivariate distributions and independence\n7) Moments and moment generating functions\n8) The main limit theorems\n9) Branching processes\n10) Random walk (1D)\n11) Random process in continuous time",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000053621.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "4ca48817218f1140d6d912ef1368ba2ff94efd382c6ba415a0fc24826e8d04a0"
+  },
+  {
+    "id": 761,
+    "universityId": "nagoya-jp",
+    "code": "0054623",
+    "title": "Special Mathematics Lecture (Topology and homotopy)",
+    "description": "【Standardized across all programs】 In a global and interconnected society, mathematics play a central role. They are at the root of all communications tools, and serve as a universal language for natural and social sciences. All current technological developments are based on them. Mathematics can also be learned, enjoyed, and shared by everybody. Studying mathematics is also learning humility, tolerance, and diversity.\nThe aim of these Special Mathematics Lectures is to provide a solid knowledge on various mathematical topics. Concomitantly, students will develop a rigorous argumentation and a critical thinking. Each semester, a new subject is proposed, and these lectures are accessible to all students of Nagoya University, independently of their major and of their academic age. These special lectures also offer a unique opportunity to study in an international, transdisciplinary, and friendly environment.\n\nThe topic will be an introduction to topology, which is a mathematical framework to understand continuity and equivalence in much more general settings. We will also give a basic overview of homotopy theory, which is one example of the interaction of topology with abstract algebra.\nPlanned content (tentative):\nMetric spaces\n- open/closed sets\n- continuity and completeness\n- compactness\nTopological spaces\n- open/closed sets, bases, separation axioms\n- continuous maps and homeomorphisms\n- subspaces and quotient spaces\n- compactness and connectedness\nHomotopy\n- homotopic paths and the fundamental group\n- covering spaces\n- higher dimensional homotopy",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000054623.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "92270bf6c93c6f053bfc44845a6800551f168151d0f48d1063967e50fc956af7"
+  },
+  {
+    "id": 762,
+    "universityId": "nagoya-jp",
+    "code": "0055321",
+    "title": "Calculus II",
+    "description": "【Standardized across all programs】 The field of mathematics that describes and analyzes quantitative changes is analysis, and its central method is calculus. It is an important research method that is widely applied to the natural sciences and, in recent years, the social sciences. The goal of this course is to understand the basics of multivariable calculus and to become familiar with and apply it to various calculations in the latter half of the year-round lecture. In particular, we emphasize understanding associated with geometric and spatial images.\n\nThe course will cover basic notions related to the study of functions of several variables. These include:\n- Functions of several variables: partial derivatives, maximum and minimum\n- Vector-valued functions of several variables: Jacobian matrix, implicit function theorem\n- Integration: curve integrals of vector fields, volume integrals, surface integrals\n- Green's theorem, divergence theorem, Stokes theorem\nThroughout the course, we consider connections to and examples from the natural sciences.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000055321.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "e22058900775dfa2328b5e3672cef4ce1925f6fd0035faaede3e51d77406e0ad"
+  },
+  {
+    "id": 763,
+    "universityId": "nagoya-jp",
+    "code": "0061311",
+    "title": "Calculus I",
+    "description": "【Standardized across all programs】 The field of mathematics that describes and analyzes quantitative changes is analysis, and its central method is calculus. It is an essential research method in the natural sciences, but in recent years it has been widely applied to the social sciences. The goal of this course is to understand the basics of one-variable differentiation and integration as the first half of the year-round lecture. In particular, it is important to understand the essence of the limit and to be able to handle elementary functions such as logarithmic functions and trigonometric functions freely.\n\n1. Limits and continuity: Basic properties of limits of sequences and functions, continuous functions and their basic properties, maxima and minima, asymptotic properties of functions.\n2. Differentiation: Basic properties of the derivative and its interpretation, mean value theorem, higher derivatives, Taylor series.\n3. Integration: Riemann integral and its properties, improper integrals, the fundamental theorem of calculus.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000061311.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "98c3c36e36191e857a4012a09e954f951ca1ffa86033b68591b856f9b465a87d"
+  },
+  {
+    "id": 764,
+    "universityId": "nagoya-jp",
+    "code": "0061611",
+    "title": "Special Mathematics Lecture (Introduction to Algebra)",
+    "description": "【Standardized across all programs】 In a global and interconnected society, mathematics play a central role. They are at the root of all communications tools, and serve as a universal language for natural and social sciences. All current technological developments are based on them. Mathematics can also be learned, enjoyed, and shared by everybody. Studying mathematics is also learning humility, tolerance, and diversity.\nThe aim of these Special Mathematics Lectures is to provide a solid knowledge on various mathematical topics. Concomitantly, students will develop a rigorous argumentation and a critical thinking. Each semester, a new subject is proposed, and these lectures are accessible to all students of Nagoya University, independently of their major and of their academic age. These special lectures also offer a unique opportunity to study in an international, transdisciplinary, and friendly environment.\n\nThe precise topics are not decided yet but will come shortly before the Fall semester starts. Please check the homepage of the course in summer.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000061611.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "424ce5c405937da053a7c967f27208dbff187fbcbc967a9807d2520414713676"
+  },
+  {
+    "id": 765,
+    "universityId": "nagoya-jp",
+    "code": "0063231",
+    "title": "Complex Analysis",
+    "description": "【Standardized across all programs】 Complex functions appear in various parts of the natural sciences, play a fundamental role and have a wide range of applications. In particular, its calculus forms a beautiful and unified world that is completely different from that of real numbers. The goal of this course is to learn the basics of differentiation and integration of such complex functions, especially the basic properties of holomorphic functions, and to become familiar with their various treatments, which are important for applications.\n\nComplex numbers: The complex number system, properties of the complex numbers, Cartesian and polar form.\nHolomorphic functions: Complex differentiability, Cauchy–Riemann equations, analytic functions.\nComplex Integrals: Line integrals, Cauchy’s theorem, Cauchy’s integral formula and Taylor expansion.\nSingularities and the Residue Theorem: Laurent series, classification of singularities, the Residue Theorem and applications to real integrals.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000063231.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "b82e501246787ed648e85effcf4a258b6b624dc1ea1694eac9b9e3d181340e0f"
+  },
+  {
+    "id": 766,
+    "universityId": "nagoya-jp",
+    "code": "0063611",
+    "title": "Special Mathematics Lecture (Groups and their representations)",
+    "description": "【Standardized across all programs】 In a global and interconnected society, mathematics play a central role. They are at the root of all communications tools, and serve as a universal language for natural and social sciences. All current technological developments are based on them. Mathematics can also be learned, enjoyed, and shared by everybody. Studying mathematics is also learning humility, tolerance, and diversity.\nThe aim of these Special Mathematics Lectures is to provide a solid knowledge on various mathematical topics. Concomitantly, students will develop a rigorous argumentation and a critical thinking. Each semester, a new subject is proposed, and these lectures are accessible to all students of Nagoya University, independently of their major and of their academic age. These special lectures also offer a unique opportunity to study in an international, transdisciplinary, and friendly environment.\n\nThe following subjects will be studied during this course (tentative program)\n1) Groups\n2) Linear representations\n3) Lie groups and Lie algebras\n4) Semi-simple theory\n5) Examples",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000063611.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "1571102443db6a7d73cc6ed6f4e0d8bd07e95520984c877317555f0920054846"
+  },
+  {
+    "id": 767,
+    "universityId": "nagoya-jp",
+    "code": "0064211",
+    "title": "Introduction to Contemporary Mathematics",
+    "description": "A tentative list of topics we aim to cover includes:\n- Review of algebraic manipulation and fractions\n- Linear equations\n- Quadratic equations\n- Functions of a single variable\n- Composite and inverse functions\n- Exponential and logarithmic functions\n- Probability and information theory\n- Limits, continuity and differentiation\n- Minimum, maximum and optimisation\n- Systems of equations and matrices\n- Linear difference equations\nNumerous examples and applications of these topics in economics and social sciences will be considered.\nThe precise content that will be covered in the lectures is flexible and will depend on the interests of the students and their majors.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000064211.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "2ff801ca7e3d987be4455d79ee1350a21c4156c26bc6a6676b153b5de37c762d"
+  },
+  {
+    "id": 768,
+    "universityId": "nagoya-jp",
+    "code": "0065312",
+    "title": "Linear Algebra I",
+    "description": "【Standardized across all programs】 \"Linearity\" is the most basic concept of quantitative treatment in modern science and is used in all fields. Linear algebra is a method of mathematically dealing with the linearity. The goal of this course is to familiarize yourself with the mathematical treatment of matrices and vectors and to understand various concepts as the first half of the year-round lecture. In particular, we emphasize geometric understanding by coordinate geometry (plane / solid), familiarity with solving simultaneous linear equations, and understanding of the concept of determinants.\n\nLinear systems, Gaussian elimination, matrices, vectors, linear maps, matrix multiplication, the inverse of a linear map, subspaces of Rn, image and kernel, linear independence, bases, dimension, coordinates, orthogonal bases, the Gram–Schmidt algorithm, QR factorization, orthogonal complement, orthogonal maps, least square approximations.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/00_2026_W21000065312.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "650e5fa362f258bbb9b1eb5008b31dfb9526689e6a5e2a0567fae92076969f2b"
+  },
+  {
+    "id": 769,
+    "universityId": "nagoya-jp",
+    "code": "0849102",
+    "title": "Electrical Circuits Engineering",
+    "description": "This course deals with the basic concepts and principles of electrical circuits, as a basis for Automobile Engineering Laboratory I-II, Power Electronics, Scientific Measurements. The purpose of this course is to develop an understanding of basic electrical-circuit theory and responses of electrical circuits. Upon completion of the course, students will be able to (1)describe responses of electrical circuits with circuit equations, (2)explain steady-state and transient phenomena in electrical circuits, and (3)understand various phenomena by utilizing equivalent circuit analysis.\n\n1. Electrical Quantities (Charge, Current, Electrical Potential and Power)\n2. Circuit Concepts and Elements (Resistance, Inductance and Capacitance)\n3. Circuit Lows(Kirchhoff's Voltage and Current Laws)\n4. Circuit Analysis Methods (Matrices, Thevenin's and Norton's Theorems)\n5. Waveforms and Signals for AC Circuits\n6. First-Order Circuits (RC and RL Circuits)\n7. Higher-Order Circuits (RLC Circuits)\n8. Sinusoidal Steady-State Circuit Analysis\n9. AC Power\n10. Frequency Response of AC Circuits\n11. Mutual Inductance and Transformers\nPreparation on each of above-mentioned topics described in the textbook is requested. Homework assigned in each class should be reported no later than designated deadline.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X310000849102.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "311359a83437f1345c426648aa97af91ad9a30c5430585dc84f38016efda5a87"
+  },
+  {
+    "id": 770,
+    "universityId": "nagoya-jp",
+    "code": "0849107",
+    "title": "Electronic Circuits",
+    "description": "This lecture is designed to learn basic knowledge of non-linear circuit components, such as diode and transistor, and theory of analog transistor circuits to build the amplifier and other functional circuits.\n\n1. Introduction: diodes and transistors\n2. Amplification using transistor\n3. Common emitter circuit, Common base circuit, Common collector circuit\n4. Bias circuit, equivalent circuit\n5. h parameter, input / output resistance\n6. Impedance matching\n7. Decibel, FET structure and circuit\n8. Summary of the basics of electronic circuits and evaluation\n9. Small-Signal Mid-frequency Bipolar Junction Transistor (BJT) Amplifiers\n10. Frequency Effects in RC Amplifiers: low frequency\n11. Frequency Effects in RC Amplifiers: high frequency\n12.Power amplifiers: A class\n13.Power amplifiers: B class\n14. Operational amplifiers\n15. Summary of amplifiers and evaluation",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X310000849107.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "695f280d6d657fc1facd9337aae1f282bec451f15a940a09b2bf6b7328ac1475"
+  },
+  {
+    "id": 771,
+    "universityId": "nagoya-jp",
+    "code": "0849116",
+    "title": "Control Engineering and Tutorial",
+    "description": "Control engineering is a field of study that covers not only the design of controllers but also the overall process of control system design.\nThis course focuses on the fundamental steps of control system development, such as modeling and analysis of controlled systems and controller design, with an emphasis on classical control.\nIt also introduces the basics of modern control, including optimal regulators and observers, providing foundational knowledge for future study of advanced control topics such as robust control, model predictive control, and nonlinear control.\n\nThis class consists of the following contents\n1. Introduction of Control Engineering\n2. Mathematical modeling\n3. Transient and steady-state response analysis\n4. Frequency response analysis\n5. Stability of systems\n6. Control systems design (PID, Frequency domain, State space, etc.)",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X310000849116.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "18a8b174231f29c0206ac422d61605796c86150774341381ba1b3126bd1fb706"
+  },
+  {
+    "id": 772,
+    "universityId": "nagoya-jp",
+    "code": "0889111",
+    "title": "Computer Software I",
+    "description": "The purpose of this course is to study basic computer literacy skills and basic computer programming techniques for solving various problems in the C language through exercises.\n\n1. Basic computer literacy skills\n- Writing and sending e-mails\n- UNIX command line interface\n2. Basics of the C language\n- Data types and variables\n- Control structures (Selection, loop, etc.)\n- Functions\n- Standard C library functions (Input/Output, Math, etc.)\n- Fundamental data structures (Scalars, arrays, etc.)\n3. Problem Solving by Programming",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X310000889111.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "e4f4edd0ed08d16ed1e18a344f1bef05b3bcdc5188a377f7f1cdbbcdf105382f"
+  },
+  {
+    "id": 773,
+    "universityId": "nagoya-jp",
+    "code": "0889113",
+    "title": "Mathematics II and Tutorial",
+    "description": "This course introduces students to vector analysis and partial differential equations, expecting their applications to advanced engineering, such as those related to mechanics and electromagnetics, and those to materials and heat transfer phenomena. The purpose of the course is to acquire fundamental knowledge in vector analysis and partial differential equations and enable students to apply it to solve actual engineering issues through intensive exercises.\n\n1. Vector algebra 2. Vector differential operations\n3. Curved lines and curved surfaces 4. Gradient, divergence and rotation\n5. Line integrals and surface integrals\n6. Gauss theorem, Stokes theorem and Green's theorem\n7. Irrotational (conservative) field and solenoidal field\n8. Curvilinear coordinate systems (cylindrical coordinates and spherical coordinates)\n9. Poisson's equation and Green function\n10. Separation of variables: Laplace equation, diffusion equation and wave equation\nStudents are expected to review the distributed notes after lectures. Students need to submit reports on the problems presented in the lecture. Do not copy other people's reports in entirety. The solutions of the problems will be presented in the lecture where reports are returned, through which students are expected to deepen their understanding.",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X310000889113.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "b261e45e5d0865f4e86347f3117086fca180b3fbd4f304d49d8cc58b90e7057e"
+  },
+  {
+    "id": 774,
+    "universityId": "nagoya-jp",
+    "code": "0849306",
+    "title": "Power Electronics",
+    "description": "Electrical engineering and electronics have attracted great interest in the automotive, aerospace, and industrial application fields. Nagoya University is located in the Tokai area, which supports manufacturing technologies and industries in Japan. Nagoya University is expected to contribute to Japanese manufacturing. This course includes the concept of engineering responsibility. Specifically, students analyze circuits and systems, identify design and control problems, and construct experimental setups using knowledge of electric circuits, control engineering, and electromagnetics.\nUpon completion of the course, students will be able to\n(1) understand and analyze the driving methods of power semiconductor devices using transient phenomena,\n(2) identify and analyze problems in power electronics circuits using transient phenomena,\n(3) design inductors using magnetic-circuit concepts based on electromagnetics,\n(4) analyze the transfer functions of power electronics circuits using control-engineering knowledge,\n(5) design and evaluate the control stability of power electronics circuits,\n(6) independently propose, construct, and improve an experimental setup for electric-circuit design.\n\n1. Power electronics\n1.1 Power electronics applications\n1.2 Basic knowledge of power semiconductor devices and circuits\n1.3 Analysis of power semiconductor driving methods\n2. Control of power electronics\n2.1 Bode plots\n2.2 Relationship between power electronics and Bode plots\n2.3 Identification of control-stability problems\n2.4 PWM control\n2.5 Design and evaluation of power-electronics control\n3. Design of power inductors\n3.1 Inductors for power electronics\n3.2 Principles of magnetic circuits\n3.3 Design and evaluation of inductors\n4. Identification and solution of problems in power electronics applications and systems\nHomework assigned in each class must include analysis of the given problem and be submitted by the designated deadline.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X320000849306.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "26bdabc58672c9162edeaa7f2b05150f5bc4fd17e5dded71c7569f38ae5ff16b"
+  },
+  {
+    "id": 775,
+    "universityId": "nagoya-jp",
+    "code": "0849307",
+    "title": "Numerical Analysis",
+    "description": "The purpose of this course is to understand the fundamentals of numerical analysis (numerical simulation with time advancement) through multibody dynamics simulation, and heat transfer simulation and/or computational fluid dynamics. Students will aquire basic programming skills of Matlab/Octave.\n\nAfter the lecture by the lecturer, students are required to program computational codes to solve the given problem using specific schemes/algorithms. Howework is given every week.\nFirst part: MCK equation for 1 DOE (degree of freedom) and 2 DOE systems.\nSecond part: Diffusion equation and diffusion-convection equation for heat with/without fluid motion.\nPresentation by students in the class at the end of both the first and second parts. Each student work on each unique task.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X320000849307.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "3d03fd38dc1bc9df386a94653e97e5bcb4f13de2f65c662500a7b85035b3f64f"
+  },
+  {
+    "id": 776,
+    "universityId": "nagoya-jp",
+    "code": "0889502",
+    "title": "View of Advanced Electrical, Electronic and Information Engineering",
+    "description": "The purpose of this class is to deepen the understanding of the advanced electrical, electronic and information engineering. This class discusses the fundamentals and current topics with an overview of the status of their researches and developments in Japan. Topics to be introduced are those related with energy, material and device, information and communication, multimedia and so on.\nStudents will be familiar with the most advanced technologies in the above subject matter.\n\nThis course consists of two parts:\n1: Lectures by faculty members of the Department of Electrical, Electronic, and Information Engineering: 7 sessions\n2: Visits to on-campus facilities and related sites: 2 sessions\nIn the lectures, faculty members from the fields of electrical engineering, electronics, and information and communications will provide explanations of recent research topics. During the visits, students will tour facilities related to energy technologies, materials technologies, and other relevant areas.\nA report is required after each lecture and visit.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X330000889502.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "60aa5cfd06a6b5ba11c9bef5d40862914d3486dcb7f9a3c03969137399ea8db9"
+  },
+  {
+    "id": 777,
+    "universityId": "nagoya-jp",
+    "code": "2560085",
+    "title": "Speech/Behavior Signal Processing 1",
+    "description": "In the lecture course, Speech/Behavior Signal Processing 1 and 2, high-level intelligent process such as, perception, intention, adaptation, and motor control of the human communication and behavior are discussed, in terms of its mathematical modeling and the application systems on the basis of digital signal processing of sensor outputs. Particularly in Speech/Behavior Signal Processing 1, basic topics on speech, music, acoustics, sports, interaction, self-driving, and so on are discussed.\n\nTo learn the basic concepts of the above mentioned topics, the series of lectures on the related topics will be given in this course. An example of the related topics is shown below.\n1) Speech generation\n2) Speech recognition\n3) Speaker recognition and diarization\n4) Speech assessment\n5) Music information retrieval\n6) Anomalous sound detection\n7) Audio captioning\n8) Machine translation\n9) Image processing for sports\n10) Human-machine interaction systems\n11) Driver behavior signal processing\n12) Intelligent control of vehicle",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y003102560085.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "534425f15d253f2cb62a9afea94a43e0b71837b2e4891d27c1ba3a000234a880"
+  },
+  {
+    "id": 778,
+    "universityId": "nagoya-jp",
+    "code": "2560086",
+    "title": "Speech/Behavior Signal Processing 2",
+    "description": "In the lecture course, Speech/Behavior Signal Processing 1 and 2, high-level intelligent processes such as perception, intention, adaptation, and motor control of the human communication and behavior are discussed, in terms of its mathematical modeling and the application systems on the basis of digital signal processing of sensor outputs. Particularly in Speech/Behavior Signal Processing 2, advanced topics on speech, sporta, interaction, self-driving, and so on are discussed.\n\nTo learn recent research activities on the above mentioned topics, the series of lectures on the related topics will be given in this course. An example of the related topics is shown below.\n1) Advanced speech generation\n2) Advanced speech recognition\n3) Advanced speaker recognition and diarization\n4) Advanced speaking-aid and hearing-aid systems\n5) Advanced deepfake detection\n6) Advanced music source separation\n7) Advanced audio event detection\n8) Advanced reinforcement learning\n9) Advanced image processing for sports\n10) Advanced intaractive systems\n11) Advanced driver modeling using large corpus\n12) Advanced vehicle sensing technologies",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y003102560086.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "abc73d633fe3fbc9567b84537d18ccf2300fbfeb19d88056ace71ae5b50ff2eb"
+  },
+  {
+    "id": 779,
+    "universityId": "nagoya-jp",
+    "code": "2560095",
+    "title": "Intelligent Robotics 1",
+    "description": "Robotic technology connects real environments, including society and people, to computers and networks.\nIn this lecture, students will learn the methodology of intelligent information processing in the real world, using as example robotic systems, such as autonomous vehicles and multi-agent systems.\n\nStudents aim to understand the methodology of intelligent information processing through the real world.\nIn this lecture, robots and multi-agent systems operating in real environments are used as examples to understand theoretical and practical aspects from the perspective of forward analysis and inverse analysis.\n[schedule]\nPart 1: Forward and reverse analysis of multiple human behavior from the perspective of robotics\nPart 2-3: RoboCup soccer analysis example\nPart 4-5: Introduction to robotics in autonomous driving\nLessons 6-8: Multi-agent reinforcement learning",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y003102560095.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "2952bbf9503066baf38669bc938f402b936ff79d7d4d9734c35bb739fcbda431"
+  },
+  {
+    "id": 780,
+    "universityId": "nagoya-jp",
+    "code": "2510021",
+    "title": "Quantum Information Theory 1",
+    "description": "The course will introduce quantum information and quantum computation, in a way suitable to an audience with no specific background. The following topics will be covered: mathematical description of quantum systems – composite systems, purification, and quantum entanglement – Bell inequalities and quantum \"nonlocality\" – evolution of open quantum systems – quantum channels – quantum measurement processes – simple quantum communication scenarios (noiseless channels, super-dense coding, quantum teleportation).\nThis course is followed by \"Quantum Information Theory 2\".\n\n1. Quantum theory's axioms and notations\n2. Quantum circuit model (1)\n3. Quantum circuit model (2)\n4. Quantum teleportation and superdense coding\n5. Bell's inequality\n6. Quantum random access codes\n7. Introduction to quantum Shannon theory (1)\n8. Introduction to quantum Shannon theory (2)",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y010602510021.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "7b84291627f2c010f5ecd12243eb7764d16bffe6a52ce50623bb944d7b7aa4aa"
+  },
+  {
+    "id": 781,
+    "universityId": "nagoya-jp",
+    "code": "2510022",
+    "title": "Quantum Information Theory 2",
+    "description": "This course, building upon the previous one \"Quantum Information Theory 1, \" will introduce some central ideas in quantum Shannon theory like quantum instruments, quantum entropy, quantum information gain, accessible information, and the Holevo bound.\n\n1. Basic notions of quantum information (1)\n2. Basic notions of quantum information (2)\n3. Quantum entropy (1)\n4. Quantum entropy (2)\n5. Quantum measurement\n6. Quantum data-processing inequality\n7. The information-disturbance tradeoff (1)\n8. The information-disturbance tradeoff (2)",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y010602510022.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "c849470be54040f992ff32330814ef363f975e3974e31c88dffa4f0a1275ab4c"
+  },
+  {
+    "id": 782,
+    "universityId": "nagoya-jp",
+    "code": "2520054",
+    "title": "Information Physics",
+    "description": "This course aims to provide students with theoretical physics-based concepts and methodologies necessary to theoretically understand the properties and typical performance of a wide variety of multi-body systems, such as random spin systems, neural networks, biological networks, and pathogen-immune systems, which interact with each other in complex ways, and to construct control methods. The purpose of this course is to deepen the understanding of basic concepts in statistical mechanics of random systems and methodologies such as the replica method, in order to acquire ideas and methodologies based on theoretical physics necessary to construct control methods.\n\nThis course deals with the analytical methods from the view point of physics in order to investigate static and dynamic properties of systems composed of many elements as materials, biologicl systems, social systems and information systems. Statistical physics for random spin systems and its applications are discussed.\n1. Biological brain\n2. Neural network\n3. Fundamentals of machine learning\n4. Perceptron learning and back-propagation\n5. Hopfield model (associative memory neural network)\n6. Deep learning, generative models, large-scale language models\n7. Statistical mechanics of perceptron learning\n8. Summary",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y010602520054.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "eebaf41a939552aa4c4ccc5e196f5aabc3a340ab7d3a3e4276dac32a28c4c74c"
+  },
+  {
+    "id": 783,
+    "universityId": "nagoya-jp",
+    "code": "2520064",
+    "title": "Genetic information system 1",
+    "description": "The purposes of this course are to learn: 1) the fundamental mechanisms of gene expression and their regulation at a variety of levels, starting with explanation of the basic structures of nucleic acids and proteins, and 2) historical aspects of molecular biology.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y010602520064.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "e53cd42d32ede902b0806cc266027fe4a191be8d1beca627ee59e013388cf78d"
+  },
+  {
+    "id": 784,
+    "universityId": "nagoya-jp",
+    "code": "2520065",
+    "title": "Genetic information system 2",
+    "description": "The purposes of this course are to learn: 1) the generation mechanisms of biological functions based on interactions between genes and environmental signals, and 2) how complex and highly integrated biological phenomena are generated in terms of regulation of gene expression.",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y010602520065.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "fd42b8ac92e90ec8823c815126b1071fdca5c2412da841126e425408e8bc7505"
+  },
+  {
+    "id": 785,
+    "universityId": "nagoya-jp",
+    "code": "2550045",
+    "title": "Information Network A",
+    "description": "Fundamental technologies for mobile wireless network are explained. A copy of the presentation slides made by the lecturer are provided for reference and self study. The course consists of spec and standardization, basic principle, performance and QoS, security consideration, implementation and state of the art.\n\nIn this lecture, students will learn about mobile wireless network technology in general and wireless LAN in particular, from security to quality.\n[Plan].\n1. mobile wireless network\nNext Generation Mobile Wireless Network\n3. wireless LAN technology (specification and standardization)\n4. wireless LAN technology (operating principle)\n5. wireless LAN technology (performance)\n6. wireless LAN technology (security)\n7. wireless LAN technology (implementation)\n8. pick up the latest technology trends",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y010602550045.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "37c38ade30b844ed6926bdcc912dfd9daf4ff6b9c340aec2a97b9b6cd38c1dec"
+  },
+  {
+    "id": 786,
+    "universityId": "nagoya-jp",
+    "code": "2838101",
+    "title": "Theory of Data Analysis and Processing",
+    "description": "The purpose of this class is to deepen the understanding of the techniques that are necessary for data acquisition and analysis in experiments, and to obtain practical skills. The signal measurement of voltage / current etc. in the experiment is important for the electrical engineering, electronics, information and communication engineering. Students will be able to 1) understand the principle of the signal measurement method, 2) understand the evaluation method of the error on the signal measurement; and 3) process and analyze the measured data using software (LabVIEW and Scilab).\n\n1. Signal measurement\n1.1 Measuring instrument definition and specification\n1.2 Basics of circuit design\n1.3 Voltage measurement, current measurement, resistance measurement\n1.4 Error source in measurement\n1.5 Configuration of PC-based instrument\n1.6 Collection and programming of experiment data\n2. Data analysis\n2.1 Statistical analysis (error, least-square fitting, basic statistics and test)\n2.2 Time series analysis (FT, FFT, WT, transfer function, chaos)\n2.3 Correlation analysis (autocorrelation, cross-correlation)\n2.4 Spectral analysis (fourier analysis, fourier transform, spectral density function)\n2.5 Simulation · Observation Experimental Data Analysis (Basic)\n2.6 Simulation / Observation Experimental Data Analysis (Application)\nProcedures of online lectures and exercises",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/28_2026_Y011402838101.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "50a5688fa0e046f7f2783afe474f8e5bf033a56f767f2d9e64423f9267e40f41"
+  },
+  {
+    "id": 787,
+    "universityId": "nagoya-jp",
+    "code": "2838503",
+    "title": "Semiconductor Devices",
+    "description": "Fundamental properties of semiconductors and physics of electron and photonic devices for micro- and nanoelectronics are studied. The limits of technology and economics are discussed with an oulook of future developments.\n\nCh.1 Introduction into Semiconductors\nCh.2 Carrier Transport Phenomena\nCh.3 Schottky Diode\nCh.4 More Diode Properties\nCh.5 Light Emitting Diodes and Laser\nCh.6 Solar Cells\nCh.7 Metal-Oxide-Semiconductor Contacts\nCh.8 more MOSFET\nCh.9 Other Field-Effect-Transistors\nCh.10 Bipolar Transistors\nMuseum Visit and Student Presentation\nCh.11 Crystal Growth and Epitaxy\nCh.12 Lithography and the Limits of Technology",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/28_2026_Y011402838503.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "7d1465d86090be789a1c312f23750931ecb9d74d13e2e37f266d70c3f7d28060"
+  },
+  {
+    "id": 788,
+    "universityId": "nagoya-jp",
+    "code": "2838504",
+    "title": "Advanced Lectures on Communication and Image Processing",
+    "description": "In this course, students will study wireless communication and image processing technologies which are fundamental to automotive engineering.\n\n- Basics of wireless LAN\n- Experimental practice on wireless LAN\n- Basics of image signal processing\n- Programming exercises on image signal processing",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/28_2026_Y011402838504.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "a7b357821766612cfa618c5334b4a0ebf2e63f7478398c6d36d35456eb768337"
+  },
+  {
+    "id": 789,
+    "universityId": "nagoya-jp",
+    "code": "2841509",
+    "title": "Advanced Lectures on Space Electromagnetic Environment",
+    "description": "This class deals with the sun-earth system (space electromagnetic environment) by lecturing sun, interplanetary space, geospace environment and behavior of electromagnetic fields and charged particles. The lecture is focused on understanding the following topics:\n(1) space electromagnetic environment as a extension of the earth's environment\n(2) effect of space electromagnetic environment changes on the earth environment\n(3) effect of space electromagnetic environment changes on the human activities in space\n\nIntroduction - Structure and dynamics of sun-earth system\n1. Basic Concepts of Plasma\n1.1. Plasma Oscillation\n1.2. Debye Shielding\n1.3. Plasma Parameter\n2. Single Particle Motion\n2.1. Cyclotron Motion\n2.2. Particle Drift\n2.2.1. Electric Drift\n2.2.2. Polarization Drift\n2.2.3. Gradient B Drift\n2.2.4. Curvature Drift\n2.3. Adiabatic Invariants\n2.4. Mirror Point and Loss Cone\n2.5. Ponderomotive Force\n3. MagnetoHydroDynamics\n3.1. Derivation of the MHD Equations\n3.2. Important Concepts of MHD Plasmas\n3.2.1. Frozen In\n3.2.2. MHD Equilibrium\n3.2.3. Diamagnetic Drift\n3.2.4. Inertia Current\n3.2.5. Field-Aligned Currents Driven by MHD Processes\n3.3. Alfven Wave\n4. Structure and dynamics of the Heliosphere, Magnetosphere, and Ionosphere\n4.1. Magnetic Field\n4.2. Heliosphere\n4.3. Magnetosphere\n4.4. Ionosphere",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/28_2026_Y011402841509.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "941c9b8abbb33c365b62c8da37d31f2dfa3949c91345ace816f13906fd769b36"
+  },
+  {
+    "id": 790,
+    "universityId": "nagoya-jp",
+    "code": "3211001",
+    "title": "Perspectives in Mathematical Science I",
+    "description": "The purpose of this course is to introduce and explain various concepts and methods in mathematical sciences.\nThis year, the course is provided by three instructors.\nPart I (KASUYA Hisashi) Connections and Curvatures in differential geometry\nPart II (SUGIMOTO Mitsuru) Fourier analysis and its applications\nPart III (HAYASHI Masahito) Information-theoretic security\n\nPart I (KASUYA Hisashi) In this part of the lecture, the role of connections and curvatures in geometry is explained.\nPart II (SUGIMOTO Mitsuru) In this part of the lecture, the basic theory of Fourier analysis is introduced.\nPart III (HAYASHI Masahito) Information theoretical security (Hayashi) Lecture 1. Notations on probability theory Lecture 2. Introduction of Information measure Lecture 3. Security measure Lecture 4. Hash function Lecture 5. Leftover hashing lemma",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/32_2026_Y002403211001.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "51a2576758e9dd237e5738ac7b71965d75fb3dde7c2146c7b00fbefa1f9d74cb"
+  },
+  {
+    "id": 791,
+    "universityId": "nagoya-jp",
+    "code": "3211002",
+    "title": "Perspectives in Mathematical Science II",
+    "description": "The purpose of this course is to introduce and explain various concepts and methods in mathematical sciences.\nThis year, the course is provided by three instructors.\nThe schedule has been updated. (In August.)\nPart I (OHTA Hiroshi) Glimpse of Lagrangian Floer theory and related topics\nPart II (NAYATANI Shin) Spectral graph theory\nPart III (HIRAI Hiroshi) Matrix scaling and generalizations\n\nPart I (OHTA Hiroshi) Lagrangian Floer theory is a kind of an infinite dimensional Morse theory associated to Lagrangian submanifolds in a symplectic manifold. After a brief introduction to Floer theory, I will give an overview of some recent developments in the field and related topics.\n(6 Oct, 13 Oct, 20 Oct, 27 Oct.)\nPart II (NAYATANI Shin) In this part of the lecture, after some preliminaries, we discuss some topics in spectral graph theory. A main topic is the problem of maximizing the first eigenvalue of the Laplacian over all edge weights satisfying a certain constraint. We observe that its dual problem is a problem of optimizing a realization of the graph in space, and that the duality helps us solve both problems.\n(10 Nov, 17 Nov, 24 Nov, 1 Dec.)\nPart III (HIRAI Hiroshi) Matrix scaling is the problem of multiplying positive diagonal matrices X,Y to a given nonnegative matrix A so that XAY is a doubly stochastic matrix. This part of the lecture will present the mathematical theory behind. With the generalization to operator scaling and recent development, the interplay between optimization, combinatorics, invariant theory, differential geometry, theoretical computer science will be explained.\n(8 Dec, 15 Dec, 22 Dec, 12 Jan.)\nReserve day (supplementary, if necessary): 19 Jan, 26 Jan.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/32_2026_Y002403211002.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "6134bce2a665b30a0ae372c7809b9f889ef44831b7da4bf1c338e74ed2425938"
+  },
+  {
+    "id": 792,
+    "universityId": "nagoya-jp",
+    "code": "3211087",
+    "title": "Topics in Mathematical ScienceⅠ",
+    "description": "The purpose of the course is to introduce complex analytic geometry, following Clausen and Scholze. The starting point is the construction of the (presentably symmetric monoidal infinity-)category of gaseous complex vector spaces. Coordinate functions on a complex analytic space is represented as operators on this category, and the ring of holomorphic functions of the complex analytic space arises as the ring of endomorphisms of the tensor-unit. So, whereas in algebra, one associates a (presentably symmetric monoidal derived infinity-)category of modules to a commutative ring, in complex analytic geometry, the (presentably symmetric monoidal infinity-)category of (quasi-coherent) modules much be define first, and the commutative ring of holomorphic functions is then obtained from it (as the ring of endomorphisms of the tensor-unit).\n\nThe goal of the lectures is to introduce complex analytic geometry following the approach of Clausen and Scholze. To do so, it will be necessary to also introduce of a number of modern tools, including infinity-categories and condensed mathematics. But the focus of the course will be the application of these tools and we will learn to use them by doing. The key novelty of the Clausen-Scholze theory is the definition of a (presentably symmetric monoidal infinity-) category of quasi-coherent modules associated with a complex analytic space. Before their work, there was only a (small) category of coherent modules. In fact, the assignment of this (large infinity-)category to a complex analytic space promotes to a full-fledged six-functor formalism, which encodes all aspects of coherent cohomology of complex analytic spaces. How much of this theory we will be able to cover in the course will depend on the participants.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/32_2026_Y002803211087.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "d5322a605d3e29afcb7cd2fccaacb06db18b1e06cc0f12b0b5c3ce1646e048e6"
+  },
+  {
+    "id": 793,
+    "universityId": "nagoya-jp",
+    "code": "3211089",
+    "title": "Topics in Mathematical Science Ⅲ",
+    "description": "Title : Operator theory in Hilbert spaces\nThis course will provide the basic notions of operators on Hilbert spaces: bounded and unbounded operators,\nself-adjoint operators, the spectral decomposition of self-adjoint operators. These notions will be illustrated with some examples of operators appearing in quantum mechanics or in PDE. A powerful tool of functional analysis, namely the commutator methods, will then be introduced and studied. Typical applications of these methods for spectral and scattering theory will finally be presented\n\nContent:\n1) Hilbert space and bounded linear operators\n2) Unbounded operators\n3) Examples\n4) Spectral theory for self-adjoint operators\n5) Scattering theory\n6) Commutator methods",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/32_2026_Y002803211089.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "ff457a733be649f55bb27673627156411c577a47f43f877d971b3de61ed01806"
+  },
+  {
+    "id": 794,
+    "universityId": "nagoya-jp",
+    "code": "3211092",
+    "title": "Topics in Mathematical Science Ⅵ",
+    "description": "Course title: Mathematical aspects of condensed matter physics\nCondensed matter physics is a branch of quantum mechanics that studies the microscopic and macroscopic properties of solid and liquid phases of matter. The goal of the course is to introduce the mathematical theories that underpin condensed matter physics, including functional analysis, spectral theory and operator algebras, and understand their relevance to physical properties and phenomena.\n\nFor this topic, we will look at the mathematical aspects of condensed matter physics in the setting of lattice systems. For the first part, we will consider single-particle dynamics (free fermions) and the interaction between the spectrum of an operator with physical properties of the system. For the second part, we will introduce and study the elementary properties of quantum spin systems.\nCourse outline (tentative):\nPart 1: Quantum dynamics and the spectrum\n- Introduction to single-particle quantum mechanics\n- Locality and the Bloch decomposition/Fourier series\n- Types of quantum motion and spectral type\n- Linear response theory and the Kubo formula\n- Topology and the integer quantum Hall effect\nPart 2: Quantum spin systems\n- Basics of quantum spin systems and the Heisenberg model\n- Spontaneous symmetry breaking and long-range order\n- Ground states and the Haldane conjecture\n- Operator algebras and the infinite volume limit",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/32_2026_Y002803211092.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "f6006548fec9b8561121eb6b5e6b083423f88f9223bbd8685d5c3cfcdb9e1207"
+  },
+  {
+    "id": 795,
+    "universityId": "nagoya-jp",
+    "code": "3211093",
+    "title": "Topics in Mathematical Science Ⅶ",
+    "description": "Many rings come with a hidden partner (dual), associated to the same data but with structure mirrors the original in some way. One of the most famous such duality is the Koszul duality. This course develops the tools needed to recognize and construct this duality from ordinary rings and module theory, and their homological algebra. We will see how the quadratic dual of a Koszul algebra coincides the Yoneda algebra - ring that encodes the extensions of simple modules. Amongst the many beautiful consequences of this duality theory, we will focus on the BGG correspondence, which roughly relates the graded modules a Koszul algebra to the graded modules over its dual.\n\nPart I — Graded Algebra and Quadratic Duality (Lectures 1–3)\nGraded rings and modules, Hilbert series, tensor algebras.\nQuadratic algebras as tensor algebras with relations concentrated in degree 2, and construction of the quadratic dual, computed by hand in worked examples.\nPart II — Resolutions, the Koszul Complex, Koszul algebra and Yoneda algebra (Lectures 4–8)\nMinimal graded resolutions, Koszul complex, leading to the definition of a Koszul algebra.\nTor, Ext, and the Yoneda algebra and identification with the quadratic dual for Koszul algebras; the Hilbert series identity for Koszulness test.\nPart III — Koszul Duality and the BGG Correspondence (Lectures 9–11)\nBasic categorical language. Equivalence between graded modules over the quadratic dual and linear complexes over the original algebra. The BGG correspondence between the quotient category qgr over the polynomial ring and the stable module category over the exterior algebra.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/32_2026_Y002803211093.html",
+    "collectedAt": "2026-11-10T22:19:12.288Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "029851d0cf2c91c89f788f2c503ffaf5f77d4c79bd3228205e32ca3f0e6da09a"
   }
 ]
