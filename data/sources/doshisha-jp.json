@@ -1,0 +1,9 @@
+{
+  "id": "doshisha-jp",
+  "universityId": "doshisha-jp",
+  "kind": "manual",
+  "urls": [],
+  "reader": "manual",
+  "descriptions": "none",
+  "descriptionsNote": "La liste officielle des cours du Global Education Module (PDF) ne donne que le code, le titre, l'enseignant, le campus, le trimestre et les crédits. Les syllabus (syllabus.doshisha.ac.jp) répondent 403 Forbidden, robots.txt compris, et ne sont donc pas lisibles par programme."
+}

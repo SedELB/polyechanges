@@ -1,0 +1,53 @@
+p1:l1 58ＧＥＭ生
+p1:l2 【Campus】 I: Imadegawa, K: Kyotanabe 【Term】 S: Spring, F: Fall
+p1:l3 Course Code Class
+p1:l4 Code
+p1:l5 99200001 001 Introduction to Japanese Culture in the Global Context 1 DOI-BENSON ANYA K S 2 Advanced Registration △
+p1:l6 99200001 002 Introduction to Japanese Culture in the Global Context 2 DOI-BENSON ANYA K F 2 Advanced Registration △
+p1:l7 99200001 051 Introduction to Japanese Culture in the Global Context 51 DOI-BENSON ANYA I S 2 Advanced Registration △
+p1:l8 99200001 052 Introduction to Japanese Culture in the Global Context 52 DIAZ SANCHO IVAN I F 2 Advanced Registration △
+p1:l52 Registration Code
+p1:l53 Coursename/class Class Instructor Availability
+p1:l54 for
+p1:l55 Nichibun students
+p1:l56 Campus Term Credits Conditions of
+p1:l57 Registration
+p1:l58 ２．Course List of GEM Program
+p2:l1 59ＧＥＭ生
+p2:l2 【Campus】 I: Imadegawa, K: Kyotanabe 【Term】 S: Spring, F: Fall
+p2:l3 Course Code Class
+p2:l4 Code
+p2:l5 Registration Code
+p2:l6 Coursename/class Class Instructor Availability
+p2:l7 for
+p2:l8 Nichibun students
+p2:l9 Campus Term Credits Conditions of
+p2:l10 Registration
+p2:l11 99200022 051 Critical Social Issues in Contemporary Japan 2 51 ESTA TINA OTTMAN I S 2 Advanced Registration △
+p2:l12 99200022 052 Critical Social Issues in Contemporary Japan 2 52 ESTA TINA OTTMAN I F 2 Advanced Registration △
+p2:l13 99200023 051 The Divisions of Identity in Society 51 YASUTAKE Rumi I S 2 Advanced Registration △
+p2:l14 99200023 052 The Divisions of Identity in Society 52 GARTH WARRIES I F 2 Advanced Registration △
+p2:l15 99200024 001 Statistics for the Social Sciences and Humanities 1 DANYL MIGDALSKYI K S 2 Advanced Registration △
+p2:l16 99200024 051 Statistics for the Social Sciences and Humanities 51 MYGDALSKYY VOLODYMYR I F 2 Advanced Registration △
+p2:l17 99200025 000 Introduction to Computer Science and Information Technology MYGDALSKYY VOLODYMYR I S 2 Advanced Registration △
+p2:l18 99200026 001 Human Science in the Global Age 1 DANYL MIGDALSKYI K S 2 Advanced Registration △
+p2:l19 99200026 051 Human Science in the Global Age 51 DANYL MIGDALSKYI I S 2 Advanced Registration △
+p2:l20 99200027 000 Introduction to Quantitative Data Analysis DANYL MIGDALSKYI I F 2 Advanced Registration △
+p2:l21 99200028 000 Conservation of Japanese Nature and Environment ARII Ken I F 2 Advanced Registration △
+p2:l22 99200029 000 Mathematics and its History VILLE JOONAS JOHANNES SYRJAENEN I S 2 Advanced Registration △
+p2:l23 99200030 000 Science of Natural Disasters ARII Ken I S 2 Advanced Registration △
+p2:l24 99200033 000 Principles of Economics MORI Koichiro I S 2 Advanced Registration △
+p2:l25 99200034 000 Environmental Economics and Sustainability MORI Koichiro I F 2 Advanced Registration △
+p2:l26 99200051 051 Advanced Seminar 1 51 DOI-BENSON ANYA I S 2 Advanced Registration ✕
+p2:l27 99200051 052 Advanced Seminar 1 52 DOI-BENSON ANYA I F 2 Advanced Registration ✕
+p2:l28 99200052 051 Advanced Seminar 2 51 ROBERT WILLIAM ASPINALL I S 2 Advanced Registration ✕
+p2:l29 99200052 052 Advanced Seminar 2 52 ROBERT WILLIAM ASPINALL I F 2 Advanced Registration ✕
+p2:l30 99200053 051 Advanced Seminar 3 51 ARII Ken I S 2 Advanced Registration ✕
+p2:l31 99200053 001 Advanced Seminar 3 1 ARII Ken K F 2 Advanced Registration ✕
+p2:l32 ○： Available for Nichibun students
+p2:l33 ✕： Not available for Nichibun students
+p2:l34 JJaappaanneessee LLaanngguuaaggee aanndd CCuullttuurree MMoodduullee ((NNiicchhiibbuunn)) SSuubbjjeeccttss
+p2:l35 You can find the course list of Japanese Language and Culture Subjects in pages 91～97.
+p2:l36 Please see "Availability for GEM students" column for course availability.
+p2:l37 △： Registration will be accepted only when seats are available after GEM students' registration.
+p2:l38 It will be decided by lot when the number of applied students exceeds capacity of the class.

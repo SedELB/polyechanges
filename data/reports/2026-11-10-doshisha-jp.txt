@@ -1,0 +1,31 @@
+Rapport de collecte : doshisha-jp
+Date : 2026-11-10
+Statut : ok
+Cours actifs : 4
+Ajoutés (4) : 99200024, 99200025, 99200027, 99200029
+Retirés (0) : aucun
+Modifiés (0) : aucun
+Descriptions non publiées : La liste officielle des cours du Global Education Module (PDF) ne donne que le code, le titre, l'enseignant, le campus, le trimestre et les crédits. Les syllabus (syllabus.doshisha.ac.jp) répondent 403 Forbidden, robots.txt compris, et ne sont donc pas lisibles par programme.
+
+Notes sur la collecte
+- Source : liste « Course List of GEM Program » 2026 (PDF du bureau des étudiants internationaux, page du Global Education
+  Module), seul catalogue public en anglais pour les étudiants d'échange de 1er cycle. Retenus : l'informatique, les
+  mathématiques et les statistiques (4 codes sur 68 rangées). Liste des cours de la bibliothèque ILA : aucun cours du
+  domaine. Les cours de la faculté de sciences et génie sont interdits aux étudiants GEM (voir restrictions).
+- Liste de cours du programme ISTC (cycles supérieurs, sciences et génie, tout en anglais) : PDF scanné
+  (https://istc.doshisha.ac.jp/istc/attach/page/TECHNOLOGY-PAGE-EN-138/180871/file/ListofSubjectSE.pdf), aucun texte
+  extractible, non lue. À faire plus tard : transcription ou reconnaissance de caractères de ce PDF.
+- Les syllabus (syllabus.doshisha.ac.jp) répondent 403, robots.txt compris : non consultés ; pas de description.
+- Dates : calendrier 2026-2027 du Center for Global Education and Japanese Studies (dernière année publiée ; 2027-2028
+  non publié). « Début » = « Start of ... Semester ». Seules les dates écrites avec leur mois sur la même ligne sont
+  gardées : fin des cours d'automne (18 janvier 2027) et fin des examens de printemps (31 juillet 2026) laissées vides
+  car le mois n'apparaît pas dans le même extrait.
+- Crédit : « a course that meets for two hours, once a week (x15 weeks) as two credits » : 15 h par crédit.
+- Coordonnées : campus principal d'Imadegawa (Wikipédia) ; la valeur de MoveOn (34.9996, 135.7532) tombait près de la gare de Kyoto.
+
+Vérification de 4 cours (tous les cours retenus ; aucune autre page de cours lisible) contre la liste officielle (relue le 2026-11-10)
+- 99200024 Statistics for the Social Sciences and Humanities : 2 crédits, GEM (anglais), printemps (Kyotanabe) et automne (Imadegawa) : conforme.
+- 99200025 Introduction to Computer Science and Information Technology : 2 crédits, GEM (anglais), printemps (Imadegawa) : conforme.
+- 99200027 Introduction to Quantitative Data Analysis : 2 crédits, GEM (anglais), automne (Imadegawa) : conforme.
+- 99200029 Mathematics and its History : 2 crédits, GEM (anglais), printemps (Imadegawa) : conforme.
+- La langue vient de la page du module (« all conducted in English ») : la liste elle-même n'a pas de colonne de langue.

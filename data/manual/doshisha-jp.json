@@ -1,0 +1,99 @@
+[
+  {
+    "code": "99200024",
+    "title": "Statistics for the Social Sciences and Humanities",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+    "provenance": {
+      "url": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+      "retrievedAt": "2026-11-10T21:45:51.032Z",
+      "sha256": "24bf3b1ca3af6dc3cea3a66cddec92920a8442a3ed630e7702509cb3b87e26c2",
+      "locator": {
+        "page": 2,
+        "line": 15
+      },
+      "quote": "99200024 001 Statistics for the Social Sciences and Humanities 1 DANYL MIGDALSKYI K S 2 Advanced Registration △"
+    }
+  },
+  {
+    "code": "99200025",
+    "title": "Introduction to Computer Science and Information Technology",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+    "provenance": {
+      "url": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+      "retrievedAt": "2026-11-10T21:45:51.032Z",
+      "sha256": "24bf3b1ca3af6dc3cea3a66cddec92920a8442a3ed630e7702509cb3b87e26c2",
+      "locator": {
+        "page": 2,
+        "line": 17
+      },
+      "quote": "99200025 000 Introduction to Computer Science and Information Technology MYGDALSKYY VOLODYMYR I S 2 Advanced Registration △"
+    }
+  },
+  {
+    "code": "99200027",
+    "title": "Introduction to Quantitative Data Analysis",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+    "provenance": {
+      "url": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+      "retrievedAt": "2026-11-10T21:45:51.032Z",
+      "sha256": "24bf3b1ca3af6dc3cea3a66cddec92920a8442a3ed630e7702509cb3b87e26c2",
+      "locator": {
+        "page": 2,
+        "line": 20
+      },
+      "quote": "99200027 000 Introduction to Quantitative Data Analysis DANYL MIGDALSKYI I F 2 Advanced Registration △"
+    }
+  },
+  {
+    "code": "99200029",
+    "title": "Mathematics and its History",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+    "provenance": {
+      "url": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+      "retrievedAt": "2026-11-10T21:45:51.032Z",
+      "sha256": "24bf3b1ca3af6dc3cea3a66cddec92920a8442a3ed630e7702509cb3b87e26c2",
+      "locator": {
+        "page": 2,
+        "line": 22
+      },
+      "quote": "99200029 000 Mathematics and its History VILLE JOONAS JOHANNES SYRJAENEN I S 2 Advanced Registration △"
+    }
+  }
+]

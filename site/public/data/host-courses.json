@@ -12634,5 +12634,78 @@
     "sourcePage": 1,
     "sourceLine": 31,
     "snapshotSha256": null
+  },
+  {
+    "id": 700,
+    "universityId": "doshisha-jp",
+    "code": "99200024",
+    "title": "Statistics for the Social Sciences and Humanities",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+    "collectedAt": "2026-11-10T21:46:32.040Z",
+    "sourcePage": 2,
+    "sourceLine": 15,
+    "snapshotSha256": null
+  },
+  {
+    "id": 701,
+    "universityId": "doshisha-jp",
+    "code": "99200025",
+    "title": "Introduction to Computer Science and Information Technology",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+    "collectedAt": "2026-11-10T21:46:32.040Z",
+    "sourcePage": 2,
+    "sourceLine": 17,
+    "snapshotSha256": null
+  },
+  {
+    "id": 702,
+    "universityId": "doshisha-jp",
+    "code": "99200027",
+    "title": "Introduction to Quantitative Data Analysis",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+    "collectedAt": "2026-11-10T21:46:32.040Z",
+    "sourcePage": 2,
+    "sourceLine": 20,
+    "snapshotSha256": null
+  },
+  {
+    "id": 703,
+    "universityId": "doshisha-jp",
+    "code": "99200029",
+    "title": "Mathematics and its History",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
+    "collectedAt": "2026-11-10T21:46:32.040Z",
+    "sourcePage": 2,
+    "sourceLine": 22,
+    "snapshotSha256": null
   }
 ]

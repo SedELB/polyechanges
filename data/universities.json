@@ -64,20 +64,170 @@
     "name": "Doshisha University",
     "moveOnName": "Doshisha University",
     "countryCode": "JP",
-    "city": "",
-    "lat": 34.999624,
-    "lng": 135.753244,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Kyoto",
+    "lat": 35.029737,
+    "lng": 135.760725,
+    "website": "https://www.doshisha.ac.jp/en/",
+    "catalogUrl": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 15,
     "terms": {
-      "fall": null,
-      "spring": null
+      "spring": {
+        "start": "2026-04-01",
+        "end": "2026-07-17",
+        "examsEnd": null
+      },
+      "fall": {
+        "start": "2026-09-15",
+        "end": null,
+        "examsEnd": "2027-02-08"
+      }
     },
-    "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true
+    "restrictions": "Such include seminar courses, subjects by Faculty of Science and Engineering and Faculty of Life and Medical Sciences, and subjects not open to other faculty students.",
+    "exchangeContact": "Office of International Students",
+    "catalogPublic": true,
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/Doshisha_University",
+        "retrievedAt": "2026-11-10T21:44:39.782Z",
+        "sha256": "dad8114c105bd8b6fa16628329ec222d9df437798bf6464c91e6aca0eafde236",
+        "locator": {
+          "page": 1,
+          "line": 128
+        },
+        "quote": "Doshisha University (同志社大学, Dōshisha daigaku), also referred to as Dodai (同大, Dōdai), is a private university in Kyoto, Japan."
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/Doshisha_University",
+        "retrievedAt": "2026-11-10T21:44:39.782Z",
+        "sha256": "dad8114c105bd8b6fa16628329ec222d9df437798bf6464c91e6aca0eafde236",
+        "locator": {
+          "page": 1,
+          "line": 122
+        },
+        "quote": "Location | Kyoto , Kyoto Prefecture , Japan"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/Doshisha_University",
+        "retrievedAt": "2026-11-10T21:44:39.782Z",
+        "sha256": "dad8114c105bd8b6fa16628329ec222d9df437798bf6464c91e6aca0eafde236",
+        "locator": {
+          "page": 1,
+          "line": 122
+        },
+        "quote": "35.029737°N 135.760725°E"
+      },
+      "website": {
+        "url": "https://www.doshisha.ac.jp/en/",
+        "retrievedAt": "2026-11-10T21:44:48.961Z",
+        "sha256": "b441210514ff1c61374a859b9d7a1c47000b5b03a2d45eb7b44eac833cc4cd91",
+        "locator": {
+          "page": 1,
+          "line": 243
+        },
+        "quote": "©Doshisha University, All Rights Reserved."
+      },
+      "catalogUrl": {
+        "url": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",
+        "retrievedAt": "2026-11-10T21:43:39.552Z",
+        "sha256": "42493757a8b97cc4250caddee2f9020a8deedf7eceba52923b04e81b8a2726d2",
+        "locator": {
+          "page": 1,
+          "line": 106
+        },
+        "quote": "Global Education Module for Exchange Students : Curriculum"
+      },
+      "creditSystem": {
+        "url": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",
+        "retrievedAt": "2026-11-10T21:43:39.552Z",
+        "sha256": "42493757a8b97cc4250caddee2f9020a8deedf7eceba52923b04e81b8a2726d2",
+        "locator": {
+          "page": 1,
+          "line": 134
+        },
+        "quote": "GEM considers a course that meets for two hours, once a week (x15 weeks) as two credits (except for Japanese language courses)."
+      },
+      "contactHoursPerCredit": {
+        "url": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",
+        "retrievedAt": "2026-11-10T21:43:39.552Z",
+        "sha256": "42493757a8b97cc4250caddee2f9020a8deedf7eceba52923b04e81b8a2726d2",
+        "locator": {
+          "page": 1,
+          "line": 134
+        },
+        "quote": "GEM considers a course that meets for two hours, once a week (x15 weeks) as two credits (except for Japanese language courses)."
+      },
+      "terms.spring.start": {
+        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
+        "retrievedAt": "2026-11-10T21:43:07.568Z",
+        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
+        "locator": {
+          "page": 1,
+          "line": 7
+        },
+        "quote": "APR 1 (Wed) Start of Spring Semester"
+      },
+      "terms.spring.end": {
+        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
+        "retrievedAt": "2026-11-10T21:43:07.568Z",
+        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
+        "locator": {
+          "page": 1,
+          "line": 22
+        },
+        "quote": "JUL 17 (Fri) Last day of face-to-face classes"
+      },
+      "terms.fall.start": {
+        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
+        "retrievedAt": "2026-11-10T21:43:07.568Z",
+        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
+        "locator": {
+          "page": 1,
+          "line": 31
+        },
+        "quote": "SEP 15 (Tue) Start of Fall Semester"
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
+        "retrievedAt": "2026-11-10T21:43:07.568Z",
+        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
+        "locator": {
+          "page": 1,
+          "line": 69
+        },
+        "quote": "FEB 8 (Mon) Final Examinations end"
+      },
+      "restrictions": {
+        "url": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",
+        "retrievedAt": "2026-11-10T21:43:39.552Z",
+        "sha256": "42493757a8b97cc4250caddee2f9020a8deedf7eceba52923b04e81b8a2726d2",
+        "locator": {
+          "page": 1,
+          "line": 117
+        },
+        "quote": "Such include seminar courses, subjects by Faculty of Science and Engineering and Faculty of Life and Medical Sciences, and subjects not open to other faculty students."
+      },
+      "exchangeContact": {
+        "url": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",
+        "retrievedAt": "2026-11-10T21:43:39.552Z",
+        "sha256": "42493757a8b97cc4250caddee2f9020a8deedf7eceba52923b04e81b8a2726d2",
+        "locator": {
+          "page": 1,
+          "line": 146
+        },
+        "quote": "Office of International Students"
+      },
+      "catalogPublic": {
+        "url": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",
+        "retrievedAt": "2026-11-10T21:43:39.552Z",
+        "sha256": "42493757a8b97cc4250caddee2f9020a8deedf7eceba52923b04e81b8a2726d2",
+        "locator": {
+          "page": 1,
+          "line": 122
+        },
+        "quote": "2026 Course List of GEM"
+      }
+    }
   },
   {
     "id": "sciencetokyo-jp",
