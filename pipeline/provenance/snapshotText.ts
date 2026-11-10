@@ -83,17 +83,39 @@ export async function snapshotText(body: Buffer, contentType: string): Promise<s
   return [htmlLines(body.toString('utf8'))];
 }
 
-/** Positions (1-based) des lignes qui contiennent l'extrait, après la même normalisation. */
-export function findQuote(pages: string[][], quote: string): { page: number; line: number }[] {
+/** Nombre maximal de lignes consécutives d'une même page qu'un extrait peut couvrir. */
+export const MAX_QUOTE_LINES = 3;
+
+export interface QuoteSpan {
+  page: number;
+  line: number;
+  lines: number;
+}
+
+/**
+ * Positions (1-based) où l'extrait apparaît, après la même normalisation : d'abord dans une seule ligne ; à
+ * défaut dans 2 lignes consécutives d'une même page (jointes par une espace), puis dans 3. Seule la plus petite
+ * fenêtre qui réussit est renvoyée ; `line` est la première ligne de la fenêtre, `lines` sa taille.
+ */
+export function findQuoteSpans(pages: string[][], quote: string): QuoteSpan[] {
   const q = normalizeText(quote);
-  const found: { page: number; line: number }[] = [];
-  if (q === '') return found;
-  pages.forEach((lines, p) => {
-    lines.forEach((line, l) => {
-      if (line.includes(q)) found.push({ page: p + 1, line: l + 1 });
+  if (q === '') return [];
+  for (let size = 1; size <= MAX_QUOTE_LINES; size++) {
+    const found: QuoteSpan[] = [];
+    pages.forEach((lines, p) => {
+      for (let l = 0; l + size <= lines.length; l++) {
+        const text = size === 1 ? lines[l] : lines.slice(l, l + size).join(' ');
+        if (text.includes(q)) found.push({ page: p + 1, line: l + 1, lines: size });
+      }
     });
-  });
-  return found;
+    if (found.length > 0) return found;
+  }
+  return [];
+}
+
+/** Positions de départ (page, ligne) de l'extrait, selon la règle de `findQuoteSpans`. */
+export function findQuote(pages: string[][], quote: string): { page: number; line: number }[] {
+  return findQuoteSpans(pages, quote).map(({ page, line }) => ({ page, line }));
 }
 
 /** Extrait assez précis pour être cherché : au moins 8 caractères et 2 mots, après normalisation. */

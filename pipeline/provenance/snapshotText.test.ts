@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { makePdf } from './testPdf.js';
-import { findCode, findQuote, isSubstantialQuote, linesListing, snapshotText } from './snapshotText.js';
+import { findCode, findQuote, findQuoteSpans, isSubstantialQuote, linesListing, snapshotText } from './snapshotText.js';
 
 describe('snapshotText', () => {
   it('extrait les lignes d’une page HTML', async () => {
@@ -69,5 +69,37 @@ describe('findQuote', () => {
     expect(linesListing(pages)).toBe(
       'p1:l1 Academic Calendar\np1:l2 Fall semester begins: September 7, 2026\np2:l1 Fall semester begins: September 7, 2026 (late)\n',
     );
+  });
+});
+
+describe('extraits sur plusieurs lignes', () => {
+  it('un extrait d’une ligne garde son résultat', () => {
+    expect(findQuote([['a', 'Classes begin here', 'b']], 'Classes begin')).toEqual([{ page: 1, line: 2 }]);
+  });
+  it('trouve un extrait réparti sur deux lignes, avec la première ligne pour position', () => {
+    const pages = [['Calendar', '03-03', 'Classes begin', 'March']];
+    expect(findQuote(pages, '03-03 Classes begin')).toEqual([{ page: 1, line: 2 }]);
+    expect(findQuoteSpans(pages, '03-03 Classes begin')).toEqual([{ page: 1, line: 2, lines: 2 }]);
+  });
+  it('trouve un extrait réparti sur trois lignes', () => {
+    const pages = [['x', '03-03', 'Classes begin', 'March', 'y']];
+    expect(findQuoteSpans(pages, '03-03 Classes begin March')).toEqual([{ page: 1, line: 2, lines: 3 }]);
+  });
+  it('préfère une correspondance sur une ligne à une sur plusieurs', () => {
+    const pages = [['03-03', 'Classes begin', 'later', '03-03 Classes begin']];
+    expect(findQuoteSpans(pages, '03-03 Classes begin')).toEqual([{ page: 1, line: 4, lines: 1 }]);
+  });
+  it('préfère deux lignes à trois', () => {
+    expect(findQuoteSpans([['a', 'b', 'c', 'a b', 'c']], 'a b c')).toEqual([{ page: 1, line: 4, lines: 2 }]);
+    expect(findQuoteSpans([['a', 'b c', 'd']], 'a b c d')).toEqual([{ page: 1, line: 1, lines: 3 }]);
+  });
+  it('ne franchit jamais une limite de page', () => {
+    expect(findQuote([['x', '03-03'], ['Classes begin', 'y']], '03-03 Classes begin')).toEqual([]);
+  });
+  it('ne regarde pas au-delà de trois lignes', () => {
+    expect(findQuote([['aaa', 'bbb', 'ccc', 'ddd']], 'aaa bbb ccc ddd')).toEqual([]);
+  });
+  it('findCode reste sur une seule ligne', () => {
+    expect(findCode([['Curriculum', 'CS 101']], 'Curriculum CS101')).toEqual([]);
   });
 });

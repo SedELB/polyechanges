@@ -89,3 +89,15 @@ describe('relocateCourses', () => {
     expect(JSON.parse(locs[1].source_locator_json)).toEqual({ sha256: sha, page: 1, line: 3 });
   });
 });
+
+describe('relocateFactSources, extrait sur plusieurs lignes', () => {
+  it('recale un extrait réparti sur deux lignes sur sa première ligne', async () => {
+    const body = Buffer.from('<body><div>03-03</div><div>Classes begin</div></body>');
+    const hash = createHash('sha256').update(body).digest('hex');
+    writeFileSync(join(rawDir, 'facts-x', `${hash}.html`), body);
+    write({ a: prov(7, '03-03 Classes begin', hash) });
+    const r = await relocateFactSources(path, rawDir);
+    expect(r).toMatchObject({ unchanged: 0, moved: [{ to: { page: 1, line: 1 } }], problems: [] });
+    expect(JSON.parse(readFileSync(path, 'utf8'))[0].provenance.a.locator).toEqual({ page: 1, line: 1 });
+  });
+});

@@ -5,7 +5,7 @@ import { createPoliteFetcher } from '../fetch/politeFetch.js';
 import { readSnapshot, takeSnapshot } from '../fetch/snapshots.js';
 import { UNIVERSITIES_PATH, loadUniversities, syncUniversities } from '../partners/registry.js';
 import { ensureFactsSource, refreshFactSources, writeSourcesReport } from '../provenance/refresh.js';
-import { findQuote, linesListing, snapshotText } from '../provenance/snapshotText.js';
+import { findQuoteSpans, linesListing, snapshotText } from '../provenance/snapshotText.js';
 import { relocateCourses, relocateFactSources } from '../provenance/relocate.js';
 import { findRawCopy, verifyAll } from '../provenance/verify.js';
 
@@ -46,8 +46,11 @@ async function find(sha256: string, text: string): Promise<number> {
     return 2;
   }
   const pages = await snapshotText(readFileSync(copy.path), copy.contentType);
-  const hits = findQuote(pages, text);
-  for (const h of hits) console.log(`p${h.page}:l${h.line} ${pages[h.page - 1][h.line - 1]}`);
+  const hits = findQuoteSpans(pages, text);
+  for (const h of hits) {
+    const shown = pages[h.page - 1].slice(h.line - 1, h.line - 1 + h.lines).join(' ');
+    console.log(`p${h.page}:l${h.line}${h.lines > 1 ? ` (${h.lines} lignes)` : ''} ${shown}`);
+  }
   if (hits.length === 0) console.log('Aucune position trouvée.');
   return hits.length === 0 ? 1 : 0;
 }

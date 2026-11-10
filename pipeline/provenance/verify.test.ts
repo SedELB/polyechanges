@@ -103,3 +103,13 @@ describe('verifyAll', () => {
     ]);
   });
 });
+
+describe('extrait sur plusieurs lignes', () => {
+  const multi = '<html><body><div>03-03</div><div>Classes begin</div><div>March</div></body></html>';
+  it('verifyProvenance juge sur la première ligne', async () => {
+    const hash = store(Buffer.from(multi), 'html');
+    const q = '03-03 Classes begin';
+    expect(await verifyProvenance(prov(hash, 1, q), rawDir)).toEqual({ status: 'inchangé', found: { page: 1, line: 1 } });
+    expect(await verifyProvenance(prov(hash, 3, q), rawDir)).toEqual({ status: 'déplacé', found: { page: 1, line: 1 } });
+  });
+});
