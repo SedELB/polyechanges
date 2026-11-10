@@ -1730,21 +1730,170 @@
     "name": "Tohoku University",
     "moveOnName": "Tohoku University",
     "countryCode": "JP",
-    "city": "",
-    "lat": 38.266572,
-    "lng": 140.883246,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Sendai",
+    "lat": 38.25417,
+    "lng": 140.87361,
+    "website": "https://www.tohoku.ac.jp/en/",
+    "catalogUrl": "https://www.insc.tohoku.ac.jp/english/exchange/jype/5-syllabus-elective-courses/",
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 11.25,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2026-10-01",
+        "end": "2027-02-03",
+        "examsEnd": null
+      },
+      "spring": {
+        "start": "2026-04-08",
+        "end": "2026-08-05",
+        "examsEnd": null
+      }
     },
-    "restrictions": null,
-    "exchangeContact": null,
+    "restrictions": "JYPE is a research-oriented program; therefore, it is suitable for the students who are ready to be committed to and be a part of the world-class research trainings in the IRT (it is NOT suitable for the students who are only interested in earning credits from elective courses).",
+    "exchangeContact": "Tohoku University Student Exchange Division",
     "catalogPublic": true,
-    "provenance": {}
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/Tohoku_University",
+        "retrievedAt": "2026-11-10T22:32:09.280Z",
+        "sha256": "1e02e38c9b5d6bf8b77c4911e85b2bf0beb8aa2893b8dec274843610c66ff3e4",
+        "locator": {
+          "page": 1,
+          "line": 167
+        },
+        "quote": "Tohoku University (東北大学, Tōhoku daigaku) is a public research university in Sendai, Miyagi, Japan. It is colloquially referred to as Tohokudai (東北大, Tōhokudai) or Tonpei (トンペイ, Tonpei)."
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/Tohoku_University",
+        "retrievedAt": "2026-11-10T22:32:09.280Z",
+        "sha256": "1e02e38c9b5d6bf8b77c4911e85b2bf0beb8aa2893b8dec274843610c66ff3e4",
+        "locator": {
+          "page": 1,
+          "line": 162
+        },
+        "quote": "Location | Sendai, Miyagi , Japan"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/Tohoku_University",
+        "retrievedAt": "2026-11-10T22:32:09.280Z",
+        "sha256": "1e02e38c9b5d6bf8b77c4911e85b2bf0beb8aa2893b8dec274843610c66ff3e4",
+        "locator": {
+          "page": 1,
+          "line": 146
+        },
+        "quote": "38.25417°N 140.87361°E"
+      },
+      "website": {
+        "url": "https://www.tohoku.ac.jp/en/",
+        "retrievedAt": "2026-11-10T22:32:14.883Z",
+        "sha256": "9ea7ca137045d05f77fb16317b82f76eb3bf1067ab16bcd041203b08bc615872",
+        "locator": {
+          "page": 1,
+          "line": 67
+        },
+        "quote": "About Tohoku University"
+      },
+      "catalogUrl": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/5-syllabus-elective-courses/",
+        "retrievedAt": "2026-11-10T22:32:32.305Z",
+        "sha256": "2b1eb92b88e2137b0fae1f0d48150c4c9c82018a8566928138d64a44d1a5d88f",
+        "locator": {
+          "page": 1,
+          "line": 74
+        },
+        "quote": "JYPE 2026 Fall Course Information ※The Fall 2026 version has been updated on September 25th."
+      },
+      "creditSystem": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/",
+        "retrievedAt": "2026-11-10T22:32:20.757Z",
+        "sha256": "0d81703fa681ce61b70faed92f78f3e29e325025694c1f997cde9a2b453219bc",
+        "locator": {
+          "page": 1,
+          "line": 90
+        },
+        "quote": "- Each semester consists of 15 weeks of class work. - Participation in the activities of a research group counts 5 or 10 credits for the Individual Research Training course each semester, which is a required course. - Two credits are given for most of the lecture courses that meet once a week for 90 minutes."
+      },
+      "contactHoursPerCredit": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/",
+        "retrievedAt": "2026-11-10T22:32:20.757Z",
+        "sha256": "0d81703fa681ce61b70faed92f78f3e29e325025694c1f997cde9a2b453219bc",
+        "locator": {
+          "page": 1,
+          "line": 90
+        },
+        "quote": "- Each semester consists of 15 weeks of class work. - Participation in the activities of a research group counts 5 or 10 credits for the Individual Research Training course each semester, which is a required course. - Two credits are given for most of the lecture courses that meet once a week for 90 minutes."
+      },
+      "terms.fall.start": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/1-academic-calendar/",
+        "retrievedAt": "2026-11-10T22:32:26.464Z",
+        "sha256": "bc5c9647966c454ffc623886eb58ca0a27fa48768e27fb535918e76d2ce02ab7",
+        "locator": {
+          "page": 1,
+          "line": 70
+        },
+        "quote": "Class begins | Oct. 1, 2026"
+      },
+      "terms.fall.end": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/1-academic-calendar/",
+        "retrievedAt": "2026-11-10T22:32:26.464Z",
+        "sha256": "bc5c9647966c454ffc623886eb58ca0a27fa48768e27fb535918e76d2ce02ab7",
+        "locator": {
+          "page": 1,
+          "line": 75
+        },
+        "quote": "Class ends | Feb. 3, 2027"
+      },
+      "terms.spring.start": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/1-academic-calendar/",
+        "retrievedAt": "2026-11-10T22:32:26.464Z",
+        "sha256": "bc5c9647966c454ffc623886eb58ca0a27fa48768e27fb535918e76d2ce02ab7",
+        "locator": {
+          "page": 1,
+          "line": 85
+        },
+        "quote": "Class begins | Apr. 8, 2026"
+      },
+      "terms.spring.end": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/1-academic-calendar/",
+        "retrievedAt": "2026-11-10T22:32:26.464Z",
+        "sha256": "bc5c9647966c454ffc623886eb58ca0a27fa48768e27fb535918e76d2ce02ab7",
+        "locator": {
+          "page": 1,
+          "line": 89
+        },
+        "quote": "Class ends | Aug. 5, 2026"
+      },
+      "restrictions": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/",
+        "retrievedAt": "2026-11-10T22:32:20.757Z",
+        "sha256": "0d81703fa681ce61b70faed92f78f3e29e325025694c1f997cde9a2b453219bc",
+        "locator": {
+          "page": 1,
+          "line": 110
+        },
+        "quote": "- JYPE is a research-oriented program; therefore, it is suitable for the students who are ready to be committed to and be a part of the world-class research trainings in the IRT (it is NOT suitable for the students who are only interested in earning credits from elective courses)."
+      },
+      "exchangeContact": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/",
+        "retrievedAt": "2026-11-10T22:32:20.757Z",
+        "sha256": "0d81703fa681ce61b70faed92f78f3e29e325025694c1f997cde9a2b453219bc",
+        "locator": {
+          "page": 1,
+          "line": 129
+        },
+        "quote": "Tohoku University Student Exchange Division"
+      },
+      "catalogPublic": {
+        "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/5-syllabus-elective-courses/",
+        "retrievedAt": "2026-11-10T22:32:32.305Z",
+        "sha256": "2b1eb92b88e2137b0fae1f0d48150c4c9c82018a8566928138d64a44d1a5d88f",
+        "locator": {
+          "page": 1,
+          "line": 74
+        },
+        "quote": "JYPE 2026 Fall Course Information ※The Fall 2026 version has been updated on September 25th."
+      }
+    }
   },
   {
     "id": "tongji-cn",
