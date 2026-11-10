@@ -424,20 +424,170 @@
     "name": "Nagoya University",
     "moveOnName": "Nagoya University",
     "countryCode": "JP",
-    "city": "",
-    "lat": 35.155904,
-    "lng": 136.915863,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Nagoya",
+    "lat": 35.15472,
+    "lng": 136.96694,
+    "website": "https://en.nagoya-u.ac.jp/",
+    "catalogUrl": "https://nupace.iee.nagoya-u.ac.jp/en/academic/overview.html",
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 11.25,
     "terms": {
-      "fall": null,
-      "spring": null
+      "spring": {
+        "start": "2026-04-10",
+        "end": "2026-08-05",
+        "examsEnd": null
+      },
+      "fall": {
+        "start": "2026-10-02",
+        "end": "2027-02-05",
+        "examsEnd": null
+      }
     },
-    "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true
+    "restrictions": "Graduate courses marked with <G> are restricted to graduate students",
+    "exchangeContact": "NUPACE, Global Engagement Centre",
+    "catalogPublic": true,
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/Nagoya_University",
+        "retrievedAt": "2026-11-10T22:09:04.653Z",
+        "sha256": "894daecce8dd94783d0ca262a7ef5b3db67a153c38ecd8631458dd785683cf81",
+        "locator": {
+          "page": 1,
+          "line": 167
+        },
+        "quote": "Nagoya University (名古屋大学, Nagoya daigaku), abbreviated to Meidai (名大) or NU,[1] is a Japanese national research university located in Chikusa-ku, Nagoya."
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/Nagoya_University",
+        "retrievedAt": "2026-11-10T22:09:04.653Z",
+        "sha256": "894daecce8dd94783d0ca262a7ef5b3db67a153c38ecd8631458dd785683cf81",
+        "locator": {
+          "page": 1,
+          "line": 167
+        },
+        "quote": "Nagoya University (名古屋大学, Nagoya daigaku), abbreviated to Meidai (名大) or NU,[1] is a Japanese national research university located in Chikusa-ku, Nagoya."
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/Nagoya_University",
+        "retrievedAt": "2026-11-10T22:09:04.653Z",
+        "sha256": "894daecce8dd94783d0ca262a7ef5b3db67a153c38ecd8631458dd785683cf81",
+        "locator": {
+          "page": 1,
+          "line": 150
+        },
+        "quote": "35.15472°N 136.96694°E"
+      },
+      "website": {
+        "url": "https://en.nagoya-u.ac.jp/",
+        "retrievedAt": "2026-11-10T22:09:58.672Z",
+        "sha256": "e4be2dd95690fee39ee79c7d32a36f31a22e9c787de54275ae50d4348a2d4dc6",
+        "locator": {
+          "page": 1,
+          "line": 141
+        },
+        "quote": "Nagoya University is a leading national university in the innovation hub of central Japan. Our open and collaborative culture enables scholarship across disciplinary boundaries. Our researchers address global challenges and have been awarded six Nobel prizes since 2001."
+      },
+      "catalogUrl": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/overview.html",
+        "retrievedAt": "2026-11-10T22:08:49.455Z",
+        "sha256": "ab1b15fffe87ced3e8f43dda471758d24fdb93beeb5a79feb24027d4fca579e4",
+        "locator": {
+          "page": 1,
+          "line": 59
+        },
+        "quote": "Top Page > Academic Programme > Courses & Syllabi"
+      },
+      "creditSystem": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/overview.html",
+        "retrievedAt": "2026-11-10T22:08:49.455Z",
+        "sha256": "ab1b15fffe87ced3e8f43dda471758d24fdb93beeb5a79feb24027d4fca579e4",
+        "locator": {
+          "page": 1,
+          "line": 80
+        },
+        "quote": "The majority of courses at Nagoya University are semester-based, with each course being taught in a ninety-minute session per week for a total of fifteen weeks. Most courses carry a workload of two Nagoya University credits, equivalent to four ECTS."
+      },
+      "contactHoursPerCredit": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/overview.html",
+        "retrievedAt": "2026-11-10T22:08:49.455Z",
+        "sha256": "ab1b15fffe87ced3e8f43dda471758d24fdb93beeb5a79feb24027d4fca579e4",
+        "locator": {
+          "page": 1,
+          "line": 80
+        },
+        "quote": "The majority of courses at Nagoya University are semester-based, with each course being taught in a ninety-minute session per week for a total of fifteen weeks. Most courses carry a workload of two Nagoya University credits, equivalent to four ECTS."
+      },
+      "terms.spring.start": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/calender.html",
+        "retrievedAt": "2026-11-10T22:08:38.821Z",
+        "sha256": "e457641d37908fdbf69f084ae8128869bd2b52f599472cb71677840861ea8fb4",
+        "locator": {
+          "page": 1,
+          "line": 63
+        },
+        "quote": "Class Schedule | April 10, 2026 | ~ | August 5, 2026"
+      },
+      "terms.spring.end": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/calender.html",
+        "retrievedAt": "2026-11-10T22:08:38.821Z",
+        "sha256": "e457641d37908fdbf69f084ae8128869bd2b52f599472cb71677840861ea8fb4",
+        "locator": {
+          "page": 1,
+          "line": 63
+        },
+        "quote": "Class Schedule | April 10, 2026 | ~ | August 5, 2026"
+      },
+      "terms.fall.start": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/calender.html",
+        "retrievedAt": "2026-11-10T22:08:38.821Z",
+        "sha256": "e457641d37908fdbf69f084ae8128869bd2b52f599472cb71677840861ea8fb4",
+        "locator": {
+          "page": 1,
+          "line": 67
+        },
+        "quote": "Class Schedule | October 2, 2026 | ~ | February 5, 2027"
+      },
+      "terms.fall.end": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/calender.html",
+        "retrievedAt": "2026-11-10T22:08:38.821Z",
+        "sha256": "e457641d37908fdbf69f084ae8128869bd2b52f599472cb71677840861ea8fb4",
+        "locator": {
+          "page": 1,
+          "line": 67
+        },
+        "quote": "Class Schedule | October 2, 2026 | ~ | February 5, 2027"
+      },
+      "restrictions": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/overview.html",
+        "retrievedAt": "2026-11-10T22:08:49.455Z",
+        "sha256": "ab1b15fffe87ced3e8f43dda471758d24fdb93beeb5a79feb24027d4fca579e4",
+        "locator": {
+          "page": 1,
+          "line": 81
+        },
+        "quote": "Graduate courses marked with <G> are restricted to graduate students"
+      },
+      "exchangeContact": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/enquiries/enquires.html",
+        "retrievedAt": "2026-11-10T22:08:54.644Z",
+        "sha256": "db4487acd08fb6f75521eeccb21eec63ce29dfebac7626e303e37403b15ebb1c",
+        "locator": {
+          "page": 1,
+          "line": 73
+        },
+        "quote": "NUPACE, Global Engagement Centre"
+      },
+      "catalogPublic": {
+        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/overview.html",
+        "retrievedAt": "2026-11-10T22:08:49.455Z",
+        "sha256": "ab1b15fffe87ced3e8f43dda471758d24fdb93beeb5a79feb24027d4fca579e4",
+        "locator": {
+          "page": 1,
+          "line": 81
+        },
+        "quote": "The courses below were offered to NUPACE students in the academic year 2026."
+      }
+    }
   },
   {
     "id": "tohoku-jp",
