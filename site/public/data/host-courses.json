@@ -6406,5 +6406,2994 @@
     "sourcePage": 1,
     "sourceLine": 1,
     "snapshotSha256": null
+  },
+  {
+    "id": 356,
+    "universityId": "korea-kr",
+    "code": "AAA519",
+    "title": "DESIGN AND ANALYSIS OF ALGORITHMS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1943,
+    "snapshotSha256": null
+  },
+  {
+    "id": 357,
+    "universityId": "korea-kr",
+    "code": "AAA536",
+    "title": "INTRODUCTION TO VIRTUAL AND AUGMENTED REALITY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 96,
+    "snapshotSha256": null
+  },
+  {
+    "id": 358,
+    "universityId": "korea-kr",
+    "code": "AAA551",
+    "title": "PROGRAMMING LANGUAGE THEORY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 97,
+    "snapshotSha256": null
+  },
+  {
+    "id": 359,
+    "universityId": "korea-kr",
+    "code": "AAA607",
+    "title": "MOBILE COMPUTING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 98,
+    "snapshotSha256": null
+  },
+  {
+    "id": 360,
+    "universityId": "korea-kr",
+    "code": "AAA611",
+    "title": "OPERATING SYSTEM DESIGN",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1946,
+    "snapshotSha256": null
+  },
+  {
+    "id": 361,
+    "universityId": "korea-kr",
+    "code": "AAA623",
+    "title": "SOFTWARE SECURITY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1948,
+    "snapshotSha256": null
+  },
+  {
+    "id": 362,
+    "universityId": "korea-kr",
+    "code": "AAA648",
+    "title": "DATA SECURITY CHALLENGE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 99,
+    "snapshotSha256": null
+  },
+  {
+    "id": 363,
+    "universityId": "korea-kr",
+    "code": "AAA652",
+    "title": "STOCHASTIC OPTIMIZATION FOR DYNAMIC SYSTEMS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1950,
+    "snapshotSha256": null
+  },
+  {
+    "id": 364,
+    "universityId": "korea-kr",
+    "code": "AAA705",
+    "title": "SOFTWARE TESTING AND QUALITY ASSURANCE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1954,
+    "snapshotSha256": null
+  },
+  {
+    "id": 365,
+    "universityId": "korea-kr",
+    "code": "AAA708",
+    "title": "APPLIED MICROPROCESSOR DESIGN",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1955,
+    "snapshotSha256": null
+  },
+  {
+    "id": 366,
+    "universityId": "korea-kr",
+    "code": "AAA711",
+    "title": "ADVANCED EMBEDDED SYSTEM",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 100,
+    "snapshotSha256": null
+  },
+  {
+    "id": 367,
+    "universityId": "korea-kr",
+    "code": "AAA715",
+    "title": "MALWARE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1956,
+    "snapshotSha256": null
+  },
+  {
+    "id": 368,
+    "universityId": "korea-kr",
+    "code": "AAA716",
+    "title": "CPS SECURITY OPERATION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 101,
+    "snapshotSha256": null
+  },
+  {
+    "id": 369,
+    "universityId": "korea-kr",
+    "code": "AAA740",
+    "title": "SPECIAL TOPICS IN ARTIFICIAL INTELLIGENCE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1960,
+    "snapshotSha256": null
+  },
+  {
+    "id": 370,
+    "universityId": "korea-kr",
+    "code": "COSE102",
+    "title": "COMPUTER PROGRAMMING II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1911,
+    "snapshotSha256": null
+  },
+  {
+    "id": 371,
+    "universityId": "korea-kr",
+    "code": "COSE211",
+    "title": "DISCRETE MATHEMATICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1851,
+    "snapshotSha256": null
+  },
+  {
+    "id": 372,
+    "universityId": "korea-kr",
+    "code": "COSE212",
+    "title": "PROGRAMMING LANGUAGE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1855,
+    "snapshotSha256": null
+  },
+  {
+    "id": 373,
+    "universityId": "korea-kr",
+    "code": "COSE213",
+    "title": "DATA STRUCTURE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1892,
+    "snapshotSha256": null
+  },
+  {
+    "id": 374,
+    "universityId": "korea-kr",
+    "code": "COSE214",
+    "title": "ALGORITHMS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1895,
+    "snapshotSha256": null
+  },
+  {
+    "id": 375,
+    "universityId": "korea-kr",
+    "code": "COSE215",
+    "title": "THEORY OF COMPUTATION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1857,
+    "snapshotSha256": null
+  },
+  {
+    "id": 376,
+    "universityId": "korea-kr",
+    "code": "COSE221",
+    "title": "DIGITAL LOGIC DESIGN",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 205,
+    "snapshotSha256": null
+  },
+  {
+    "id": 377,
+    "universityId": "korea-kr",
+    "code": "COSE222",
+    "title": "COMPUTER ARCHITECTURE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1899,
+    "snapshotSha256": null
+  },
+  {
+    "id": 378,
+    "universityId": "korea-kr",
+    "code": "COSE242",
+    "title": "DATA COMMUNICATIONS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1860,
+    "snapshotSha256": null
+  },
+  {
+    "id": 379,
+    "universityId": "korea-kr",
+    "code": "COSE312",
+    "title": "COMPILER",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 208,
+    "snapshotSha256": null
+  },
+  {
+    "id": 380,
+    "universityId": "korea-kr",
+    "code": "COSE321",
+    "title": "COMPUTER SYSTEM DESIGN",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 209,
+    "snapshotSha256": null
+  },
+  {
+    "id": 381,
+    "universityId": "korea-kr",
+    "code": "COSE322",
+    "title": "SYSTEM PROGRAMMING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 210,
+    "snapshotSha256": null
+  },
+  {
+    "id": 382,
+    "universityId": "korea-kr",
+    "code": "COSE341",
+    "title": "OPERATING SYSTEMS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1903,
+    "snapshotSha256": null
+  },
+  {
+    "id": 383,
+    "universityId": "korea-kr",
+    "code": "COSE352",
+    "title": "SOFTWARE ENGINEERING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1865,
+    "snapshotSha256": null
+  },
+  {
+    "id": 384,
+    "universityId": "korea-kr",
+    "code": "COSE354",
+    "title": "INFORMATION SECURITY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1866,
+    "snapshotSha256": null
+  },
+  {
+    "id": 385,
+    "universityId": "korea-kr",
+    "code": "COSE361",
+    "title": "ARTIFICIAL INTELLIGENCE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1907,
+    "snapshotSha256": null
+  },
+  {
+    "id": 386,
+    "universityId": "korea-kr",
+    "code": "COSE362",
+    "title": "MACHINE LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 213,
+    "snapshotSha256": null
+  },
+  {
+    "id": 387,
+    "universityId": "korea-kr",
+    "code": "COSE371",
+    "title": "DATABASES",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1870,
+    "snapshotSha256": null
+  },
+  {
+    "id": 388,
+    "universityId": "korea-kr",
+    "code": "COSE405",
+    "title": "COMPUTER SCIENCE COLLOQUIUM",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1881,
+    "snapshotSha256": null
+  },
+  {
+    "id": 389,
+    "universityId": "korea-kr",
+    "code": "COSE407",
+    "title": "INDEPENDENT STUDY PROJECT",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1882,
+    "snapshotSha256": null
+  },
+  {
+    "id": 390,
+    "universityId": "korea-kr",
+    "code": "COSE419",
+    "title": "SOFTWARE VERIFICATION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 216,
+    "snapshotSha256": null
+  },
+  {
+    "id": 391,
+    "universityId": "korea-kr",
+    "code": "COSE421",
+    "title": "EMBEDDED SYSTEMS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 217,
+    "snapshotSha256": null
+  },
+  {
+    "id": 392,
+    "universityId": "korea-kr",
+    "code": "COSE432",
+    "title": "HUMAN COMPUTER INTERACTION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 218,
+    "snapshotSha256": null
+  },
+  {
+    "id": 393,
+    "universityId": "korea-kr",
+    "code": "COSE441",
+    "title": "INTERNET PROTOCOLS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 219,
+    "snapshotSha256": null
+  },
+  {
+    "id": 394,
+    "universityId": "korea-kr",
+    "code": "COSE451",
+    "title": "SOFTWARE SECURITY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 220,
+    "snapshotSha256": null
+  },
+  {
+    "id": 395,
+    "universityId": "korea-kr",
+    "code": "COSE461",
+    "title": "NATURAL LANGUAGE PROCESSING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 221,
+    "snapshotSha256": null
+  },
+  {
+    "id": 396,
+    "universityId": "korea-kr",
+    "code": "COSE474",
+    "title": "DEEP LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 222,
+    "snapshotSha256": null
+  },
+  {
+    "id": 397,
+    "universityId": "korea-kr",
+    "code": "COSE490",
+    "title": "SPECIAL LECTURE FOR COMPUTER SCIENCE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1891,
+    "snapshotSha256": null
+  },
+  {
+    "id": 398,
+    "universityId": "korea-kr",
+    "code": "CSAI202",
+    "title": "INTRODUCTION TO DEEP LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1929,
+    "snapshotSha256": null
+  },
+  {
+    "id": 399,
+    "universityId": "korea-kr",
+    "code": "ECE502",
+    "title": "ADVANCED SEMICONDUCTOR DEVICE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2258,
+    "snapshotSha256": null
+  },
+  {
+    "id": 400,
+    "universityId": "korea-kr",
+    "code": "ECE503",
+    "title": "ADVANCED PATTERN RECOGNITION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2259,
+    "snapshotSha256": null
+  },
+  {
+    "id": 401,
+    "universityId": "korea-kr",
+    "code": "ECE505",
+    "title": "POWER SYSTEM STABILITY I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 41,
+    "snapshotSha256": null
+  },
+  {
+    "id": 402,
+    "universityId": "korea-kr",
+    "code": "ECE509",
+    "title": "ELECTROMECHANICAL ENERGY CONVERSION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 42,
+    "snapshotSha256": null
+  },
+  {
+    "id": 403,
+    "universityId": "korea-kr",
+    "code": "ECE511",
+    "title": "LINEAR SYSTEM",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2260,
+    "snapshotSha256": null
+  },
+  {
+    "id": 404,
+    "universityId": "korea-kr",
+    "code": "ECE537",
+    "title": "OPTIMIZATION METHODS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 43,
+    "snapshotSha256": null
+  },
+  {
+    "id": 405,
+    "universityId": "korea-kr",
+    "code": "ECE632",
+    "title": "MONITORING AND DIAGNOSTICS FOR ENERGY CONVERSION SYSTEM",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2264,
+    "snapshotSha256": null
+  },
+  {
+    "id": 406,
+    "universityId": "korea-kr",
+    "code": "ECE652",
+    "title": "ADVANCED COMPUTER SYSTEM ARCHITECTURE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 44,
+    "snapshotSha256": null
+  },
+  {
+    "id": 407,
+    "universityId": "korea-kr",
+    "code": "ECE660",
+    "title": "MOBILE COMMUNICATION SYSTEMS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 45,
+    "snapshotSha256": null
+  },
+  {
+    "id": 408,
+    "universityId": "korea-kr",
+    "code": "ECE666",
+    "title": "COMMUNICATION SIGNAL PROCESSING 2 (OFDM)",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2270,
+    "snapshotSha256": null
+  },
+  {
+    "id": 409,
+    "universityId": "korea-kr",
+    "code": "ECE668",
+    "title": "INFORMATION THEORY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2271,
+    "snapshotSha256": null
+  },
+  {
+    "id": 410,
+    "universityId": "korea-kr",
+    "code": "ECE674",
+    "title": "UNDERSTANDING OF DEEP LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 46,
+    "snapshotSha256": null
+  },
+  {
+    "id": 411,
+    "universityId": "korea-kr",
+    "code": "ECE681",
+    "title": "ADJUSTABLE SPEED DRIVES",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2274,
+    "snapshotSha256": null
+  },
+  {
+    "id": 412,
+    "universityId": "korea-kr",
+    "code": "ECE686",
+    "title": "SPECIAL TOPICS IN COMPUTER SYSTEMS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2275,
+    "snapshotSha256": null
+  },
+  {
+    "id": 413,
+    "universityId": "korea-kr",
+    "code": "ECE691",
+    "title": "ADVANCED SENSOR ENGINEERING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2276,
+    "snapshotSha256": null
+  },
+  {
+    "id": 414,
+    "universityId": "korea-kr",
+    "code": "ECE692",
+    "title": "BAYESIAN MACHINE LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 47,
+    "snapshotSha256": null
+  },
+  {
+    "id": 415,
+    "universityId": "korea-kr",
+    "code": "ECE694",
+    "title": "TOPICS OF NEW ELECTRONIC MATERIALS ENGINEERING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 48,
+    "snapshotSha256": null
+  },
+  {
+    "id": 416,
+    "universityId": "korea-kr",
+    "code": "ECE705",
+    "title": "ADVANCED TOPICS IN COMPUTER VISION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2279,
+    "snapshotSha256": null
+  },
+  {
+    "id": 417,
+    "universityId": "korea-kr",
+    "code": "ECE708",
+    "title": "POWER ELECTRONICS SYSTEM APPLICATIONS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 49,
+    "snapshotSha256": null
+  },
+  {
+    "id": 418,
+    "universityId": "korea-kr",
+    "code": "ECE714",
+    "title": "SPECIAL TOPICS IN PROCESSOR ARCHITECTURE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2280,
+    "snapshotSha256": null
+  },
+  {
+    "id": 419,
+    "universityId": "korea-kr",
+    "code": "ECE724",
+    "title": "MULTIPLE ANTENNA THEORY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 50,
+    "snapshotSha256": null
+  },
+  {
+    "id": 420,
+    "universityId": "korea-kr",
+    "code": "ECE736",
+    "title": "SPECIAL TOPICS IN CONTROL AND SYSTEM ENGINEERINGⅡ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2282,
+    "snapshotSha256": null
+  },
+  {
+    "id": 421,
+    "universityId": "korea-kr",
+    "code": "ECE738",
+    "title": "SOFT ROBOTICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 51,
+    "snapshotSha256": null
+  },
+  {
+    "id": 422,
+    "universityId": "korea-kr",
+    "code": "ECE745",
+    "title": "ADVANCED DESIGN OF GENERATION NANO-PHOTONIC DEVICES",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2284,
+    "snapshotSha256": null
+  },
+  {
+    "id": 423,
+    "universityId": "korea-kr",
+    "code": "ECE747",
+    "title": "GRID-CONNECTED POWER CONVERSION SYSTEM",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2286,
+    "snapshotSha256": null
+  },
+  {
+    "id": 424,
+    "universityId": "korea-kr",
+    "code": "ECE756",
+    "title": "EFFICIENT AI AND HARDWARE DESIGN",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2288,
+    "snapshotSha256": null
+  },
+  {
+    "id": 425,
+    "universityId": "korea-kr",
+    "code": "ECE803",
+    "title": "TECHNICAL WRITING IN ENGLISH",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 52,
+    "snapshotSha256": null
+  },
+  {
+    "id": 426,
+    "universityId": "korea-kr",
+    "code": "KECE205",
+    "title": "CIRCUIT THEORY AND LABORATORY",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 99,
+    "snapshotSha256": null
+  },
+  {
+    "id": 427,
+    "universityId": "korea-kr",
+    "code": "KECE206",
+    "title": "ENGINEERING ELECTROMAGNETICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1450,
+    "snapshotSha256": null
+  },
+  {
+    "id": 428,
+    "universityId": "korea-kr",
+    "code": "KECE207",
+    "title": "DIGITAL SYSTEM DESIGN",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 100,
+    "snapshotSha256": null
+  },
+  {
+    "id": 429,
+    "universityId": "korea-kr",
+    "code": "KECE208",
+    "title": "DATA STRUCTURE AND ALGORITHM",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1411,
+    "snapshotSha256": null
+  },
+  {
+    "id": 430,
+    "universityId": "korea-kr",
+    "code": "KECE209",
+    "title": "PROBABILITY AND RANDOM PROCESS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 103,
+    "snapshotSha256": null
+  },
+  {
+    "id": 431,
+    "universityId": "korea-kr",
+    "code": "KECE210",
+    "title": "DIGITAL SYSTEM DESIGN AND LABORATORY",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1457,
+    "snapshotSha256": null
+  },
+  {
+    "id": 432,
+    "universityId": "korea-kr",
+    "code": "KECE211",
+    "title": "CIRCUIT THEORY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 106,
+    "snapshotSha256": null
+  },
+  {
+    "id": 433,
+    "universityId": "korea-kr",
+    "code": "KECE212",
+    "title": "PHYSICAL ELECTRONICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1413,
+    "snapshotSha256": null
+  },
+  {
+    "id": 434,
+    "universityId": "korea-kr",
+    "code": "KECE232",
+    "title": "ENGINEERING MATHEMATICS Ⅱ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1462,
+    "snapshotSha256": null
+  },
+  {
+    "id": 435,
+    "universityId": "korea-kr",
+    "code": "KECE301",
+    "title": "ELECTRONIC CIRCUITS I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 107,
+    "snapshotSha256": null
+  },
+  {
+    "id": 436,
+    "universityId": "korea-kr",
+    "code": "KECE302",
+    "title": "ELECTRONIC CIRCUITS 2",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1416,
+    "snapshotSha256": null
+  },
+  {
+    "id": 437,
+    "universityId": "korea-kr",
+    "code": "KECE303",
+    "title": "ELECTRONIC CIRCUITS AND LABORATORYI",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 110,
+    "snapshotSha256": null
+  },
+  {
+    "id": 438,
+    "universityId": "korea-kr",
+    "code": "KECE304",
+    "title": "ELECTRONIC CIRCUITS AND LABORATORY Ⅱ",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1419,
+    "snapshotSha256": null
+  },
+  {
+    "id": 439,
+    "universityId": "korea-kr",
+    "code": "KECE313",
+    "title": "SIGNAL AND SYSTEMS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 111,
+    "snapshotSha256": null
+  },
+  {
+    "id": 440,
+    "universityId": "korea-kr",
+    "code": "KECE331",
+    "title": "SEMICONDUCTOR DEVICESⅠ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 115,
+    "snapshotSha256": null
+  },
+  {
+    "id": 441,
+    "universityId": "korea-kr",
+    "code": "KECE343",
+    "title": "COMPUTER ARCHITECTURE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 117,
+    "snapshotSha256": null
+  },
+  {
+    "id": 442,
+    "universityId": "korea-kr",
+    "code": "KECE345",
+    "title": "MACHINE LEARNING AND INTELLIGENCE FOR ELECTRICAL ENGINEERS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 118,
+    "snapshotSha256": null
+  },
+  {
+    "id": 443,
+    "universityId": "korea-kr",
+    "code": "KECE359",
+    "title": "ELECTRICAL ENERGY ENGINEERING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 119,
+    "snapshotSha256": null
+  },
+  {
+    "id": 444,
+    "universityId": "korea-kr",
+    "code": "KECE364",
+    "title": "ELECTRIC MACHINES Ⅰ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1431,
+    "snapshotSha256": null
+  },
+  {
+    "id": 445,
+    "universityId": "korea-kr",
+    "code": "KECE370",
+    "title": "DIGITAL SIGNAL PROCESSING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1435,
+    "snapshotSha256": null
+  },
+  {
+    "id": 446,
+    "universityId": "korea-kr",
+    "code": "KECE419",
+    "title": "ELECTRIC MACHINES Ⅱ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 120,
+    "snapshotSha256": null
+  },
+  {
+    "id": 447,
+    "universityId": "korea-kr",
+    "code": "KECE438",
+    "title": "INTRODUCTION TO QUANTUM ELECTRONICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1438,
+    "snapshotSha256": null
+  },
+  {
+    "id": 448,
+    "universityId": "korea-kr",
+    "code": "KECE440",
+    "title": "INTRODUCTION TO OPTOELECTRONICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1439,
+    "snapshotSha256": null
+  },
+  {
+    "id": 449,
+    "universityId": "korea-kr",
+    "code": "KECE448",
+    "title": "PLATFORM PROGRAMMING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1440,
+    "snapshotSha256": null
+  },
+  {
+    "id": 450,
+    "universityId": "korea-kr",
+    "code": "KECE462",
+    "title": "ASIC DESIGN",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1443,
+    "snapshotSha256": null
+  },
+  {
+    "id": 451,
+    "universityId": "korea-kr",
+    "code": "KECE470",
+    "title": "PATTERN RECOGNITION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1444,
+    "snapshotSha256": null
+  },
+  {
+    "id": 452,
+    "universityId": "korea-kr",
+    "code": "KECE493",
+    "title": "SEMICONDUCTOR PROCESSING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 121,
+    "snapshotSha256": null
+  },
+  {
+    "id": 453,
+    "universityId": "korea-kr",
+    "code": "KECE495",
+    "title": "POWER ELECTRONICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 122,
+    "snapshotSha256": null
+  },
+  {
+    "id": 454,
+    "universityId": "korea-kr",
+    "code": "MATH161",
+    "title": "CALCULUS WITH LAB I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1063,
+    "snapshotSha256": null
+  },
+  {
+    "id": 455,
+    "universityId": "korea-kr",
+    "code": "MATH162",
+    "title": "CALCULUS WITH LAB II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1089,
+    "snapshotSha256": null
+  },
+  {
+    "id": 456,
+    "universityId": "korea-kr",
+    "code": "MATH201",
+    "title": "SET THEORY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1090,
+    "snapshotSha256": null
+  },
+  {
+    "id": 457,
+    "universityId": "korea-kr",
+    "code": "MATH203",
+    "title": "DISCRETE MATHEMATICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 440,
+    "snapshotSha256": null
+  },
+  {
+    "id": 458,
+    "universityId": "korea-kr",
+    "code": "MATH211",
+    "title": "ANALYSISⅠ WITH LAB",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 441,
+    "snapshotSha256": null
+  },
+  {
+    "id": 459,
+    "universityId": "korea-kr",
+    "code": "MATH212",
+    "title": "ANALYSISⅡ WITH LAB",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1106,
+    "snapshotSha256": null
+  },
+  {
+    "id": 460,
+    "universityId": "korea-kr",
+    "code": "MATH221",
+    "title": "LINEAR ALGEBRAⅠ WITH LAB",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1108,
+    "snapshotSha256": null
+  },
+  {
+    "id": 461,
+    "universityId": "korea-kr",
+    "code": "MATH222",
+    "title": "LINEAR ALGEBRAⅡ WITH LAB",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1109,
+    "snapshotSha256": null
+  },
+  {
+    "id": 462,
+    "universityId": "korea-kr",
+    "code": "MATH292",
+    "title": "MATHEMATICS FOR AI",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1094,
+    "snapshotSha256": null
+  },
+  {
+    "id": 463,
+    "universityId": "korea-kr",
+    "code": "MATH321",
+    "title": "ALGEBRAⅠ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 444,
+    "snapshotSha256": null
+  },
+  {
+    "id": 464,
+    "universityId": "korea-kr",
+    "code": "MATH333",
+    "title": "TOPOLOGYⅠ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 445,
+    "snapshotSha256": null
+  },
+  {
+    "id": 465,
+    "universityId": "korea-kr",
+    "code": "MATH342",
+    "title": "NUMERICAL ANALYSIS AND COMPUTER EXPERIMENT",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1095,
+    "snapshotSha256": null
+  },
+  {
+    "id": 466,
+    "universityId": "korea-kr",
+    "code": "MATH362",
+    "title": "ALGEBRAⅡ",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1099,
+    "snapshotSha256": null
+  },
+  {
+    "id": 467,
+    "universityId": "korea-kr",
+    "code": "MATH374",
+    "title": "TOPOLOGYII",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1101,
+    "snapshotSha256": null
+  },
+  {
+    "id": 468,
+    "universityId": "korea-kr",
+    "code": "MATH462",
+    "title": "APPLIED NUMBER THEORY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1103,
+    "snapshotSha256": null
+  },
+  {
+    "id": 469,
+    "universityId": "korea-kr",
+    "code": "MATH464",
+    "title": "COMBINATORICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1104,
+    "snapshotSha256": null
+  },
+  {
+    "id": 470,
+    "universityId": "korea-kr",
+    "code": "MATH469",
+    "title": "TOPICS IN ALGEBRA",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1105,
+    "snapshotSha256": null
+  },
+  {
+    "id": 471,
+    "universityId": "korea-kr",
+    "code": "MATH487",
+    "title": "TOPICS IN APPLIED MATHEMATICS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 446,
+    "snapshotSha256": null
+  },
+  {
+    "id": 472,
+    "universityId": "korea-kr",
+    "code": "MATH491",
+    "title": "THEORETICAL MACHINE LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 447,
+    "snapshotSha256": null
+  },
+  {
+    "id": 473,
+    "universityId": "korea-kr",
+    "code": "MTH501",
+    "title": "ALGEBRA I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 226,
+    "snapshotSha256": null
+  },
+  {
+    "id": 474,
+    "universityId": "korea-kr",
+    "code": "MTH505",
+    "title": "PROBABILITY I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 227,
+    "snapshotSha256": null
+  },
+  {
+    "id": 475,
+    "universityId": "korea-kr",
+    "code": "MTH614",
+    "title": "NUMERICAL ANALYSIS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 228,
+    "snapshotSha256": null
+  },
+  {
+    "id": 476,
+    "universityId": "korea-kr",
+    "code": "MTH618",
+    "title": "NUMERICAL PARTIAL DIFFERENTIAL EQUATION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1875,
+    "snapshotSha256": null
+  },
+  {
+    "id": 477,
+    "universityId": "korea-kr",
+    "code": "MTH701",
+    "title": "REPRESENTATION THEORY OF GROUPS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 229,
+    "snapshotSha256": null
+  },
+  {
+    "id": 478,
+    "universityId": "korea-kr",
+    "code": "MTH731",
+    "title": "THEORY OF PARTIAL DIFFERENTIAL EQUATIONS I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1876,
+    "snapshotSha256": null
+  },
+  {
+    "id": 479,
+    "universityId": "korea-kr",
+    "code": "MTH759",
+    "title": "ALGEBRAIC NUMBER THEORY II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1877,
+    "snapshotSha256": null
+  },
+  {
+    "id": 480,
+    "universityId": "korea-kr",
+    "code": "MTH801",
+    "title": "RESEARCH IN ALGEBRA I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1880,
+    "snapshotSha256": null
+  },
+  {
+    "id": 481,
+    "universityId": "korea-kr",
+    "code": "MTH811",
+    "title": "RESEARCH IN APPLIED MATHEMATICS I",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 230,
+    "snapshotSha256": null
+  },
+  {
+    "id": 482,
+    "universityId": "korea-kr",
+    "code": "SEMI102",
+    "title": "ENGINEERING MATHEMATICS II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 1470,
+    "snapshotSha256": null
+  },
+  {
+    "id": 483,
+    "universityId": "korea-kr",
+    "code": "XAI501",
+    "title": "MACHINE LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2436,
+    "snapshotSha256": null
+  },
+  {
+    "id": 484,
+    "universityId": "korea-kr",
+    "code": "XAI503",
+    "title": "OPTIMIZATION THEORY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2437,
+    "snapshotSha256": null
+  },
+  {
+    "id": 485,
+    "universityId": "korea-kr",
+    "code": "XAI505",
+    "title": "CALCULUS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2438,
+    "snapshotSha256": null
+  },
+  {
+    "id": 486,
+    "universityId": "korea-kr",
+    "code": "XAI506",
+    "title": "DEEP LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2439,
+    "snapshotSha256": null
+  },
+  {
+    "id": 487,
+    "universityId": "korea-kr",
+    "code": "XAI507",
+    "title": "COMPUTER VISION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2440,
+    "snapshotSha256": null
+  },
+  {
+    "id": 488,
+    "universityId": "korea-kr",
+    "code": "XAI508",
+    "title": "NATURAL LANGUAGE PROCESSING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2441,
+    "snapshotSha256": null
+  },
+  {
+    "id": 489,
+    "universityId": "korea-kr",
+    "code": "XAI509",
+    "title": "AUTOMATIC SPEECH RECOGNITION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 112,
+    "snapshotSha256": null
+  },
+  {
+    "id": 490,
+    "universityId": "korea-kr",
+    "code": "XAI511",
+    "title": "NEURAL NETWORKS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2442,
+    "snapshotSha256": null
+  },
+  {
+    "id": 491,
+    "universityId": "korea-kr",
+    "code": "XAI518",
+    "title": "INFORMATION THEORY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2444,
+    "snapshotSha256": null
+  },
+  {
+    "id": 492,
+    "universityId": "korea-kr",
+    "code": "XAI519",
+    "title": "GENERATIVE ARTIFICIAL INTELLIGENCE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 113,
+    "snapshotSha256": null
+  },
+  {
+    "id": 493,
+    "universityId": "korea-kr",
+    "code": "XAI520",
+    "title": "ALGORITHM FOR AI",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2445,
+    "snapshotSha256": null
+  },
+  {
+    "id": 494,
+    "universityId": "korea-kr",
+    "code": "XAI602",
+    "title": "COMPUTER VISION APPLICATION AND PRACTICE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2446,
+    "snapshotSha256": null
+  },
+  {
+    "id": 495,
+    "universityId": "korea-kr",
+    "code": "XAI603",
+    "title": "NATURAL LANGUAGE PROCESSING APPLICATION AND PRACTICE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2447,
+    "snapshotSha256": null
+  },
+  {
+    "id": 496,
+    "universityId": "korea-kr",
+    "code": "XAI604",
+    "title": "AUTOMATIC SPEECH RECOGNITION APPLICATION AND PRACTICE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 116,
+    "snapshotSha256": null
+  },
+  {
+    "id": 497,
+    "universityId": "korea-kr",
+    "code": "XAI606",
+    "title": "APPLICATIONS AND PRACTICE IN NEURAL NETWORKS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2448,
+    "snapshotSha256": null
+  },
+  {
+    "id": 498,
+    "universityId": "korea-kr",
+    "code": "XAI607",
+    "title": "ADVANCED DEEP LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2449,
+    "snapshotSha256": null
+  },
+  {
+    "id": 499,
+    "universityId": "korea-kr",
+    "code": "XAI608",
+    "title": "ADVANCED COMPUTER VISION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 117,
+    "snapshotSha256": null
+  },
+  {
+    "id": 500,
+    "universityId": "korea-kr",
+    "code": "XAI609",
+    "title": "ADVANCED NATURAL LANGUAGE PROCESSING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2450,
+    "snapshotSha256": null
+  },
+  {
+    "id": 501,
+    "universityId": "korea-kr",
+    "code": "XAI610",
+    "title": "ADVANCED AUTOMATIC SPEECH RECOGNITION",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2451,
+    "snapshotSha256": null
+  },
+  {
+    "id": 502,
+    "universityId": "korea-kr",
+    "code": "XAI611",
+    "title": "ADVANCED BIG DATA ANALYSIS",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 118,
+    "snapshotSha256": null
+  },
+  {
+    "id": 503,
+    "universityId": "korea-kr",
+    "code": "XAI612",
+    "title": "ADVANCED NEURAL NETWORK",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 119,
+    "snapshotSha256": null
+  },
+  {
+    "id": 504,
+    "universityId": "korea-kr",
+    "code": "XAI613",
+    "title": "REINFORCEMENT LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2452,
+    "snapshotSha256": null
+  },
+  {
+    "id": 505,
+    "universityId": "korea-kr",
+    "code": "XAI616",
+    "title": "KNOWLEDGE BASED SYSTEM",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2453,
+    "snapshotSha256": null
+  },
+  {
+    "id": 506,
+    "universityId": "korea-kr",
+    "code": "XAI617",
+    "title": "ARTIFICIAL INTELLIGENCE FOR HEALTHCARE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2454,
+    "snapshotSha256": null
+  },
+  {
+    "id": 507,
+    "universityId": "korea-kr",
+    "code": "XAI622",
+    "title": "GAME ARTIFICIAL INTELLIGENCE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2455,
+    "snapshotSha256": null
+  },
+  {
+    "id": 508,
+    "universityId": "korea-kr",
+    "code": "XAI624",
+    "title": "ADVANCED BAYESIAN MACHINE LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 120,
+    "snapshotSha256": null
+  },
+  {
+    "id": 509,
+    "universityId": "korea-kr",
+    "code": "XAI625",
+    "title": "REINFORCEMENT LEARNING APPLICATION AND PRACTICE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2456,
+    "snapshotSha256": null
+  },
+  {
+    "id": 510,
+    "universityId": "korea-kr",
+    "code": "XAI626",
+    "title": "ADVANCED REINFORCEMENT LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 121,
+    "snapshotSha256": null
+  },
+  {
+    "id": 511,
+    "universityId": "korea-kr",
+    "code": "XAI628",
+    "title": "DIGITAL TWIN",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2457,
+    "snapshotSha256": null
+  },
+  {
+    "id": 512,
+    "universityId": "korea-kr",
+    "code": "XAI629",
+    "title": "INTELLIGENT MOBILITY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2458,
+    "snapshotSha256": null
+  },
+  {
+    "id": 513,
+    "universityId": "korea-kr",
+    "code": "XAI630",
+    "title": "META LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2459,
+    "snapshotSha256": null
+  },
+  {
+    "id": 514,
+    "universityId": "korea-kr",
+    "code": "XAI631",
+    "title": "ADVANCED META LEARNING",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2460,
+    "snapshotSha256": null
+  },
+  {
+    "id": 515,
+    "universityId": "korea-kr",
+    "code": "XAI634",
+    "title": "EDGE NEURAL NETWORK",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2461,
+    "snapshotSha256": null
+  },
+  {
+    "id": 516,
+    "universityId": "korea-kr",
+    "code": "XAI635",
+    "title": "AI SAFETY",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=811985&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 122,
+    "snapshotSha256": null
+  },
+  {
+    "id": 517,
+    "universityId": "korea-kr",
+    "code": "XAI636",
+    "title": "COPYRIGHT PROTECTION IN AI",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2462,
+    "snapshotSha256": null
+  },
+  {
+    "id": 518,
+    "universityId": "korea-kr",
+    "code": "XAI638",
+    "title": "ADVANCED HEALTHCARE ARTIFICIAL INTELLIGENCE",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2463,
+    "snapshotSha256": null
+  },
+  {
+    "id": 519,
+    "universityId": "korea-kr",
+    "code": "XAI639",
+    "title": "UNDERSTANDING DIGITAL DATA",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2464,
+    "snapshotSha256": null
+  },
+  {
+    "id": 520,
+    "universityId": "korea-kr",
+    "code": "XAI707",
+    "title": "CREATIVE LEARNING PROJECT II",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do?mode=view&articleNo=1587482&article.offset=0&articleLimit=10",
+    "collectedAt": "2026-11-10T21:04:28.514Z",
+    "sourcePage": 1,
+    "sourceLine": 2465,
+    "snapshotSha256": null
   }
 ]

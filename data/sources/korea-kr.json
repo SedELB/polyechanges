@@ -3,5 +3,7 @@
   "universityId": "korea-kr",
   "kind": "manual",
   "urls": [],
-  "reader": "manual"
+  "reader": "manual",
+  "descriptions": "none",
+  "descriptionsNote": "Le bureau des échanges publie seulement les titres ; les syllabus sont dans une application non lisible par programme."
 }
