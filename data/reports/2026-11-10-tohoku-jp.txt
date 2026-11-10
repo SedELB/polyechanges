@@ -1,0 +1,39 @@
+Rapport de collecte : tohoku-jp
+Date : 2026-11-10
+Statut : ok
+Cours actifs : 5
+Ajoutés (5) : SB1117, TB15204, TB15212, VJ251S8, VJ254F83
+Retirés (0) : aucun
+Modifiés (0) : aucun
+
+Notes sur la collecte
+- Source : les deux listes officielles « JYPE Course Information » 2026 (automne : https://www.insc.tohoku.ac.jp/english/jype-course-information-2026-fall/ ;
+  printemps : .../jype-course-information-2026-spring/), pages du Centre d'apprentissage mondial (programme d'échange en anglais JYPE, 3e année),
+  puis le syllabus PDF (système UNIPA) de chaque cours retenu pour le titre, les crédits, la langue, le semestre et la description.
+  Les listes couvrent toutes les disciplines ; retenus : 1 + 4 = 5 cours d'informatique, de génie électrique et de mathématiques
+  (Basic Computer Science, Mathematics B, Fundamentals of Information Science I et II, Electricity and Magnetism).
+  Hors périmètre : physique, chimie, géosciences, mécanique, matériaux, génie chimique, agriculture, catastrophes, culture et langue japonaises.
+  Electricity and Magnetism (école d'ingénierie, Maxwell, induction) est rangé en génie électrique : choix d'interprétation, à confirmer.
+- Les autres cours en anglais (programme FGL, cours des écoles supérieures ouvertes aux étudiants COLABS) ne sont pas publiés sous forme de liste : non collectés.
+- Cours tous de 1er cycle. Les syllabus sont des PDF lisibles ; descriptions : texte anglais du syllabus (le japonais est écarté) jusqu'au plan du cours.
+- Langue : le syllabus de Fundamentals of Information Science II (TB15212) ne l'indique pas (page en japonais avec résumé anglais) ; elle est confirmée par la liste JYPE
+  (« All lectures available to the JYPE participants are given in English », page https://www.insc.tohoku.ac.jp/english/exchange/jype/).
+- Définition du crédit : « 1 Tohoku University credit is awarded for 45 hours of school work » (travail total, préparation comprise). Heures de contact par crédit
+  calculées à partir de la seule citation de la page JYPE : « Each semester consists of 15 weeks of class work. ... Two credits are given for most of the lecture courses
+  that meet once a week for 90 minutes. » : 90 min x 15 semaines / 2 crédits = 22,5 h / 2 = 11,25 h par crédit (cours magistraux, comme pour Nagoya).
+  Les syllabus indiquent en outre, pour les cours magistraux et exercices, « one credit consists of 15-30 hours of class time and 30-15 hours of preparation and review » ;
+  cette fourchette n'est pas retenue (heures et minutes non précisées).
+- Dates : calendrier du programme JYPE (page 1.Academic Calendar, mis à jour le 28 novembre 2025). Le calendrier 2027-2028 n'est pas publié : dernière année publiée.
+  Automne : début 1er octobre 2026, fin des cours 3 février 2027. Printemps : début 8 avril 2026, fin des cours 5 août 2026 (année déjà écoulée).
+  « Fin des examens » : le calendrier ne donne ni examens ni période de rattrapage datée (« Supplementary Class Period » : début à mi-février, sans jour) : laissée à null.
+- Restriction : le programme JYPE est axé sur la recherche (stage de recherche individuel obligatoire) et ne convient pas aux étudiants qui ne veulent que des crédits de cours optionnels.
+- Coordonnées : campus de Katahira (Wikipédia, 38.25417 N, 140.87361 E) ; la valeur de MoveOn (38.266572, 140.883246) n'est pas sourcée et n'est pas reprise.
+- Contact : « Tohoku University Student Exchange Division » (formulaire de contact en ligne ; aucune adresse courriel n'est publiée sur la page).
+- Robots : www.insc.tohoku.ac.jp n'a pas de robots.txt (404) ; www.tohoku.ac.jp/robots.txt interdit /english/ mais seul /en/ est lu.
+
+Vérification de 5 cours, relus sur leur propre syllabus PDF (relus le 2026-11-10 ; les cinq cours de la saisie, car il n'y en a que cinq)
+- VJ254F83 Basic Computer Science : 2 crédits, English, « Second semester 2026 » (automne) : conforme.
+- SB1117 Mathematics B : 2 crédits, English, « First semester 2026 » (printemps) : conforme.
+- TB15204 Fundamentals of Information Science I : 2 crédits, English, « First semester 2026 » (printemps) : conforme.
+- TB15212 Fundamentals of Information Science II : 2 crédits, langue absente du syllabus, confirmée par la liste JYPE, « First semester 2026 » (printemps) : conforme.
+- VJ251S8 Electricity and Magnetism : 2 crédits, English, « First semester 2026 » (printemps) : conforme.

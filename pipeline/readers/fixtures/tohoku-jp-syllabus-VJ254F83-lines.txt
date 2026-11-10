@@ -1,0 +1,97 @@
+p1:l1 Course Numbering
+p1:l2 Year
+p1:l3 Subject (J)
+p1:l4 Subject
+p1:l5 Credit(s)
+p1:l6 Instructor
+p1:l7 Media Class Subjects
+p1:l8 Essential Subjects
+p1:l9 Language of Instruction
+p1:l10 Course Objectives and
+p1:l11 Summary/ Learning Goals
+p1:l12 (J)
+p1:l13 Course Objectives and
+p1:l14 Summary/ Learning Goals
+p1:l15 Relevance to Other
+p1:l16 Subjects/Considerations for
+p1:l17 Taking the Class (J)
+p1:l18 Relevance to Other
+p1:l19 Subjects/Considerations for
+p1:l20 Taking the Class
+p1:l21 Course Description (J)
+p1:l22 Course Description
+p1:l23 Preparation and Review(J)
+p1:l24 Preparation and Review
+p1:l25 Second semester 2026
+p1:l26 Basic Computer Science
+p1:l27 Basic Computer Science
+p1:l28 2Credits
+p1:l29 TAKEHIRO ITO,YUICHI KAWAMOTO,HASITHA MUTHUMALA WAIDYASOORIYA
+p1:l30 English
+p1:l31 This course provides an overview of some research fields of computer science to bridge fundamental theories of
+p1:l32 computer science with the cutting-edge research in our department. The course consists of algorithm theory,
+p1:l33 communication network, and parallel computing.
+p1:l34 Students will come to understand the association between the fundamental knowledge about computer science and the
+p1:l35 research activities. The emphasis will be on giving a broad overview of the research areas in computer science.
+p1:l36 Please see Google Classroom. Class code: dhjxhjdp
+p1:l37 01. Introduction of this course
+p1:l38 (The order of the parts is subject to change.)
+p1:l39 [Algorithm Theory]
+p1:l40 Algorithms now play a very important role for the reliability and efficiency in several social systems. In this part, we focus
+p1:l41 on design and analysis of algorithms from the viewpoint of theoretical computer science. The main topics are as follows:
+p1:l42 02. What is algorithm? Power of "efficient" algorithms
+p1:l43 03. How to evaluate algorithms
+p1:l44 04. Basic techniques for algorithms (1)
+p1:l45 05. Basic techniques for algorithms (2)
+p1:l46 06. Algorithms for computationally hard problems
+p1:l47 07. Online algorithms
+p1:l48 [Communication Network]
+p1:l49 Communication network infrastructure needs to be resilient to natural disasters. In this part, we focus on the information
+p1:l50 and communication technology for disaster response and recovery. The main topics are as follows:
+p1:l51 08. Basic technologies for communication networks
+p1:l52 09. UAV network
+p1:l53 10. Wireless mesh network
+p1:l54 11. Device to Device (D2D) network
+p1:l55 [Parallel Computing]
+p1:l56 Parallel computing is extremely important in many fields such as numerical simulations, artificial intelligence, machine
+p1:l57 learning, optimizations, etc. In this part, we focus on leaning different parallel computation techniques, their bottlenecks
+p1:l58 and how to simply run a program in parallel. The main topics are as follows:
+p1:l59 12. Basics of parallel computing
+p1:l60 13. CPU-based multicore computing
+p1:l61 14. GPU parallel computing
+p1:l62 15. Introduction to FPGA-based parallel computing
+p1:l63 Students are required to make a thorough review. They are also expected to learn topics related to the class by
+p1:l64 themselves. Such related topics and keywords will be provided during the lectures.
+p1:l65 2026/09/25 16:44 UNIVERSAL PASSPORT RX[2]
+p1:l66 https://unipa.bureau.tohoku.ac.jp/uprx/up/bs/bsa001/Bsa00101.xhtml 1/2
+p2:l1 Evaluation methods and
+p2:l2 criteria (J)
+p2:l3 Evaluation methods and
+p2:l4 criteria
+p2:l5 Textbooks and references
+p2:l6 Title Author Publisher Year ISBN/ISSN Classification
+p2:l7 URL
+p2:l8 Attached File
+p2:l9 Office Hours(J)
+p2:l10 Office Hours
+p2:l11 Contact： Please insert '@'
+p2:l12 in the email address.
+p2:l13 Notes
+p2:l14 Practical Skill/Hands-on
+p2:l15 Class
+p2:l16 Other
+p2:l17 Comments/Instructions
+p2:l18 Last Update
+p2:l19 One-credit courses require 45 hours of study. In lecture and exercise-based classes, one credit consists of 15-30 hours of class time and 30-15 hours of
+p2:l20 preparation and review outside of class. In laboratory, practical skill classes, one credit consists of 30-45 hours of class time and 15-0 hours of
+p2:l21 preparation and review outside of class.
+p2:l22 Grading evaluation will be based on the combined scores from all three parts of the course; therefore, students need to
+p2:l23 attend all three parts. Evaluation is performed comprehensively through reports, exercises, and in-class activities, etc.
+p2:l24 Details will be announced in the lectures.
+p2:l25 Please see Google Classroom. Class code: dhjxhjdp
+p2:l26 Please make an appointment by email. Contact details will be announced during the lecture.
+p2:l27 研究科Webサイトに掲載されている連絡先⼀覧から確認すること。
+p2:l28 Please check with the contact list posted on the Graduate School website.
+p2:l29 2026/03/05
+p2:l30 2026/09/25 16:44 UNIVERSAL PASSPORT RX[2]
+p2:l31 https://unipa.bureau.tohoku.ac.jp/uprx/up/bs/bsa001/Bsa00101.xhtml 2/2

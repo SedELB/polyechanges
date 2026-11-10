@@ -1,0 +1,122 @@
+[
+  {
+    "code": "SB1117",
+    "title": "Mathematics B",
+    "description": "Themes are chosen from algebra, geometry, and analysis and are explained in English by experts in each field,\nallowing students to learn mathematics and how to express it in English.\nAlso the student is assumed to be familiar with the subjects normally taught in classes to math majors by the first half\nof the 3rd year.\nThis course will cover some advanced and basic mathematics. Students will gain perspective and an understanding of\nthe usefulness of mathematics.",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/03/Mathematics-B.pdf",
+    "provenance": {
+      "url": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/03/Mathematics-B.pdf",
+      "retrievedAt": "2026-11-10T22:33:26.563Z",
+      "sha256": "33dcb91103084e231f1518cda7d541c82e3820479d604925d467f6fd2281694c",
+      "locator": {
+        "page": 1,
+        "line": 28
+      },
+      "quote": "Mathematics B"
+    }
+  },
+  {
+    "code": "TB15204",
+    "title": "Fundamentals of Information Science I",
+    "description": "The objective of this course is for students to learn the basic structure and operating principles of computers. Starting\nwith the history of computing, the course will explain the mechanisms of how computers work. The ultimate goal is to\nhelp students grasp the fundamental concepts behind computer design and operation, enabling them to deeply\nunderstand software behavior and utilize computers more effectively.",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/04/Fundamental-Science1.pdf",
+    "provenance": {
+      "url": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/04/Fundamental-Science1.pdf",
+      "retrievedAt": "2026-11-10T22:33:32.561Z",
+      "sha256": "40bf9344f777d5b66cedc96fa68dc3674569734fd6a23d96e38d591442134233",
+      "locator": {
+        "page": 1,
+        "line": 33
+      },
+      "quote": "Fundamentals of Information Science I"
+    }
+  },
+  {
+    "code": "TB15212",
+    "title": "Fundamentals of Information Science II",
+    "description": "Aims: Students will acquire basic knowledge about algorithms and data structures.\nDescriptions: Evaluation methods and programming techniques for making good programs are discussed.\nGoal: On completing the course, students will have the ability to design and making good programs.",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/04/d4c0fcb493db2ac50133094c60c5fcfd.pdf",
+    "provenance": {
+      "url": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/04/d4c0fcb493db2ac50133094c60c5fcfd.pdf",
+      "retrievedAt": "2026-11-10T22:33:35.731Z",
+      "sha256": "a10f9387df0e268b661da5426a28941ee4b983f299b20702fbcb3e216f747ede",
+      "locator": {
+        "page": 1,
+        "line": 27
+      },
+      "quote": "Fundamentals of Information Science II"
+    }
+  },
+  {
+    "code": "VJ251S8",
+    "title": "Electricity and Magnetism",
+    "description": "Objective:\n・Students will learn basic principles and analysis methods for electromagnetic induction and radiation.\nSummary of class:\n・Basic theories and analysis methods for electromagnetic fi elds in vacuum and dielectric/magnetic media:\nMaxwell'sequations, plane wave and its reflection/transmission, dielectric/magnetic media and their boundary\nconditions etc.\n・Basic principles and analysis methods for electromagnetic induction and radiation: Faraday's law, radiation from\nelectric dipole etc.",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/04/Electricity-and-Magnetism.pdf",
+    "provenance": {
+      "url": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/04/Electricity-and-Magnetism.pdf",
+      "retrievedAt": "2026-11-10T22:33:29.582Z",
+      "sha256": "fc38871ace015201f556ae216e8815d971b9e6c8ef9f4074737025b444f11f23",
+      "locator": {
+        "page": 1,
+        "line": 32
+      },
+      "quote": "Electricity and Magnetism"
+    }
+  },
+  {
+    "code": "VJ254F83",
+    "title": "Basic Computer Science",
+    "description": "This course provides an overview of some research fields of computer science to bridge fundamental theories of\ncomputer science with the cutting-edge research in our department. The course consists of algorithm theory,\ncommunication network, and parallel computing.\nStudents will come to understand the association between the fundamental knowledge about computer science and the\nresearch activities. The emphasis will be on giving a broad overview of the research areas in computer science.",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/09/VJ254F83-Basic-Computer-Science.pdf",
+    "provenance": {
+      "url": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/09/VJ254F83-Basic-Computer-Science.pdf",
+      "retrievedAt": "2026-11-10T22:33:20.697Z",
+      "sha256": "5f496d3838e842798b127b4a8c2bafb3a48b4d46a9c4a5a4e892e6f1a9bdb76c",
+      "locator": {
+        "page": 1,
+        "line": 26
+      },
+      "quote": "Basic Computer Science"
+    }
+  }
+]

@@ -1,0 +1,78 @@
+p1:l1 Year
+p1:l2 Course
+p1:l3 Day/Period
+p1:l4 Credit(s)
+p1:l5 Instructor
+p1:l6 Eligible Participants
+p1:l7 Course code/number
+p1:l8 Main Subjects
+p1:l9 Course of Media Class
+p1:l10 Practical business
+p1:l11 Language Used in Course
+p1:l12 Course Title
+p1:l13 Purpose/Abstract
+p1:l14 Goal
+p1:l15 Contents and progress
+p1:l16 schedule of the class
+p1:l17 Grading
+p1:l18 Books required/referenced
+p1:l19 Contents of preparation and
+p1:l20 review
+p1:l21 Study time for preparation
+p1:l22 and review
+p1:l23 How to contact and Google
+p1:l24 Classroom Code
+p1:l25 Remarks
+p1:l26 Last Update
+p1:l27 First semester 2026
+p1:l28 Mathematics B
+p1:l29 Thu.1Period
+p1:l30 2Credits
+p1:l31 MASAKI HANAMURA,FUMIHIKO NAKANO,TAKUMI YOKOTA
+p1:l32 Undergraduate 3rd grade／Undergraduate 4th grade
+p1:l33 SMA-MAT802E
+p1:l34 English
+p1:l35 Mathematics B
+p1:l36 Themes are chosen from algebra, geometry, and analysis and are explained in English by experts in each field,
+p1:l37 allowing students to learn mathematics and how to express it in English.
+p1:l38 Also the student is assumed to be familiar with the subjects normally taught in classes to math majors by the first half
+p1:l39 of the 3rd year.
+p1:l40 This course will cover some advanced and basic mathematics. Students will gain perspective and an understanding of
+p1:l41 the usefulness of mathematics.
+p1:l42 ALGEBRA "Linear representations of finite groups" /Masaki Hanamura
+p1:l43 1. Review of group theory; linear representations of groups; equivalence, irreducibility, unitary representations.
+p1:l44 2. Complete reducibility; homomorphisms of representations.
+p1:l45 3. Schur's theorem, Schur orthogonality.
+p1:l46 4. Characters of representations, decompositions into irreducible representations and multiplicity.
+p1:l47 5. Regular representations and the second orthogonality of characters.
+p1:l48 Analysis “Spectral decomposition theorem for self adjoint operators” / Fumihiko Nakano
+p1:l49 1. Background and motivation : basic principles of quantum mechanics
+p1:l50 2. Preliminaries : basic facts on Hilbert spaces
+p1:l51 3. Spectral decomposition on cyclic spaces
+p1:l52 4. Spectral decomposition on general cases
+p1:l53 5. Application : spectral projection ; RAGE theorem ; min-max principle
+p1:l54 GEOMETRY "Introduction to the Hausdorff measure and dimension" / Takumi Yokota
+p1:l55 1. Definitions
+p1:l56 2. Examples
+p1:l57 3. Properties
+p1:l58 4. Applications
+p1:l59 5. Related topics
+p1:l60 Report and attendance
+p1:l61 No textbook assigned and we will give suitable references at each lecture.
+p1:l62 Study relevant textbooks or references.
+p1:l63 Standard Hours for Preparation/Review per class:
+p1:l64 *Lectures 4 hour
+p1:l65 *Seminar 2-4 hour
+p1:l66 *Experiment, Laboratory Work, and Skill Test 2 hours
+p1:l67 Materials will be provided via ISTU and/or google classroom (fap4af3). More information will be given at the class.
+p1:l68 Mail addresses of Hanamura, Yokota, and Nakano are as follows.
+p1:l69 Masaki Hanamura: masaki.hanamura.a8@tohoku.ac.jp
+p1:l70 Takumi Yokota : takumiy@tohoku.ac.jp
+p1:l71 2026-3-2
+p1:l72 2026/03/31 18:43 UNIVERSAL PASSPORT RX[3]
+p1:l73 https://unipa.bureau.tohoku.ac.jp/uprx/up/bs/bsa001/Bsa00101.xhtml 1/2
+p2:l1 One-credit courses require 45 hours of study. In lecture and exercise-based classes, one credit consists of 15-30 hours of class time and 30-15 hours of
+p2:l2 preparation and review outside of class. In laboratory, practical skill classes, one credit consists of 30-45 hours of class time and 15-0 hours of
+p2:l3 preparation and review outside of class.
+p2:l4 2026/03/31 18:43 UNIVERSAL PASSPORT RX[3]
+p2:l5 https://unipa.bureau.tohoku.ac.jp/uprx/up/bs/bsa001/Bsa00101.xhtml 2/2

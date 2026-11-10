@@ -1,0 +1,123 @@
+p1:l1 Course Numbering
+p1:l2 Year
+p1:l3 Subject (J)
+p1:l4 Subject
+p1:l5 Credit(s)
+p1:l6 Instructor
+p1:l7 Media Class Subjects
+p1:l8 Essential Subjects
+p1:l9 Language of Instruction
+p1:l10 Course Objectives and
+p1:l11 Summary/ Learning Goals
+p1:l12 (J)
+p1:l13 Course Objectives and
+p1:l14 Summary/ Learning Goals
+p1:l15 Relevance to Other
+p1:l16 Subjects/Considerations for
+p1:l17 Taking the Class (J)
+p1:l18 Relevance to Other
+p1:l19 Subjects/Considerations for
+p1:l20 Taking the Class
+p1:l21 Course Description (J)
+p1:l22 Course Description
+p1:l23 Preparation and Review(J)
+p1:l24 Preparation and Review
+p1:l25 TMA-MEE328J
+p1:l26 First semester 2026
+p1:l27 Fundamentals of Information Science II
+p1:l28 Fundamentals of Information Science II
+p1:l29 2Credits
+p1:l30 HIROYUKI TAKIZAWA
+p1:l31 ○
+p1:l32 ○
+p1:l33 1. ⽬的
+p1:l34 アルゴリズムとデータ構造についての基礎知識を習得することを⽬的とする。
+p1:l35 2. 概要
+p1:l36 計算量の概念と評価⽅法、様々なアルゴリズムとデータ構造について学理的に説明する。
+p1:l37 3. 達成⽬標等
+p1:l38 プログラムの効率を定量的に評価し、優れたプログラムが書けるような能⼒を養わせる。
+p1:l39 [Class code: qfkepdzt]
+p1:l40 Aims: Students will acquire basic knowledge about algorithms and data structures.
+p1:l41 Descriptions: Evaluation methods and programming techniques for making good programs are discussed.
+p1:l42 Goal: On completing the course, students will have the ability to design and making good programs.
+p1:l43 [Class code: qfkepdzt]
+p1:l44 情報処理演習、コンピュータ実習Iを履修していることが望ましい。情報科学基礎Iを併せて履修することが望ましい。
+p1:l45 Prerequisites for regular course students are "Practice of Information Processing" and "Computer Seminar I."
+p1:l46 Taking "Fundamentals of Information Science I" is strongly recommended.
+p1:l47 Prerequisites for JYPE/DEEP/IMAC-U students are similar courses as above. Students should have some knowledge
+p1:l48 about a computer language, preferably C or Java.
+p1:l49 1. 導⼊，計算とアルゴリズム
+p1:l50 2. 計算量の評価
+p1:l51 3. データ構造と抽象データ型
+p1:l52 4. 基本的なデータ構造：配列，リスト
+p1:l53 5. 基本的なデータ構造：スタック，待ち⾏列
+p1:l54 6. 基本的なデータ構造：グラフ，⽊
+p1:l55 7. 基本的なデータ構造：集合，テーブル(辞書)，ハッシュ
+p1:l56 8. 優先度付き待ち⾏列，ヒープ
+p1:l57 9. ⼆分探索⽊と平衡⽊
+p1:l58 10. 整列：バブルソート，シェルソート，バケットソート，基数ソート，挿⼊ソート
+p1:l59 11. 整列：ヒープソート，クイックソート，マージソート
+p1:l60 12. グラフの探索：幅優先探索，深さ優先探索
+p1:l61 13. グラフに関するアルゴリズム：最⼩⽊，最短経路問題
+p1:l62 14. 最適化問題
+p1:l63 15. まとめ、及び、期末試験
+p1:l64 1. Introduction of this course, Computation, Algorithms
+p1:l65 2. Evaluation of computational complexity
+p1:l66 3. Data structures, Abstract Data Types (ADTs)
+p1:l67 4. Basic data structures: array, list
+p1:l68 5. Basic data structures: stack, queue
+p1:l69 6. Basic data structures: graph, tree
+p1:l70 7. Basic data structures: set, table (dictionary), hashing
+p1:l71 8. Priority queue, heap
+p1:l72 9. Binary search tree and Balanced search tree
+p1:l73 10. Sorting: bubble sort, shell sort, bucket sort, radix sort, insertion sort
+p1:l74 11. Sorting: heap sort, quick sort, merge sort
+p1:l75 12. Graph searching breadth-first search, depth-first search
+p1:l76 13. Graph algorithms: minimum spanning tree, shortest path problem
+p1:l77 14. Optimization problems
+p1:l78 15. Wrap-up and Final Examination
+p1:l79 復習：講義の内容を踏まえて配布資料や参考⽂献を読みなおし、理解を深める。
+p1:l80 Review: read the handouts and references again to deepen your understanding.
+p1:l81 2026/04/01 9:16 UNIVERSAL PASSPORT RX[2]
+p1:l82 https://unipa.bureau.tohoku.ac.jp/uprx/up/bs/bsa001/Bsa00101.xhtml 1/2
+p2:l1 Evaluation methods and
+p2:l2 criteria (J)
+p2:l3 Evaluation methods and
+p2:l4 criteria
+p2:l5 Textbooks and references
+p2:l6 Title Author Publisher Year ISBN/ISSN Classification
+p2:l7 URL
+p2:l8 Attached File
+p2:l9 Office Hours(J)
+p2:l10 Office Hours
+p2:l11 Contact： Please insert '@'
+p2:l12 in the email address.
+p2:l13 Notes
+p2:l14 Practical Skill/Hands-on
+p2:l15 Class
+p2:l16 Other
+p2:l17 Comments/Instructions
+p2:l18 Last Update
+p2:l19 One-credit courses require 45 hours of study. In lecture and exercise-based classes, one credit consists of 15-30 hours of class time and 30-15 hours of
+p2:l20 preparation and review outside of class. In laboratory, practical skill classes, one credit consists of 30-45 hours of class time and 15-0 hours of
+p2:l21 preparation and review outside of class.
+p2:l22 期末試験の成績と2〜3回のレポート課題の成績を総合して評価する。期末試験はレポートで代替する場合がある。
+p2:l23 The final exam and two or three report assignments will be evaluated in total. The final exam may be replaced by a
+p2:l24 report.
+p2:l25 Introduction to
+p2:l26 Algorithms
+p2:l27 Thomas H. Cormen, et.
+p2:l28 al The MIT Press 2009 9780262033848 参考図書
+p2:l29 Algorithms Kevin Wayne and
+p2:l30 Robert Sedgewick
+p2:l31 Addison-Wesley
+p2:l32 Professional; 4th
+p2:l33 edition
+p2:l34 2011 032157351X 参考図書
+p2:l35 Cによるアルゴリズムと
+p2:l36 データ構造 茨⽊俊秀 オーム社 2014 978-4274216046 参考図書
+p2:l37 クラスルームで連絡可能
+p2:l38 ⽇本語の参考書は再出版されたものであり、以前の昭晃堂版のものでもよい。
+p2:l39 2024/02/07 15:56:19
+p2:l40 2026/04/01 9:16 UNIVERSAL PASSPORT RX[2]
+p2:l41 https://unipa.bureau.tohoku.ac.jp/uprx/up/bs/bsa001/Bsa00101.xhtml 2/2
