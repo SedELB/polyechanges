@@ -25,3 +25,10 @@ Notes sur la fiche
 - Restriction : 50 % des cours dans la majorité (département à KAIST) ; la page indique aussi que les cours de thèse
   ne sont pas ouverts aux échanges.
 - Contact des échanges entrants : International Relations Team, irt@kaist.ac.kr.
+
+Mise à jour des faits
+- Dates de trimestre maintenant sourcées par la rangée du calendrier avec son libellé : automne 2027, début
+  (30 août), fin des cours (17 décembre) et fin des examens (17 décembre) ; printemps 2028, début des cours
+  (28 février). Fin des cours et examens du printemps 2028 : non publiés, vides.
+- contactHoursPerCredit reste vide : aucune définition officielle lisible.
+- Nom d'affichage : « KAIST », cité dans la ligne « KAIST (formerly the Korea Advanced Institute of Science and Technology) ».

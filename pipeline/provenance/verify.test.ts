@@ -81,7 +81,7 @@ describe('verifyAll', () => {
     website: '', catalogUrl: null, creditSystem: 'local', contactHoursPerCredit: null,
     terms: { fall: null, spring: null }, restrictions: null, exchangeContact: null, catalogPublic: true, provenance,
   });
-  it('liste les faits stale, introuvables et sans copie, et ignore les autres', async () => {
+  it('liste les faits stale, déplacés, introuvables et sans copie', async () => {
     const hash = store(Buffer.from(html), 'html');
     const q = 'Fall semester begins: September 7, 2026';
     const res = await verifyAll(
@@ -95,8 +95,8 @@ describe('verifyAll', () => {
       rawDir,
     );
     expect(res.total).toBe(5);
-    expect(res.moved.map((m) => m.fact)).toEqual(['city']);
     expect(res.problems.map((p) => [p.fact, p.status])).toEqual([
+      ['city', 'déplacé'],
       ['website', 'stale'],
       ['catalogUrl', 'introuvable'],
       ['restrictions', 'copie_absente'],

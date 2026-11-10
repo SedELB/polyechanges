@@ -78,7 +78,7 @@ export function missingProvenance(u: University): UniversityFact[] {
 export interface FactProblem {
   universityId: string;
   fact: UniversityFact;
-  status: 'introuvable' | 'copie_absente' | 'stale';
+  status: 'introuvable' | 'copie_absente' | 'stale' | 'déplacé';
   provenance: Provenance;
 }
 
@@ -89,22 +89,18 @@ export interface MovedFact {
   to: Provenance['locator'];
 }
 
-/** Hors ligne : faits introuvables, sans copie brute ou marqués `stale`, faits déplacés, et nombre de faits vérifiés. */
+/** Hors ligne : faits introuvables, sans copie brute, marqués `stale` ou déplacés (position inexacte), et nombre de faits vérifiés. */
 export async function verifyAll(
   universities: University[],
   rawDir: string,
-): Promise<{ total: number; moved: MovedFact[]; problems: FactProblem[] }> {
-  const out = { total: 0, moved: [] as MovedFact[], problems: [] as FactProblem[] };
+): Promise<{ total: number; problems: FactProblem[] }> {
+  const out = { total: 0, problems: [] as FactProblem[] };
   for (const u of universities) {
     for (const [fact, p] of Object.entries(u.provenance) as [UniversityFact, Provenance][]) {
       out.total++;
       if (p.stale) out.problems.push({ universityId: u.id, fact, status: 'stale', provenance: p });
-      const { status, found } = await verifyProvenance(p, rawDir);
-      if (status === 'introuvable' || status === 'copie_absente') {
-        out.problems.push({ universityId: u.id, fact, status, provenance: p });
-      } else if (status === 'déplacé' && found) {
-        out.moved.push({ universityId: u.id, fact, from: p.locator, to: found });
-      }
+      const { status } = await verifyProvenance(p, rawDir);
+      if (status !== 'inchangé') out.problems.push({ universityId: u.id, fact, status, provenance: p });
     }
   }
   return out;

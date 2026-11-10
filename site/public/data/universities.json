@@ -192,7 +192,7 @@
   },
   {
     "id": "kaist-kr",
-    "name": "Korea Advanced Institute of Science and Technology",
+    "name": "KAIST",
     "moveOnName": "Korea Advanced Institute of Science and Technology",
     "countryCode": "KR",
     "city": "Daejeon",
@@ -356,8 +356,8 @@
     "moveOnName": "Korea University- College of Engineering (KUCE)",
     "countryCode": "KR",
     "city": "Seoul",
-    "lat": 37.59056,
-    "lng": 127.03639,
+    "lat": 37.589194,
+    "lng": 127.032694,
     "website": "https://eng.korea.ac.kr/main/main.html",
     "catalogUrl": "https://gsc.korea.ac.kr/gsc/ExchangeVisitingProgram/Notice/Notice.do",
     "creditSystem": "local",
@@ -399,14 +399,14 @@
         "quote": "Private university in Seoul, South Korea"
       },
       "coordinates": {
-        "url": "https://en.wikipedia.org/wiki/Korea_University_station",
-        "retrievedAt": "2026-11-10T20:55:24.053Z",
-        "sha256": "4f8fd6910ebdc6865826b9989fc4e19a582a70280093fc36800813976fdb0613",
+        "url": "https://ko.wikipedia.org/wiki/고려대학교",
+        "retrievedAt": "2026-11-10T21:48:48.088Z",
+        "sha256": "1ea7b232e2c463884a7520bc75c5a4ff89c02ea2cefa960d6865ac69eca4222b",
         "locator": {
           "page": 1,
-          "line": 80
+          "line": 169
         },
-        "quote": "37.59056°N 127.03639°E"
+        "quote": "북위 37.589194° 동경 127.032694°"
       },
       "website": {
         "url": "https://eng.korea.ac.kr/main/main.html",
