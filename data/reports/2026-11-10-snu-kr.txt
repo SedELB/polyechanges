@@ -1,0 +1,27 @@
+Rapport de collecte : snu-kr
+Date : 2026-11-10
+Statut : non collecté (catalogue derrière une file d'attente)
+Cours actifs : 0
+
+Notes sur la collecte
+- Le seul catalogue public est la recherche de cours du système d'inscription (sugang.snu.ac.kr). Sa page d'entrée
+  charge un script de file d'attente (NetFunnel) avant de donner accès au système : non contourné.
+  catalogPublic: false provisoire, catalogUrl vide (aucune page lisible ne porte l'adresse).
+- Aucune liste officielle des cours en anglais lisible n'a été trouvée sur oga.snu.ac.kr ni en.snu.ac.kr.
+- Calendrier : en.snu.ac.kr/academics/resources/calendar donne l'année 2026-2027 (début des cours du printemps 2026 le
+  3 mars, fin des cours le 15 juin ; automne : début le 1er septembre, fin des cours le 14 décembre), mais chaque date
+  y est sur une ligne séparée de son libellé et du nom du mois : aucun extrait d'une ligne ne contient la date
+  complète. Les dates ne sont pas déduites : terms.fall et terms.spring restent vides (« non publiée »).
+- Crédit : « At least 15 hours of lecture during a semester is recognized as 1 credit » : 15 h par crédit.
+- Contact : incoming@snu.ac.kr (gestionnaire du programme d'échange entrant).
+- Restriction : informatique (CSE), 1er cycle : 15 crédits en informatique exigés au relevé de notes.
+- Coordonnées de MoveOn (37.45844, 126.952257) remplacées par celles de Wikipédia (37.46000, 126.95250).
+
+Pages à enregistrer à la main depuis un navigateur (étudiant)
+1. https://sugang.snu.ac.kr (Course Search, interface en anglais) : filtrer les cours donnés en anglais (« English »)
+   des départements Computer Science and Engineering, Electrical and Computer Engineering et Mathematical
+   Sciences, 1er cycle et cycles supérieurs, pour l'automne 2026 et le printemps 2026 ; enregistrer chaque page de
+   résultats (enregistrer la page sous HTML), plus la fiche de plan de cours (syllabus) de quelques cours.
+2. https://en.snu.ac.kr/academics/resources/calendar : l'année suivante du calendrier, quand elle sera publiée.
+
+Vérification de 5 cours : impossible (aucun cours collecté).

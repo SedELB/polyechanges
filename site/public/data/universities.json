@@ -1151,21 +1151,112 @@
     "name": "Seoul National University",
     "moveOnName": "Seoul National University",
     "countryCode": "KR",
-    "city": "",
-    "lat": 37.45844,
-    "lng": 126.952257,
-    "website": "",
+    "city": "Seoul",
+    "lat": 37.46,
+    "lng": 126.9525,
+    "website": "https://en.snu.ac.kr/",
     "catalogUrl": null,
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 15,
     "terms": {
       "fall": null,
       "spring": null
     },
-    "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true,
-    "provenance": {}
+    "restrictions": "Undergraduate applicants for Dept. of Computer Science and Engineering must have earned at least 15 credits in CSE-related courses",
+    "exchangeContact": "incoming@snu.ac.kr",
+    "catalogPublic": false,
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/Seoul_National_University",
+        "retrievedAt": "2026-11-10T21:36:35.040Z",
+        "sha256": "5c215cce5ca0512bcaebf1d42f353aa4b8f396aa0f05b78b4450c33bf96465d3",
+        "locator": {
+          "page": 1,
+          "line": 188
+        },
+        "quote": "Seoul National University (SNU; Korean: 서울대학교) is a public research university in Seoul, South Korea."
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/Seoul_National_University",
+        "retrievedAt": "2026-11-10T21:36:35.040Z",
+        "sha256": "5c215cce5ca0512bcaebf1d42f353aa4b8f396aa0f05b78b4450c33bf96465d3",
+        "locator": {
+          "page": 1,
+          "line": 188
+        },
+        "quote": "Seoul National University (SNU; Korean: 서울대학교) is a public research university in Seoul, South Korea."
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/Seoul_National_University",
+        "retrievedAt": "2026-11-10T21:36:35.040Z",
+        "sha256": "5c215cce5ca0512bcaebf1d42f353aa4b8f396aa0f05b78b4450c33bf96465d3",
+        "locator": {
+          "page": 1,
+          "line": 159
+        },
+        "quote": "37.46000°N 126.95250°E"
+      },
+      "website": {
+        "url": "https://en.snu.ac.kr/",
+        "retrievedAt": "2026-11-10T21:32:15.267Z",
+        "sha256": "a442b0f1f5bdad5e025b32d4e64ec24709f91e4b925b8328331c0f597d4cf289",
+        "locator": {
+          "page": 1,
+          "line": 182
+        },
+        "quote": "Copyright 2026 Seoul National University"
+      },
+      "creditSystem": {
+        "url": "https://oga.snu.ac.kr/isss/academics-for-students/credit-grade/",
+        "retrievedAt": "2026-11-10T21:30:45.114Z",
+        "sha256": "0e9bb262ceb35277654df64c0046e6c0ab46f582c2304bb88a649f35bc090047",
+        "locator": {
+          "page": 1,
+          "line": 189
+        },
+        "quote": "At least 15 hours of lecture during a semester is recognized as 1 credit"
+      },
+      "contactHoursPerCredit": {
+        "url": "https://oga.snu.ac.kr/isss/academics-for-students/credit-grade/",
+        "retrievedAt": "2026-11-10T21:30:45.114Z",
+        "sha256": "0e9bb262ceb35277654df64c0046e6c0ab46f582c2304bb88a649f35bc090047",
+        "locator": {
+          "page": 1,
+          "line": 189
+        },
+        "quote": "At least 15 hours of lecture during a semester is recognized as 1 credit"
+      },
+      "exchangeContact": {
+        "url": "https://oga.snu.ac.kr/about-us/organization-contact/contact-us/",
+        "retrievedAt": "2026-11-10T21:30:26.876Z",
+        "sha256": "fa5a9cff8ce1178a290f828d3ce0641da27c7abe757ba5d9a793f462238aa9f7",
+        "locator": {
+          "page": 1,
+          "line": 122
+        },
+        "quote": "Manager | Exchange/Visiting Program (Inbound) | 82-2-880-8634 | incoming@snu.ac.kr"
+      },
+      "restrictions": {
+        "url": "https://oga.snu.ac.kr/students/incoming/exchange-program/",
+        "retrievedAt": "2026-11-10T21:30:21.357Z",
+        "sha256": "acdcdf1f1c0dafcfd8da99c4e3ea00ca3e73957fba911c021472045c4673b6e0",
+        "locator": {
+          "page": 1,
+          "line": 132
+        },
+        "quote": "Undergraduate applicants for Dept. of Computer Science and Engineering must have earned at least 15 credits in CSE-related courses"
+      },
+      "catalogPublic": {
+        "url": "https://oga.snu.ac.kr/isss/academics-for-students/course/",
+        "retrievedAt": "2026-11-10T21:30:52.807Z",
+        "sha256": "e897ddd35a2cbfad065b2661a4a174b2368a73eb049e545cafa60bfdefbb52e3",
+        "locator": {
+          "page": 1,
+          "line": 204
+        },
+        "quote": "in the course search of the registration website"
+      }
+    }
   },
   {
     "id": "tohoku-jp",
