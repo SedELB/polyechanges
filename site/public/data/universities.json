@@ -1172,24 +1172,24 @@
         "quote": "Information on Courses Offered"
       },
       "creditSystem": {
-        "url": "https://www.postech.ac.kr/app/board/regulations/pdf/reg_2914.do",
-        "retrievedAt": "2026-11-10T21:09:18.101Z",
-        "sha256": "cf8119bc48ec251aa96d218cf54c9a29da928ac477b8baa3109f7c6187fdc118",
+        "url": "https://www.postech.ac.kr/app/board/regulations/pdf/reg_2852.do",
+        "retrievedAt": "2026-11-10T21:50:42.483Z",
+        "sha256": "cb015120a0d345714fc0f2ef346b691b9cff3dd41cea0c0aba2869950ffd0842",
         "locator": {
-          "page": 4,
-          "line": 38
+          "page": 6,
+          "line": 33
         },
-        "quote": "Article 26 (Credit Units) For course credits, one credit unit shall represent a minimum of 15 class hours in one"
+        "quote": "Article 29 (Credits) The unit representing the completion of a course shall be a credit; one credit shall represent a minimum of 15 class hours in a semester."
       },
       "contactHoursPerCredit": {
-        "url": "https://www.postech.ac.kr/app/board/regulations/pdf/reg_2914.do",
-        "retrievedAt": "2026-11-10T21:09:18.101Z",
-        "sha256": "cf8119bc48ec251aa96d218cf54c9a29da928ac477b8baa3109f7c6187fdc118",
+        "url": "https://www.postech.ac.kr/app/board/regulations/pdf/reg_2852.do",
+        "retrievedAt": "2026-11-10T21:50:42.483Z",
+        "sha256": "cb015120a0d345714fc0f2ef346b691b9cff3dd41cea0c0aba2869950ffd0842",
         "locator": {
-          "page": 4,
-          "line": 38
+          "page": 6,
+          "line": 33
         },
-        "quote": "Article 26 (Credit Units) For course credits, one credit unit shall represent a minimum of 15 class hours in one"
+        "quote": "Article 29 (Credits) The unit representing the completion of a course shall be a credit; one credit shall represent a minimum of 15 class hours in a semester."
       },
       "terms.fall.start": {
         "url": "https://www.postech.ac.kr/eng/academics/academic_schedule.do?mode=list&selectedYear=2027",

@@ -15,8 +15,10 @@ Notes sur la collecte
 - Dates : calendrier officiel 2027 (le calendrier 2028 s'arrête en février). Automne 2027 : début le 1er septembre,
   examens finaux du 15 au 21 décembre. Printemps : dernière année publiée, 2027 (début le 2 mars, examens du 15 au 21 juin).
   Le dernier jour de cours n'est écrit nulle part : vide.
-- Crédit : « one credit unit shall represent a minimum of 15 class hours in one semester » (statut de l'école des cycles
-  supérieurs ; aucune règle de 1er cycle trouvée) : 15 h par crédit.
+- Crédit : statuts de l'université, article 29 (reg_2852, valables pour tous les étudiants) : « one credit shall represent a
+  minimum of 15 class hours in a semester » ; 30 heures par crédit pour les laboratoires, l'éducation physique et les cours
+  désignés par le président. contactHoursPerCredit = 15 (règle générale ; la règle des cycles supérieurs, article 26 de
+  reg_2914, dit la même chose). Les cours de laboratoire comptent donc davantage d'heures par crédit.
 - Contact : seul le nom « POSTECH International Relations » est lisible ; la page de contact est interdite par robots.txt
   (/comm) et aucune adresse courriel d'échanges entrants n'est publiée ailleurs.
 
