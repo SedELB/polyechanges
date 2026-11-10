@@ -1,0 +1,34 @@
+Rapport de collecte : sciencetokyo-jp
+Date : 2026-11-10
+Statut : ok
+Cours actifs : 53
+Ajoutés (53) : CSC.T421, CSC.T422, CSC.T426, CSC.T431, CSC.T438, CSC.T440, EEE.C441, EEE.D402, EEE.D422, EEE.D431, EEE.D442, EEE.D443, EEE.D444, EEE.D471, EEE.P402, EEE.P412, EEE.P414, EEE.P451, EEE.P461, EEE.S401, EEE.S451, ICT.A406, ICT.A418, ICT.C401, ICT.H409, ICT.H411, ICT.I415, ICT.I419, ICT.I420, ICT.S407, MCS.M421, MCS.M428, MCS.M429, MCS.M430, MCS.M431, MCS.T403, MCS.T408, MCS.T410, MCS.T412, MCS.T416, MCS.T419, MTH.A401, MTH.A402, MTH.A403, MTH.A404, MTH.B401, MTH.B402, MTH.B403, MTH.B404, MTH.C401, MTH.C402, MTH.C403, MTH.C404
+Retirés (0) : aucun
+Modifiés (0) : aucun
+
+Notes sur la collecte
+- Source : deux listes officielles du bureau des échanges, « List of Graduate Courses Available to Undergraduate-level International Exchange Students »
+  (automne 2026 : https://www.titech.ac.jp/english/international-student-exchange/pdf/course-list2026f.pdf ; printemps 2026 :
+  .../course-list2026s.pdf), puis la fiche de chaque code dans le syllabus officiel (syllabus.s.isct.ac.jp, année 2026) pour le titre,
+  les crédits, la langue, le trimestre et la description. Retenus : les préfixes MTH, MCS, CSC, ICT, EEE (24 codes en automne, 29 au printemps, 53 cours après fusion).
+  Hors périmètre : SCE (systèmes et contrôle), ESI, physique, chimie, matériaux, biologie, etc.
+- Trimestres : 1Q et 2Q = printemps, 3Q et 4Q = automne (calendrier officiel). Les cours sont tous de cycles supérieurs (numéros 400 et plus).
+- Crédits : somme des trois nombres de la fiche (cours, exercices, expériences) ; 1 ou 2 crédits pour les cours retenus.
+- Définition du crédit : règlement du 2e cycle (« 大学院の学院における学修に関する細則 », article 3) : « 講義及び演習については、別に定める授業科目を除き、15時間の授業をもって1単位とする » : 15 h par crédit (cours magistraux).
+  Le texte est en japonais ; la page anglaise « Explanation of Credits » ne définit que la reconnaissance de crédits.
+- Dates : calendrier académique 2027-2028 (publié). « Début » = premier jour de cours du 1er trimestre (avril) ou du 3e (octobre) ;
+  « fin » = dernier jour de cours du 2e trimestre (29 juillet 2027) ou du 4e (31 janvier 2028) ; « fin des examens » = fin de la période
+  des examens de fin de trimestre et rattrapages (5 août 2027, 8 février 2028). Les années viennent des intitulés « Spring/Fall Semester 2027 »
+  et « Classes in 2028 » du calendrier ; pour les fins, l'année est celle de l'intitulé de section, pas de la ligne elle-même.
+- Restriction : les cours de la liste sont des cours de cycles supérieurs ouverts aux étudiants de 1er cycle d'échange en dernière année ou niveau équivalent,
+  uniquement ceux de la liste. Les étudiants d'échange de cycles supérieurs ont accès à tous les cours ★ en anglais de l'école doctorale, non listés ici.
+- Descriptions : 45 fiches sur 53 ont une description (« Course overview and goals » + « Course description and aims ») ; 8 fiches du syllabus n'ont pas encore
+  de contenu publié (CSC.T421, CSC.T426, EEE.D471, EEE.P402, ICT.I420, MCS.T419, MTH.B403, MTH.B404) : description vide.
+- Coordonnées : Ookayama (campus principal), Wikipédia ; la valeur de MoveOn (35.6759, 139.7696) tombait dans le centre de Tokyo (quartier de Ginza).
+
+Vérification de 5 cours tirés au hasard, relus sur leur propre page de cours du syllabus (relues le 2026-11-10)
+- MTH.B402 Advanced topics in Geometry B : 1 crédit, English, 2Q (printemps) : conforme.
+- EEE.P402 Control and analysis of power and motor drive systems : 1 crédit, English, 3Q (automne) : conforme.
+- MCS.T419 Stochastic differential equations : 2 crédits, English, 4Q (automne) : conforme.
+- MCS.M429 Distributed Systems : 2 crédits, English, 3Q (automne) : conforme.
+- EEE.D422 Fundamentals of Organic Electronics : 2 crédits, English, 3Q (automne) : conforme.

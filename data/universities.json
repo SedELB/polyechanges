@@ -234,20 +234,190 @@
     "name": "Institute of Science Tokyo",
     "moveOnName": "Institute of Science Tokyo",
     "countryCode": "JP",
-    "city": "",
-    "lat": 35.675949,
-    "lng": 139.769592,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Tokyo",
+    "lat": 35.6066,
+    "lng": 139.6838,
+    "website": "https://www.isct.ac.jp/en",
+    "catalogUrl": "https://www.titech.ac.jp/english/international-student-exchange/prospective-students/non-degree/course-information",
     "creditSystem": "local",
-    "contactHoursPerCredit": null,
+    "contactHoursPerCredit": 15,
     "terms": {
-      "fall": null,
-      "spring": null
+      "spring": {
+        "start": "2027-04-07",
+        "end": "2027-07-29",
+        "examsEnd": "2027-08-05"
+      },
+      "fall": {
+        "start": "2027-10-01",
+        "end": "2028-01-31",
+        "examsEnd": "2028-02-08"
+      }
     },
-    "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": true
+    "restrictions": "Students must be final year undergraduates or at an equivalent level.",
+    "exchangeContact": "Global Education Division, Education Planning Department",
+    "catalogPublic": true,
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/Institute_of_Science_Tokyo",
+        "retrievedAt": "2026-11-10T21:55:27.601Z",
+        "sha256": "fb915f316fc5cd5602d87d5e276a14c039ea6fb0b9c88e9ce133945927b981a0",
+        "locator": {
+          "page": 1,
+          "line": 139
+        },
+        "quote": "The Institute of Science Tokyo (東京科学大学, Tōkyō kagaku daigaku; branded as Science Tokyo) is a public research university in Tokyo, Japan. It was officially established on 1 October 2024,[1] by a merger between the Tokyo Institute of Technology and Tokyo Medical and Dental University.[2] The main campus is located in Ookayama, Meguro, with satellite campuses in Yokohama, Minato-ku, Bunkyo-ku, and Ichikawa."
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/Institute_of_Science_Tokyo",
+        "retrievedAt": "2026-11-10T21:55:27.601Z",
+        "sha256": "fb915f316fc5cd5602d87d5e276a14c039ea6fb0b9c88e9ce133945927b981a0",
+        "locator": {
+          "page": 1,
+          "line": 134
+        },
+        "quote": "Location | 2 Chome-12-1 Ookayama , Meguro , Tokyo , 152-8550 , Japan 35°36′24″N 139°41′02″E / 35.6066°N 139.6838°E / 35.6066; 139.6838"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/Institute_of_Science_Tokyo",
+        "retrievedAt": "2026-11-10T21:55:27.601Z",
+        "sha256": "fb915f316fc5cd5602d87d5e276a14c039ea6fb0b9c88e9ce133945927b981a0",
+        "locator": {
+          "page": 1,
+          "line": 134
+        },
+        "quote": "35.6066°N 139.6838°E"
+      },
+      "website": {
+        "url": "https://www.isct.ac.jp/en",
+        "retrievedAt": "2026-11-10T21:53:33.815Z",
+        "sha256": "fd3579a4fb8629d5da620f7c030616862be1ef0c969c3dd65f78067ccf859693",
+        "locator": {
+          "page": 1,
+          "line": 227
+        },
+        "quote": "© Institute of Science Tokyo. All rights reserved."
+      },
+      "catalogUrl": {
+        "url": "https://www.titech.ac.jp/english/international-student-exchange/prospective-students/non-degree/course-information",
+        "retrievedAt": "2026-11-10T21:55:22.696Z",
+        "sha256": "8886ebbcc593f79cbf6d3216a8198d9e773bf5a6819af7fb54e0da7ba6e544b2",
+        "locator": {
+          "page": 1,
+          "line": 30
+        },
+        "quote": "Course Information for International Exchange Students"
+      },
+      "creditSystem": {
+        "url": "https://www.somuka.titech.ac.jp/reiki_int/reiki_honbun/x385RG00001994.html",
+        "retrievedAt": "2026-11-10T21:56:47.143Z",
+        "sha256": "2987b47db270f41812b80a94c7c7c307940990288b83d23b79d6f7a5a918a8a8",
+        "locator": {
+          "page": 1,
+          "line": 27
+        },
+        "quote": "一 講義及び演習については、別に定める授業科目を除き、15時間の授業をもって1単位とする。"
+      },
+      "contactHoursPerCredit": {
+        "url": "https://www.somuka.titech.ac.jp/reiki_int/reiki_honbun/x385RG00001994.html",
+        "retrievedAt": "2026-11-10T21:56:47.143Z",
+        "sha256": "2987b47db270f41812b80a94c7c7c307940990288b83d23b79d6f7a5a918a8a8",
+        "locator": {
+          "page": 1,
+          "line": 27
+        },
+        "quote": "一 講義及び演習については、別に定める授業科目を除き、15時間の授業をもって1単位とする。"
+      },
+      "terms.spring.start": {
+        "url": "https://www.titech.ac.jp/english/student/students/life/schedules",
+        "retrievedAt": "2026-11-10T21:53:23.208Z",
+        "sha256": "5de8adab26f52f89ab6cb425879a49fbeec06e2211cd27f3ed68b22b0e385ea7",
+        "locator": {
+          "page": 1,
+          "line": 42
+        },
+        "quote": "Spring Semester 2027 First Quarter Classes: April 7-May 31"
+      },
+      "terms.spring.end": {
+        "url": "https://www.titech.ac.jp/english/student/students/life/schedules",
+        "retrievedAt": "2026-11-10T21:53:23.208Z",
+        "sha256": "5de8adab26f52f89ab6cb425879a49fbeec06e2211cd27f3ed68b22b0e385ea7",
+        "locator": {
+          "page": 1,
+          "line": 47
+        },
+        "quote": "Second Quarter Classes: June 9-July 27, July 29"
+      },
+      "terms.spring.examsEnd": {
+        "url": "https://www.titech.ac.jp/english/student/students/life/schedules",
+        "retrievedAt": "2026-11-10T21:53:23.208Z",
+        "sha256": "5de8adab26f52f89ab6cb425879a49fbeec06e2211cd27f3ed68b22b0e385ea7",
+        "locator": {
+          "page": 1,
+          "line": 49
+        },
+        "quote": "July 28, July 30-August 5 | Quarter-end exams and makeup classes for 2Q *August 4: Preparatory day for courses that hold weekly classes"
+      },
+      "terms.fall.start": {
+        "url": "https://www.titech.ac.jp/english/student/students/life/schedules",
+        "retrievedAt": "2026-11-10T21:53:23.208Z",
+        "sha256": "5de8adab26f52f89ab6cb425879a49fbeec06e2211cd27f3ed68b22b0e385ea7",
+        "locator": {
+          "page": 1,
+          "line": 51
+        },
+        "quote": "Fall Semester 2027 Third Quarter Classes: October 1-November 24"
+      },
+      "terms.fall.end": {
+        "url": "https://www.titech.ac.jp/english/student/students/life/schedules",
+        "retrievedAt": "2026-11-10T21:53:23.208Z",
+        "sha256": "5de8adab26f52f89ab6cb425879a49fbeec06e2211cd27f3ed68b22b0e385ea7",
+        "locator": {
+          "page": 1,
+          "line": 58
+        },
+        "quote": "Classes in 2028:January 4-January 31"
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://www.titech.ac.jp/english/student/students/life/schedules",
+        "retrievedAt": "2026-11-10T21:53:23.208Z",
+        "sha256": "5de8adab26f52f89ab6cb425879a49fbeec06e2211cd27f3ed68b22b0e385ea7",
+        "locator": {
+          "page": 1,
+          "line": 60
+        },
+        "quote": "February 1-February 8 | Quarter-end exams and makeup classes for 4Q *February 8: Preparatory day for courses that hold weekly classes"
+      },
+      "restrictions": {
+        "url": "https://www.titech.ac.jp/english/international-student-exchange/pdf/course-list2026f.pdf",
+        "retrievedAt": "2026-11-10T21:52:32.986Z",
+        "sha256": "3f0030927a6d3877d757ad32bbe66ce9bf11c869852384355e1541a659023550",
+        "locator": {
+          "page": 1,
+          "line": 45
+        },
+        "quote": "Students must be final year undergraduates or at an equivalent level."
+      },
+      "exchangeContact": {
+        "url": "https://www.titech.ac.jp/english/international-student-exchange/prospective-students/non-degree/course-information",
+        "retrievedAt": "2026-11-10T21:55:22.696Z",
+        "sha256": "8886ebbcc593f79cbf6d3216a8198d9e773bf5a6819af7fb54e0da7ba6e544b2",
+        "locator": {
+          "page": 1,
+          "line": 145
+        },
+        "quote": "Global Education Division, Education Planning Department"
+      },
+      "catalogPublic": {
+        "url": "https://www.titech.ac.jp/english/international-student-exchange/pdf/course-list2026f.pdf",
+        "retrievedAt": "2026-11-10T21:52:32.986Z",
+        "sha256": "3f0030927a6d3877d757ad32bbe66ce9bf11c869852384355e1541a659023550",
+        "locator": {
+          "page": 1,
+          "line": 43
+        },
+        "quote": "List of Graduate Courses Available to Undergraduate-level International Exchange Students <For 3Q, 4Q of the 2026-2027 Academic Year>"
+      }
+    }
   },
   {
     "id": "nagoya-jp",

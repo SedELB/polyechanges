@@ -1,0 +1,36 @@
+p1:l1 As of September 2026
+p1:l2 Graduate Major No. Course Name Lecturer Quarter Syllabus Eligibility criteria or prerequisite knowledge, etc.
+p1:l3 MTH.A403 Advanced topics in Algebra C Oya Hironori 3Q Open Undergraduate-level knowledge of abstract algebra
+p1:l4 MTH.A404 Advanced topics in Algebra D Oya Hironori 4Q Open Undergraduate-level knowledge of abstract algebra
+p1:l5 MTH.B403 Advanced topics in Geometry C Kalman Tamas 3Q Open basic knowledge on smooth manifolds and algebraic toplogy is assumed
+p1:l6 MTH.B404 Advanced topics in Geometry D Kalman Tamas 4Q Open basic knowledge on smooth manifolds and algebraic toplogy is assumed
+p1:l7 MTH.C403 Advanced topics in Analysis C Kagei Yoshiyuki 3Q Open Undergraduate-level knowledge of real analysis, Fourier analysis, functional analysis and differential equations
+p1:l8 MTH.C404 Advanced topics in Analysis D Kagei Yoshiyuki 4Q Open Undergraduate-level knowledge of real analysis, Fourier analysis, functional analysis and differential equations. Students must take
+p1:l9 "Advanced topics in Analysis C" in the previous quarter.
+p1:l10 PHY.C444 Quantum Transport Fujisawa Toshimasa 4Q Open
+p1:l11 PHY.C445 Physics of Two-Dimensional Materials Pu Jiang 4Q Open
+p1:l12 PHY.C449 Laser Physics Somiya Kentaro 4Q Open
+p2:l22 EEE.D471 Physics and Applications of Silicon Devices Ohmi Shun-Ichiro 4Q Open Undergraduate-level knowledge of semiconductor physics and devices
+p2:l23 EEE.P402 Control and analysis of power and motor drive systems Fujita Hideaki 3Q Open Under graduate-level knowledge on electric machinery
+p2:l24 EEE.P414 Power electronics control and analysis Fujita Hideaki 4Q Open Under graduate-level knowledge on power electronics
+p2:l25 EEE.P461 Pulsed Power Technology Takeuchi Nozomi 3Q Open Under graduate-level knowkedge on electrical circuits and electromagnetics
+p2:l26 ICT.A418 Human-Centric Information Systems II
+p2:l27 Nagai Takehiro, Yamaguchi Masahiro, Koike Yasuharu, Kaneko Hirohiko,
+p2:l28 Suzuki Kenji, Slavakis Konstantino, Motomura Masato, Obi Takashi,
+p2:l29 Shinozaki Takahiro, Nakatani Momoko, Fujiki Daichi, Funakoshi Kotaro,
+p2:l30 Watanabe Yoshihiro
+p2:l31 4Q Open Sufficient basic academic skills in information and communications
+p2:l32 ICT.I415 VLSI System Design Isshiki Tsuyoshi 3Q Open Acquisition of basics of logic circuits, electrical circuits and integrated circuits
+p2:l33 ICT.I419 VLSI Layout Design Takahashi Atsushi 4Q Open Sufficient basic academic skills in integrated circuits and algorithm
+p2:l34 ICT.I420 Analog Integrated Circuit Design Islam A K M Mahfuzul 4Q Open Electric and electronic circuit, basic device physics, linear systems, basic control theory,
+p2:l35 Industrial Engineering and Economics IEE.D436 Healthcare Quality and Safety Gu Xiuzhu 3Q Open This course requires intensive class participation.
+p3:l20 MCS.T408 Discrete, Algebraic and Geometric Structures Suzuki Sakie, Nishibata Shinya, Umehara Masaaki, Arai Zin 3Q Open
+p3:l21 MCS.T410 Applied Probability Miyoshi Naoto, Nakano Yumiharu 3Q Open
+p3:l22 MCS.T416 Logic and Computation Kashima Ryo 3Q Open
+p3:l23 MCS.T419 Stochastic differential equations Nakano Yumiharu, Miyoshi Naoto 4Q Open
+p3:l24 CSC.T431 Cyber-Physical Systems Watanabe Takuo 3Q Open Students must have successfully completed the related courses or have equivalent knowledge.
+p3:l25 CSC.T440 Computer Organization and Architecture Kise Kenji 4Q Open
+p3:l26 LST.A406 Molecular Developmental Biology and Evolution Kume Shoen, Kawakami Atsushi, Tanaka Mikiko, Kajikawa Masaki,
+p3:l27 Nikaido Masato 3Q Open Undergraduate-level basic knowledge of biochemistry, molecular biology and cell biology.
+p3:l28 LST.A407 Science of Metabolism Hirasawa Takashi, Shiraki Nobuaki, Kato Akira, Masuda Shinji 3Q Open Undergraduate-level basic knowledge of biochemistry, molecular biology and cell biology.
+p3:l29 LST.A408 Computational Biology Itoh Takehiko, Yamada Takuji, Kitao Akio, Uriu Koichiro, Sato Kengo 3Q Open Undergraduate-level basic knowledge of physical chemistry, biochemistry, molecular biology and cell biology.
