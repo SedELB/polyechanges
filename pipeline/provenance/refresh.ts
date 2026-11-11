@@ -6,7 +6,7 @@ import { readSnapshot, takeSnapshot } from '../fetch/snapshots.js';
 import { loadUniversities, syncUniversities } from '../partners/registry.js';
 import type { Provenance, UniversityFact } from '../../shared/types.js';
 import { snapshotText } from './snapshotText.js';
-import { locateInPages, type FactStatus } from './verify.js';
+import { contextProblem, locateInPages, type FactStatus } from './verify.js';
 
 export const factsSourceId = (universityId: string): string => `facts-${universityId}`;
 
@@ -115,14 +115,20 @@ export async function refreshFactSources(
       }
       const { status, found, contextFound } = locateInPages(page.pages, p);
       result.counts[status]++;
-      if (status !== 'introuvable' && found) {
-        const context = p.context && contextFound ? { ...p.context, locator: contextFound } : p.context;
-        next[fact] = ordered({ ...p, sha256: page.sha256, retrievedAt: now, locator: found, context }, false);
+      const context = p.context && contextFound ? { ...p.context, locator: contextFound } : p.context;
+      const updated: Provenance | null =
+        status !== 'introuvable' && found ? { ...p, sha256: page.sha256, retrievedAt: now, locator: found, context } : null;
+      // L'ordre est revérifié sur les positions recalées avant d'écrire quoi que ce soit.
+      if (updated && contextProblem(fact, updated) === null) {
+        next[fact] = ordered(updated, false);
       } else {
         next[fact] = ordered(p, true);
-        // Le texte perdu est l'extrait principal, ou le contexte quand seul lui manque.
-        const lost = found && p.context ? p.context.quote : p.quote;
-        result.missing.push({ universityId: u.id, fact, url: p.url, quote: lost, nearest: nearestLines(page.pages, lost) });
+        // Chaque extrait perdu est nommé : l'extrait principal, le contexte, ou les deux.
+        const lost = [...(found ? [] : [p.quote]), ...(p.context && !contextFound ? [p.context.quote] : [])];
+        if (lost.length === 0) lost.push(p.context && updated ? p.context.quote : p.quote);
+        for (const quote of lost) {
+          result.missing.push({ universityId: u.id, fact, url: p.url, quote, nearest: nearestLines(page.pages, quote) });
+        }
       }
     }
     if (JSON.stringify(next) !== JSON.stringify(u.provenance)) {

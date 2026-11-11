@@ -104,11 +104,41 @@ describe('relocateFactSources, extrait sur plusieurs lignes', () => {
 
 describe('relocateFactSources avec contexte', () => {
   it('recale aussi la position du contexte', async () => {
-    write({ 'terms.fall.start': { ...prov(2, QUOTE), context: { locator: { page: 1, line: 7 }, quote: 'Calendar' } } });
+    const doc = '<html><body><p>2026 Academic Calendar</p><p>08-30(Mon) Fall classes begin</p></body></html>';
+    const body = Buffer.from(doc);
+    const h = createHash('sha256').update(body).digest('hex');
+    writeFileSync(join(rawDir, 'facts-x', `${h}.html`), body);
+    write({ 'terms.fall.start': { ...prov(2, '08-30(Mon) Fall classes begin', h), context: { locator: { page: 1, line: 7 }, quote: '2026 Academic Calendar' } } });
     const r = await relocateFactSources(path, rawDir);
     expect(r.moved).toHaveLength(1);
     const p = JSON.parse(readFileSync(path, 'utf8'))[0].provenance['terms.fall.start'];
     expect(p.locator).toEqual({ page: 1, line: 2 });
-    expect(p.context).toEqual({ locator: { page: 1, line: 1 }, quote: 'Calendar' });
+    expect(p.context).toEqual({ locator: { page: 1, line: 1 }, quote: '2026 Academic Calendar' });
+  });
+});
+
+describe('relocateFactSources : ordre du contexte', () => {
+  it('choisit l’occurrence du contexte avant l’extrait principal', async () => {
+    const doc = '<html><body><p>2026 Academic Calendar</p><p>08-30(Mon) Fall classes begin</p><p>2026 Academic Calendar</p></body></html>';
+    const body = Buffer.from(doc);
+    const h = createHash('sha256').update(body).digest('hex');
+    writeFileSync(join(rawDir, 'facts-x', `${h}.html`), body);
+    write({ 'terms.fall.start': { ...prov(9, '08-30(Mon) Fall classes begin', h), context: { locator: { page: 1, line: 3 }, quote: '2026 Academic Calendar' } } });
+    const r = await relocateFactSources(path, rawDir);
+    expect(r.problems).toEqual([]);
+    const p = JSON.parse(readFileSync(path, 'utf8'))[0].provenance['terms.fall.start'];
+    expect(p.locator).toEqual({ page: 1, line: 2 });
+    expect(p.context.locator).toEqual({ page: 1, line: 1 });
+  });
+  it('signale un contexte sans occurrence avant le principal, sans l’écrire', async () => {
+    const doc = '<html><body><p>08-30(Mon) Fall classes begin</p><p>Calendar 2026 here</p></body></html>';
+    const body = Buffer.from(doc);
+    const h = createHash('sha256').update(body).digest('hex');
+    writeFileSync(join(rawDir, 'facts-x', `${h}.html`), body);
+    write({ 'terms.fall.start': { ...prov(5, '08-30(Mon) Fall classes begin', h), context: { locator: { page: 1, line: 1 }, quote: 'Calendar 2026 here' } } });
+    const before = readFileSync(path, 'utf8');
+    const r = await relocateFactSources(path, rawDir);
+    expect(r.problems.map((q) => q.status)).toContain('contexte_invalide');
+    expect(readFileSync(path, 'utf8')).toBe(before);
   });
 });

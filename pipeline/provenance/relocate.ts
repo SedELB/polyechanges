@@ -28,18 +28,33 @@ export async function relocateFactSources(universitiesPath: string, rawDir: stri
       if (p.stale) out.problems.push({ universityId: u.id, fact, status: 'stale', provenance: p });
       const invalid = contextProblem(fact, p);
       if (invalid) out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: invalid });
-      const { status, found, contextFound } = await verifyProvenance(p, rawDir);
-      if (status === 'introuvable' || status === 'copie_absente') {
+      const { status, found, contextFound, contextMisplaced } = await verifyProvenance(p, rawDir);
+      if (contextMisplaced) {
+        out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: 'aucune occurrence du contexte avant l’extrait principal' });
+      } else if (status === 'introuvable' || status === 'copie_absente') {
         out.problems.push({ universityId: u.id, fact, status, provenance: p });
       } else if (status === 'déplacé') {
-        if (found && (found.page !== p.locator.page || found.line !== p.locator.line)) {
-          out.moved.push({ universityId: u.id, fact, from: p.locator, to: found });
-          p.locator = { page: found.page, line: found.line };
+        const same = (x: Provenance['locator'], y: Provenance['locator']): boolean => x.page === y.page && x.line === y.line;
+        const next: Provenance = JSON.parse(JSON.stringify(p));
+        const moves: MovedFact[] = [];
+        if (found && !same(found, p.locator)) {
+          moves.push({ universityId: u.id, fact, from: p.locator, to: found });
+          next.locator = { page: found.page, line: found.line };
         }
-        const c = p.context;
-        if (c && contextFound && (contextFound.page !== c.locator.page || contextFound.line !== c.locator.line)) {
-          out.moved.push({ universityId: u.id, fact, from: c.locator, to: contextFound, context: true });
-          c.locator = { page: contextFound.page, line: contextFound.line };
+        if (p.context && next.context && contextFound && !same(contextFound, p.context.locator)) {
+          moves.push({ universityId: u.id, fact, from: p.context.locator, to: contextFound, context: true });
+          next.context.locator = { page: contextFound.page, line: contextFound.line };
+        }
+        // L'ordre est revérifié sur les positions recalées : rien n'est écrit si le contexte ne précède plus.
+        const after = contextProblem(fact, next);
+        if (after) {
+          out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: after });
+        } else if (moves.length === 0) {
+          out.unchanged++;
+        } else {
+          out.moved.push(...moves);
+          p.locator = next.locator;
+          if (next.context) p.context = next.context;
         }
       } else {
         out.unchanged++;

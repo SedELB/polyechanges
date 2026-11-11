@@ -167,3 +167,33 @@ describe('contexte et vérification hors ligne', () => {
     expect(res.problems.map((q) => [q.fact, q.status])).toEqual([['contactHoursPerCredit', 'contexte_invalide']]);
   });
 });
+
+describe('contexte répété dans la copie', () => {
+  const doc = '<html><body><p>2026 Academic Calendar</p><p>Fall classes begin Sep 7</p><p>2026 Academic Calendar</p><p>12-14 (Mon) Final exams end</p><p>2026 Academic Calendar</p></body></html>';
+  const ctx = (line: number) => ({ locator: { page: 1, line }, quote: '2026 Academic Calendar' });
+  const uni = (provenance: Record<string, Provenance>): University => ({
+    id: 'x', name: 'X University', moveOnName: 'X', countryCode: 'TW', city: '', lat: 1, lng: 2,
+    website: '', catalogUrl: null, creditSystem: 'local', contactHoursPerCredit: null,
+    terms: { fall: null, spring: null }, restrictions: null, exchangeContact: null, catalogPublic: true, provenance,
+  });
+  it('retient la dernière occurrence avant l’extrait principal', async () => {
+    const hash = store(Buffer.from(doc), 'html');
+    const p = { ...prov(hash, 4, '12-14 (Mon) Final exams end'), context: ctx(1) };
+    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'déplacé', found: { page: 1, line: 4 }, contextFound: { page: 1, line: 3 } });
+    expect((await verifyProvenance({ ...p, context: ctx(3) }, rawDir)).status).toBe('inchangé');
+    expect((await verifyProvenance({ ...p, context: ctx(1) }, rawDir)).status).toBe('déplacé');
+  });
+  it('principal déplacé et contexte inchangé : déplacé; inverse aussi', async () => {
+    const hash = store(Buffer.from(doc), 'html');
+    expect((await verifyProvenance({ ...prov(hash, 9, '12-14 (Mon) Final exams end'), context: ctx(3) }, rawDir)).status).toBe('déplacé');
+    expect((await verifyProvenance({ ...prov(hash, 4, '12-14 (Mon) Final exams end'), context: ctx(2) }, rawDir)).status).toBe('déplacé');
+  });
+  it('aucune occurrence avant l’extrait principal : contexte_invalide', async () => {
+    const hash = store(Buffer.from(doc), 'html');
+    const p = { ...prov(hash, 2, 'Fall classes begin Sep 7'), context: { locator: { page: 1, line: 1 }, quote: 'December' } };
+    const html2 = '<html><body><p>Fall classes begin Sep 7</p><p>Month of December</p></body></html>';
+    const h2 = store(Buffer.from(html2), 'html');
+    const res = await verifyAll([uni({ 'terms.fall.start': { ...p, sha256: h2, locator: { page: 1, line: 2 }, context: { locator: { page: 1, line: 1 }, quote: 'Month of December' } } })], rawDir);
+    expect(res.problems.map((q) => q.status)).toEqual(['contexte_invalide']);
+  });
+});

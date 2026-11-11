@@ -39,11 +39,24 @@ const RANK: Record<Located['status'], number> = { inchangé: 0, déplacé: 1, in
 export function locateInPages(
   pages: string[][],
   p: Pick<Provenance, 'quote' | 'locator' | 'context'>,
-): Located & { contextFound?: { page: number; line: number } | null } {
+): Located & { contextFound?: { page: number; line: number } | null; contextMisplaced?: true } {
   const main = locateQuote(pages, p);
   if (!p.context) return main;
-  const ctx = locateQuote(pages, p.context);
-  return { status: RANK[ctx.status] > RANK[main.status] ? ctx.status : main.status, found: main.found, contextFound: ctx.found };
+  // Le contexte est l'occurrence la plus proche qui précède l'extrait principal (déplacé, s'il est connu).
+  const before = main.found ?? p.locator;
+  const hits = findQuote(pages, p.context.quote);
+  const preceding = hits.filter((h) => h.page < before.page || (h.page === before.page && h.line < before.line));
+  const declared = p.context.locator;
+  const contextFound = preceding[preceding.length - 1] ?? null;
+  const ctxStatus: Located['status'] = !contextFound
+    ? 'introuvable'
+    : contextFound.page === declared.page && contextFound.line === declared.line ? 'inchangé' : 'déplacé';
+  return {
+    status: RANK[ctxStatus] > RANK[main.status] ? ctxStatus : main.status,
+    found: main.found,
+    contextFound,
+    ...(!contextFound && hits.length > 0 ? { contextMisplaced: true as const } : {}),
+  };
 }
 
 /** Un contexte n'est permis que sur une date, doit être un extrait valable et précéder l'extrait principal. */
@@ -61,7 +74,7 @@ export function contextProblem(fact: UniversityFact, p: Provenance): string | nu
 export async function verifyProvenance(
   p: Provenance,
   rawDir: string,
-): Promise<{ status: FactStatus; found: { page: number; line: number } | null; contextFound?: { page: number; line: number } | null }> {
+): Promise<{ status: FactStatus; found: { page: number; line: number } | null; contextFound?: { page: number; line: number } | null; contextMisplaced?: true }> {
   const copy = findRawCopy(p.sha256, rawDir);
   if (!copy) return { status: 'copie_absente', found: null };
   const pages = await snapshotText(readFileSync(copy.path), copy.contentType);
@@ -128,8 +141,10 @@ export async function verifyAll(
       if (p.stale) out.problems.push({ universityId: u.id, fact, status: 'stale', provenance: p });
       const invalid = contextProblem(fact, p);
       if (invalid) out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: invalid });
-      const { status } = await verifyProvenance(p, rawDir);
-      if (status !== 'inchangé') out.problems.push({ universityId: u.id, fact, status, provenance: p });
+      const { status, contextMisplaced } = await verifyProvenance(p, rawDir);
+      if (contextMisplaced) {
+        out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: 'aucune occurrence du contexte avant l’extrait principal' });
+      } else if (status !== 'inchangé') out.problems.push({ universityId: u.id, fact, status, provenance: p });
     }
   }
   return out;

@@ -147,6 +147,25 @@ describe('refreshFactSources', () => {
     expect(p.context.quote).toBe(CTX);
   });
 
+  it('choisit le contexte avant l’extrait principal ; sans occurrence avant, marque périmé sans rien écrire', async () => {
+    const CTX = '2026 Academic Calendar';
+    server.pages.set('/cal', page([CTX, START, CTX]));
+    const prov = await seed('u1', '/cal', { 'terms.fall.start': [START, 3] });
+    const withCtx = { ...prov['terms.fall.start'], context: { locator: { page: 1, line: 2 }, quote: CTX } };
+    writeFileSync(path, JSON.stringify([university('u1', { 'terms.fall.start': withCtx })], null, 2) + '\n');
+    await refreshFactSources(db, fetcher, path, rawDir, '2026-11-12T10:00:00.000Z');
+    let p = JSON.parse(readFileSync(path, 'utf8'))[0].provenance['terms.fall.start'];
+    expect(p.context.locator).toEqual({ page: 1, line: 2 });
+    expect(p.stale).toBeUndefined();
+
+    server.pages.set('/cal', page([START, CTX]));
+    const res = await refreshFactSources(db, fetcher, path, rawDir, '2026-11-13T10:00:00.000Z');
+    expect(res.counts.introuvable).toBe(1);
+    p = JSON.parse(readFileSync(path, 'utf8'))[0].provenance['terms.fall.start'];
+    expect(p.stale).toBe(true);
+    expect(p.locator).toEqual({ page: 1, line: 3 });
+  });
+
   it('refuse une université inconnue', async () => {
     writeFileSync(path, JSON.stringify([university('u1', {})]));
     await expect(refreshFactSources(db, fetcher, path, rawDir, '2026-11-12T10:00:00.000Z', 'zzz')).rejects.toThrow(/zzz/);
