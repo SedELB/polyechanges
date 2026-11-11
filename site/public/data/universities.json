@@ -52,20 +52,20 @@
     "website": "https://www.doshisha.ac.jp/en/",
     "catalogUrl": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",
     "creditSystem": "local",
-    "contactHoursPerCredit": 15,
+    "contactHoursPerCredit": 11.25,
     "terms": {
       "fall": {
-        "start": "2026-09-15",
+        "start": null,
         "end": null,
         "examsEnd": "2027-02-08"
       },
       "spring": {
-        "start": "2026-04-01",
+        "start": null,
         "end": "2026-07-17",
         "examsEnd": null
       }
     },
-    "restrictions": "Such include seminar courses, subjects by Faculty of Science and Engineering and Faculty of Life and Medical Sciences, and subjects not open to other faculty students.",
+    "restrictions": "Also note that there are the courses that cannot be taken by GEMstudents. Such include seminar courses, subjects by Faculty of Science and Engineering and Faculty of Life and Medical Sciences, and subjects not open to other faculty students. GEM students may take up to 3 courses in total, courses offered by each faculty and the Nichibun.",
     "exchangeContact": "Office of International Students",
     "catalogPublic": true,
     "provenance": {
@@ -137,17 +137,7 @@
           "page": 1,
           "line": 134
         },
-        "quote": "GEM considers a course that meets for two hours, once a week (x15 weeks) as two credits (except for Japanese language courses)."
-      },
-      "terms.spring.start": {
-        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
-        "retrievedAt": "2026-11-10T21:43:07.568Z",
-        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
-        "locator": {
-          "page": 1,
-          "line": 7
-        },
-        "quote": "APR 1 (Wed) Start of Spring Semester"
+        "quote": "GEM considers a course that meets for two hours, once a week (x15 weeks) as two credits (except for Japanese language courses). The maximum course load for GEM students is 30 credits for one year (15 credits per semester). Credits of taking Japanese language courses and ILA courses are also included in the maximum course credit load. Students should take more than 7 classes (1 class=90 minutes) at least per week. It is prescribed by law*."
       },
       "terms.spring.end": {
         "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
@@ -158,16 +148,6 @@
           "line": 22
         },
         "quote": "JUL 17 (Fri) Last day of face-to-face classes"
-      },
-      "terms.fall.start": {
-        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
-        "retrievedAt": "2026-11-10T21:43:07.568Z",
-        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
-        "locator": {
-          "page": 1,
-          "line": 31
-        },
-        "quote": "SEP 15 (Tue) Start of Fall Semester"
       },
       "terms.fall.examsEnd": {
         "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
@@ -187,7 +167,7 @@
           "page": 1,
           "line": 117
         },
-        "quote": "Such include seminar courses, subjects by Faculty of Science and Engineering and Faculty of Life and Medical Sciences, and subjects not open to other faculty students."
+        "quote": "Also note that there are the courses that cannot be taken by GEMstudents. Such include seminar courses, subjects by Faculty of Science and Engineering and Faculty of Life and Medical Sciences, and subjects not open to other faculty students. GEM students may take up to 3 courses in total, courses offered by each faculty and the Nichibun."
       },
       "exchangeContact": {
         "url": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",

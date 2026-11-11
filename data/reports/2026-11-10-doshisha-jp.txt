@@ -29,3 +29,12 @@ Vérification de 4 cours (tous les cours retenus ; aucune autre page de cours li
 - 99200027 Introduction to Quantitative Data Analysis : 2 crédits, GEM (anglais), automne (Imadegawa) : conforme.
 - 99200029 Mathematics and its History : 2 crédits, GEM (anglais), printemps (Imadegawa) : conforme.
 - La langue vient de la page du module (« all conducted in English ») : la liste elle-même n'a pas de colonne de langue.
+
+Corrections après relecture
+- Heures par crédit : 11,25. Formule : 90 minutes (« 1 class=90 minutes », la « heure » de deux heures du module est une
+  période de 90 minutes) x 15 semaines / 2 crédits = 675 minutes = 11,25 h par crédit. L'extrait couvre les trois lignes
+  consécutives de la section « Credit Load » qui contiennent « two hours ... x15 weeks ... two credits » et « 1 class=90 minutes ».
+- Début des trimestres : vide (début administratif 1er avril / 15 septembre ; premier jour de cours le 11 avril / 2 octobre,
+  mais aucun extrait de trois lignes ne contient le mois, le jour et la mention du début des cours). Source retirée.
+- Restrictions : extrait refait à partir de « Also note that there are the courses that cannot be taken by GEMstudents. ».
+- Statistiques (99200024, 99200027) : gardées dans le périmètre (statistiques = mathématiques).
