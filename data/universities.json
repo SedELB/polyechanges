@@ -4,9 +4,9 @@
     "name": "City University of Hong Kong",
     "moveOnName": "City University of Hong Kong",
     "countryCode": "CN",
-    "city": "",
-    "lat": 22.320336,
-    "lng": 114.23905,
+    "city": "Kowloon Tong",
+    "lat": 22.3364222,
+    "lng": 114.1729889,
     "website": "",
     "catalogUrl": null,
     "creditSystem": "local",
@@ -17,7 +17,29 @@
     },
     "restrictions": null,
     "exchangeContact": null,
-    "catalogPublic": true
+    "catalogPublic": false,
+    "provenance": {
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/City_University_of_Hong_Kong",
+        "retrievedAt": "2026-11-10T22:36:07.230Z",
+        "sha256": "9fc7060b03f910f244eaf6c40dc270c54fdc75d1ea85bd0966ba2fdfc22f2284",
+        "locator": {
+          "page": 1,
+          "line": 153
+        },
+        "quote": "a public university in Kowloon Tong, Kowloon, Hong Kong."
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/City_University_of_Hong_Kong",
+        "retrievedAt": "2026-11-10T22:36:07.230Z",
+        "sha256": "9fc7060b03f910f244eaf6c40dc270c54fdc75d1ea85bd0966ba2fdfc22f2284",
+        "locator": {
+          "page": 1,
+          "line": 130
+        },
+        "quote": "22.3364222°N 114.1729889°E"
+      }
+    }
   },
   {
     "id": "sjtu-cn",

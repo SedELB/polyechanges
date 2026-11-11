@@ -1,0 +1,27 @@
+City University of Hong Kong (cityu-hk) : catalogue non collecté (2026-11-10)
+
+Aucun cours collecté : tous les sites de CityU utiles sont derrière une protection anti-robots, jamais contournée.
+- www.cityu.edu.hk, www6.cityu.edu.hk (y compris /robots.txt, /study/exchange, /catalogue/ug/current/) : page
+  de protection Incapsula (« /_Incapsula_Resource », robots noindex) au lieu du contenu, 200 en quelques octets.
+- banweb.cityu.edu.hk (recherche de cours) : robots.txt = « User-agent: * Disallow: / » ; téléchargement refusé.
+- catalogPublic est donc faux de façon provisoire (sans source lisible : aucune page de l'université n'est lisible).
+
+À enregistrer depuis un navigateur (pages de cityu.edu.hk, puis les copier à la main) :
+1. La page des échanges entrants (Office of Global Engagement / Study Abroad, étudiants d'échange) : contact du
+   bureau des échanges, restrictions éventuelles, lien vers la liste des cours.
+2. Le calendrier académique 2027-2028 (ou le dernier publié) : début des cours, dernier jour de cours, fin des examens,
+   semestre A (septembre-décembre) et semestre B (janvier-mai).
+3. La définition officielle d'une « credit unit » (heures de contact par crédit).
+4. La liste des cours donnés en anglais, ouverts aux échanges (recherche de cours, semestres A et B), départements
+   Computer Science, Electrical Engineering, Mathematics, 1er cycle et cycles supérieurs, puis la fiche de chaque cours.
+5. La page d'accueil https://www.cityu.edu.hk/ (website) et la page du catalogue (catalogUrl), avec une ligne titre.
+
+Notes sur la fiche
+- Seuls les faits lisibles sont remplis, sourcés par Wikipédia : nom, ville (Kowloon Tong), coordonnées
+  22.3364222 N 114.1729889 E (les valeurs MoveOn 22.320336 / 114.23905 sont remplacées).
+- Vides : website, catalogUrl, contactHoursPerCredit, terms, exchangeContact, restrictions (non lisibles).
+- creditSystem reste « local » (aucun ECTS publié lisible).
+- Nom : provenance du nom retirée volontairement. Les faits creditSystem et catalogPublic exigent chacun une source
+  lisible, qu'aucune page de CityU accessible ne fournit ; sans source sur le nom, la fiche reste un squelette pour
+  le contrôle de complétude, et la ville et les coordonnées gardent leur source Wikipédia (ligne 153 et ligne 130).
+  À refaire avec les pages enregistrées à la main : sourcer name, creditSystem et catalogPublic.
