@@ -1,15 +1,36 @@
-KAIST (kaist-kr) : catalogue non collecté (2026-11-10)
+=== collecte automatique ===
+Rapport de collecte : kaist-kr
+Date : 2026-11-11
+Statut : ok
+Cours actifs : 307
+Ajoutés (307) : CC.50010, CS.10001, CS.10009, CS.20002, CS.20004, CS.20006, CS.20101, CS.20200, CS.20300, CS.20700, CS.30000, CS.30100, CS.30101, CS.30200, CS.30202, CS.30300, CS.30401, CS.30408, CS.30500, CS.30600, CS.30601, CS.30700, CS.30701, CS.30703, CS.30704, CS.30705, CS.30706, CS.30800, CS.40002, CS.40008, CS.40009, CS.40101, CS.40200, CS.40202, CS.40400, CS.40402, CS.40403, CS.40407, CS.40503, CS.40507, CS.40508, CS.40509, CS.40701, CS.40703, CS.40704, CS.40705, CS.40707, CS.40709, CS.40801, CS.40802, CS.40803, CS.40805, CS.40806, CS.40809, CS.49900, CS.49901, CS.50000, CS.50100, CS.50204, CS.50300, CS.50400, CS.50408, CS.50500, CS.50600, CS.50604, CS.50605, CS.50700, CS.50705, CS.50707, CS.50708, CS.50800, CS.50804, CS.50806, CS.50901, CS.60102, CS.60200, CS.60306, CS.60404, CS.60406, CS.60502, CS.60505, CS.60506, CS.60600, CS.60602, CS.60700, CS.60704, CS.60802, CS.79912, EE.20001, EE.20002, EE.20004, EE.20005, EE.20009, EE.20010, EE.20011, EE.20013, EE.20014, EE.20017, EE.30003, EE.30005, EE.30009, EE.30012, EE.30021, EE.30023, EE.30024, EE.30026, EE.30031, EE.30041, EE.30042, EE.30052, EE.30062, EE.30072, EE.30081, EE.30091, EE.40003, EE.40005, EE.40005(B), EE.40005(C), EE.40012, EE.40014, EE.40015, EE.40021, EE.40024, EE.40026, EE.40032, EE.40034, EE.40041, EE.40042, EE.40053, EE.40063, EE.40064, EE.40065, EE.40066, EE.40067, EE.40068, EE.40069, EE.40073, EE.40074, EE.40077, EE.40078, EE.40079, EE.40080, EE.49901, EE.49902, EE.49904(001), EE.49904(002), EE.49904(003), EE.49904(004), EE.49904(006), EE.49904(022), EE.49904(031), EE.49904(032), EE.49904(036), EE.49904(041), EE.49904(042), EE.49904(043), EE.49904(053), EE.49904(058), EE.49904(060), EE.49904(061), EE.49904(065), EE.49904(067), EE.49904(068), EE.49904(071), EE.49904(072), EE.49904(TBD), EE.50009, EE.50011, EE.50013, EE.50014, EE.50015, EE.50017, EE.50022, EE.50023, EE.50028, EE.50029, EE.50031, EE.50033, EE.50034, EE.50035, EE.50038, EE.50041, EE.50042, EE.50043, EE.50045, EE.50046, EE.50047, EE.50048, EE.50052, EE.50055, EE.50057, EE.50061, EE.50063, EE.50065, EE.50066, EE.50067, EE.50068, EE.50069, EE.50070, EE.50071, EE.50074, EE.50076, EE.50077, EE.50081, EE.50085, EE.50094, EE.59900, EE.59900(001), EE.59900(004), EE.59900(005), EE.59900(007), EE.60013, EE.60016, EE.60018, EE.60019, EE.60021, EE.60022, EE.60023, EE.60026, EE.60028, EE.60031, EE.60035, EE.60036, EE.60041, EE.60043, EE.60047, EE.60052, EE.60054, EE.60057, EE.60061, EE.60063, EE.60064, EE.60065, EE.60066, EE.60067, EE.60075, EE.60076, EE.60078, EE.60081, EE.60082, EE.60083, EE.60088, EE.70031, EE.70035, EE.70037, EE.70038, EE.70045, EE.70046, EE.70061, EE.70062, EE.70066, EE.70068, EE.70073, EE.70088, EE.70090, EE.70091, EE.70093, EE.89900, EE.89900(013), EE.89901, EE.89902, EE.89904, EE.89904(007), EE.89904(012), EE.89904(016), EE.89904(023), EE.89905, EE.89905(046), EE.89905(047), EE.89907, EE.89907(001), EE.89907(013), EE.89907(014), EE.89907(017), EE.89907(019), EE.89908, EE.89908(010), EE.89909, EE.89909(002), EE.89909(005), EE.89909(015), EE.89909(016), EE.89909(017), EE.89910, EE.89910(011), EE.89911, EE.89912, EE.89912(005), EE.89913, EE.89914, EE.89914(006), EE.89914(014), EE.89914(021), EE.89914(022), EE.89914(023), EE.89915, EE.89916, EE.89917, EE.89917(001), EE.89918, EE.91101, EE.91200, EE.93001, EE.93100, EE.93200, EE.94100, EE.94200
+Retirés (0) : aucun
+Modifiés (0) : aucun
+=== fin de la collecte automatique ===
 
-Aucun cours collecté : la liste des cours de KAIST n'a pas pu être lue.
-- Page de liste officielle (lien de la page des échanges entrants https://io.kaist.ac.kr/mobi/incoming_app.do) :
-  http://cais.kaist.ac.kr/totalOpeningCourse (https://cais.kaist.ac.kr/totalOpeningCourse). Le serveur cais.kaist.ac.kr
-  ne répond pas depuis ce réseau (délai dépassé sur les ports 80 et 443, adresse résolue en 143.248.5.179) ; ce n'est pas
-  une page anti-robots, mais la page est inaccessible. Le catalogue du bulletin (bulletin.kaist.ac.kr) redirige vers
-  une connexion (SSO).
-- catalogPublic est donc faux de façon provisoire. À enregistrer depuis un navigateur : la page de liste des cours
-  ouverts (totalOpeningCourse), trimestres d'automne et de printemps, cours donnés en anglais, départements
-  d'informatique (School of Computing), de génie électrique (EE) et de mathématiques, 1er cycle (les échanges
-  suivent les cours de 1er cycle), puis la fiche de chaque cours.
+KAIST (kaist-kr) : catalogue collecté (2026-11-10, copies brutes du 2026-11-10 23:58 au 2026-11-11 00:10 UTC)
+
+Ce que la collecte lit
+- Ce sont des LISTES DE PROGRAMME, pas la liste des cours ouverts ce trimestre. Un cours listé peut ne pas être donné
+  cette année. La liste « ouverts ce trimestre » (cais.kaist.ac.kr, jamais touché) viendra des pages enregistrées par
+  les étudiants.
+- Informatique : https://cs.kaist.ac.kr/education/undergraduate et .../graduate (robots.txt : seuls /upload_files/,
+  /common/data/, /userfiles/file/ sont interdits). Code, crédits (3e nombre de « 강:실:학(숙) »), semestre d'ouverture,
+  description anglaise. La langue vient de « 영어강의여부 » : Y = en, N = cours exclu. Ce champ est un commentaire HTML
+  de la page (non affiché au visiteur) mais présent dans la copie brute. Les titres sont en coréen seulement.
+  88 cours en anglais (87 CS + CC.50010), 66 exclus (N : 13 en 1er cycle, 53 aux cycles supérieurs).
+- Génie électrique : https://ee.kaist.ac.kr/en/under-curr-list?page=1..9 et graduate-curr-list?page=1..15 (robots.txt :
+  seul /*?s= est interdit). Titre anglais, crédits, description. 219 cours, langue « unknown » (la page ne la donne
+  pas), aucun trimestre. La recherche de thèse (« M.S. Thesis Research ») est écartée. Les cours à thème gardent leur
+  numéro de section (EE.49904(001)) car chaque section est un sujet différent.
+- Semestres (informatique) : « 봄 & 가을학기 » et « 봄 or 가을학기 » donnent les deux trimestres (le « or » veut dire
+  que la page ne dit pas lequel des deux selon l'année) ; « 봄학기 » = printemps, « 가을학기 » = automne.
+- Mathématiques : pas de page lisible avec descriptions (les horaires de mathsci.kaist.ac.kr sont des PDF à titres
+  seulement, et robots.txt interdit /mathsci) : aucun cours de mathématiques dans cette passe.
+- Faits : catalogPublic = true et catalogUrl = page informatique 1er cycle (extrait : l'adresse de l'école en pied de
+  page). contactHoursPerCredit reste vide (aucune page lisible ne le définit ; le « 3:0:3 » est cours:labo:crédits).
+- Date des rapports : la collecte s'est terminée après minuit UTC, son bloc automatique porte donc le 2026-11-11 ; il
+  est fusionné ici dans le rapport du 2026-11-10.
 
 Notes sur la fiche
 - Dates : calendrier académique officiel, années 2027 et 2028 (publiées). Automne 2027 : examens finaux du 13 au
@@ -43,3 +64,19 @@ Aucun. Faits restés vides
 
 Dates avec contexte (2026-11-10)
 Aucune date ajoutée : la fin des cours et des examens du printemps 2028 n'est pas publiée.
+
+Vérification de 5 cours tirés au hasard (2026-11-10)
+Tirage : CS.60802, EE.60088, EE.60026, EE.49904(004), CS.30706 (aléatoire sur les 307 cours collectés).
+- EE.60088 Optimal Control Theory : page https://ee.kaist.ac.kr/en/node02/13775/ , titre, « Subject No. EE.60088 »,
+  crédits 3, classification Required : conforme. Langue et trimestre : non donnés par la page (unknown, aucun trimestre,
+  comme collecté).
+- EE.60026 Advanced Communication Theory : page https://ee.kaist.ac.kr/en/node02/13263/ , crédits 3 : conforme. Langue
+  et trimestre : non donnés par la page.
+- EE.49904(004) Special Topics in Electronic Engineering <Introduction to cryptography engineering> : page
+  https://ee.kaist.ac.kr/en/node/special-topics-in-electronic-engineering-21/ , crédits 3, description commençant par
+  « In addition to the security and privacy... » : conforme. Langue et trimestre : non donnés par la page.
+- CS.60802 (디지털 서사학, 3 crédits, « 봄 or 가을학기 », cycle supérieur) et CS.30706 (기계학습, 3 crédits,
+  « 봄 or 가을학기 », 1er cycle) : l'informatique n'a pas de page propre par cours (le syllabus est dans cais.kaist.ac.kr,
+  interdit au collecteur). Vérifiés sur la ligne de la liste officielle (« CS.60802 | 디지털 서사학 | 3:0:3 | 봄 or
+  가을학기 », « CS.30706 | 기계학습 | 3:0:3 | 봄 or 가을학기 ») et sur la fiche cachée du même cours, où
+  « 영어강의여부 » vaut Y. La langue n'est donc confirmée que par cette liste officielle, pas par un syllabus.

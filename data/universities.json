@@ -934,7 +934,7 @@
     "lat": 36.372,
     "lng": 127.363,
     "website": "https://www.kaist.ac.kr/en/",
-    "catalogUrl": "http://cais.kaist.ac.kr/totalOpeningCourse",
+    "catalogUrl": "https://cs.kaist.ac.kr/education/undergraduate",
     "creditSystem": "local",
     "contactHoursPerCredit": null,
     "terms": {
@@ -951,7 +951,7 @@
     },
     "restrictions": "Please make sure that 50% of the courses you take are from your major (department at KAIST).",
     "exchangeContact": "irt@kaist.ac.kr",
-    "catalogPublic": false,
+    "catalogPublic": true,
     "provenance": {
       "name": {
         "url": "https://en.wikipedia.org/wiki/KAIST",
@@ -994,14 +994,14 @@
         "quote": "Global Value-Creative Leading University"
       },
       "catalogUrl": {
-        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
-        "retrievedAt": "2026-11-10T20:40:17.130Z",
-        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "url": "https://cs.kaist.ac.kr/education/undergraduate",
+        "retrievedAt": "2026-11-10T23:58:03.600Z",
+        "sha256": "1ab9fb160c190214e1896ecff8cd8f867f5d9aba349a7d1a798cefc4b0d5f857",
         "locator": {
           "page": 1,
-          "line": 51
+          "line": 471
         },
-        "quote": "Course Information - http://cais.kaist.ac.kr/totalOpeningCourse"
+        "quote": "한국과학기술원(KAIST) 전산학부 34141 대전광역시 유성구 대학로 291(구성동373-1)"
       },
       "creditSystem": {
         "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
@@ -1044,14 +1044,14 @@
         "quote": "+82-42-350-4930 irt@kaist.ac.kr"
       },
       "catalogPublic": {
-        "url": "https://io.kaist.ac.kr/mobi/incoming_app.do",
-        "retrievedAt": "2026-11-10T20:40:17.130Z",
-        "sha256": "d142cbdd198b91e901cbedfc70d7c3620e3cb552b02e3877a7bba339fe71809b",
+        "url": "https://cs.kaist.ac.kr/education/undergraduate",
+        "retrievedAt": "2026-11-10T23:58:03.600Z",
+        "sha256": "1ab9fb160c190214e1896ecff8cd8f867f5d9aba349a7d1a798cefc4b0d5f857",
         "locator": {
           "page": 1,
-          "line": 51
+          "line": 471
         },
-        "quote": "Course Information - http://cais.kaist.ac.kr/totalOpeningCourse"
+        "quote": "한국과학기술원(KAIST) 전산학부 34141 대전광역시 유성구 대학로 291(구성동373-1)"
       },
       "terms.fall.start": {
         "url": "https://www.kaist.ac.kr/en/html/edu/03100101.html?year=2027",
