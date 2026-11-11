@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { openDb } from '../db/open.js';
 import { createPoliteFetcher } from '../fetch/politeFetch.js';
@@ -84,7 +84,25 @@ async function fix(): Promise<number> {
   } finally {
     db.close();
   }
+  console.log(`vues .lines.txt régénérées : ${await rewriteLinesViews()}`);
   return r.problems.length > 0 ? 1 : 0;
+}
+
+/** Réécrit chaque vue `<sha256>.lines.txt` à partir de sa copie brute, avec l'extraction actuelle. */
+async function rewriteLinesViews(): Promise<number> {
+  if (!existsSync(RAW_DIR)) return 0;
+  let n = 0;
+  const dirs = [RAW_DIR, ...readdirSync(RAW_DIR).map((d) => join(RAW_DIR, d)).filter((d) => statSync(d).isDirectory())];
+  for (const dir of dirs) {
+    for (const name of readdirSync(dir)) {
+      const m = /^([0-9a-f]{64})\.(html|pdf)$/.exec(name);
+      if (!m || !existsSync(join(dir, `${m[1]}.lines.txt`))) continue;
+      const pages = await snapshotText(readFileSync(join(dir, name)), m[2] === 'pdf' ? 'application/pdf' : 'text/html');
+      writeFileSync(join(dir, `${m[1]}.lines.txt`), linesListing(pages));
+      n++;
+    }
+  }
+  return n;
 }
 
 /** En ligne : retélécharge les sources des faits, met à jour le fichier et écrit le rapport. */
