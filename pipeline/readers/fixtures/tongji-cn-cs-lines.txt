@@ -1,0 +1,14 @@
+p1:l1 Courses at Bachelor Level:
+p1:l2 Course Code | Course Name | Credit | Semester | Language
+p1:l3 CST239702 | Principles of Database and Applications | 4 | Spring | English
+p1:l4 CST239801 | Computer Network | 3 | Spring | English
+p1:l5 CST349001 | Software Test | 3 | Spring | English
+p1:l6 CST348701 | System Analysis and Design | 2 | Spring | English
+p1:l7 CST239801 | Computer Network | 3 | Fall | English
+p1:l8 CST348701 | System Analysis and Design | 2 | Fall | English
+p1:l9 CST352002 | Software Engineering | 3 | Fall | Bilingual
+p1:l10 Courses at Master Level:
+p1:l11 Course Code | Course Name | Credit | Semester | Language
+p1:l12 CST6030 | Principles of Artificial Intelligence | 3 | Spring | English
+p1:l13 CST600301 | Formal methods of software engineering | 2 | Fall | English
+p1:l14 * Bilingual courses: the teaching language on class is in Chinese and the teaching materials are in English. Examinations can be conducted in English.

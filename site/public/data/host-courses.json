@@ -14399,5 +14399,1176 @@
     "sourcePage": 1,
     "sourceLine": 26,
     "snapshotSha256": null
+  },
+  {
+    "id": 801,
+    "universityId": "tongji-cn",
+    "code": "10018401",
+    "title": "Circuit Theory",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 2,
+    "snapshotSha256": null
+  },
+  {
+    "id": 802,
+    "universityId": "tongji-cn",
+    "code": "10025603",
+    "title": "Electric Power Engineering",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 3,
+    "snapshotSha256": null
+  },
+  {
+    "id": 803,
+    "universityId": "tongji-cn",
+    "code": "10032001",
+    "title": "Automatic Control 1",
+    "description": "",
+    "credits": 6,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 4,
+    "snapshotSha256": null
+  },
+  {
+    "id": 804,
+    "universityId": "tongji-cn",
+    "code": "10033602",
+    "title": "Microwave Engineering and Antenna Design",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 10,
+    "snapshotSha256": null
+  },
+  {
+    "id": 805,
+    "universityId": "tongji-cn",
+    "code": "10054002",
+    "title": "Semiconductor Physics",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": null
+  },
+  {
+    "id": 806,
+    "universityId": "tongji-cn",
+    "code": "10057402",
+    "title": "Automatic Control Theory",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 12,
+    "snapshotSha256": null
+  },
+  {
+    "id": 807,
+    "universityId": "tongji-cn",
+    "code": "10071303",
+    "title": "Principles andTechnology of Computer",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 13,
+    "snapshotSha256": null
+  },
+  {
+    "id": 808,
+    "universityId": "tongji-cn",
+    "code": "10201901",
+    "title": "Analog Electronic Technique",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 14,
+    "snapshotSha256": null
+  },
+  {
+    "id": 809,
+    "universityId": "tongji-cn",
+    "code": "10202601",
+    "title": "Power Electronics Technology",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 15,
+    "snapshotSha256": null
+  },
+  {
+    "id": 810,
+    "universityId": "tongji-cn",
+    "code": "10204401",
+    "title": "High Frequency Electronic Circuits",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 16,
+    "snapshotSha256": null
+  },
+  {
+    "id": 811,
+    "universityId": "tongji-cn",
+    "code": "10500716",
+    "title": "Experiment of Electronic Technology",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 17,
+    "snapshotSha256": null
+  },
+  {
+    "id": 812,
+    "universityId": "tongji-cn",
+    "code": "10501602",
+    "title": "Digital Signal Processing",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 18,
+    "snapshotSha256": null
+  },
+  {
+    "id": 813,
+    "universityId": "tongji-cn",
+    "code": "5000244002705",
+    "title": "Communication System Principle",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 19,
+    "snapshotSha256": null
+  },
+  {
+    "id": 814,
+    "universityId": "tongji-cn",
+    "code": "5000244008601",
+    "title": "Wireless Signal Propagation Principle and Practice",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 20,
+    "snapshotSha256": null
+  },
+  {
+    "id": 815,
+    "universityId": "tongji-cn",
+    "code": "1080104",
+    "title": "Chip design for integrated system",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 2,
+    "snapshotSha256": null
+  },
+  {
+    "id": 816,
+    "universityId": "tongji-cn",
+    "code": "1080105",
+    "title": "Advanced Electromagnetics",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 3,
+    "snapshotSha256": null
+  },
+  {
+    "id": 817,
+    "universityId": "tongji-cn",
+    "code": "1080106",
+    "title": "Frontiers of Microelectronics Science and Engineering",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 4,
+    "snapshotSha256": null
+  },
+  {
+    "id": 818,
+    "universityId": "tongji-cn",
+    "code": "1080114",
+    "title": "Signal perception theory and application",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 6,
+    "snapshotSha256": null
+  },
+  {
+    "id": 819,
+    "universityId": "tongji-cn",
+    "code": "1080118",
+    "title": "Wireless communication theory",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 7,
+    "snapshotSha256": null
+  },
+  {
+    "id": 820,
+    "universityId": "tongji-cn",
+    "code": "20002440010",
+    "title": "Graphs and Applications",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 8,
+    "snapshotSha256": null
+  },
+  {
+    "id": 821,
+    "universityId": "tongji-cn",
+    "code": "20002440049",
+    "title": "Machine learning and pattern recognition",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 822,
+    "universityId": "tongji-cn",
+    "code": "20002440066",
+    "title": "Linear System Theory",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 10,
+    "snapshotSha256": null
+  },
+  {
+    "id": 823,
+    "universityId": "tongji-cn",
+    "code": "2080320",
+    "title": "Communication Networks: Architecture and Protocols",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": null
+  },
+  {
+    "id": 824,
+    "universityId": "tongji-cn",
+    "code": "2080389",
+    "title": "Advanced Engineering Electromagnetics",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 12,
+    "snapshotSha256": null
+  },
+  {
+    "id": 825,
+    "universityId": "tongji-cn",
+    "code": "2080430",
+    "title": "Information Theory and Applications",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 13,
+    "snapshotSha256": null
+  },
+  {
+    "id": 826,
+    "universityId": "tongji-cn",
+    "code": "10032101",
+    "title": "Automatic Control 2",
+    "description": "",
+    "credits": 6,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 2,
+    "snapshotSha256": null
+  },
+  {
+    "id": 827,
+    "universityId": "tongji-cn",
+    "code": "10032601",
+    "title": "Foundation of Electronics",
+    "description": "",
+    "credits": 8,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 6,
+    "snapshotSha256": null
+  },
+  {
+    "id": 828,
+    "universityId": "tongji-cn",
+    "code": "10202004",
+    "title": "Digital Electronic Technology",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 8,
+    "snapshotSha256": null
+  },
+  {
+    "id": 829,
+    "universityId": "tongji-cn",
+    "code": "10214304",
+    "title": "Signal and System",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 830,
+    "universityId": "tongji-cn",
+    "code": "10220401",
+    "title": "Circuit Theory",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 10,
+    "snapshotSha256": null
+  },
+  {
+    "id": 831,
+    "universityId": "tongji-cn",
+    "code": "10225702",
+    "title": "Computer Communication Networks",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": null
+  },
+  {
+    "id": 832,
+    "universityId": "tongji-cn",
+    "code": "5000244003318",
+    "title": "Experiment of Electronic Technology(2)",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 12,
+    "snapshotSha256": null
+  },
+  {
+    "id": 833,
+    "universityId": "tongji-cn",
+    "code": "5000244008101",
+    "title": "Electronic Equipment",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 13,
+    "snapshotSha256": null
+  },
+  {
+    "id": 834,
+    "universityId": "tongji-cn",
+    "code": "1080067",
+    "title": "Non-linear System",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 2,
+    "snapshotSha256": null
+  },
+  {
+    "id": 835,
+    "universityId": "tongji-cn",
+    "code": "1080102",
+    "title": "System Analysis and Optimization",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 3,
+    "snapshotSha256": null
+  },
+  {
+    "id": 836,
+    "universityId": "tongji-cn",
+    "code": "1080103",
+    "title": "Advanced Integrated Circuits Design",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 4,
+    "snapshotSha256": null
+  },
+  {
+    "id": 837,
+    "universityId": "tongji-cn",
+    "code": "1080112",
+    "title": "Micro-nano opto-electronic",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 5,
+    "snapshotSha256": null
+  },
+  {
+    "id": 838,
+    "universityId": "tongji-cn",
+    "code": "20002440002",
+    "title": "Physical-Layer Security Theory for Wireless Communications",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 6,
+    "snapshotSha256": null
+  },
+  {
+    "id": 839,
+    "universityId": "tongji-cn",
+    "code": "20002440033",
+    "title": "Networked Systems",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 8,
+    "snapshotSha256": null
+  },
+  {
+    "id": 840,
+    "universityId": "tongji-cn",
+    "code": "20002440034",
+    "title": "Engineering in AI practice",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": null
+  },
+  {
+    "id": 841,
+    "universityId": "tongji-cn",
+    "code": "2080214",
+    "title": "Machine vision",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 10,
+    "snapshotSha256": null
+  },
+  {
+    "id": 842,
+    "universityId": "tongji-cn",
+    "code": "2080349",
+    "title": "Electronics Engineering Experiment, Practice, Society and Investigation",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": null
+  },
+  {
+    "id": 843,
+    "universityId": "tongji-cn",
+    "code": "2080424",
+    "title": "Electronics Engineering Subjects",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 13,
+    "snapshotSha256": null
+  },
+  {
+    "id": 844,
+    "universityId": "tongji-cn",
+    "code": "2080425",
+    "title": "Radio Wave PropagationCharacterization",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 15,
+    "snapshotSha256": null
+  },
+  {
+    "id": 845,
+    "universityId": "tongji-cn",
+    "code": "2080429",
+    "title": "Frontier Academics on Information and Communication Field",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 16,
+    "snapshotSha256": null
+  },
+  {
+    "id": 846,
+    "universityId": "tongji-cn",
+    "code": "CST239702",
+    "title": "Principles of Database and Applications",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 77,
+    "snapshotSha256": null
+  },
+  {
+    "id": 847,
+    "universityId": "tongji-cn",
+    "code": "CST239801",
+    "title": "Computer Network",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 78,
+    "snapshotSha256": null
+  },
+  {
+    "id": 848,
+    "universityId": "tongji-cn",
+    "code": "CST349001",
+    "title": "Software Test",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 79,
+    "snapshotSha256": null
+  },
+  {
+    "id": 849,
+    "universityId": "tongji-cn",
+    "code": "CST348701",
+    "title": "System Analysis and Design",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 80,
+    "snapshotSha256": null
+  },
+  {
+    "id": 850,
+    "universityId": "tongji-cn",
+    "code": "CST349102",
+    "title": "Software Engineering Management and Economics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 81,
+    "snapshotSha256": null
+  },
+  {
+    "id": 851,
+    "universityId": "tongji-cn",
+    "code": "CST352101",
+    "title": "Software Engineering",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 82,
+    "snapshotSha256": null
+  },
+  {
+    "id": 852,
+    "universityId": "tongji-cn",
+    "code": "CST239001",
+    "title": "Programming Paradigms",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 85,
+    "snapshotSha256": null
+  },
+  {
+    "id": 853,
+    "universityId": "tongji-cn",
+    "code": "CST349201",
+    "title": "Java Enterprise Application Development",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 86,
+    "snapshotSha256": null
+  },
+  {
+    "id": 854,
+    "universityId": "tongji-cn",
+    "code": "CST6030",
+    "title": "Principles of Artificial Intelligence",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 94,
+    "snapshotSha256": null
+  },
+  {
+    "id": 855,
+    "universityId": "tongji-cn",
+    "code": "CST6044",
+    "title": "Data mining",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 95,
+    "snapshotSha256": null
+  },
+  {
+    "id": 856,
+    "universityId": "tongji-cn",
+    "code": "CST6017",
+    "title": "Advanced Internet of Things technology and Applications",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 96,
+    "snapshotSha256": null
+  },
+  {
+    "id": 857,
+    "universityId": "tongji-cn",
+    "code": "CST6008",
+    "title": "Software Testing Analyst",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 97,
+    "snapshotSha256": null
+  },
+  {
+    "id": 858,
+    "universityId": "tongji-cn",
+    "code": "CST6012",
+    "title": "Software Modeling and Analysis",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 98,
+    "snapshotSha256": null
+  },
+  {
+    "id": 859,
+    "universityId": "tongji-cn",
+    "code": "CST6010",
+    "title": "Advanced Digital Image Processing",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 99,
+    "snapshotSha256": null
+  },
+  {
+    "id": 860,
+    "universityId": "tongji-cn",
+    "code": "CST6006",
+    "title": "Reinforcement Learning",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 100,
+    "snapshotSha256": null
+  },
+  {
+    "id": 861,
+    "universityId": "tongji-cn",
+    "code": "CST600301",
+    "title": "Formal methods of software engineering",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 101,
+    "snapshotSha256": null
+  },
+  {
+    "id": 862,
+    "universityId": "tongji-cn",
+    "code": "CST600902",
+    "title": "Pattern Recognition",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 102,
+    "snapshotSha256": null
+  },
+  {
+    "id": 863,
+    "universityId": "tongji-cn",
+    "code": "CST601801",
+    "title": "Network models, dynamics and algorithms",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 103,
+    "snapshotSha256": null
+  },
+  {
+    "id": 864,
+    "universityId": "tongji-cn",
+    "code": "CST601601",
+    "title": "Graph Signal Processing",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 104,
+    "snapshotSha256": null
+  },
+  {
+    "id": 865,
+    "universityId": "tongji-cn",
+    "code": "2102002",
+    "title": "Numerical Analysis",
+    "description": "",
+    "credits": null,
+    "contactHours": null,
+    "language": "en",
+    "terms": [],
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7971.htm",
+    "collectedAt": "2026-11-10T23:00:03.940Z",
+    "sourcePage": 1,
+    "sourceLine": 77,
+    "snapshotSha256": null
   }
 ]

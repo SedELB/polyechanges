@@ -1,0 +1,7 @@
+p1:l1 School of Mathematical Sciences
+p1:l2 Course Code | Course Name | Level | Language
+p1:l3 2102002 | Numerical Analysis | Master | English
+p1:l4 210206001 | An Introduction to the Classification of Amenable C*-algebra | Bachelor | Bilingual
+p1:l5 210222301 | Partial Differential Equations | Bachelor | Bilingual
+p1:l6 2.00059E+12 | Introduction to Smooth Manifolds | Bachelor | Bilingual
+p1:l7 *Bilingual courses: the teaching language on class is in Chinese and the teaching materials are in English. Examinations can be conducted in English.

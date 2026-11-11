@@ -1,0 +1,11 @@
+p1:l1 AY Semester Course No. Course Name (CN) Course Name (EN) Hours Credit Language Week Lecturer Campus
+p1:l2 2025-2026 2 1080067 非线性系统 Non-linear System 32 2 English [1-16] Zhang Changzhu Jiading
+p1:l3 2025-2026 2 20002440002 无线通信物理层安全理论 Physical-Layer Security Theory for
+p1:l4 Wireless Communications 32 2 English [1-16] Li Zuxing Jiading
+p1:l5 2025-2026 2 2080424 电子工程专题 Electronics Engineering Subjects 32 2 English [1-16] Tong Meisong, Wen Penyan
+p1:l6 Hu Yunyun,Wang Xiaoyi Jiading
+p1:l7 2025-2026 2 10002440010 自主驾驶中的人工智能 AI in autonomous driving 32 2 Bilingual [1-16] Chen Hong,Guo Lulu, Hong Jinlong
+p1:l8 Zhang Lin, Zhang Yuanjian Jiading
+p1:l9 2025-2026 2 1080108 无线网络信息论 Wireless Network Information Theory 32 2 Bilingual [1-16] Wang Zhifeng Jiading
+p1:l10 2026 Spring-English Course List-Master
+p1:l11 * Bilingual courses: the teaching language on class is in Chinese and the teaching materials are in English.

@@ -1,0 +1,11 @@
+p1:l1 AY Semester Course No. Course Name （CN） Course Name （EN） Course Tyep Hours Credits Language Week Lecturer Campus
+p1:l2 2026-2027 1 10018401 电路理论(英) Circuit Theory Elective 32 4 English 1-8 Xiong Ying Jiading
+p1:l3 2026-2027 1 10032001 自动控制1（英） Automatic Control 1(English) Elective 96 6 English 1-16
+p1:l4 Yu Youling
+p1:l5 Zhang Changzhu Jiading
+p1:l6 2026-2027 1 10032201 机械基础1（英） Basic Theory of Machinery1(English) Elective 96 6 English 1-16
+p1:l7 Zhao Rongyong
+p1:l8 Yin Zhen Jiading
+p1:l9 2026-2027 1 10071303 计算机原理与技术 Principles andTechnology of Computer Fundamental 48 3 English 9-16 Xu Hao Jiading
+p1:l10 2026-2027 1 5.00024E+12 微纳电子材料与器件 Micro-nano electronic materials and devices Elective 32 2 English 1-16 Wen Pengyan Jiading
+p1:l11 2026 Autumn-English Course List-Bachelor

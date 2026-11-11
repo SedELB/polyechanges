@@ -1932,11 +1932,11 @@
     "name": "Tongji University",
     "moveOnName": "Tongji University",
     "countryCode": "CN",
-    "city": "",
-    "lat": 31.262,
-    "lng": 121.459,
-    "website": "",
-    "catalogUrl": null,
+    "city": "Shanghai",
+    "lat": 31.2827,
+    "lng": 121.5066,
+    "website": "https://www.tongji.edu.cn/",
+    "catalogUrl": "https://fao.tongji.edu.cn/INCOMING/Study_at_Tongji_University.htm",
     "creditSystem": "local",
     "contactHoursPerCredit": null,
     "terms": {
@@ -1944,8 +1944,89 @@
       "spring": null
     },
     "restrictions": null,
-    "exchangeContact": null,
+    "exchangeContact": "incoming@tongji.edu.cn",
     "catalogPublic": true,
-    "provenance": {}
+    "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/Tongji_University",
+        "retrievedAt": "2026-11-10T22:59:54.142Z",
+        "sha256": "fc5707860c66cb9186cbdb9d692eb3f413ad4c3dfe5bfd31af12488f2700c4a9",
+        "locator": {
+          "page": 1,
+          "line": 143
+        },
+        "quote": "Tongji University is a public university located in Shanghai, China."
+      },
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/Tongji_University",
+        "retrievedAt": "2026-11-10T22:59:54.142Z",
+        "sha256": "fc5707860c66cb9186cbdb9d692eb3f413ad4c3dfe5bfd31af12488f2700c4a9",
+        "locator": {
+          "page": 1,
+          "line": 135
+        },
+        "quote": "Location | Shanghai , China"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/Tongji_University",
+        "retrievedAt": "2026-11-10T22:59:54.142Z",
+        "sha256": "fc5707860c66cb9186cbdb9d692eb3f413ad4c3dfe5bfd31af12488f2700c4a9",
+        "locator": {
+          "page": 1,
+          "line": 121
+        },
+        "quote": "31.2827°N 121.5066°E"
+      },
+      "website": {
+        "url": "https://www.tongji.edu.cn/",
+        "retrievedAt": "2026-11-10T22:59:54.142Z",
+        "sha256": "39043b9df370d83932e79c4d25ca9164a1590fe15e55e6c8e8e89d518668a746",
+        "locator": {
+          "page": 1,
+          "line": 229
+        },
+        "quote": "Copyright©2018 同济大学版权所有 沪ICP备10014176号"
+      },
+      "catalogUrl": {
+        "url": "https://fao.tongji.edu.cn/INCOMING/Study_at_Tongji_University.htm",
+        "retrievedAt": "2026-11-10T22:59:54.142Z",
+        "sha256": "7e0bd4e65d802026e07c043ff54e2f0c8b280df49dcd89f613617c693d73236f",
+        "locator": {
+          "page": 1,
+          "line": 73
+        },
+        "quote": "INCOMING - Study at Tongji University"
+      },
+      "creditSystem": {
+        "url": "https://fao.tongji.edu.cn/info/1129/7949.htm",
+        "retrievedAt": "2026-11-10T22:59:54.142Z",
+        "sha256": "0c63529896bcdde2f456319ee235078d545866d043eaef04a38afbc37537e116",
+        "locator": {
+          "page": 1,
+          "line": 77
+        },
+        "quote": "NO. | Course Code | Course Name | Department | Tongji Credit | Instructor"
+      },
+      "exchangeContact": {
+        "url": "https://fao.tongji.edu.cn/INCOMING/Contact_us.htm",
+        "retrievedAt": "2026-11-10T22:59:54.142Z",
+        "sha256": "fcf92d9e9fd92f85d528bc73b12982d25faaf30741d31be1dd26164e83162a6f",
+        "locator": {
+          "page": 1,
+          "line": 79
+        },
+        "quote": "E-Mail: incoming@tongji.edu.cn"
+      },
+      "catalogPublic": {
+        "url": "https://fao.tongji.edu.cn/info/1129/7958.htm",
+        "retrievedAt": "2026-11-10T22:59:54.142Z",
+        "sha256": "307f3aa227da4cd46862a373b90f05ae8f1ca3077accdbd267f9af5bdf87b376",
+        "locator": {
+          "page": 1,
+          "line": 74
+        },
+        "quote": "Important Note: This list is only a kind of orientation."
+      }
+    }
   }
 ]

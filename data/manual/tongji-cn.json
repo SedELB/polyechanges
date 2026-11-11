@@ -1,0 +1,1563 @@
+[
+  {
+    "code": "10018401",
+    "title": "Circuit Theory",
+    "description": "",
+    "outline": null,
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 2
+      },
+      "quote": "2026-2027 1 10018401 电路理论(英) Circuit Theory Elective 32 4 English 1-8 Xiong Ying Jiading"
+    }
+  },
+  {
+    "code": "10025603",
+    "title": "Electric Power Engineering",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 3
+      },
+      "quote": "2026-2027 1 10025603 电力工程 Electric Power Engineering Compulsory 48 3 English 1-16 Zhang Wenhao Jiading"
+    }
+  },
+  {
+    "code": "10032001",
+    "title": "Automatic Control 1",
+    "description": "",
+    "outline": null,
+    "credits": 6,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 4
+      },
+      "quote": "2026-2027 1 10032001 自动控制1（英） Automatic Control 1(English) Elective 96 6 English 1-16 Yu Youling Zhang Changzhu Jiading"
+    }
+  },
+  {
+    "code": "10033602",
+    "title": "Microwave Engineering and Antenna Design",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 10
+      },
+      "quote": "2026-2027 1 10033602 微波工程与天线设计 Microwave Engineering and Antenna Design Compulsory 32 2 English 1-16 Tong Meisong Jiading"
+    }
+  },
+  {
+    "code": "10054002",
+    "title": "Semiconductor Physics",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 11
+      },
+      "quote": "2026-2027 1 10054002 半导体物理 Semiconductor Physics Fundamental 32 2 English 1-16 Li Jun Jiading"
+    }
+  },
+  {
+    "code": "10057402",
+    "title": "Automatic Control Theory",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 12
+      },
+      "quote": "2026-2027 1 10057402 自动控制原理 Automatic Control Theory Compulsory 48 3 English 1-16 Dong Zihang Jiading"
+    }
+  },
+  {
+    "code": "10071303",
+    "title": "Principles andTechnology of Computer",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 13
+      },
+      "quote": "2026-2027 1 10071303 计算机原理与技术 Principles andTechnology of Computer Fundamental 48 3 English 9-16 Xu Hao Jiading"
+    }
+  },
+  {
+    "code": "10201901",
+    "title": "Analog Electronic Technique",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 14
+      },
+      "quote": "2026-2027 1 10201901 模拟电子技术 Analog Electronic Technique Fundamental 48 3 English 1-16 Liu Fang Jiading"
+    }
+  },
+  {
+    "code": "10202601",
+    "title": "Power Electronics Technology",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 15
+      },
+      "quote": "2026-2027 1 10202601 电力电子技术 Power Electronics Technology Compulsory 48 3 English 1-16 Wang Hanqing Jiading"
+    }
+  },
+  {
+    "code": "10204401",
+    "title": "High Frequency Electronic Circuits",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 16
+      },
+      "quote": "2026-2027 1 10204401 高频电子线路 High Frequency Electronic Circuits Compulsory 32 2 English 1-16 Meng Miao Jiading"
+    }
+  },
+  {
+    "code": "10500716",
+    "title": "Experiment of Electronic Technology",
+    "description": "",
+    "outline": null,
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 17
+      },
+      "quote": "2026-2027 1 10500716 电子技术实验(上) Experiment of Electronic Technology Practice 16 1 English 9-16 Xu Zhiyu Jiading"
+    }
+  },
+  {
+    "code": "10501602",
+    "title": "Digital Signal Processing",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 18
+      },
+      "quote": "2026-2027 1 10501602 数字信号处理 Digital Signal Processing Elective 32 2 English 9-16 Zhou Junhe Jiading"
+    }
+  },
+  {
+    "code": "5000244002705",
+    "title": "Communication System Principle",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 19
+      },
+      "quote": "2026-2027 1 5000244002705 通信原理 Communication System Principle Compulsory 48 3 English 1-16 Jose Rodriguez Pineiro Jiading"
+    }
+  },
+  {
+    "code": "5000244008601",
+    "title": "Wireless Signal Propagation Principle and Practice",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "b5b875aa367573de843ef2a6927d98f7452fa4b18f5f79b84d14f69337fb0d5c",
+      "locator": {
+        "page": 1,
+        "line": 20
+      },
+      "quote": "2026-2027 1 5000244008601 无线信号传播原理与实践 Wireless Signal Propagation Principle and Practice Elective 32 2 English 1-16 Jose Rodriguez Pineiro Jiading"
+    }
+  },
+  {
+    "code": "1080104",
+    "title": "Chip design for integrated system",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 2
+      },
+      "quote": "2026-2027 1 1080104 片上集成系统设计 Chip design for integrated system 32 2 English [1-16] Liu Shiwei Jiading"
+    }
+  },
+  {
+    "code": "1080105",
+    "title": "Advanced Electromagnetics",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 3
+      },
+      "quote": "2026-2027 1 1080105 高等电磁学 Advanced Electromagnetics 32 2 English [1-16] Tong Meisong, Hu Yunyun,Wang Xiaoyi Jiading"
+    }
+  },
+  {
+    "code": "1080106",
+    "title": "Frontiers of Microelectronics Science and Engineering",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 4
+      },
+      "quote": "2026-2027 1 1080106 微电子科学与工程前沿 Frontiers of Microelectronics Science and Engineering 32 2 English [1-16] Tong Meisong,He Qing,Meng Miao,Wang Xiaoyi,Zhuo Shenglong,Yuan Guangjie Jiading"
+    }
+  },
+  {
+    "code": "1080114",
+    "title": "Signal perception theory and application",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 6
+      },
+      "quote": "2026-2027 1 1080114 信号感知理论与应用 Signal perception theory and application 32 2 English [1-16] Wei Zhongxiang Jiading"
+    }
+  },
+  {
+    "code": "1080118",
+    "title": "Wireless communication theory",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 7
+      },
+      "quote": "2026-2027 1 1080118 无线通信理论 Wireless communication theory 32 2 English [1-16] Jose Rodriguez Pineiro Jiading"
+    }
+  },
+  {
+    "code": "20002440010",
+    "title": "Graphs and Applications",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 8
+      },
+      "quote": "2026-2027 1 20002440010 图与应用 Graphs and Applications 32 2 English [1-16] Wang Junyuan Jiading"
+    }
+  },
+  {
+    "code": "20002440049",
+    "title": "Machine learning and pattern recognition",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 9
+      },
+      "quote": "2026-2027 1 20002440049 机器学习与模式识别 Machine learning and pattern recognition 32 2 English [1-16] Shi Miaojing Jiading"
+    }
+  },
+  {
+    "code": "20002440066",
+    "title": "Linear System Theory",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 10
+      },
+      "quote": "2026-2027 1 20002440066 线性系统理论 Linear System Theory 32 2 English [1-16] Zhu Fanglai Jiading"
+    }
+  },
+  {
+    "code": "2080320",
+    "title": "Communication Networks: Architecture and Protocols",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 11
+      },
+      "quote": "2026-2027 1 2080320 通信网体系与协议 Communication Networks: Architecture and Protocols 32 2 English [1-16] Liu Yan Jiading"
+    }
+  },
+  {
+    "code": "2080389",
+    "title": "Advanced Engineering Electromagnetics",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 12
+      },
+      "quote": "2026-2027 1 2080389 高级工程电磁学 Advanced Engineering Electromagnetics 32 2 English [1-16] Tong Meisong, Hu Yunyun,Wang Xiaoyi Jiading"
+    }
+  },
+  {
+    "code": "2080430",
+    "title": "Information Theory and Applications",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/F/5F/18/AB54065FDFFE88A81EA83C6EDA9_1FC9C938_23755.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "5766ba92b3052fd34cf3229c4e14d1bf6c8091b38357737ca73735999ece82b9",
+      "locator": {
+        "page": 1,
+        "line": 13
+      },
+      "quote": "2026-2027 1 2080430 现代信息理论与应用 Information Theory and Applications 32 2 English [1-16] Wang Chao Jiading"
+    }
+  },
+  {
+    "code": "10032101",
+    "title": "Automatic Control 2",
+    "description": "",
+    "outline": null,
+    "credits": 6,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2b0cb6656aa799ec26058922c7598e17137026c04cd167da322cf9f1ee83a717",
+      "locator": {
+        "page": 1,
+        "line": 2
+      },
+      "quote": "2025-2026 2 10032101 自动控制2（英） Automatic Control 2(English) Elective 96 6 English [1-16] Zhang Hao Huang Chao Jiading"
+    }
+  },
+  {
+    "code": "10032601",
+    "title": "Foundation of Electronics",
+    "description": "",
+    "outline": null,
+    "credits": 8,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2b0cb6656aa799ec26058922c7598e17137026c04cd167da322cf9f1ee83a717",
+      "locator": {
+        "page": 1,
+        "line": 6
+      },
+      "quote": "2025-2026 2 10032601 电子学基础（英） Foundation of Electronics Elective 128 8 English [1-16] Liu Fang Jiading"
+    }
+  },
+  {
+    "code": "10202004",
+    "title": "Digital Electronic Technology",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2b0cb6656aa799ec26058922c7598e17137026c04cd167da322cf9f1ee83a717",
+      "locator": {
+        "page": 1,
+        "line": 8
+      },
+      "quote": "2025-2026 2 10202004 数字电子技术 Digital Electronic Technology Fundamental 48 3 English [1-16] Zhang Zhifeng Jiading"
+    }
+  },
+  {
+    "code": "10214304",
+    "title": "Signal and System",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2b0cb6656aa799ec26058922c7598e17137026c04cd167da322cf9f1ee83a717",
+      "locator": {
+        "page": 1,
+        "line": 9
+      },
+      "quote": "2025-2026 2 10214304 信号与系统 Signal and System Fundamental 48 3 English [1-16] Wei Zhongxiang Jiading"
+    }
+  },
+  {
+    "code": "10220401",
+    "title": "Circuit Theory",
+    "description": "",
+    "outline": null,
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2b0cb6656aa799ec26058922c7598e17137026c04cd167da322cf9f1ee83a717",
+      "locator": {
+        "page": 1,
+        "line": 10
+      },
+      "quote": "2025-2026 2 10220401 电路理论 Circuit Theory Fundamental 64 4 English [1-16] Xiong Ying Siping"
+    }
+  },
+  {
+    "code": "10225702",
+    "title": "Computer Communication Networks",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2b0cb6656aa799ec26058922c7598e17137026c04cd167da322cf9f1ee83a717",
+      "locator": {
+        "page": 1,
+        "line": 11
+      },
+      "quote": "2025-2026 2 10225702 计算机通信网络 Computer Communication Networks Compulsory 48 3 English [1-16] Chen Kangli Jiading"
+    }
+  },
+  {
+    "code": "5000244003318",
+    "title": "Experiment of Electronic Technology(2)",
+    "description": "",
+    "outline": null,
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2b0cb6656aa799ec26058922c7598e17137026c04cd167da322cf9f1ee83a717",
+      "locator": {
+        "page": 1,
+        "line": 12
+      },
+      "quote": "2025-2026 2 5000244003318 电子技术实验（下） Experiment of Electronic Technology(2) Practice 8 1 English [9-16] Wei Ruihua Jiading"
+    }
+  },
+  {
+    "code": "5000244008101",
+    "title": "Electronic Equipment",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2b0cb6656aa799ec26058922c7598e17137026c04cd167da322cf9f1ee83a717",
+      "locator": {
+        "page": 1,
+        "line": 13
+      },
+      "quote": "2025-2026 2 5000244008101 电子设备（英） Electronic Equipment(English) Elective 16 2 English [4-11] Chen Kangli Jiading"
+    }
+  },
+  {
+    "code": "1080067",
+    "title": "Non-linear System",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 2
+      },
+      "quote": "2025-2026 2 1080067 非线性系统 Non-linear System 32 2 English [1-16] Zhang Changzhu Jiading"
+    }
+  },
+  {
+    "code": "1080102",
+    "title": "System Analysis and Optimization",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 3
+      },
+      "quote": "2025-2026 2 1080102 系统分析与优化 System Analysis and Optimization 48 3 English [1-16] Xu Jia Jiading"
+    }
+  },
+  {
+    "code": "1080103",
+    "title": "Advanced Integrated Circuits Design",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 4
+      },
+      "quote": "2025-2026 2 1080103 高等集成电路设计 Advanced Integrated Circuits Design 32 2 English [1-16] Qiu Lei,Yao Bingbing Jiading"
+    }
+  },
+  {
+    "code": "1080112",
+    "title": "Micro-nano opto-electronic",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 5
+      },
+      "quote": "2025-2026 2 1080112 微纳光电子学 Micro-nano opto-electronic 32 2 English [1-8] Zhou Junhe Jiading"
+    }
+  },
+  {
+    "code": "20002440002",
+    "title": "Physical-Layer Security Theory for Wireless Communications",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 6
+      },
+      "quote": "2025-2026 2 20002440002 无线通信物理层安全理论 Physical-Layer Security Theory for Wireless Communications 32 2 English [1-16] Li Zuxing Jiading"
+    }
+  },
+  {
+    "code": "20002440033",
+    "title": "Networked Systems",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 8
+      },
+      "quote": "2025-2026 2 20002440033 网络化系统 Networked Systems 32 2 English [1-16] Shang Jun, Song Yue Jiading"
+    }
+  },
+  {
+    "code": "20002440034",
+    "title": "Engineering in AI practice",
+    "description": "",
+    "outline": null,
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 9
+      },
+      "quote": "2025-2026 2 20002440034 人工智能工程管理 Engineering in AI practice 16 1 English [4-11] Yin Huilin,Alfred Hauenstein Jiading"
+    }
+  },
+  {
+    "code": "2080214",
+    "title": "Machine vision",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 10
+      },
+      "quote": "2025-2026 2 2080214 机器视觉 Machine vision 32 2 English [1-16] Dong Yanchao Jiading"
+    }
+  },
+  {
+    "code": "2080349",
+    "title": "Electronics Engineering Experiment, Practice, Society and Investigation",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 11
+      },
+      "quote": "2025-2026 2 2080349 电子工程实验、实践、社会调研课程 Electronics Engineering Experiment, Practice, Society and Investigation 32 2 English [1-16] Tong Meisong, Hu Yunyun, Wang Xiaoyi Jiading"
+    }
+  },
+  {
+    "code": "2080424",
+    "title": "Electronics Engineering Subjects",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 13
+      },
+      "quote": "2025-2026 2 2080424 电子工程专题 Electronics Engineering Subjects 32 2 English [1-16] Tong Meisong, Wen Penyan Hu Yunyun,Wang Xiaoyi Jiading"
+    }
+  },
+  {
+    "code": "2080425",
+    "title": "Radio Wave PropagationCharacterization",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 15
+      },
+      "quote": "2025-2026 2 2080425 电波传播特征分析 Radio Wave PropagationCharacterization 32 2 English [1-16] Yin Xuefeng, Jose Rodriguez Pineiro Jiading"
+    }
+  },
+  {
+    "code": "2080429",
+    "title": "Frontier Academics on Information and Communication Field",
+    "description": "",
+    "outline": null,
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+    "provenance": {
+      "url": "https://see-en.tongji.edu.cn/__local/0/A6/A1/C9B3BF97592A5D84C9FBF45FE59_D165176C_26E68.pdf",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "828b316f880419f0a26fb2f936d54b9b02fa54b2cdd51e255505a1c36743eb72",
+      "locator": {
+        "page": 1,
+        "line": 16
+      },
+      "quote": "2025-2026 2 2080429 信息与通信领域前沿 Frontier Academics on Information and Communication Field 16 1 English [9-16] Lin Lin Jiading"
+    }
+  },
+  {
+    "code": "CST239702",
+    "title": "Principles of Database and Applications",
+    "description": "",
+    "outline": null,
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 77
+      },
+      "quote": "CST239702 | Principles of Database and Applications | 4 | Spring | English"
+    }
+  },
+  {
+    "code": "CST239801",
+    "title": "Computer Network",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 78
+      },
+      "quote": "CST239801 | Computer Network | 3 | Spring | English"
+    }
+  },
+  {
+    "code": "CST349001",
+    "title": "Software Test",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 79
+      },
+      "quote": "CST349001 | Software Test | 3 | Spring | English"
+    }
+  },
+  {
+    "code": "CST348701",
+    "title": "System Analysis and Design",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 80
+      },
+      "quote": "CST348701 | System Analysis and Design | 2 | Spring | English"
+    }
+  },
+  {
+    "code": "CST349102",
+    "title": "Software Engineering Management and Economics",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 81
+      },
+      "quote": "CST349102 | Software Engineering Management and Economics | 3 | Spring | English"
+    }
+  },
+  {
+    "code": "CST352101",
+    "title": "Software Engineering",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 82
+      },
+      "quote": "CST352101 | Software Engineering | 3 | Spring | English"
+    }
+  },
+  {
+    "code": "CST239001",
+    "title": "Programming Paradigms",
+    "description": "",
+    "outline": null,
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 85
+      },
+      "quote": "CST239001 | Programming Paradigms | 4 | Fall | English"
+    }
+  },
+  {
+    "code": "CST349201",
+    "title": "Java Enterprise Application Development",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "undergrad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 86
+      },
+      "quote": "CST349201 | Java Enterprise Application Development | 3 | Fall | English"
+    }
+  },
+  {
+    "code": "CST6030",
+    "title": "Principles of Artificial Intelligence",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 94
+      },
+      "quote": "CST6030 | Principles of Artificial Intelligence | 3 | Spring | English"
+    }
+  },
+  {
+    "code": "CST6044",
+    "title": "Data mining",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 95
+      },
+      "quote": "CST6044 | Data mining | 2 | Spring | English"
+    }
+  },
+  {
+    "code": "CST6017",
+    "title": "Advanced Internet of Things technology and Applications",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 96
+      },
+      "quote": "CST6017 | Advanced Internet of Things technology and Applications | 2 | Spring | English"
+    }
+  },
+  {
+    "code": "CST6008",
+    "title": "Software Testing Analyst",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 97
+      },
+      "quote": "CST6008 | Software Testing Analyst | 3 | Spring | English"
+    }
+  },
+  {
+    "code": "CST6012",
+    "title": "Software Modeling and Analysis",
+    "description": "",
+    "outline": null,
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 98
+      },
+      "quote": "CST6012 | Software Modeling and Analysis | 3 | Spring | English"
+    }
+  },
+  {
+    "code": "CST6010",
+    "title": "Advanced Digital Image Processing",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 99
+      },
+      "quote": "CST6010 | Advanced Digital Image Processing | 2 | Spring | English"
+    }
+  },
+  {
+    "code": "CST6006",
+    "title": "Reinforcement Learning",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 100
+      },
+      "quote": "CST6006 | Reinforcement Learning | 2 | Spring | English"
+    }
+  },
+  {
+    "code": "CST600301",
+    "title": "Formal methods of software engineering",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 101
+      },
+      "quote": "CST600301 | Formal methods of software engineering | 2 | Fall | English"
+    }
+  },
+  {
+    "code": "CST600902",
+    "title": "Pattern Recognition",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 102
+      },
+      "quote": "CST600902 | Pattern Recognition | 2 | Fall | English"
+    }
+  },
+  {
+    "code": "CST601801",
+    "title": "Network models, dynamics and algorithms",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 103
+      },
+      "quote": "CST601801 | Network models, dynamics and algorithms | 2 | Fall | English"
+    }
+  },
+  {
+    "code": "CST601601",
+    "title": "Graph Signal Processing",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7974.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "2f6df4e3711cc10067ce32ec9db0aca4de5f471f78c071a2cf4fe86cd4f48a15",
+      "locator": {
+        "page": 1,
+        "line": 104
+      },
+      "quote": "CST601601 | Graph Signal Processing | 2 | Fall | English"
+    }
+  },
+  {
+    "code": "2102002",
+    "title": "Numerical Analysis",
+    "description": "",
+    "outline": null,
+    "credits": null,
+    "contactHours": null,
+    "language": "en",
+    "terms": [],
+    "level": "grad",
+    "sourceUrl": "https://fao.tongji.edu.cn/info/1129/7971.htm",
+    "provenance": {
+      "url": "https://fao.tongji.edu.cn/info/1129/7971.htm",
+      "retrievedAt": "2026-11-10T22:58:55.152Z",
+      "sha256": "bfe5f522629e26852851ea69ea9c75510a5d7d858c54467bba682c207bf17ae2",
+      "locator": {
+        "page": 1,
+        "line": 77
+      },
+      "quote": "2102002 | Numerical Analysis | Master | English"
+    }
+  }
+]

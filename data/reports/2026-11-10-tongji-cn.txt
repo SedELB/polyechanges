@@ -1,0 +1,49 @@
+Rapport de collecte : tongji-cn
+Date : 2026-11-10
+Statut : ok
+Cours actifs : 65
+Ajoutés (65) : 10018401, 10025603, 10032001, 10032101, 10032601, 10033602, 10054002, 10057402, 10071303, 10201901, 10202004, 10202601, 10204401, 10214304, 10220401, 10225702, 10500716, 10501602, 1080067, 1080102, 1080103, 1080104, 1080105, 1080106, 1080112, 1080114, 1080118, 20002440002, 20002440010, 20002440033, 20002440034, 20002440049, 20002440066, 2080214, 2080320, 2080349, 2080389, 2080424, 2080425, 2080429, 2080430, 2102002, 5000244002705, 5000244003318, 5000244008101, 5000244008601, CST239001, CST239702, CST239801, CST348701, CST349001, CST349102, CST349201, CST352101, CST600301, CST6006, CST6008, CST600902, CST6010, CST6012, CST601601, CST6017, CST601801, CST6030, CST6044
+Retirés (0) : aucun
+Modifiés (0) : aucun
+Descriptions non publiées : Les listes officielles des cours en anglais (College of Electronic and Information Engineering, école d'informatique, école de mathématiques) ne donnent que le code, le titre, les crédits, le semestre et la langue. Aucune description ni aucun syllabus n'est publié avec elles.
+
+Vérification de 5 cours tirés au hasard (2026-11-10)
+Tongji ne publie ni fiche ni syllabus par cours en accès libre (le choix de cours se fait dans un système à
+connexion). Chaque cours est donc relu dans une deuxième publication, indépendante du PDF d'où il vient : le
+tableau HTML du College of Electronic and Information Engineering sur le site du bureau des affaires
+internationales (https://fao.tongji.edu.cn/info/1129/7958.htm : code, titre, crédits, heures, langue, semestre).
+- 10220401 : « Circuit Theory », 4 crédits, anglais, printemps, 1er cycle. Conforme.
+- 10202004 : « Digital Electronic Technology », 3 crédits, anglais, printemps, 1er cycle. Conforme.
+- 20002440033 : « Networked Systems », 2 crédits, anglais, printemps, cycles supérieurs. Conforme.
+- 2080424 : « Electronics Engineering Subjects », 2 crédits, anglais, printemps, cycles supérieurs. Conforme.
+- 5000244008101 : « Electronic Equipment », 2 crédits, anglais, printemps, 1er cycle. Conforme (le code y est déformé en
+  « 5.00024E+12 » ; rangée retrouvée par le titre).
+Résultat : 5 sur 5 conformes. Limites : le tirage ne contient que des cours de l'École d'électronique et d'information
+du printemps (cette page ne couvre pas l'automne) ; les cours de l'école d'informatique et de mathématiques n'ont
+qu'une seule publication.
+
+Notes sur la fiche de l'université et sur le périmètre
+- Sources du catalogue : PDF du College of Electronic and Information Engineering (https://see-en.tongji.edu.cn/info/1042/2058.htm,
+  2059, 2014, 2013 : « 2026 Autumn / Spring - English Course List - Bachelor / Master »), pages du bureau des affaires
+  internationales pour l'école d'informatique (info/1129/7974.htm) et l'école de mathématiques (7971.htm), datées du
+  2026-03-11 (« cette liste n'est qu'une orientation, la liste réelle n'est fixée qu'au début du trimestre »).
+- Seuls les cours dont la langue est « English » sont retenus. Les cours « Bilingual » (donnés en chinois, documents
+  en anglais) sont écartés. Un cours de mécanique (Basic Theory of Machinery 1 et 2) est écarté du périmètre.
+- Codes déformés par un tableur (« 5.00024E+12 », « 2.00059E+12 ») : 1 cours du PDF d'automne (Micro-nano electronic
+  materials and devices) et deux cours de mathématiques (tous deux bilingues) ne sont pas retenus faute
+  de code utilisable.
+- Titres gardés tels que publiés, fautes comprises (« Principles andTechnology of Computer »,
+  « Radio Wave PropagationCharacterization »). « (English) » final retiré des titres.
+- Crédits : système local (colonne « Tongji Credit »). Les listes du College of Electronic and Information Engineering
+  donnent 16 heures par crédit (48 h / 3, 96 / 6, 32 / 2, 128 / 8) mais ce n'est pas une définition officielle et une
+  rangée s'écarte (Circuit Theory d'automne : 32 h / 4 crédits) ; la règle de reconnaissance des crédits étrangers cite
+  17 heures par crédit. contactHoursPerCredit laissé vide.
+- Dates de trimestre : aucun calendrier universitaire 2026-2027 en texte trouvé (calendriers par école, PDF illisibles ou
+  de 2025) ; terms laissé vide (« non publiée »).
+- Restrictions : aucune restriction de programme publiée trouvée pour les étudiants en échange ; null. (Les échanges
+  n'acceptent que des étudiants nommés par une université partenaire.)
+- Contact : incoming@tongji.edu.cn (page Contact us des échanges entrants, régions anglophones).
+- Coordonnées : 31.2827 N 121.5066 E (Wikipédia, campus de Siping) ; la valeur de MoveOn (31.262 / 121.459) est remplacée.
+- Descriptions : aucune publiée (voir plus haut).
+- Hors périmètre faute de liste lisible : la liste détaillée par cours (kdocs, rendue par JavaScript) et les cours
+  d'autres écoles (ex. School of Software Engineering, dont le site renvoie aux listes par semestre sans les publier).
