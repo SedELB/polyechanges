@@ -1578,10 +1578,10 @@
     "name": "Shanghai Jiao Tong University",
     "moveOnName": "Shanghai Jiao Tong University",
     "countryCode": "CN",
-    "city": "",
-    "lat": 31.0252,
-    "lng": 121.4338,
-    "website": "",
+    "city": "Shanghai",
+    "lat": 31.20083,
+    "lng": 121.42972,
+    "website": "https://en.sjtu.edu.cn/",
     "catalogUrl": null,
     "creditSystem": "local",
     "contactHoursPerCredit": null,
@@ -1589,10 +1589,61 @@
       "fall": null,
       "spring": null
     },
-    "restrictions": null,
+    "restrictions": "Exchange students coming to our university need to be admitted by a specific school. Once admitted, they can only choose courses from that school.",
     "exchangeContact": null,
-    "catalogPublic": true,
-    "provenance": {}
+    "catalogPublic": false,
+    "provenance": {
+      "city": {
+        "url": "https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University",
+        "retrievedAt": "2026-11-10T22:50:00.000Z",
+        "sha256": "ad2f8265b709de16ca9fe99abf71f837d149f8d7937a50bf18cad59cac985c3d",
+        "locator": {
+          "page": 1,
+          "line": 125
+        },
+        "quote": "Public university in Shanghai, China"
+      },
+      "coordinates": {
+        "url": "https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University",
+        "retrievedAt": "2026-11-10T22:50:00.000Z",
+        "sha256": "ad2f8265b709de16ca9fe99abf71f837d149f8d7937a50bf18cad59cac985c3d",
+        "locator": {
+          "page": 1,
+          "line": 139
+        },
+        "quote": "31.20083°N 121.42972°E"
+      },
+      "website": {
+        "url": "https://en.sjtu.edu.cn/",
+        "retrievedAt": "2026-11-10T22:50:00.000Z",
+        "sha256": "487733d76b8082d9221b7de887267c8fab3f9da41413a149fdde1a71eb81ce28",
+        "locator": {
+          "page": 1,
+          "line": 206
+        },
+        "quote": "Founded in 1896, Shanghai Jiao Tong University is one of China’s top universities"
+      },
+      "restrictions": {
+        "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281",
+        "retrievedAt": "2026-11-10T22:50:00.000Z",
+        "sha256": "881fa24ea4342d8328292a1923c48581ace7d1015b63613f724d49f34edc02e3",
+        "locator": {
+          "page": 1,
+          "line": 245
+        },
+        "quote": "Exchange students coming to our university need to be admitted by a specific school. Once admitted, they can only choose courses from that school."
+      },
+      "catalogPublic": {
+        "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281",
+        "retrievedAt": "2026-11-10T22:50:00.000Z",
+        "sha256": "881fa24ea4342d8328292a1923c48581ace7d1015b63613f724d49f34edc02e3",
+        "locator": {
+          "page": 1,
+          "line": 247
+        },
+        "quote": "Course selection is subject to the school's notification."
+      }
+    }
   },
   {
     "id": "snu-kr",

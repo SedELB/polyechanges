@@ -1,0 +1,32 @@
+Shanghai Jiao Tong University (sjtu-cn) : catalogue non collecté (2026-11-10)
+
+Aucun cours collecté : il n'existe pas de liste publique unique des cours en anglais lisible, et le site de la liste
+la plus proche est injoignable. Aucune protection anti-robots n'a été rencontrée.
+- Page des échanges entrants (https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281) : un
+  échangiste est admis par une école précise et ne peut choisir que les cours de cette école ; chaque école renvoie à
+  sa propre page ou à un document Feishu (rendu par JavaScript, non lisible par programme).
+- Joint Institute (UM-SJTU, ECE, cours en anglais) : https://www.ji.sjtu.edu.cn/academics/courses/present-course-offerings/
+  ne répond pas depuis ce réseau (délai de connexion dépassé sur le port 443). Pas de nouvel essai.
+- Pages de l'école d'informatique (www.cs.sjtu.edu.cn/en/Academics_Undergraduate.html, Academics_Graduate.html) :
+  réponses vides. jwc.sjtu.edu.cn : calendrier en image ou chargé dynamiquement, pas de texte lisible.
+- catalogPublic est donc faux de façon provisoire.
+
+À enregistrer depuis un navigateur (les copier à la main) :
+1. https://www.ji.sjtu.edu.cn/academics/courses/present-course-offerings/ (cours ECE en anglais du Joint Institute,
+   automne et printemps), puis la fiche de chaque cours.
+2. La liste des cours en anglais de l'école d'informatique (School of Computer Science) et de l'école d'électronique
+   (SEIEE), et de mathématiques (School of Mathematical Sciences), 1er cycle et cycles supérieurs.
+3. Le calendrier académique 2027-2028 (ou le dernier publié) : début des cours, dernier jour de cours, fin des examens.
+4. La définition officielle d'un crédit (heures de contact par crédit).
+5. Le bureau des échanges entrants (courriel de contact) : https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281
+   ne donne aucun courriel du bureau.
+
+Notes sur la fiche
+- Sourcés (Wikipédia et pages SJTU) : ville Shanghai, coordonnées 31.20083 N 121.42972 E (campus principal de Xuhui ;
+  la valeur de MoveOn, 31.0252 / 121.4338, est remplacée), website (https://en.sjtu.edu.cn/), catalogPublic,
+  restriction (admission par une école, cours de cette école seulement).
+- Vides : catalogUrl, contactHoursPerCredit, terms, exchangeContact. Dates : la fiche des échanges ne donne que des mois
+  (« FALL Semester: September 2026 – January 2027 »), jamais des jours : rien n'est déduit.
+- Sans source lisible : name (affiché « Shanghai Jiao Tong University ») et creditSystem (« local » ; aucune page lue ne
+  parle de crédits). Comme pour CityU, la provenance du nom n'est pas posée ; à refaire avec les pages enregistrées.
+- Vérification de 5 cours : impossible, aucun cours collecté.
