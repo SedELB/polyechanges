@@ -28,3 +28,10 @@ Vérification de 5 cours sur leur propre fiche (relues le 2026-11-10)
 - EECE341 Intro. to Communication Sys. : 3 crédits, niveau 300, english, automne 2026 : conforme.
 - EECE667 VLSI Ana.&Design Software : 3 crédits, niveau 600 (cycles supérieurs), english, automne 2026 : conforme.
 - MATH472 Introduction to Financial Engineering : 3 crédits, niveau 400, english, automne 2026 : conforme.
+
+Faits complétés le 2026-11-10
+Aucun. Faits restés vides
+- terms.fall.end, terms.spring.end : le calendrier officiel 2027 (https://www.postech.ac.kr/eng/academics/academic_schedule.do?mode=list&selectedYear=2027)
+  ne donne que « Final Examinations » (15 au 21 décembre ; 15 au 21 juin), jamais le dernier jour de cours. Version coréenne
+  https://www.postech.ac.kr/kor/academics/academic_schedule.do : HTTP 404. Recherche web d'une autre page de calendrier : rien.
+- restrictions : aucune restriction de programme pour les étudiants d'échange entrants trouvée sur les pages déjà lues ; reste null.

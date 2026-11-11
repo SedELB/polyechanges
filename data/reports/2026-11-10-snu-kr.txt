@@ -25,3 +25,18 @@ Pages à enregistrer à la main depuis un navigateur (étudiant)
 2. https://en.snu.ac.kr/academics/resources/calendar : l'année suivante du calendrier, quand elle sera publiée.
 
 Vérification de 5 cours : impossible (aucun cours collecté).
+
+Faits complétés le 2026-11-10
+- terms.fall.end -> 2026-12-14 -> https://en.snu.ac.kr/academics/resources/calendar (sha256 f8dcdbc8..., page 1, ligne 247) ->
+  « DECEMBER 14 (Mon) End of Fall semester classes ». Année 2026 (calendrier de l'année académique 2026, la dernière
+  publiée ; 2027-2028 n'est pas publié). L'année n'est pas dans l'extrait mais dans l'en-tête « 2026 » de la page.
+- terms.spring.end -> 2026-06-15 -> même adresse (ligne 185) -> « JUNE 15 (Mon) End of Spring semester classes ». Même remarque.
+Faits restés vides
+- terms.fall.start, terms.spring.start : sur la page, « 01 (Tue) Beginning of Fall semester classes » et
+  « 03 (Tue) Beginning of Spring semester classes » sont séparés du nom du mois par plus de 3 lignes ; la ligne « Start of
+  Fall semester » (1er septembre) est le début administratif du semestre, pas des cours : pas déduit. Même constat sur la
+  page coréenne https://www.snu.ac.kr/academics/resources/calendar (« 개강 ») et sur https://ie.snu.ac.kr/en/schedule/
+  (page d'un département, mois absent, année ancienne).
+- terms.fall.examsEnd, terms.spring.examsEnd : le calendrier ne publie pas de période d'examens finaux (seulement une
+  « période de rattrapage » après la fin des cours).
+- catalogUrl : seule la recherche de cours sugang.snu.ac.kr existe (file d'attente NetFunnel, non contournée).

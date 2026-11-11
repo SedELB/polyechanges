@@ -32,3 +32,11 @@ Mise à jour des faits
   (28 février). Fin des cours et examens du printemps 2028 : non publiés, vides.
 - contactHoursPerCredit reste vide : aucune définition officielle lisible.
 - Nom d'affichage : « KAIST », cité dans la ligne « KAIST (formerly the Korea Advanced Institute of Science and Technology) ».
+
+Faits complétés le 2026-11-10
+Aucun. Faits restés vides
+- contactHoursPerCredit : pages essayées, https://www.kaist.ac.kr/en/html/edu/03100309.html (reconnaissance de crédits) et
+  https://www.kaist.ac.kr/en/html/edu/03100307.html (limites de crédits par trimestre), aucune définition des heures par crédit ;
+  recherche web : le règlement des études n'est pas accessible en clair. cais.kaist.ac.kr toujours inaccessible.
+- terms.spring.end, terms.spring.examsEnd : le calendrier https://www.kaist.ac.kr/en/html/edu/03100101.html?year=2028 est vide après
+  le 28 février 2028 ; reprendre la fin du printemps 2027 mélangerait deux années dans un même trimestre : laissés vides.

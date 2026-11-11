@@ -15,3 +15,17 @@ sugang.korea.ac.kr, derrière une file d'attente) : aucun n'a été vérifié su
 retrouvent aussi, avec les mêmes titres et crédits, dans les listes de 2025 du même classeur.
 Résultat : 5 sur 5 conformes au classeur source.
 - Coordonnées : page Wikipédia coréenne de l'université (campus d'Anam), 37,589194 N, 127,032694 E.
+
+Faits complétés le 2026-11-10
+- terms.fall.examsEnd -> 2026-12-18 -> https://registrar.korea.edu/eduinfo_en/affairs/schedule.do (sha256 6115fa2c..., page 1,
+  ligne 202) -> « DEC | 2(수)~4(금) | Re-Admission Application Period 14(월)~18(금) | Final Examination Period 18(금) | End of Fall semester(16 weeks) ».
+  Automne 2026 (2027 non publié ; le sélecteur de la page s'arrête à l'automne 2026). Année lue dans le titre « Fall Semester 2026 Begins ».
+- terms.spring.start -> 2026-03-03 -> https://registrar.korea.edu/eduinfo/affairs/schedule.do?cYear=2026&hakGi=1&srCategoryId1=1668
+  (version coréenne, printemps 2026 ; sha256 f4075ae7..., ligne 255) ->
+  « 3월 | 1(일) | 삼일절(공휴일) 2(월) | 대체휴일 3(화) | 2026학년도 제1학기 개강 ». Printemps 2027 non publié.
+Faits restés vides
+- terms.fall.end : le dernier jour de cours n'est pas écrit ; « 종강 / End of Fall semester(16 weeks) » tombe le 18 décembre,
+  dernier jour de la période d'examens : fin administrative, laissée vide.
+- terms.spring.end, terms.spring.examsEnd : « 16(화)~22(월) Final Examination Period » (22 juin 2026) est à plus de 3 lignes du
+  mois « JUN » / « 6월 » (aussi sur la version coréenne) : le mois ne figure pas dans un extrait valable. Même raison que
+  pour la fin des cours (non écrite).

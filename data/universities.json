@@ -1071,10 +1071,10 @@
       "fall": {
         "start": "2026-09-01",
         "end": null,
-        "examsEnd": null
+        "examsEnd": "2026-12-18"
       },
       "spring": {
-        "start": null,
+        "start": "2026-03-03",
         "end": null,
         "examsEnd": null
       }
@@ -1192,6 +1192,26 @@
           "line": 71
         },
         "quote": "2026-2 Course Catalog"
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://registrar.korea.edu/eduinfo_en/affairs/schedule.do",
+        "retrievedAt": "2026-11-10T20:53:53.935Z",
+        "sha256": "6115fa2cd46477343ac1005ce3d471e58248153d403579afb4518f819ac6d5f9",
+        "locator": {
+          "page": 1,
+          "line": 202
+        },
+        "quote": "DEC | 2(수)~4(금) | Re-Admission Application Period 14(월)~18(금) | Final Examination Period 18(금) | End of Fall semester(16 weeks)"
+      },
+      "terms.spring.start": {
+        "url": "https://registrar.korea.edu/eduinfo/affairs/schedule.do?cYear=2026&hakGi=1&srCategoryId1=1668",
+        "retrievedAt": "2026-11-10T23:16:56.902Z",
+        "sha256": "f4075ae700597bfe3cfb66c50c13386ac1c7168864904d68efa5aac503760753",
+        "locator": {
+          "page": 1,
+          "line": 255
+        },
+        "quote": "3월 | 1(일) | 삼일절(공휴일) 2(월) | 대체휴일 3(화) | 2026학년도 제1학기 개강"
       }
     }
   },
@@ -1368,8 +1388,16 @@
     "creditSystem": "local",
     "contactHoursPerCredit": 15,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": null,
+        "end": "2026-12-14",
+        "examsEnd": null
+      },
+      "spring": {
+        "start": null,
+        "end": "2026-06-15",
+        "examsEnd": null
+      }
     },
     "restrictions": "Undergraduate applicants for Dept. of Computer Science and Engineering must have earned at least 15 credits in CSE-related courses",
     "exchangeContact": "incoming@snu.ac.kr",
@@ -1464,6 +1492,26 @@
           "line": 204
         },
         "quote": "in the course search of the registration website"
+      },
+      "terms.fall.end": {
+        "url": "https://en.snu.ac.kr/academics/resources/calendar",
+        "retrievedAt": "2026-11-10T23:15:41.421Z",
+        "sha256": "f8dcdbc816b4f750695255ec62edae16064747e065929ff3ef3757b784152268",
+        "locator": {
+          "page": 1,
+          "line": 247
+        },
+        "quote": "DECEMBER 14 (Mon) End of Fall semester classes"
+      },
+      "terms.spring.end": {
+        "url": "https://en.snu.ac.kr/academics/resources/calendar",
+        "retrievedAt": "2026-11-10T23:15:41.421Z",
+        "sha256": "f8dcdbc816b4f750695255ec62edae16064747e065929ff3ef3757b784152268",
+        "locator": {
+          "page": 1,
+          "line": 185
+        },
+        "quote": "JUNE 15 (Mon) End of Spring semester classes"
       }
     }
   },
