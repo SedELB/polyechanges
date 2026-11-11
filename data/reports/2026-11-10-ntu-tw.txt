@@ -1,3 +1,4 @@
+=== collecte automatique ===
 Rapport de collecte : ntu-tw
 Date : 2026-11-10
 Statut : ok
@@ -5,6 +6,7 @@ Cours actifs : 96
 Ajoutés (0) : aucun
 Retirés (0) : aucun
 Modifiés (0) : aucun
+=== fin de la collecte automatique ===
 
 Vérification de 5 cours tirés au hasard (2026-11-10)
 Chaque cours est relu sur sa propre fiche (print_table.php, téléchargée de nouveau) : titre, crédits, trimestre

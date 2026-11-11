@@ -1,3 +1,4 @@
+=== collecte automatique ===
 Rapport de collecte : doshisha-jp
 Date : 2026-11-10
 Statut : ok
@@ -6,6 +7,7 @@ Ajoutés (4) : 99200024, 99200025, 99200027, 99200029
 Retirés (0) : aucun
 Modifiés (0) : aucun
 Descriptions non publiées : La liste officielle des cours du Global Education Module (PDF) ne donne que le code, le titre, l'enseignant, le campus, le trimestre et les crédits. Les syllabus (syllabus.doshisha.ac.jp) répondent 403 Forbidden, robots.txt compris, et ne sont donc pas lisibles par programme.
+=== fin de la collecte automatique ===
 
 Notes sur la collecte
 - Source : liste « Course List of GEM Program » 2026 (PDF du bureau des étudiants internationaux, page du Global Education

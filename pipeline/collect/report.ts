@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { CollectionDiff } from '../db/hostCourses.js';
 
@@ -35,10 +35,31 @@ export function renderReport(r: ReportInput): string {
   return lines.join('\n') + '\n';
 }
 
-/** Écrit `<dir>/<AAAA-MM-JJ>-<sourceId>.txt` et renvoie son chemin. */
+/** Marques qui délimitent la partie du rapport écrite par la collecte ; le reste du fichier est à la main. */
+export const BLOCK_START = '=== collecte automatique ===';
+export const BLOCK_END = '=== fin de la collecte automatique ===';
+
+/**
+ * Écrit `<dir>/<AAAA-MM-JJ>-<sourceId>.txt` et renvoie son chemin. Seul le bloc entre les deux marques est
+ * remplacé ; les notes ajoutées à la main restent. Fichier neuf : le bloc seul. Fichier sans marques : le bloc
+ * est placé en tête, le contenu existant suit.
+ */
 export function writeReport(dir: string, r: ReportInput): string {
   mkdirSync(dir, { recursive: true });
   const path = join(dir, `${r.date}-${r.sourceId}.txt`);
-  writeFileSync(path, renderReport(r), 'utf8');
+  const block = `${BLOCK_START}\n${renderReport(r)}${BLOCK_END}\n`;
+  let text = block;
+  if (existsSync(path)) {
+    const old = readFileSync(path, 'utf8');
+    const start = old.indexOf(BLOCK_START);
+    const end = old.indexOf(BLOCK_END, start + 1);
+    if (start >= 0 && end > start) {
+      const tail = old.slice(end + BLOCK_END.length).replace(/^\r?\n/, '');
+      text = old.slice(0, start) + block + tail;
+    } else if (old !== '') {
+      text = `${block}\n${old}`;
+    }
+  }
+  writeFileSync(path, text, 'utf8');
   return path;
 }

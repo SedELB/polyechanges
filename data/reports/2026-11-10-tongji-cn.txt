@@ -1,3 +1,4 @@
+=== collecte automatique ===
 Rapport de collecte : tongji-cn
 Date : 2026-11-10
 Statut : ok
@@ -6,6 +7,7 @@ Ajoutés (65) : 10018401, 10025603, 10032001, 10032101, 10032601, 10033602, 1005
 Retirés (0) : aucun
 Modifiés (0) : aucun
 Descriptions non publiées : Les listes officielles des cours en anglais (College of Electronic and Information Engineering, école d'informatique, école de mathématiques) ne donnent que le code, le titre, les crédits, le semestre et la langue. Aucune description ni aucun syllabus n'est publié avec elles.
+=== fin de la collecte automatique ===
 
 Vérification de 5 cours tirés au hasard (2026-11-10)
 Tongji ne publie ni fiche ni syllabus par cours en accès libre (le choix de cours se fait dans un système à

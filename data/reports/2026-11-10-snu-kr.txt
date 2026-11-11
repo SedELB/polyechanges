@@ -1,7 +1,9 @@
+=== collecte automatique ===
 Rapport de collecte : snu-kr
 Date : 2026-11-10
 Statut : non collecté (catalogue derrière une file d'attente)
 Cours actifs : 0
+=== fin de la collecte automatique ===
 
 Notes sur la collecte
 - Le seul catalogue public est la recherche de cours du système d'inscription (sugang.snu.ac.kr). Sa page d'entrée

@@ -1,3 +1,4 @@
+=== collecte automatique ===
 Rapport de collecte : nagoya-jp
 Date : 2026-11-10
 Statut : ok
@@ -5,6 +6,7 @@ Cours actifs : 36
 Ajoutés (0) : aucun
 Retirés (3) : 2520054, 2520064, 2520065
 Modifiés (0) : aucun
+=== fin de la collecte automatique ===
 
 Notes sur la collecte
 - Source : la page officielle « Courses & Syllabi » du programme d'échange NUPACE (https://nupace.iee.nagoya-u.ac.jp/en/academic/overview.html), qui liste les cours

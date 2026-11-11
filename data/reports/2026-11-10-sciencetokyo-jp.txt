@@ -1,3 +1,4 @@
+=== collecte automatique ===
 Rapport de collecte : sciencetokyo-jp
 Date : 2026-11-10
 Statut : ok
@@ -5,6 +6,7 @@ Cours actifs : 53
 Ajoutés (53) : CSC.T421, CSC.T422, CSC.T426, CSC.T431, CSC.T438, CSC.T440, EEE.C441, EEE.D402, EEE.D422, EEE.D431, EEE.D442, EEE.D443, EEE.D444, EEE.D471, EEE.P402, EEE.P412, EEE.P414, EEE.P451, EEE.P461, EEE.S401, EEE.S451, ICT.A406, ICT.A418, ICT.C401, ICT.H409, ICT.H411, ICT.I415, ICT.I419, ICT.I420, ICT.S407, MCS.M421, MCS.M428, MCS.M429, MCS.M430, MCS.M431, MCS.T403, MCS.T408, MCS.T410, MCS.T412, MCS.T416, MCS.T419, MTH.A401, MTH.A402, MTH.A403, MTH.A404, MTH.B401, MTH.B402, MTH.B403, MTH.B404, MTH.C401, MTH.C402, MTH.C403, MTH.C404
 Retirés (0) : aucun
 Modifiés (0) : aucun
+=== fin de la collecte automatique ===
 
 Notes sur la collecte
 - Source : deux listes officielles du bureau des échanges, « List of Graduate Courses Available to Undergraduate-level International Exchange Students »
