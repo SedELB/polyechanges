@@ -6,7 +6,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import type { Provenance, University } from '../../shared/types.js';
 import { parseUniversities } from '../partners/registry.js';
 import { makePdf } from './testPdf.js';
-import { missingProvenance, verifyAll, verifyProvenance } from './verify.js';
+import { contextProblem, missingProvenance, verifyAll, verifyProvenance } from './verify.js';
 
 const html = '<html><body><h1>Academic Calendar</h1><ul><li>Fall semester begins: September 7, 2026</li><li>Final exams end: January 8, 2027</li></ul></body></html>';
 const sha = (b: Buffer) => createHash('sha256').update(b).digest('hex');
@@ -111,5 +111,59 @@ describe('extrait sur plusieurs lignes', () => {
     const q = '03-03 Classes begin';
     expect(await verifyProvenance(prov(hash, 1, q), rawDir)).toEqual({ status: 'inchangé', found: { page: 1, line: 1 } });
     expect(await verifyProvenance(prov(hash, 3, q), rawDir)).toEqual({ status: 'déplacé', found: { page: 1, line: 1 } });
+  });
+});
+
+describe('contextProblem', () => {
+  const main = prov('a'.repeat(64), 5, 'Classes begin March 3');
+  const withCtx = (line: number, quote = '2026 Academic Calendar', page = 1): Provenance => ({ ...main, context: { locator: { page, line }, quote } });
+  it('permet un contexte sur une date, avant l’extrait principal', () => {
+    expect(contextProblem('terms.fall.start', withCtx(2))).toBeNull();
+    expect(contextProblem('terms.spring.examsEnd', withCtx(2))).toBeNull();
+    expect(contextProblem('terms.fall.start', main)).toBeNull();
+  });
+  it('refuse un contexte sur un fait qui n’est pas une date', () => {
+    expect(contextProblem('contactHoursPerCredit', withCtx(2))).toMatch(/dates/);
+  });
+  it('refuse un contexte qui ne précède pas l’extrait principal', () => {
+    expect(contextProblem('terms.fall.start', withCtx(5))).toMatch(/précéder/);
+    expect(contextProblem('terms.fall.start', withCtx(9))).toMatch(/précéder/);
+    expect(contextProblem('terms.fall.start', { ...main, locator: { page: 2, line: 1 }, context: { locator: { page: 1, line: 9 }, quote: '2026 Academic Calendar' } })).toBeNull();
+  });
+  it('refuse un contexte trop court', () => {
+    expect(contextProblem('terms.fall.start', withCtx(2, 'March'))).toMatch(/court/);
+  });
+});
+
+describe('contexte et vérification hors ligne', () => {
+  const doc = '<html><body><h1>2026 Academic Calendar</h1><p>December</p><p>12-14 (Mon) Final exams end</p></body></html>';
+  const uni = (provenance: Record<string, Provenance>): University => ({
+    id: 'x', name: 'X University', moveOnName: 'X', countryCode: 'TW', city: '', lat: 1, lng: 2,
+    website: '', catalogUrl: null, creditSystem: 'local', contactHoursPerCredit: null,
+    terms: { fall: null, spring: null }, restrictions: null, exchangeContact: null, catalogPublic: true, provenance,
+  });
+  const ctx = (line: number, quote: string) => ({ locator: { page: 1, line }, quote });
+  it('un contexte exact laisse le fait inchangé', async () => {
+    const hash = store(Buffer.from(doc), 'html');
+    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: ctx(1, '2026 Academic Calendar') };
+    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'inchangé', found: { page: 1, line: 3 }, contextFound: { page: 1, line: 1 } });
+    expect((await verifyAll([uni({ 'terms.fall.end': p })], rawDir)).problems).toEqual([]);
+  });
+  it('un contexte introuvable met le fait en problème', async () => {
+    const hash = store(Buffer.from(doc), 'html');
+    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: ctx(1, '2025 Academic Calendar') };
+    expect((await verifyProvenance(p, rawDir)).status).toBe('introuvable');
+    expect((await verifyAll([uni({ 'terms.fall.end': p })], rawDir)).problems.map((q) => q.status)).toEqual(['introuvable']);
+  });
+  it('un contexte déplacé rend le fait déplacé', async () => {
+    const hash = store(Buffer.from(doc), 'html');
+    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: ctx(2, '2026 Academic Calendar') };
+    expect((await verifyProvenance(p, rawDir)).status).toBe('déplacé');
+  });
+  it('une règle de contexte non respectée est un problème', async () => {
+    const hash = store(Buffer.from(doc), 'html');
+    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: ctx(1, '2026 Academic Calendar') };
+    const res = await verifyAll([uni({ contactHoursPerCredit: p })], rawDir);
+    expect(res.problems.map((q) => [q.fact, q.status])).toEqual([['contactHoursPerCredit', 'contexte_invalide']]);
   });
 });

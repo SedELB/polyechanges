@@ -101,3 +101,14 @@ describe('relocateFactSources, extrait sur plusieurs lignes', () => {
     expect(JSON.parse(readFileSync(path, 'utf8'))[0].provenance.a.locator).toEqual({ page: 1, line: 1 });
   });
 });
+
+describe('relocateFactSources avec contexte', () => {
+  it('recale aussi la position du contexte', async () => {
+    write({ 'terms.fall.start': { ...prov(2, QUOTE), context: { locator: { page: 1, line: 7 }, quote: 'Calendar' } } });
+    const r = await relocateFactSources(path, rawDir);
+    expect(r.moved).toHaveLength(1);
+    const p = JSON.parse(readFileSync(path, 'utf8'))[0].provenance['terms.fall.start'];
+    expect(p.locator).toEqual({ page: 1, line: 2 });
+    expect(p.context).toEqual({ locator: { page: 1, line: 1 }, quote: 'Calendar' });
+  });
+});

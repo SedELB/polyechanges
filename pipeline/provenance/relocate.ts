@@ -3,7 +3,7 @@ import { dirname, join } from 'node:path';
 import type { Db } from '../db/open.js';
 import type { Provenance, UniversityFact } from '../../shared/types.js';
 import { findCode, snapshotText } from './snapshotText.js';
-import { findRawCopy, verifyProvenance, type FactProblem, type MovedFact } from './verify.js';
+import { contextProblem, findRawCopy, verifyProvenance, type FactProblem, type MovedFact } from './verify.js';
 
 type RawUniversity = { id: string; provenance?: Partial<Record<UniversityFact, Provenance>> } & Record<string, unknown>;
 
@@ -26,12 +26,21 @@ export async function relocateFactSources(universitiesPath: string, rawDir: stri
     for (const [fact, p] of Object.entries(u.provenance ?? {}) as [UniversityFact, Provenance][]) {
       out.total++;
       if (p.stale) out.problems.push({ universityId: u.id, fact, status: 'stale', provenance: p });
-      const { status, found } = await verifyProvenance(p, rawDir);
+      const invalid = contextProblem(fact, p);
+      if (invalid) out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: invalid });
+      const { status, found, contextFound } = await verifyProvenance(p, rawDir);
       if (status === 'introuvable' || status === 'copie_absente') {
         out.problems.push({ universityId: u.id, fact, status, provenance: p });
-      } else if (status === 'déplacé' && found) {
-        out.moved.push({ universityId: u.id, fact, from: p.locator, to: found });
-        p.locator = { page: found.page, line: found.line };
+      } else if (status === 'déplacé') {
+        if (found && (found.page !== p.locator.page || found.line !== p.locator.line)) {
+          out.moved.push({ universityId: u.id, fact, from: p.locator, to: found });
+          p.locator = { page: found.page, line: found.line };
+        }
+        const c = p.context;
+        if (c && contextFound && (contextFound.page !== c.locator.page || contextFound.line !== c.locator.line)) {
+          out.moved.push({ universityId: u.id, fact, from: c.locator, to: contextFound, context: true });
+          c.locator = { page: contextFound.page, line: contextFound.line };
+        }
       } else {
         out.unchanged++;
       }

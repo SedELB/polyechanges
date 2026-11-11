@@ -20,6 +20,9 @@ export function FactSource({ label, provenance }: { label: string; provenance: P
           </a>
           <span>consulté le {provenance.retrievedAt}</span>
           <span className="fact-source__quote">{`« ${provenance.quote} »`}</span>
+          {provenance.context && (
+            <span className="fact-source__quote">{`Contexte : « ${provenance.context.quote} » (ligne ${provenance.context.locator.line})`}</span>
+          )}
           {provenance.stale && <span>extrait introuvable lors du dernier rafraîchissement</span>}
         </span>
       </details>

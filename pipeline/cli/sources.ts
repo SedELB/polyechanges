@@ -59,7 +59,7 @@ async function find(sha256: string, text: string): Promise<number> {
 async function verify(): Promise<number> {
   const { total, problems } = await verifyAll(loadUniversities(), RAW_DIR);
   for (const p of problems) {
-    console.log(`${p.status} : ${p.universityId}, ${p.fact}, ${p.provenance.url} (${p.provenance.sha256.slice(0, 12)}) « ${p.provenance.quote} »`);
+    console.log(`${p.status} : ${p.universityId}, ${p.fact}, ${p.provenance.url} (${p.provenance.sha256.slice(0, 12)}) « ${p.provenance.quote} »${p.detail ? ` : ${p.detail}` : ''}`);
   }
   console.log(`${total} source(s) vérifiée(s), ${problems.length} problème(s).`);
   if (problems.some((p) => p.status === 'déplacé')) console.log('Position inexacte : lance npm run verify-sources -- --fix');
@@ -70,10 +70,10 @@ async function verify(): Promise<number> {
 async function fix(): Promise<number> {
   const r = await relocateFactSources(UNIVERSITIES_PATH, RAW_DIR);
   for (const m of r.moved) {
-    console.log(`recalé : ${m.universityId}, ${m.fact} (p${m.from.page}:l${m.from.line} -> p${m.to.page}:l${m.to.line})`);
+    console.log(`recalé${m.context ? ' (contexte)' : ''} : ${m.universityId}, ${m.fact} (p${m.from.page}:l${m.from.line} -> p${m.to.page}:l${m.to.line})`);
   }
   for (const p of r.problems) {
-    console.log(`${p.status} : ${p.universityId}, ${p.fact}, ${p.provenance.url} (${p.provenance.sha256.slice(0, 12)}) « ${p.provenance.quote} »`);
+    console.log(`${p.status} : ${p.universityId}, ${p.fact}, ${p.provenance.url} (${p.provenance.sha256.slice(0, 12)}) « ${p.provenance.quote} »${p.detail ? ` : ${p.detail}` : ''}`);
   }
   console.log(`faits : ${r.total} source(s), ${r.moved.length} recalée(s), ${r.unchanged} inchangée(s), ${r.problems.length} problème(s).`);
   const db = openDb(DB_PATH);

@@ -60,6 +60,7 @@ const ordered = (p: Provenance, stale: boolean): Provenance => ({
   sha256: p.sha256,
   locator: { page: p.locator.page, line: p.locator.line },
   quote: p.quote,
+  ...(p.context ? { context: { locator: { page: p.context.locator.page, line: p.context.locator.line }, quote: p.context.quote } } : {}),
   ...(stale ? { stale: true as const } : {}),
 });
 
@@ -112,13 +113,16 @@ export async function refreshFactSources(
         result.missing.push({ universityId: u.id, fact, url: p.url, quote: p.quote, nearest: [], error: page?.error });
         continue;
       }
-      const { status, found } = locateInPages(page.pages, p);
+      const { status, found, contextFound } = locateInPages(page.pages, p);
       result.counts[status]++;
-      if (found) {
-        next[fact] = ordered({ ...p, sha256: page.sha256, retrievedAt: now, locator: found }, false);
+      if (status !== 'introuvable' && found) {
+        const context = p.context && contextFound ? { ...p.context, locator: contextFound } : p.context;
+        next[fact] = ordered({ ...p, sha256: page.sha256, retrievedAt: now, locator: found, context }, false);
       } else {
         next[fact] = ordered(p, true);
-        result.missing.push({ universityId: u.id, fact, url: p.url, quote: p.quote, nearest: nearestLines(page.pages, p.quote) });
+        // Le texte perdu est l'extrait principal, ou le contexte quand seul lui manque.
+        const lost = found && p.context ? p.context.quote : p.quote;
+        result.missing.push({ universityId: u.id, fact, url: p.url, quote: lost, nearest: nearestLines(page.pages, lost) });
       }
     }
     if (JSON.stringify(next) !== JSON.stringify(u.provenance)) {

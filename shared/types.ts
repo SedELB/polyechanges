@@ -22,6 +22,8 @@ export interface Provenance {
   locator: { page: number; line: number };
   /** Extrait exact, mot pour mot. */
   quote: string;
+  /** Second extrait exact de la même copie, qui donne l'année ou le mois d'une date éloignée de son extrait principal. */
+  context?: { locator: { page: number; line: number }; quote: string };
   /** Posé par le rafraîchissement quand l'extrait est introuvable. */
   stale?: true;
 }
