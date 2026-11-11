@@ -197,3 +197,51 @@ describe('contexte répété dans la copie', () => {
     expect(res.problems.map((q) => q.status)).toEqual(['contexte_invalide']);
   });
 });
+
+describe('contexte dans une copie PDF', () => {
+  const uni = (provenance: Record<string, Provenance>): University => ({
+    id: 'x', name: 'X University', moveOnName: 'X', countryCode: 'TW', city: '', lat: 1, lng: 2,
+    website: '', catalogUrl: null, creditSystem: 'local', contactHoursPerCredit: null,
+    terms: { fall: null, spring: null }, restrictions: null, exchangeContact: null, catalogPublic: true, provenance,
+  });
+  const TITLE = '2026 Fall Academic Calendar';
+  const MAIN = 'Sept 14 Classes Begin';
+  const withCtx = (hash: string, mainLine: number, ctxLine: number, ctxPage = 1): Provenance => ({
+    ...prov(hash, mainLine, MAIN),
+    context: { locator: { page: ctxPage, line: ctxLine }, quote: TITLE },
+  });
+  it('contextProblem : même page permise après l’extrait principal en PDF seulement', () => {
+    const p = withCtx('a'.repeat(64), 1, 3);
+    expect(contextProblem('terms.fall.start', p, 'pdf')).toBeNull();
+    expect(contextProblem('terms.fall.start', p, 'html')).toMatch(/précéder/);
+    expect(contextProblem('terms.fall.start', p)).toMatch(/précéder/);
+    expect(contextProblem('terms.fall.start', p, null)).toBeNull();
+    const later: Provenance = { ...p, context: { locator: { page: 2, line: 1 }, quote: TITLE } };
+    expect(contextProblem('terms.fall.start', later, 'pdf')).toMatch(/page/);
+  });
+  it('titre après les événements, sur la même page : inchangé', async () => {
+    const hash = store(makePdf([[MAIN, 'Oct 1 Holiday', TITLE]]), 'pdf');
+    const p = withCtx(hash, 1, 3);
+    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'inchangé', found: { page: 1, line: 1 }, contextFound: { page: 1, line: 3 } });
+    expect((await verifyAll([uni({ 'terms.fall.start': p })], rawDir)).problems).toEqual([]);
+  });
+  it('choisit l’occurrence de la page la plus proche, à égalité la plus tôt', async () => {
+    const hash = store(makePdf([[TITLE, 'x one', 'x two', MAIN, 'y one', TITLE]]), 'pdf');
+    expect((await verifyProvenance(withCtx(hash, 4, 1), rawDir)).contextFound).toEqual({ page: 1, line: 6 });
+    const hash2 = store(makePdf([[TITLE, MAIN, 'y one', 'y two', TITLE]]), 'pdf');
+    expect((await verifyProvenance(withCtx(hash2, 2, 5), rawDir)).contextFound).toEqual({ page: 1, line: 1 });
+    const hash3 = store(makePdf([[TITLE, 'a', MAIN, 'b', TITLE]]), 'pdf');
+    expect((await verifyProvenance(withCtx(hash3, 3, 5), rawDir)).contextFound).toEqual({ page: 1, line: 1 });
+  });
+  it('à défaut de la page, la dernière occurrence d’une page antérieure', async () => {
+    const hash = store(makePdf([[TITLE, 'p1'], [TITLE, 'p2'], [MAIN]]), 'pdf');
+    const p: Provenance = { ...prov(hash, 1, MAIN), locator: { page: 3, line: 1 }, context: { locator: { page: 1, line: 1 }, quote: TITLE } };
+    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'déplacé', found: { page: 3, line: 1 }, contextFound: { page: 2, line: 1 } });
+  });
+  it('titre seulement sur une page postérieure : contexte_invalide', async () => {
+    const hash = store(makePdf([[MAIN], [TITLE, 'p2']]), 'pdf');
+    const p: Provenance = { ...prov(hash, 1, MAIN), context: { locator: { page: 1, line: 1 }, quote: TITLE } };
+    const res = await verifyAll([uni({ 'terms.fall.start': { ...p, locator: { page: 1, line: 1 }, context: { locator: { page: 1, line: 2 }, quote: TITLE } } })], rawDir);
+    expect(res.problems.map((q) => q.status)).toContain('contexte_invalide');
+  });
+});

@@ -3,7 +3,7 @@ import { dirname, join } from 'node:path';
 import type { Db } from '../db/open.js';
 import type { Provenance, UniversityFact } from '../../shared/types.js';
 import { findCode, snapshotText } from './snapshotText.js';
-import { contextProblem, findRawCopy, verifyProvenance, type FactProblem, type MovedFact } from './verify.js';
+import { contextProblem, findRawCopy, rawKind, verifyProvenance, type FactProblem, type MovedFact } from './verify.js';
 
 type RawUniversity = { id: string; provenance?: Partial<Record<UniversityFact, Provenance>> } & Record<string, unknown>;
 
@@ -26,11 +26,13 @@ export async function relocateFactSources(universitiesPath: string, rawDir: stri
     for (const [fact, p] of Object.entries(u.provenance ?? {}) as [UniversityFact, Provenance][]) {
       out.total++;
       if (p.stale) out.problems.push({ universityId: u.id, fact, status: 'stale', provenance: p });
-      const invalid = contextProblem(fact, p);
+      const copy = findRawCopy(p.sha256, rawDir);
+      const kind = copy ? rawKind(copy.contentType) : null;
+      const invalid = contextProblem(fact, p, kind);
       if (invalid) out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: invalid });
       const { status, found, contextFound, contextMisplaced } = await verifyProvenance(p, rawDir);
       if (contextMisplaced) {
-        out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: 'aucune occurrence du contexte avant l’extrait principal' });
+        out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: 'aucune occurrence du contexte à un endroit admis par rapport à l’extrait principal' });
       } else if (status === 'introuvable' || status === 'copie_absente') {
         out.problems.push({ universityId: u.id, fact, status, provenance: p });
       } else if (status === 'déplacé') {
@@ -46,7 +48,7 @@ export async function relocateFactSources(universitiesPath: string, rawDir: stri
           next.context.locator = { page: contextFound.page, line: contextFound.line };
         }
         // L'ordre est revérifié sur les positions recalées : rien n'est écrit si le contexte ne précède plus.
-        const after = contextProblem(fact, next);
+        const after = contextProblem(fact, next, kind);
         if (after) {
           out.problems.push({ universityId: u.id, fact, status: 'contexte_invalide', provenance: p, detail: after });
         } else if (moves.length === 0) {

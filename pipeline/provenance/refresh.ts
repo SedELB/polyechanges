@@ -6,7 +6,7 @@ import { readSnapshot, takeSnapshot } from '../fetch/snapshots.js';
 import { loadUniversities, syncUniversities } from '../partners/registry.js';
 import type { Provenance, UniversityFact } from '../../shared/types.js';
 import { snapshotText } from './snapshotText.js';
-import { contextProblem, locateInPages, type FactStatus } from './verify.js';
+import { contextProblem, locateInPages, rawKind, type FactStatus } from './verify.js';
 
 export const factsSourceId = (universityId: string): string => `facts-${universityId}`;
 
@@ -87,7 +87,7 @@ export async function refreshFactSources(
     missing: [],
     errors: [],
   };
-  const pagesByUrl = new Map<string, { sha256: string; pages: string[][] } | { error: string }>();
+  const pagesByUrl = new Map<string, { sha256: string; pages: string[][]; contentType: string } | { error: string }>();
   let changed = false;
 
   for (const u of raw) {
@@ -98,7 +98,7 @@ export async function refreshFactSources(
         try {
           const snap = await takeSnapshot(db, fetcher, ensureFactsSource(db, u.id, p.url), p.url, rawDir);
           const pages = await snapshotText(readSnapshot(snap, rawDir), snap.contentType);
-          pagesByUrl.set(p.url, { sha256: snap.sha256, pages });
+          pagesByUrl.set(p.url, { sha256: snap.sha256, pages, contentType: snap.contentType });
         } catch (err) {
           const error = err instanceof Error ? err.message : String(err);
           pagesByUrl.set(p.url, { error });
@@ -113,13 +113,13 @@ export async function refreshFactSources(
         result.missing.push({ universityId: u.id, fact, url: p.url, quote: p.quote, nearest: [], error: page?.error });
         continue;
       }
-      const { status, found, contextFound } = locateInPages(page.pages, p);
+      const { status, found, contextFound } = locateInPages(page.pages, p, rawKind(page.contentType));
       result.counts[status]++;
       const context = p.context && contextFound ? { ...p.context, locator: contextFound } : p.context;
       const updated: Provenance | null =
         status !== 'introuvable' && found ? { ...p, sha256: page.sha256, retrievedAt: now, locator: found, context } : null;
       // L'ordre est revérifié sur les positions recalées avant d'écrire quoi que ce soit.
-      if (updated && contextProblem(fact, updated) === null) {
+      if (updated && contextProblem(fact, updated, rawKind(page.contentType)) === null) {
         next[fact] = ordered(updated, false);
       } else {
         next[fact] = ordered(p, true);
