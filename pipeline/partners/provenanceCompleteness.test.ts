@@ -8,8 +8,6 @@ import { loadUniversities } from './registry.js';
 const UNSOURCED_ALLOWED: Record<string, UniversityFact[]> = {
   // catalogue bloqué : Incapsula
   'cityu-hk': ['creditSystem', 'catalogPublic'],
-  // hôte injoignable : Joint Institute, aucune page lisible ne définit le crédit
-  'sjtu-cn': ['creditSystem'],
 };
 
 describe('sources des faits du registre', () => {

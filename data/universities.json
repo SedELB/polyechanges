@@ -60,7 +60,7 @@
     "lat": 31.025393,
     "lng": 121.436348,
     "website": "https://en.sjtu.edu.cn/",
-    "catalogUrl": null,
+    "catalogUrl": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/",
     "creditSystem": "local",
     "contactHoursPerCredit": null,
     "terms": {
@@ -68,8 +68,8 @@
       "spring": null
     },
     "restrictions": "More than 30 schools/departments at SJTU which are open to university-level exchange students to choose. Exchange students coming to our university need to be admitted by a specific school. Once admitted, they can only choose courses from that school. If they wish to select courses from another school, they must obtain prior approval from the relevant faculty.",
-    "exchangeContact": null,
-    "catalogPublic": false,
+    "exchangeContact": "isc.exchange@sjtu.edu.cn",
+    "catalogPublic": true,
     "provenance": {
       "name": {
         "url": "https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University",
@@ -122,14 +122,44 @@
         "quote": "More than 30 schools/departments at SJTU which are open to university-level exchange students to choose. Exchange students coming to our university need to be admitted by a specific school. Once admitted, they can only choose courses from that school. If they wish to select courses from another school, they must obtain prior approval from the relevant faculty."
       },
       "catalogPublic": {
+        "url": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/",
+        "retrievedAt": "2026-11-10T23:34:47.481Z",
+        "sha256": "2711e1618a1261b0df84ce55036309e9bc2b0920adba9f98e2002ade1fc6d328",
+        "locator": {
+          "page": 1,
+          "line": 56
+        },
+        "quote": "SJTU GC > Academics > Courses > Courses Directory by Number"
+      },
+      "catalogUrl": {
+        "url": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/",
+        "retrievedAt": "2026-11-10T23:34:47.481Z",
+        "sha256": "2711e1618a1261b0df84ce55036309e9bc2b0920adba9f98e2002ade1fc6d328",
+        "locator": {
+          "page": 1,
+          "line": 56
+        },
+        "quote": "SJTU GC > Academics > Courses > Courses Directory by Number"
+      },
+      "exchangeContact": {
         "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281",
         "retrievedAt": "2026-11-10T22:50:00.000Z",
         "sha256": "881fa24ea4342d8328292a1923c48581ace7d1015b63613f724d49f34edc02e3",
         "locator": {
           "page": 1,
-          "line": 246
+          "line": 357
         },
-        "quote": "Due to limitations in the language of instruction and course capacity at our university, we need the students to be flexible in their course selection. For the most updated information about majors and courses, please consult with the School / Department. Course selection is subject to the school's notification."
+        "quote": "Email: isc.exchange@sjtu.edu.cn"
+      },
+      "creditSystem": {
+        "url": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/course-info/?id=246",
+        "retrievedAt": "2026-11-10T23:35:20.701Z",
+        "sha256": "b2d2eff910f69e1cbcdcd55ffe6623d097b12c61f6a041b59c950ac41d175272",
+        "locator": {
+          "page": 1,
+          "line": 140
+        },
+        "quote": "Credits: 4 credits"
       }
     }
   },

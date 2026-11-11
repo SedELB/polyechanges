@@ -1,39 +1,56 @@
-Shanghai Jiao Tong University (sjtu-cn) : catalogue non collecté (2026-11-10)
+Rapport de collecte : sjtu-cn
+Date : 2026-11-10
+Statut : ok
+Cours actifs : 120
+Ajoutés (120) : CS2810J, CS3620J, CS4440J, CS4450J, CS4620J, CS4650J, CS4750J, CS4770J, CS4800J, CS4810J, CS4820J, CS4821J, CS4830J, CS4840J, CS4880J, CS4890J, CS4920J, DS4720J, DS4721J, DS4760J, DS4761J, ECE2150J, ECE2160J, ECE2300J, ECE2700J, ECE2800J, ECE3110J, ECE3120J, ECE3200J, ECE3300J, ECE3340J, ECE3510J, ECE3700J, ECE3730J, ECE4010J, ECE4110J, ECE4130J, ECE4140J, ECE4200J, ECE4210J, ECE4230J, ECE4270J, ECE4310J, ECE4340J, ECE4380J, ECE4410J, ECE4411J, ECE4500J, ECE4530J, ECE4550J, ECE4580J, ECE4600J, ECE4620J, ECE4700J, ECE4710J, ECE4711J, ECE4730J, ECE4810J, ECE4850J, ECE4870J, ECE4900J, ECE4921J, ECE6101J, ECE6201J, ECE6202J, ECE6203J, ECE6209J, ECE6301J, ECE6302J, ECE6303J, ECE6305J, ECE6306J, ECE6307J, ECE6308J, ECE6340J, ECE6601J, ECE6602J, ECE6603J, ECE6604J, ECE6605J, ECE6607J, ECE6608J, ECE6609J, ECE6701J, ECE6702J, ECE6703J, ECE6704J, ECE6705J, ECE6706J, ECE6707J, ECE6901J, ECE6902J, ECE6903J, ECE6904J, ECE7601J, ECE7603J, ECE7604J, ECE7605J, ECE7606J, ECE7607J, ECE7608J, ECE7609J, MATH1150J, MATH1160J, MATH1560J, MATH1860J, MATH2030J, MATH2140J, MATH2150J, MATH2160J, MATH2550J, MATH2560J, MATH2850J, MATH2860J, MATH4170J, MATH4540J, MATH4710J, MATH6001J, MATH6002J, MATH6003J
+Retirés (0) : aucun
+Modifiés (0) : aucun
 
-Aucun cours collecté : il n'existe pas de liste publique unique des cours en anglais lisible, et le site de la liste
-la plus proche est injoignable. Aucune protection anti-robots n'a été rencontrée.
-- Page des échanges entrants (https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281) : un
-  échangiste est admis par une école précise et ne peut choisir que les cours de cette école ; chaque école renvoie à
-  sa propre page ou à un document Feishu (rendu par JavaScript, non lisible par programme).
-- Joint Institute (UM-SJTU, ECE, cours en anglais) : https://www.ji.sjtu.edu.cn/academics/courses/present-course-offerings/
-  ne répond pas depuis ce réseau (délai de connexion dépassé sur le port 443). Pas de nouvel essai.
-- Pages de l'école d'informatique (www.cs.sjtu.edu.cn/en/Academics_Undergraduate.html, Academics_Graduate.html) :
-  réponses vides. jwc.sjtu.edu.cn : calendrier en image ou chargé dynamiquement, pas de texte lisible.
-- catalogPublic est donc faux de façon provisoire.
+Périmètre et école d'admission
+Source : l'index « Courses Directory by Number » du Global College de SJTU (https://gc.sjtu.edu.cn/academics/courses/courses-by-number/).
+Le Global College est l'ancien Joint Institute UM-SJTU (l'ancien hôte ji.sjtu.edu.cn est remplacé par gc.sjtu.edu.cn). Il
+s'agit d'une école d'admission distincte de l'École d'informatique : la page des échanges de SJTU
+(https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281) dit qu'un étudiant d'échange est admis par une
+école précise et ne peut choisir que les cours de cette école, sauf accord préalable de l'autre faculté. Ces cours ne sont donc
+pas forcément ouverts à un échangiste de l'École d'informatique, de la SEIEE ou de l'École de mathématiques.
+L'index compte 355 cours (onglet Undergraduate 230, onglet Graduate 125). Préfixes retenus : ECE, CS, MATH, DS.
+Cours retenus : 121 adresses, 120 cours après fusion (ECE4130J figure deux fois, ids 425 et 77552 : même cours, description la
+plus longue gardée). Écartés : 234, par préfixe ME 52, MSE 23, ENGL 29, BUS 26, VE 26, VM 22, ENGR 11, HIS 11, PHIL 10, ART 5,
+CUL 4, CHEM 3, CHN 3, GEOS 2, GER 2, LIN 2, ECON 1, MUSI 1, VG 1. Les 11 ENGR (génie général, dont ENGR1010J, préalable de
+programmation) sont écartés comme le demande le périmètre.
+Cycle : 5xxx à 7xxx = onglet Graduate de l'index, 0xxx à 4xxx = onglet Undergraduate (43 cours de cycles supérieurs).
 
-À enregistrer depuis un navigateur (les copier à la main) :
-1. https://www.ji.sjtu.edu.cn/academics/courses/present-course-offerings/ (cours ECE en anglais du Joint Institute,
-   automne et printemps), puis la fiche de chaque cours.
-2. La liste des cours en anglais de l'école d'informatique (School of Computer Science) et de l'école d'électronique
-   (SEIEE), et de mathématiques (School of Mathematical Sciences), 1er cycle et cycles supérieurs.
-3. Le calendrier académique 2027-2028 (ou le dernier publié) : début des cours, dernier jour de cours, fin des examens.
-4. La définition officielle d'un crédit (heures de contact par crédit).
-5. Le bureau des échanges entrants (courriel de contact) : https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281
-   ne donne aucun courriel du bureau.
+Langue
+Langue = en pour tous les cours. Source : la page officielle d'admission du Global College
+(https://gc.sjtu.edu.cn/admission/international-undergraduate-admission/) dit « All courses are delivered in English by world-class
+faculty members ... » (ligne 87 de la copie).
+Trimestres : aucune fiche ne les donne, terms = [] pour les 120 cours (le site affiche « trimestre non publié »). Le tableau
+Feishu « Courses for the Upcoming Semester » n'est pas touché.
 
-Notes sur la fiche
-- Sourcés (Wikipédia et pages SJTU) : nom (Wikipédia ligne 146), ville Shanghai, website (https://en.sjtu.edu.cn/),
-  catalogPublic (lignes 246 et 247 de la fiche des échanges, citées ensemble : « Due to limitations in the language of
-  instruction and course capacity ... Course selection is subject to the school's notification. »), restriction (ligne
-  245 en entier, exception comprise : l'échangiste n'a que les cours de son école, sauf accord préalable de l'autre
-  faculté).
-- Coordonnées : campus de Minhang, 31.025393 N 121.436348 E (page Wikipédia en chinois « 上海交通大学闵行校区 », ligne 92),
-  parce que l'École d'informatique, la SEIEE, les mathématiques et le Joint Institute y sont. Elles remplacent celles du
-  campus de Xuhui (31.20083 / 121.42972) ; elles sont voisines de la valeur de MoveOn (31.0252 / 121.4338). Pages
-  essayées : une seule (la page du campus), qui donne les coordonnées en toutes lettres.
-- Vides : catalogUrl, contactHoursPerCredit, terms, exchangeContact. Dates : la fiche des échanges ne donne que des mois
-  (« FALL Semester: September 2026 – January 2027 »), jamais des jours : rien n'est déduit.
-- Sans source lisible : creditSystem (« local » ; aucune page lue ne parle de crédits ; hôte du Joint Institute
-  injoignable). Il figure dans la table des exceptions de pipeline/partners/provenanceCompleteness.test.ts ; à retirer
-  de la table quand une page enregistrée à la main le sourcera.
-- Vérification de 5 cours : impossible, aucun cours collecté.
+Limites de la lecture
+- 2 fiches n'ont pas de description (ECE6902J, ECE7608J) : description vide.
+- 2 fiches n'ont pas de crédits (ECE6702J, MATH4540J) : credits = null.
+- 98 cours n'ont pas de liste de sujets (outline null).
+
+Faits de l'université remplis
+- exchangeContact : isc.exchange@sjtu.edu.cn (page 281, ligne 357).
+- catalogUrl et catalogPublic = true : l'index (fil d'Ariane de la page, ligne 56). La valeur précédente, false, venait de la page 281
+  et est remplacée par cette source.
+- creditSystem = local : fiche ECE2800J, « Credits: 4 credits ». Sort de la table des exceptions de provenanceCompleteness.test.ts.
+- Dates terms.* : laissées à null. Le calendrier du Global College (pas celui de SJTU ; PDF
+  https://gc.sjtu.edu.cn/wp-content/uploads/2026/07/2026-Fall1.pdf et 2025-2026.pdf, publiés par https://gc.sjtu.edu.cn/academic-calendar/)
+  écrit « Sept 14 Classes Begin » sans année ni mois sur sa ligne, et son titre (« Global College Academic Calendar for 2026 Fall
+  Semester », ligne 28 ; « ... for 2025-2026 », ligne 59) vient APRÈS les événements dans le texte extrait : aucun contexte ne
+  précède l'extrait, la règle interdit de déduire. Aucun dernier jour de cours n'est écrit non plus (seulement « Dec 14-18
+  Examination Week »). Le printemps n'a pas de ligne « Classes Begin ». 2027-2028 n'est pas publié.
+- contactHoursPerCredit : vide, aucune page ne donne les heures par crédit (« 4 credits » sans heures).
+
+Vérification de 5 cours tirés au hasard (2026-11-10)
+Chaque cours est relu sur sa propre fiche (téléchargée de nouveau) : titre, crédits. La fiche ne donne ni la langue ni le trimestre ;
+la langue vient de la page d'admission citée plus haut (tous les cours sont en anglais), le trimestre reste non publié.
+- ECE3510J (id 75318) : « Digital Signal Processing and Analysis », 4 crédits, 1er cycle. Conforme.
+- ECE4340J (id 430) : « Principles of Photonics », 4 crédits, 1er cycle. Conforme.
+- ECE4500J (id 433) : « Capstone Design », 4 crédits, 1er cycle. Conforme.
+- ECE6902J (id 77241) : « Introduction to Information Geometry », 3 crédits, cycles supérieurs ; la fiche n'a pas de description. Conforme.
+- ECE6607J (id 325) : « Nonlinear Systems and Control », 3 crédits, cycles supérieurs. Conforme.
+Résultat : 5 sur 5 conformes.
