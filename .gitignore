@@ -7,3 +7,4 @@ data/models/
 data/*.sqlite*
 site/dist/
 data/manual/poly/
+data/saved/
