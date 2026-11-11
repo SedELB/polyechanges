@@ -1,31 +1,29 @@
 Rapport de collecte : nagoya-jp
 Date : 2026-11-10
 Statut : ok
-Cours actifs : 39
+Cours actifs : 36
 Ajoutés (0) : aucun
-Retirés (0) : aucun
-Modifiés (2) : 0055222, 0055223
+Retirés (3) : 2520054, 2520064, 2520065
+Modifiés (0) : aucun
 
 Notes sur la collecte
 - Source : la page officielle « Courses & Syllabi » du programme d'échange NUPACE (https://nupace.iee.nagoya-u.ac.jp/en/academic/overview.html), qui liste les cours
   en anglais de 2026 par école avec un lien vers la fiche de chaque cours dans le syllabus officiel (syllabus.adm.nagoya-u.ac.jp, année 2026). Liste « provisoire :
   tous les cours ne seront pas forcément donnés en 2027 ». robots.txt répond 404 sur les deux sites (rien d'interdit) ; aucune protection anti-robots rencontrée.
-- Périmètre retenu (39 cours, 20 de 1er cycle et 19 de cycles supérieurs) : toute l'école d'informatique (9 cours) et toute l'école doctorale de mathématiques (6 cours) ;
+- Périmètre retenu (36 cours après correction) : l'école d'informatique (6 cours, sans Genetic Information Systems 1 et 2, biologie moléculaire, ni Information Physics, mécanique statistique de spins : exclusion explicite dans nagoya-jp.discover.ts) et toute l'école doctorale de mathématiques (6 cours) ;
   dans l'école de génie, 12 cours de génie électrique, électronique, information et analyse numérique (liste de titres dans nagoya-jp.discover.ts) ;
   dans l'Institut d'enseignement général (ILAS), 12 cours de mathématiques et de science des données (Calculus, Linear Algebra, Complex Analysis, Special Mathematics Lecture, Data Science).
   Hors périmètre : sciences (physique, chimie, biologie), génie civil, mécanique, matériaux, sciences humaines, droit, économie, anglais et japonais.
-  Les cours « Genetic Information Systems 1 et 2 » (bio-informatique) sont gardés parce qu'ils relèvent de l'école d'informatique.
 - Code = code d'inscription de la fiche (« Registration Code », 7 chiffres) : le « Course Numbering Code » est vide pour la plupart des fiches.
 - Niveau : champ « Undergraduate / Graduate » de la fiche (faculté = 1er cycle, « …・博前 » = cycles supérieurs). Les mentions « [G30] » et « [remote] » en tête des titres sont retirées.
 - Trimestres : « Fall » = automne, « Spring » = printemps (les « 1 » et « 2 » après Fall/Spring sont les quarts). Tous les cours retenus ont un seul semestre.
 - Crédits : champ « Credits » de la fiche (1 à 4 ; 2 pour la plupart).
-- Descriptions : les fiches publient un anglais (« Goals of the Course » + « Course Content / Plan ») ; les segments en japonais sont écartés. 39 cours sur 39 ont une description.
+- Descriptions : les fiches publient un anglais (« Goals of the Course » + « Course Content / Plan ») ; les segments en japonais sont écartés. 36 cours sur 36 ont une description.
 - Langue : seule la fiche de l'ILAS a un champ « Language Used in the Course » (English). Pour les autres écoles, l'anglais est confirmé par leur présence dans la liste NUPACE des cours en anglais.
 - Définition du crédit : aucune règle chiffrée (heures par crédit) n'a été trouvée sur une page officielle lisible en anglais. La page NUPACE « Courses & Syllabi » écrit :
   « each course being taught in a ninety-minute session per week for a total of fifteen weeks. Most courses carry a workload of two Nagoya University credits ».
   Heures de contact par crédit = 90 min × 15 semaines / 2 crédits = 11,25 h (même méthode que NTU : durée réelle des séances, sans l'étude autonome). C'est la valeur d'un cours magistral type.
-- Dates : le calendrier NUPACE ne publie que l'année 2026-2027 (« AY2026 Academic Calendar ») ; pas d'année 2027-2028. Printemps : cours du 10 avril au 5 août 2026 ;
-  automne : du 2 octobre 2026 au 5 février 2027 (« Class Schedule »). La fin des examens n'est pas publiée : null. La page précise que les dates peuvent changer légèrement.
+- Dates : le calendrier NUPACE ne publie que l'année 2026-2027 (pas 2027-2028). Début : printemps 10 avril 2026, automne 2 octobre 2026 (« Class Schedule »). La fin des cours (end) est laissée à null pour les deux semestres : le calendrier ne la donne que comme fin de la période « Class Schedule », qui comprend probablement les examens, sans dire que c'est le dernier jour de cours. La fin des examens n'est pas publiée : null.
 - Coordonnées : campus principal de Higashiyama (Chikusa-ku), 35.15472, 136.96694 (Wikipédia). La valeur de MoveOn (35.155904, 136.915863) tombait environ 5 km plus à l'ouest.
 - Restriction : « Graduate courses marked with <G> are restricted to graduate students » (page NUPACE). Les conditions d'admission (GPA 3,0, anglais) ne sont pas reprises.
 
@@ -34,4 +32,4 @@ Vérification de 5 cours tirés au hasard, relus sur leur propre page de cours d
 - 0889502 View of Advanced Electrical, Electronic and Information Engineering : 2 crédits, automne (Fall Tue 3, 4), faculté de génie : conforme. Champ langue vide sur la fiche ; anglais confirmé par la liste NUPACE des cours en anglais.
 - 2550045 Information Network A : 1 crédit, printemps (Spring1 Tue 3), école doctorale d'informatique : conforme. Pas de champ langue ; anglais confirmé par la liste NUPACE.
 - 0055223 Data Science Exercise A : 1 crédit, English, printemps (Spring Fri 2), 1er cycle : conforme.
-- 2520065 Genetic Information Systems 2 : 1 crédit, printemps (Spring2 Wed 1), école doctorale d'informatique : conforme. Pas de champ langue ; anglais confirmé par la liste NUPACE.
+- 0063231 Complex Analysis : 2 crédits, English (champ « Language Used »), automne (Fall Wed 2), 1er cycle : conforme.

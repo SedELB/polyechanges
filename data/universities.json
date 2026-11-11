@@ -456,12 +456,12 @@
     "terms": {
       "spring": {
         "start": "2026-04-10",
-        "end": "2026-08-05",
+        "end": null,
         "examsEnd": null
       },
       "fall": {
         "start": "2026-10-02",
-        "end": "2027-02-05",
+        "end": null,
         "examsEnd": null
       }
     },
@@ -549,27 +549,7 @@
         },
         "quote": "Class Schedule | April 10, 2026 | ~ | August 5, 2026"
       },
-      "terms.spring.end": {
-        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/calender.html",
-        "retrievedAt": "2026-11-10T22:08:38.821Z",
-        "sha256": "e457641d37908fdbf69f084ae8128869bd2b52f599472cb71677840861ea8fb4",
-        "locator": {
-          "page": 1,
-          "line": 63
-        },
-        "quote": "Class Schedule | April 10, 2026 | ~ | August 5, 2026"
-      },
       "terms.fall.start": {
-        "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/calender.html",
-        "retrievedAt": "2026-11-10T22:08:38.821Z",
-        "sha256": "e457641d37908fdbf69f084ae8128869bd2b52f599472cb71677840861ea8fb4",
-        "locator": {
-          "page": 1,
-          "line": 67
-        },
-        "quote": "Class Schedule | October 2, 2026 | ~ | February 5, 2027"
-      },
-      "terms.fall.end": {
         "url": "https://nupace.iee.nagoya-u.ac.jp/en/academic/calender.html",
         "retrievedAt": "2026-11-10T22:08:38.821Z",
         "sha256": "e457641d37908fdbf69f084ae8128869bd2b52f599472cb71677840861ea8fb4",

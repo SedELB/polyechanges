@@ -36,6 +36,14 @@ const ILAS_TITLES = [
   'Data Science Exercise A',
 ];
 
+/**
+ * Périmètre : informatique, génie électrique ou informatique et mathématiques seulement. Ces trois cours de l'école
+ * d'informatique relèvent d'autres disciplines et sont écartés, désignés par leur code d'inscription :
+ * 2520064 et 2520065 (Genetic Information Systems 1 et 2, biologie moléculaire), 2520054 (Information Physics,
+ * mécanique statistique de systèmes de spins).
+ */
+const EXCLUDED_CODES = ['2520064', '2520065', '2520054'];
+
 export interface ListedCourse {
   /** Nom de l'ancre de la section de la page (Informatics, Mathematics, Engineering, ILAS...). */
   section: string;
@@ -78,6 +86,7 @@ export function parseOverview(html: string): ListedCourse[] {
 }
 
 export function isWanted(course: ListedCourse): boolean {
+  if (EXCLUDED_CODES.some((code) => course.url.endsWith(`${code}.html`))) return false;
   if (WHOLE_SECTIONS.includes(course.section)) return true;
   const title = baseTitle(course.title);
   if (course.section === 'Engineering') return ENGINEERING_TITLES.includes(title);

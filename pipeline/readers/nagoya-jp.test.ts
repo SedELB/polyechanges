@@ -103,14 +103,18 @@ describe('liste des cours en anglais', () => {
 
   it('retient informatique, mathématiques et les cours de génie électrique ou de mathématiques listés ailleurs', () => {
     const urls = selectCourses(parseOverview(html));
-    expect(urls).toHaveLength(21);
-    expect(new Set(urls).size).toBe(21);
+    expect(urls).toHaveLength(18);
+    expect(new Set(urls).size).toBe(18);
     const ids = urls.map((u) => u.split('/').pop());
     expect(ids).toContain('25_2026_Y003102560095.html'); // informatique
     expect(ids).toContain('32_2026_Y002803211092.html'); // mathématiques (école doctorale)
     expect(ids).toContain('08_2026_X310000889111.html'); // Computer Software I (génie)
     expect(ids).toContain('28_2026_Y011402838503.html'); // Semiconductor Devices (génie)
     expect(ids).toContain('00_2026_W21000061311.html'); // Calculus I (enseignement général)
+    // Biologie moléculaire et mécanique statistique (hors périmètre), même dans l'école d'informatique.
+    expect(ids).not.toContain('25_2026_Y010602520064.html');
+    expect(ids).not.toContain('25_2026_Y010602520065.html');
+    expect(ids).not.toContain('25_2026_Y010602520054.html');
     // Génie civil, chimie et anglais académique restent exclus.
     expect(ids).not.toContain('28_2026_Y001802858518.html');
     expect(ids).not.toContain('08_2026_X320000849304.html');
