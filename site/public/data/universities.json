@@ -1730,7 +1730,7 @@
         "examsEnd": null
       }
     },
-    "restrictions": "JYPE is a research-oriented program; therefore, it is suitable for the students who are ready to be committed to and be a part of the world-class research trainings in the IRT (it is NOT suitable for the students who are only interested in earning credits from elective courses).",
+    "restrictions": "Participation in the activities of a research group counts 5 or 10 credits for the Individual Research Training course each semester, which is a required course.",
     "exchangeContact": "Tohoku University Student Exchange Division",
     "catalogPublic": true,
     "provenance": {
@@ -1850,9 +1850,9 @@
         "sha256": "0d81703fa681ce61b70faed92f78f3e29e325025694c1f997cde9a2b453219bc",
         "locator": {
           "page": 1,
-          "line": 110
+          "line": 91
         },
-        "quote": "- JYPE is a research-oriented program; therefore, it is suitable for the students who are ready to be committed to and be a part of the world-class research trainings in the IRT (it is NOT suitable for the students who are only interested in earning credits from elective courses)."
+        "quote": "Participation in the activities of a research group counts 5 or 10 credits for the Individual Research Training course each semester, which is a required course."
       },
       "exchangeContact": {
         "url": "https://www.insc.tohoku.ac.jp/english/exchange/jype/",
