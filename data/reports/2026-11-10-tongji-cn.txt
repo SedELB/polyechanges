@@ -19,8 +19,9 @@ internationales (https://fao.tongji.edu.cn/info/1129/7958.htm : code, titre, cr�
 - 5000244008101 : « Electronic Equipment », 2 crédits, anglais, printemps, 1er cycle. Conforme (le code y est déformé en
   « 5.00024E+12 » ; rangée retrouvée par le titre).
 Résultat : 5 sur 5 conformes. Limites : le tirage ne contient que des cours de l'École d'électronique et d'information
-du printemps (cette page ne couvre pas l'automne) ; les cours de l'école d'informatique et de mathématiques n'ont
-qu'une seule publication.
+du printemps (cette page ne couvre pas l'automne) ; seul le printemps du CEIE a une deuxième publication, les cours
+de l'automne, de l'école d'informatique (19 cours) et de mathématiques (1 cours) n'ont pas de seconde source. Répartition
+des 65 cours : 45 du CEIE, 19 de l'école d'informatique, 1 de mathématiques.
 
 Notes sur la fiche de l'université et sur le périmètre
 - Sources du catalogue : PDF du College of Electronic and Information Engineering (https://see-en.tongji.edu.cn/info/1042/2058.htm,
@@ -44,6 +45,27 @@ Notes sur la fiche de l'université et sur le périmètre
   n'acceptent que des étudiants nommés par une université partenaire.)
 - Contact : incoming@tongji.edu.cn (page Contact us des échanges entrants, régions anglophones).
 - Coordonnées : 31.2827 N 121.5066 E (Wikipédia, campus de Siping) ; la valeur de MoveOn (31.262 / 121.459) est remplacée.
+  Siping est gardé : la page CEIE (7958) est intitulée « Jiading Campus » et la plupart des cours y sont, mais aucune
+  page de Tongji ou du campus de Jiading essayée ne donne ses coordonnées en toutes lettres. Pages essayées : la page
+  Wikipédia en chinois « 同济大学嘉定校区 » (aucune coordonnée) et la page Wikipédia en chinois « 同济大学 » (coordonnées
+  du campus de Siping seulement). Le campus de Jiading (4800 Caoan Road, Jiading) reste à sourcer.
+- Catalogue public : catalogPublic cité par l'intitulé de la liste « Courses at Bachelor Level: » (7958, ligne 76).
+- Site : website cité par la ligne « 同济大学新闻中心主办 E-mail:newscenter@tongji.edu.cn » (ligne 228), qui nomme
+  l'université qui publie la page. Le titre de la page (« 同济大学 ») n'est que dans la copie HTML, absent du texte
+  extrait, donc non citable ; aucune autre ligne ne nomme l'université hors du pied de page de droits d'auteur.
+- Cours sans trimestre : 2102002 Numerical Analysis (mathématiques) : trimestre non publié (la page ne le donne pas) et
+  crédits non publiés.
+- Trimestres fusionnés : la procédure fusionne un même code publié dans plusieurs listes ; terms vaut ['fall', 'spring']
+  pour trois cours, qui apparaissent chacun dans deux listes :
+  - 10201901 Analog Electronic Technique : automne dans https://see-en.tongji.edu.cn/__local/F/1D/76/C3C4D756AFA23349D638AE19CFE_F6794858_28E7B.pdf
+    (page 1, ligne 14, citée dans la fiche) ; printemps dans https://see-en.tongji.edu.cn/__local/6/85/00/143FD94FB04FEEF86AF679E911B_A25BB381_209AC.pdf
+    (page 1, ligne 7, rangée « 2025-2026 2 »).
+  - CST239801 Computer Network : printemps à https://fao.tongji.edu.cn/info/1129/7974.htm ligne 78 (citée dans la fiche) ;
+    automne à la même adresse, ligne 83.
+  - CST348701 System Analysis and Design : printemps à https://fao.tongji.edu.cn/info/1129/7974.htm ligne 80 (citée dans la
+    fiche) ; automne à la même adresse, ligne 84.
+  Un test (pipeline/readers/tongji-cn.test.ts) vérifie, sur les fixtures et sur les copies brutes quand elles sont
+  présentes, que chaque trimestre stocké d'un cours fusionné vient d'une rangée des listes.
 - Descriptions : aucune publiée (voir plus haut).
 - Hors périmètre faute de liste lisible : la liste détaillée par cours (kdocs, rendue par JavaScript) et les cours
   d'autres écoles (ex. School of Software Engineering, dont le site renvoie aux listes par semestre sans les publier).

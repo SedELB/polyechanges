@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { isInScope, mergeListed, parseHtmlTable, parsePdfList, toCourse } from './tongji-cn.build.js';
 
@@ -102,5 +102,45 @@ describe('lecture des listes de cours en anglais de Tongji', () => {
     });
     expect(c.provenance).toMatchObject({ sha256: 'abc', locator: { page: 1, line: 3 } });
     expect(c.provenance.quote).toContain('Automatic Control 1(English) Elective 96 6 English');
+  });
+});
+
+describe('trimestres des cours fusionnés de Tongji', () => {
+  it('sur les fixtures, chaque trimestre fusionné vient d une rangée de la liste', () => {
+    const cs = parseHtmlTable(pages('tongji-cn-cs-lines.txt'));
+    for (const m of mergeListed(cs)) {
+      const rowTerms = cs.filter((r) => r.code === m.code).flatMap((r) => r.terms);
+      expect([...m.terms].sort()).toEqual([...new Set(rowTerms)].sort());
+    }
+  });
+
+  it('dans la saisie, chaque trimestre stocké apparaît dans une rangée des listes sources', () => {
+    const rawDir = new URL('../../data/raw/facts-tongji-cn/', import.meta.url);
+    const lists = existsSync(rawDir)
+      ? readdirSync(rawDir)
+          .filter((f) => f.endsWith('.lines.txt'))
+          .map((f) => readFileSync(new URL(f, rawDir), 'utf8'))
+      : [];
+    if (lists.length === 0) return; // copies brutes absentes du dépôt : couvert par les fixtures
+    const manual = JSON.parse(
+      readFileSync(new URL('../../data/manual/tongji-cn.json', import.meta.url), 'utf8'),
+    ) as { code: string; terms: string[] }[];
+    const rowTerms = (code: string): Set<string> => {
+      const found = new Set<string>();
+      for (const text of lists) {
+        for (const line of text.split('\n')) {
+          if (!new RegExp(`(^|[ |])${code}([ |]|$)`).test(line)) continue;
+          const html = line.match(/\|\s*(Fall|Spring)\s*\|/);
+          const pdf = line.match(/\d{4}-\d{4} ([12]) /);
+          if (html) found.add(html[1]!.toLowerCase());
+          else if (pdf) found.add(pdf[1] === '1' ? 'fall' : 'spring');
+        }
+      }
+      return found;
+    };
+    for (const c of manual.filter((x) => x.terms.length > 1)) {
+      const seen = rowTerms(c.code);
+      for (const t of c.terms) expect(seen.has(t), `${c.code} ${t}`).toBe(true);
+    }
   });
 });

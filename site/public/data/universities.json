@@ -19,6 +19,16 @@
     "exchangeContact": null,
     "catalogPublic": false,
     "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/City_University_of_Hong_Kong",
+        "retrievedAt": "2026-11-10T22:36:07.230Z",
+        "sha256": "9fc7060b03f910f244eaf6c40dc270c54fdc75d1ea85bd0966ba2fdfc22f2284",
+        "locator": {
+          "page": 1,
+          "line": 153
+        },
+        "quote": "The City University of Hong Kong (CityUHK) is a public university in Kowloon Tong, Kowloon, Hong Kong."
+      },
       "city": {
         "url": "https://en.wikipedia.org/wiki/City_University_of_Hong_Kong",
         "retrievedAt": "2026-11-10T22:36:07.230Z",
@@ -1579,8 +1589,8 @@
     "moveOnName": "Shanghai Jiao Tong University",
     "countryCode": "CN",
     "city": "Shanghai",
-    "lat": 31.20083,
-    "lng": 121.42972,
+    "lat": 31.025393,
+    "lng": 121.436348,
     "website": "https://en.sjtu.edu.cn/",
     "catalogUrl": null,
     "creditSystem": "local",
@@ -1589,10 +1599,20 @@
       "fall": null,
       "spring": null
     },
-    "restrictions": "Exchange students coming to our university need to be admitted by a specific school. Once admitted, they can only choose courses from that school.",
+    "restrictions": "More than 30 schools/departments at SJTU which are open to university-level exchange students to choose. Exchange students coming to our university need to be admitted by a specific school. Once admitted, they can only choose courses from that school. If they wish to select courses from another school, they must obtain prior approval from the relevant faculty.",
     "exchangeContact": null,
     "catalogPublic": false,
     "provenance": {
+      "name": {
+        "url": "https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University",
+        "retrievedAt": "2026-11-10T22:50:00.000Z",
+        "sha256": "ad2f8265b709de16ca9fe99abf71f837d149f8d7937a50bf18cad59cac985c3d",
+        "locator": {
+          "page": 1,
+          "line": 146
+        },
+        "quote": "Shanghai Jiao Tong University (SJTU) is a public university in Shanghai, China."
+      },
       "city": {
         "url": "https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University",
         "retrievedAt": "2026-11-10T22:50:00.000Z",
@@ -1604,14 +1624,14 @@
         "quote": "Public university in Shanghai, China"
       },
       "coordinates": {
-        "url": "https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University",
-        "retrievedAt": "2026-11-10T22:50:00.000Z",
-        "sha256": "ad2f8265b709de16ca9fe99abf71f837d149f8d7937a50bf18cad59cac985c3d",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%E9%97%B5%E8%A1%8C%E6%A0%A1%E5%8C%BA",
+        "retrievedAt": "2026-11-10T23:09:00.802Z",
+        "sha256": "4018e752334b234bff4c883601811fc45dff0456d18dc2809b9b46c44fe0fc33",
         "locator": {
           "page": 1,
-          "line": 139
+          "line": 92
         },
-        "quote": "31.20083°N 121.42972°E"
+        "quote": "31.025393°N 121.436348°E"
       },
       "website": {
         "url": "https://en.sjtu.edu.cn/",
@@ -1631,7 +1651,7 @@
           "page": 1,
           "line": 245
         },
-        "quote": "Exchange students coming to our university need to be admitted by a specific school. Once admitted, they can only choose courses from that school."
+        "quote": "More than 30 schools/departments at SJTU which are open to university-level exchange students to choose. Exchange students coming to our university need to be admitted by a specific school. Once admitted, they can only choose courses from that school. If they wish to select courses from another school, they must obtain prior approval from the relevant faculty."
       },
       "catalogPublic": {
         "url": "https://global.sjtu.edu.cn/en/study-sjtu/prospective/non-degree-programs/281",
@@ -1639,9 +1659,9 @@
         "sha256": "881fa24ea4342d8328292a1923c48581ace7d1015b63613f724d49f34edc02e3",
         "locator": {
           "page": 1,
-          "line": 247
+          "line": 246
         },
-        "quote": "Course selection is subject to the school's notification."
+        "quote": "Due to limitations in the language of instruction and course capacity at our university, we need the students to be flexible in their course selection. For the most updated information about majors and courses, please consult with the School / Department. Course selection is subject to the school's notification."
       }
     }
   },
@@ -1983,9 +2003,9 @@
         "sha256": "39043b9df370d83932e79c4d25ca9164a1590fe15e55e6c8e8e89d518668a746",
         "locator": {
           "page": 1,
-          "line": 229
+          "line": 228
         },
-        "quote": "Copyright©2018 同济大学版权所有 沪ICP备10014176号"
+        "quote": "同济大学新闻中心主办 E-mail:newscenter@tongji.edu.cn"
       },
       "catalogUrl": {
         "url": "https://fao.tongji.edu.cn/INCOMING/Study_at_Tongji_University.htm",
@@ -2023,9 +2043,9 @@
         "sha256": "307f3aa227da4cd46862a373b90f05ae8f1ca3077accdbd267f9af5bdf87b376",
         "locator": {
           "page": 1,
-          "line": 74
+          "line": 76
         },
-        "quote": "Important Note: This list is only a kind of orientation."
+        "quote": "Courses at Bachelor Level:"
       }
     }
   }

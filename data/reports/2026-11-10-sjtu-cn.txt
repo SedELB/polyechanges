@@ -22,11 +22,18 @@ la plus proche est injoignable. Aucune protection anti-robots n'a été rencontr
    ne donne aucun courriel du bureau.
 
 Notes sur la fiche
-- Sourcés (Wikipédia et pages SJTU) : ville Shanghai, coordonnées 31.20083 N 121.42972 E (campus principal de Xuhui ;
-  la valeur de MoveOn, 31.0252 / 121.4338, est remplacée), website (https://en.sjtu.edu.cn/), catalogPublic,
-  restriction (admission par une école, cours de cette école seulement).
+- Sourcés (Wikipédia et pages SJTU) : nom (Wikipédia ligne 146), ville Shanghai, website (https://en.sjtu.edu.cn/),
+  catalogPublic (lignes 246 et 247 de la fiche des échanges, citées ensemble : « Due to limitations in the language of
+  instruction and course capacity ... Course selection is subject to the school's notification. »), restriction (ligne
+  245 en entier, exception comprise : l'échangiste n'a que les cours de son école, sauf accord préalable de l'autre
+  faculté).
+- Coordonnées : campus de Minhang, 31.025393 N 121.436348 E (page Wikipédia en chinois « 上海交通大学闵行校区 », ligne 92),
+  parce que l'École d'informatique, la SEIEE, les mathématiques et le Joint Institute y sont. Elles remplacent celles du
+  campus de Xuhui (31.20083 / 121.42972) ; elles sont voisines de la valeur de MoveOn (31.0252 / 121.4338). Pages
+  essayées : une seule (la page du campus), qui donne les coordonnées en toutes lettres.
 - Vides : catalogUrl, contactHoursPerCredit, terms, exchangeContact. Dates : la fiche des échanges ne donne que des mois
   (« FALL Semester: September 2026 – January 2027 »), jamais des jours : rien n'est déduit.
-- Sans source lisible : name (affiché « Shanghai Jiao Tong University ») et creditSystem (« local » ; aucune page lue ne
-  parle de crédits). Comme pour CityU, la provenance du nom n'est pas posée ; à refaire avec les pages enregistrées.
+- Sans source lisible : creditSystem (« local » ; aucune page lue ne parle de crédits ; hôte du Joint Institute
+  injoignable). Il figure dans la table des exceptions de pipeline/partners/provenanceCompleteness.test.ts ; à retirer
+  de la table quand une page enregistrée à la main le sourcera.
 - Vérification de 5 cours : impossible, aucun cours collecté.

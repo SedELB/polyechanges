@@ -21,7 +21,10 @@ Notes sur la fiche
   22.3364222 N 114.1729889 E (les valeurs MoveOn 22.320336 / 114.23905 sont remplacées).
 - Vides : website, catalogUrl, contactHoursPerCredit, terms, exchangeContact, restrictions (non lisibles).
 - creditSystem reste « local » (aucun ECTS publié lisible).
-- Nom : provenance du nom retirée volontairement. Les faits creditSystem et catalogPublic exigent chacun une source
-  lisible, qu'aucune page de CityU accessible ne fournit ; sans source sur le nom, la fiche reste un squelette pour
-  le contrôle de complétude, et la ville et les coordonnées gardent leur source Wikipédia (ligne 153 et ligne 130).
-  À refaire avec les pages enregistrées à la main : sourcer name, creditSystem et catalogPublic.
+- Nom : sourcé sur la même page Wikipédia que la ville (ligne 153 : « The City University of Hong Kong (CityUHK) is a
+  public university in Kowloon Tong, Kowloon, Hong Kong. »).
+- Sans source : creditSystem (« local ») et catalogPublic (false), parce que aucune page de CityU lisible ne les donne
+  (catalogue bloqué : Incapsula). Ils sont listés un à un dans la table des exceptions de
+  pipeline/partners/provenanceCompleteness.test.ts, qui échoue si une autre valeur reste sans source et si une entrée
+  de la table reçoit une source. À refaire avec les pages enregistrées à la main : sourcer creditSystem et catalogPublic,
+  puis retirer l'entrée de la table.
