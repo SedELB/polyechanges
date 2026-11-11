@@ -29,3 +29,11 @@ Faits restés vides
 - terms.spring.end, terms.spring.examsEnd : « 16(화)~22(월) Final Examination Period » (22 juin 2026) est à plus de 3 lignes du
   mois « JUN » / « 6월 » (aussi sur la version coréenne) : le mois ne figure pas dans un extrait valable. Même raison que
   pour la fin des cours (non écrite).
+
+Dates avec contexte (2026-11-10)
+- terms.fall.examsEnd 2026-12-18 : contexte « SEP | 1(화) | Fall Semester 2026 Begins » (ligne 184) pour l'année ; vendredi 18 décembre 2026 : concorde.
+- terms.spring.examsEnd 2026-06-22 (nouveau, page du printemps 2026) : extrait « 16(화)~22(월) | Final Examination Period 22(월) | End of
+  Spring semester(16 weeks) » (ligne 206), contexte « JUN | 3(수)~5(금) | Re-Admission ... 2026 Local Elections 6(토) | Memorial Day (National Holiday) »
+  (ligne 203) pour le mois et l'année ; lundi 22 juin 2026 : concorde.
+- Restent vides : terms.fall.end et terms.spring.end (le dernier jour de cours n'est pas écrit ; « End of ... semester(16 weeks) » est le
+  dernier jour des examens).

@@ -35,3 +35,6 @@ Aucun. Faits restés vides
   ne donne que « Final Examinations » (15 au 21 décembre ; 15 au 21 juin), jamais le dernier jour de cours. Version coréenne
   https://www.postech.ac.kr/kor/academics/academic_schedule.do : HTTP 404. Recherche web d'une autre page de calendrier : rien.
 - restrictions : aucune restriction de programme pour les étudiants d'échange entrants trouvée sur les pages déjà lues ; reste null.
+
+Dates avec contexte (2026-11-10)
+Aucune date ajoutée : les fins de cours ne sont pas écrites (seuls les examens finaux le sont).

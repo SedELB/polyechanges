@@ -40,3 +40,11 @@ Faits restés vides
 - terms.fall.examsEnd, terms.spring.examsEnd : le calendrier ne publie pas de période d'examens finaux (seulement une
   « période de rattrapage » après la fin des cours).
 - catalogUrl : seule la recherche de cours sugang.snu.ac.kr existe (file d'attente NetFunnel, non contournée).
+
+Dates avec contexte (2026-11-10)
+- terms.fall.end 2026-12-14 et terms.spring.end 2026-06-15 : extrait de contexte « 2026 MARCH 01 (Sun) » (ligne 153, même copie
+  brute) pour l'année du calendrier ; jours de semaine Lun 14 décembre 2026 et Lun 15 juin 2026 : concordent.
+- terms.spring.start 2026-03-03 (nouveau) : extrait « 03 (Tue) Beginning of Spring semester classes » (ligne 157), contexte
+  « 2026 MARCH 01 (Sun) » (ligne 153) ; mardi 3 mars 2026 : concorde.
+- Reste vide : terms.fall.start. Le mois (« SEPTEMBER », ligne 216) et l'année (« 2026 », ligne 153) ne tiennent pas dans un seul
+  extrait de contexte de 3 lignes ; le début des cours n'est pas déduit du « Start of Fall semester ».
