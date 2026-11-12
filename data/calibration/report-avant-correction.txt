@@ -1,0 +1,62 @@
+Concours des modèles et calibration du critère
+
+Échantillons, chacun jugé à l’aveugle par un juge distinct (sans code, score ni modèle) :
+  échantillon 1 : 60 paires décrites (data/calibration/sample.json, graine 42, 3 meilleurs de chaque candidat, 1 sur 5 au hasard), jugements data/calibration/judgments.json : elevee 0, moyenne 1, faible 12, pas_equivalent 47 ; critère trivial 0.783.
+  échantillon 2 : 60 paires décrites (data/calibration/sample-2.json, graine 43, premiers d’au moins 2 candidats, hors échantillon 1), jugements data/calibration/judgments-2.json : elevee 3, moyenne 5, faible 14, pas_equivalent 38 ; critère trivial 0.633.
+Ensemble : 120 paires ; critère trivial (tout « pas_equivalent ») 0.708.
+Grilles de notions : celles de v0.
+Cible du gel : accord d'au moins 0.8 sur les 120 paires et d'au moins 0.15 de plus que le critère trivial, soit 0.858.
+Grille : détection 0.40 à 0.70, « très » 0.60 à 0.85, « partiel » 0.30 à 0.50, par pas de 0.05, calibrée sur les 120 paires.
+À accord égal : seuils les plus proches de v0 (0.55 / 0.7 / 0.4) ; entre candidats, le plus petit modèle. Kappa de Cohen (4 classes, non pondéré) : pour information.
+Durée : calcul de toutes les paires au premier passage du modèle ; textes : textes absents du cache de vecteurs, calculés pendant ce passage ; chargement : téléchargement compris.
+
+Candidats
+  candidat                  modèle@révision                                   taille  disque   chargement  durée     textes  accord  éch. 1  éch. 2  kappa  détection  très  partiel
+  contest-bge-base          Xenova/bge-base-en-v1.5@4d6cd88                   109 M   437 Mo   3.2 s       471.4 s   13759   0.758   0.817   0.700   0.414  0.60       0.75  0.45
+  contest-embeddinggemma    onnx-community/embeddinggemma-300m-ONNX@5090578   303 M   1.26 Go  5.5 s       704.5 s   13759   0.758   0.800   0.717   0.387  0.40       0.75  0.45
+  contest-embeddinggemma-2  onnx-community/embeddinggemma-2-ONNX@daa72c5      270 M   1.12 Go  6.0 s       960.4 s   13759   0.258   0.333   0.183   0.088  0.70       0.75  0.45
+  contest-harrier-270m      onnx-community/harrier-oss-v1-270m-ONNX@d59c919   268 M   1.13 Go  4.4 s       605.0 s   13759   0.775   0.850   0.700   0.520  0.55       0.85  0.45
+  contest-minilm            Xenova/all-MiniLM-L6-v2@751bff3                   23 M    91 Mo    2.0 s       8.9 s     0       0.800   0.850   0.750   0.503  0.55       0.60  0.30
+  contest-qwen3-06b         onnx-community/Qwen3-Embedding-0.6B-ONNX@c25a394  596 M   2.41 Go  10.6 s      2038.8 s  13759   0.825   0.833   0.817   0.576  0.50       0.60  0.30
+
+Gagnant : contest-qwen3-06b (accord 0.825 sur 120 paires ; cible 0.858 : non atteinte)
+
+Matrice de confusion du gagnant (lignes : jugement ; colonnes : niveau calculé)
+  jugé \ calculé  elevee  moyenne  faible  pas_equivalent
+  elevee          2       0        1       0
+  moyenne         0       5        1       0
+  faible          0       2        11      13
+  pas_equivalent  0       1        3       81
+
+Paires en désaccord pour le gagnant (21)
+  INF8085:308  [échantillon 2] INF8085 / National Taiwan University of Science and Technology (Taiwan Tech) EE5515 Cybersecurity and AI-based Analytics : calculé pas_equivalent, jugé faible. Juge : « Le cours couvre logiciels malveillants et détection d'intrusion avec un fort volet apprentissage profond, mais pas la cryptographie, les infrastructures à clés publiques, le contrôle d'accès, la sécurité Web ni la gestion de la sécurité. »
+  INF8102:127  [échantillon 1] INF8102 / National Yang Ming Chiao Tung University CSIC30036 Cloud-enabled 4G/LTE and 5G Network & Applications : calculé pas_equivalent, jugé faible. Juge : « Le cours de réseau cœur 5G partage les notions d'infonuagique, de conteneurs et de mise en réseau, mais ne traite pas de sécurité, d'identités, de conformité ni de réponse aux incidents. »
+  INF8102:1375  [échantillon 1] INF8102 / KAIST CS.79907 정보보호 특강 : calculé pas_equivalent, jugé faible. Juge : « Séminaire de cycles supérieurs sur les tendances en sécurité de l'information, sans contenu précis sur l'infonuagique, la gestion des identités ou la réponse aux incidents dans le nuage; charge inconnue. »
+  INF8102:78  [échantillon 2] INF8102 / National Taiwan University CSIE5310 Virtual Machines : calculé pas_equivalent, jugé faible. Juge : « Cours sur la virtualisation dont une partie traite de sécurité des machines virtuelles et conteneurs, sans gestion des identités, configuration sécurisée, conformité ni réponse aux incidents dans le nuage. »
+  INF8107:967  [échantillon 2] INF8107 / Shanghai Jiao Tong University ECE6704J Advanced Computer Networks : calculé pas_equivalent, jugé faible. Juge : « Réseaux avancés dont la sécurité réseau n'est qu'un sujet parmi d'autres, sans détection d'intrusion ni supervision de sécurité; charge inconnue. »
+  INF8111:786  [échantillon 2] INF8111 / Nagoya University 2838101 Theory of Data Analysis and Processing : calculé moyenne, jugé pas_equivalent. Juge : « Analyse de mesures expérimentales en génie électrique (instrumentation, erreurs, Fourier) sans algorithmes de fouille de données. »
+  INF8215:311  [échantillon 2] INF8215 / National Taiwan University of Science and Technology (Taiwan Tech) EE5628 Machine Learning Techniques and Applications : calculé moyenne, jugé faible. Juge : « Seule la partie apprentissage automatique est couverte, sans recherche heuristique, jeux adverses, métaheuristiques, programmation par contraintes ni logique. »
+  INF8225:1405  [échantillon 1] INF8225 / National Cheng Kung University C120601 INTRODUCTION TO PROBABILITY : calculé pas_equivalent, jugé faible. Juge : « Cours de probabilités de base qui fournit les préalables (Bayes, variables aléatoires) mais aucun modèle graphique, inférence, apprentissage automatique ni apprentissage profond. »
+  INF8245AE:1092  [échantillon 2] INF8245AE / KAIST EE.30031 Introduction to Machine Learning : calculé faible, jugé moyenne. Juge : « Bon recoupement (régression, classification, régularisation, SVM, apprentissage profond) mais niveau introductif sans la théorie bayésienne, les noyaux, les processus gaussiens ni la théorie de l'apprentissage, et 3 crédits contre 4 crédits et 78 h à Poly. »
+  INF8402:1014  [échantillon 1] INF8402 / KAIST CS.40402 모바일 컴퓨팅과 응용 : calculé pas_equivalent, jugé faible. Juge : « Le cours couvre les réseaux mobiles et sans fil (WiFi, CDMA, capteurs) mais pas leur sécurité, qui est le cœur du cours de Poly; charge inconnue. »
+  INF8405:1196  [échantillon 2] INF8405 / KAIST EE.59900(004) Special Topics in Electrical and Computer Engineering 〈Mobile Computing and Systems for Intelligent Living〉 : calculé faible, jugé elevee. Juge : « Informatique mobile et réseaux sans fil couvrant architectures, protocoles, systèmes, services, applications et IoT, ce qui recoupe l'essentiel du cours de Poly; charge non publiée mais crédits équivalents. »
+  INF8405:1201  [échantillon 1] INF8405 / KAIST EE.60018 Advanced Computer Networking and Cloud Computing : calculé pas_equivalent, jugé faible. Juge : « Le cours vise surtout le réseautage avancé et l'infonuagique (centres de données, SDN, congestion) et ne mentionne l'informatique mobile qu'en passant, sans gestion de mobilité, systèmes cellulaires ni IdO; charge inconnue. »
+  INF8725:312  [échantillon 1] INF8725 / National Taiwan University of Science and Technology (Taiwan Tech) EE5813 Multimedia Communications : calculé moyenne, jugé faible. Juge : « Le cours vise la compression d'images et de vidéos (codage entropique, transformées, normes vidéo) et ne couvre ni filtres numériques, ni transformée en Z, ni restauration ou segmentation d'images. »
+  INF8775:1108  [échantillon 1] INF8775 / KAIST EE.40024 Introduction to Optimization Techniques : calculé pas_equivalent, jugé faible. Juge : « Cours d'optimisation pour l'ingénierie électrique qui recoupe seulement la programmation dynamique et les métaheuristiques, sans analyse asymptotique, patrons vorace ou diviser-pour-régner, ni classes P et NP; charge inconnue. »
+  INF8808:70  [échantillon 2] INF8808 / National Taiwan University CSIE7641 Multimodal Human-Computer Interaction : calculé pas_equivalent, jugé faible. Juge : « Interaction humain-machine multimodale qui ne partage que la perception visuelle, sans techniques de visualisation de données. »
+  LOG2400:1018  [échantillon 2] LOG2400 / KAIST CS.40507 스마트환경을 위한 요구공학 : calculé pas_equivalent, jugé faible. Juge : « Le cours porte sur l'ingénierie des exigences, ce qui ne recoupe que la partie analyse, sans la conception orientée objet, la modélisation UML, l'architecture en couches ni les patrons de conception. »
+  LOG3420:95  [échantillon 2] LOG3420 / National Taiwan University EEE5067 Schematic MOS Devices : calculé faible, jugé pas_equivalent. Juge : « Physique des dispositifs MOS, sans rapport avec les exigences logicielles. »
+  LOG3430:212  [échantillon 1] LOG3430 / National Yang Ming Chiao Tung University EEIE30089 Reliability and Failure Physics of Semiconductor Devices : calculé faible, jugé pas_equivalent. Juge : « La fiabilité physique des semi-conducteurs n'a aucun lien avec le test et la validation du logiciel malgré le mot fiabilité. »
+  LOG8235:74  [échantillon 1] LOG8235 / National Taiwan University CSIE5117 Robot Perception and Learning : calculé pas_equivalent, jugé faible. Juge : « La robotique recoupe la boucle perception-décision-action, la cinématique et la planification de mouvement, mais pas la génération procédurale, l'animation, les règles de jeu ni la physique de jeu. »
+  LOG8415E:77  [échantillon 1] LOG8415E / National Taiwan University CSIE5322 Big Data Systems : calculé pas_equivalent, jugé faible. Juge : « Description vide : d'après le titre, le cours touche sans doute MapReduce et NoSQL, une petite partie du cours de Poly, sans garantie sur la virtualisation, les modèles de service ou les SLA. »
+  LOG8715:104  [échantillon 2] LOG8715 / National Yang Ming Chiao Tung University CSCS10015 Introduction to Computers and Programming : calculé faible, jugé pas_equivalent. Juge : « Introduction à la programmation en C, sans architecture de jeux vidéo. »
+
+Candidats écartés
+  onnx-community/harrier-oss-v1-0.6b-ONNX (Microsoft, MIT, mars 2026) : au plus 2 modèles plus récents dans le concours ; même famille que harrier-oss-v1-270m, retenu, pour 2,2 fois plus de paramètres (0,6 milliard)
+  onnx-community/granite-embedding-311m-multilingual-r2-ONNX et granite-embedding-97m-multilingual-r2-ONNX (IBM, Apache 2.0, avril 2026) : au plus 2 modèles plus récents dans le concours ; retenus : EmbeddingGemma 2 (le plus récent, octobre 2026) et harrier-oss-v1-270m (MTEB v2 multilingue annoncé 66,5)
+  onnx-community/voyage-4-nano-ONNX (MongoDB, Apache 2.0, janvier 2026) : au plus 2 modèles plus récents dans le concours ; plus ancien que les deux retenus
+  jinaai/jina-embeddings-v5-text-nano et jina-embeddings-v5-text-small (janvier 2026) : licence CC BY-NC 4.0 (usage non commercial seulement) et aucun poids ONNX pour transformers.js dans le dépôt officiel
+  perplexity-ai/pplx-embed-v1-0.6b (janvier 2026) : architecture « bidirectional_pplx_qwen3 » à code propre, absente de transformers.js 4.3.2 : le modèle ne se charge pas
+  LiquidAI/LFM2.5-Embedding-350M (mai 2026) : aucun poids ONNX publié ; licence propre (LFM Open License 1.0)
+
+Niveaux v0 sur la base actuelle (62280 paires) : aucun 62055, elevee 5, faible 165, moyenne 55.

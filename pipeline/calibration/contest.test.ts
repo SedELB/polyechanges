@@ -6,6 +6,7 @@ import { loadCriterion } from '../criterion/loadCriterion.js';
 import {
   candidateSlugs,
   contestVersionsOnDisk,
+  gridsDescription,
   prepareContest,
   readCandidate,
   recordRun,
@@ -88,5 +89,21 @@ describe('recordRun', () => {
     recordRun(file, 'm', run(50));
     recordRun(file, 'm', run(7, 'org/m@autre@fp32@00000000'));
     expect(JSON.parse(readFileSync(file, 'utf8')).m.compareSeconds).toBe(7);
+  });
+});
+
+describe('gridsDescription', () => {
+  const v0 = {
+    LOG3420: [{ id: 'a', fr: 'a', en: 'requirements analysis' }, { id: 'b', fr: 'b', en: 'risk assessment' }],
+    INF8111: [{ id: 'c', fr: 'c', en: 'data reduction' }],
+  };
+  it('dit quand les grilles sont celles de v0', () => {
+    expect(gridsDescription(v0, v0)).toBe('Grilles de notions : celles de v0.');
+  });
+  it('compte les notions corrigées et nomme les cours', () => {
+    const corrected = { ...v0, LOG3420: [{ id: 'a', fr: 'a', en: 'software requirements analysis' }, v0.LOG3420[1]] };
+    expect(gridsDescription(corrected, v0)).toBe(
+      'Grilles de notions : celles de v0 corrigées une fois après le premier calcul de l’accord (1 notion dans 1 cours : LOG3420).',
+    );
   });
 });

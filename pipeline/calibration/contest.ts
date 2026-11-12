@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { z } from 'zod';
+import type { Notion } from '../../shared/types.js';
 import type { ModelConfig } from '../criterion/embedder.js';
 import { CRITERION_DIR, loadCriterion, type CriterionParams } from '../criterion/loadCriterion.js';
 
@@ -105,4 +106,24 @@ export function directorySize(dir: string): number | null {
     total += entry.isDirectory() ? (directorySize(path) ?? 0) : statSync(path).size;
   }
   return total;
+}
+
+/** Décrit en une phrase l'écart entre les grilles du concours et celles de v0. */
+export function gridsDescription(grids: Record<string, Notion[]>, v0: Record<string, Notion[]>): string {
+  const same = (a: Notion, b: Notion | undefined) => !!b && a.id === b.id && a.fr === b.fr && a.en === b.en;
+  const courses = [...new Set([...Object.keys(grids), ...Object.keys(v0)])].sort();
+  let changed = 0;
+  const touched: string[] = [];
+  for (const sigle of courses) {
+    const a = grids[sigle] ?? [];
+    const b = v0[sigle] ?? [];
+    const n = Math.max(a.length, b.length) - a.filter((x, i) => same(x, b[i])).length;
+    if (n > 0) {
+      changed += n;
+      touched.push(sigle);
+    }
+  }
+  if (changed === 0) return 'Grilles de notions : celles de v0.';
+  const notions = `${changed} notion${changed > 1 ? 's' : ''}`;
+  return `Grilles de notions : celles de v0 corrigées une fois après le premier calcul de l’accord (${notions} dans ${touched.length} cours : ${touched.join(', ')}).`;
 }

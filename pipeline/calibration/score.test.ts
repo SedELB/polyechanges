@@ -5,7 +5,18 @@ import { activeHostCourses } from '../db/hostCourses.js';
 import { replaceMatches } from '../db/matches.js';
 import type { Db } from '../db/open.js';
 import { pairIdOf } from './sample.js';
-import { agreement, computedJudgments, gridSearch, pickWinner, V0_THRESHOLDS, type Judgment } from './score.js';
+import {
+  agreement,
+  cohenKappa,
+  computedJudgments,
+  confusionMatrix,
+  gridSearch,
+  meetsTarget,
+  pickWinner,
+  trivialAgreement,
+  V0_THRESHOLDS,
+  type Judgment,
+} from './score.js';
 import { matchRow, seedContestDb } from './testDb.js';
 
 describe('agreement', () => {
@@ -105,4 +116,49 @@ describe('gridSearch', () => {
 it('les seuils de référence sont ceux de data/criterion/v0', () => {
   const { detectThreshold, bandHigh, bandLow } = loadCriterion('v0').params;
   expect(V0_THRESHOLDS).toEqual({ detectThreshold, bandHigh, bandLow });
+});
+
+describe('cohenKappa', () => {
+  it('vaut 1 pour un accord parfait entre plusieurs classes', () => {
+    expect(cohenKappa([{ computed: 'elevee', judged: 'elevee' }, { computed: 'faible', judged: 'faible' }])).toBe(1);
+  });
+  it('corrige l’accord dû au hasard (4 classes, non pondéré)', () => {
+    // po = 3/4 ; calculé : faible 1/4, pas_equivalent 3/4 ; jugé : faible 2/4, pas_equivalent 2/4
+    // pe = 1/4 x 2/4 + 3/4 x 2/4 = 1/2 ; kappa = (3/4 - 1/2) / (1 - 1/2) = 0.5
+    const pairs: { computed: Judgment; judged: Judgment }[] = [
+      { computed: 'faible', judged: 'faible' },
+      { computed: 'pas_equivalent', judged: 'faible' },
+      { computed: 'pas_equivalent', judged: 'pas_equivalent' },
+      { computed: 'pas_equivalent', judged: 'pas_equivalent' },
+    ];
+    expect(cohenKappa(pairs)).toBe(0.5);
+  });
+  it('vaut 0 pour un critère qui répond toujours pareil', () => {
+    expect(cohenKappa([{ computed: 'pas_equivalent', judged: 'pas_equivalent' }, { computed: 'pas_equivalent', judged: 'faible' }])).toBe(0);
+  });
+});
+
+describe('confusionMatrix', () => {
+  it('compte les paires par jugement (lignes) et par niveau calculé (colonnes)', () => {
+    const m = confusionMatrix([
+      { computed: 'faible', judged: 'moyenne' },
+      { computed: 'faible', judged: 'moyenne' },
+      { computed: 'elevee', judged: 'elevee' },
+    ]);
+    expect(m.moyenne.faible).toBe(2);
+    expect(m.elevee.elevee).toBe(1);
+    expect(m.pas_equivalent.pas_equivalent).toBe(0);
+  });
+});
+
+describe('trivialAgreement et meetsTarget', () => {
+  it('le critère trivial répond « pas_equivalent » partout', () => {
+    expect(trivialAgreement(['pas_equivalent', 'faible', 'pas_equivalent'])).toBe(0.667);
+  });
+  it('exige 0.80 et au moins 0.15 de plus que le critère trivial', () => {
+    expect(meetsTarget(0.858, 0.708)).toBe(true);
+    expect(meetsTarget(0.85, 0.708)).toBe(false);
+    expect(meetsTarget(0.81, 0.6)).toBe(true);
+    expect(meetsTarget(0.79, 0.5)).toBe(false);
+  });
 });

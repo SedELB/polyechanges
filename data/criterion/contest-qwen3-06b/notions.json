@@ -118,8 +118,8 @@
     { "id": "cyber-incident-response", "fr": "réponse aux cyberincidents", "en": "cyber incident response" }
   ],
   "INF8111": [
-    { "id": "data-preparation-and-transformation", "fr": "préparation et transformation des données", "en": "data preparation and transformation" },
-    { "id": "data-reduction", "fr": "réduction de données", "en": "data reduction" },
+    { "id": "data-preparation-and-transformation", "fr": "préparation et transformation des données pour la fouille", "en": "data preparation and transformation for data mining" },
+    { "id": "data-reduction", "fr": "réduction de données pour la fouille", "en": "data reduction for data mining" },
     { "id": "data-mining-tasks", "fr": "tâches de fouille de données", "en": "data mining tasks" },
     { "id": "outlier-detection", "fr": "détection de données aberrantes", "en": "outlier detection" },
     { "id": "graph-mining", "fr": "fouille de graphes", "en": "graph mining" },
@@ -379,26 +379,26 @@
     { "id": "dynamic-analysis", "fr": "analyse dynamique", "en": "dynamic analysis" }
   ],
   "LOG3420": [
-    { "id": "requirements-classification", "fr": "typologie des exigences", "en": "requirements classification" },
-    { "id": "requirements-elicitation", "fr": "élicitation des exigences", "en": "requirements elicitation" },
-    { "id": "requirements-analysis", "fr": "analyse des exigences", "en": "requirements analysis" },
-    { "id": "requirements-validation", "fr": "validation des exigences", "en": "requirements validation" },
-    { "id": "requirements-specification", "fr": "spécification des exigences", "en": "requirements specification" },
+    { "id": "requirements-classification", "fr": "typologie des exigences du logiciel", "en": "software requirements classification" },
+    { "id": "requirements-elicitation", "fr": "élicitation des exigences du logiciel", "en": "software requirements elicitation" },
+    { "id": "requirements-analysis", "fr": "analyse des exigences du logiciel", "en": "software requirements analysis" },
+    { "id": "requirements-validation", "fr": "validation des exigences du logiciel", "en": "software requirements validation" },
+    { "id": "requirements-specification", "fr": "spécification des exigences du logiciel", "en": "software requirements specification" },
     { "id": "software-prototyping", "fr": "prototypage", "en": "software prototyping" },
-    { "id": "requirements-negotiation", "fr": "négociation des exigences", "en": "requirements negotiation" },
+    { "id": "requirements-negotiation", "fr": "négociation des exigences du logiciel", "en": "software requirements negotiation" },
     { "id": "risk-assessment", "fr": "évaluation du risque", "en": "risk assessment" },
-    { "id": "requirements-and-agile-methods", "fr": "exigences et méthodes agiles", "en": "requirements and agile methods" },
-    { "id": "requirements-management", "fr": "gestion des exigences", "en": "requirements management" }
+    { "id": "requirements-and-agile-methods", "fr": "exigences du logiciel et méthodes agiles", "en": "software requirements and agile methods" },
+    { "id": "requirements-management", "fr": "gestion des exigences du logiciel", "en": "software requirements management" }
   ],
   "LOG3430": [
     { "id": "software-verification-validation", "fr": "vérification et validation du logiciel", "en": "software verification and validation" },
-    { "id": "testing-method-classification", "fr": "classification des méthodes de test", "en": "testing method classification" },
+    { "id": "testing-method-classification", "fr": "classification des méthodes de test du logiciel", "en": "classification of software testing methods" },
     { "id": "structural-testing", "fr": "test structurel", "en": "structural testing" },
     { "id": "functional-testing", "fr": "test fonctionnel", "en": "functional testing" },
     { "id": "finite-state-machine-testing", "fr": "tests pour automates finis", "en": "finite state machine testing" },
     { "id": "integration-and-installation-testing-strategies", "fr": "stratégies de tests d'intégration et d'installation", "en": "integration and installation testing strategies" },
-    { "id": "statistical-validation", "fr": "approches statistiques en validation", "en": "statistical validation" },
-    { "id": "software-reliability", "fr": "fiabilité du logiciel", "en": "software reliability" },
+    { "id": "statistical-validation", "fr": "approches statistiques en validation et vérification du logiciel", "en": "statistical approaches to software verification and validation" },
+    { "id": "software-reliability", "fr": "méthodes de développement pour assurer la fiabilité du logiciel", "en": "development methods for software reliability" },
     { "id": "test-planning", "fr": "planification des tests", "en": "test planning" }
   ],
   "LOG4715": [
@@ -487,8 +487,8 @@
     { "id": "entity-component-system", "fr": "modèle entité-composante-système", "en": "entity-component-system" },
     { "id": "data-oriented-design-patterns", "fr": "patrons orientés données", "en": "data-oriented design patterns" },
     { "id": "game-loop", "fr": "boucle de jeu", "en": "game loop" },
-    { "id": "profiling-and-debugging", "fr": "profilage et débogage", "en": "profiling and debugging" },
-    { "id": "memory-management", "fr": "gestion de la mémoire", "en": "memory management" },
+    { "id": "profiling-and-debugging", "fr": "profilage et débogage des jeux", "en": "game profiling and debugging" },
+    { "id": "memory-management", "fr": "performance et gestion de la mémoire des jeux", "en": "game performance and memory management" },
     { "id": "parallelism-models", "fr": "modèles de parallélisme", "en": "parallelism models" },
     { "id": "continuous-integration", "fr": "intégration continue", "en": "continuous integration" },
     { "id": "object-replication", "fr": "réplication d'objets", "en": "object replication" },

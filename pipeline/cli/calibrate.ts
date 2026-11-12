@@ -5,13 +5,24 @@ import {
   contestVersion,
   contestVersionsOnDisk,
   directorySize,
+  gridsDescription,
   prepareContest,
   readRuns,
   recordRun,
 } from '../calibration/contest.js';
 import { formatReport, type CandidateLine } from '../calibration/report.js';
 import { drawConsensusSample, drawSample, parsePairId, sampleFile, SAMPLE_SIZE, type SampleFile } from '../calibration/sample.js';
-import { computedJudgments, gridSearch, JUDGMENTS, pickWinner, type Judgment } from '../calibration/score.js';
+import {
+  agreement,
+  cohenKappa,
+  computedJudgments,
+  confusionMatrix,
+  gridSearch,
+  JUDGMENTS,
+  pickWinner,
+  trivialAgreement,
+  type Judgment,
+} from '../calibration/score.js';
 import { runCompare } from '../compare/compare.js';
 import { createLocalEmbedder, type Embedder } from '../criterion/embedder.js';
 import { CRITERION_DIR, loadCriterion } from '../criterion/loadCriterion.js';
@@ -35,7 +46,7 @@ const USAGE = [
   '  npm run calibrate:run -- <slug> [--notions <fichier>]       prépare, compare et mesure le candidat',
   '  npm run calibrate:sample -- --seed <n>                      tire data/calibration/sample.json',
   '  npm run calibrate:sample-2 -- --seed <n>                    tire data/calibration/sample-2.json (consensus des candidats)',
-  '  npm run calibrate:score                                     calibre chaque candidat et écrit report.txt',
+  '  npm run calibrate:score [-- --out <fichier>]               calibre chaque candidat et écrit report.txt',
 ].join('\n');
 
 /** Version exacte de transformers.js épinglée dans package.json. */
@@ -143,14 +154,16 @@ const judgmentsSchema = z.record(
   z.union([judgmentSchema, z.object({ judgment: judgmentSchema, reason: z.string().optional() })]),
 );
 
-/** Jugements du juge à l'aveugle, une entrée par paire de l'échantillon, ni plus ni moins. */
-function readJudgments(sampleIds: string[]): { judgments: Record<string, Judgment>; reasons: Record<string, string> } {
-  if (!existsSync(JUDGMENTS_FILE)) throw new Error(`${JUDGMENTS_FILE} est absent : l'échantillon doit d'abord être jugé`);
-  const raw = judgmentsSchema.parse(JSON.parse(readFileSync(JUDGMENTS_FILE, 'utf8')));
+/** Jugements d'un juge à l'aveugle : une entrée par paire de son échantillon, ni plus ni moins. */
+function readJudgments(file: string, sampleIds: string[]): { judgments: Record<string, Judgment>; reasons: Record<string, string> } {
+  if (!existsSync(file)) throw new Error(`${file} est absent : l'échantillon doit d'abord être jugé`);
+  const raw = judgmentsSchema.parse(JSON.parse(readFileSync(file, 'utf8')));
   const missing = sampleIds.filter((id) => !(id in raw));
   const extra = Object.keys(raw).filter((id) => !sampleIds.includes(id));
   if (missing.length > 0 || extra.length > 0) {
-    throw new Error(`Jugements et échantillon ne correspondent pas (manquants : ${missing.join(', ') || 'aucun'} ; en trop : ${extra.join(', ') || 'aucun'})`);
+    throw new Error(
+      `${file} et son échantillon ne correspondent pas (manquants : ${missing.join(', ') || 'aucun'} ; en trop : ${extra.join(', ') || 'aucun'})`,
+    );
   }
   const judgments: Record<string, Judgment> = {};
   const reasons: Record<string, string> = {};
@@ -161,63 +174,91 @@ function readJudgments(sampleIds: string[]): { judgments: Record<string, Judgmen
   return { judgments, reasons };
 }
 
-function score(): void {
-  const sampleData = JSON.parse(readFileSync(SAMPLE_FILE, 'utf8')) as SampleFile;
-  if (sampleData.pairs.length !== SAMPLE_SIZE) throw new Error(`L'échantillon compte ${sampleData.pairs.length} paires au lieu de ${SAMPLE_SIZE}`);
-  const { judgments, reasons } = readJudgments(sampleData.pairs.map((p) => p.pairId));
+/** Les deux échantillons jugés : le premier (meilleurs candidats et hasard), le second (consensus des candidats). */
+const SAMPLES = [
+  { label: 'échantillon 1', file: SAMPLE_FILE, judgmentsFile: JUDGMENTS_FILE, draw: '3 meilleurs de chaque candidat, 1 sur 5 au hasard' },
+  { label: 'échantillon 2', file: SAMPLE_2_FILE, judgmentsFile: JUDGMENTS_2_FILE, draw: 'premiers d’au moins 2 candidats, hors échantillon 1' },
+];
+
+function score(args: string[]): void {
+  const out = option(args, '--out') ?? REPORT_FILE;
+  const samples = SAMPLES.map((s) => {
+    const data = JSON.parse(readFileSync(s.file, 'utf8')) as SampleFile;
+    if (data.pairs.length !== SAMPLE_SIZE) throw new Error(`${s.file} compte ${data.pairs.length} paires au lieu de ${SAMPLE_SIZE}`);
+    return { ...s, data, ...readJudgments(s.judgmentsFile, data.pairs.map((p) => p.pairId)) };
+  });
+  const judgments: Record<string, Judgment> = Object.assign({}, ...samples.map((s) => s.judgments));
+  const reasons: Record<string, string> = Object.assign({}, ...samples.map((s) => s.reasons));
+  const ids = Object.keys(judgments).sort();
+  if (ids.length !== samples.reduce((n, s) => n + s.data.pairs.length, 0)) throw new Error('Une paire figure dans les deux échantillons');
+  const sampleOf = new Map(samples.flatMap((s) => s.data.pairs.map((p) => [p.pairId, { label: s.label, entry: p }] as const)));
   const runs = readRuns(RUNS_FILE);
   const excluded = existsSync(EXCLUDED_FILE)
     ? (JSON.parse(readFileSync(EXCLUDED_FILE, 'utf8')) as { model: string; reason: string }[])
     : [];
   const versions = contestVersionsOnDisk();
+  const pairsOf = (computed: Record<string, Judgment>, subset: string[]) => subset.map((id) => ({ computed: computed[id], judged: judgments[id] }));
 
   withDb((db) => {
+    const computedBy = new Map<string, Record<string, Judgment>>();
     const candidates: CandidateLine[] = versions.map((version) => {
       const { model } = loadCriterion(version).params;
+      const result = gridSearch(db, version, judgments);
+      const computed = computedJudgments(db, version, ids, result);
+      computedBy.set(version, computed);
       return {
         version,
         modelId: model.id,
         revision: model.revision,
         sizeMillions: model.sizeMillions,
         run: runs[model.slug] ?? null,
-        result: gridSearch(db, version, judgments),
+        result,
+        bySample: samples.map((s) => agreement(pairsOf(computed, Object.keys(s.judgments)))),
+        kappa: cohenKappa(pairsOf(computed, ids)),
       };
     });
     const winner = pickWinner(candidates.map((c) => ({ version: c.version, sizeMillions: c.sizeMillions, agreement: c.result.agreement })));
-    const best = candidates.find((c) => c.version === winner) as CandidateLine;
-    const computed = computedJudgments(db, winner, Object.keys(judgments).sort(), best.result);
-    const entries = new Map(sampleData.pairs.map((p) => [p.pairId, p]));
-    const disagreements = Object.keys(computed)
+    const computed = computedBy.get(winner) as Record<string, Judgment>;
+    const disagreements = ids
       .filter((id) => computed[id] !== judgments[id])
       .map((id) => {
-        const p = entries.get(id);
+        const { label, entry } = sampleOf.get(id) as { label: string; entry: SampleFile['pairs'][number] };
         const { polySigle } = parsePairId(id);
         return {
           pairId: id,
-          label: p ? `${polySigle} / ${p.university} ${p.hostCourse.code} ${p.hostCourse.title}` : polySigle,
+          sample: label,
+          label: `${polySigle} / ${entry.university} ${entry.hostCourse.code} ${entry.hostCourse.title}`,
           computed: computed[id],
           judged: judgments[id],
           reason: reasons[id] ?? null,
         };
       });
-    const judged = Object.fromEntries(JUDGMENTS.map((j) => [j, Object.values(judgments).filter((x) => x === j).length])) as Record<
-      Judgment,
-      number
-    >;
+    const counts = (values: Judgment[]) =>
+      Object.fromEntries(JUDGMENTS.map((j) => [j, values.filter((x) => x === j).length])) as Record<Judgment, number>;
     const levels = db
       .prepare("SELECT COALESCE(level, 'aucun') AS level, COUNT(*) AS n FROM matches WHERE criterion_version = 'v0' GROUP BY 1 ORDER BY 1")
       .all() as { level: string; n: number }[];
     const text = formatReport({
-      sampleSize: sampleData.pairs.length,
-      seed: sampleData.seed,
-      judged,
+      samples: samples.map((s) => ({
+        label: s.label,
+        file: s.file.replaceAll('\\', '/'),
+        judgmentsFile: s.judgmentsFile.replaceAll('\\', '/'),
+        seed: s.data.seed,
+        draw: s.draw,
+        size: s.data.pairs.length,
+        judged: counts(Object.values(s.judgments)),
+        trivial: trivialAgreement(Object.values(s.judgments)),
+      })),
+      trivial: trivialAgreement(Object.values(judgments)),
+      grids: gridsDescription(loadCriterion(winner).notions, loadCriterion('v0').notions),
       candidates,
       winner,
+      confusion: confusionMatrix(pairsOf(computed, ids)),
       disagreements,
       excluded,
       v0Levels: { total: levels.reduce((a, l) => a + l.n, 0), byLevel: Object.fromEntries(levels.map((l) => [l.level, l.n])) },
     });
-    writeFileSync(REPORT_FILE, text, 'utf8');
+    writeFileSync(out, text, 'utf8');
     console.log(text);
   });
 }
@@ -230,7 +271,7 @@ async function main(): Promise<number> {
     else if (command === 'run' && slug) await run(slug, args);
     else if (command === 'sample') sample(args);
     else if (command === 'sample-2') sample2(args);
-    else if (command === 'score') score();
+    else if (command === 'score') score(args);
     else {
       console.error(USAGE);
       return 1;

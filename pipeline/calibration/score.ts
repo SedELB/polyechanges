@@ -108,6 +108,41 @@ export function gridSearch(
   return result;
 }
 
+/** Écart minimal entre l'accord du gagnant et celui du critère trivial (tout « pas_equivalent »). */
+export const MIN_MARGIN = 0.15;
+
+/** Accord d'un critère qui ne retiendrait aucune paire. */
+export function trivialAgreement(judged: Judgment[]): number {
+  return agreement(judged.map((j) => ({ computed: 'pas_equivalent', judged: j })));
+}
+
+/** Le gel exige l'accord visé et une avance suffisante sur le critère trivial. */
+export function meetsTarget(winnerAgreement: number, trivial: number): boolean {
+  return winnerAgreement >= TARGET_AGREEMENT && winnerAgreement >= round3(trivial + MIN_MARGIN);
+}
+
+/** Kappa de Cohen non pondéré sur les 4 classes, arrondi ; 0 quand l'accord dû au hasard vaut déjà 1. */
+export function cohenKappa(pairs: { computed: Judgment; judged: Judgment }[]): number {
+  if (pairs.length === 0) return 0;
+  const n = pairs.length;
+  const observed = pairs.filter((p) => p.computed === p.judged).length / n;
+  const chance = JUDGMENTS.reduce(
+    (sum, k) => sum + (pairs.filter((p) => p.computed === k).length / n) * (pairs.filter((p) => p.judged === k).length / n),
+    0,
+  );
+  return chance >= 1 ? 0 : round3((observed - chance) / (1 - chance));
+}
+
+/** Matrice de confusion : `m[jugé][calculé]` = nombre de paires. */
+export function confusionMatrix(pairs: { computed: Judgment; judged: Judgment }[]): Record<Judgment, Record<Judgment, number>> {
+  const m = Object.fromEntries(JUDGMENTS.map((j) => [j, Object.fromEntries(JUDGMENTS.map((c) => [c, 0]))])) as Record<
+    Judgment,
+    Record<Judgment, number>
+  >;
+  for (const p of pairs) m[p.judged][p.computed]++;
+  return m;
+}
+
 /** Meilleur accord ; à égalité, le plus petit modèle (plus rapide à relancer chaque année), puis le nom de version. */
 export function pickWinner(results: { version: string; sizeMillions: number; agreement: number }[]): string {
   if (results.length === 0) throw new Error('Aucun candidat à départager');
