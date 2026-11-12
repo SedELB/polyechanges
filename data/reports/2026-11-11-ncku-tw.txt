@@ -14,3 +14,6 @@ Faits restés vides
 - terms.fall.end, terms.spring.end : le PDF écrit seulement « (31)Fall semester ends. » / « (31)Spring semester ends. » (fin administrative) ; la page des échanges donne « Mid-January » et « 2nd half of June » sans jour. Laissés à null.
 - terms.fall.examsEnd, terms.spring.examsEnd : « There are no set examination periods » (page des échanges) ; les semaines d'examen des cours « flexibles » (4 au 8 janvier, 21 au 25 juin) ne valent pas pour tous les cours. Laissés à null.
 - catalogUrl : voir plus haut (CAPTCHA).
+
+Complément (deux contextes)
+Les deux dates de début de cours ont maintenant un second contexte pour le mois : « Sep. (2-3)English Module Registration(tentative).(2-4)NCKU Freshman » (p1:l45, copie 0a67ac5d...) et « Feb. (1)Credits wavier begins. (2/2-2/22) Payments of spring semester » (p1:l37, copie bb5750d8...). Année et période du semestre : premier contexte (inchangé).

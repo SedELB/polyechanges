@@ -37,3 +37,6 @@ Faits complétés le 2026-11-11 (UTC)
 - restrictions -> « Exchange students are not allowed to enroll in the following 6 types of courses: Distance learning courses Teacher education program courses »
   Adresse : https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcaOverview (sha256 5ea514a1..., p1:l58)
   Extrait (3 lignes) : identique à la valeur. Réserve : la limite de 3 lignes coupe la liste après 2 types sur 6. Les 4 autres, écrits aux lignes 61 à 64 de la même page, ne sont pas conservés : « Continuing education courses », « EMBA courses », « Required courses of GMBA (will be shown in the course information system) », « Practical training courses from the School of Medicine ».
+
+Complément (restrictions)
+La valeur stockée est seulement la phrase d'introduction (p1:l58) : « Exchange students are not allowed to enroll in the following 6 types of courses: ». Une liste coupée induirait en erreur. Liste complète des 6 types (lignes 59 à 64 de la même page) : Distance learning courses ; Teacher education program courses ; Continuing education courses ; EMBA courses ; Required courses of GMBA (will be shown in the course information system) ; Practical training courses from the School of Medicine.

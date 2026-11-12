@@ -823,6 +823,13 @@
               "line": 35
             },
             "quote": "Fall Semester: August 2026-January 2027"
+          },
+          {
+            "locator": {
+              "page": 1,
+              "line": 45
+            },
+            "quote": "Sep. (2-3)English Module Registration(tentative).(2-4)NCKU Freshman"
           }
         ]
       },
@@ -842,6 +849,13 @@
               "line": 34
             },
             "quote": "Spring Semester: February 2027-July 2027"
+          },
+          {
+            "locator": {
+              "page": 1,
+              "line": 37
+            },
+            "quote": "Feb. (1)Credits wavier begins. (2/2-2/22) Payments of spring semester"
           }
         ]
       },
@@ -881,7 +895,7 @@
         "examsEnd": "2026-06-12"
       }
     },
-    "restrictions": "Exchange students are not allowed to enroll in the following 6 types of courses: Distance learning courses Teacher education program courses",
+    "restrictions": "Exchange students are not allowed to enroll in the following 6 types of courses:",
     "exchangeContact": "Office of International Affairs, National Taiwan University : oia@ntu.edu.tw",
     "catalogPublic": true,
     "provenance": {
@@ -1043,7 +1057,7 @@
           "page": 1,
           "line": 58
         },
-        "quote": "Exchange students are not allowed to enroll in the following 6 types of courses: Distance learning courses Teacher education program courses"
+        "quote": "Exchange students are not allowed to enroll in the following 6 types of courses:"
       }
     }
   },
@@ -1842,7 +1856,7 @@
     "contactHoursPerCredit": 15,
     "terms": {
       "fall": {
-        "start": null,
+        "start": "2026-09-01",
         "end": "2026-12-14",
         "examsEnd": null
       },
@@ -2000,6 +2014,32 @@
               "line": 153
             },
             "quote": "2026 MARCH 01 (Sun)"
+          }
+        ]
+      },
+      "terms.fall.start": {
+        "url": "https://en.snu.ac.kr/academics/resources/calendar",
+        "retrievedAt": "2026-11-10T23:15:41.421Z",
+        "sha256": "f8dcdbc816b4f750695255ec62edae16064747e065929ff3ef3757b784152268",
+        "locator": {
+          "page": 1,
+          "line": 219
+        },
+        "quote": "01 (Tue) Beginning of Fall semester classes",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 153
+            },
+            "quote": "2026 MARCH 01 (Sun)"
+          },
+          {
+            "locator": {
+              "page": 1,
+              "line": 216
+            },
+            "quote": "SEPTEMBER 01 (Tue) Start of Fall semester"
           }
         ]
       }

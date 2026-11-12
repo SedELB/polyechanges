@@ -50,3 +50,6 @@ Dates avec contexte (2026-11-10)
   « 2026 MARCH 01 (Sun) » (ligne 153) ; mardi 3 mars 2026 : concorde.
 - Reste vide : terms.fall.start. Le mois (« SEPTEMBER », ligne 216) et l'année (« 2026 », ligne 153) ne tiennent pas dans un seul
   extrait de contexte de 3 lignes ; le début des cours n'est pas déduit du « Start of Fall semester ».
+
+Faits complétés le 2026-11-11 (UTC) : Taïwan
+- terms.fall.start 2026-09-01 : extrait « 01 (Tue) Beginning of Fall semester classes » (p1:l219, https://en.snu.ac.kr/academics/resources/calendar, sha256 f8dcdbc8...), contextes « 2026 MARCH 01 (Sun) » (l153, année) et « SEPTEMBER 01 (Tue) Start of Fall semester » (l216, mois), tous deux avant l'extrait principal. Mardi 1er septembre 2026 : concorde.
