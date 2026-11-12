@@ -1,0 +1,60 @@
+p1:l1 2026年度 (⽊曜⽇1講時)
+p1:l2 ⾯接/Face-to-face
+p1:l3 学則第9条の5対象
+p1:l4 Article 9-5 of
+p1:l5 the Undergraduate Regulations applies
+p1:l6 ： 対象外/Not Applicable
+p1:l7 ANDREW MEREDITH DAVIES
+p1:l8 シラバス
+p1:l9 ※学期中に内容が変更になることがあります。
+p1:l10 ディプロマポリシーとの関連性はこちらを参照/Relationship with Diploma Policy
+p1:l11 31691017 △Ａｄｖａｎｃｅｄ Ｉｎｆｏｒｍａｔｉｏｎ ａｎｄ Ｃｏｍｐｕｔｅｒ Ｓｃ
+p1:l12 ｉｅｎｃｅｓ Ⅰ（Ｅ）
+p1:l13 Advanced Information and Computer Sciences Ⅰ (E)
+p1:l14 2単位/Unit 秋学期/Fall 京⽥辺/Kyotanabe 講義/Lecture
+p1:l15 ＜概要/Course Content Summary＞
+p1:l16 This course will teach presentation skills for academic and professional purposes. We will
+p1:l17 examine different types of presentations and learn to use the appropriate format for any given
+p1:l18 situation.
+p1:l19 The importance of body language， voice delivery and use of gestures will be covered. A study
+p1:l20 of the structure of a presentation will follow， emphasizing the importance of a strong
+p1:l21 introduction， body and a succinct conclusion. Finally， the effective use of visuals such as
+p1:l22 graphs and pictures will be examined.
+p1:l23 The course will make extensive use of PowerPoint as a presentation aid (prior experience is not
+p1:l24 necessary).
+p1:l25 Students will be assessed via group and individual presentations will which take place at
+p1:l26 various points in the semester.
+p1:l27 IMPORTANT! This course is conducted in English. Students should be able to read course
+p1:l28 materials and understand spoken English. Furthermore， students must be willing to give
+p1:l29 presentations in English.
+p1:l30 ＜到達⽬標/Goals,Aims＞
+p1:l31 Students will learn to identify the common mistakes made in presentations and how to avoid
+p1:l32 them. They will learn the concepts of structure and good slide design.
+p1:l33 Additionally， students will gain confidence in the use of spoken English when giving
+p1:l34 presentations to a group of their peers.
+p1:l35 ＜DO Week期間の初回動画等の配信/The delivery of the first video, etc. during the “DO
+p1:l36 Week”＞
+p1:l37 あり/ Deliver the video
+p1:l38 ‧Do Week Video
+p1:l39 ＜授業計画/Schedule＞
+p1:l40 実施時期
+p1:l41 /Week
+p1:l42 授業回/Number of
+p1:l43 Lesson
+p1:l44 授業実施⽅法
+p1:l45 /How to conduct a Lesson
+p1:l46 授業実施時
+p1:l47 間数
+p2:l1 /Class Hours
+p2:l2 内容/Contents
+p2:l3 授業時間外の学習/Assignments
+p2:l4 第 1 週 / We e k 1
+p2:l5 ( D O We e k )
+p2:l6 1
+p2:l7 オンデマンド（動画視聴）/On-
+p2:l8 demand(watching video) 30 分/min
+p2:l9 Introduction to the course. A road map of the semester, information on where to
+p2:l10 find the learning materials and an introduction to the first reading.
+p2:l11 Watch the video. Confirm availability of learning materials (OneDrive, Teams).
+p2:l12 (1 hour)
+p2:l13 第 1 週 / We e k 1

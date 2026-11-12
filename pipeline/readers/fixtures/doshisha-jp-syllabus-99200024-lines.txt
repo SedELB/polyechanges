@@ -1,0 +1,60 @@
+p1:l1 2026年度 (⽊曜⽇4講時)
+p1:l2 ⾯接/Face-to-face
+p1:l3 学則第9条の5対象
+p1:l4 Article 9-5 of
+p1:l5 the Undergraduate Regulations applies
+p1:l6 ： 対象外/Not Applicable
+p1:l7 DANYL MIGDALSKYI/DANYL MIGDALSKYI
+p1:l8 シラバス
+p1:l9 ※学期中に内容が変更になることがあります。
+p1:l10 ディプロマポリシーとの関連性はこちらを参照/Relationship with Diploma Policy
+p1:l11 99200024-001 ○Statistics for the Social Sciences and Humanities－1
+p1:l12 Statistics for the Social Sciences and Humanities－1
+p1:l13 2単位/Unit 春学期/Spring 京⽥辺/Kyotanabe 講義/Lecture
+p1:l14 ＜概要/Course Content Summary＞
+p1:l15 This course introduces students to essential statistical concepts and methods used in the social
+p1:l16 sciences and humanities. Emphasis is placed on understanding statistical reasoning, selecting
+p1:l17 appropriate analytical tools, and interpreting quantitative findings in social, cultural, political,
+p1:l18 and humanistic research contexts. Rather than focusing on advanced mathematics, the course
+p1:l19 prioritizes practical application, critical thinking, and responsible use of data.
+p1:l20 Students will work with real-world datasets, learn to evaluate statistical claims in academic
+p1:l21 literature and public discourse, and develop a small-scale research project that integrates theory,
+p1:l22 data, and statistical analysis. By the end of the course, students will be equipped to both
+p1:l23 conduct and critically assess quantitative research relevant to their fields.
+p1:l24 ＜到達⽬標/Goals,Aims＞
+p1:l25 Course Objectives
+p1:l26 By the end of this course, students will be able to:
+p1:l27 •Understand fundamental statistical concepts and terminology
+p1:l28 •Apply descriptive and inferential statistical methods to social science and humanities data
+p1:l29 •Interpret statistical results and communicate findings clearly in written and oral form
+p1:l30 •Critically evaluate quantitative research in academic literature
+p1:l31 •Design and conduct a basic empirical research project
+p1:l32 •Use statistical software at an introductory level (e.g., SPSS, R, Excel, or equivalent)
+p1:l33 ＜DO Week期間の初回動画等の配信/The delivery of the first video, etc. during the “DO
+p1:l34 Week”＞
+p1:l35 あり/ Deliver the video
+p1:l36 ‧Do-week 1 Statistics for the Social Sciences and Humanities
+p1:l37 ＜授業計画/Schedule＞
+p1:l38 実施時期
+p1:l39 /Week
+p1:l40 授業回/Number of
+p1:l41 Lesson
+p1:l42 授業実施⽅法
+p1:l43 /How to conduct a Lesson
+p1:l44 授業実施時
+p1:l45 間数
+p1:l46 /Class Hours
+p1:l47 内容/Contents
+p1:l48 授業時間外の学習/Assignments
+p1:l49 第 1 週 / We e k 1
+p1:l50 ( D O We e k )
+p1:l51 オンデマンド（動画視聴）/On-
+p1:l52 demand(watching video) 90 分/min
+p2:l1 Week 1: Introduction to Statistics in the Social Sciences and Humanities
+p2:l2 •What is statistics and why it matters
+p2:l3 •Quantitative vs. qualitative research
+p2:l4 •Types of data and variables
+p2:l5 •Examples from sociology, political science, psychology, linguistics, and
+p2:l6 cultural studies
+p2:l7 第 2 週 / We e k 2
+p2:l8 ⾯接/Face-to-face 90 分/min

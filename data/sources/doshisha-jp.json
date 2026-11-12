@@ -3,7 +3,5 @@
   "universityId": "doshisha-jp",
   "kind": "manual",
   "urls": [],
-  "reader": "manual",
-  "descriptions": "none",
-  "descriptionsNote": "Les deux listes officielles (cours du Global Education Module et guide d'inscription 2026 de l'ISTC) ne donnent que le code, le titre, les crédits, l'enseignant et le trimestre. Les syllabus (syllabus.doshisha.ac.jp) répondent 403 Forbidden, robots.txt compris, et ne sont donc pas lisibles par programme : les descriptions viendront des fiches de syllabus enregistrées à la main depuis un navigateur (data/saved/doshisha-jp/). Langue des cours de l'ISTC : « en », selon la page https://istc.doshisha.ac.jp/istc/en/admission/exchange.html (copie 35b3af562f0dc6da515c4b6ddef7e3813d3c3f2e064b40976b73c83b95c26c9a, ligne 81) : « All classes necessary to obtain a degree are taught in English. »"
+  "reader": "manual"
 }

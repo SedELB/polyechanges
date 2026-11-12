@@ -7,3 +7,4 @@ import './sjtu-cn.js';
 import './kaist-kr.js';
 import './snu-kr.js';
 import './snu-kr-catalog.js';
+import './doshisha-jp-syllabus.js';

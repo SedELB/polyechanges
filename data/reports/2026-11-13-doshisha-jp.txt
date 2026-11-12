@@ -1,0 +1,21 @@
+=== collecte automatique ===
+Rapport de collecte : doshisha-jp
+Date : 2026-11-13
+Statut : ok
+Cours actifs : 23
+Ajoutés (0) : aucun
+Retirés (0) : aucun
+Modifiés (23) : 31691001, 31691005, 31691010, 31691012, 31691014, 31691015, 31691016, 31691017, 31692001, 31692008, 31692009, 31692012, 31695001, 31695002, 31695003, 31695013, 31696502, 31696505, 31696512, 99200024, 99200025, 99200027, 99200029
+Sources : doshisha-jp (manual), doshisha-jp-syllabus (saved, enrich)
+Codes ignorés de la source doshisha-jp-syllabus (enrich, absents des autres sources) : 0
+=== fin de la collecte automatique ===
+
+2026-11-13 Vérification de 5 cours (fiche enregistrée du syllabus lue à la main, comparée à la ligne de la base : titre, crédits, trimestre, description)
+- 31691010 Advanced Natural Language Processing : fiche p1:l13 « 2単位/Unit 秋学期/Fall », 2 crédits, automne ; description = résumé et objectifs (784 caractères). Identique à la liste.
+- 31695013 Advanced Geometry : « 2単位/Unit 秋学期/Fall », théorie des nœuds ; pas de rubrique d'objectifs sur la fiche, description = résumé seul. Identique.
+- 31692008 Electrical Power Systems Engineering : « 春集中/Spring Intensive », 2 crédits, printemps. Identique.
+- 99200027 Introduction to Quantitative Data Analysis : « 秋学期/Fall », Imadegawa, 2 crédits. Identique.
+- 99200024 Statistics for the Social Sciences and Humanities : la fiche porte « 99200024-001 » et le titre « …Humanities－1 » ; la liste officielle écrit « …Humanities » avec la classe 001. Même cours (suffixe de classe), titre de la liste gardé.
+Langue : 2 fiches sur 23 l'écrivent (31691005 « taught in English », 31691017 « conducted in English ») ; aucune ne donne une autre langue ; la langue reste celle de la liste (en). Les 23 titres et crédits de toutes les fiches concordent avec la liste ; les 23 trimestres aussi.
+Adresses d'origine : aucune n'est écrite dans les PDF ; construites d'après le modèle des notes de l'étudiant (https://syllabus.doshisha.ac.jp/html/2026/<chiffres 2 à 5 du code>/<code><classe>.html, classe 000 sauf 001 pour 99200024, d'après la liste).
+Position enregistrée : ligne de l'en-tête de la fiche (p1:l11), pas celle de la description.
