@@ -19,3 +19,11 @@ Correctifs de périmètre
   English ... » ; ligne 52 : « Please note that Spring is not a major semester at GC therefore the course options will be
   limited. » Ce n'est pas une limite d'accès : la restriction actuelle (admission par une école précise) est conservée telle quelle.
 - La ligne 54 est aussi une meilleure source de la langue « en » que la page d'admission au 1er cycle citée plus haut.
+
+Faits complétés le 2026-11-11 (UTC)
+Ce sont les dates du Global College (ancien Joint Institute), pas un calendrier de toute l'université ; les 121 cours collectés sont des cours du Global College.
+- terms.fall.start -> 2026-09-14 (lundi, vérifié pour 2026) -> https://gc.sjtu.edu.cn/wp-content/uploads/2026/07/2026-Fall1.pdf (sha256 735dce8e...845d, p1:l3) -> « Sept 14 Classes Begin ». Contexte (année, même page, après les événements) : « Global College Academic Calendar for 2026 Fall Semester » (p1:l28). Année 2026-2027 : le calendrier de 2027 n'est pas publié.
+- terms.fall.examsEnd -> 2026-12-18 -> même PDF (p1:l15) -> « Dec 14-18 Examination Week » (fin de la plage écrite, 18 déc., vendredi). Même contexte d'année.
+- terms.fall.end : laissé vide. Le PDF ne donne pas le dernier jour de cours (seulement « Classes Begin » et la semaine d'examens).
+- terms.spring.* : laissé vide. Le calendrier 2025-2026 (https://gc.sjtu.edu.cn/wp-content/uploads/2026/03/2025-2026.pdf, sha256 2bb7436c...efed) ne marque ni début de cours, ni fin, ni semaine d'examens pour le printemps (seulement « Examination Week » en décembre et en août) ; aucun calendrier 2026-2027 de printemps publié.
+- contactHoursPerCredit : laissé vide. Pages essayées : page « Rules » des études supérieures du Global College (https://gc.sjtu.edu.cn/academics/graduate-program/degree-requirements-rules/rules/, aucune définition d'heures par crédit), fiche de cours (« 4 credits » sans heures), page « Academic Information » de l'IPO. La définition (1 crédit = 16 h, règles de premier cycle) n'est que sur ji.sjtu.edu.cn, jamais requis.

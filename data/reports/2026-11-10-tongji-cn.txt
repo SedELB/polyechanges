@@ -71,3 +71,10 @@ Notes sur la fiche de l'université et sur le périmètre
 - Descriptions : aucune publiée (voir plus haut).
 - Hors périmètre faute de liste lisible : la liste détaillée par cours (kdocs, rendue par JavaScript) et les cours
   d'autres écoles (ex. School of Software Engineering, dont le site renvoie aux listes par semestre sans les publier).
+
+Faits complétés le 2026-11-11 (UTC)
+- terms.fall.start -> 2026-09-14 -> https://study.tongji.edu.cn/__local/C/73/B8/69053FDE3268F293A257F8DBEDD_36156EB6_49790F.pdf (guide des étudiants internationaux 2026, sha256 81b66c53...0bc93, p14:l8) -> « The Fall semester begins on September 14, 2026, and ends on January 15, 2027. »
+- terms.spring.start -> 2027-02-22 (lundi) -> même PDF (p14:l10) -> « The following semester begins on February 22, 2027. »
+- terms.fall.end, terms.fall.examsEnd, terms.spring.end, terms.spring.examsEnd : laissés vides. Le guide donne « Weeks 1-16 theoretical instruction, weeks 17-18 examinations » sans dates ; « ends on January 15, 2027 » est la fin du semestre, pas le dernier jour de cours ni la fin d'examens écrite telle quelle. Le calendrier officiel 2026-2027 (https://xxgk.tongji.edu.cn/index.php?classid=3077&newsid=21359&t=show) est une image sans texte ; la page de College of Architecture (caup.tongji.edu.cn/caupen/c9/87/c33493a379271/page.htm) aussi.
+- contactHoursPerCredit : laissé vide. Pages essayées : listes de cours (heures/crédits variables : 16 h/crédit mais 32 h pour 4 crédits), règle de reconnaissance des crédits étrangers (17 h par crédit, qui n'est pas la définition du crédit de Tongji), recherche sur tongji.edu.cn sans définition officielle.
+- restrictions : reste null (une seule page cherchée : aucune restriction de programme publiée pour les échanges ; les échanges n'acceptent que des étudiants nommés par une université partenaire).

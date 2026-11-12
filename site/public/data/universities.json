@@ -65,14 +65,14 @@
     "contactHoursPerCredit": 11.25,
     "terms": {
       "fall": {
-        "start": null,
-        "end": null,
+        "start": "2026-10-02",
+        "end": "2027-01-18",
         "examsEnd": "2027-02-08"
       },
       "spring": {
-        "start": null,
+        "start": "2026-04-11",
         "end": "2026-07-17",
-        "examsEnd": null
+        "examsEnd": "2026-07-31"
       }
     },
     "restrictions": "Also note that there are the courses that cannot be taken by GEMstudents. Such include seminar courses, subjects by Faculty of Science and Engineering and Faculty of Life and Medical Sciences, and subjects not open to other faculty students. GEM students may take up to 3 courses in total, courses offered by each faculty and the Nichibun.",
@@ -157,7 +157,16 @@
           "page": 1,
           "line": 22
         },
-        "quote": "JUL 17 (Fri) Last day of face-to-face classes"
+        "quote": "JUL 17 (Fri) Last day of face-to-face classes",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 5
+            },
+            "quote": "Spring Semester (April – September) Fall Semester (September – March) 2026"
+          }
+        ]
       },
       "terms.fall.examsEnd": {
         "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
@@ -167,7 +176,16 @@
           "page": 1,
           "line": 69
         },
-        "quote": "FEB 8 (Mon) Final Examinations end"
+        "quote": "FEB 8 (Mon) Final Examinations end",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 62
+            },
+            "quote": "2027 JAN 6 (Wed) Winter Recess ends"
+          }
+        ]
       },
       "restrictions": {
         "url": "https://intad.doshisha.ac.jp/intad/en/exchange/cge_curriculum.html",
@@ -198,6 +216,96 @@
           "line": 122
         },
         "quote": "2026 Course List of GEM"
+      },
+      "terms.spring.start": {
+        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
+        "retrievedAt": "2026-11-10T21:43:07.569Z",
+        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
+        "locator": {
+          "page": 1,
+          "line": 17
+        },
+        "quote": "11 (Sat) Face-to-face classes begin",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 6
+            },
+            "quote": "2026 APR 1 (Wed) Start of Spring Semester"
+          }
+        ]
+      },
+      "terms.spring.examsEnd": {
+        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
+        "retrievedAt": "2026-11-10T21:43:07.569Z",
+        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
+        "locator": {
+          "page": 1,
+          "line": 25
+        },
+        "quote": "31 (Fri) Final Examinations end",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 5
+            },
+            "quote": "Spring Semester (April – September) Fall Semester (September – March) 2026"
+          },
+          {
+            "locator": {
+              "page": 1,
+              "line": 22
+            },
+            "quote": "JUL 17 (Fri) Last day of face-to-face classes"
+          }
+        ]
+      },
+      "terms.fall.start": {
+        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
+        "retrievedAt": "2026-11-10T21:43:07.569Z",
+        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
+        "locator": {
+          "page": 1,
+          "line": 48
+        },
+        "quote": "2 (Fri) Face-to-face classes begin",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 5
+            },
+            "quote": "Spring Semester (April – September) Fall Semester (September – March) 2026"
+          },
+          {
+            "locator": {
+              "page": 1,
+              "line": 47
+            },
+            "quote": "OCT 1 (Thu)"
+          }
+        ]
+      },
+      "terms.fall.end": {
+        "url": "https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf",
+        "retrievedAt": "2026-11-10T21:43:07.569Z",
+        "sha256": "324fc1b7a8bf04a2d3903fea2494832e2aba9227b2ec9ba21907819f7085bd0a",
+        "locator": {
+          "page": 1,
+          "line": 66
+        },
+        "quote": "18 (Mon) Last day of face-to-face classes",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 62
+            },
+            "quote": "2027 JAN 6 (Wed) Winter Recess ends"
+          }
+        ]
       }
     }
   },
@@ -570,7 +678,7 @@
       "spring": {
         "start": "2026-04-10",
         "end": null,
-        "examsEnd": null
+        "examsEnd": "2026-08-05"
       }
     },
     "restrictions": "Graduate courses marked with <G> are restricted to graduate students",
@@ -696,6 +804,25 @@
           "line": 81
         },
         "quote": "The courses below were offered to NUPACE students in the academic year 2026."
+      },
+      "terms.spring.examsEnd": {
+        "url": "https://office.ilas.nagoya-u.ac.jp/files/kyomu/G30/2026spring/2026_Academic_Calendar.pdf",
+        "retrievedAt": "2026-11-11T02:24:42.195Z",
+        "sha256": "2d8399ecfa44438e04e7f40c1915b70a8a46af3e32d0a4461f2a243dac317c5d",
+        "locator": {
+          "page": 1,
+          "line": 72
+        },
+        "quote": "7/23～8/5 Final Examinations and Class Period 1",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 50
+            },
+            "quote": "Academic Calendar for AY 2026"
+          }
+        ]
       }
     }
   },
@@ -1743,7 +1870,11 @@
     "creditSystem": "local",
     "contactHoursPerCredit": null,
     "terms": {
-      "fall": null,
+      "fall": {
+        "start": "2026-09-14",
+        "end": null,
+        "examsEnd": "2026-12-18"
+      },
       "spring": null
     },
     "restrictions": "More than 30 schools/departments at SJTU which are open to university-level exchange students to choose. Exchange students coming to our university need to be admitted by a specific school. Once admitted, they can only choose courses from that school. If they wish to select courses from another school, they must obtain prior approval from the relevant faculty.",
@@ -1839,6 +1970,44 @@
           "line": 140
         },
         "quote": "Credits: 4 credits"
+      },
+      "terms.fall.start": {
+        "url": "https://gc.sjtu.edu.cn/wp-content/uploads/2026/07/2026-Fall1.pdf",
+        "retrievedAt": "2026-11-10T23:35:12.107Z",
+        "sha256": "735dce8e03fcbbc415f7113c9234efb82992e0723f5c76d4f387532d3b9f845d",
+        "locator": {
+          "page": 1,
+          "line": 3
+        },
+        "quote": "Sept 14 Classes Begin",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 28
+            },
+            "quote": "Global College Academic Calendar for 2026 Fall Semester"
+          }
+        ]
+      },
+      "terms.fall.examsEnd": {
+        "url": "https://gc.sjtu.edu.cn/wp-content/uploads/2026/07/2026-Fall1.pdf",
+        "retrievedAt": "2026-11-10T23:35:12.107Z",
+        "sha256": "735dce8e03fcbbc415f7113c9234efb82992e0723f5c76d4f387532d3b9f845d",
+        "locator": {
+          "page": 1,
+          "line": 15
+        },
+        "quote": "Dec 14-18 Examination Week",
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 28
+            },
+            "quote": "Global College Academic Calendar for 2026 Fall Semester"
+          }
+        ]
       }
     }
   },
@@ -2228,8 +2397,16 @@
     "creditSystem": "local",
     "contactHoursPerCredit": null,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2026-09-14",
+        "end": null,
+        "examsEnd": null
+      },
+      "spring": {
+        "start": "2027-02-22",
+        "end": null,
+        "examsEnd": null
+      }
     },
     "restrictions": null,
     "exchangeContact": "incoming@tongji.edu.cn",
@@ -2314,6 +2491,26 @@
           "line": 76
         },
         "quote": "Courses at Bachelor Level:"
+      },
+      "terms.fall.start": {
+        "url": "https://study.tongji.edu.cn/__local/C/73/B8/69053FDE3268F293A257F8DBEDD_36156EB6_49790F.pdf",
+        "retrievedAt": "2026-11-11T02:23:05.697Z",
+        "sha256": "81b66c53cc5b2d99600a549c8eb168a6c46973f19b6557c18b3d0e11c540bc93",
+        "locator": {
+          "page": 14,
+          "line": 8
+        },
+        "quote": "The Fall semester begins on September 14, 2026, and ends on January 15, 2027."
+      },
+      "terms.spring.start": {
+        "url": "https://study.tongji.edu.cn/__local/C/73/B8/69053FDE3268F293A257F8DBEDD_36156EB6_49790F.pdf",
+        "retrievedAt": "2026-11-11T02:23:05.697Z",
+        "sha256": "81b66c53cc5b2d99600a549c8eb168a6c46973f19b6557c18b3d0e11c540bc93",
+        "locator": {
+          "page": 14,
+          "line": 10
+        },
+        "quote": "The following semester begins on February 22, 2027."
       }
     }
   }

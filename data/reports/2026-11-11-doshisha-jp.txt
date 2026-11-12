@@ -82,3 +82,12 @@ Correctifs de périmètre et de langue (cycles supérieurs de l'ISTC)
   31696511 (hors informatique, génie électrique et mathématiques) ; 31692010, 31692011 (réservés aux étudiants du département).
   Le bloc automatique ci-dessus affiche « Retirés (0) » parce que la base locale a été modifiée à la main (active = 0) pour ces
   12 cours : la garde de perte de plus de 30 % (35 -> 23 cours) avait refusé la collecte.
+
+Faits complétés le 2026-11-11 (UTC)
+Source : calendrier académique 2026-2027 du Center for Global Education and Japanese Studies (https://intad.doshisha.ac.jp/files/intad/page/Academi%20Calendar_English2026-2027.pdf, sha256 324fc1b7...085bd0a). Année 2026-2027 : le calendrier 2027-2028 n'est pas publié. Jours de la semaine vérifiés : 11 avr. 2026 samedi, 31 juil. 2026 vendredi, 2 oct. 2026 vendredi, 18 janv. 2027 lundi.
+- terms.spring.start -> 2026-04-11 -> p1:l17 « 11 (Sat) Face-to-face classes begin » ; contexte p1:l6-7 « 2026 APR 1 (Wed) Start of Spring Semester ».
+- terms.spring.examsEnd -> 2026-07-31 -> p1:l25 « 31 (Fri) Final Examinations end » ; contextes p1:l5-6 (année : « Fall Semester (September – March) 2026 ») et p1:l22 « JUL 17 (Fri) Last day of face-to-face classes » (mois).
+- terms.fall.start -> 2026-10-02 -> p1:l48 « 2 (Fri) Face-to-face classes begin » ; contextes p1:l5-6 (année) et p1:l47 « OCT 1 (Thu) » (mois).
+- terms.fall.end -> 2027-01-18 -> p1:l66 « 18 (Mon) Last day of face-to-face classes » ; contexte p1:l62-63 « 2027 JAN 6 (Wed) Winter Recess ends » (année et mois).
+- Contextes ajoutés aussi aux deux dates déjà présentes (terms.spring.end, terms.fall.examsEnd), dont l'année n'était pas sur la ligne.
+- Restent vides : aucun des champs ciblés. syllabus.doshisha.ac.jp jamais requis.

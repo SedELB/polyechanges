@@ -35,3 +35,9 @@ Vérification de 5 cours tirés au hasard, relus sur leur propre page de cours d
 - 2550045 Information Network A : 1 crédit, printemps (Spring1 Tue 3), école doctorale d'informatique : conforme. Pas de champ langue ; anglais confirmé par la liste NUPACE.
 - 0055223 Data Science Exercise A : 1 crédit, English, printemps (Spring Fri 2), 1er cycle : conforme.
 - 0063231 Complex Analysis : 2 crédits, English (champ « Language Used »), automne (Fall Wed 2), 1er cycle : conforme.
+
+Faits complétés le 2026-11-11 (UTC)
+Source : calendrier ILAS AY2026 (https://office.ilas.nagoya-u.ac.jp/files/kyomu/G30/2026spring/2026_Academic_Calendar.pdf, sha256 2d8399ec...c5d), calendrier des cours de Liberal Arts and Sciences ; il peut différer d'une faculté à l'autre.
+- terms.spring.examsEnd -> 2026-08-05 (mercredi) -> p1:l72 « 7/23～8/5 Final Examinations and Class Period 1 » ; contexte p1:l50 « Academic Calendar for AY 2026 ».
+- terms.fall.examsEnd : laissé vide. Même PDF, p1:l78 « 1/25～2/5 Final Examinations and Class Period » : l'année 2027 de janvier-février n'est écrite nulle part dans cette copie (seulement « AY 2026 »), donc pas de contexte vérifiable.
+- terms.spring.end, terms.fall.end : laissés vides. Le « Academic Schedule » (https://office.ilas.nagoya-u.ac.jp/files/kyomu/G30/2026spring/2026_Academic_Schedule.pdf, sha256 7edc7c4c...a811) écrit « 5 ( Wed ） Last Class Day of Spring Semester » (p1:l16) et « 5 ( Fri ） Last Class Day of Fall Semester » (p1:l35), mais sans mois ni année sur la ligne et sans intitulé de mois lié dans le texte extrait (les noms de mois sont en vrac en fin de page) : aucun contexte vérifiable. Valeurs probables (non stockées) : 2026-08-05 et 2027-02-05, cohérentes avec les jours de la semaine et avec le calendrier ILAS. Autre page essayée : calendrier de la faculté de génie (2026_ac_EN.pdf), seulement les jours irréguliers.

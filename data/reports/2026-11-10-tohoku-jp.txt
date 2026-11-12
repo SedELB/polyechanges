@@ -39,3 +39,6 @@ Vérification de 5 cours, relus sur leur propre syllabus PDF (relus le 2026-11-1
 - TB15204 Fundamentals of Information Science I : 2 crédits, English, « First semester 2026 » (printemps) : conforme.
 - TB15212 Fundamentals of Information Science II : 2 crédits, langue absente du syllabus, confirmée par la liste JYPE, « First semester 2026 » (printemps) : conforme.
 - VJ251S8 Electricity and Magnetism : 2 crédits, English, « First semester 2026 » (printemps) : conforme.
+
+Faits complétés le 2026-11-11 (UTC)
+- terms.fall.examsEnd, terms.spring.examsEnd : laissés vides. Pages essayées : calendrier JYPE (https://www.insc.tohoku.ac.jp/english/exchange/jype/1-academic-calendar/ : « Class ends » puis « Presentation », « Supplementary Class Period (if any) », pas de période d'examens) ; calendrier 2026-2027 de l'enseignement général (https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/01/2026-2027_Academic-Calendar_20260119Rev.pdf, sha256 3127e567...4f90 : trimestres et jours de cours, aucune fin d'examens). Les résultats de recherche indiquent que les examens sont tenus par chaque enseignant pendant le cours. Les « Presentation » (5-7 août 2026, 4-5 févr. 2027) ne sont pas présentées comme des examens : non utilisées.
