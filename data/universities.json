@@ -1613,10 +1613,18 @@
     "creditSystem": "local",
     "contactHoursPerCredit": 18,
     "terms": {
-      "fall": null,
-      "spring": null
+      "fall": {
+        "start": "2026-09-07",
+        "end": null,
+        "examsEnd": null
+      },
+      "spring": {
+        "start": "2027-02-22",
+        "end": null,
+        "examsEnd": null
+      }
     },
-    "restrictions": null,
+    "restrictions": "Restrictions may include course tags (e.g., COURSERA, which is reserved for local students) or specific notes such as prerequisites or limited eligibility based on program/module.",
     "exchangeContact": "Division of Study Abroad",
     "catalogPublic": false,
     "provenance": {
@@ -1699,6 +1707,50 @@
           "line": 175
         },
         "quote": "Primarily Chinese, with some courses offered in English as a supplement."
+      },
+      "terms.fall.start": {
+        "url": "https://web.ncku.edu.tw/var/file/0/1000/img/4970/769644400.pdf",
+        "retrievedAt": "2026-11-11T01:01:58.129Z",
+        "sha256": "0a67ac5d78277197ede0e9583b94d25bb044828b21f8cb60d45e6578ee9daaa1",
+        "locator": {
+          "page": 1,
+          "line": 50
+        },
+        "quote": "(7)Classes begin.",
+        "context": {
+          "locator": {
+            "page": 1,
+            "line": 35
+          },
+          "quote": "Fall Semester: August 2026-January 2027"
+        }
+      },
+      "terms.spring.start": {
+        "url": "https://web.ncku.edu.tw/var/file/0/1000/img/4970/844774256.pdf",
+        "retrievedAt": "2026-11-11T01:02:11.537Z",
+        "sha256": "bb5750d88b89908f87b92c76120d4d84f45d731bfdd8fdd1e329bfa7c9fe5edc",
+        "locator": {
+          "page": 1,
+          "line": 43
+        },
+        "quote": "(22)Classes begin.",
+        "context": {
+          "locator": {
+            "page": 1,
+            "line": 34
+          },
+          "quote": "Spring Semester: February 2027-July 2027"
+        }
+      },
+      "restrictions": {
+        "url": "https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en",
+        "retrievedAt": "2026-11-10T19:34:35.051Z",
+        "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
+        "locator": {
+          "page": 1,
+          "line": 177
+        },
+        "quote": "Restrictions may include course tags (e.g., COURSERA, which is reserved for local students) or specific notes such as prerequisites or limited eligibility based on program/module."
       }
     }
   },
@@ -1726,7 +1778,7 @@
         "examsEnd": "2026-06-12"
       }
     },
-    "restrictions": null,
+    "restrictions": "Exchange students are not allowed to enroll in the following 6 types of courses: Distance learning courses Teacher education program courses",
     "exchangeContact": "Office of International Affairs, National Taiwan University : oia@ntu.edu.tw",
     "catalogPublic": true,
     "provenance": {
@@ -1879,6 +1931,16 @@
           "line": 13
         },
         "quote": "Sustainable NTU"
+      },
+      "restrictions": {
+        "url": "https://management.ntu.edu.tw/ia/IncomingExchange/AcademicInformation/AcaOverview",
+        "retrievedAt": "2026-11-10T18:24:03.502Z",
+        "sha256": "5ea514a155d0baac9c7a798bf379655af80fe1af940a1c8279030680fd79e046",
+        "locator": {
+          "page": 1,
+          "line": 58
+        },
+        "quote": "Exchange students are not allowed to enroll in the following 6 types of courses: Distance learning courses Teacher education program courses"
       }
     }
   },
@@ -1901,7 +1963,7 @@
         "examsEnd": "2026-12-25"
       },
       "spring": {
-        "start": null,
+        "start": "2027-02-22",
         "end": null,
         "examsEnd": "2027-06-11"
       }
@@ -2019,6 +2081,23 @@
           "line": 86
         },
         "quote": "Email: oia@mail.ntust.edu.tw"
+      },
+      "terms.spring.start": {
+        "url": "https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf",
+        "retrievedAt": "2026-11-10T20:10:24.833Z",
+        "sha256": "f9a8cd846695e3ec71ccb564d8338d41d063b7b102b40bddb89e9e6f9b3ec3e6",
+        "locator": {
+          "page": 2,
+          "line": 11
+        },
+        "quote": "22 Mon. 1. Classes begin",
+        "context": {
+          "locator": {
+            "page": 2,
+            "line": 3
+          },
+          "quote": "Second Semester (Feb.2027 ~ Jul.2027)"
+        }
       }
     }
   },

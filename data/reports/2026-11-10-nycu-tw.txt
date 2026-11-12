@@ -40,3 +40,9 @@ Notes sur la fiche de l'université et la collecte
 - Contact des échanges : seul le nom (« Contact：Ms. Meggie Peng ») est cité ; l'adresse ex-in@nycu.edu.tw est sur une ligne
   isolée de la même page, sans libellé, et n'est donc pas conservée.
 - Aucune restriction de programme lisible : la liste des départements ouverts aux échanges est un fichier Drive.
+
+Faits complétés le 2026-11-11 (UTC)
+Aucun fait complété.
+Faits restés vides
+- terms.fall.end et terms.spring.end : les calendriers 2026-2027 (PDF de l'automne et du printemps) n'écrivent que « Final Exams (Dec.21-24) », « Fall Semester ends » (31 janvier) et « Spring Semester ends » (31 juillet), fin administrative. Aucun dernier jour de cours. Laissés à null.
+- restrictions : pages déjà lues (page des échanges oia.nycu.edu.tw, règlement des études) ; la seule mention est « The instructors reserve the authority to decline the students due to unfulfilled lecture prerequisites or limited teaching capacities. », condition générale et non restriction de programme ; la liste des départements ouverts est un fichier Drive. Laissé à null.

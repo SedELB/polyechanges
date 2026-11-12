@@ -1,0 +1,16 @@
+Faits complétés le 2026-11-11 (UTC) : National Cheng Kung University
+Pages bloquées ou vides, non contournées : course.ncku.edu.tw et course-query.acad.ncku.edu.tw (CAPTCHA, jamais demandées). catalogUrl laissé à null : il viendra des pages enregistrées par l'étudiant.
+Piste trouvée : la page https://web.ncku.edu.tw/p/412-1000-6149.php?Lang=en (calendrier, copie déjà rangée) affiche « No academic calendars are currently available » parce qu'un script masque les anciens calendriers ; son tableau calendarData contient les PDF officiels de l'année 115 (2026-2027), téléchargés directement. reg-acad.ncku.edu.tw (accueil lu, robots.txt « Allow: / ») ne publie pas de calendrier.
+- terms.fall.start -> 2026-09-07
+  Adresse : https://web.ncku.edu.tw/var/file/0/1000/img/4970/769644400.pdf (sha256 0a67ac5d..., p1:l50)
+  Extrait : « (7)Classes begin. » ; contexte (p1:l35) : « Fall Semester: August 2026-January 2027 ».
+  Réserve : le mois (« Sep. », ligne 45) et le jour sont sur des lignes séparées ; un seul contexte est permis, il donne l'année et la période du semestre. Jour de la semaine : la grille du PDF commence septembre par « 1 2 3 4 5 » (ligne 8) sur mardi à samedi, donc le 1er septembre 2026 est un mardi (vrai) et le 7 est un lundi.
+- terms.spring.start -> 2027-02-22
+  Adresse : https://web.ncku.edu.tw/var/file/0/1000/img/4970/844774256.pdf (sha256 bb5750d8..., p1:l43)
+  Extrait : « (22)Classes begin. » ; contexte (p1:l34) : « Spring Semester: February 2027-July 2027 ». Même réserve (« Feb. » ligne 37). Le 22 février 2027 est un lundi, comme le calendrier de Taiwan Tech.
+- restrictions -> « Restrictions may include course tags (e.g., COURSERA, which is reserved for local students) or specific notes such as prerequisites or limited eligibility based on program/module. »
+  Adresse : https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en (sha256 ec24ebec..., p1:l177), extrait identique à la valeur.
+Faits restés vides
+- terms.fall.end, terms.spring.end : le PDF écrit seulement « (31)Fall semester ends. » / « (31)Spring semester ends. » (fin administrative) ; la page des échanges donne « Mid-January » et « 2nd half of June » sans jour. Laissés à null.
+- terms.fall.examsEnd, terms.spring.examsEnd : « There are no set examination periods » (page des échanges) ; les semaines d'examen des cours « flexibles » (4 au 8 janvier, 21 au 25 juin) ne valent pas pour tous les cours. Laissés à null.
+- catalogUrl : voir plus haut (CAPTCHA).

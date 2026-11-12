@@ -47,3 +47,14 @@ Notes sur la fiche de l'université et la collecte
 - Aucune restriction de programme lisible pour les étudiants d'échange (9 crédits au 1er cycle, 1 cours aux
   cycles supérieurs, cours de départements et niveaux différents permis) : restrictions laissé vide.
 - Contact des échanges : bureau des affaires internationales, oia@mail.ntust.edu.tw (page des échanges entrants).
+
+Faits complétés le 2026-11-11 (UTC)
+- terms.spring.start -> 2027-02-22
+  Adresse : https://www.academic.ntust.edu.tw/var/file/48/1048/img/2870/Acadcalender_2026-2027.pdf (sha256 f9a8cd84..., p2:l11)
+  Extrait : « 22 Mon. 1. Classes begin »
+  Contexte (p2:l3) : « Second Semester (Feb.2027 ~ Jul.2027) ». Le mois (« Feb. ») est sur la ligne 7, séparé de la ligne de la date par l'extraction.
+  Vérification du jour de la semaine : le 1er février 2027 est un lundi (« 1 Mon. 2nd semester begins »), donc le lundi 22 est bien le 22 février 2027.
+Faits restés vides
+- terms.fall.end et terms.spring.end : le calendrier n'écrit aucun dernier jour de cours (seulement « Final exams begin » et « First/Second semester ends », fin administrative). Laissés à null.
+- restrictions : page des échanges entrants (oia.ntust.edu.tw/p/412-1060-8919.php) lue : « Students can take courses in different departments/on different levels », aucune restriction de programme. Laissé à null.
+- catalogUrl : le lien « Course Catalog » de la page du Bureau des affaires académiques (academic.ntust.edu.tw) pointe vers https://querycourse.ntust.edu.tw/querycourse/, application sans texte dans le HTML ; aucun extrait ne peut identifier cette adresse elle-même. Laissé à null.
