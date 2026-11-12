@@ -167,7 +167,7 @@ describe('liste des matières de l ISTC', () => {
       outline: null,
       credits: 2,
       contactHours: null,
-      language: 'unknown',
+      language: 'en',
       terms: ['fall'],
       level: 'grad',
       sourceUrl: 'https://example.test/guide.pdf',

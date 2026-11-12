@@ -218,8 +218,8 @@ export function istcToCourse(
     outline: null,
     credits: r.credits,
     contactHours: null,
-    // Le guide marque « (E) » sans l'expliquer : la langue n'est pas établie.
-    language: 'unknown',
+    // Page des échanges de l'ISTC, ligne 81 : « All classes necessary to obtain a degree are taught in English ».
+    language: 'en',
     terms: r.term ? [r.term] : [],
     level: 'grad',
     sourceUrl: url,

@@ -6,7 +6,7 @@ Cours actifs : 23
 Ajoutés (0) : aucun
 Retirés (0) : aucun
 Modifiés (19) : 31691001, 31691005, 31691010, 31691012, 31691014, 31691015, 31691016, 31691017, 31692001, 31692008, 31692009, 31692012, 31695001, 31695002, 31695003, 31695013, 31696502, 31696505, 31696512
-Descriptions non publiées : Les deux listes officielles (cours du Global Education Module et guide d'inscription 2026 de l'ISTC) ne donnent que le code, le titre, les crédits, l'enseignant et le trimestre. Les syllabus (syllabus.doshisha.ac.jp) répondent 403 Forbidden, robots.txt compris, et ne sont donc pas lisibles par programme : les descriptions viendront des fiches de syllabus enregistrées à la main depuis un navigateur (data/saved/doshisha-jp/).
+Descriptions non publiées : Les deux listes officielles (cours du Global Education Module et guide d'inscription 2026 de l'ISTC) ne donnent que le code, le titre, les crédits, l'enseignant et le trimestre. Les syllabus (syllabus.doshisha.ac.jp) répondent 403 Forbidden, robots.txt compris, et ne sont donc pas lisibles par programme : les descriptions viendront des fiches de syllabus enregistrées à la main depuis un navigateur (data/saved/doshisha-jp/). Langue des cours de l'ISTC : « en », selon la page https://istc.doshisha.ac.jp/istc/en/admission/exchange.html (copie 35b3af562f0dc6da515c4b6ddef7e3813d3c3f2e064b40976b73c83b95c26c9a, ligne 81) : « All classes necessary to obtain a degree are taught in English. »
 === fin de la collecte automatique ===
 
 Notes sur la collecte (cycles supérieurs de l'ISTC)
@@ -74,9 +74,11 @@ Correctifs de périmètre et de langue (cycles supérieurs de l'ISTC)
   31696504, 31696506, 31696507, 31696511. Retirés (réservés aux étudiants du département) : 31692010, 31692011.
   Cours actifs : 35 -> 23 (4 du Global Education Module + 19 de l'ISTC). Gardés avec note : 31692008 et 31692009 (obligatoires pour
   le département, pas fermés aux autres).
-- Langue : les 19 cours de l'ISTC passent en « unknown » (le guide marque « (E) » sans l'expliquer) ; les 4 cours du Global
-  Education Module restent « en ». La page ISTC dit (ligne 81) « All classes necessary to obtain a degree are taught in English » :
-  cela ne couvre pas explicitement chaque matière, donc non retenu comme preuve.
-- Collecte : la garde « perte de plus de 30 % » a d'abord refusé la baisse de 35 à 23. Les 12 cours retirés ont été désactivés
-  dans la base locale (active = 0, base non commitée) avant de relancer la collecte, qui est alors passée (statut ok). Le bloc
-  automatique affiche donc « Retirés (0) » et 19 « Modifiés » (langue).
+- Langue : les 19 cours de l'ISTC sont « en ». Source officielle : page des échanges de l'ISTC
+  (https://istc.doshisha.ac.jp/istc/en/admission/exchange.html, copie 35b3af562f0dc6da515c4b6ddef7e3813d3c3f2e064b40976b73c83b95c26c9a,
+  ligne 81) : « All classes necessary to obtain a degree are taught in English. » (programme de diplôme enseigné en anglais).
+  Les 4 cours du Global Education Module restent « en ». Le sigle « (E) » du guide reste inexpliqué et n'est pas la source.
+- Retraits voulus (12 cours) : 31695004, 31695005, 31695006, 31695011, 31695012, 31696503, 31696504, 31696506, 31696507,
+  31696511 (hors informatique, génie électrique et mathématiques) ; 31692010, 31692011 (réservés aux étudiants du département).
+  Le bloc automatique ci-dessus affiche « Retirés (0) » parce que la base locale a été modifiée à la main (active = 0) pour ces
+  12 cours : la garde de perte de plus de 30 % (35 -> 23 cours) avait refusé la collecte.
