@@ -90,11 +90,21 @@ export function lossLines(
   };
 }
 
-/** Note de descriptions du rapport : seulement si toutes les sources de l'université déclarent n'en publier aucune. */
+/** Sources qui fournissent les codes : les sources `enrich` sont un complément et ne comptent pas pour les descriptions. */
+const mainSources = (sources: SourceFile[]): SourceFile[] => sources.filter((s) => s.role !== 'enrich');
+
+/** Vrai si toutes les sources non `enrich` de l'université déclarent n'avoir aucune description. */
+function noDescriptions(sources: SourceFile[]): boolean {
+  const main = mainSources(sources);
+  return main.length > 0 && main.every((s) => s.descriptions === 'none');
+}
+
+/** Note de descriptions du rapport : seulement si toutes les sources non `enrich` de l'université déclarent n'en publier aucune. */
 export function descriptionsNoteOf(sources: SourceFile[]): string | undefined {
-  if (!sources.every((s) => s.descriptions === 'none')) return undefined;
-  if (sources.length === 1) return sources[0].descriptionsNote;
-  return sources.map((s) => `${s.id} : ${s.descriptionsNote ?? ''}`).join(' ');
+  if (!noDescriptions(sources)) return undefined;
+  const main = mainSources(sources);
+  if (main.length === 1) return main[0].descriptionsNote;
+  return main.map((s) => `${s.id} : ${s.descriptionsNote ?? ''}`).join(' ');
 }
 
 type Placement = { snapshotId: number | null; locator: { page: number; line: number } | null };
@@ -247,7 +257,7 @@ export async function collectUniversity(
   }
   const found = merged.courses.map((m) => m.course);
   const guard = checkGuards(found, previous, {
-    descriptionsPublished: !sources.every((s) => s.descriptions === 'none'),
+    descriptionsPublished: !noDescriptions(sources),
     acceptLoss: opts?.acceptLoss !== undefined,
     target: universityId,
   });

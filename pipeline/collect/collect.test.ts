@@ -440,6 +440,20 @@ describe('source enregistrée d’une université d’accueil', () => {
     expect(both.status).toBe('ok');
   });
 
+  it('descriptions: none de la source principale : une source enrich avec quelques descriptions ne change rien', async () => {
+    const txt = save('liste.txt', 'A1\tGraphes\tThéorie des graphes.\n');
+    const titleOnly = (code: string): HostCourseInput => ({ ...course(code), description: '' });
+    const none = { descriptions: 'none' as const, descriptionsNote: 'Seulement les titres.' };
+    current = [titleOnly('A1'), titleOnly('A2'), titleOnly('A3'), titleOnly('A4')];
+    const enrich = listSource([txt], { role: 'enrich' });
+    const ok = await collectUniversity(db, fetcher, [{ ...htmlSource(), ...none }, enrich], join(tmp, 'raw'), NOW, opts());
+    expect(ok.status).toBe('ok');
+    expect(activeHostCourses(db, 'ntu').filter((c) => c.description !== '')).toHaveLength(1);
+    // Sans « none » sur la source principale, trop de descriptions vides échouent toujours.
+    const bad = await collectUniversity(db, fetcher, [htmlSource(), enrich], join(tmp, 'raw'), NOW, opts());
+    expect(bad).toMatchObject({ status: 'failed', reason: '3 descriptions vides sur 4' });
+  });
+
   it('pages enregistrées il y a plus de 300 jours : le rapport l’écrit en tête', async () => {
     const txt = save('liste.txt', 'B1\tGraphes\tThéorie des graphes.\n', new Date('2025-11-01T12:00:00.000Z'));
     const res = await collectSource(db, fetcher, listSource([txt]), join(tmp, 'raw'), NOW, opts());
