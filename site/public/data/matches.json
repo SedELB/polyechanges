@@ -848,6 +848,26 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF2610",
+    "hostCourseId": 1509,
+    "notionsFound": [
+      "operating-system-structure",
+      "process-management",
+      "process-scheduling",
+      "memory-management",
+      "real-time-operating-systems"
+    ],
+    "notionsMissing": [
+      "process-synchronization",
+      "threads",
+      "deadlocks"
+    ],
+    "contentScore": 0.625,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF2705",
     "hostCourseId": 925,
     "notionsFound": [
@@ -1481,6 +1501,28 @@
       "risk-management"
     ],
     "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8103",
+    "hostCourseId": 1513,
+    "notionsFound": [
+      "cybersecurity-organizational-models",
+      "employee-role-in-cybersecurity",
+      "cybersecurity-team-roles-and-responsibilities"
+    ],
+    "notionsMissing": [
+      "governance-and-compliance",
+      "red-blue-and-purple-teams",
+      "cyber-strategy-and-business-objectives",
+      "asset-identification",
+      "threat-actors",
+      "recovery-plan",
+      "risk-management"
+    ],
+    "contentScore": 0.3,
     "workload": "inconnue",
     "level": "faible",
     "textUsed": "description"
@@ -2446,6 +2488,28 @@
   },
   {
     "polySigle": "INF8175",
+    "hostCourseId": 1294,
+    "notionsFound": [
+      "intelligent-agents",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "search-strategies",
+      "adversarial-search",
+      "local-search",
+      "constraint-programming",
+      "propositional-logic",
+      "knowledge-representation"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8175",
     "hostCourseId": 1380,
     "notionsFound": [
       "intelligent-agents",
@@ -3194,6 +3258,28 @@
   },
   {
     "polySigle": "INF8215",
+    "hostCourseId": 1294,
+    "notionsFound": [
+      "intelligent-agents",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "search-strategies",
+      "adversarial-search",
+      "local-search",
+      "constraint-programming",
+      "propositional-logic",
+      "knowledge-representation"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8215",
     "hostCourseId": 1380,
     "notionsFound": [
       "intelligent-agents",
@@ -3875,6 +3961,28 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF8225",
+    "hostCourseId": 1294,
+    "notionsFound": [
+      "bayesian-networks",
+      "decision-networks",
+      "deep-learning"
+    ],
+    "notionsMissing": [
+      "hidden-markov-models",
+      "markov-random-fields",
+      "inference-in-probabilistic-models",
+      "statistical-decision-theory",
+      "structured-classifiers",
+      "probabilistic-natural-language-processing",
+      "computer-vision"
+    ],
+    "contentScore": 0.3,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8245AE",
     "hostCourseId": 60,
     "notionsFound": [
@@ -4334,6 +4442,28 @@
     "contentScore": 0.3,
     "workload": "inconnue",
     "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 1297,
+    "notionsFound": [
+      "statistical-decision-theory",
+      "linear-regression",
+      "logistic-regression",
+      "support-vector-machines",
+      "decision-trees",
+      "neural-networks",
+      "kernel-methods"
+    ],
+    "notionsMissing": [
+      "bias-variance-tradeoff",
+      "ensemble-learning",
+      "maximum-likelihood-estimation"
+    ],
+    "contentScore": 0.7,
+    "workload": "trop_legere",
+    "level": "moyenne",
     "textUsed": "description"
   },
   {
@@ -5944,6 +6074,28 @@
   },
   {
     "polySigle": "INF8460",
+    "hostCourseId": 1296,
+    "notionsFound": [
+      "probabilistic-parsing",
+      "dependency-parsing",
+      "information-extraction"
+    ],
+    "notionsMissing": [
+      "n-gram-language-models",
+      "vector-semantics",
+      "similarity-measures",
+      "question-answering-systems",
+      "dialogue-systems",
+      "conversational-agents",
+      "neural-networks-for-language"
+    ],
+    "contentScore": 0.3,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8460",
     "hostCourseId": 1379,
     "notionsFound": [
       "probabilistic-parsing",
@@ -6203,6 +6355,28 @@
     ],
     "contentScore": 0.3,
     "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8480",
+    "hostCourseId": 1320,
+    "notionsFound": [
+      "distributed-systems",
+      "cloud-computing",
+      "distributed-transactions"
+    ],
+    "notionsMissing": [
+      "client-server-architecture",
+      "peer-to-peer-architecture",
+      "service-oriented-architecture",
+      "cloud-service-models",
+      "remote-objects-and-middleware",
+      "virtualization",
+      "time-synchronization"
+    ],
+    "contentScore": 0.3,
+    "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description"
   },
@@ -9078,6 +9252,28 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "LOG8100",
+    "hostCourseId": 1513,
+    "notionsFound": [
+      "security-testing",
+      "multi-level-security",
+      "security-requirements"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "data-encryption",
+      "access-control-and-authentication",
+      "security-by-design",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.3,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "LOG8235",
     "hostCourseId": 870,
     "notionsFound": [
@@ -10385,6 +10581,28 @@
     ],
     "contentScore": 0.4,
     "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "MTH3302",
+    "hostCourseId": 1297,
+    "notionsFound": [
+      "linear-regression",
+      "logistic-regression",
+      "principal-component-analysis",
+      "penalized-regression",
+      "information-theory"
+    ],
+    "notionsMissing": [
+      "multicollinearity",
+      "generalized-linear-models",
+      "poisson-regression",
+      "bayesian-statistics",
+      "markov-chain-monte-carlo"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description"
   },

@@ -12640,7 +12640,7 @@
     "universityId": "doshisha-jp",
     "code": "99200024",
     "title": "Statistics for the Social Sciences and Humanities",
-    "description": "",
+    "description": "This course introduces students to essential statistical concepts and methods used in the social sciences and humanities. Emphasis is placed on understanding statistical reasoning, selecting appropriate analytical tools, and interpreting quantitative findings in social, cultural, political, and humanistic research contexts. Rather than focusing on advanced mathematics, the course prioritizes practical application, critical thinking, and responsible use of data. Students will work with real-world datasets, learn to evaluate statistical claims in academic literature and public discourse, and develop a small-scale research project that integrates theory, data, and statistical analysis. By the end of the course, students will be equipped to both conduct and critically assess quantitative research relevant to their fields.\n\nCourse Objectives By the end of this course, students will be able to: •Understand fundamental statistical concepts and terminology •Apply descriptive and inferential statistical methods to social science and humanities data •Interpret statistical results and communicate findings clearly in written and oral form •Critically evaluate quantitative research in academic literature •Design and conduct a basic empirical research project •Use statistical software at an introductory level (e.g., SPSS, R, Excel, or equivalent)",
     "credits": 2,
     "contactHours": null,
     "language": "en",
@@ -12648,65 +12648,65 @@
       "fall",
       "spring"
     ],
-    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 2,
-    "sourceLine": 15,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/9200/99200024001.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "a8cda3e0b8da3b80c642bfe268a8264fdafe7f054f04ebfd3066cef9fe7f2fe5"
   },
   {
     "id": 701,
     "universityId": "doshisha-jp",
     "code": "99200025",
     "title": "Introduction to Computer Science and Information Technology",
-    "description": "",
+    "description": "Advancement of information technology (IT) has rapidly changed our way of life. While IT encompasses technologies such as television and telephones， it is most commonly used as a synonym for computers and computer networks. This course is intended for students with no or very little background in computers, and will provide the basics of computers and computer networks. The students will acquire knowledge about basic software that would be required in an academic setting (i.e., word processing, spreadsheet and presentation software). In class and homework exercises will allow students to get a hands-on experience with various software. In each class, the instructor will provide a lecture on the day’s topic. A worksheet will then be handed out and the students will work individually or in a group to complete the day’s task. A wrap up discussion will follow ; the students are expected to participate actively in the discussions. Students will have homework exercises covering the day’s topic and a reading material to prepare for the next class.\n\nUpon completion of this course, the students will be able to:\n- identify the parts of computers / computer networks\n- describe briefly how computers / computer networks function\n- operate basic computer software\n- generate simple programs",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "spring"
     ],
-    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 2,
-    "sourceLine": 17,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/9200/99200025000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "4ea821bb05f2d0a59dd6717469948d1ac3ab171ac2f3a5968d79565bfd7d6206"
   },
   {
     "id": 702,
     "universityId": "doshisha-jp",
     "code": "99200027",
     "title": "Introduction to Quantitative Data Analysis",
-    "description": "",
+    "description": "This course provides a foundation in the methods and techniques of quantitative data analysis. Students will learn to collect, analyze, interpret, and present data using statistical tools and software. The focus will be on real-world applications of quantitative methods in various fields, fostering analytical thinking and problem-solving skills.\n\nCourse Objectives for \"Introduction to Quantitative Data Analysis\"\n1. Understand Basic Concepts – Learn fundamental principles of quantitative data analysis, including descriptive and inferential statistics.\n2. Develop Analytical Skills – Apply statistical methods to analyze and interpret numerical data.\n3. Use Statistical Tools – Gain proficiency in software for data analysis (e.g., Excel, SPSS, R, or Python).\n4. Interpret Results – Critically evaluate statistical findings and their implications in various fields.\n5. Communicate Findings – Present data-driven insights effectively using visualizations and reports.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 2,
-    "sourceLine": 20,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/9200/99200027000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "805e03279f6213400824e52b4daebdde01d35ca31694b7ad800fe440f67a158a"
   },
   {
     "id": 703,
     "universityId": "doshisha-jp",
     "code": "99200029",
     "title": "Mathematics and its History",
-    "description": "",
+    "description": "Mathematics underpins virtually everything that we take for granted in our daily lives, and it is sometimes referred to as the “Queen of Science” due to its demands of logical rigor and cold calculations. However, despite its intimidating veneer, mathematics is the culmination of millennia of human endeavor. The purpose of this course is to give an accessible overview of some of the key developments in mathematics, covering the period from the time of the ancients, up to the early modern period. In addition to learning about the development of mathematics, students will also apply historical mathematical methods to solve problems. While we will cover the well-known Greek, Chinese, Islamic, and European mathematicians, as a specialty for this course, there will also be a section on Japanese mathematics during the Edo period. While the course will include written assignments, to properly understand and follow the thinking of the mathematicians we will also cover problem solving using historical mathematical methods. While a background in high-school level math is useful, an enthusiasm for critical thinking and problem solving could replace that prerequisite, since the mathematical concepts will be introduced as they were historically considered.\n\nBy the end of the course, a student will\n• Be able to identify and explain the mathematical contributions of mathematicians up to the early modern period.\n• Be able to solve basic problems with several historical methods.\n• Appreciate the links and interplay between different branches of mathematics.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "spring"
     ],
-    "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 2,
-    "sourceLine": 22,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/9200/99200029000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "616bfdc8cdb62c26900479f9ff76526a72273dcd81765c5a8dbc7d5696554e4f"
   },
   {
     "id": 704,
@@ -22514,342 +22514,342 @@
     "universityId": "doshisha-jp",
     "code": "31691001",
     "title": "Advanced Communications Engineering",
-    "description": "",
+    "description": "This course is a graduate-level introduction to the fundamentals of information reliable transmission in digital communications engineering. The course is for graduate students in engineering and computer science.\n\nWith this course， graduate students would learn about the knowledge of information transmission in reliability， precisely， the different methods of channel coding used in modern communication systems. The purpose of the lab works are to expose to students to more advanced practical and theoretical issues in channel coding.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "spring"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 2,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1691/31691001000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "d4952d9b709c9b8167542c2b2874bf25623b27c884a9855686d63867cc9802bf"
   },
   {
     "id": 1294,
     "universityId": "doshisha-jp",
     "code": "31691005",
     "title": "Advanced Nature-Inspired Computing",
-    "description": "",
+    "description": "Emphasizing on AI as an automated problem solving, this course presents a collection of nature-inspired problem solving approaches (e.g., evolutionary computing -- including genetic algorithms and genetic programming -- intelligent agents, cellular automaton, neurocomputing, etc.) for design-, optimization-, and control problems with either unknown- or computationally heavy analytical models. Case studies include the development of lane keeping in autonomous driving (anticipatory steering agent, Figure 1), undulatory swimming gaits of a real (physical) fish robot (via genetic algorithms, Figure 2), locomotion gaits of simulated complex modular robot -- sidewinding snake robot (via genetic programming, Figure 3), spreading of contiguous respiratory diseases, such as influenza, SARS, and COVID-19 (via cellular automaton, Figure 4), etc. The lecturer should also emphasize on the philosophical principles of emergence, the whole being greater than the sum of its entities, and the quantity-quality transition (e.g., in multi-agent systems, modular robots, neural networks, cellular automata, etc.), and the challenges these pose to the researchers and developers of complex nature-inspired systems.\n\nThe overall teaching objective is to ensure that students are able to approach nature-inspired solutions to various computationally hard problems in the domains of design，optimization, and control.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 5,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1691/31691005000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "30bd2f1bf5d8053d4daa3bd547f886e19ad68ae5ed192b0c86f207fa06a7e10d"
   },
   {
     "id": 1295,
     "universityId": "doshisha-jp",
     "code": "31691017",
     "title": "Advanced Information and Computer Sciences Ⅰ",
-    "description": "",
+    "description": "This course will teach presentation skills for academic and professional purposes. We will examine different types of presentations and learn to use the appropriate format for any given situation. The importance of body language， voice delivery and use of gestures will be covered. A study of the structure of a presentation will follow， emphasizing the importance of a strong introduction， body and a succinct conclusion. Finally， the effective use of visuals such as graphs and pictures will be examined. The course will make extensive use of PowerPoint as a presentation aid (prior experience is not necessary). Students will be assessed via group and individual presentations will which take place at various points in the semester. IMPORTANT! This course is conducted in English. Students should be able to read course materials and understand spoken English. Furthermore， students must be willing to give presentations in English.\n\nStudents will learn to identify the common mistakes made in presentations and how to avoid them. They will learn the concepts of structure and good slide design. Additionally， students will gain confidence in the use of spoken English when giving presentations to a group of their peers.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 7,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1691/31691017000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "2d4f6e5c9fffb81d1407fdd1d08bca608757f0e3892d7343117f07478575260b"
   },
   {
     "id": 1296,
     "universityId": "doshisha-jp",
     "code": "31691010",
     "title": "Advanced Natural Language Processing",
-    "description": "",
+    "description": "This course provides an overview of natural language processing (NLP) technologies, focusing on corpus-based approaches, including statistical and neural network-based methods. In addition, the course introduces concrete applications of NLP technologies, such as morphological analysis, parsing, named entity recognition, and machine translation. The course is for graduate students in engineering and computer science.\n\nThrough the course, students will be able to:\n- acquire specialized knowledge of corpus-based NLP, including statistical NLP and machine-learning-based approaches.\n- apply statistical and machine-learning-based NLP techniques using corpora.\n- explore and critically examine approaches to corpus-based NLP, including statistical and machine-learning-based methods.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1691/31691010000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
     "sourceLine": 11,
-    "snapshotSha256": null
+    "snapshotSha256": "b5456413455b55b1b0ad57f2fd9a69d6fa207b9b7a34ad2a82bf398476267399"
   },
   {
     "id": 1297,
     "universityId": "doshisha-jp",
     "code": "31691012",
     "title": "Advanced Knowledge Discovery in Databases",
-    "description": "",
+    "description": "This course provides the underlying concepts, principles, and theories of Machine Learning (ML) and Knowledge Discovery (KD). It consists of the following Parts I, II, III, and IV. In each part, individual ML/KD methods are explained, and also their relationships are discussed from a unifying view for systematic understanding. Part I: Unsupervised Learning This part focuses on Clustering and Component/Factor Analysis, and provides K-Means, Principal Component Analysis, Factor Analysis, Spectral Clustering, Kernel Principal Component Analysis etc. Part II: Supervised Learning This part focuses on the conceptual and theoretical background of Supervised Learning, and provides Model Complexity, Statistical Decision Theory, Curse of Dimensionality, and so on. Part III: Basic Methods for Regression and Classification This part focuses on basic supervised learning methods, and provides Linear Regression, Ridge Regression, Lasso, Linear Discriminant Analysis, Logistic Regression, K-Means-based Classification, and K-Nearest-Neighbors. Moreover, it provides standard objective functions including Likelihood, 0-1 Loss, and Hinge Loss, and their relationship. Part IV: Advanced Methods for Regression and Classification This part focuses on advanced supervised learning methods. It discusses how to make models nonlinear (Piecewise Linear Models, Kernelization, and Neural Networks) and how to control the complexity of models (Bias-Variance Decomposition, Information Criteria, and Cross Validation). Part IV then provides Support Vector Machine, Kernel Methods, Neural Network (NN), Deep NN, Convolutional NN, Recurrent NN etc. Furthermore, Explainability is discussed, comparing NN-based models with clear-box models such as Autoregressive Model and Autoregressive Conditional Heteroscedastic Model.\n\nStudents are expected to understand the underlying concepts, principles, and theories of Machine Learning (ML) and Knowledge Discovery (KD), and to acquire an ability to apply the ML/KD methods to various real-world problems.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 13,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1691/31691012000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "35301d604ab139601808afdb2882624c8e8841f9cedd8383129aabf425abb9ed"
   },
   {
     "id": 1298,
     "universityId": "doshisha-jp",
     "code": "31691014",
     "title": "Advanced Digital Signal Processing",
-    "description": "",
+    "description": "This course provides fundamentals of digital signal processing (DSP). Digital signal processing is the base of industrial applications such as sensor signal processing, speech encoding, automatic speech recognition and speech synthesis. The former half of the lectures review the basics of signal processing and the latter half provides lectures on correlation function and spectrum, linear predictive analysis, cepstrum and adaptive signal processing.\n\nKnowledge: Understanding DSP techniques used in industrial applications. Skills: Choosing appropriate DSP methods depending on purposes for one-dimensional time-series signals. Attitude: Getting ready to exploring DSP methods for analyzing real-world signals.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "spring"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 14,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1691/31691014000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "277713acae8507f36085e0682019bd26dcbd5b29530bbdb59f92b97c311ed305"
   },
   {
     "id": 1299,
     "universityId": "doshisha-jp",
     "code": "31691015",
     "title": "Advanced Data Science",
-    "description": "",
+    "description": "*** 本科⽬はISTC科⽬に指定されています *** With the spread of mobile devices and the advancement of network technologies, a vast amount of diverse data has been accumulated, and data analysis skills have become increasingly essential in various fields. The aim of this course is to equip students with both basic and advanced knowledge in statistical data analysis and machine learning from a practical viewpoint. For example, classification and clustering methods, commonly used in data analysis competitions, will be introduced with examples of several real-world applications. The final assignment is designed as group work, in which students should work collaboratively with your group members.\n\nAfter completing this course, students should be able to\n- understand the main concepts and strategies used in practical data analysis;\n- understand how to evaluate target classification, regression, or clustering tasks;\n- appropriately select data science approaches to real-world problems;\n- explain conventional studies reported in scientific papers.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 15,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1691/31691015000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "15b787950988fc152a0dcaf4994c1762bbbbc138dd7942fe8fabe0b52039266d"
   },
   {
     "id": 1300,
     "universityId": "doshisha-jp",
     "code": "31691016",
     "title": "Advanced Pattern Recognition",
-    "description": "",
+    "description": "Pattern recognition is a process to associate an input pattern represented in a certain form (e.g., image, video, music or text) with one of pre-defined classes (concepts). Triggered by the success of neural networks that model connections of biological neurons in human brain, a number of pattern recognition methods are newly being developed at an incredible speed. This course focuses on providing fundamental ideas and methods that are believed to remain for years. This enables students to get expertise and experience that are useful for efficiently following the very fast development of pattern recognition methods.\n\n- Students can study fundamentals of pattern recognition, especially ideas and methods that are believed to be useful for years to come.\n- Students can get knowledge that is useful for viewing various pattern recognition methods from a comprehensive perspective.\n- Students can acquire skills and experiences to run state-of-the-art pattern recognition methods and investigate obtained results.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "spring"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 16,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1691/31691016000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "816dc0cdda460a28caa54aa5958a786cb26c17b3a91c34ece7e5aeeb9c395bd8"
   },
   {
     "id": 1301,
     "universityId": "doshisha-jp",
     "code": "31692001",
     "title": "Advanced Infrastructure Engineering",
-    "description": "",
+    "description": "Advanced Course of Infrastructure Engineering The importance of “lifelines” is well understood in these modern, technologically advanced nations. However, no single course or program comprehensively covers all elements of lifelines —railways (transportation), communications, and power. Advanced infrastructure engineering courses globally address such subjects. The ultimate goal of this course is to publish a textbook for young engineers and university students. This publication will aid in developing a deep understanding of infrastructure. Each chapter will be written by a student. This will serve as the final report for this course.\n\n(1)To understand the basis of lifeline / infrastructures (2)To realize a difference of the lifeline / infrastructures between countries (3)To be able to catch the course in English",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 26,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1692/31692001000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "779968d224e770cb389a29763c997c76de4db0d5940cc3132d3e4e4ad36583ad"
   },
   {
     "id": 1302,
     "universityId": "doshisha-jp",
     "code": "31692012",
     "title": "Advanced Optical Communication Engineering",
-    "description": "",
+    "description": "This course is designed to promote a better understanding of technologies related to advanced optical communication engineering.\n\nThrough this class，you will understand theory of the following topics and will be able to manipulate the devices for optical communication systems.\n1) Dielectric polarization，dispersion, loss and optical nonlinearity\n2) Propagation of electro-magnetic wave in dielectric material and various types of waveguides\n3) Principle and examples of light sources，optical amplification，and photo detectors\n4) Reflection and refraction，interference，and state of polarization\n5) Optical components for optical communication systems\n6) Measurement techniques of electrical and optical signals",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 27,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1692/31692012000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "ff698b5a4bf2ed7cfa90a14c90ed3b4d3832930c3bb83fb23f8a57609d4d85f4"
   },
   {
     "id": 1303,
     "universityId": "doshisha-jp",
     "code": "31692008",
     "title": "Electrical Power Systems Engineering",
-    "description": "",
+    "description": "Electrical Power Systems Engineering is a comprehensive course which deals with the principles of power systems configurations, components, operation, dynamic analysis and control. The course not only covers the fundamentals on conventional generation, transmission and distribution systems, but also addresses the new developments on renewable energy sources, smart grids, microgrids and recent advances in the relevant operation and control methodologies. This course provides an appropriate and standard collection of essential topics on power system structure, dynamic analysis, operation and control concepts to prepare the graduate students for doing an initial research project on the existing concerns and challenges in modern power systems.\n\nStudents will achieve an in-depth knowledge on the power system engineering technical issues in various aspects of generation, transmission and distribution topics. This course not only depends on learning about the balance between generation and load but also enables students to know the ways to manage and control the important power system variables i.e., frequency, voltage and angle using technological means. After successful completion of this course, the students will have a basic understanding of the given principles, and will be able to simulate and analysis a simple power grid using a simulation environment.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "spring"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 28,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1692/31692008000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "9fab4963b0e001938b9797af6fc1c0996de0302da1a43f6c080405d2bfc931e8"
   },
   {
     "id": 1304,
     "universityId": "doshisha-jp",
     "code": "31692009",
     "title": "Advanced Applications of Electronics",
-    "description": "",
+    "description": "This course introduces the latest electronic technologies and provides students with an opportunity to engage in the design of fundamental circuits that will be useful for their future research activities. This course is offered jointly by the Graduate School of Engineering and the Graduate School of Biomedical Sciences at Doshisha University and is intended for all graduate students enrolled in the International Science and Technology Course.\n\nStudents learn how modern electronic systems are utilized in society. Based on cutting-edge technologies in related fields, they become capable of designing basic electronic circuits.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 14,
-    "sourceLine": 33,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1692/31692009000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "1bb1fdde441b462eca4bf5c3e013810f46853d7b90e0338aa603e5448d3af2de"
   },
   {
     "id": 1307,
     "universityId": "doshisha-jp",
     "code": "31695001",
     "title": "Advanced Analysis",
-    "description": "",
+    "description": "As an developed course of functional analysis, we explain the spectral theory for linear operators on Hilbert spaces. The main subjects are the spectral theory for compact operators, which is an infinite dimensional version of eigenvalue problems for matrices, and the spectral theorem for self-adjoint operators. We also discuss the spectrum for Schrödinger operators as their applications.\n\nOne can understand various concepts regarding the spectrum for linear operators on Hilbert spaces, prove and apply several fundamental theorems such as the spectral theorem for oneself.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 15,
-    "sourceLine": 20,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1695/31695001000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "cfbcd2b146d82da270fe9413329ded9f77244a7f2e3c5f84103253214028395b"
   },
   {
     "id": 1308,
     "universityId": "doshisha-jp",
     "code": "31695002",
     "title": "Advanced Numerical Analysis",
-    "description": "",
+    "description": "In this course, we study advanced topics in numerical analysis, with a primary focus on numerical methods for partial differential equations (PDEs). We consider fundamental equations such as the Laplace equation, the heat equation, the wave equation, and the Navier–Stokes equations. Through these model problems, students learn major numerical techniques, including the finite difference method, the finite element method, and the boundary integral equation method. We also learn about some iterative methods for solving linear algebraic equations.\n\nUpon completion of this course, students will be able to apply fundamental numerical methods and describe the basic ideas behind advanced techniques for solving partial differential equations (PDEs).",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "spring"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 15,
-    "sourceLine": 21,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1695/31695002000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "e38ca2dfc5bafeecf270b48d0c32ef5e24b42fc40716fff87314b53e28e8499a"
   },
   {
     "id": 1309,
     "universityId": "doshisha-jp",
     "code": "31695003",
     "title": "Advanced Difference / Differential Equations",
-    "description": "",
+    "description": "This class provides an introductory theory of ordinary differential equations and difference equations which is concerning the following topics. Introduction to ordinary differential equations(ODE) ; Solving of ODE ; Stability of ODE ; Introduction to difference equations(DCE) ; Stability of DCE.\n\nAims of this class are to understand solving of solutions for first-order / second-oder ordinary differential equations and the stability criterion of the solutions as well as to study the asymptotic behavior of solutions for difference equations.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 15,
-    "sourceLine": 22,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1695/31695003000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "eeffdf4f3b77baa727e4f0ed3e77ab8b4100926cfb021149a5d6393ed1033fc0"
   },
   {
     "id": 1315,
     "universityId": "doshisha-jp",
     "code": "31695013",
     "title": "Advanced Geometry",
-    "description": "",
+    "description": "In this lecture, we discuss basics of knot theory. Mathematically, a knot is an embedded circle in the 3-dimensional Euclidean space and two knots are identified if one of them can be continuously deformed into the other through knots. We will learn how to describe and identify knots by several method. In the lecture, students are asked to present solutions of problems in the textbooks when each chapter ends. Evaluation is done by the presentation of the solutions.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 15,
-    "sourceLine": 31,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1695/31695013000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "a4f581c64669cb322983626e76c9248cfcecfd782bd19ac714fff6b3afeb0bb0"
   },
   {
     "id": 1316,
     "universityId": "doshisha-jp",
     "code": "31696502",
     "title": "Electric Circuit Theory",
-    "description": "",
+    "description": "The course introduces the fundamentals of the Electric Circuit Theories for the analysis of linear electric circuits, and measurements of their properties. Topics include resistive and energy-storage elements, controlled sources, systematic analysis methods, AC steady state, power and three-phase systems, transients, s-plane representation and analysis, frequency response, and Laplace transform.\n\n1. Understand the basic electrical engineering principles and abstractions on which the design of electrical and electronic systems is based.\n2. Ability to apply basic circuit laws and rules.\n3. Understand and apply circuit theorems.\n4. Ability to analyze first and second order transient circuits.\n5. Ability to analyze steady-state sinusoidal circuits.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 15,
-    "sourceLine": 49,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1696/31696502000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "c0a8ec3486477523af34cd29202dc8655d0e55e6cd88f07c259317721d3852c3"
   },
   {
     "id": 1320,
     "universityId": "doshisha-jp",
     "code": "31696512",
     "title": "Advanced Distributed Systems",
-    "description": "",
+    "description": "!!!Important!!![Course Prerequisites]:\n1. Experience using basic UNIX/Linux commands from the command line\n2. Experience basic UNIX/Linux writing shell scripts\n3. English skills for reports and presentations This course is designed to study software components of distributed computing systems. The system architecture of multiple computer systems is introduced. The design issues of distributed computing systems are discussed. The course emphasizes understanding distributed computing platforms or environments with focusing on the Open Science Grid(http://www.opensciencegrid.org/). Some lectures will have one or more assigned papers to read. You should read this paper before coming to class， and be prepared to give a presentation for the papers. Last half of lectures will have assigned presentation to discuss distributed systems. （Face-to-face class [if social/other conditions are changed, this class may be changed to online/hybrid class])\n\n1. Describe the basic elements and architecture of a distributed computing system\n2. Use basic distributed computing tools to run jobs and manage data\n3. Select reasonable tools and methods to solve scientific computing problems using distributed computing\n4. Outline the role of distributed computing， its history， current state and issues， and hopes for the future\n5. Identify resources for support， further study， and development opportunities in distributed computing",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "spring"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 15,
-    "sourceLine": 58,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1696/31696512000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "674f30a44add6aeca3cf010ed4f6947b535324a3d61bf1b36e02f03ddf95906d"
   },
   {
     "id": 1321,
     "universityId": "doshisha-jp",
     "code": "31696505",
     "title": "Applied Mathematical Analysis",
-    "description": "",
+    "description": "In this course, we will study solutions of partial differential equations in science and engineering using Fourier analysis and Green's functions. Prerequisites are some knowledge of calculus and linear algebra.\n\nOur goals are as follows: (1) To learn the basic theory of ordinary differential equations (2) To understand how the partial differential equations in science and engineering are solved with Fourier analysis and Green's functions.",
     "credits": 2,
     "contactHours": null,
     "language": "en",
     "terms": [
       "fall"
     ],
-    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
-    "collectedAt": "2026-11-11T00:51:38.238Z",
-    "sourcePage": 15,
-    "sourceLine": 60,
-    "snapshotSha256": null
+    "sourceUrl": "https://syllabus.doshisha.ac.jp/html/2026/1696/31696505000.html",
+    "collectedAt": "2026-11-13T02:05:48.506Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "fdf3e72f033d210ec53ef6c24cda9d3a5c400092f1ea14b4bae014dcbe58e2f4"
   },
   {
     "id": 1324,
@@ -26093,5 +26093,257 @@
     "sourcePage": 1,
     "sourceLine": 781,
     "snapshotSha256": "87681ac3f4e7d5f808a9390d29cc37102b1bdd87d25b23bd384ae4ee9027bd91"
+  },
+  {
+    "id": 1501,
+    "universityId": "cityu-hk",
+    "code": "CS1102",
+    "title": "Introduction to Computer Studies",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 6,
+    "snapshotSha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5"
+  },
+  {
+    "id": 1502,
+    "universityId": "cityu-hk",
+    "code": "CS1302",
+    "title": "Introduction to Computer Programming",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 7,
+    "snapshotSha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5"
+  },
+  {
+    "id": 1503,
+    "universityId": "cityu-hk",
+    "code": "CS2204",
+    "title": "Fundamentals of Internet Applications Development",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 8,
+    "snapshotSha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5"
+  },
+  {
+    "id": 1504,
+    "universityId": "cityu-hk",
+    "code": "CS2311",
+    "title": "Computer Programming",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 9,
+    "snapshotSha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5"
+  },
+  {
+    "id": 1505,
+    "universityId": "cityu-hk",
+    "code": "CS2312",
+    "title": "Problem Solving and Programming",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 10,
+    "snapshotSha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5"
+  },
+  {
+    "id": 1506,
+    "universityId": "cityu-hk",
+    "code": "CS2402",
+    "title": "Introduction to Computational Probability Modeling",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5"
+  },
+  {
+    "id": 1507,
+    "universityId": "cityu-hk",
+    "code": "CS2403",
+    "title": "Data Management and Cloud Storage",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 12,
+    "snapshotSha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5"
+  },
+  {
+    "id": 1508,
+    "universityId": "cityu-hk",
+    "code": "CS2468",
+    "title": "Data Structures and Data Management",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 13,
+    "snapshotSha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5"
+  },
+  {
+    "id": 1509,
+    "universityId": "cityu-hk",
+    "code": "CS3103",
+    "title": "Operating Systems",
+    "description": "This course aims to introduce the concepts, roles and functionality of operating systems, which are an essential part of any computer system. By going through the major areas in the development of operating systems including process management, memory management, scheduling, I/O and disk management, students are expected to gain a broad understanding of key approaches to operating system design and implementation. By discussing the design issues of different approaches, students should be able to analyse the trade-offs and contrast their performance in satisfying different system and application requirements.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/cs3103.htm",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "4eb67f07403b3592951c3c1e7bd4d893672e22f49b06f4356570a4088d5e7e41"
+  },
+  {
+    "id": 1510,
+    "universityId": "cityu-hk",
+    "code": "CS3334",
+    "title": "Data Structures",
+    "description": "This course aims to provide students an appreciation to the fundamentals of computer science. Models and applications of data structures including heaps, search trees, hash tables and disjoint sets are introduced and evaluated. Mathematical tools for analysis of algorithms and data structures are discussed and applied. Students are given the opportunity to develop and implement applications of the data structures and their derivatives.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/cs3334.htm",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "7b52f1786f98f32d66c6d3585096937f0c889b426c413706a6e0f2dd2037f8a0"
+  },
+  {
+    "id": 1511,
+    "universityId": "cityu-hk",
+    "code": "CS3391",
+    "title": "Advanced Programming",
+    "description": "For many algorithmic problems found in practical systems, the best solutions are usually the elegant combinations of both efficient algorithms and advanced programming techniques. They are the results of some exciting blend of programming, mathematics and problem solving. The course introduces an interesting variety of subjects in programming, algorithms, and discrete mathematics through puzzles and practical problems so that students will have the chance to perform original discovery of new programming challenges and devise new ideas on solving the problems in an innovative way in terms of algorithms and programming techniques. After learning the course, the students will be able to develop advanced algorithmic and programming skills that are required to solve sophisticated problems in the real world. Due to the practicality of the problems which appear in many collegiate programming contests, we expect that the best students from this course will also be competent to solve competition-style programming problems and may be able to represent City University of Hong Kong at ACM Collegiate Programming contests.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/cs3391.htm",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "08efde0574fdf93e3986238e778ada10f84012754e2bf68cf44c1c4011b458cf"
+  },
+  {
+    "id": 1512,
+    "universityId": "cityu-hk",
+    "code": "CS4286",
+    "title": "Internet Security and e-Commerce Protocols",
+    "description": "This course aims to provide an understanding of information security. Students are expected to gain a broad understanding of information security with the goal of recognising security problems and discovering the security requirements of current computer systems. The course explores existing security mechanisms and offers students the opportunity to evaluate and design techniques for enforcing computer and network security and developing secure e-commerce protocols.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/cs4286.htm",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "4605c8f0f64f82ba6bf5486a60fc6929075f54fcc4aa94f254d82d5d062aeec7"
+  },
+  {
+    "id": 1513,
+    "universityId": "cityu-hk",
+    "code": "CS4293",
+    "title": "Topics in Cybersecurity",
+    "description": "This course is aimed at developing students a solid understanding in a range of topics in the area of cybersecurity. Student will acquire adequate understanding on threats of web applications and network, acquire skill to specify and evaluate appropriate security measures for computer systems and software applications, and get familiar with emerging privacy-enhancing technologies such as Bitcoin-like cryptocurrencies, blockchain and decentralised applications, and secure computation.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/cs4293.htm",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "7d5216101ce3503e81654ca011319f58f9b0b87ff02d1d5d8d731aca05eb7677"
+  },
+  {
+    "id": 1514,
+    "universityId": "cityu-hk",
+    "code": "CS4465",
+    "title": "Computational Biology and Bioinformatics",
+    "description": "This course aims to introduce students concepts and techniques in computational biology and bioinformatics, and to develop practical skills in applying bioinformatics approaches to solve problems in biological studies.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "unknown",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/course/cs4465.htm",
+    "collectedAt": "2026-11-13T02:10:49.167Z",
+    "sourcePage": 1,
+    "sourceLine": 1,
+    "snapshotSha256": "9aa6d638876d86c015bf74b3b0c13debda550e7334eab07fc17b3ccc646fec5d"
   }
 ]
