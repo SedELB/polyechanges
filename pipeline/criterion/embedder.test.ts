@@ -18,6 +18,9 @@ describe('embedderKey', () => {
   it('change quand le pooling change', () => {
     expect(embedderKey({ ...base, pooling: 'cls' })).not.toBe(embedderKey(base));
   });
+  it('change pour le vecteur de phrase calculé par le modèle', () => {
+    expect(embedderKey({ ...base, pooling: 'sentence_embedding' })).not.toBe(embedderKey(base));
+  });
   it('change quand un préfixe change', () => {
     expect(embedderKey({ ...base, prefixes: { notion: 'query: ', passage: '' } })).not.toBe(embedderKey(base));
   });

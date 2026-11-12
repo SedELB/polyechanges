@@ -3,7 +3,7 @@ import type { University } from '../../shared/types.js';
 import { scoreNotions } from '../criterion/content.js';
 import type { Embedder } from '../criterion/embedder.js';
 import { createCachedEmbedder } from '../criterion/embeddingCache.js';
-import { contentBand, contentScore, levelFor } from '../criterion/levels.js';
+import { capLevel, contentBand, contentScore, levelFor } from '../criterion/levels.js';
 import type { LoadedCriterion } from '../criterion/loadCriterion.js';
 import { splitPassages } from '../criterion/passages.js';
 import { getCriterionVersion, setFrozen, upsertCriterionVersion } from '../db/criterion.js';
@@ -43,6 +43,9 @@ export async function runCompare(db: Db, criterion: LoadedCriterion, embedder: E
     const university = universityOf(host.universityId);
     if (!university) continue;
     const passages = splitPassages(host);
+    const textUsed = textUsedFor(host);
+    // Un titre seul ne permet pas de vérifier le contenu : le critère peut plafonner le niveau de ces paires.
+    const maxLevel = textUsed === 'titre' ? params.titleOnlyMaxLevel : undefined;
     const passageVecs = passages.length > 0 ? await cached.embed(passages, 'passage') : [];
     for (const poly of polys) {
       const notions = criterion.notions[poly.sigle];
@@ -75,8 +78,8 @@ export async function runCompare(db: Db, criterion: LoadedCriterion, embedder: E
         contentScore: score,
         contentBand: band,
         workload,
-        level: levelFor(band, workload),
-        textUsed: textUsedFor(host),
+        level: capLevel(levelFor(band, workload), maxLevel),
+        textUsed,
       });
     }
   }

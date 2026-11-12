@@ -1,0 +1,12 @@
+{
+  "slug": "embeddinggemma-2",
+  "id": "onnx-community/embeddinggemma-2-ONNX",
+  "revision": "daa72c51243991dfcaf9f9137d2c573d8f7790c0",
+  "dtype": "fp32",
+  "pooling": "sentence_embedding",
+  "prefixes": {
+    "notion": "task: search result | query: ",
+    "passage": "title: none | text: "
+  },
+  "sizeMillions": 270
+}

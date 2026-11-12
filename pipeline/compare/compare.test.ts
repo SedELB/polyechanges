@@ -199,3 +199,36 @@ describe('runCompare, cours sans description', () => {
     expect(byCode('T2').text_used).toBe('description+plan');
   });
 });
+
+describe('runCompare, plafond des paires comparées sur le titre seul', () => {
+  const v1: LoadedCriterion = {
+    ...v0,
+    params: { ...v0.params, version: 'v1', titleOnlyMaxLevel: 'faible' },
+    paramsHash: 'hash-v1',
+  };
+  beforeEach(() => {
+    applyCollection(
+      db,
+      'ects-u',
+      [course('E1', { credits: 6 }), course('T3', { title: 'SQL and transaction', description: '', credits: 6 })],
+      () => null,
+      '2026-01-03',
+    );
+  });
+
+  it("une paire « titre » de bande « très » sort « faible » quand le critère plafonne", async () => {
+    await runCompare(db, v1, fake);
+    const t3 = byCode('T3');
+    expect(t3.text_used).toBe('titre');
+    expect(t3.content_band).toBe('tres');
+    expect(t3.workload).toBe('conforme');
+    expect(t3.level).toBe('faible');
+    // une paire décrite n'est pas plafonnée
+    expect(byCode('E1').level).toBe('elevee');
+  });
+
+  it('sans plafond dans le critère (v0), la même paire reste « élevée »', async () => {
+    await runCompare(db, v0, fake);
+    expect(byCode('T3').level).toBe('elevee');
+  });
+});

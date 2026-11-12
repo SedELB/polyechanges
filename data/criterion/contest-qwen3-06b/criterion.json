@@ -1,0 +1,21 @@
+{
+  "version": "contest-qwen3-06b",
+  "model": {
+    "slug": "qwen3-06b",
+    "id": "onnx-community/Qwen3-Embedding-0.6B-ONNX",
+    "revision": "c25a394dd583836952667c12f008335071b3f43d",
+    "dtype": "fp32",
+    "pooling": "last_token",
+    "prefixes": {
+      "notion": "Instruct: Given a course topic, retrieve passages of course descriptions that cover this topic\nQuery:",
+      "passage": ""
+    },
+    "sizeMillions": 596,
+    "library": "@huggingface/transformers@4.3.2"
+  },
+  "detectThreshold": 0.55,
+  "bandHigh": 0.7,
+  "bandLow": 0.4,
+  "workloadTolerance": 0.15,
+  "polyWeeks": 13
+}

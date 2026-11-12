@@ -1,0 +1,21 @@
+{
+  "version": "contest-embeddinggemma",
+  "model": {
+    "slug": "embeddinggemma",
+    "id": "onnx-community/embeddinggemma-300m-ONNX",
+    "revision": "5090578d9565bb06545b4552f76e6bc2c93e4a66",
+    "dtype": "fp32",
+    "pooling": "sentence_embedding",
+    "prefixes": {
+      "notion": "task: search result | query: ",
+      "passage": "title: none | text: "
+    },
+    "sizeMillions": 303,
+    "library": "@huggingface/transformers@4.3.2"
+  },
+  "detectThreshold": 0.55,
+  "bandHigh": 0.7,
+  "bandLow": 0.4,
+  "workloadTolerance": 0.15,
+  "polyWeeks": 13
+}

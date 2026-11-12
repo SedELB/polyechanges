@@ -264,6 +264,182 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF2010",
+    "hostCourseId": 866,
+    "notionsFound": [
+      "sequential-data-structures",
+      "sorting-algorithms",
+      "binary-trees",
+      "balanced-trees",
+      "priority-queues",
+      "string-algorithms",
+      "graph-implementation",
+      "graph-traversal",
+      "set-data-structures"
+    ],
+    "notionsMissing": [
+      "element-insertion-search-and-removal"
+    ],
+    "contentScore": 0.9,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF2010",
+    "hostCourseId": 885,
+    "notionsFound": [
+      "sequential-data-structures",
+      "binary-trees",
+      "balanced-trees",
+      "graph-implementation",
+      "graph-traversal"
+    ],
+    "notionsMissing": [
+      "element-insertion-search-and-removal",
+      "sorting-algorithms",
+      "priority-queues",
+      "string-algorithms",
+      "set-data-structures"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2010",
+    "hostCourseId": 1035,
+    "notionsFound": [
+      "binary-trees",
+      "balanced-trees",
+      "graph-implementation",
+      "graph-traversal"
+    ],
+    "notionsMissing": [
+      "sequential-data-structures",
+      "element-insertion-search-and-removal",
+      "sorting-algorithms",
+      "priority-queues",
+      "string-algorithms",
+      "set-data-structures"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2010",
+    "hostCourseId": 1077,
+    "notionsFound": [
+      "sequential-data-structures",
+      "sorting-algorithms",
+      "binary-trees",
+      "balanced-trees",
+      "priority-queues",
+      "graph-implementation",
+      "graph-traversal",
+      "set-data-structures"
+    ],
+    "notionsMissing": [
+      "element-insertion-search-and-removal",
+      "string-algorithms"
+    ],
+    "contentScore": 0.8,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2010",
+    "hostCourseId": 1324,
+    "notionsFound": [
+      "sequential-data-structures",
+      "sorting-algorithms",
+      "string-algorithms",
+      "set-data-structures"
+    ],
+    "notionsMissing": [
+      "element-insertion-search-and-removal",
+      "binary-trees",
+      "balanced-trees",
+      "priority-queues",
+      "graph-implementation",
+      "graph-traversal"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF2010",
+    "hostCourseId": 1338,
+    "notionsFound": [
+      "sequential-data-structures",
+      "binary-trees",
+      "balanced-trees",
+      "set-data-structures"
+    ],
+    "notionsMissing": [
+      "element-insertion-search-and-removal",
+      "sorting-algorithms",
+      "priority-queues",
+      "string-algorithms",
+      "graph-implementation",
+      "graph-traversal"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2010",
+    "hostCourseId": 1393,
+    "notionsFound": [
+      "binary-trees",
+      "balanced-trees",
+      "graph-implementation",
+      "graph-traversal"
+    ],
+    "notionsMissing": [
+      "sequential-data-structures",
+      "element-insertion-search-and-removal",
+      "sorting-algorithms",
+      "priority-queues",
+      "string-algorithms",
+      "set-data-structures"
+    ],
+    "contentScore": 0.4,
+    "workload": "conforme",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF2010",
+    "hostCourseId": 1394,
+    "notionsFound": [
+      "sequential-data-structures",
+      "sorting-algorithms",
+      "binary-trees",
+      "balanced-trees",
+      "priority-queues",
+      "graph-implementation",
+      "graph-traversal",
+      "set-data-structures"
+    ],
+    "notionsMissing": [
+      "element-insertion-search-and-removal",
+      "string-algorithms"
+    ],
+    "contentScore": 0.8,
+    "workload": "conforme",
+    "level": "elevee",
+    "textUsed": "description+plan"
+  },
+  {
     "polySigle": "INF2610",
     "hostCourseId": 50,
     "notionsFound": [
@@ -344,6 +520,130 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF2610",
+    "hostCourseId": 876,
+    "notionsFound": [
+      "operating-system-structure",
+      "process-management",
+      "process-synchronization",
+      "process-scheduling",
+      "deadlocks",
+      "memory-management",
+      "real-time-operating-systems"
+    ],
+    "notionsMissing": [
+      "threads"
+    ],
+    "contentScore": 0.875,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2610",
+    "hostCourseId": 1106,
+    "notionsFound": [
+      "operating-system-structure",
+      "process-management",
+      "process-synchronization",
+      "process-scheduling",
+      "memory-management",
+      "real-time-operating-systems"
+    ],
+    "notionsMissing": [
+      "threads",
+      "deadlocks"
+    ],
+    "contentScore": 0.75,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2610",
+    "hostCourseId": 1252,
+    "notionsFound": [
+      "operating-system-structure",
+      "process-management",
+      "process-synchronization",
+      "process-scheduling",
+      "memory-management",
+      "real-time-operating-systems"
+    ],
+    "notionsMissing": [
+      "threads",
+      "deadlocks"
+    ],
+    "contentScore": 0.75,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2610",
+    "hostCourseId": 1353,
+    "notionsFound": [
+      "operating-system-structure",
+      "process-management",
+      "process-synchronization",
+      "process-scheduling",
+      "memory-management",
+      "real-time-operating-systems"
+    ],
+    "notionsMissing": [
+      "threads",
+      "deadlocks"
+    ],
+    "contentScore": 0.75,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2705",
+    "hostCourseId": 925,
+    "notionsFound": [
+      "affine-transformations",
+      "illumination-models",
+      "graphical-picking",
+      "bezier-curves",
+      "b-splines"
+    ],
+    "notionsMissing": [
+      "geometric-models",
+      "parallel-and-perspective-projections",
+      "transformation-pipeline",
+      "programmable-pipeline-and-shaders",
+      "color-models"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF2705",
+    "hostCourseId": 1222,
+    "notionsFound": [
+      "geometric-models",
+      "affine-transformations",
+      "parallel-and-perspective-projections",
+      "transformation-pipeline"
+    ],
+    "notionsMissing": [
+      "programmable-pipeline-and-shaders",
+      "illumination-models",
+      "color-models",
+      "graphical-picking",
+      "bezier-curves",
+      "b-splines"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF3405",
     "hostCourseId": 139,
     "notionsFound": [
@@ -386,6 +686,28 @@
     "workload": "conforme",
     "level": "moyenne",
     "textUsed": "description"
+  },
+  {
+    "polySigle": "INF3405",
+    "hostCourseId": 881,
+    "notionsFound": [
+      "network-classification",
+      "switching-techniques",
+      "error-detection-and-control",
+      "layered-network-architecture",
+      "tcp-ip-addressing-and-routing",
+      "quality-of-service",
+      "tcp-congestion-control"
+    ],
+    "notionsMissing": [
+      "ethernet-and-wireless-lans",
+      "ipv6",
+      "network-energy-efficiency"
+    ],
+    "contentScore": 0.7,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description+plan"
   },
   {
     "polySigle": "INF3710",
@@ -432,6 +754,50 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF3710",
+    "hostCourseId": 879,
+    "notionsFound": [
+      "entity-relationship-model",
+      "relational-model",
+      "sql-definition-manipulation-and-control",
+      "transaction-management",
+      "concurrency-control",
+      "normal-forms"
+    ],
+    "notionsMissing": [
+      "relational-algebra",
+      "embedded-sql",
+      "relation-and-file-storage-models",
+      "indexing-hashing"
+    ],
+    "contentScore": 0.6,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF3710",
+    "hostCourseId": 998,
+    "notionsFound": [
+      "entity-relationship-model",
+      "relational-model",
+      "relational-algebra",
+      "relation-and-file-storage-models",
+      "indexing-hashing"
+    ],
+    "notionsMissing": [
+      "sql-definition-manipulation-and-control",
+      "embedded-sql",
+      "transaction-management",
+      "concurrency-control",
+      "normal-forms"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8085",
     "hostCourseId": 116,
     "notionsFound": [
@@ -450,6 +816,116 @@
     ],
     "contentScore": 0.5,
     "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8085",
+    "hostCourseId": 727,
+    "notionsFound": [
+      "cryptography",
+      "cryptographic-hash-functions",
+      "digital-signatures",
+      "access-control-and-authentication"
+    ],
+    "notionsMissing": [
+      "risk-management",
+      "public-key-encryption",
+      "public-key-infrastructure",
+      "software-vulnerabilities",
+      "malware",
+      "firewalls-and-intrusion-detection"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8085",
+    "hostCourseId": 872,
+    "notionsFound": [
+      "cryptography",
+      "public-key-encryption",
+      "cryptographic-hash-functions",
+      "digital-signatures",
+      "public-key-infrastructure"
+    ],
+    "notionsMissing": [
+      "risk-management",
+      "software-vulnerabilities",
+      "malware",
+      "access-control-and-authentication",
+      "firewalls-and-intrusion-detection"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8085",
+    "hostCourseId": 996,
+    "notionsFound": [
+      "cryptography",
+      "software-vulnerabilities",
+      "malware",
+      "firewalls-and-intrusion-detection"
+    ],
+    "notionsMissing": [
+      "risk-management",
+      "public-key-encryption",
+      "cryptographic-hash-functions",
+      "digital-signatures",
+      "public-key-infrastructure",
+      "access-control-and-authentication"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8085",
+    "hostCourseId": 1081,
+    "notionsFound": [
+      "cryptography",
+      "public-key-encryption",
+      "cryptographic-hash-functions",
+      "digital-signatures"
+    ],
+    "notionsMissing": [
+      "risk-management",
+      "public-key-infrastructure",
+      "software-vulnerabilities",
+      "malware",
+      "access-control-and-authentication",
+      "firewalls-and-intrusion-detection"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8103",
+    "hostCourseId": 1362,
+    "notionsFound": [
+      "cybersecurity-organizational-models",
+      "employee-role-in-cybersecurity",
+      "cybersecurity-team-roles-and-responsibilities",
+      "cyber-strategy-and-business-objectives"
+    ],
+    "notionsMissing": [
+      "governance-and-compliance",
+      "red-blue-and-purple-teams",
+      "asset-identification",
+      "threat-actors",
+      "recovery-plan",
+      "risk-management"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
     "level": "faible",
     "textUsed": "description"
   },
@@ -474,6 +950,50 @@
     "workload": "conforme",
     "level": "moyenne",
     "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8107",
+    "hostCourseId": 1362,
+    "notionsFound": [
+      "intrusion-detection",
+      "security-monitoring",
+      "security-operations-center",
+      "cyber-incident-response"
+    ],
+    "notionsMissing": [
+      "defense-posture-assessment",
+      "threat-types",
+      "kill-chain-model",
+      "mitre-att-ck-and-d3fend",
+      "alert-analysis",
+      "attack-patterns"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8107",
+    "hostCourseId": 1403,
+    "notionsFound": [
+      "intrusion-detection",
+      "attack-patterns",
+      "security-monitoring",
+      "security-operations-center",
+      "cyber-incident-response"
+    ],
+    "notionsMissing": [
+      "defense-posture-assessment",
+      "threat-types",
+      "kill-chain-model",
+      "mitre-att-ck-and-d3fend",
+      "alert-analysis"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
   },
   {
     "polySigle": "INF8111",
@@ -518,6 +1038,69 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF8111",
+    "hostCourseId": 855,
+    "notionsFound": [
+      "data-mining-tasks",
+      "graph-mining",
+      "web-mining",
+      "big-data-mining",
+      "data-stream-mining"
+    ],
+    "notionsMissing": [
+      "data-preparation-and-transformation",
+      "data-reduction",
+      "outlier-detection",
+      "social-network-analysis"
+    ],
+    "contentScore": 0.556,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "titre"
+  },
+  {
+    "polySigle": "INF8111",
+    "hostCourseId": 885,
+    "notionsFound": [
+      "data-reduction",
+      "data-mining-tasks",
+      "graph-mining",
+      "web-mining",
+      "big-data-mining",
+      "data-stream-mining"
+    ],
+    "notionsMissing": [
+      "data-preparation-and-transformation",
+      "outlier-detection",
+      "social-network-analysis"
+    ],
+    "contentScore": 0.667,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8111",
+    "hostCourseId": 886,
+    "notionsFound": [
+      "data-mining-tasks",
+      "web-mining",
+      "big-data-mining",
+      "data-stream-mining"
+    ],
+    "notionsMissing": [
+      "data-preparation-and-transformation",
+      "data-reduction",
+      "outlier-detection",
+      "graph-mining",
+      "social-network-analysis"
+    ],
+    "contentScore": 0.444,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8175",
     "hostCourseId": 60,
     "notionsFound": [
@@ -562,6 +1145,72 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF8175",
+    "hostCourseId": 870,
+    "notionsFound": [
+      "intelligent-agents",
+      "constraint-programming",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "search-strategies",
+      "adversarial-search",
+      "local-search",
+      "propositional-logic",
+      "knowledge-representation",
+      "supervised-learning"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8175",
+    "hostCourseId": 882,
+    "notionsFound": [
+      "intelligent-agents",
+      "search-strategies",
+      "adversarial-search",
+      "constraint-programming",
+      "propositional-logic",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "local-search",
+      "knowledge-representation"
+    ],
+    "contentScore": 0.8,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8175",
+    "hostCourseId": 1092,
+    "notionsFound": [
+      "knowledge-representation",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "intelligent-agents",
+      "search-strategies",
+      "adversarial-search",
+      "local-search",
+      "constraint-programming",
+      "propositional-logic"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8215",
     "hostCourseId": 60,
     "notionsFound": [
@@ -603,6 +1252,72 @@
     "contentScore": 0.6,
     "workload": "conforme",
     "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8215",
+    "hostCourseId": 870,
+    "notionsFound": [
+      "intelligent-agents",
+      "constraint-programming",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "search-strategies",
+      "adversarial-search",
+      "local-search",
+      "propositional-logic",
+      "knowledge-representation",
+      "supervised-learning"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8215",
+    "hostCourseId": 882,
+    "notionsFound": [
+      "intelligent-agents",
+      "search-strategies",
+      "adversarial-search",
+      "constraint-programming",
+      "propositional-logic",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "local-search",
+      "knowledge-representation"
+    ],
+    "contentScore": 0.8,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8215",
+    "hostCourseId": 1092,
+    "notionsFound": [
+      "knowledge-representation",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "intelligent-agents",
+      "search-strategies",
+      "adversarial-search",
+      "local-search",
+      "constraint-programming",
+      "propositional-logic"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
     "textUsed": "description"
   },
   {
@@ -669,6 +1384,138 @@
     "contentScore": 0.4,
     "workload": "conforme",
     "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8225",
+    "hostCourseId": 870,
+    "notionsFound": [
+      "hidden-markov-models",
+      "markov-random-fields",
+      "statistical-decision-theory",
+      "deep-learning",
+      "probabilistic-natural-language-processing"
+    ],
+    "notionsMissing": [
+      "bayesian-networks",
+      "inference-in-probabilistic-models",
+      "decision-networks",
+      "structured-classifiers",
+      "computer-vision"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8225",
+    "hostCourseId": 882,
+    "notionsFound": [
+      "bayesian-networks",
+      "hidden-markov-models",
+      "markov-random-fields",
+      "inference-in-probabilistic-models",
+      "statistical-decision-theory",
+      "decision-networks",
+      "structured-classifiers",
+      "deep-learning"
+    ],
+    "notionsMissing": [
+      "probabilistic-natural-language-processing",
+      "computer-vision"
+    ],
+    "contentScore": 0.8,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8225",
+    "hostCourseId": 1005,
+    "notionsFound": [
+      "decision-networks",
+      "structured-classifiers",
+      "deep-learning",
+      "probabilistic-natural-language-processing",
+      "computer-vision"
+    ],
+    "notionsMissing": [
+      "bayesian-networks",
+      "hidden-markov-models",
+      "markov-random-fields",
+      "inference-in-probabilistic-models",
+      "statistical-decision-theory"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8225",
+    "hostCourseId": 1092,
+    "notionsFound": [
+      "bayesian-networks",
+      "hidden-markov-models",
+      "inference-in-probabilistic-models",
+      "decision-networks",
+      "structured-classifiers"
+    ],
+    "notionsMissing": [
+      "markov-random-fields",
+      "statistical-decision-theory",
+      "deep-learning",
+      "probabilistic-natural-language-processing",
+      "computer-vision"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8225",
+    "hostCourseId": 1166,
+    "notionsFound": [
+      "bayesian-networks",
+      "inference-in-probabilistic-models",
+      "statistical-decision-theory",
+      "structured-classifiers",
+      "computer-vision"
+    ],
+    "notionsMissing": [
+      "hidden-markov-models",
+      "markov-random-fields",
+      "decision-networks",
+      "deep-learning",
+      "probabilistic-natural-language-processing"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8225",
+    "hostCourseId": 1257,
+    "notionsFound": [
+      "bayesian-networks",
+      "hidden-markov-models",
+      "markov-random-fields",
+      "inference-in-probabilistic-models"
+    ],
+    "notionsMissing": [
+      "statistical-decision-theory",
+      "decision-networks",
+      "structured-classifiers",
+      "deep-learning",
+      "probabilistic-natural-language-processing",
+      "computer-vision"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
     "textUsed": "description"
   },
   {
@@ -892,6 +1739,182 @@
     "textUsed": "titre"
   },
   {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 560,
+    "notionsFound": [
+      "support-vector-machines",
+      "decision-trees",
+      "ensemble-learning",
+      "neural-networks"
+    ],
+    "notionsMissing": [
+      "statistical-decision-theory",
+      "linear-regression",
+      "bias-variance-tradeoff",
+      "logistic-regression",
+      "maximum-likelihood-estimation",
+      "kernel-methods"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "titre"
+  },
+  {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 739,
+    "notionsFound": [
+      "statistical-decision-theory",
+      "support-vector-machines",
+      "ensemble-learning",
+      "kernel-methods"
+    ],
+    "notionsMissing": [
+      "linear-regression",
+      "bias-variance-tradeoff",
+      "logistic-regression",
+      "decision-trees",
+      "neural-networks",
+      "maximum-likelihood-estimation"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 885,
+    "notionsFound": [
+      "statistical-decision-theory",
+      "support-vector-machines",
+      "decision-trees",
+      "ensemble-learning",
+      "neural-networks",
+      "kernel-methods"
+    ],
+    "notionsMissing": [
+      "linear-regression",
+      "bias-variance-tradeoff",
+      "logistic-regression",
+      "maximum-likelihood-estimation"
+    ],
+    "contentScore": 0.6,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 900,
+    "notionsFound": [
+      "support-vector-machines",
+      "decision-trees",
+      "ensemble-learning",
+      "neural-networks"
+    ],
+    "notionsMissing": [
+      "statistical-decision-theory",
+      "linear-regression",
+      "bias-variance-tradeoff",
+      "logistic-regression",
+      "maximum-likelihood-estimation",
+      "kernel-methods"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 1005,
+    "notionsFound": [
+      "support-vector-machines",
+      "decision-trees",
+      "ensemble-learning",
+      "neural-networks"
+    ],
+    "notionsMissing": [
+      "statistical-decision-theory",
+      "linear-regression",
+      "bias-variance-tradeoff",
+      "logistic-regression",
+      "maximum-likelihood-estimation",
+      "kernel-methods"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 1092,
+    "notionsFound": [
+      "linear-regression",
+      "logistic-regression",
+      "support-vector-machines",
+      "decision-trees",
+      "ensemble-learning",
+      "neural-networks"
+    ],
+    "notionsMissing": [
+      "statistical-decision-theory",
+      "bias-variance-tradeoff",
+      "maximum-likelihood-estimation",
+      "kernel-methods"
+    ],
+    "contentScore": 0.6,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 1166,
+    "notionsFound": [
+      "statistical-decision-theory",
+      "support-vector-machines",
+      "neural-networks",
+      "maximum-likelihood-estimation"
+    ],
+    "notionsMissing": [
+      "linear-regression",
+      "bias-variance-tradeoff",
+      "logistic-regression",
+      "decision-trees",
+      "ensemble-learning",
+      "kernel-methods"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8245AE",
+    "hostCourseId": 1200,
+    "notionsFound": [
+      "support-vector-machines",
+      "decision-trees",
+      "ensemble-learning",
+      "neural-networks"
+    ],
+    "notionsMissing": [
+      "statistical-decision-theory",
+      "linear-regression",
+      "bias-variance-tradeoff",
+      "logistic-regression",
+      "maximum-likelihood-estimation",
+      "kernel-methods"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8250E",
     "hostCourseId": 74,
     "notionsFound": [
@@ -1024,6 +2047,160 @@
     "textUsed": "titre"
   },
   {
+    "polySigle": "INF8250E",
+    "hostCourseId": 860,
+    "notionsFound": [
+      "markov-decision-processes",
+      "policy-and-value-iteration",
+      "temporal-difference-learning",
+      "policy-gradient-methods",
+      "exploration-in-reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "multi-armed-bandits",
+      "contextual-bandits",
+      "dynamic-programming",
+      "monte-carlo-methods",
+      "function-approximation"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "titre"
+  },
+  {
+    "polySigle": "INF8250E",
+    "hostCourseId": 867,
+    "notionsFound": [
+      "multi-armed-bandits",
+      "contextual-bandits",
+      "markov-decision-processes",
+      "dynamic-programming",
+      "policy-and-value-iteration",
+      "temporal-difference-learning",
+      "function-approximation",
+      "policy-gradient-methods",
+      "exploration-in-reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "monte-carlo-methods"
+    ],
+    "contentScore": 0.9,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8250E",
+    "hostCourseId": 870,
+    "notionsFound": [
+      "markov-decision-processes",
+      "dynamic-programming",
+      "policy-and-value-iteration",
+      "monte-carlo-methods",
+      "temporal-difference-learning",
+      "policy-gradient-methods",
+      "exploration-in-reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "multi-armed-bandits",
+      "contextual-bandits",
+      "function-approximation"
+    ],
+    "contentScore": 0.7,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8250E",
+    "hostCourseId": 882,
+    "notionsFound": [
+      "markov-decision-processes",
+      "policy-and-value-iteration",
+      "temporal-difference-learning",
+      "policy-gradient-methods",
+      "exploration-in-reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "multi-armed-bandits",
+      "contextual-bandits",
+      "dynamic-programming",
+      "monte-carlo-methods",
+      "function-approximation"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8250E",
+    "hostCourseId": 979,
+    "notionsFound": [
+      "markov-decision-processes",
+      "dynamic-programming",
+      "monte-carlo-methods",
+      "temporal-difference-learning",
+      "exploration-in-reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "multi-armed-bandits",
+      "contextual-bandits",
+      "policy-and-value-iteration",
+      "function-approximation",
+      "policy-gradient-methods"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8250E",
+    "hostCourseId": 1092,
+    "notionsFound": [
+      "markov-decision-processes",
+      "policy-and-value-iteration",
+      "temporal-difference-learning",
+      "policy-gradient-methods",
+      "exploration-in-reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "multi-armed-bandits",
+      "contextual-bandits",
+      "dynamic-programming",
+      "monte-carlo-methods",
+      "function-approximation"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8250E",
+    "hostCourseId": 1198,
+    "notionsFound": [
+      "markov-decision-processes",
+      "policy-and-value-iteration",
+      "temporal-difference-learning",
+      "policy-gradient-methods",
+      "exploration-in-reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "multi-armed-bandits",
+      "contextual-bandits",
+      "dynamic-programming",
+      "monte-carlo-methods",
+      "function-approximation"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8402",
     "hostCourseId": 136,
     "notionsFound": [
@@ -1153,6 +2330,182 @@
     "contentScore": 0.4,
     "workload": "conforme",
     "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8402",
+    "hostCourseId": 785,
+    "notionsFound": [
+      "network-security-standards",
+      "ethernet-security",
+      "tcp-ip-security",
+      "mobile-network-security"
+    ],
+    "notionsMissing": [
+      "ad-hoc-networks",
+      "sensor-networks",
+      "ims-security",
+      "peer-to-peer-network-security",
+      "virtual-private-networks",
+      "virtual-lans"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8402",
+    "hostCourseId": 881,
+    "notionsFound": [
+      "tcp-ip-security",
+      "ad-hoc-networks",
+      "sensor-networks",
+      "virtual-private-networks"
+    ],
+    "notionsMissing": [
+      "network-security-standards",
+      "ethernet-security",
+      "mobile-network-security",
+      "ims-security",
+      "peer-to-peer-network-security",
+      "virtual-lans"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8402",
+    "hostCourseId": 967,
+    "notionsFound": [
+      "network-security-standards",
+      "ethernet-security",
+      "tcp-ip-security",
+      "mobile-network-security",
+      "ad-hoc-networks",
+      "sensor-networks",
+      "peer-to-peer-network-security"
+    ],
+    "notionsMissing": [
+      "ims-security",
+      "virtual-private-networks",
+      "virtual-lans"
+    ],
+    "contentScore": 0.7,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8402",
+    "hostCourseId": 1156,
+    "notionsFound": [
+      "network-security-standards",
+      "ethernet-security",
+      "tcp-ip-security",
+      "peer-to-peer-network-security"
+    ],
+    "notionsMissing": [
+      "mobile-network-security",
+      "ad-hoc-networks",
+      "sensor-networks",
+      "ims-security",
+      "virtual-private-networks",
+      "virtual-lans"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8402",
+    "hostCourseId": 1196,
+    "notionsFound": [
+      "network-security-standards",
+      "tcp-ip-security",
+      "ad-hoc-networks",
+      "ims-security"
+    ],
+    "notionsMissing": [
+      "ethernet-security",
+      "mobile-network-security",
+      "sensor-networks",
+      "peer-to-peer-network-security",
+      "virtual-private-networks",
+      "virtual-lans"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8402",
+    "hostCourseId": 1201,
+    "notionsFound": [
+      "ad-hoc-networks",
+      "sensor-networks",
+      "virtual-private-networks",
+      "virtual-lans"
+    ],
+    "notionsMissing": [
+      "network-security-standards",
+      "ethernet-security",
+      "tcp-ip-security",
+      "mobile-network-security",
+      "ims-security",
+      "peer-to-peer-network-security"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8402",
+    "hostCourseId": 1403,
+    "notionsFound": [
+      "network-security-standards",
+      "ethernet-security",
+      "tcp-ip-security",
+      "mobile-network-security",
+      "peer-to-peer-network-security"
+    ],
+    "notionsMissing": [
+      "ad-hoc-networks",
+      "sensor-networks",
+      "ims-security",
+      "virtual-private-networks",
+      "virtual-lans"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8402",
+    "hostCourseId": 1404,
+    "notionsFound": [
+      "network-security-standards",
+      "ethernet-security",
+      "tcp-ip-security",
+      "mobile-network-security",
+      "peer-to-peer-network-security"
+    ],
+    "notionsMissing": [
+      "ad-hoc-networks",
+      "sensor-networks",
+      "ims-security",
+      "virtual-private-networks",
+      "virtual-lans"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
     "textUsed": "description"
   },
   {
@@ -1288,6 +2641,116 @@
     "textUsed": "titre"
   },
   {
+    "polySigle": "INF8405",
+    "hostCourseId": 881,
+    "notionsFound": [
+      "wireless-networks",
+      "mobile-network-architectures",
+      "next-generation-networks",
+      "quality-of-service-and-routing"
+    ],
+    "notionsMissing": [
+      "mobility-and-location-management",
+      "mobile-application-characterization",
+      "mobile-operating-systems",
+      "cellular-systems",
+      "ad-hoc-network-deployment",
+      "internet-of-things"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8405",
+    "hostCourseId": 1158,
+    "notionsFound": [
+      "wireless-networks",
+      "mobile-network-architectures",
+      "mobile-operating-systems",
+      "cellular-systems"
+    ],
+    "notionsMissing": [
+      "mobility-and-location-management",
+      "mobile-application-characterization",
+      "next-generation-networks",
+      "ad-hoc-network-deployment",
+      "quality-of-service-and-routing",
+      "internet-of-things"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8405",
+    "hostCourseId": 1196,
+    "notionsFound": [
+      "wireless-networks",
+      "mobile-network-architectures",
+      "cellular-systems",
+      "next-generation-networks"
+    ],
+    "notionsMissing": [
+      "mobility-and-location-management",
+      "mobile-application-characterization",
+      "mobile-operating-systems",
+      "ad-hoc-network-deployment",
+      "quality-of-service-and-routing",
+      "internet-of-things"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8405",
+    "hostCourseId": 1201,
+    "notionsFound": [
+      "wireless-networks",
+      "mobile-network-architectures",
+      "mobile-operating-systems",
+      "next-generation-networks"
+    ],
+    "notionsMissing": [
+      "mobility-and-location-management",
+      "mobile-application-characterization",
+      "cellular-systems",
+      "ad-hoc-network-deployment",
+      "quality-of-service-and-routing",
+      "internet-of-things"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8460",
+    "hostCourseId": 1379,
+    "notionsFound": [
+      "probabilistic-parsing",
+      "dependency-parsing",
+      "vector-semantics",
+      "information-extraction"
+    ],
+    "notionsMissing": [
+      "n-gram-language-models",
+      "similarity-measures",
+      "question-answering-systems",
+      "dialogue-systems",
+      "conversational-agents",
+      "neural-networks-for-language"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8480",
     "hostCourseId": 355,
     "notionsFound": [
@@ -1307,6 +2770,116 @@
     "contentScore": 0.4,
     "workload": "conforme",
     "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8480",
+    "hostCourseId": 708,
+    "notionsFound": [
+      "distributed-systems",
+      "cloud-computing",
+      "peer-to-peer-architecture",
+      "cloud-service-models",
+      "distributed-transactions"
+    ],
+    "notionsMissing": [
+      "client-server-architecture",
+      "service-oriented-architecture",
+      "remote-objects-and-middleware",
+      "virtualization",
+      "time-synchronization"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8480",
+    "hostCourseId": 1195,
+    "notionsFound": [
+      "cloud-computing",
+      "client-server-architecture",
+      "peer-to-peer-architecture",
+      "cloud-service-models"
+    ],
+    "notionsMissing": [
+      "distributed-systems",
+      "service-oriented-architecture",
+      "remote-objects-and-middleware",
+      "virtualization",
+      "time-synchronization",
+      "distributed-transactions"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8480",
+    "hostCourseId": 1196,
+    "notionsFound": [
+      "distributed-systems",
+      "client-server-architecture",
+      "peer-to-peer-architecture",
+      "service-oriented-architecture"
+    ],
+    "notionsMissing": [
+      "cloud-computing",
+      "cloud-service-models",
+      "remote-objects-and-middleware",
+      "virtualization",
+      "time-synchronization",
+      "distributed-transactions"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8480",
+    "hostCourseId": 1201,
+    "notionsFound": [
+      "distributed-systems",
+      "cloud-computing",
+      "virtualization",
+      "distributed-transactions"
+    ],
+    "notionsMissing": [
+      "client-server-architecture",
+      "peer-to-peer-architecture",
+      "service-oriented-architecture",
+      "cloud-service-models",
+      "remote-objects-and-middleware",
+      "time-synchronization"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8480",
+    "hostCourseId": 1341,
+    "notionsFound": [
+      "client-server-architecture",
+      "peer-to-peer-architecture",
+      "service-oriented-architecture",
+      "virtualization"
+    ],
+    "notionsMissing": [
+      "distributed-systems",
+      "cloud-computing",
+      "cloud-service-models",
+      "remote-objects-and-middleware",
+      "time-synchronization",
+      "distributed-transactions"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
     "textUsed": "description"
   },
   {
@@ -1371,6 +2944,27 @@
     "workload": "conforme",
     "level": "moyenne",
     "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8602",
+    "hostCourseId": 1403,
+    "notionsFound": [
+      "security-evaluation-methods",
+      "discretionary-access-control",
+      "mandatory-access-control",
+      "security-kernels"
+    ],
+    "notionsMissing": [
+      "control-flow-integrity-attacks-and-countermeasures",
+      "general-purpose-os-security",
+      "software-containers",
+      "virtual-machines",
+      "sandboxing"
+    ],
+    "contentScore": 0.444,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
   },
   {
     "polySigle": "INF8725",
@@ -1439,6 +3033,94 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF8725",
+    "hostCourseId": 888,
+    "notionsFound": [
+      "digital-signals",
+      "signal-convolution",
+      "fourier-transform",
+      "sampling-theorem",
+      "digital-filters",
+      "image-filtering"
+    ],
+    "notionsMissing": [
+      "signal-to-noise-ratio",
+      "spectral-analysis",
+      "image-restoration",
+      "image-segmentation"
+    ],
+    "contentScore": 0.6,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "INF8725",
+    "hostCourseId": 960,
+    "notionsFound": [
+      "fourier-transform",
+      "sampling-theorem",
+      "digital-filters",
+      "image-filtering",
+      "image-restoration",
+      "image-segmentation"
+    ],
+    "notionsMissing": [
+      "digital-signals",
+      "signal-to-noise-ratio",
+      "signal-convolution",
+      "spectral-analysis"
+    ],
+    "contentScore": 0.6,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8725",
+    "hostCourseId": 1110,
+    "notionsFound": [
+      "digital-signals",
+      "fourier-transform",
+      "sampling-theorem",
+      "digital-filters"
+    ],
+    "notionsMissing": [
+      "signal-to-noise-ratio",
+      "signal-convolution",
+      "spectral-analysis",
+      "image-filtering",
+      "image-restoration",
+      "image-segmentation"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8725",
+    "hostCourseId": 1167,
+    "notionsFound": [
+      "sampling-theorem",
+      "image-filtering",
+      "image-restoration",
+      "image-segmentation"
+    ],
+    "notionsMissing": [
+      "digital-signals",
+      "signal-to-noise-ratio",
+      "signal-convolution",
+      "spectral-analysis",
+      "fourier-transform",
+      "digital-filters"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8770",
     "hostCourseId": 312,
     "notionsFound": [
@@ -1458,6 +3140,50 @@
     "contentScore": 0.6,
     "workload": "conforme",
     "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8770",
+    "hostCourseId": 958,
+    "notionsFound": [
+      "entropy-coding",
+      "lossless-compression",
+      "lossy-compression",
+      "compression-quality"
+    ],
+    "notionsMissing": [
+      "dictionary-coding",
+      "temporal-redundancy",
+      "multimedia-containers",
+      "digital-watermarking",
+      "multimedia-indexing",
+      "gesture-recognition"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8770",
+    "hostCourseId": 1091,
+    "notionsFound": [
+      "entropy-coding",
+      "dictionary-coding",
+      "lossless-compression",
+      "lossy-compression",
+      "compression-quality"
+    ],
+    "notionsMissing": [
+      "temporal-redundancy",
+      "multimedia-containers",
+      "digital-watermarking",
+      "multimedia-indexing",
+      "gesture-recognition"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
     "textUsed": "description"
   },
   {
@@ -1549,6 +3275,138 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF8808",
+    "hostCourseId": 548,
+    "notionsFound": [
+      "visual-data-types",
+      "interaction-in-visualization",
+      "tree-and-network-visualization",
+      "color-in-visualization",
+      "multimedia-data-visualization"
+    ],
+    "notionsMissing": [
+      "graphic-design-principles",
+      "animation-in-visualization",
+      "geovisualization",
+      "multidimensional-data",
+      "perception-and-cognition"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "titre"
+  },
+  {
+    "polySigle": "INF8808",
+    "hostCourseId": 742,
+    "notionsFound": [
+      "interaction-in-visualization",
+      "animation-in-visualization",
+      "tree-and-network-visualization",
+      "color-in-visualization",
+      "multimedia-data-visualization"
+    ],
+    "notionsMissing": [
+      "graphic-design-principles",
+      "visual-data-types",
+      "geovisualization",
+      "multidimensional-data",
+      "perception-and-cognition"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8808",
+    "hostCourseId": 757,
+    "notionsFound": [
+      "visual-data-types",
+      "interaction-in-visualization",
+      "multidimensional-data",
+      "multimedia-data-visualization"
+    ],
+    "notionsMissing": [
+      "graphic-design-principles",
+      "animation-in-visualization",
+      "tree-and-network-visualization",
+      "geovisualization",
+      "color-in-visualization",
+      "perception-and-cognition"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8808",
+    "hostCourseId": 1027,
+    "notionsFound": [
+      "graphic-design-principles",
+      "visual-data-types",
+      "interaction-in-visualization",
+      "animation-in-visualization",
+      "tree-and-network-visualization",
+      "color-in-visualization",
+      "perception-and-cognition",
+      "multimedia-data-visualization"
+    ],
+    "notionsMissing": [
+      "geovisualization",
+      "multidimensional-data"
+    ],
+    "contentScore": 0.8,
+    "workload": "inconnue",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8808",
+    "hostCourseId": 1104,
+    "notionsFound": [
+      "interaction-in-visualization",
+      "animation-in-visualization",
+      "tree-and-network-visualization",
+      "color-in-visualization",
+      "multimedia-data-visualization"
+    ],
+    "notionsMissing": [
+      "graphic-design-principles",
+      "visual-data-types",
+      "geovisualization",
+      "multidimensional-data",
+      "perception-and-cognition"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8808",
+    "hostCourseId": 1397,
+    "notionsFound": [
+      "visual-data-types",
+      "interaction-in-visualization",
+      "animation-in-visualization",
+      "multimedia-data-visualization"
+    ],
+    "notionsMissing": [
+      "graphic-design-principles",
+      "tree-and-network-visualization",
+      "geovisualization",
+      "multidimensional-data",
+      "color-in-visualization",
+      "perception-and-cognition"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "LOG2400",
     "hostCourseId": 104,
     "notionsFound": [
@@ -1566,6 +3424,27 @@
     ],
     "contentScore": 0.444,
     "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG2400",
+    "hostCourseId": 1099,
+    "notionsFound": [
+      "software-analysis-and-design",
+      "structural-modeling",
+      "behavioral-modeling",
+      "architectural-modeling"
+    ],
+    "notionsMissing": [
+      "software-process-and-life-cycle",
+      "standard-modeling-notation",
+      "object-oriented-design",
+      "layered-architecture",
+      "design-patterns"
+    ],
+    "contentScore": 0.444,
+    "workload": "inconnue",
     "level": "faible",
     "textUsed": "description"
   },
@@ -1612,6 +3491,28 @@
     "workload": "conforme",
     "level": "moyenne",
     "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG2440",
+    "hostCourseId": 891,
+    "notionsFound": [
+      "test-strategy-and-planning",
+      "unit-testing",
+      "integration-testing",
+      "black-box-and-acceptance-testing"
+    ],
+    "notionsMissing": [
+      "dynamic-content-generation",
+      "client-server-architecture",
+      "html-document-structure",
+      "css-styling",
+      "client-side-and-server-side-programming",
+      "http-protocol"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description+plan"
   },
   {
     "polySigle": "LOG3000",
@@ -1677,6 +3578,116 @@
     "contentScore": 0.4,
     "workload": "conforme",
     "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3000",
+    "hostCourseId": 715,
+    "notionsFound": [
+      "software-process-activities",
+      "process-assessment",
+      "process-improvement",
+      "empirical-process-analysis"
+    ],
+    "notionsMissing": [
+      "software-life-cycle",
+      "development-process-philosophies",
+      "configuration-management",
+      "change-request-management",
+      "project-management",
+      "team-management"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3000",
+    "hostCourseId": 716,
+    "notionsFound": [
+      "software-process-activities",
+      "process-assessment",
+      "process-improvement",
+      "empirical-process-analysis"
+    ],
+    "notionsMissing": [
+      "software-life-cycle",
+      "development-process-philosophies",
+      "configuration-management",
+      "change-request-management",
+      "project-management",
+      "team-management"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3000",
+    "hostCourseId": 736,
+    "notionsFound": [
+      "software-process-activities",
+      "process-assessment",
+      "process-improvement",
+      "empirical-process-analysis"
+    ],
+    "notionsMissing": [
+      "software-life-cycle",
+      "development-process-philosophies",
+      "configuration-management",
+      "change-request-management",
+      "project-management",
+      "team-management"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3000",
+    "hostCourseId": 1106,
+    "notionsFound": [
+      "software-process-activities",
+      "process-assessment",
+      "process-improvement",
+      "empirical-process-analysis"
+    ],
+    "notionsMissing": [
+      "software-life-cycle",
+      "development-process-philosophies",
+      "configuration-management",
+      "change-request-management",
+      "project-management",
+      "team-management"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3000",
+    "hostCourseId": 1353,
+    "notionsFound": [
+      "software-process-activities",
+      "process-assessment",
+      "process-improvement",
+      "empirical-process-analysis"
+    ],
+    "notionsMissing": [
+      "software-life-cycle",
+      "development-process-philosophies",
+      "configuration-management",
+      "change-request-management",
+      "project-management",
+      "team-management"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
     "textUsed": "description"
   },
   {
@@ -1746,6 +3757,50 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "LOG3420",
+    "hostCourseId": 1018,
+    "notionsFound": [
+      "requirements-classification",
+      "requirements-elicitation",
+      "requirements-analysis",
+      "requirements-specification",
+      "requirements-and-agile-methods",
+      "requirements-management"
+    ],
+    "notionsMissing": [
+      "requirements-validation",
+      "software-prototyping",
+      "requirements-negotiation",
+      "risk-assessment"
+    ],
+    "contentScore": 0.6,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3420",
+    "hostCourseId": 1062,
+    "notionsFound": [
+      "requirements-classification",
+      "requirements-elicitation",
+      "requirements-analysis",
+      "requirements-specification",
+      "software-prototyping",
+      "requirements-management"
+    ],
+    "notionsMissing": [
+      "requirements-validation",
+      "requirements-negotiation",
+      "risk-assessment",
+      "requirements-and-agile-methods"
+    ],
+    "contentScore": 0.6,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "LOG3430",
     "hostCourseId": 104,
     "notionsFound": [
@@ -1785,6 +3840,90 @@
     "contentScore": 0.667,
     "workload": "conforme",
     "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3430",
+    "hostCourseId": 714,
+    "notionsFound": [
+      "testing-method-classification",
+      "structural-testing",
+      "functional-testing",
+      "software-reliability",
+      "test-planning"
+    ],
+    "notionsMissing": [
+      "software-verification-validation",
+      "finite-state-machine-testing",
+      "integration-and-installation-testing-strategies",
+      "statistical-validation"
+    ],
+    "contentScore": 0.556,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG3430",
+    "hostCourseId": 848,
+    "notionsFound": [
+      "software-verification-validation",
+      "testing-method-classification",
+      "functional-testing",
+      "test-planning"
+    ],
+    "notionsMissing": [
+      "structural-testing",
+      "finite-state-machine-testing",
+      "integration-and-installation-testing-strategies",
+      "statistical-validation",
+      "software-reliability"
+    ],
+    "contentScore": 0.444,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "titre"
+  },
+  {
+    "polySigle": "LOG3430",
+    "hostCourseId": 891,
+    "notionsFound": [
+      "software-verification-validation",
+      "testing-method-classification",
+      "structural-testing",
+      "functional-testing",
+      "test-planning"
+    ],
+    "notionsMissing": [
+      "finite-state-machine-testing",
+      "integration-and-installation-testing-strategies",
+      "statistical-validation",
+      "software-reliability"
+    ],
+    "contentScore": 0.556,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "LOG3430",
+    "hostCourseId": 1376,
+    "notionsFound": [
+      "software-verification-validation",
+      "testing-method-classification",
+      "functional-testing",
+      "test-planning"
+    ],
+    "notionsMissing": [
+      "structural-testing",
+      "finite-state-machine-testing",
+      "integration-and-installation-testing-strategies",
+      "statistical-validation",
+      "software-reliability"
+    ],
+    "contentScore": 0.444,
+    "workload": "inconnue",
+    "level": "faible",
     "textUsed": "description"
   },
   {
@@ -1876,6 +4015,270 @@
     "textUsed": "titre"
   },
   {
+    "polySigle": "LOG8100",
+    "hostCourseId": 544,
+    "notionsFound": [
+      "security-testing",
+      "multi-level-security",
+      "security-requirements",
+      "security-by-design"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "data-encryption",
+      "access-control-and-authentication",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "titre"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 727,
+    "notionsFound": [
+      "multi-level-security",
+      "data-encryption",
+      "access-control-and-authentication",
+      "security-requirements",
+      "security-by-design"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "security-testing",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 736,
+    "notionsFound": [
+      "security-testing",
+      "multi-level-security",
+      "access-control-and-authentication",
+      "security-requirements",
+      "security-by-design",
+      "microservices"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "data-encryption",
+      "devops-and-continuous-deployment",
+      "containers"
+    ],
+    "contentScore": 0.6,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 876,
+    "notionsFound": [
+      "security-testing",
+      "multi-level-security",
+      "access-control-and-authentication",
+      "security-requirements",
+      "security-by-design"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "data-encryption",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 996,
+    "notionsFound": [
+      "vulnerability-analysis",
+      "security-testing",
+      "multi-level-security",
+      "security-requirements",
+      "security-by-design"
+    ],
+    "notionsMissing": [
+      "data-encryption",
+      "access-control-and-authentication",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 998,
+    "notionsFound": [
+      "multi-level-security",
+      "access-control-and-authentication",
+      "security-requirements",
+      "security-by-design"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "security-testing",
+      "data-encryption",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 1047,
+    "notionsFound": [
+      "data-encryption",
+      "access-control-and-authentication",
+      "security-requirements",
+      "security-by-design"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "security-testing",
+      "multi-level-security",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 1195,
+    "notionsFound": [
+      "security-testing",
+      "multi-level-security",
+      "access-control-and-authentication",
+      "security-requirements",
+      "security-by-design"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "data-encryption",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 1196,
+    "notionsFound": [
+      "security-testing",
+      "multi-level-security",
+      "access-control-and-authentication",
+      "security-requirements",
+      "security-by-design",
+      "microservices"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "data-encryption",
+      "devops-and-continuous-deployment",
+      "containers"
+    ],
+    "contentScore": 0.6,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 1342,
+    "notionsFound": [
+      "security-testing",
+      "multi-level-security",
+      "access-control-and-authentication",
+      "security-requirements",
+      "security-by-design"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "data-encryption",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 1403,
+    "notionsFound": [
+      "security-testing",
+      "multi-level-security",
+      "access-control-and-authentication",
+      "security-requirements",
+      "security-by-design"
+    ],
+    "notionsMissing": [
+      "vulnerability-analysis",
+      "data-encryption",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "LOG8100",
+    "hostCourseId": 1404,
+    "notionsFound": [
+      "vulnerability-analysis",
+      "data-encryption",
+      "access-control-and-authentication",
+      "security-requirements"
+    ],
+    "notionsMissing": [
+      "security-testing",
+      "multi-level-security",
+      "security-by-design",
+      "devops-and-continuous-deployment",
+      "containers",
+      "microservices"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "LOG8415E",
     "hostCourseId": 78,
     "notionsFound": [
@@ -1964,6 +4367,94 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "LOG8415E",
+    "hostCourseId": 1090,
+    "notionsFound": [
+      "cloud-computing-concepts",
+      "cloud-architectures",
+      "cloud-computing-patterns",
+      "mobile-cloud-computing"
+    ],
+    "notionsMissing": [
+      "service-delivery-models",
+      "virtualization",
+      "mapreduce-and-nosql",
+      "cloud-migration",
+      "cloud-interoperability-issues",
+      "service-level-agreement"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8415E",
+    "hostCourseId": 1195,
+    "notionsFound": [
+      "cloud-computing-concepts",
+      "cloud-architectures",
+      "cloud-migration",
+      "cloud-computing-patterns",
+      "mobile-cloud-computing"
+    ],
+    "notionsMissing": [
+      "service-delivery-models",
+      "virtualization",
+      "mapreduce-and-nosql",
+      "cloud-interoperability-issues",
+      "service-level-agreement"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8415E",
+    "hostCourseId": 1201,
+    "notionsFound": [
+      "cloud-computing-concepts",
+      "cloud-architectures",
+      "virtualization",
+      "mobile-cloud-computing"
+    ],
+    "notionsMissing": [
+      "service-delivery-models",
+      "mapreduce-and-nosql",
+      "cloud-migration",
+      "cloud-computing-patterns",
+      "cloud-interoperability-issues",
+      "service-level-agreement"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8415E",
+    "hostCourseId": 1398,
+    "notionsFound": [
+      "cloud-computing-concepts",
+      "cloud-architectures",
+      "cloud-migration",
+      "cloud-computing-patterns",
+      "mobile-cloud-computing"
+    ],
+    "notionsMissing": [
+      "service-delivery-models",
+      "virtualization",
+      "mapreduce-and-nosql",
+      "cloud-interoperability-issues",
+      "service-level-agreement"
+    ],
+    "contentScore": 0.5,
+    "workload": "conforme",
+    "level": "moyenne",
+    "textUsed": "description+plan"
+  },
+  {
     "polySigle": "LOG8430",
     "hostCourseId": 110,
     "notionsFound": [
@@ -2008,6 +4499,72 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "LOG8430",
+    "hostCourseId": 881,
+    "notionsFound": [
+      "architecture-selection",
+      "multi-tier-architecture",
+      "client-server-architecture",
+      "component-based-architecture",
+      "service-oriented-architecture"
+    ],
+    "notionsMissing": [
+      "dynamic-component-loading",
+      "frameworks-and-plugins",
+      "advanced-design-patterns",
+      "distributed-systems-patterns",
+      "aspect-oriented-design"
+    ],
+    "contentScore": 0.5,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
+    "polySigle": "LOG8430",
+    "hostCourseId": 1156,
+    "notionsFound": [
+      "architecture-selection",
+      "multi-tier-architecture",
+      "component-based-architecture",
+      "distributed-systems-patterns"
+    ],
+    "notionsMissing": [
+      "client-server-architecture",
+      "dynamic-component-loading",
+      "frameworks-and-plugins",
+      "advanced-design-patterns",
+      "aspect-oriented-design",
+      "service-oriented-architecture"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8430",
+    "hostCourseId": 1196,
+    "notionsFound": [
+      "architecture-selection",
+      "multi-tier-architecture",
+      "client-server-architecture",
+      "service-oriented-architecture"
+    ],
+    "notionsMissing": [
+      "dynamic-component-loading",
+      "frameworks-and-plugins",
+      "component-based-architecture",
+      "advanced-design-patterns",
+      "distributed-systems-patterns",
+      "aspect-oriented-design"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "LOG8704",
     "hostCourseId": 80,
     "notionsFound": [
@@ -2042,6 +4599,25 @@
     ],
     "contentScore": 0.429,
     "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8704",
+    "hostCourseId": 925,
+    "notionsFound": [
+      "virtual-reality",
+      "augmented-reality",
+      "mixed-reality",
+      "extended-reality-development-cycle"
+    ],
+    "notionsMissing": [
+      "extended-reality-design-techniques",
+      "camera-and-control",
+      "extended-reality-use-cases"
+    ],
+    "contentScore": 0.571,
+    "workload": "inconnue",
     "level": "faible",
     "textUsed": "description"
   },
@@ -2134,6 +4710,94 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "MTH2304",
+    "hostCourseId": 757,
+    "notionsFound": [
+      "probability-theory",
+      "random-variables",
+      "descriptive-statistics",
+      "point-and-interval-estimation",
+      "hypothesis-testing"
+    ],
+    "notionsMissing": [
+      "conditional-probability-and-bayes-theorem",
+      "random-vectors",
+      "convergence-of-random-variables",
+      "central-limit-theorem",
+      "simple-linear-regression"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "MTH2304",
+    "hostCourseId": 956,
+    "notionsFound": [
+      "probability-theory",
+      "random-variables",
+      "random-vectors",
+      "convergence-of-random-variables"
+    ],
+    "notionsMissing": [
+      "conditional-probability-and-bayes-theorem",
+      "central-limit-theorem",
+      "descriptive-statistics",
+      "point-and-interval-estimation",
+      "hypothesis-testing",
+      "simple-linear-regression"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "MTH2304",
+    "hostCourseId": 1079,
+    "notionsFound": [
+      "probability-theory",
+      "random-variables",
+      "random-vectors",
+      "convergence-of-random-variables"
+    ],
+    "notionsMissing": [
+      "conditional-probability-and-bayes-theorem",
+      "central-limit-theorem",
+      "descriptive-statistics",
+      "point-and-interval-estimation",
+      "hypothesis-testing",
+      "simple-linear-regression"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "MTH2304",
+    "hostCourseId": 1405,
+    "notionsFound": [
+      "probability-theory",
+      "conditional-probability-and-bayes-theorem",
+      "random-variables",
+      "convergence-of-random-variables",
+      "central-limit-theorem"
+    ],
+    "notionsMissing": [
+      "random-vectors",
+      "descriptive-statistics",
+      "point-and-interval-estimation",
+      "hypothesis-testing",
+      "simple-linear-regression"
+    ],
+    "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description+plan"
+  },
+  {
     "polySigle": "MTH3302",
     "hostCourseId": 60,
     "notionsFound": [
@@ -2195,6 +4859,50 @@
       "information-theory"
     ],
     "contentScore": 0.5,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "MTH3302",
+    "hostCourseId": 1092,
+    "notionsFound": [
+      "linear-regression",
+      "logistic-regression",
+      "poisson-regression",
+      "bayesian-statistics"
+    ],
+    "notionsMissing": [
+      "multicollinearity",
+      "generalized-linear-models",
+      "principal-component-analysis",
+      "markov-chain-monte-carlo",
+      "penalized-regression",
+      "information-theory"
+    ],
+    "contentScore": 0.4,
+    "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "PHS4700",
+    "hostCourseId": 726,
+    "notionsFound": [
+      "statistical-physics",
+      "wave-propagation",
+      "wave-interference",
+      "acoustics"
+    ],
+    "notionsMissing": [
+      "rigid-body-dynamics",
+      "conservation-laws",
+      "particle-collisions",
+      "particle-diffusion",
+      "fluid-dynamics",
+      "geometric-optics"
+    ],
+    "contentScore": 0.4,
     "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description"

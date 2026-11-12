@@ -1,13 +1,13 @@
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { z } from 'zod';
-import type { Notion } from '../../shared/types.js';
+import type { Level, Notion } from '../../shared/types.js';
 import type { ModelConfig } from './embedder.js';
 
 export const CRITERION_DIR = 'data/criterion';
 
 export interface CriterionParams {
-  /** 'v0', 'v1', ... */
+  /** 'v0', 'v1', ... ; 'contest-<slug>' pour un candidat du concours des modèles. */
   version: string;
   /** `library` : '@huggingface/transformers@<version exacte>'. */
   model: ModelConfig & { library: string };
@@ -16,6 +16,8 @@ export interface CriterionParams {
   bandLow: number;
   workloadTolerance: 0.15;
   polyWeeks: number;
+  /** Niveau maximal d'une paire comparée sur le titre seul (absent : aucun plafond). */
+  titleOnlyMaxLevel?: Level;
 }
 
 export interface LoadedCriterion {
@@ -25,13 +27,13 @@ export interface LoadedCriterion {
 }
 
 const paramsSchema = z.strictObject({
-  version: z.string().regex(/^v\d+$/),
+  version: z.string().regex(/^(v\d+|contest-[a-z0-9]+(-[a-z0-9]+)*)$/),
   model: z.strictObject({
     slug: z.string().min(1),
     id: z.string().min(1),
     revision: z.string().min(1),
     dtype: z.literal('fp32'),
-    pooling: z.enum(['mean', 'cls', 'last_token']),
+    pooling: z.enum(['mean', 'cls', 'last_token', 'sentence_embedding']),
     prefixes: z.strictObject({ notion: z.string(), passage: z.string() }),
     sizeMillions: z.number().positive(),
     library: z.string().regex(/^@huggingface\/transformers@\d+\.\d+\.\d+/),
@@ -41,6 +43,7 @@ const paramsSchema = z.strictObject({
   bandLow: z.number().min(0).max(1),
   workloadTolerance: z.literal(0.15),
   polyWeeks: z.number().positive(),
+  titleOnlyMaxLevel: z.enum(['elevee', 'moyenne', 'faible']).optional(),
 });
 
 const notionsSchema = z.record(

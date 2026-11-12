@@ -1,6 +1,7 @@
 import { runCompare } from '../compare/compare.js';
 import { createLocalEmbedder } from '../criterion/embedder.js';
 import { loadCriterion } from '../criterion/loadCriterion.js';
+import { modelsDir } from '../criterion/modelsDir.js';
 import { openDb } from '../db/open.js';
 import { syncUniversities } from '../partners/registry.js';
 
@@ -15,7 +16,7 @@ async function main(): Promise<number> {
   try {
     syncUniversities(db);
     const started = Date.now();
-    const embedder = await createLocalEmbedder(criterion.params.model, 'data/models');
+    const embedder = await createLocalEmbedder(criterion.params.model, modelsDir());
     const { pairs } = await runCompare(db, criterion, embedder);
     console.log(`Critère ${version} : ${pairs} paires comparées en ${((Date.now() - started) / 1000).toFixed(1)} s.`);
     const levels = db

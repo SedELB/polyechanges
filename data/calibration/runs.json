@@ -1,0 +1,50 @@
+{
+  "bge-base": {
+    "modelKey": "Xenova/bge-base-en-v1.5@4d6cd88e18e51a5e020c2c305726d76ada9c03cf@fp32@33e2dc7a",
+    "pairs": 62280,
+    "loadSeconds": 3.2,
+    "compareSeconds": 471.4,
+    "embeddedTexts": 13759,
+    "diskBytes": 436524018
+  },
+  "embeddinggemma": {
+    "modelKey": "onnx-community/embeddinggemma-300m-ONNX@5090578d9565bb06545b4552f76e6bc2c93e4a66@fp32@50e3173e",
+    "pairs": 62280,
+    "loadSeconds": 5.5,
+    "compareSeconds": 704.5,
+    "embeddedTexts": 13759,
+    "diskBytes": 1256482927
+  },
+  "embeddinggemma-2": {
+    "modelKey": "onnx-community/embeddinggemma-2-ONNX@daa72c51243991dfcaf9f9137d2c573d8f7790c0@fp32@50e3173e",
+    "pairs": 62280,
+    "loadSeconds": 6,
+    "compareSeconds": 960.4,
+    "embeddedTexts": 13759,
+    "diskBytes": 1116768801
+  },
+  "harrier-270m": {
+    "modelKey": "onnx-community/harrier-oss-v1-270m-ONNX@d59c919d0159aea2c19ed7d04288fcdd048d0f9c@fp32@5d5d263a",
+    "pairs": 62280,
+    "loadSeconds": 4.4,
+    "compareSeconds": 605,
+    "embeddedTexts": 13759,
+    "diskBytes": 1126455095
+  },
+  "minilm": {
+    "modelKey": "Xenova/all-MiniLM-L6-v2@751bff37182d3f1213fa05d7196b954e230abad9@fp32@cbeb6d19",
+    "pairs": 62280,
+    "loadSeconds": 2,
+    "compareSeconds": 8.9,
+    "embeddedTexts": 0,
+    "diskBytes": 91100283
+  },
+  "qwen3-06b": {
+    "modelKey": "onnx-community/Qwen3-Embedding-0.6B-ONNX@c25a394dd583836952667c12f008335071b3f43d@fp32@3a048ebe",
+    "pairs": 62280,
+    "loadSeconds": 10.6,
+    "compareSeconds": 2038.8,
+    "embeddedTexts": 13759,
+    "diskBytes": 2412033355
+  }
+}

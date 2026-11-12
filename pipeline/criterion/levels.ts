@@ -14,3 +14,11 @@ export function levelFor(band: ContentBand, workload: Workload): Level | null {
   if (workload === 'conforme') return band === 'tres' ? 'elevee' : 'moyenne';
   return band === 'tres' ? 'moyenne' : 'faible';
 }
+
+const RANK: Record<Level, number> = { faible: 0, moyenne: 1, elevee: 2 };
+
+/** Plafonne un niveau : sans plafond, ou pour une paire sans niveau, rien ne change. */
+export function capLevel(level: Level | null, max: Level | undefined): Level | null {
+  if (level === null || max === undefined) return level;
+  return RANK[level] > RANK[max] ? max : level;
+}

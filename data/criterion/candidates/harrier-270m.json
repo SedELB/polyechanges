@@ -1,0 +1,12 @@
+{
+  "slug": "harrier-270m",
+  "id": "onnx-community/harrier-oss-v1-270m-ONNX",
+  "revision": "d59c919d0159aea2c19ed7d04288fcdd048d0f9c",
+  "dtype": "fp32",
+  "pooling": "sentence_embedding",
+  "prefixes": {
+    "notion": "Instruct: Given a course topic, retrieve passages of course descriptions that cover this topic\nQuery: ",
+    "passage": ""
+  },
+  "sizeMillions": 268
+}

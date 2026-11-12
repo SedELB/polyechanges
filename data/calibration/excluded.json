@@ -1,0 +1,26 @@
+[
+  {
+    "model": "onnx-community/harrier-oss-v1-0.6b-ONNX (Microsoft, MIT, mars 2026)",
+    "reason": "au plus 2 modèles plus récents dans le concours ; même famille que harrier-oss-v1-270m, retenu, pour 2,2 fois plus de paramètres (0,6 milliard)"
+  },
+  {
+    "model": "onnx-community/granite-embedding-311m-multilingual-r2-ONNX et granite-embedding-97m-multilingual-r2-ONNX (IBM, Apache 2.0, avril 2026)",
+    "reason": "au plus 2 modèles plus récents dans le concours ; retenus : EmbeddingGemma 2 (le plus récent, octobre 2026) et harrier-oss-v1-270m (MTEB v2 multilingue annoncé 66,5)"
+  },
+  {
+    "model": "onnx-community/voyage-4-nano-ONNX (MongoDB, Apache 2.0, janvier 2026)",
+    "reason": "au plus 2 modèles plus récents dans le concours ; plus ancien que les deux retenus"
+  },
+  {
+    "model": "jinaai/jina-embeddings-v5-text-nano et jina-embeddings-v5-text-small (janvier 2026)",
+    "reason": "licence CC BY-NC 4.0 (usage non commercial seulement) et aucun poids ONNX pour transformers.js dans le dépôt officiel"
+  },
+  {
+    "model": "perplexity-ai/pplx-embed-v1-0.6b (janvier 2026)",
+    "reason": "architecture « bidirectional_pplx_qwen3 » à code propre, absente de transformers.js 4.3.2 : le modèle ne se charge pas"
+  },
+  {
+    "model": "LiquidAI/LFM2.5-Embedding-350M (mai 2026)",
+    "reason": "aucun poids ONNX publié ; licence propre (LFM Open License 1.0)"
+  }
+]

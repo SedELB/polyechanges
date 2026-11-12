@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createLocalEmbedder } from '../criterion/embedder.js';
 import { loadCriterion } from '../criterion/loadCriterion.js';
+import { modelsDir } from '../criterion/modelsDir.js';
 import { applyCollection } from '../db/hostCourses.js';
 import { openDb, type Db } from '../db/open.js';
 import { upsertPolyCourses } from '../db/polyCourses.js';
@@ -53,7 +54,7 @@ describe.skipIf(!run)('déterminisme avec le vrai modèle', () => {
       const db = openDb(join(mkdtempSync(join(tmpdir(), 'polyechanges-det-')), 'db.sqlite'));
       seed(db, sigles);
       // Embedder recréé pour chaque base : rien ne passe d'une exécution à l'autre.
-      const embedder = await createLocalEmbedder(criterion.params.model, 'data/models');
+      const embedder = await createLocalEmbedder(criterion.params.model, modelsDir());
       const { pairs } = await runCompare(db, criterion, embedder);
       expect(pairs).toBe(sigles.length * HOST_COURSES.length);
       const rows = db.prepare('SELECT * FROM matches ORDER BY poly_sigle, host_course_id').all();
