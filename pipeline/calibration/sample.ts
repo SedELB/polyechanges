@@ -76,39 +76,65 @@ function describedPairs(db: Db, versions: string[]): DescribedPair[] {
 
 const mean = (xs: number[]): number => (xs.length === 0 ? 0 : xs.reduce((a, b) => a + b, 0) / xs.length);
 
+interface Ranked {
+  pairId: string;
+  hostCourseId: number;
+  score: number;
+  meanSim: number;
+}
+
 /**
- * Union, sur toutes les versions, des 3 meilleurs cours d'accueil décrits de chaque cours de Poly dans chaque université.
+ * Pour une version, les cours d'accueil décrits de chaque groupe (cours de Poly, université), du meilleur au moins bon.
  * « Meilleur » : part des notions retrouvées, puis similarité moyenne des notions, puis identifiant du cours.
  */
-export function topCandidates(db: Db, versions: string[]): Set<string> {
-  const stmt = db.prepare(
-    `SELECT m.poly_sigle, m.host_course_id, h.university_id, m.content_score, m.notion_sims
-     FROM matches m
-     JOIN host_courses h ON h.id = m.host_course_id AND h.active = 1
-     JOIN poly_courses p ON p.sigle = m.poly_sigle AND p.active = 1
-     WHERE m.criterion_version = ? AND m.text_used <> 'titre'`,
+function rankedGroups(db: Db, version: string): Ranked[][] {
+  const rows = db
+    .prepare(
+      `SELECT m.poly_sigle, m.host_course_id, h.university_id, m.content_score, m.notion_sims
+       FROM matches m
+       JOIN host_courses h ON h.id = m.host_course_id AND h.active = 1
+       JOIN poly_courses p ON p.sigle = m.poly_sigle AND p.active = 1
+       WHERE m.criterion_version = ? AND m.text_used <> 'titre'`,
+    )
+    .all(version) as (MatchLine & { content_score: number; notion_sims: string })[];
+  const groups = new Map<string, Ranked[]>();
+  for (const r of rows) {
+    const key = `${r.poly_sigle}|${r.university_id}`;
+    if (!groups.has(key)) groups.set(key, []);
+    (groups.get(key) as Ranked[]).push({
+      pairId: pairIdOf(r.poly_sigle, r.host_course_id),
+      hostCourseId: r.host_course_id,
+      score: r.content_score,
+      meanSim: mean(Object.values(JSON.parse(r.notion_sims) as Record<string, number>)),
+    });
+  }
+  return [...groups.values()].map((g) =>
+    g.sort((a, b) => b.score - a.score || b.meanSim - a.meanSim || a.hostCourseId - b.hostCourseId),
   );
+}
+
+/** Union, sur toutes les versions, des 3 meilleurs cours d'accueil décrits de chaque cours de Poly dans chaque université. */
+export function topCandidates(db: Db, versions: string[]): Set<string> {
   const top = new Set<string>();
   for (const version of versions) {
-    const groups = new Map<string, { hostCourseId: number; polySigle: string; score: number; meanSim: number }[]>();
-    for (const r of stmt.all(version) as (MatchLine & { content_score: number; notion_sims: string })[]) {
-      const key = `${r.poly_sigle}|${r.university_id}`;
-      if (!groups.has(key)) groups.set(key, []);
-      (groups.get(key) as { hostCourseId: number; polySigle: string; score: number; meanSim: number }[]).push({
-        hostCourseId: r.host_course_id,
-        polySigle: r.poly_sigle,
-        score: r.content_score,
-        meanSim: mean(Object.values(JSON.parse(r.notion_sims) as Record<string, number>)),
-      });
-    }
-    for (const candidates of groups.values()) {
-      candidates
-        .sort((a, b) => b.score - a.score || b.meanSim - a.meanSim || a.hostCourseId - b.hostCourseId)
-        .slice(0, TOP_PER_GROUP)
-        .forEach((c) => top.add(pairIdOf(c.polySigle, c.hostCourseId)));
-    }
+    for (const group of rankedGroups(db, version)) group.slice(0, TOP_PER_GROUP).forEach((c) => top.add(c.pairId));
   }
   return top;
+}
+
+/** Nombre de versions qui doivent classer un cours d'accueil premier de son groupe pour qu'il entre au consensus. */
+export const CONSENSUS_VOTES = 2;
+
+/** Paires classées premières de leur groupe (cours de Poly, université) par au moins 2 versions. */
+export function consensusCandidates(db: Db, versions: string[]): Set<string> {
+  const votes = new Map<string, number>();
+  for (const version of versions) {
+    for (const group of rankedGroups(db, version)) {
+      const first = group[0].pairId;
+      votes.set(first, (votes.get(first) ?? 0) + 1);
+    }
+  }
+  return new Set([...votes].filter(([, n]) => n >= CONSENSUS_VOTES).map(([id]) => id));
 }
 
 /** Générateur pseudo-aléatoire déterministe (mulberry32). */
@@ -166,29 +192,55 @@ export function drawSample(db: Db, versions: string[], seed: number): SamplePair
       return [u, { top: shuffle(own.filter((p) => top.has(p.pairId)), random), other: shuffle(own.filter((p) => !top.has(p.pairId)), random) }];
     }),
   );
-  const base = Math.floor(SAMPLE_SIZE / universities.length);
-  const extra = SAMPLE_SIZE - base * universities.length;
+  return sorted(distribute(universities, SAMPLE_SIZE, (u, want) => take(pools.get(u) as Pool, want)));
+}
 
+/**
+ * Deuxième échantillon, centré sur les équivalences probables : les paires décrites classées premières de leur groupe
+ * par au moins 2 versions, hors paires déjà jugées. Même répartition entre universités que `drawSample` ;
+ * s'il y a moins de `size` candidats, ils sont tous pris.
+ */
+export function drawConsensusSample(db: Db, versions: string[], seed: number, size: number, exclude: Iterable<string>): SamplePair[] {
+  assertComputed(db, versions);
+  const excluded = new Set(exclude);
+  const consensus = consensusCandidates(db, versions);
+  const candidates = describedPairs(db, versions).filter((p) => consensus.has(p.pairId) && !excluded.has(p.pairId));
+  if (candidates.length === 0) throw new Error('Aucune paire du consensus hors des paires déjà jugées');
+  const universities = [...new Set(candidates.map((p) => p.universityId))].sort();
+  const random = seededRandom(seed);
+  const pools = new Map(universities.map((u) => [u, shuffle(candidates.filter((p) => p.universityId === u), random)]));
+  return sorted(distribute(universities, Math.min(size, candidates.length), (u, want) => (pools.get(u) as DescribedPair[]).splice(0, want)));
+}
+
+/**
+ * Répartit `size` paires entre les universités : floor(size / n) chacune, le reste une par une dans l'ordre ;
+ * ce qu'une université ne peut pas fournir passe aux suivantes, puis repart au début de la liste.
+ */
+function distribute(universities: string[], size: number, take: (u: string, want: number) => DescribedPair[]): DescribedPair[] {
+  const base = Math.floor(size / universities.length);
+  const extra = size - base * universities.length;
   const chosen: DescribedPair[] = [];
   let carry = 0;
   universities.forEach((u, i) => {
     const want = base + (i < extra ? 1 : 0) + carry;
-    const picked = take(pools.get(u) as Pool, want);
+    const picked = take(u, want);
     chosen.push(...picked);
     carry = want - picked.length;
   });
-  // Le reste d'une université trop petite en fin de liste repart au début.
   for (const u of universities) {
     if (carry === 0) break;
-    const picked = take(pools.get(u) as Pool, carry);
+    const picked = take(u, carry);
     chosen.push(...picked);
     carry -= picked.length;
   }
+  return chosen;
+}
 
-  return chosen
+/** Trié par université, sigle et cours : l'ordre ne trahit pas comment une paire a été tirée. */
+const sorted = (pairs: DescribedPair[]): SamplePair[] =>
+  pairs
     .sort((a, b) => a.universityId.localeCompare(b.universityId) || a.polySigle.localeCompare(b.polySigle) || a.hostCourseId - b.hostCourseId)
     .map(({ pairId, polySigle, hostCourseId, countryCode }) => ({ pairId, polySigle, hostCourseId, countryCode }));
-}
 
 export interface SampleEntry {
   pairId: string;
@@ -231,7 +283,13 @@ export interface SampleFile {
 }
 
 /** Fichier remis au juge : les deux cours et les données de charge, sans aucun résultat du calcul. */
-export function sampleFile(db: Db, pairs: SamplePair[], seed: number, polyWeeks: number): SampleFile {
+export function sampleFile(
+  db: Db,
+  pairs: SamplePair[],
+  seed: number,
+  polyWeeks: number,
+  judgmentsFile = 'data/calibration/judgments.json',
+): SampleFile {
   const polys = new Map(listPolyCourses(db).map((p) => [p.sigle, p]));
   const hosts = new Map(activeHostCourses(db).map((h) => [h.id, h]));
   return {
@@ -243,8 +301,7 @@ export function sampleFile(db: Db, pairs: SamplePair[], seed: number, polyWeeks:
       'workload.polyContactHours = (cours + laboratoire) x polyWeeks semaines. workload.hostContactHours : heures publiées, sinon crédits x heures par crédit de l’université ; null si inconnues.',
       'Université en ECTS : comparer hostCredits à polyEctsEquivalent (2 ECTS par crédit de Poly).',
     ],
-    responseFormat:
-      'data/calibration/judgments.json : { "<pairId>": { "judgment": "elevee" | "moyenne" | "faible" | "pas_equivalent", "reason": "une phrase" } }',
+    responseFormat: `${judgmentsFile} : { "<pairId>": { "judgment": "elevee" | "moyenne" | "faible" | "pas_equivalent", "reason": "une phrase" } }`,
     pairs: pairs.map((p) => {
       const poly = polys.get(p.polySigle);
       const host = hosts.get(p.hostCourseId);

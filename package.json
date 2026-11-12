@@ -19,6 +19,7 @@
     "calibrate:prepare": "tsx pipeline/cli/calibrate.ts prepare",
     "calibrate:run": "tsx pipeline/cli/calibrate.ts run",
     "calibrate:sample": "tsx pipeline/cli/calibrate.ts sample",
+    "calibrate:sample-2": "tsx pipeline/cli/calibrate.ts sample-2",
     "calibrate:score": "tsx pipeline/cli/calibrate.ts score",
     "test:model": "cross-env RUN_MODEL_TESTS=1 vitest run pipeline/compare/determinism.model.test.ts",
     "dev": "vite --config site/vite.config.ts",

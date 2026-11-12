@@ -1,0 +1,2173 @@
+{
+  "seed": 43,
+  "notes": [
+    "Chaque paire associe un cours de Polytechnique Montréal (polyCourse) à un cours d'une université partenaire (hostCourse).",
+    "polyCourse.weeklyHours : heures par semaine de cours, de laboratoire et de travail personnel.",
+    "hostCourse.outline : plan de cours publié, null si absent. hostCourse.cycle : undergrad (1er cycle) ou grad (cycles supérieurs).",
+    "workload.polyContactHours = (cours + laboratoire) x polyWeeks semaines. workload.hostContactHours : heures publiées, sinon crédits x heures par crédit de l’université ; null si inconnues.",
+    "Université en ECTS : comparer hostCredits à polyEctsEquivalent (2 ECTS par crédit de Poly)."
+  ],
+  "responseFormat": "data/calibration/judgments-2.json : { \"<pairId>\": { \"judgment\": \"elevee\" | \"moyenne\" | \"faible\" | \"pas_equivalent\", \"reason\": \"une phrase\" } }",
+  "pairs": [
+    {
+      "pairId": "INF3405:1196",
+      "country": "KR",
+      "university": "KAIST",
+      "polyCourse": {
+        "sigle": "INF3405",
+        "title": "Réseaux informatiques",
+        "description": "Classification des réseaux. Techniques de commutation. Architectures technologiques de transmission. Tramage, détection d'erreurs, contrôle du flot et contrôle d'erreurs par retransmission. Architecture des réseaux : modèle par couches, relations entre les couches et primitives de contrôle. Protocoles des réseaux locaux : Ethernet et réseaux sans fil. Architecture technologique TCP/IP (Transport Control Protocol/Internet Protocol) : modèle, adressage, protocoles et routage. Analyse de la qualité de service et modèles pour les réseaux informatiques. Mécanismes améliorant la qualité de service. IP version 6. Contrôle et analyse de la congestion avec TCP. Applications de TCP/IP. Efficacité énergétique d'un réseau informatique",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "EE.59900(004)",
+        "title": "Special Topics in Electrical and Computer Engineering 〈Mobile Computing and Systems for Intelligent Living〉",
+        "description": "Mobile computing and wireless networking has become an essential part of our daily lives. In this advanced, research oriented course, we study the various research aspects that enable intelligent mobile computing; wireless connectivity, network architectures, protocols, systems, services, applications, security, privacy, and even machine learning. Students will design class projects that develop interesting mobile applications or IoT services. EE323 and EE202 are strongly encouraged, but are not required prerequisites. Proficiency in programming is expected.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "unknown",
+        "sourceUrl": "https://ee.kaist.ac.kr/en/graduate-curr-list?page=5"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "INF8245AE:1092",
+      "country": "KR",
+      "university": "KAIST",
+      "polyCourse": {
+        "sigle": "INF8245AE",
+        "title": "Machine Learning",
+        "description": "Introduction - Prediction - Statistical Decision Theory - Linear Regression - Non-linear Regression - Bias-variance tradeoff - Linear Classification - Indicator Regression - PCA - LDA - QDA - GDA - Naive Bayes - Logistic Regression - Perceptron - Separating Hyperplanes - SVM - Decision Trees - ensemble learning - bagging - boosting - stacking - Neural Networks - Backpropagation - Training Deep Neural Nets - Optimization Methods - Convnets - RNNs - Estimation Theory - Maximum Likelihood Estimation - Maximum A Posteriori Estimation - Bayesian Learning - Bayesian Linear Regression - Kernel Methods - Gaussian Process - Computational Learning Theory - Frontiers in ML.",
+        "credits": 4,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 3,
+          "personal": 6
+        }
+      },
+      "hostCourse": {
+        "code": "EE.30031",
+        "title": "Introduction to Machine Learning",
+        "description": "Introduces the principles, algorithms and application of machine learning from the point of modeling and prediction; learning problem representation.\nThis course will cover concepts such as representation, over-fitting, regularization, and generalization; topics such as clustering, classification, regression, recommendation problems, probabilistic modeling, reinforcement learning, and various on-line algorithms. It will also introduce a support vector machine and deep learning.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "unknown",
+        "sourceUrl": "https://ee.kaist.ac.kr/en/under-curr-list?page=2"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 4,
+        "polyEctsEquivalent": 8,
+        "polyWeeks": 13,
+        "polyContactHours": 78,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "INF8402:1216",
+      "country": "KR",
+      "university": "KAIST",
+      "polyCourse": {
+        "sigle": "INF8402",
+        "title": "Sécurité des réseaux fixes et mobiles",
+        "description": "Sécurité des réseaux informatiques fixes et mobiles. Normes de sécurité des réseaux. Sécurité des technologies et des protocoles utilisés dans les réseaux informatiques fixes : réseaux Ethernet, réseaux TCP/IP (Transport Control Protocol/Internet Protocol) et particularités des réseaux IP. Sécurité des technologies et des protocoles utilisés dans les réseaux informatiques mobiles incluant les réseaux ad hoc, les réseaux de capteurs et les réseaux téléphoniques mobiles. Sécurité du système IMS (Internet Multimedia Subsystem) et des réseaux pair-à-pair. Technologies de sécurité des réseaux : réseaux privés virtuels et les réseaux locaux virtuels.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "EE.60057",
+        "title": "Local Area Network/Metropolitan Area Network (LAN/MAN)",
+        "description": "This course provides the broad view of network architecture and protocol at local area network and metropolitan area network (LAN/MAN). We focus on design concept of LAN/MAN with a user and operator viewpoints (e.g., cost, complexity, and performance). Topics include all the IEEE 802.x series including 802.3x (Ethernet), 802.11x (Wireless), 802.15 (Cable), 802.16x (Wibro/WiMax), 802.17 (RPR), 802.21 (MIH), etc. In addition, a virtual private network (VPN) and passive optical network (PON) are investigated.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "unknown",
+        "sourceUrl": "https://ee.kaist.ac.kr/en/graduate-curr-list?page=7"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "INF8405:1196",
+      "country": "KR",
+      "university": "KAIST",
+      "polyCourse": {
+        "sigle": "INF8405",
+        "title": "Informatique mobile",
+        "description": "Informatique mobile et réseaux sans fil. Disponibilité ou présence en tous lieux et en tout temps. Gestion de mobilité et de localisation. Caractérisation d'applications mobiles. Architectures des réseaux à composantes mobiles : cadres théoriques et pratiques. Systèmes d'exploitation pour les dispositifs mobiles. Systèmes cellulaires et sans fil. Réseaux de prochaines générations. Nouvelles architectures de réseaux sans fil. Approches de déploiement d'applications dans les réseaux ad hoc et de capteurs. Infrastructures et protocoles supportant la mobilité. Qualité de service et routage pour applications mobiles. Développement de services évolués pour usagers mobiles. Internet des objets: architectures et applications.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "EE.59900(004)",
+        "title": "Special Topics in Electrical and Computer Engineering 〈Mobile Computing and Systems for Intelligent Living〉",
+        "description": "Mobile computing and wireless networking has become an essential part of our daily lives. In this advanced, research oriented course, we study the various research aspects that enable intelligent mobile computing; wireless connectivity, network architectures, protocols, systems, services, applications, security, privacy, and even machine learning. Students will design class projects that develop interesting mobile applications or IoT services. EE323 and EE202 are strongly encouraged, but are not required prerequisites. Proficiency in programming is expected.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "unknown",
+        "sourceUrl": "https://ee.kaist.ac.kr/en/graduate-curr-list?page=5"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "LOG2400:1018",
+      "country": "KR",
+      "university": "KAIST",
+      "polyCourse": {
+        "sigle": "LOG2400",
+        "title": "Analyse et conception de logiciels",
+        "description": "Processus du génie logiciel et cycle de vie du logiciel . Phases du cycle de vie du logiciel: analyse, conception, réalisation, test, maintenance et exploitation. Activité d'analyse et de conception dans le processus du génie logiciel : principes, spécifications et méthodes. Méthodes d'analyse et de conception orientée-objet : langages et notation standards, modélisation structurelle, modélisation de comportement et modélisation architecturale. Décomposition en couches logicielles. Patrons de conception.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 2.5,
+          "personal": 3.5
+        }
+      },
+      "hostCourse": {
+        "code": "CS.40507",
+        "title": "스마트환경을 위한 요구공학",
+        "description": "This course is designed to learn requirements engineering concepts and techniques for developing software systems in modern smart computing environments such as the World Wide Web, Internet of Things (IoT), and mobile computing environments. In this course, students learn the core concepts and techniques of software requirements engineering, the key characteristics of the Web, IoT and mobile computing environments, and practical methods to elicit, model, analyze and manage requirements for developing software systems in the modern computing environments.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "unknown",
+        "sourceUrl": "https://cs.kaist.ac.kr/education/undergraduate"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 71.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "LOG3000:1353",
+      "country": "KR",
+      "university": "KAIST",
+      "polyCourse": {
+        "sigle": "LOG3000",
+        "title": "Processus du génie logiciel",
+        "description": "Activités de base d'un processus de génie logiciel. Phases du cycle de vie du logiciel. Outils et méthodes de support au processus. Survol des différentes philosophies de processus de développement de logiciel. Disciplines techniques du processus du génie logiciel : requis, analyse et conception, implémentation, test. Disciplines de gestion des processus : gestion des configurations et des requêtes de changement, gestion des projets, gestion des équipes. Évaluation des processus. Amélioration des processus. Méthodes de représentation des processus. Méta modèle. Analyse empirique des processus.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CS.60302",
+        "title": "내장형 운영체제",
+        "description": "The goal of this course is to provide in-depth design concepts and implementation skills required for designing and developing embedded operating systems. Topics covered include boot loader, process management, memory management, I/O device management, and file systems in embedded operating systems.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "unknown",
+        "sourceUrl": "https://cs.kaist.ac.kr/education/graduate"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "MTH3302:1092",
+      "country": "KR",
+      "university": "KAIST",
+      "polyCourse": {
+        "sigle": "MTH3302",
+        "title": "Méth. prob. et statist. pour l'intel. artif.",
+        "description": "Régression linéaire : simple et multiple, estimation et prédiction, inférence, régression polynomiale, multicolinéarité, méthodes itératives de construction de modèles, qualité du modèle. Modèles linéaires généralisés : généralisation de la régression linéaire, fonctions de lien, régression logistique, régression de Poisson, régression multinomiale. Analyse en composantes principales : définitions et calculs, interprétation géométrique et statistique, régression sur les composantes principales. Statistique bayésienne : loi a priori, loi a posteriori, inférence bayésienne, régression bayésienne, régression pénalisée, méthodes Monte-Carlo par chaine de Markov, variable latente, classification. Théorie de l'information : définitions de base, notions d'entropie, information mutuelle et propre; arbres probabilisés.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 4,
+          "lab": 2,
+          "personal": 3
+        }
+      },
+      "hostCourse": {
+        "code": "EE.30031",
+        "title": "Introduction to Machine Learning",
+        "description": "Introduces the principles, algorithms and application of machine learning from the point of modeling and prediction; learning problem representation.\nThis course will cover concepts such as representation, over-fitting, regularization, and generalization; topics such as clustering, classification, regression, recommendation problems, probabilistic modeling, reinforcement learning, and various on-line algorithms. It will also introduce a support vector machine and deep learning.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "unknown",
+        "sourceUrl": "https://ee.kaist.ac.kr/en/under-curr-list?page=2"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 78,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "INF2010:772",
+      "country": "JP",
+      "university": "Nagoya University",
+      "polyCourse": {
+        "sigle": "INF2010",
+        "title": "Structures de données et algorithmes",
+        "description": "Structures de données séquentielles : listes, piles, files, vecteurs. Manipulation des structures de données séquentielles : insertion, recherche et retrait d'éléments. Algorithmes de tri. Arbres binaires. Algorithmes de recherche dans un arbre. Mise en uvre des arbres équilibrés. Files de priorité. Structures de données pour manipulation de texte. Algorithmes de filtrage de chaînes de caractères. Implémentation de graphes. Algorithmes de parcours de graphes. Ensembles.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "0889111",
+        "title": "Computer Software I",
+        "description": "The purpose of this course is to study basic computer literacy skills and basic computer programming techniques for solving various problems in the C language through exercises.\n\n1. Basic computer literacy skills\n- Writing and sending e-mails\n- UNIX command line interface\n2. Basics of the C language\n- Data types and variables\n- Control structures (Selection, loop, etc.)\n- Functions\n- Standard C library functions (Input/Output, Math, etc.)\n- Fundamental data structures (Scalars, arrays, etc.)\n3. Problem Solving by Programming",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X310000889111.html"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 22.5
+      }
+    },
+    {
+      "pairId": "INF3710:772",
+      "country": "JP",
+      "university": "Nagoya University",
+      "polyCourse": {
+        "sigle": "INF3710",
+        "title": "Fichiers et bases de données",
+        "description": "Introduction aux fichiers et bases de données. Analyse de besoins : modèle entité-association. Modèle relationnel : concepts de base et algèbre relationnelle. Norme SQL (Standard Query Language) : langages de définition, de manipulation et de contrôle de données. Langage SQL enchâssé dans un langage algorithmique de programmation. Notions de contrôle d'accès concurrents et de gestion de transactions. Conception d'un schéma de base de données relationnelle : dépendances fonctionnelles et formes normales. Modèles de stockage de relations et de fichiers. Structures auxiliaires facilitant l'accès aux données : indexage et adressage dispersé.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "0889111",
+        "title": "Computer Software I",
+        "description": "The purpose of this course is to study basic computer literacy skills and basic computer programming techniques for solving various problems in the C language through exercises.\n\n1. Basic computer literacy skills\n- Writing and sending e-mails\n- UNIX command line interface\n2. Basics of the C language\n- Data types and variables\n- Control structures (Selection, loop, etc.)\n- Functions\n- Standard C library functions (Input/Output, Math, etc.)\n- Fundamental data structures (Scalars, arrays, etc.)\n3. Problem Solving by Programming",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X310000889111.html"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 22.5
+      }
+    },
+    {
+      "pairId": "INF8111:786",
+      "country": "JP",
+      "university": "Nagoya University",
+      "polyCourse": {
+        "sigle": "INF8111",
+        "title": "Fouille de données",
+        "description": "Fouille de données: concepts et contextualisation. Préparation, réduction et transformation de données. Tâches principales de la fouille de données et ses algorithmes. Détection de données aberrantes. Fouille de données sur des graphes et le web. Analyse de réseaux sociaux. Fouille de mégadonnées (Big Data): concepts, champs d'application, outils et paradigmes de programmation. Fouille de flots de données.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "2838101",
+        "title": "Theory of Data Analysis and Processing",
+        "description": "The purpose of this class is to deepen the understanding of the techniques that are necessary for data acquisition and analysis in experiments, and to obtain practical skills. The signal measurement of voltage / current etc. in the experiment is important for the electrical engineering, electronics, information and communication engineering. Students will be able to 1) understand the principle of the signal measurement method, 2) understand the evaluation method of the error on the signal measurement; and 3) process and analyze the measured data using software (LabVIEW and Scilab).\n\n1. Signal measurement\n1.1 Measuring instrument definition and specification\n1.2 Basics of circuit design\n1.3 Voltage measurement, current measurement, resistance measurement\n1.4 Error source in measurement\n1.5 Configuration of PC-based instrument\n1.6 Collection and programming of experiment data\n2. Data analysis\n2.1 Statistical analysis (error, least-square fitting, basic statistics and test)\n2.2 Time series analysis (FT, FFT, WT, transfer function, chaos)\n2.3 Correlation analysis (autocorrelation, cross-correlation)\n2.4 Spectral analysis (fourier analysis, fourier transform, spectral density function)\n2.5 Simulation · Observation Experimental Data Analysis (Basic)\n2.6 Simulation / Observation Experimental Data Analysis (Application)\nProcedures of online lectures and exercises",
+        "outline": null,
+        "credits": 4,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/28_2026_Y011402838101.html"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 4,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 45
+      }
+    },
+    {
+      "pairId": "INF8725:786",
+      "country": "JP",
+      "university": "Nagoya University",
+      "polyCourse": {
+        "sigle": "INF8725",
+        "title": "Traitement de signaux et d'images",
+        "description": "Analyse temporelle de signaux numériques : rapport signal / bruit, modélisation du bruit, convolution de signaux. Analyse spectrale du signal : spectres continus et discrets, transformée de Fourier, théorème d'échantillonnage. Filtres numériques : transformée en Z, filtres impulsionnels à réponse finie et infinie. Filtrage d'images : dans le domaine spatial, dans le domaine fréquentiel. Restauration d'images : filtres de régularisation, filtres de déconvolution. Segmentation d'images : détection de contours, détection de lignes par transformée de Hough, techniques de seuillage, segmentation de régions, segmentation par la transformée Watershed.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "2838101",
+        "title": "Theory of Data Analysis and Processing",
+        "description": "The purpose of this class is to deepen the understanding of the techniques that are necessary for data acquisition and analysis in experiments, and to obtain practical skills. The signal measurement of voltage / current etc. in the experiment is important for the electrical engineering, electronics, information and communication engineering. Students will be able to 1) understand the principle of the signal measurement method, 2) understand the evaluation method of the error on the signal measurement; and 3) process and analyze the measured data using software (LabVIEW and Scilab).\n\n1. Signal measurement\n1.1 Measuring instrument definition and specification\n1.2 Basics of circuit design\n1.3 Voltage measurement, current measurement, resistance measurement\n1.4 Error source in measurement\n1.5 Configuration of PC-based instrument\n1.6 Collection and programming of experiment data\n2. Data analysis\n2.1 Statistical analysis (error, least-square fitting, basic statistics and test)\n2.2 Time series analysis (FT, FFT, WT, transfer function, chaos)\n2.3 Correlation analysis (autocorrelation, cross-correlation)\n2.4 Spectral analysis (fourier analysis, fourier transform, spectral density function)\n2.5 Simulation · Observation Experimental Data Analysis (Basic)\n2.6 Simulation / Observation Experimental Data Analysis (Application)\nProcedures of online lectures and exercises",
+        "outline": null,
+        "credits": 4,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/28_2026_Y011402838101.html"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 4,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 45
+      }
+    },
+    {
+      "pairId": "INF8770:776",
+      "country": "JP",
+      "university": "Nagoya University",
+      "polyCourse": {
+        "sigle": "INF8770",
+        "title": "Technologies multimédias",
+        "description": "Techniques de codage des objets multimédia (extraits audio, images, séquences vidéo) : codage entropique et par dictionnaire. Techniques de compression des objets multimédia : techniques sans perte, techniques avec perte, utilisation des redondances temporelles. Artéfacts et qualité de la compression. Conteneurs multimédia et techniques de synchronisation multimédia. Tatouage numérique. Indexation des objets multimédia: décomposition en prises de vue, sélection d'images-clés, recherche par le contenu pictural/sonore. Interactions dans les applications multimédia : suivi d'un présentateur, reconnaissance de gestes.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "0889502",
+        "title": "View of Advanced Electrical, Electronic and Information Engineering",
+        "description": "The purpose of this class is to deepen the understanding of the advanced electrical, electronic and information engineering. This class discusses the fundamentals and current topics with an overview of the status of their researches and developments in Japan. Topics to be introduced are those related with energy, material and device, information and communication, multimedia and so on.\nStudents will be familiar with the most advanced technologies in the above subject matter.\n\nThis course consists of two parts:\n1: Lectures by faculty members of the Department of Electrical, Electronic, and Information Engineering: 7 sessions\n2: Visits to on-campus facilities and related sites: 2 sessions\nIn the lectures, faculty members from the fields of electrical engineering, electronics, and information and communications will provide explanations of recent research topics. During the visits, students will tour facilities related to energy technologies, materials technologies, and other relevant areas.\nA report is required after each lecture and visit.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/08_2026_X330000889502.html"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 22.5
+      }
+    },
+    {
+      "pairId": "LOG3000:777",
+      "country": "JP",
+      "university": "Nagoya University",
+      "polyCourse": {
+        "sigle": "LOG3000",
+        "title": "Processus du génie logiciel",
+        "description": "Activités de base d'un processus de génie logiciel. Phases du cycle de vie du logiciel. Outils et méthodes de support au processus. Survol des différentes philosophies de processus de développement de logiciel. Disciplines techniques du processus du génie logiciel : requis, analyse et conception, implémentation, test. Disciplines de gestion des processus : gestion des configurations et des requêtes de changement, gestion des projets, gestion des équipes. Évaluation des processus. Amélioration des processus. Méthodes de représentation des processus. Méta modèle. Analyse empirique des processus.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "2560085",
+        "title": "Speech/Behavior Signal Processing 1",
+        "description": "In the lecture course, Speech/Behavior Signal Processing 1 and 2, high-level intelligent process such as, perception, intention, adaptation, and motor control of the human communication and behavior are discussed, in terms of its mathematical modeling and the application systems on the basis of digital signal processing of sensor outputs. Particularly in Speech/Behavior Signal Processing 1, basic topics on speech, music, acoustics, sports, interaction, self-driving, and so on are discussed.\n\nTo learn the basic concepts of the above mentioned topics, the series of lectures on the related topics will be given in this course. An example of the related topics is shown below.\n1) Speech generation\n2) Speech recognition\n3) Speaker recognition and diarization\n4) Speech assessment\n5) Music information retrieval\n6) Anomalous sound detection\n7) Audio captioning\n8) Machine translation\n9) Image processing for sports\n10) Human-machine interaction systems\n11) Driver behavior signal processing\n12) Intelligent control of vehicle",
+        "outline": null,
+        "credits": 1,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y003102560085.html"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 1,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 11.25
+      }
+    },
+    {
+      "pairId": "LOG8235:779",
+      "country": "JP",
+      "university": "Nagoya University",
+      "polyCourse": {
+        "sigle": "LOG8235",
+        "title": "Agents intelligents pour jeux vidéo",
+        "description": "Réalisme des personnages en intelligence artificielle. Conception de règles de jeu. Sensibilisation à l'utilisation de la physique dans un jeu pour mieux percevoir et agir sur son environnement: intégration de bibliothèque de physique du jeu vidéo, lancer de rayon, cinématique inverse, voxelisation. Sensibilisation à l'animation : vallée dérangeante, animation faciale. Sensibilisation à la génération de contenu procédural: algorithmes génératifs pour la voix, les animations, les niveaux, les personnages, les situations rencontrées, ainsi que le contrôle dynamique et personnalisé de la difficulté du jeu. Navigation. Boucles de perception, de décision et d'action. Systèmes complexes et efficacité.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "2560095",
+        "title": "Intelligent Robotics 1",
+        "description": "Robotic technology connects real environments, including society and people, to computers and networks.\nIn this lecture, students will learn the methodology of intelligent information processing in the real world, using as example robotic systems, such as autonomous vehicles and multi-agent systems.\n\nStudents aim to understand the methodology of intelligent information processing through the real world.\nIn this lecture, robots and multi-agent systems operating in real environments are used as examples to understand theoretical and practical aspects from the perspective of forward analysis and inverse analysis.\n[schedule]\nPart 1: Forward and reverse analysis of multiple human behavior from the perspective of robotics\nPart 2-3: RoboCup soccer analysis example\nPart 4-5: Introduction to robotics in autonomous driving\nLessons 6-8: Multi-agent reinforcement learning",
+        "outline": null,
+        "credits": 1,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.adm.nagoya-u.ac.jp/data/2026/25_2026_Y003102560095.html"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 1,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 11.25
+      }
+    },
+    {
+      "pairId": "GCH2730:1401",
+      "country": "TW",
+      "university": "National Cheng Kung University",
+      "polyCourse": {
+        "sigle": "GCH2730",
+        "title": "Énerg. et dév. durable dans les syst. infor.",
+        "description": "Analyse dimensionnelle. Variables utilisées dans les procédés : débit, pression, température et composition. Notion de procédé et principe de fonctionnement d'une pile. Équation générale de conservation de la matière. Bilans de matière sur des systèmes informatiques. Équilibre de phases. Réactions chimiques : réactif limitant et en excès, rendement, sélectivité. Bilans d'énergie sur des systèmes informatiques. Formes d'énergie dans un procédé. Calcul de l'enthalpie et état de référence. Premier principe de la thermodynamique. Procédure d'établissement des bilans d'énergie pour des procédés non-réactifs et réactifs. Électrochimie : oxydo-réduction, loi de Nernst, loi de Faraday. Effet Joule. Chaleur dissipée dans une pile. Bilans de matière et d'énergie dans une salle de serveurs. Développement durable : historique, concepts et outils de base. Introduction à l'analyse du cycle de vie. Place du développement durable dans les systèmes informatiques. Études de cas.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 2,
+          "personal": 4
+        }
+      },
+      "hostCourse": {
+        "code": "E231110",
+        "title": "ELECTROMAGNETIC FIELDS AND WAVES (1)",
+        "description": "Electrostatic Fields, Magnetostatic Fields, Time-Varying Electromagnetic Fields, and Maxwell's Equations.",
+        "outline": "Week 1 : Vector Algebra, Coordinate Systems and Transformation\nWeek 2 : Vector Calculus, Electrostatic fields: Coulomb’s law and field intensity\nWeek 3 : Electrostatic fields: electric fields due to continuous charge distributions, electric flux density\nWeek 4 : Electrostatic fields: Gauss’s law, electric potential\nWeek 5 : Electrostatic fields: energy density in electrostatic fields\nWeek 6 : Electric fields in material space: properties of materials, convection and conduction currents\nWeek 7 : Midterm exam I; Electric fields in material space: conductors, polarization in dielectrics, dielectric constant and strength\nWeek 8 : Electric fields in material space: linear, isotropic, and homogeneous dielectrics, continuity equation and relaxation time\nWeek 9 : Electric fields in material space: boundary conditions\nWeek 10 : Electrostatic boundary-value problems: Poisson’s and Laplace’s equations, uniqueness theorem, general procedures for solving Poisson’s equation\nWeek 11 : Electrostatic boundary-value problems: resistance and capacitance\nWeek 12 : Midterm exam II; Magnetostatic fields: Biot-Savart’s law, Ampere’s circuit law\nWeek 13 : Magnetostatic fields: magnetic flux density, Maxwell’s equations for static fields\nWeek 14 : Magnetostatic fields: magnetic scalar and vector potentials\nWeek 15 : Magnetic Forces, Materials, and Devices: forces due to magnetic fields, magnetic torque and moment\nWeek 16 : Magnetic Forces, Materials, and Devices: a magnetic dipole, magnetization in materials, Classification of Materials\nWeek 17 : Magnetic Forces, Materials, and Devices: Magnetic Boundary Conditions, Inductors and Inductances, Magnetic Energy\nWeek 18 : Final exam",
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E231110&class_code=3"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 65,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "INF2610:1398",
+      "country": "TW",
+      "university": "National Cheng Kung University",
+      "polyCourse": {
+        "sigle": "INF2610",
+        "title": "Noyau d'un système d'exploitation",
+        "description": "Concepts, composants, fonctions, services et structures des systèmes d'exploitation. Gestion de processus : synchronisation, problèmes classiques de synchronisation, communication et ordonnancement. Processus légers (threads). Interblocage. Gestion de la mémoire. Introduction aux systèmes d'exploitation temps réel. Gestion de processus dans un contexte temps réel. Ordonnancement temps réel. Études de cas.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "E212200",
+        "title": "INTRODUCTION TO COMPUTER SCIENCE",
+        "description": "This course will introduce the basic concepts of computers and implement them with programming languages so that students can develop a deeper understanding of the aforementioned concepts.",
+        "outline": "Week 1 : Computing Concepts\nWeek 2 : Computing Concepts\nWeek 3 : Introduction to C Programming\nWeek 4 : Introduction to C Programming\nWeek 5 : Structured Program Development\nWeek 6 : Mid Term\nWeek 7 : Program Control\nWeek 8 : Program Control\nWeek 9 : Functions\nWeek 10 : Introduction to Parallel, Reconfigurable, Cloud, and Edge Computing (If time allows)\nWeek 11 : Arrays\nWeek 12 : Mid Term\nWeek 13 : Arrays\nWeek 14 : Pointers\nWeek 15 : Pointers\nWeek 16 : File processing(if time allows)\nWeek 17 : Data Structures\nWeek 18 : Final exam",
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E212200&class_code=3"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "INF8225:1393",
+      "country": "TW",
+      "university": "National Cheng Kung University",
+      "polyCourse": {
+        "sigle": "INF8225",
+        "title": "I.A.:tech. probabilistes et d'apprentissage",
+        "description": "Méthodes probabilistes d'intelligence artificielle. Modèles probabilistes : réseaux bayésiens, modèles de Markov cachés, champs aléatoires de Markov et leurs généralisations. Inférence. Théorie de la décision statistique et des réseaux de décision. Algorithmes d'apprentissage automatique, classificateurs simples, complexes et structurés. L'apprentissage profond « deep learning ». Traitement probabiliste de la langue naturelle et de la perception visuelle. Applications à la conception et l'implantation des systèmes experts, au forage de données, à la recherche d'informations et à la vision par ordinateur.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "F720600",
+        "title": "DISCRETE MATHEMATICS",
+        "description": "This course broadly introduces the mathematics theorems and application of computation usage. It will introduce the fundamental principles of counting, logic, set theory, mathematical induction, relations, finite state machine, the principle of inclusion and exclusion, generating functions, recurrence relations, and graph theory.",
+        "outline": "Week 1 : Propositional Logic (1.1), Applications of Logic (1.2)\nWeek 2 : Propositional Equivalences (1.3), Predicates and Quantifiers (1.4–1.5)\nWeek 3 : Rules of Inference (1.6), Introduction to Proofs (1.7)\nWeek 4 : Sets and Set Operations (2.1–2.2)\nWeek 5 : Functions (2.3)\nWeek 6 : Sequences and Summations (2.4)\nWeek 7 : Midterm 1 (Chapters 1–2)\nWeek 8 : Divisibility and Modular Arithmetic (4.1), Integer Representations and Algorithms (4.2)\nWeek 9 : Primes and Greatest Common Divisors (4.3), Mathematical Induction (5.1)\nWeek 10 : Strong Induction and Well-Ordering (5.2), Recursive Definitions and Structural Induction (5.3)\nWeek 11 : Basics of Counting (6.1), Pigeonhole Principle (6.2), Permutations and Combinations (6.3)\nWeek 12 : Discrete Probability (7.1)\nWeek 13 : Midterm 2 (Chapters 4–7)\nWeek 14 : Applications of Recurrence Relations (8.1), Inclusion–Exclusion (8.5)\nWeek 15 : Relations and Their Properties (9.1), Representing Relations (9.3), Equivalence Relations (9.5)\nWeek 16 : Graphs and Graph Models (10.1), Graph Terminology and Special Graphs (10.2), Graph Representations and Isomorphism (10.3)\nWeek 17 : Connectivity (10.4), Euler and Hamilton Paths (10.5), Introduction to Trees (11.1)",
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=F720600&class_code=2"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "INF8460:1393",
+      "country": "TW",
+      "university": "National Cheng Kung University",
+      "polyCourse": {
+        "sigle": "INF8460",
+        "title": "Traitement automatique de la langue naturelle",
+        "description": "Modélisation par n-grammes. Analyse syntaxique probabiliste. Analyse syntaxique basée sur les dépendances. Sémantique vectorielle et mesures de similarité. Extraction d'information et de connaissances à partir de textes. Systèmes automatiques de réponse à des questions. Systèmes de dialogue et agents conversationnels. Réseaux de neurones pour le traitement de la langue.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "F720600",
+        "title": "DISCRETE MATHEMATICS",
+        "description": "This course broadly introduces the mathematics theorems and application of computation usage. It will introduce the fundamental principles of counting, logic, set theory, mathematical induction, relations, finite state machine, the principle of inclusion and exclusion, generating functions, recurrence relations, and graph theory.",
+        "outline": "Week 1 : Propositional Logic (1.1), Applications of Logic (1.2)\nWeek 2 : Propositional Equivalences (1.3), Predicates and Quantifiers (1.4–1.5)\nWeek 3 : Rules of Inference (1.6), Introduction to Proofs (1.7)\nWeek 4 : Sets and Set Operations (2.1–2.2)\nWeek 5 : Functions (2.3)\nWeek 6 : Sequences and Summations (2.4)\nWeek 7 : Midterm 1 (Chapters 1–2)\nWeek 8 : Divisibility and Modular Arithmetic (4.1), Integer Representations and Algorithms (4.2)\nWeek 9 : Primes and Greatest Common Divisors (4.3), Mathematical Induction (5.1)\nWeek 10 : Strong Induction and Well-Ordering (5.2), Recursive Definitions and Structural Induction (5.3)\nWeek 11 : Basics of Counting (6.1), Pigeonhole Principle (6.2), Permutations and Combinations (6.3)\nWeek 12 : Discrete Probability (7.1)\nWeek 13 : Midterm 2 (Chapters 4–7)\nWeek 14 : Applications of Recurrence Relations (8.1), Inclusion–Exclusion (8.5)\nWeek 15 : Relations and Their Properties (9.1), Representing Relations (9.3), Equivalence Relations (9.5)\nWeek 16 : Graphs and Graph Models (10.1), Graph Terminology and Special Graphs (10.2), Graph Representations and Isomorphism (10.3)\nWeek 17 : Connectivity (10.4), Euler and Hamilton Paths (10.5), Introduction to Trees (11.1)",
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=F720600&class_code=2"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "LOG3420:1404",
+      "country": "TW",
+      "university": "National Cheng Kung University",
+      "polyCourse": {
+        "sigle": "LOG3420",
+        "title": "Analyse et spécif. des exigences du logiciel",
+        "description": "Exigences du logiciel: définition, typologie. Cycle de l'ingénierie des exigences: élicitation, analyse et validation, spécification, vérification. Prototypage. Techniques d'élicitation. Analyse des exigences: classification, modélisation conceptuelle, allocation, négociation, évaluation du risque. Validation des exigences: revues et inspections, tests d'acceptation. Techniques de spécification. Caractéristiques de qualité des exigences et vérification. Modélisation des exigences et méthodes agiles. Gestion des exigences. Études de cas.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "E238500",
+        "title": "INTRODUCTION TO COMPUTER AND NETWORK SECURITY",
+        "description": "This course is a fundamental introduction to cyber-security. Course students will learn the basic concepts of computer and network system security by watching on-line English videos, understanding user access control, data transmission security, vulnerability, risk assessment, and other related topics. The students are required to complete online quizzes to review their learning.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E238500&class_code="
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 36
+      }
+    },
+    {
+      "pairId": "LOG8430:1398",
+      "country": "TW",
+      "university": "National Cheng Kung University",
+      "polyCourse": {
+        "sigle": "LOG8430",
+        "title": "Architecture logicielle et conception avancée",
+        "description": "Méthodes de conception avancées de logiciels et choix d'architecture. Architectures logicielles : multi-niveaux, clients-serveurs, extensibles et dynamiques. Concepts et implantations avancées des bibliothèques et du chargement de composantes dynamiques. Cadres de référence et plugiciels. Composition et architecture par composantes. Patrons de conception avancés pour les systèmes distribués : accès aux services et configuration, traitement d'événements, synchronisation et accès simultanés. Approches émergentes de conception et d'architecture : conception orientée aspect, architecture orientée services et autres.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "E212200",
+        "title": "INTRODUCTION TO COMPUTER SCIENCE",
+        "description": "This course will introduce the basic concepts of computers and implement them with programming languages so that students can develop a deeper understanding of the aforementioned concepts.",
+        "outline": "Week 1 : Computing Concepts\nWeek 2 : Computing Concepts\nWeek 3 : Introduction to C Programming\nWeek 4 : Introduction to C Programming\nWeek 5 : Structured Program Development\nWeek 6 : Mid Term\nWeek 7 : Program Control\nWeek 8 : Program Control\nWeek 9 : Functions\nWeek 10 : Introduction to Parallel, Reconfigurable, Cloud, and Edge Computing (If time allows)\nWeek 11 : Arrays\nWeek 12 : Mid Term\nWeek 13 : Arrays\nWeek 14 : Pointers\nWeek 15 : Pointers\nWeek 16 : File processing(if time allows)\nWeek 17 : Data Structures\nWeek 18 : Final exam",
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E212200&class_code=3"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "LOG8715:1398",
+      "country": "TW",
+      "university": "National Cheng Kung University",
+      "polyCourse": {
+        "sigle": "LOG8715",
+        "title": "Architecture de jeux vidéo",
+        "description": "Composantes d'un moteur de jeu, modèle orienté objet, modèle entité-composante-système, patrons de conception orientés données, archétypes. Décomposition d'une itération de boucle de jeu. Jouabilité. Profilage et débogage. Performance et gestion de mémoire : stratégies, optimisations, modèles de parallélisme, patrons de synchronisation de données. Intégration continue des jeux vidéo. Programmation de jeux multijoueurs: topologies réseaux des jeux, réplication d'objets, gestion de la latence et fiabilité, architecture réseau et types de jeu, mise à l'échelle, sécurité des jeux, jeu à la demande, infrastructure serveur et infonuagique.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "E212200",
+        "title": "INTRODUCTION TO COMPUTER SCIENCE",
+        "description": "This course will introduce the basic concepts of computers and implement them with programming languages so that students can develop a deeper understanding of the aforementioned concepts.",
+        "outline": "Week 1 : Computing Concepts\nWeek 2 : Computing Concepts\nWeek 3 : Introduction to C Programming\nWeek 4 : Introduction to C Programming\nWeek 5 : Structured Program Development\nWeek 6 : Mid Term\nWeek 7 : Program Control\nWeek 8 : Program Control\nWeek 9 : Functions\nWeek 10 : Introduction to Parallel, Reconfigurable, Cloud, and Edge Computing (If time allows)\nWeek 11 : Arrays\nWeek 12 : Mid Term\nWeek 13 : Arrays\nWeek 14 : Pointers\nWeek 15 : Pointers\nWeek 16 : File processing(if time allows)\nWeek 17 : Data Structures\nWeek 18 : Final exam",
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E212200&class_code=3"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "INF2705:16",
+      "country": "TW",
+      "university": "National Taiwan University",
+      "polyCourse": {
+        "sigle": "INF2705",
+        "title": "Infographie",
+        "description": "Modèles géométriques. Évolution des langages graphiques. Transformations affines : translation, rotation, homothétie. Projections parallèles et perspective. Pipeline des transformations : modélisation, visualisation, projection, clôture. Pipeline graphique programmable : nuanceurs de sommets, de tessellation, de géométrie, de fragments. Tests et opérations sur les fragments. Réflexion de la lumière et modèles d'illumination. Modèles de couleurs, modèles d'affichage, matériel graphique. Sélection graphique. Panneaux et lutins. Modélisation 3D : splines, courbes de Bézier, B-splines, B-splines rationnelles.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 3,
+          "personal": 3
+        }
+      },
+      "hostCourse": {
+        "code": "MATH7419",
+        "title": "Equations of Mathematical Physics (Ⅰ)",
+        "description": "This course introduces mathematical methods for application to problems arising from physical and biological processes in terms of Nonlinear Partial Differential Equations (PDEs). It is addressed to graduate students and anyone with an interest in mathematical physics.\nThe content is built around the following topics: first-order quasilinear equations, reaction-diffusion equations, aggregation-diffusion equations, free boundary problems and phase transitions,  dispersive and wave equations. By PDE methodology, we study and solve these problems within a mathematically rigorous framework. The course also introduces simulation and symbolic calculation from Matlab Toolbox for solving PDEs.",
+        "outline": "Week 1 : First-order quasilinear equations: models, Cauchy problem, characteristics, domain of definition, blowup\nWeek 2 : First-order quasilinear equations: Solutions with discontinuities, weak solutions, shock waves, and Riemann problems\nWeek 3 : Introduction to second-order scalar equations: models, Cauchy problem, characteristics, canonical forms\nWeek 4 : Fisher-KPP equation: models, traveling wave solutions, phase-portrait analysis\nWeek 5 : Existence, convergence, and stability of traveling wave solutions to the Fisher-KPP equation\nWeek 6 : Semilinear heat equation: derivation, global solutions and long-time asymptotic behaviors, blowup dynamics\nWeek 7 : No class, prepare for the midterm report\nWeek 8 : Midterm exam\nWeek 9 : One-phase Stefan problem: derivation, existence and uniqueness of solutions, long-time asymptotic behavior.\nWeek 10 : One-phase Stefan problem: dynamics of melting ice balls.\nWeek 11 : Two-phase Stefan problem: derivation, existence and uniqueness of solutions, asymptotic behavior.\nWeek 12 : Keller-Segel system: derivation, global solutions, traveling wave, self-similarity\nWeek 13 : Keller-Segel system: singularity formation, stability\nWeek 14 : Nonlinear Schrödinger equation: derivation, solitary waves, stability\nWeek 15 : Nonlinear Schrödinger equation: self-similarity, singularity formation, stability\nWeek 16 : Final report",
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=221%20U5780&class=&dpt_code=2210&ser_no=46236&semester=114-2&lang=EN"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 78,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "INF8102:78",
+      "country": "TW",
+      "university": "National Taiwan University",
+      "polyCourse": {
+        "sigle": "INF8102",
+        "title": "Sécurité dans les environnements infonuagique",
+        "description": "Concepts clés de l'infonuagique. Sûreté de fonctionnement et sécurité dans le nuage. Gestion des identités et des accès. Gestion sécurisée des configurations. Protection des données et automatisation. Mise en réseau et journalisation. Conformité, réponse aux incidents, et tests de pénétration. Sécurité dans les environnements infonuagiques mobiles.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CSIE5310",
+        "title": "Virtual Machines",
+        "description": "Virtualization is an essential technology used by many computer systems for innovation. For instance, cloud computing platforms, including Amazon AWS, Google Cloud, and Microsoft Azure, build on virtualization to virtualize the hardware abstraction, allowing multiple virtual machines to run on a single piece of hardware. Typically, virtual machine monitors (hypervisors), such as KVM, Xen, Azure, and VMware, expose the virtual machine interface. In addition, the recent development of containers virtualizes the kernel interface language virtual machines: Furthermore, language virtual machines such as JVM and DVM effectively improve the program portability and support program execution across incompatible computer architectures. In this course, we will introduce the principles of virtualization. We will focus on various perspectives, including the security and performance of different virtualization systems. Students who take this course are expected to get hands-on experience in using and developing virtualization systems software.",
+        "outline": "Week 1 : Intro to virtualization\nWeek 2 : CPU Virtualization\nWeek 3 : Memory Virtualization\nWeek 4 : I/O & Interrupts Virtualization\nWeek 5 : KVM Walkthrough (Assignment 1 released)\nWeek 6 : Alternative Hypervisor Design & Performance Implications\nWeek 7 : Nested Virtualization & VM Management\nWeek 8 : Paper Reading: Virtualization Capstone; - Agile Paging: Exceeding the Best of Nested and Shadow Paging (ISCA 16); - Enhancing and Exploiting Contiguity for Fast Memory Virtualization (ISCA 20); - Direct Memory Translation for Virtualized Clouds (ASPLOS 24); - Optimizing Nested Virtualization Performance Using Direct Virtual Hardware (ASPLOS 20)\nWeek 9 : Virtualization Security\nWeek 10 : Midterm Exam\nWeek 11 : Paper Reading: Virtualization Security (Assignment 2 released); - vTPM: Virtualizing the Trusted Platform Module (USENIX Security 06); - TwinVisor: Hardware-isolated Confidential Virtual Machines for ARM (SOSP 21); - Hey, you, get off of my cloud: exploring information leakage in third-party compute clouds (CCS 09); - Sharing is leaking: blocking transient-execution attacks with core-gapped confidential VMs (ASPLOS 24)\nWeek 12 : Containers\nWeek 13 : Paper Readings: Emerging Topics/ Virtualization Security; - BlackBox: A Container Security Monitor for Protecting Containers on Untrusted Operating Systems; (OSDI 22); - SCONE: Secure Linux Containers with Intel SGX (OSDI 16); - PipeLLM: Fast and Confidential Large Language Model Services with Speculative Pipelined Encryption (ASPLOS 25); - Scale and Performance in the Denali Isolation Kernel (OSDI 02)\nWeek 14 : Final Project Presentation\nWeek 15 : Final Project Presentation\nWeek 16 : Final Project Presentation",
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4140&class=&dpt_code=9020&ser_no=51006&semester=114-2&lang=EN"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "INF8405:37",
+      "country": "TW",
+      "university": "National Taiwan University",
+      "polyCourse": {
+        "sigle": "INF8405",
+        "title": "Informatique mobile",
+        "description": "Informatique mobile et réseaux sans fil. Disponibilité ou présence en tous lieux et en tout temps. Gestion de mobilité et de localisation. Caractérisation d'applications mobiles. Architectures des réseaux à composantes mobiles : cadres théoriques et pratiques. Systèmes d'exploitation pour les dispositifs mobiles. Systèmes cellulaires et sans fil. Réseaux de prochaines générations. Nouvelles architectures de réseaux sans fil. Approches de déploiement d'applications dans les réseaux ad hoc et de capteurs. Infrastructures et protocoles supportant la mobilité. Qualité de service et routage pour applications mobiles. Développement de services évolués pour usagers mobiles. Internet des objets: architectures et applications.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "EE3008",
+        "title": "Rf Microwave Wireless Systems",
+        "description": "Wireless communication is widely applied in mobile communication, local area network (WiFi) and many different applications.\nThis course will introduce many different components and techniques used in wireless communication.\nCovered topics are:\n1. Introduction to wireless systems\n2. Transmission lines and microwave networks\n3. Noise and distortion in microwave system\n4. Antennas and propagation for wireless systems\n5. Filters\n6. Amplifiers\n7. Mixers\n8. Transistor oscillators and frequency synthesizers\n9. Modulation techniques\n10. Receiver Design",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=901%2031100&class=&dpt_code=9010&ser_no=11489&semester=115-1&lang=EN"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "INF8480:78",
+      "country": "TW",
+      "university": "National Taiwan University",
+      "polyCourse": {
+        "sigle": "INF8480",
+        "title": "Systèmes répartis et infonuagique",
+        "description": "Introduction aux systèmes répartis et à l'infonuagique. Environnement de développement technologique et réseautique des systèmes répartis. Architectures client-serveur, pair-à-pair, orientées-services et totalement réparties. Infrastructure, plateforme et applications en tant que services. Concepts d'objets distants et d'intergiciels. Virtualisation des noeuds et du réseau. Notions de synchronisation du temps et de systèmes transactionnels répartis. Méthodes et techniques de conception de services performants, répartis, virtualisés, sécuritaires et tolérants aux défaillances. L'informatique et le développement durable dans le contexte d'applications réparties et de l'infonuagique",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CSIE5310",
+        "title": "Virtual Machines",
+        "description": "Virtualization is an essential technology used by many computer systems for innovation. For instance, cloud computing platforms, including Amazon AWS, Google Cloud, and Microsoft Azure, build on virtualization to virtualize the hardware abstraction, allowing multiple virtual machines to run on a single piece of hardware. Typically, virtual machine monitors (hypervisors), such as KVM, Xen, Azure, and VMware, expose the virtual machine interface. In addition, the recent development of containers virtualizes the kernel interface language virtual machines: Furthermore, language virtual machines such as JVM and DVM effectively improve the program portability and support program execution across incompatible computer architectures. In this course, we will introduce the principles of virtualization. We will focus on various perspectives, including the security and performance of different virtualization systems. Students who take this course are expected to get hands-on experience in using and developing virtualization systems software.",
+        "outline": "Week 1 : Intro to virtualization\nWeek 2 : CPU Virtualization\nWeek 3 : Memory Virtualization\nWeek 4 : I/O & Interrupts Virtualization\nWeek 5 : KVM Walkthrough (Assignment 1 released)\nWeek 6 : Alternative Hypervisor Design & Performance Implications\nWeek 7 : Nested Virtualization & VM Management\nWeek 8 : Paper Reading: Virtualization Capstone; - Agile Paging: Exceeding the Best of Nested and Shadow Paging (ISCA 16); - Enhancing and Exploiting Contiguity for Fast Memory Virtualization (ISCA 20); - Direct Memory Translation for Virtualized Clouds (ASPLOS 24); - Optimizing Nested Virtualization Performance Using Direct Virtual Hardware (ASPLOS 20)\nWeek 9 : Virtualization Security\nWeek 10 : Midterm Exam\nWeek 11 : Paper Reading: Virtualization Security (Assignment 2 released); - vTPM: Virtualizing the Trusted Platform Module (USENIX Security 06); - TwinVisor: Hardware-isolated Confidential Virtual Machines for ARM (SOSP 21); - Hey, you, get off of my cloud: exploring information leakage in third-party compute clouds (CCS 09); - Sharing is leaking: blocking transient-execution attacks with core-gapped confidential VMs (ASPLOS 24)\nWeek 12 : Containers\nWeek 13 : Paper Readings: Emerging Topics/ Virtualization Security; - BlackBox: A Container Security Monitor for Protecting Containers on Untrusted Operating Systems; (OSDI 22); - SCONE: Secure Linux Containers with Intel SGX (OSDI 16); - PipeLLM: Fast and Confidential Large Language Model Services with Speculative Pipelined Encryption (ASPLOS 25); - Scale and Performance in the Denali Isolation Kernel (OSDI 02)\nWeek 14 : Final Project Presentation\nWeek 15 : Final Project Presentation\nWeek 16 : Final Project Presentation",
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4140&class=&dpt_code=9020&ser_no=51006&semester=114-2&lang=EN"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "INF8602:78",
+      "country": "TW",
+      "university": "National Taiwan University",
+      "polyCourse": {
+        "sigle": "INF8602",
+        "title": "Sécurité des systèmes d'exploitation",
+        "description": "Sécurité des systèmes d'exploitation: concepts et mise en contexte. Méthodes d'analyse et d'évaluation de la sécurité d'un système d'exploitation. Contrôle d'accès discrétionnaire et obligatoire. Intégrité de flux de contrôle: attaques et contremesures. Systèmes d'exploitation sécuritaires: Multics et noyaux de sécurité. Sécurité des systèmes d'usage général: Windows, Unix, iOS, Android. Stratégies d'isolation de processus et données: conteneurs logiciels, machines virtuelles, isolation en bac à sable.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CSIE5310",
+        "title": "Virtual Machines",
+        "description": "Virtualization is an essential technology used by many computer systems for innovation. For instance, cloud computing platforms, including Amazon AWS, Google Cloud, and Microsoft Azure, build on virtualization to virtualize the hardware abstraction, allowing multiple virtual machines to run on a single piece of hardware. Typically, virtual machine monitors (hypervisors), such as KVM, Xen, Azure, and VMware, expose the virtual machine interface. In addition, the recent development of containers virtualizes the kernel interface language virtual machines: Furthermore, language virtual machines such as JVM and DVM effectively improve the program portability and support program execution across incompatible computer architectures. In this course, we will introduce the principles of virtualization. We will focus on various perspectives, including the security and performance of different virtualization systems. Students who take this course are expected to get hands-on experience in using and developing virtualization systems software.",
+        "outline": "Week 1 : Intro to virtualization\nWeek 2 : CPU Virtualization\nWeek 3 : Memory Virtualization\nWeek 4 : I/O & Interrupts Virtualization\nWeek 5 : KVM Walkthrough (Assignment 1 released)\nWeek 6 : Alternative Hypervisor Design & Performance Implications\nWeek 7 : Nested Virtualization & VM Management\nWeek 8 : Paper Reading: Virtualization Capstone; - Agile Paging: Exceeding the Best of Nested and Shadow Paging (ISCA 16); - Enhancing and Exploiting Contiguity for Fast Memory Virtualization (ISCA 20); - Direct Memory Translation for Virtualized Clouds (ASPLOS 24); - Optimizing Nested Virtualization Performance Using Direct Virtual Hardware (ASPLOS 20)\nWeek 9 : Virtualization Security\nWeek 10 : Midterm Exam\nWeek 11 : Paper Reading: Virtualization Security (Assignment 2 released); - vTPM: Virtualizing the Trusted Platform Module (USENIX Security 06); - TwinVisor: Hardware-isolated Confidential Virtual Machines for ARM (SOSP 21); - Hey, you, get off of my cloud: exploring information leakage in third-party compute clouds (CCS 09); - Sharing is leaking: blocking transient-execution attacks with core-gapped confidential VMs (ASPLOS 24)\nWeek 12 : Containers\nWeek 13 : Paper Readings: Emerging Topics/ Virtualization Security; - BlackBox: A Container Security Monitor for Protecting Containers on Untrusted Operating Systems; (OSDI 22); - SCONE: Secure Linux Containers with Intel SGX (OSDI 16); - PipeLLM: Fast and Confidential Large Language Model Services with Speculative Pipelined Encryption (ASPLOS 25); - Scale and Performance in the Denali Isolation Kernel (OSDI 02)\nWeek 14 : Final Project Presentation\nWeek 15 : Final Project Presentation\nWeek 16 : Final Project Presentation",
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20U4140&class=&dpt_code=9020&ser_no=51006&semester=114-2&lang=EN"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "INF8808:70",
+      "country": "TW",
+      "university": "National Taiwan University",
+      "polyCourse": {
+        "sigle": "INF8808",
+        "title": "Visualisation de données",
+        "description": "Principes de design graphique. Types de données visuelles. Interaction et animation. Visualisation d'arbres et réseaux. Géovisualisation. Visualisation de données multimédias. Données multidimensionnelles. Couleur, perception et cognition dans la visualisation. Programmation avec une librairie.'",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CSIE7641",
+        "title": "Multimodal Human-Computer Interaction",
+        "description": "Humans perform physical tasks with abundant multimodal information from visual, auditory, tactile, and more senses. Mainstream computers still offer very limited input and output capabilities when interacting with the users (e.g., multitouch gestures, speech input). This course provides project-based knowledge on human sensory perception & cognition and technologies that accommodate these, including topics on eye-tracking, auditory, robotic touch interfaces.  Students will conduct user studies and develop software-hardware systems that explore and leverage multimodal interaction in these projects. Later in the course, students will explore an open-ended research project guided by the instructor. This course will take place in Make Reality Space. No prerequisite needed while programming skills are required.",
+        "outline": "Week 1 : Introducing multi-modalities in Human-Computer Interaction and class logistics\nWeek 2 : Visual perception I: eye-tracking\nWeek 3 : Visual perception II: user study in class\nWeek 4 : Visual perception III: application demo\nWeek 5 : Auditory perception I: audio UI\nWeek 6 : Auditory perception II: user study in class\nWeek 7 : Auditory perception III: application demo\nWeek 8 : Tactile perception I: robotic touch\nWeek 9 : Tactile perception II: user study in class\nWeek 10 : Tactile perception III: application demo\nWeek 11 : Final project proposal\nWeek 12 : Final project: paper writing\nWeek 13 : Final project: prototyping\nWeek 14 : Final project: user study\nWeek 15 : Final project: presentation\nWeek 16 : Final project: paper submission",
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=922%20M1520&class=&dpt_code=9220&ser_no=45813&semester=114-2&lang=EN"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "LOG3420:95",
+      "country": "TW",
+      "university": "National Taiwan University",
+      "polyCourse": {
+        "sigle": "LOG3420",
+        "title": "Analyse et spécif. des exigences du logiciel",
+        "description": "Exigences du logiciel: définition, typologie. Cycle de l'ingénierie des exigences: élicitation, analyse et validation, spécification, vérification. Prototypage. Techniques d'élicitation. Analyse des exigences: classification, modélisation conceptuelle, allocation, négociation, évaluation du risque. Validation des exigences: revues et inspections, tests d'acceptation. Techniques de spécification. Caractéristiques de qualité des exigences et vérification. Modélisation des exigences et méthodes agiles. Gestion des exigences. Études de cas.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "EEE5067",
+        "title": "Schematic MOS Devices",
+        "description": "Course Outline\n- Electrons and Holes in Semiconductors, E(k) Band Structure\n- Drift and Diffusion of Electrons and Holes\n- Metal–Semiconductor Junctions: ohmic contact of S/D, depletion region, tunneling\n- MOS Capacitor: Draw the band diagram at flat band, accumulation, weak inversion, and strong inversion. Vt tuning by flat band\n- MOS Transistor:  planar/SOI/FinFET/Nanosheets/CFET/transistor stacking and drain current/delay/power equations (PPA)\n- MOSFETs in ICs: Scaling, Leakage, SS\n- High Mobility (strain/SiGe), High K, and nanosheet/FinFET will be embedded in relevant chapters\nThis course will be taught in Chinese during the first semester and in English during the second semester (if any).\nTo strengthen students’ foundational knowledge of advanced semiconductor devices, particularly three-dimensional transistors, and prepare them for a smooth transition into industry after graduation. Transistor concepts are taught in a clear and accessible manner, thereby reducing the gap between academic learning and practical application.\nUnlike conventional device physics courses, this course does not emphasize rigorous derivation of complex physical equations. It focuses on building a solid understanding of fundamental physics and chemistry through intuitive methods, such as simple graphical analysis (e.g., band diagrams), using visual explanations to convey various physical and chemical phenomena.\nDuring winter and summer breaks, students are guided to study short courses from leading conferences such as IEDM and VLSI, allowing them to engage with cutting-edge research in state-of-the-art semiconductor processes and broaden their perspectives. Participation is optional.\nRequirements: Homework/Midterm Report (ppt)/Final (close book examination)",
+        "outline": null,
+        "credits": 2,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=943%20U0690&class=&dpt_code=9210&ser_no=20020&semester=114-2&lang=EN"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 32
+      }
+    },
+    {
+      "pairId": "INF2010:351",
+      "country": "TW",
+      "university": "National Taiwan University of Science and Technology (Taiwan Tech)",
+      "polyCourse": {
+        "sigle": "INF2010",
+        "title": "Structures de données et algorithmes",
+        "description": "Structures de données séquentielles : listes, piles, files, vecteurs. Manipulation des structures de données séquentielles : insertion, recherche et retrait d'éléments. Algorithmes de tri. Arbres binaires. Algorithmes de recherche dans un arbre. Mise en uvre des arbres équilibrés. Files de priorité. Structures de données pour manipulation de texte. Algorithmes de filtrage de chaînes de caractères. Implémentation de graphes. Algorithmes de parcours de graphes. Ensembles.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "IC2002",
+        "title": "Data Structures",
+        "description": "In computer science, data structures provide the essential framework for organizing and managing data efficiently. This course introduces both linear and non-linear data structures, including stacks, queues, linked lists, trees, and graphs. Students will not only learn the theoretical foundations of these structures but also master the analysis techniques required to evaluate program efficiency in real-world scenarios. By the end of this course, students will be equipped to select the most appropriate data structures and algorithmic strategies to solve practical computational problems, covering essential operations such as searching, sorting, and data traversal.\n本課程將講授：導論與演算法分析、陣列與結構、堆疊與佇列、鏈結串列、樹狀結構與搜尋樹、排序與優先佇列、圖形與網路演算法以及實務應用",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://querycourse.ntust.edu.tw/QueryCourse/api/coursedetials?semester=1151&course_no=IC2002301&language=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "INF2705:311",
+      "country": "TW",
+      "university": "National Taiwan University of Science and Technology (Taiwan Tech)",
+      "polyCourse": {
+        "sigle": "INF2705",
+        "title": "Infographie",
+        "description": "Modèles géométriques. Évolution des langages graphiques. Transformations affines : translation, rotation, homothétie. Projections parallèles et perspective. Pipeline des transformations : modélisation, visualisation, projection, clôture. Pipeline graphique programmable : nuanceurs de sommets, de tessellation, de géométrie, de fragments. Tests et opérations sur les fragments. Réflexion de la lumière et modèles d'illumination. Modèles de couleurs, modèles d'affichage, matériel graphique. Sélection graphique. Panneaux et lutins. Modélisation 3D : splines, courbes de Bézier, B-splines, B-splines rationnelles.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 3,
+          "personal": 3
+        }
+      },
+      "hostCourse": {
+        "code": "EE5628",
+        "title": "Machine Learning Techniques and Applications",
+        "description": "This course equips senior undergraduate and graduate students with fundamental machine learning knowledge and practical model-investigation skills using guided learning activities. Topics include classification, regression, clustering, dimensionality reduction, feature extraction, model evaluation, and introductory deep learning and reinforcement learning. Students are expected to explain modeling choices, interpret validation evidence, identify limitations, compare alternative approaches, and defend conclusions. As an EMI course, students will develop the ability to communicate technical ideas and experimental evidence in English through team investigations, peer questioning, Padlet-based evidence sharing, and oral defense. The four core competencies are Explain, Defend, Critique, and Reflect.\nThe course begins with the machine learning workflow, including data, features, labels, training, validation, testing, and model evaluation. Students then study major classification methods, including kNN, Naïve Bayes, discriminant analysis, decision trees, SVMs, ensemble methods, and neural networks. Regression topics include linear, robust and regularized regression, support vector regression, regression trees, ensembles, Gaussian processes, and neural networks. The course further covers clustering methods, dimensionality reduction, feature selection, and feature extraction from raw and time-varying signals. Deep learning is introduced through neural representations, transfer learning, training curves, and model limitations. The semester concludes with an evidence-based team symposium and an industry expert workshop on reinforcement learning, while class activities emphasize controlled comparison, evidence interpretation, peer questioning, and English technical communication.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://querycourse.ntust.edu.tw/QueryCourse/api/coursedetials?semester=1151&course_no=EE5628701&language=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 78,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "INF8085:308",
+      "country": "TW",
+      "university": "National Taiwan University of Science and Technology (Taiwan Tech)",
+      "polyCourse": {
+        "sigle": "INF8085",
+        "title": "Cybersécurité",
+        "description": "Définition, portée et objectifs de la sécurité informatique. Méthodologie d'analyse et de gestion du risque. Éléments de cryptographie et de cryptanalyse. Algorithmes de chiffrement à clé privée et à clé publique. Fonctions de hachage cryptographique. Signatures numériques. Gestion des clés et infrastructures à clés publiques. Sécurité des logiciels. Vulnérabilités typiques et techniques d'exploitation. Logiciels malveillants et contre-mesures. Sécurité des systèmes d'exploitation. Mécanismes d'authentification, contrôle d'accès et protection de l'intégrité. Modèles de gestion du contrôle d'accès. Sécurité des applications Web. Sécurité des réseaux. Configuration sécuritaire. Pare-feu, détecteur d'intrusions et serveur mandataire. Protocoles de réseaux sécurisés. Organisation et gestion de la sécurité informatique. Acteurs et types d'interventions. Normalisation et organismes pertinents. Cadre légal et déontologique.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "EE5515",
+        "title": "Cybersecurity and AI-based Analytics",
+        "description": "The course introduce: deep learning theories and practices for cybersecurity.\nWe will touch a wide variety of cybersecurity topics.\nIt consists of malware types, common cyber-attacks, cyber threat intelligence, and more about cybersecurity.\nWe will develop deep learning models to implement defense solutions to protect a host from those attacks.\nWe will catch up with state-of-the-arts by reading tier-1 conference / journal papers.\n此課程為進行人工智慧在資訊安全相關研究與專題的課程，給予學生對於現今人工智慧的在資訊安全上的攻擊、防禦等主題有深度的了解。課程涵蓋三個部分，第一部分會介紹惡意程式相關議題，包含動靜態分析、利用RNN、CNN等類神經網路的方法以偵測與分類惡意程式；在第二部分介紹紅隊演練模擬入侵攻擊，透過側錄系統事件行為、發展入侵檢測系統；第三部分介紹典型深度學習Embedding的演算法 與Attention機制，作為防禦惡意威脅與資訊安全相關工具開發。\n透過這堂課的學習，同學能夠了解資訊安全在防禦、偵測、辨識等的研究議題，以及進一步的實作類神經網路模型在資訊安全相關研究上的任務。\nPart A:\n\tComputer security concepts\n\tMalicious software\n\tMalware static and dynamic analysis\n\tThe basics of deep learning\n\tCNNs for malware static analysis\n\tRNNs for malware dynamic analysis / spam detection\nPart B:\n\tRed Team Emulation\n\tSecurity auditing\n\tIntrusion detection\n\tAttack detection\nPart C:\n\tWord embedding & Graph embedding\n\tEncoder-Decoder & Attention\n\tTransformer & BERT\nPart A:\n\t電腦安全概念\n\t惡意程式靜態與動態分析\n\t深度學習基礎介紹\n\t卷積神經網路於靜態分析\n\t遞歸神經網路於動態分析和惡意郵件偵測\nPart B:\n\t紅隊演練\n\t系統安全稽核日誌\n\t入侵檢測系統\n\t攻擊偵測系統\nPart C:\n\t詞嵌入與圖嵌入\n\t編碼器-解碼器與注意力機制\n\tTransformer & BERT Part A:\n\tComputer security concepts\n\tMalicious software\n\tMalware static and dynamic analysis\n\tThe basics of deep learning\n\tCNNs for malware static analysis\n\tRNNs for malware dynamic analysis / spam detection\nPart B:\n\tRed Team Emulation\n\tSecurity auditing\n\tIntrusion detection\n\tAttack detection\nPart C:\n\tWord embedding & Graph embedding\n\tEncoder-Decoder & Attention\n\tTransformer & BERT",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://querycourse.ntust.edu.tw/QueryCourse/api/coursedetials?semester=1142&course_no=EE5515701&language=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "INF8111:259",
+      "country": "TW",
+      "university": "National Taiwan University of Science and Technology (Taiwan Tech)",
+      "polyCourse": {
+        "sigle": "INF8111",
+        "title": "Fouille de données",
+        "description": "Fouille de données: concepts et contextualisation. Préparation, réduction et transformation de données. Tâches principales de la fouille de données et ses algorithmes. Détection de données aberrantes. Fouille de données sur des graphes et le web. Analyse de réseaux sociaux. Fouille de mégadonnées (Big Data): concepts, champs d'application, outils et paradigmes de programmation. Fouille de flots de données.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CS4807",
+        "title": "Data Mining",
+        "description": "This course will provide techniques of data mining for many real life applications. For example, it will cover algorithms for performing classification, regression, and clustering. Students will learn the theory behind the algorithms, and practice running the algorithms on many real life datasets. It will also cover up to date neural networks for deep learning and text mining (or NLP).\n1. 資料探勘簡介。\n2. 分類問題演算法。\n3. 迴歸問題演算法。\n4. 分群\n5. 關聯規則。\n6. 類神經網路及深度學習。\n7. 文件探勘及自然語言處理",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://querycourse.ntust.edu.tw/QueryCourse/api/coursedetials?semester=1142&course_no=CS4807304&language=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "INF8215:311",
+      "country": "TW",
+      "university": "National Taiwan University of Science and Technology (Taiwan Tech)",
+      "polyCourse": {
+        "sigle": "INF8215",
+        "title": "Intelligence artif.: méthodes et algorithmes",
+        "description": "- Notion d'intelligence artificielle et d'agents intelligents; - Stratégies de recherche; - Conception d'heuristiques; - Recherche en présence d'adversaires; - Méthodes de recherche locale; - Métaheuristiques; - Programmation par contraintes; - Agents logiques; - Logique des propositions; - Représentation des connaissances; - Vérification de modèles; - Algorithmes d'inférence; - Apprentissage automatique supervisé; - Réseaux de neurones; - Apprentissage non-supervisé; - Apprentissage par renforcement; - Considérations éthiques et sociétales",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "EE5628",
+        "title": "Machine Learning Techniques and Applications",
+        "description": "This course equips senior undergraduate and graduate students with fundamental machine learning knowledge and practical model-investigation skills using guided learning activities. Topics include classification, regression, clustering, dimensionality reduction, feature extraction, model evaluation, and introductory deep learning and reinforcement learning. Students are expected to explain modeling choices, interpret validation evidence, identify limitations, compare alternative approaches, and defend conclusions. As an EMI course, students will develop the ability to communicate technical ideas and experimental evidence in English through team investigations, peer questioning, Padlet-based evidence sharing, and oral defense. The four core competencies are Explain, Defend, Critique, and Reflect.\nThe course begins with the machine learning workflow, including data, features, labels, training, validation, testing, and model evaluation. Students then study major classification methods, including kNN, Naïve Bayes, discriminant analysis, decision trees, SVMs, ensemble methods, and neural networks. Regression topics include linear, robust and regularized regression, support vector regression, regression trees, ensembles, Gaussian processes, and neural networks. The course further covers clustering methods, dimensionality reduction, feature selection, and feature extraction from raw and time-varying signals. Deep learning is introduced through neural representations, transfer learning, training curves, and model limitations. The semester concludes with an evidence-based team symposium and an industry expert workshop on reinforcement learning, while class activities emphasize controlled comparison, evidence interpretation, peer questioning, and English technical communication.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://querycourse.ntust.edu.tw/QueryCourse/api/coursedetials?semester=1151&course_no=EE5628701&language=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "LOG2400:324",
+      "country": "TW",
+      "university": "National Taiwan University of Science and Technology (Taiwan Tech)",
+      "polyCourse": {
+        "sigle": "LOG2400",
+        "title": "Analyse et conception de logiciels",
+        "description": "Processus du génie logiciel et cycle de vie du logiciel . Phases du cycle de vie du logiciel: analyse, conception, réalisation, test, maintenance et exploitation. Activité d'analyse et de conception dans le processus du génie logiciel : principes, spécifications et méthodes. Méthodes d'analyse et de conception orientée-objet : langages et notation standards, modélisation structurelle, modélisation de comportement et modélisation architecturale. Décomposition en couches logicielles. Patrons de conception.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 2.5,
+          "personal": 3.5
+        }
+      },
+      "hostCourse": {
+        "code": "ET3405",
+        "title": "Computer Programming and Applications",
+        "description": "計算機概論、程式語言介紹、基本程式設計、進階程式設計、實例應用//Introduction to computers, programming languages introduce, basic programming design, advanced programming design, application examples.\nProvide knowledge and understanding of software engineering\nAnalysis and design of how to program in C/C++ languages\nFoundation and preview of any course needs programming skills, not just in EECS\n計算機概論、程式語言介紹、基本程式設計、進階程式設計、實例應用//Introduction to computers, programming languages introduce, basic programming design, advanced programming design, application examples.\nIntroduction\nOverview of Computer Programming\nOverview of C\nTop-Down Design with Functions\nSelection Structures\nRepetition and Loop\nPointers and Modular Programming\nArrays\nStrings\nRecursion\nDynamic Data Structures",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://querycourse.ntust.edu.tw/QueryCourse/api/coursedetials?semester=1151&course_no=ET3405301&language=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 71.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "MTH2304:293",
+      "country": "TW",
+      "university": "National Taiwan University of Science and Technology (Taiwan Tech)",
+      "polyCourse": {
+        "sigle": "MTH2304",
+        "title": "Probabilités et statistique appliquées",
+        "description": "Rôle des probabilités et de la statistique en ingénierie. Notions de calcul différentiel et intégral. Probabilités (ensemble, événement, espace échantillonnal, dénombrement, indépendance et probabilité conditionnelle, loi des probabilités totales et théorème de Bayes). Variables aléatoires discrètes et continues (fonction de répartition, fonction de masse, fonction de densité, espérance, lois classiques). Vecteurs de variables aléatoires (densité conjointe, lois conditionnelles et marginales, indépendance, covariance). Convergence des variables aléatoires (inégalité de Markov, inégalité de Tchebychev, loi des grands nombres, théorème limite central). Statistique descriptive (visualisation et description numérique). Estimation (ponctuelle et par intervalle, biais et variance des estimateurs). Test d'hypothèses (hypothèses nulle et alternative, statistique de test, risques de première et de deuxième espèce, puissance). Régression linéaire simple (hypothèses, estimation, intervalle de prédiction, qualité d'ajustement).",
+        "credits": 4,
+        "weeklyHours": {
+          "lecture": 4,
+          "lab": 2,
+          "personal": 6
+        }
+      },
+      "hostCourse": {
+        "code": "EE2022",
+        "title": "Probability",
+        "description": "This course begins by introducing probability models and their applications in the fields of electrical engineering and computer science. Next, we will cover the fundamental concepts of probability, including probability axioms, counting methods, conditional probability, independent events, and sequential experiments. We will then introduce the concept of random variables, exploring cumulative distribution functions (CDFs), probability density functions (PDFs), functions of random variables, expected values, Markov’s inequality, and various transforms. Subsequently, the course will extend the discussion of a single random variable to multiple random variables. Finally, we will investigate the properties of the sum of multiple random variables, introducing the sample mean, the Law of Large Numbers, and the Central Limit Theorem.\n1. Probability Models\n2. Probability Axioms\n3. Counting Methods\n4. Conditional Probability\n5. Independence\n6. Random Variables\n7. Mean and Variance\n8. Functions of Random Variable\n9. Transform Methods\n10. Sums of Random Variables\n11. Central Limit Theorem",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://querycourse.ntust.edu.tw/QueryCourse/api/coursedetials?semester=1142&course_no=EE2022303&language=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 4,
+        "polyEctsEquivalent": 8,
+        "polyWeeks": 13,
+        "polyContactHours": 78,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 18,
+        "hostContactHours": 54
+      }
+    },
+    {
+      "pairId": "INF2705:216",
+      "country": "TW",
+      "university": "National Yang Ming Chiao Tung University",
+      "polyCourse": {
+        "sigle": "INF2705",
+        "title": "Infographie",
+        "description": "Modèles géométriques. Évolution des langages graphiques. Transformations affines : translation, rotation, homothétie. Projections parallèles et perspective. Pipeline des transformations : modélisation, visualisation, projection, clôture. Pipeline graphique programmable : nuanceurs de sommets, de tessellation, de géométrie, de fragments. Tests et opérations sur les fragments. Réflexion de la lumière et modèles d'illumination. Modèles de couleurs, modèles d'affichage, matériel graphique. Sélection graphique. Panneaux et lutins. Modélisation 3D : splines, courbes de Bézier, B-splines, B-splines rationnelles.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 3,
+          "personal": 3
+        }
+      },
+      "hostCourse": {
+        "code": "IIAI30013",
+        "title": "Computer Vision",
+        "description": "This course aims to provide students with an in-depth understanding of the fundamental concepts and techniques in computer vision, including image formation, image feature extraction, 3D reconstruction, image segmentation, object recognition, deep learning, object detection, object tracking, and face recognition. Students will also gain proficiency in implementing and applying algorithms, models, and frameworks related to computer vision, equipping them to solve computer vision problems in various fields such as autonomous driving, smart homes, and medical image analysis.\nIn addition, the course features a special joint lecture by Dr. Chia-Ming Cheng (鄭嘉珉) from MediaTek’s AI Technology Division, who will share the latest industry insights and perspectives, offering students an in-depth exploration of real-world challenges and business opportunities in both research and end-product applications of computer vision.\nThrough this course, students will understand the limitations and challenges of existing computer vision applications and explore future development directions. By the end of the course, students will have developed the following abilities:\n\tStudents will possess basic knowledge and technical skills in computer vision and image processing.\n\tStudents will have sensitivity to emerging technologies and trends, along with strong analytical abilities.\n\tStudents will be capable of conducting independent research and development work, with competencies in teamwork and project management.\n\tStudents will have innovative thinking and problem-solving abilities, applying what they have learned to promote technological innovation and social progress.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=114&Sem=2&CrsNo=539100&lang=en-us"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 78,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "INF8107:116",
+      "country": "TW",
+      "university": "National Yang Ming Chiao Tung University",
+      "polyCourse": {
+        "sigle": "INF8107",
+        "title": "Détection d'intrusion et supervision",
+        "description": "Stratégie et outils de détection d'intrusion. Évaluation de la posture de défense. Types de menaces. Modèle de la chaine de frappe. Cadres Mitre att&ck et Mitre d3fend. Analyse des alertes (faux positifs/faux négatifs). Identification des schémas d'attaques. Supervision de la sécurité. Structure et fonctionnement d'un centre d'opérations de sécurité. Métriques et stratégies de réponse aux cyberincidents et gestion des priorités. Création et utilisation des livres de jeu et livres de course. Indicateurs de performance d'un centre d'opérations de sécurité. Déontologie d'un spécialiste cyberdéfense",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CSCS20049",
+        "title": "Computer Security Capstone",
+        "description": "This course provides an introduction to a variety of topics in computer security for juniors and seniors majoring in computer science. It covers four parts: (1) computer security technology and principles (cryptography, authentication, access Control, database Security, DoS, malicious software, intrusion detection, fi\frewall, etc.); (2) software security and trusted systems (bu\u000bffer overflow, software security, operating system security, etc.); (3) network security (internet security protocols, authentication app, etc.); (4) state-of-the-art security research.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=114&Sem=2&CrsNo=515605&lang=en-us"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "INF8725:163",
+      "country": "TW",
+      "university": "National Yang Ming Chiao Tung University",
+      "polyCourse": {
+        "sigle": "INF8725",
+        "title": "Traitement de signaux et d'images",
+        "description": "Analyse temporelle de signaux numériques : rapport signal / bruit, modélisation du bruit, convolution de signaux. Analyse spectrale du signal : spectres continus et discrets, transformée de Fourier, théorème d'échantillonnage. Filtres numériques : transformée en Z, filtres impulsionnels à réponse finie et infinie. Filtrage d'images : dans le domaine spatial, dans le domaine fréquentiel. Restauration d'images : filtres de régularisation, filtres de déconvolution. Segmentation d'images : détection de contours, détection de lignes par transformée de Hough, techniques de seuillage, segmentation de régions, segmentation par la transformée Watershed.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "EECM30045",
+        "title": "Digital Signal Processing",
+        "description": "The fundamentals of discrete-time (digital) signal processing will be introduced in this course. Students will learn how to represent discrete-time signals and systems and analyze them using mathematical tools including discrete-time Fourier transform, z-transform, and discrete Fourier transform. Practical aspects such as structures or implementations for discrete-time systems, filter design methods, and fast Fourier transform will be also covered.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=535357&lang=en-us"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "INF8770:130",
+      "country": "TW",
+      "university": "National Yang Ming Chiao Tung University",
+      "polyCourse": {
+        "sigle": "INF8770",
+        "title": "Technologies multimédias",
+        "description": "Techniques de codage des objets multimédia (extraits audio, images, séquences vidéo) : codage entropique et par dictionnaire. Techniques de compression des objets multimédia : techniques sans perte, techniques avec perte, utilisation des redondances temporelles. Artéfacts et qualité de la compression. Conteneurs multimédia et techniques de synchronisation multimédia. Tatouage numérique. Indexation des objets multimédia: décomposition en prises de vue, sélection d'images-clés, recherche par le contenu pictural/sonore. Interactions dans les applications multimédia : suivi d'un présentateur, reconnaissance de gestes.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CSIC30049",
+        "title": "Image Manipulation Techniques and Visual Effects",
+        "description": "Digital manipulation techniques are now popularly used to generate compelling, plausible, or exaggerative images for photo retouching or visual effects. In this course, we will introduce modern image analysis and synthesis techniques, e.g. image matting, segmentation, warping, compositing, inpainting, style transfer, and so forth. Students will learn the algorithms behind, such as objective optimization and deep learning. Students will develop intelligent editing tools for their projects.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=114&Sem=2&CrsNo=535655&lang=en-us"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "LOG3420:104",
+      "country": "TW",
+      "university": "National Yang Ming Chiao Tung University",
+      "polyCourse": {
+        "sigle": "LOG3420",
+        "title": "Analyse et spécif. des exigences du logiciel",
+        "description": "Exigences du logiciel: définition, typologie. Cycle de l'ingénierie des exigences: élicitation, analyse et validation, spécification, vérification. Prototypage. Techniques d'élicitation. Analyse des exigences: classification, modélisation conceptuelle, allocation, négociation, évaluation du risque. Validation des exigences: revues et inspections, tests d'acceptation. Techniques de spécification. Caractéristiques de qualité des exigences et vérification. Modélisation des exigences et méthodes agiles. Gestion des exigences. Études de cas.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CSCS10015",
+        "title": "Introduction to Computers and Programming",
+        "description": "1. Course Description\nThis course introduces the fundamental concepts of computer science and programming through the C programming language. Students will develop essential programming skills, computational thinking, problem-solving abilities, and an understanding of how software interacts with computer hardware.\nThe course covers both basic and advanced features of C, including data types, control structures, functions, arrays, pointers, strings, structures, memory management, and modular programming.\nIn addition to programming fundamentals, the course introduces modern software development practices, including **Git version control, GitHub repository management, code documentation, debugging, and collaborative software development**. Students will learn to organize programming assignments and projects using GitHub, maintain version histories, and develop good programming practices.\nThrough lectures, hands-on programming exercises, and GitHub-based assignments, students will gain the foundational knowledge required for advanced courses such as Data Structures, Computer Architecture, Operating Systems, and Software Engineering.\n2. Course Objectives and Learning Outcomes\nUpon successful completion of this course, students will be able to:\n1. Programming Fundamentals:** Understand and apply fundamental C programming concepts, including variables, data types, expressions, control structures, arrays, and functions.\n2. Computational Thinking:** Analyze computing problems and develop structured algorithms and efficient programming solutions.\n3. Advanced C Programming:** Apply pointers, strings, structures, dynamic memory allocation, and modular programming techniques to solve practical problems.\n4. Computer Systems Understanding:** Explain the basic relationships among source code, compilation, executable programs, memory, and computer hardware.\n5. Software Development Skills:** Develop, compile, execute, test, debug, and document C programs using standard development tools.\n6. Git and GitHub Project Management:** Use Git and GitHub for version control, repository organization, assignment submission, project documentation, and tracking development progress.\n7. Collaborative Programming:** Apply basic collaborative development practices, including branches, commits, pull requests, and code reviews.\n8. Independent Learning and Problem Solving:** Develop the ability to independently learn programming techniques, identify errors, and improve program quality.\n3. Course Content\nPart I. Basic Features of C Programming\n1. Introduction to Computer Science and C Programming\n- Overview of computer systems and programming languages\n- Algorithms and computational thinking\n- C development environment and compilation process\n2. C Fundamentals\n- Variables, constants, identifiers, and data types\n- Basic program structure and syntax\n3. Formatted Input and Output\n- `printf`, `scanf`, and standard input/output\n4. Expressions and Operators\n- Arithmetic, relational, logical, and assignment operators\n- Operator precedence and type conversion\n5. Selection Statements\n- `if`, `if-else`, and `switch`\n6. Iteration and Loops\n- `for`, `while`, and `do-while`\n- Nested loops and loop control\n7. Basic Data Types and Representations\n- Integers, floating-point numbers, and characters\n- Basic binary and hexadecimal representations\n8. Arrays\n- One-dimensional and multidimensional arrays\n- Array processing and basic algorithms\n9. Functions\n- Function declaration, definition, and invocation\n- Parameters, return values, and variable scope\n10. Program Organization\n- Header files and source files\n- Basic modular programming\nPart II. Advanced Features of C Programming\n1. Pointers and Memory Addresses\n- Pointer declaration and dereferencing\n- Memory addresses and pointer operations\n2. Pointers and Arrays\n- Array-pointer relationships\n- Passing arrays to functions\n3. Strings and Character Processing\n- Character arrays and string operations\n- Standard string library functions\n4. Structures and User-Defined Data Types\n- Structures, nested structures, and `typedef`\n5. Advanced Pointer Applications\n- Dynamic memory allocation\n- `malloc`, `calloc`, `realloc`, and `free`\n6. Program Design and Problem Solving\n- Program decomposition and modular design\n- Algorithm implementation and debugging\n7. Low-Level Programming Concepts\n- Memory layout and data representation\n- Bitwise operations and hardware-related programming\n8. File Input and Output\n- File operations and data processing\n9. Large Program Organization (Optional)\n- Multiple source files and reusable modules\n10. Preprocessor and Advanced Declarations (Optional)\n- Macros, conditional compilation, and declarations\nPart III. Software Development Practices and GitHub Project Management\n1. Introduction to Version Control\n- Basic concepts of Git and version control\n- Git installation and configuration\n2. GitHub Repository Management\n- Creating and organizing repositories\n- Repository structure and README documentation\n- Managing source code and project files\n3. Git-Based Development Workflow\n- `git clone`, `git add`, `git commit`, `git push`, and `git pull`\n- Tracking changes and maintaining version histories\n4. GitHub-Based Assignment Submission\n- Maintaining individual programming repositories\n- Submitting assignments through GitHub\n- Writing meaningful commit messages\n5. Project Management and Collaboration\n- GitHub Issues for task tracking\n- Branching and pull requests\n- Basic code review and collaborative development\n6. Software Quality and Documentation\n- Code readability and coding standards\n- Debugging and basic testing\n- README files and project documentation\n4. Teaching Methods\nThe course combines classroom lectures, programming demonstrations, hands-on exercises, and project-based learning.\nStudents will complete regular C programming assignments and maintain their source code using Git and GitHub. Selected assignments may involve collaborative development and basic project management practices.\n5. Programming Assignments and GitHub Requirements\nStudents are required to:\n1. Create and maintain a GitHub repository for course assignments and programming projects.\n2. Submit programming assignments through the designated GitHub workflow.\n3. Maintain meaningful commit histories that reflect programming progress.\n4. Provide appropriate source code documentation and README files.\n5. Follow basic coding standards and repository organization guidelines.\n6. Use GitHub Issues, branches, and pull requests for designated project assignments.\n7. Demonstrate independent programming, debugging, and problem-solving skills.\n6. Expected Learning Outcomes\nBy the end of the semester, students should be able to independently develop C programs, understand fundamental program execution and memory concepts, and use GitHub to manage source code and programming projects.\nThe course establishes a foundation for further study in data structures, algorithms, computer architecture, operating systems, and software engineering.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=515502&lang=en-us"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "LOG8715:104",
+      "country": "TW",
+      "university": "National Yang Ming Chiao Tung University",
+      "polyCourse": {
+        "sigle": "LOG8715",
+        "title": "Architecture de jeux vidéo",
+        "description": "Composantes d'un moteur de jeu, modèle orienté objet, modèle entité-composante-système, patrons de conception orientés données, archétypes. Décomposition d'une itération de boucle de jeu. Jouabilité. Profilage et débogage. Performance et gestion de mémoire : stratégies, optimisations, modèles de parallélisme, patrons de synchronisation de données. Intégration continue des jeux vidéo. Programmation de jeux multijoueurs: topologies réseaux des jeux, réplication d'objets, gestion de la latence et fiabilité, architecture réseau et types de jeu, mise à l'échelle, sécurité des jeux, jeu à la demande, infrastructure serveur et infonuagique.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CSCS10015",
+        "title": "Introduction to Computers and Programming",
+        "description": "1. Course Description\nThis course introduces the fundamental concepts of computer science and programming through the C programming language. Students will develop essential programming skills, computational thinking, problem-solving abilities, and an understanding of how software interacts with computer hardware.\nThe course covers both basic and advanced features of C, including data types, control structures, functions, arrays, pointers, strings, structures, memory management, and modular programming.\nIn addition to programming fundamentals, the course introduces modern software development practices, including **Git version control, GitHub repository management, code documentation, debugging, and collaborative software development**. Students will learn to organize programming assignments and projects using GitHub, maintain version histories, and develop good programming practices.\nThrough lectures, hands-on programming exercises, and GitHub-based assignments, students will gain the foundational knowledge required for advanced courses such as Data Structures, Computer Architecture, Operating Systems, and Software Engineering.\n2. Course Objectives and Learning Outcomes\nUpon successful completion of this course, students will be able to:\n1. Programming Fundamentals:** Understand and apply fundamental C programming concepts, including variables, data types, expressions, control structures, arrays, and functions.\n2. Computational Thinking:** Analyze computing problems and develop structured algorithms and efficient programming solutions.\n3. Advanced C Programming:** Apply pointers, strings, structures, dynamic memory allocation, and modular programming techniques to solve practical problems.\n4. Computer Systems Understanding:** Explain the basic relationships among source code, compilation, executable programs, memory, and computer hardware.\n5. Software Development Skills:** Develop, compile, execute, test, debug, and document C programs using standard development tools.\n6. Git and GitHub Project Management:** Use Git and GitHub for version control, repository organization, assignment submission, project documentation, and tracking development progress.\n7. Collaborative Programming:** Apply basic collaborative development practices, including branches, commits, pull requests, and code reviews.\n8. Independent Learning and Problem Solving:** Develop the ability to independently learn programming techniques, identify errors, and improve program quality.\n3. Course Content\nPart I. Basic Features of C Programming\n1. Introduction to Computer Science and C Programming\n- Overview of computer systems and programming languages\n- Algorithms and computational thinking\n- C development environment and compilation process\n2. C Fundamentals\n- Variables, constants, identifiers, and data types\n- Basic program structure and syntax\n3. Formatted Input and Output\n- `printf`, `scanf`, and standard input/output\n4. Expressions and Operators\n- Arithmetic, relational, logical, and assignment operators\n- Operator precedence and type conversion\n5. Selection Statements\n- `if`, `if-else`, and `switch`\n6. Iteration and Loops\n- `for`, `while`, and `do-while`\n- Nested loops and loop control\n7. Basic Data Types and Representations\n- Integers, floating-point numbers, and characters\n- Basic binary and hexadecimal representations\n8. Arrays\n- One-dimensional and multidimensional arrays\n- Array processing and basic algorithms\n9. Functions\n- Function declaration, definition, and invocation\n- Parameters, return values, and variable scope\n10. Program Organization\n- Header files and source files\n- Basic modular programming\nPart II. Advanced Features of C Programming\n1. Pointers and Memory Addresses\n- Pointer declaration and dereferencing\n- Memory addresses and pointer operations\n2. Pointers and Arrays\n- Array-pointer relationships\n- Passing arrays to functions\n3. Strings and Character Processing\n- Character arrays and string operations\n- Standard string library functions\n4. Structures and User-Defined Data Types\n- Structures, nested structures, and `typedef`\n5. Advanced Pointer Applications\n- Dynamic memory allocation\n- `malloc`, `calloc`, `realloc`, and `free`\n6. Program Design and Problem Solving\n- Program decomposition and modular design\n- Algorithm implementation and debugging\n7. Low-Level Programming Concepts\n- Memory layout and data representation\n- Bitwise operations and hardware-related programming\n8. File Input and Output\n- File operations and data processing\n9. Large Program Organization (Optional)\n- Multiple source files and reusable modules\n10. Preprocessor and Advanced Declarations (Optional)\n- Macros, conditional compilation, and declarations\nPart III. Software Development Practices and GitHub Project Management\n1. Introduction to Version Control\n- Basic concepts of Git and version control\n- Git installation and configuration\n2. GitHub Repository Management\n- Creating and organizing repositories\n- Repository structure and README documentation\n- Managing source code and project files\n3. Git-Based Development Workflow\n- `git clone`, `git add`, `git commit`, `git push`, and `git pull`\n- Tracking changes and maintaining version histories\n4. GitHub-Based Assignment Submission\n- Maintaining individual programming repositories\n- Submitting assignments through GitHub\n- Writing meaningful commit messages\n5. Project Management and Collaboration\n- GitHub Issues for task tracking\n- Branching and pull requests\n- Basic code review and collaborative development\n6. Software Quality and Documentation\n- Code readability and coding standards\n- Debugging and basic testing\n- README files and project documentation\n4. Teaching Methods\nThe course combines classroom lectures, programming demonstrations, hands-on exercises, and project-based learning.\nStudents will complete regular C programming assignments and maintain their source code using Git and GitHub. Selected assignments may involve collaborative development and basic project management practices.\n5. Programming Assignments and GitHub Requirements\nStudents are required to:\n1. Create and maintain a GitHub repository for course assignments and programming projects.\n2. Submit programming assignments through the designated GitHub workflow.\n3. Maintain meaningful commit histories that reflect programming progress.\n4. Provide appropriate source code documentation and README files.\n5. Follow basic coding standards and repository organization guidelines.\n6. Use GitHub Issues, branches, and pull requests for designated project assignments.\n7. Demonstrate independent programming, debugging, and problem-solving skills.\n6. Expected Learning Outcomes\nBy the end of the semester, students should be able to independently develop C programs, understand fundamental program execution and memory concepts, and use GitHub to manage source code and programming projects.\nThe course establishes a foundation for further study in data structures, algorithms, computer architecture, operating systems, and software engineering.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=515502&lang=en-us"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "PHS4700:167",
+      "country": "TW",
+      "university": "National Yang Ming Chiao Tung University",
+      "polyCourse": {
+        "sigle": "PHS4700",
+        "title": "Physique pour les applications multimédia",
+        "description": "Rappel des bases de la dynamique : forces, équations de conservation, corps rigides, problème à deux corps. Dynamique des particules : physique statistique, collisions et ralentissement, équation de transport et de la diffusion. Dynamique des milieux continus : lois de conservation, solides, vibrations et fréquence de résonance, fluides et écoulements, diffusion de particules dispersées dans des liquides. Ondes transverses : propagation des ondes en milieu infini, interférence, collision entre ondes et solides. Ondes longitudinales : acoustique et ondes de choc, interférences et pulsation, réflexion, atténuation et dispersion. Optique : sources de lumière, optique géométrique, réfraction, dispersion et diffusion, réflexion, modèle de sources et perception de la lumière.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 0,
+          "personal": 6
+        }
+      },
+      "hostCourse": {
+        "code": "EECM30075",
+        "title": "Statistical Mechanics",
+        "description": "This course is quantum statistical mechanics.\nQuantum Mechanics (535366) and Statistical Mechanics (535368) are combined classes to teach quantum physics.\nAs well-known, quantum physics is the basic scholar of modern science and technologies. It may be difficult for anyone to be a premier in nanotechnologies without the precise knowledge of quantum physics. However, what is  \"quantum\" appears quite strange to beginners. This class is then an introductory quantum physics for engineering students. In particular, we will hit what/how many guys misunderstand about quantum physics. For example, to solve Schrodinger equation differs from to know quantum physics. This just corresponds to the essence of quantum physics.  In quantum mechanics (535366), we will discuss mainly one quantum particle systems (ex., an electron). In Statistical Mechanics (535368), we will discuss many quantum particles system.\nNOTE: strongly recommend to attend the Statistical Mechanics (535366), too.\nI illustrate:\n1) relationship between quantum mechanics and device engineering,\n2) what the wavefunction is.\n3) what to solve Schrodinger equation is.--- what the observation is.\n4) several methods to solve Schrodinger equation.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=535365&lang=en-us"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 39,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": 16,
+        "hostContactHours": 48
+      }
+    },
+    {
+      "pairId": "INF3405:724",
+      "country": "JP",
+      "university": "Institute of Science Tokyo",
+      "polyCourse": {
+        "sigle": "INF3405",
+        "title": "Réseaux informatiques",
+        "description": "Classification des réseaux. Techniques de commutation. Architectures technologiques de transmission. Tramage, détection d'erreurs, contrôle du flot et contrôle d'erreurs par retransmission. Architecture des réseaux : modèle par couches, relations entre les couches et primitives de contrôle. Protocoles des réseaux locaux : Ethernet et réseaux sans fil. Architecture technologique TCP/IP (Transport Control Protocol/Internet Protocol) : modèle, adressage, protocoles et routage. Analyse de la qualité de service et modèles pour les réseaux informatiques. Mécanismes améliorant la qualité de service. IP version 6. Contrôle et analyse de la congestion avec TCP. Applications de TCP/IP. Efficacité énergétique d'un réseau informatique",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "EEE.S451",
+        "title": "Wireless Communication Engineering",
+        "description": "This course enables students to have basic techniques to design wireless communication systems such as wireless LANs and cellular systems as in our daily lives. By picking up IEEE802.11a as a representative of modern wireless communication system, the course gives details about technologies used in the system such as interference management, diversity combining, and multiplexing. At the end of the course, students will be able to understand the design concept, transceiver architecture, role of components, and specifications of IEEE802.11a wireless LAN. In the class, advanced knowledge on channel propagation, modulation/demodulation, diversity combining, error correction coding, adaptive modulation coding, adaptive equalizer, orthogonal frequency multiplexing, array signal processing, and MIMO multiplexing are lectured and all of them are mandatory technologies for modern wireless communication systems.\nBy the end of this course, students will be able to: 1) Design link budget of wireless communication systems at given environments.2) Understand transceiver architecture and its specifications of modern wireless LANs and cellular systems.3) Describe wireless communication systems mathematically by utilizing Fourier transform and applied probability and statistics4) Understand general technologies for interference, channel fading, and multiplexing used in modern wireless communication systems.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202606905?hl=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 15,
+        "hostContactHours": 30
+      }
+    },
+    {
+      "pairId": "INF8103:707",
+      "country": "JP",
+      "university": "Institute of Science Tokyo",
+      "polyCourse": {
+        "sigle": "INF8103",
+        "title": "Stratégie et modèles op. de la cybersécurité",
+        "description": "Modèle organisationnel de la cybersécurité. Modèles décentralisé et centralisé. Rôle et responsabilité d'une équipe de cybersécurité. Gouvernance, conformité, risques, architecture. Équipes rouge, bleue et violette. Rôle de l'ensemble des employés dans la cybersécurité d'une entreprise. Alignement de la cyberstratégie d'une organisation et de ses objectifs d'affaires. Identification des actifs associés aux risques d'affaires. Stratégie de rehaussement de la posture de sécurité. Acteurs de la menace. Plan de recouvrement. Gestion des risques.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CSC.T431",
+        "title": "Cyber-Physical Systems",
+        "description": "A cyber-physical system (CPS) is a collection of computational entities that communicate with one other and interact with the physical world via sensors and actuators. Such systems are omnipresent today, from automobiles to smart cities. In this course, basic concepts, theory, and issues of cyber-physical systems are examined. The course aims to ensure that students not only grasp the concepts, but also obtain basic skills to formally model and verify cyber-physical systems.\nBy the end of the course students should be able to:(1) explain the basic concepts of cyber-physical systems, reactive systems, synchronous/asynchronous computation models, dynamical systems, timed model, and hybrid systems.(2) have an understanding of safety/liveness properties of syncronous/asynchronous computation models.(3) have an understanding of the properties of dynamical systems, timed model, and hybrid systems.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-23-442323-0-0/202604862?hl=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 15,
+        "hostContactHours": 30
+      }
+    },
+    {
+      "pairId": "INF8215:739",
+      "country": "JP",
+      "university": "Institute of Science Tokyo",
+      "polyCourse": {
+        "sigle": "INF8215",
+        "title": "Intelligence artif.: méthodes et algorithmes",
+        "description": "- Notion d'intelligence artificielle et d'agents intelligents; - Stratégies de recherche; - Conception d'heuristiques; - Recherche en présence d'adversaires; - Méthodes de recherche locale; - Métaheuristiques; - Programmation par contraintes; - Agents logiques; - Logique des propositions; - Représentation des connaissances; - Vérification de modèles; - Algorithmes d'inférence; - Apprentissage automatique supervisé; - Réseaux de neurones; - Apprentissage non-supervisé; - Apprentissage par renforcement; - Considérations éthiques et sociétales",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "MCS.T403",
+        "title": "Statistical Learning Theory",
+        "description": "Advanced topics in the theory of statistics and machine learning are covered. Specifically, students learn about nonparametric learning methods known as kernel methods, the universal approximation theorem for neural network models, the statistical properties of training and prediction errors, and methods for analyzing generalization error.\n[Objectives] Statistical science and machine learning are disciplines in which useful information is extracted from data to aidprediction and decision making. Students will learn methodology not simply as knowledge but also learning the background theory including the validity of those methods to promote understanding the essence. Students will broadly apply all kinds of techniques to a variety of problems, learning to construct new techniques on one's own.[Topics] Students in this course will learn several of statistical science's more advanced techniques, based on their connection to various application fields. We will focus in particular on the connection with machine learning, introducing central topics from both statistical science and machine learning.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202604059?hl=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 15,
+        "hostContactHours": 30
+      }
+    },
+    {
+      "pairId": "INF8250E:734",
+      "country": "JP",
+      "university": "Institute of Science Tokyo",
+      "polyCourse": {
+        "sigle": "INF8250E",
+        "title": "Reinforcement Learning",
+        "description": "Introduction to Reinforcement Learning. Multi-armed bandits. Contextual Bandits. Finite Markov Decision Process. Dynamic Programming. Policy Iteration. Value Iteration. Monte Carlo Methods. Temporal Difference Learning. n-step bootstrapping. On-policy prediction with function approximation. on-policy control with function approximation. off-policy control with function approximation. Policy Gradient Methods. Model-based RL. Planning. Eligibility Traces. Hierarchical RL. POMDPs. inverse-RL. Exploration in RL. Offline RL.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "MCS.M421",
+        "title": "Discrete Optimization",
+        "description": "This course introduces a mathematical structure called matroids. To solve discrete optimization problems efficiently, we need to investigate structure of problems. A matroid, which is an abstraction of the notion of linear independence in vector spaces, is a fundamental structure in discrete optimization theory. This course begins with the definition and characterizations of matroids, and then shows properties of matroids and algorithms to solve discrete optimization problems with a matroid structure. The course also explains related topics and concepts such as the polyhedral aspects of matroids and submodular functions.\nThe aim of this course is to let students recognize that the matroid structure is essential for solving discrete optimization problem. It is often said that matroids appear in most of efficiently solvable discrete optimization problems. Knowledge on structures behind efficiently solvable problems will help you to solve your problem efficiently as much as possible.\nThe goals of this course are the following.1. Students explain basic properties of matroids and the importance in discrete optimization theory2. Students recognize basic discrete optimization problems having matroid structures3. Students explain algorithms for basic discrete optimization problems having matroid strictures",
+        "outline": null,
+        "credits": 2,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/4/1-22-442222-0-0/202631041?hl=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 15,
+        "hostContactHours": 30
+      }
+    },
+    {
+      "pairId": "INF8405:726",
+      "country": "JP",
+      "university": "Institute of Science Tokyo",
+      "polyCourse": {
+        "sigle": "INF8405",
+        "title": "Informatique mobile",
+        "description": "Informatique mobile et réseaux sans fil. Disponibilité ou présence en tous lieux et en tout temps. Gestion de mobilité et de localisation. Caractérisation d'applications mobiles. Architectures des réseaux à composantes mobiles : cadres théoriques et pratiques. Systèmes d'exploitation pour les dispositifs mobiles. Systèmes cellulaires et sans fil. Réseaux de prochaines générations. Nouvelles architectures de réseaux sans fil. Approches de déploiement d'applications dans les réseaux ad hoc et de capteurs. Infrastructures et protocoles supportant la mobilité. Qualité de service et routage pour applications mobiles. Développement de services évolués pour usagers mobiles. Internet des objets: architectures et applications.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "ICT.A418",
+        "title": "Human-Centric Information Systems II",
+        "description": "In the field of human-centric information systems, the instructor gives lectures on the topics include information processing, network, human interface, wave analysis, acoustic systems, signal processing, information theory, information processing system, and pattern recognition. The background science and hardware/software technologies related to information systems, and also the latest trends in this field, are introduced.This course is aiming at overviewing the research, development, and use of human-centric information systems, as well as complehensively understanding the technologies that support those systems.\nBy completing this course, students will be able to (1) Have a comprehensive understanding of modern information system technology such as fundamentals on psychophysics, statistics, measurement engineering, display engineering, and human interface. (2) Learn the background science and hardware/software technologies related to information systems, such as information processing, network, and human interface, together with the up-to-date trends in this field.(3) Apply those knowledge to their own researches.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-18-421818-0-0/202604681?hl=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 15,
+        "hostContactHours": 30
+      }
+    },
+    {
+      "pairId": "LOG2400:714",
+      "country": "JP",
+      "university": "Institute of Science Tokyo",
+      "polyCourse": {
+        "sigle": "LOG2400",
+        "title": "Analyse et conception de logiciels",
+        "description": "Processus du génie logiciel et cycle de vie du logiciel . Phases du cycle de vie du logiciel: analyse, conception, réalisation, test, maintenance et exploitation. Activité d'analyse et de conception dans le processus du génie logiciel : principes, spécifications et méthodes. Méthodes d'analyse et de conception orientée-objet : langages et notation standards, modélisation structurelle, modélisation de comportement et modélisation architecturale. Décomposition en couches logicielles. Patrons de conception.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 2.5,
+          "personal": 3.5
+        }
+      },
+      "hostCourse": {
+        "code": "EEE.D442",
+        "title": "Special Seminar on Semiconductor Memory",
+        "description": "In electrical/electronic engineering and information/communication engineering, it is important to understand the semiconductor memory technology to support the current electronics industry. Specific topics of lectures relate to semiconductor memory circuits, structures, manufacturing methods, design technology, testing technology, reliability, packaging technology and their production methods will be discussed to comprehensively understand.\n[Target] To understand the semiconductor memory to support the current electronics industry. In addition, we aim to be able to apply to the actual memory circuit design.[Theme] In this lecture on semiconductor memory circuits, their structures, production method, design technology, test technology, reliability, packaging technology and their production methods will be discussed to comprehensively understand for the foundamental on the electrical/electronic engineering and information communication engineering.Corresponding educational goals are:(1) Specialist skills: Fundamental specialist skills(4) Applied skills (inquisitive thinking and/or problem-finding skills) Organization and analysis(7) Skills acquiring a wide range of expertise, and expanding it into more advanced and other specialized areas",
+        "outline": null,
+        "credits": 1,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://syllabus.s.isct.ac.jp/courses/2026/2/1-17-421717-0-0/202630334?hl=en"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 71.5,
+        "hostCredits": 1,
+        "hostContactHoursPerCredit": 15,
+        "hostContactHours": 15
+      }
+    },
+    {
+      "pairId": "GCH2730:941",
+      "country": "CN",
+      "university": "Shanghai Jiao Tong University",
+      "polyCourse": {
+        "sigle": "GCH2730",
+        "title": "Énerg. et dév. durable dans les syst. infor.",
+        "description": "Analyse dimensionnelle. Variables utilisées dans les procédés : débit, pression, température et composition. Notion de procédé et principe de fonctionnement d'une pile. Équation générale de conservation de la matière. Bilans de matière sur des systèmes informatiques. Équilibre de phases. Réactions chimiques : réactif limitant et en excès, rendement, sélectivité. Bilans d'énergie sur des systèmes informatiques. Formes d'énergie dans un procédé. Calcul de l'enthalpie et état de référence. Premier principe de la thermodynamique. Procédure d'établissement des bilans d'énergie pour des procédés non-réactifs et réactifs. Électrochimie : oxydo-réduction, loi de Nernst, loi de Faraday. Effet Joule. Chaleur dissipée dans une pile. Bilans de matière et d'énergie dans une salle de serveurs. Développement durable : historique, concepts et outils de base. Introduction à l'analyse du cycle de vie. Place du développement durable dans les systèmes informatiques. Études de cas.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 2,
+          "personal": 4
+        }
+      },
+      "hostCourse": {
+        "code": "MATH4540J",
+        "title": "Boundary Value Problems for Partial Differential Equations",
+        "description": "Conservation laws and the derivation of PDEs from physical models; quasilinear first-order PDEs and\nthe method of characteristics; Burgers’s equation and weak solutions; shock waves; the eikonal equation and other\nnonlinear first-order PDEs; classification of quasilinear second-order PDEs and their transformation into normal\nform; boundary value problems of various kinds; the wave equation on an infinite string and d’Alembert’s method;\nthe heat equation in a finite bar and its solution through separation of variables; Fourier-Euler series and their\nconvergence; spaces of weighted square-integrable functions and the problem of best approximation; Sturm-\nLiouville boundary value problems; separation of variables for nonhomogeneous one-dimensional evolution\nequations; problems on infinite and semi-infinite bars and the Fourier transform; dispersive solutions; analysis of\nthe telegraph equation; separation of variables in higher dimensions; Bessel functions and Legendre polynomials;\nmultipole expansions in electromagnetics; the Poisson equation and properties of harmonic functions.",
+        "outline": null,
+        "credits": null,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/course-info/?id=476"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 65,
+        "hostCredits": null,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "INF8107:967",
+      "country": "CN",
+      "university": "Shanghai Jiao Tong University",
+      "polyCourse": {
+        "sigle": "INF8107",
+        "title": "Détection d'intrusion et supervision",
+        "description": "Stratégie et outils de détection d'intrusion. Évaluation de la posture de défense. Types de menaces. Modèle de la chaine de frappe. Cadres Mitre att&ck et Mitre d3fend. Analyse des alertes (faux positifs/faux négatifs). Identification des schémas d'attaques. Supervision de la sécurité. Structure et fonctionnement d'un centre d'opérations de sécurité. Métriques et stratégies de réponse aux cyberincidents et gestion des priorités. Création et utilisation des livres de jeu et livres de course. Indicateurs de performance d'un centre d'opérations de sécurité. Déontologie d'un spécialiste cyberdéfense",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "ECE6704J",
+        "title": "Advanced Computer Networks",
+        "description": "This is a graduate level course on computer networking, which will cover topics including network protocols, network measurement, network security, wireless networks, and etc. For each topic, we will first learn the fundamentals and then read related research papers. Students will work on assignments to practice what they have learned, and present and review several selected papers. Meanwhile, students will form groups to work on a research project related to computer networks and report their progresses in the form of presentations and technical papers.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/course-info/?id=333"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "INF8250E:867",
+      "country": "CN",
+      "university": "Shanghai Jiao Tong University",
+      "polyCourse": {
+        "sigle": "INF8250E",
+        "title": "Reinforcement Learning",
+        "description": "Introduction to Reinforcement Learning. Multi-armed bandits. Contextual Bandits. Finite Markov Decision Process. Dynamic Programming. Policy Iteration. Value Iteration. Monte Carlo Methods. Temporal Difference Learning. n-step bootstrapping. On-policy prediction with function approximation. on-policy control with function approximation. off-policy control with function approximation. Policy Gradient Methods. Model-based RL. Planning. Eligibility Traces. Hierarchical RL. POMDPs. inverse-RL. Exploration in RL. Offline RL.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CS3620J",
+        "title": "Mathematical Principles for Artificial Intelligence",
+        "description": "This course introduces the mathematical underpinnings of AI: uncertainty and information; optimization; reinforcement learning from multi‑armed bandits through Markov decision processes, Bellman equations, temporal‑difference learning, policy gradient theorem, to actor‑critic methods; and function approximation.",
+        "outline": "Uncertainty and Information in Intelligent Systems\nOptimization Foundations of Learning\nReinforcement Learning: From Bandits to ActorCritic\nFunction Approximation and Representation",
+        "credits": 4,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/course-info/?id=85957"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 4,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "INF8250E:979",
+      "country": "CN",
+      "university": "Shanghai Jiao Tong University",
+      "polyCourse": {
+        "sigle": "INF8250E",
+        "title": "Reinforcement Learning",
+        "description": "Introduction to Reinforcement Learning. Multi-armed bandits. Contextual Bandits. Finite Markov Decision Process. Dynamic Programming. Policy Iteration. Value Iteration. Monte Carlo Methods. Temporal Difference Learning. n-step bootstrapping. On-policy prediction with function approximation. on-policy control with function approximation. off-policy control with function approximation. Policy Gradient Methods. Model-based RL. Planning. Eligibility Traces. Hierarchical RL. POMDPs. inverse-RL. Exploration in RL. Offline RL.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "ECE7606J",
+        "title": "Stochastic Control and Reinforcement Learning",
+        "description": "Control and optimization of discrete-time and continuous-time Markov processes. Learning-based methods with exact or approximate solutions. Probability model, convergence of random variables. Countable-state Markov chains, continuous-state Markov chains, Foster-Lyapunov stability theory, Markov decision processes, dynamic programming. Continuous-time Markov processes, Poisson processes, queuing theory, infinitesimal generator, piecewise-deterministic Markov processes. Monte-Carlo method, temporal-difference method, approximate dynamic programming, Q learning, learning-based adaptive control. Applications include connected and autonomous vehicles, intelligent transportation systems, computer and communication systems, social networks, epidemics, and finance.",
+        "outline": null,
+        "credits": 3,
+        "cycle": "grad",
+        "language": "en",
+        "sourceUrl": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/course-info/?id=33989"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 3,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "LOG2440:891",
+      "country": "CN",
+      "university": "Shanghai Jiao Tong University",
+      "polyCourse": {
+        "sigle": "LOG2440",
+        "title": "Méthod. de dévelop. et conc. d'applic. Web",
+        "description": "Caractéristiques des logiciels pour le Web. Notions de client, de serveur et de logiciels distribués. Conception d'applications Web pour la génération dynamique de contenu et la gestion d'interactions avec les utilisateurs. Structure d'un document HTML (HyperText Markup Language). Mise en forme d'un document HTML par l'utilisation de CSS (Cascading Style Sheet). Programmation du côté client et du côté serveur. Présentation générale de l'architecture du web et du protocole HTTP (HyperText Transfer Protocol). Approches à la vérification: stratégie et planification des tests, évaluation de tests. Tests unitaires et tests d'intégration. Tests à boîte noire, vérification fonctionnelle d'une application et tests d'acceptation.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "ECE2800J",
+        "title": "Programming and Introductory Data Structures",
+        "description": "Techniques for algorithm development and effective programming; Testing and program correctness; Program language syntax and static and runtime semantics; Procedure abstraction, recursion, and parameter passing methods; Abstract data type, inheritance, template, and polymorphism; Structured data types, pointers, arrays, linked data structures, stacks, and queues.",
+        "outline": "Linux basics and compiling program on Linux\nReview of C++ Basics, such as array, pointer, etc.\nProcedural abstraction, function call mechanism, and recursion\nFunction pointer\nEnum\nProgram arguments\nTesting\nDebugging\nIO\nException\nAbstract data type and class\nInheritance and virtual function\nInterface (i.e., abstract base class)\nRepresentation invariant\nDynamic memory allocation and dynamic arrays\nOverloaded constructor, destructor, copy constructor, and overloaded assignment operator\nOperator overloading and friend mechanism\nLinked list (including linked list traversal)\nStack and queue\nPolymorphism, template, and STL",
+        "credits": 4,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/course-info/?id=246"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 4,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "LOG8100:881",
+      "country": "CN",
+      "university": "Shanghai Jiao Tong University",
+      "polyCourse": {
+        "sigle": "LOG8100",
+        "title": "DevSecOps - Opérations et dév. logiciel sécur",
+        "description": "Introduction à la sécurité logicielle. Analyse des vulnérabilités, testing de sécurité, stratégies de mitigation. Sécurité multi-niveau des systèmes numériques. Sécuriser la périphérie, sécuriser le logiciel, sécuriser les données (encryption), contrôle d'accès et authentification. Développement de logiciel sécuritaire. Exigences de sécurité, conformité à l'ENS, sécurité par conception, patrons et antipatrons pour la sécurité logicielle (codage sécuritaire). Introduction aux DevOps, intégration et déploiement continus, containeurs et microservices. Introduction aux DevSecOps, monitorage et mitigation des menaces dynamiques, automatisation des réponses aux menaces. Systèmes auto-adaptatifs et auto-protecteurs. Analyse des risques des vulnérabilités et des menaces sécuritaires.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "CS4890J",
+        "title": "Computer Networks",
+        "description": "This course covers basic system architecture, protocol stack, and algorithms and protocols of computer communication networks. Students will get the basic knowledge of computer network architectures, services, applications, and protocol models; study protocols in different layers including physical, data link, network, and transport layers; understand transmission media, switching, multiple access arbitration, network routing, congestion control, flow contro, multicast, and security; and learn the detailed Internet architecture.",
+        "outline": "Network services and network applications\nComputer network architecture\nPhysical layer: architecture, ??modulation, coding, and error control\nData link layer: functionalities and framing\nARQ schemes, performance, and analysis\nFlow control and time recovery, Link layer multiplexing, queuing.\nMedium access control\nNetwork layer and routing protocols/algorithms\nPacket-level traffic management: scheduling and prioritization\nFlow-level traffic management: admission control, leaky bucket, token bucket\nTransport layer: TCP and UDP\nInternet architecture/socket programming",
+        "credits": 4,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://gc.sjtu.edu.cn/academics/courses/courses-by-number/course-info/?id=449"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 4,
+        "hostContactHoursPerCredit": null,
+        "hostContactHours": null
+      }
+    },
+    {
+      "pairId": "INF3710:800",
+      "country": "JP",
+      "university": "Tohoku University",
+      "polyCourse": {
+        "sigle": "INF3710",
+        "title": "Fichiers et bases de données",
+        "description": "Introduction aux fichiers et bases de données. Analyse de besoins : modèle entité-association. Modèle relationnel : concepts de base et algèbre relationnelle. Norme SQL (Standard Query Language) : langages de définition, de manipulation et de contrôle de données. Langage SQL enchâssé dans un langage algorithmique de programmation. Notions de contrôle d'accès concurrents et de gestion de transactions. Conception d'un schéma de base de données relationnelle : dépendances fonctionnelles et formes normales. Modèles de stockage de relations et de fichiers. Structures auxiliaires facilitant l'accès aux données : indexage et adressage dispersé.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "VJ254F83",
+        "title": "Basic Computer Science",
+        "description": "This course provides an overview of some research fields of computer science to bridge fundamental theories of\ncomputer science with the cutting-edge research in our department. The course consists of algorithm theory,\ncommunication network, and parallel computing.\nStudents will come to understand the association between the fundamental knowledge about computer science and the\nresearch activities. The emphasis will be on giving a broad overview of the research areas in computer science.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/09/VJ254F83-Basic-Computer-Science.pdf"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 22.5
+      }
+    },
+    {
+      "pairId": "INF8107:797",
+      "country": "JP",
+      "university": "Tohoku University",
+      "polyCourse": {
+        "sigle": "INF8107",
+        "title": "Détection d'intrusion et supervision",
+        "description": "Stratégie et outils de détection d'intrusion. Évaluation de la posture de défense. Types de menaces. Modèle de la chaine de frappe. Cadres Mitre att&ck et Mitre d3fend. Analyse des alertes (faux positifs/faux négatifs). Identification des schémas d'attaques. Supervision de la sécurité. Structure et fonctionnement d'un centre d'opérations de sécurité. Métriques et stratégies de réponse aux cyberincidents et gestion des priorités. Création et utilisation des livres de jeu et livres de course. Indicateurs de performance d'un centre d'opérations de sécurité. Déontologie d'un spécialiste cyberdéfense",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "TB15204",
+        "title": "Fundamentals of Information Science I",
+        "description": "The objective of this course is for students to learn the basic structure and operating principles of computers. Starting\nwith the history of computing, the course will explain the mechanisms of how computers work. The ultimate goal is to\nhelp students grasp the fundamental concepts behind computer design and operation, enabling them to deeply\nunderstand software behavior and utilize computers more effectively.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/04/Fundamental-Science1.pdf"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 22.5
+      }
+    },
+    {
+      "pairId": "INF8175:800",
+      "country": "JP",
+      "university": "Tohoku University",
+      "polyCourse": {
+        "sigle": "INF8175",
+        "title": "Intelligence artif.: méthodes et algorithmes",
+        "description": "Notion d'intelligence artificielle et d'agents intelligents. Stratégies de recherche. Conception d'heuristiques. Recherche en présence d'adversaires. Méthodes de recherche locale. Métaheuristiques. Programmation par contraintes. Agents logiques. Logique des propositions. Représentation des connaissances. Vérification de modèles. Algorithmes d'inférence. Apprentissage automatique supervisé. Réseaux de neurones. Apprentissage non-supervisé. Apprentissage par renforcement. Considérations éthiques et sociétales.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "VJ254F83",
+        "title": "Basic Computer Science",
+        "description": "This course provides an overview of some research fields of computer science to bridge fundamental theories of\ncomputer science with the cutting-edge research in our department. The course consists of algorithm theory,\ncommunication network, and parallel computing.\nStudents will come to understand the association between the fundamental knowledge about computer science and the\nresearch activities. The emphasis will be on giving a broad overview of the research areas in computer science.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/09/VJ254F83-Basic-Computer-Science.pdf"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 22.5
+      }
+    },
+    {
+      "pairId": "INF8215:798",
+      "country": "JP",
+      "university": "Tohoku University",
+      "polyCourse": {
+        "sigle": "INF8215",
+        "title": "Intelligence artif.: méthodes et algorithmes",
+        "description": "- Notion d'intelligence artificielle et d'agents intelligents; - Stratégies de recherche; - Conception d'heuristiques; - Recherche en présence d'adversaires; - Méthodes de recherche locale; - Métaheuristiques; - Programmation par contraintes; - Agents logiques; - Logique des propositions; - Représentation des connaissances; - Vérification de modèles; - Algorithmes d'inférence; - Apprentissage automatique supervisé; - Réseaux de neurones; - Apprentissage non-supervisé; - Apprentissage par renforcement; - Considérations éthiques et sociétales",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "TB15212",
+        "title": "Fundamentals of Information Science II",
+        "description": "Aims: Students will acquire basic knowledge about algorithms and data structures.\nDescriptions: Evaluation methods and programming techniques for making good programs are discussed.\nGoal: On completing the course, students will have the ability to design and making good programs.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/04/d4c0fcb493db2ac50133094c60c5fcfd.pdf"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 22.5
+      }
+    },
+    {
+      "pairId": "INF8402:800",
+      "country": "JP",
+      "university": "Tohoku University",
+      "polyCourse": {
+        "sigle": "INF8402",
+        "title": "Sécurité des réseaux fixes et mobiles",
+        "description": "Sécurité des réseaux informatiques fixes et mobiles. Normes de sécurité des réseaux. Sécurité des technologies et des protocoles utilisés dans les réseaux informatiques fixes : réseaux Ethernet, réseaux TCP/IP (Transport Control Protocol/Internet Protocol) et particularités des réseaux IP. Sécurité des technologies et des protocoles utilisés dans les réseaux informatiques mobiles incluant les réseaux ad hoc, les réseaux de capteurs et les réseaux téléphoniques mobiles. Sécurité du système IMS (Internet Multimedia Subsystem) et des réseaux pair-à-pair. Technologies de sécurité des réseaux : réseaux privés virtuels et les réseaux locaux virtuels.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "VJ254F83",
+        "title": "Basic Computer Science",
+        "description": "This course provides an overview of some research fields of computer science to bridge fundamental theories of\ncomputer science with the cutting-edge research in our department. The course consists of algorithm theory,\ncommunication network, and parallel computing.\nStudents will come to understand the association between the fundamental knowledge about computer science and the\nresearch activities. The emphasis will be on giving a broad overview of the research areas in computer science.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/09/VJ254F83-Basic-Computer-Science.pdf"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 22.5
+      }
+    },
+    {
+      "pairId": "LOG8415E:800",
+      "country": "JP",
+      "university": "Tohoku University",
+      "polyCourse": {
+        "sigle": "LOG8415E",
+        "title": "Advanced Concepts of Cloud Computing",
+        "description": "Key concepts of cloud computing. Key mechanisms and key architectures of cloud computing platforms. Service delivery models of a cloud computing architecture. Virtualization. Big data analytics with MapReduce and NoSQL. Migration of applications to the cloud. Cloud computing patterns. Interoperability issues in the cloud. Quality of Service metrics and Service Level Agreement (SLA). Dependability and security in the cloud. Legal issues related to cloud computing. Mobile cloud computing.",
+        "credits": 3,
+        "weeklyHours": {
+          "lecture": 3,
+          "lab": 1.5,
+          "personal": 4.5
+        }
+      },
+      "hostCourse": {
+        "code": "VJ254F83",
+        "title": "Basic Computer Science",
+        "description": "This course provides an overview of some research fields of computer science to bridge fundamental theories of\ncomputer science with the cutting-edge research in our department. The course consists of algorithm theory,\ncommunication network, and parallel computing.\nStudents will come to understand the association between the fundamental knowledge about computer science and the\nresearch activities. The emphasis will be on giving a broad overview of the research areas in computer science.",
+        "outline": null,
+        "credits": 2,
+        "cycle": "undergrad",
+        "language": "en",
+        "sourceUrl": "https://www.insc.tohoku.ac.jp/english/wp-content/uploads/2026/09/VJ254F83-Basic-Computer-Science.pdf"
+      },
+      "workload": {
+        "creditSystem": "local",
+        "polyCredits": 3,
+        "polyEctsEquivalent": 6,
+        "polyWeeks": 13,
+        "polyContactHours": 58.5,
+        "hostCredits": 2,
+        "hostContactHoursPerCredit": 11.25,
+        "hostContactHours": 22.5
+      }
+    }
+  ]
+}

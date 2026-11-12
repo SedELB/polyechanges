@@ -58,8 +58,11 @@ function pseudo(text: string): number {
   return Math.round(((h >>> 0) / 2 ** 32) * 1000) / 1000;
 }
 
-/** Base neuve avec les universités, les cours et les résultats de chaque version donnée. */
-export function seedContestDb(versions: string[]): Db {
+/**
+ * Base neuve avec les universités, les cours et les résultats de chaque version donnée.
+ * Deux versions de même `simKey` donnent les mêmes similarités, donc les mêmes classements.
+ */
+export function seedContestDb(versions: string[], simKey: (version: string) => string = (v) => v): Db {
   const db = openDb(':memory:');
   upsertPolyCourses(db, POLY_SIGLES.map(poly));
   for (const u of UNIVERSITIES) {
@@ -75,7 +78,7 @@ export function seedContestDb(versions: string[]): Db {
         matchRow(
           sigle,
           h.id,
-          [1, 2, 3, 4, 5].map((n) => pseudo(`${version}|${sigle}|${h.code}|${n}`)),
+          [1, 2, 3, 4, 5].map((n) => pseudo(`${simKey(version)}|${sigle}|${h.code}|${n}`)),
           'conforme',
           h.description === '' ? 'titre' : 'description',
         ),

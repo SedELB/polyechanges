@@ -10,7 +10,7 @@ import {
   recordRun,
 } from '../calibration/contest.js';
 import { formatReport, type CandidateLine } from '../calibration/report.js';
-import { drawSample, parsePairId, sampleFile, SAMPLE_SIZE, type SampleFile } from '../calibration/sample.js';
+import { drawConsensusSample, drawSample, parsePairId, sampleFile, SAMPLE_SIZE, type SampleFile } from '../calibration/sample.js';
 import { computedJudgments, gridSearch, JUDGMENTS, pickWinner, type Judgment } from '../calibration/score.js';
 import { runCompare } from '../compare/compare.js';
 import { createLocalEmbedder, type Embedder } from '../criterion/embedder.js';
@@ -22,6 +22,8 @@ import { syncUniversities } from '../partners/registry.js';
 const CALIBRATION_DIR = 'data/calibration';
 const SAMPLE_FILE = join(CALIBRATION_DIR, 'sample.json');
 const JUDGMENTS_FILE = join(CALIBRATION_DIR, 'judgments.json');
+const SAMPLE_2_FILE = join(CALIBRATION_DIR, 'sample-2.json');
+const JUDGMENTS_2_FILE = 'data/calibration/judgments-2.json';
 const RUNS_FILE = join(CALIBRATION_DIR, 'runs.json');
 const EXCLUDED_FILE = join(CALIBRATION_DIR, 'excluded.json');
 const REPORT_FILE = join(CALIBRATION_DIR, 'report.txt');
@@ -32,6 +34,7 @@ const USAGE = [
   '  npm run calibrate:prepare -- <slug> [--notions <fichier>]   prépare data/criterion/contest-<slug>/',
   '  npm run calibrate:run -- <slug> [--notions <fichier>]       prépare, compare et mesure le candidat',
   '  npm run calibrate:sample -- --seed <n>                      tire data/calibration/sample.json',
+  '  npm run calibrate:sample-2 -- --seed <n>                    tire data/calibration/sample-2.json (consensus des candidats)',
   '  npm run calibrate:score                                     calibre chaque candidat et écrit report.txt',
 ].join('\n');
 
@@ -116,6 +119,22 @@ function sample(args: string[]): void {
   for (const p of file.pairs) byUniversity.set(p.university, (byUniversity.get(p.university) ?? 0) + 1);
   console.log(`${file.pairs.length} paires tirées parmi ${versions.length} candidats (graine ${seed}) dans ${SAMPLE_FILE} :`);
   for (const [u, n] of [...byUniversity].sort()) console.log(`  ${u} : ${n}`);
+}
+
+/** Deuxième échantillon : paires du consensus des candidats, hors paires du premier échantillon. */
+function sample2(args: string[]): void {
+  const seed = Number(option(args, '--seed'));
+  if (!Number.isInteger(seed)) throw new Error('Indique une graine entière : npm run calibrate:sample-2 -- --seed 43');
+  const versions = contestVersionsOnDisk();
+  const first = JSON.parse(readFileSync(SAMPLE_FILE, 'utf8')) as SampleFile;
+  const polyWeeks = loadCriterion('v0').params.polyWeeks;
+  const file = withDb((db) =>
+    sampleFile(db, drawConsensusSample(db, versions, seed, SAMPLE_SIZE, first.pairs.map((p) => p.pairId)), seed, polyWeeks, JUDGMENTS_2_FILE),
+  );
+  writeFileSync(SAMPLE_2_FILE, `${JSON.stringify(file, null, 2)}\n`, 'utf8');
+  const n = file.pairs.length;
+  console.log(`${n} paires du consensus (graine ${seed}) dans ${SAMPLE_2_FILE}.`);
+  if (n < SAMPLE_SIZE) console.log(`Seulement ${n} candidats hors des paires déjà jugées : tous sont pris.`);
 }
 
 const judgmentSchema = z.enum(JUDGMENTS as [Judgment, ...Judgment[]]);
@@ -210,6 +229,7 @@ async function main(): Promise<number> {
     if (command === 'prepare' && slug) prepare(slug, args);
     else if (command === 'run' && slug) await run(slug, args);
     else if (command === 'sample') sample(args);
+    else if (command === 'sample-2') sample2(args);
     else if (command === 'score') score();
     else {
       console.error(USAGE);

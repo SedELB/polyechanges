@@ -3,7 +3,15 @@ import { upsertCriterionVersion } from '../db/criterion.js';
 import { activeHostCourses } from '../db/hostCourses.js';
 import { replaceMatches } from '../db/matches.js';
 import type { Db } from '../db/open.js';
-import { drawSample, pairIdOf, parsePairId, sampleFile, topCandidates } from './sample.js';
+import {
+  consensusCandidates,
+  drawConsensusSample,
+  drawSample,
+  pairIdOf,
+  parsePairId,
+  sampleFile,
+  topCandidates,
+} from './sample.js';
 import { matchRow, seedContestDb, UNIVERSITIES } from './testDb.js';
 
 const universityOf = (db: Db, hostCourseId: number): string =>
@@ -108,5 +116,69 @@ describe('sampleFile', () => {
     for (const forbidden of ['contest-', 'score', 'Score', 'notion', 'level', '"tres"', 'conforme', 'MiniLM']) {
       expect(text).not.toContain(forbidden);
     }
+  });
+});
+
+describe('drawConsensusSample', () => {
+  const versions = ['contest-a', 'contest-b', 'contest-c'];
+  let db: Db;
+  let firstOfA: Set<string>;
+  beforeEach(() => {
+    // contest-a et contest-b classent pareil : leur premier de chaque groupe a 2 voix sur 3
+    db = seedContestDb(versions, (v) => (v === 'contest-c' ? 'c' : 'ab'));
+    const rows = db
+      .prepare(
+        `SELECT m.poly_sigle, m.host_course_id, h.university_id, m.content_score, m.notion_sims FROM matches m
+         JOIN host_courses h ON h.id = m.host_course_id WHERE m.criterion_version = 'contest-a' AND m.text_used <> 'titre'`,
+      )
+      .all() as { poly_sigle: string; host_course_id: number; university_id: string; content_score: number; notion_sims: string }[];
+    const mean = (j: string) => {
+      const v = Object.values(JSON.parse(j) as Record<string, number>);
+      return v.reduce((a, b) => a + b, 0) / v.length;
+    };
+    const best = new Map<string, (typeof rows)[number]>();
+    for (const r of rows) {
+      const k = `${r.poly_sigle}|${r.university_id}`;
+      const b = best.get(k);
+      const better =
+        !b ||
+        r.content_score > b.content_score ||
+        (r.content_score === b.content_score && (mean(r.notion_sims) > mean(b.notion_sims) ||
+          (mean(r.notion_sims) === mean(b.notion_sims) && r.host_course_id < b.host_course_id)));
+      if (better) best.set(k, r);
+    }
+    firstOfA = new Set([...best.values()].map((r) => pairIdOf(r.poly_sigle, r.host_course_id)));
+  });
+
+  it('les candidats sont les premiers d’au moins 2 versions, par cours de Poly et par université, jamais « titre »', () => {
+    const candidates = consensusCandidates(db, versions);
+    // 6 cours de Poly x 3 universités décrites ; contest-c peut ajouter une voix, jamais un candidat de plus
+    expect(candidates).toEqual(firstOfA);
+    expect(candidates.size).toBe(18);
+  });
+
+  it('même tirage avec la même graine, sans paire déjà jugée, seulement des candidats du consensus', () => {
+    const exclude = [...firstOfA].slice(0, 3);
+    const a = drawConsensusSample(db, versions, 43, 6, exclude);
+    expect(a).toEqual(drawConsensusSample(db, versions, 43, 6, exclude));
+    expect(a).toHaveLength(6);
+    for (const p of a) {
+      expect(exclude).not.toContain(p.pairId);
+      expect(firstOfA.has(p.pairId)).toBe(true);
+    }
+    expect(drawConsensusSample(db, versions, 44, 6, exclude)).not.toEqual(a);
+  });
+
+  it('répartit les paires entre les universités comme le premier tirage', () => {
+    const a = drawConsensusSample(db, versions, 43, 6, []);
+    const count = (u: string) => a.filter((p) => universityOf(db, p.hostCourseId) === u).length;
+    expect([count('alpha-tw'), count('beta-jp'), count('gamma-kr')]).toEqual([2, 2, 2]);
+  });
+
+  it('prend tous les candidats quand il y en a moins que demandé', () => {
+    const exclude = [...firstOfA].slice(0, 3);
+    const a = drawConsensusSample(db, versions, 43, 60, exclude);
+    expect(a).toHaveLength(15);
+    expect(new Set(a.map((p) => p.pairId))).toEqual(new Set([...firstOfA].filter((id) => !exclude.includes(id))));
   });
 });
