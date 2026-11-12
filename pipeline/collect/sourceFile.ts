@@ -24,6 +24,8 @@ const sourceFileSchema = z.object({
   role: z.literal('enrich').optional(),
   /** `none` : la source ne publie aucune description, seulement des titres. */
   descriptions: z.literal('none').optional(),
+  /** Année du catalogue d'où viennent les descriptions de cette source, quand il est plus ancien que la liste des cours. */
+  descriptionsDated: z.string().regex(/^\d{4}$/).optional(),
   /** Explication en français, obligatoire quand `descriptions` vaut `none`. */
   descriptionsNote: z.string().optional(),
 });

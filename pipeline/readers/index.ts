@@ -5,3 +5,5 @@ import './ncku-tw-syllabus.js';
 import './nagoya-jp.js';
 import './sjtu-cn.js';
 import './kaist-kr.js';
+import './snu-kr.js';
+import './snu-kr-catalog.js';

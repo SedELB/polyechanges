@@ -117,6 +117,19 @@ describe('parseSourceFile, descriptions non publiées', () => {
   });
 });
 
+describe('parseSourceFile, descriptions datées', () => {
+  const base = { id: 'k', universityId: 'u', kind: 'pdf', urls: ['https://a.example/c.pdf'], reader: 'r' };
+  it('accepte une année de catalogue', () => {
+    expect(parseSourceFile({ ...base, descriptionsDated: '2020' }).descriptionsDated).toBe('2020');
+  });
+  it('refuse une valeur qui n’est pas une année', () => {
+    expect(() => parseSourceFile({ ...base, descriptionsDated: '2018-2020' })).toThrow();
+  });
+  it('sans le champ, rien ne change', () => {
+    expect(parseSourceFile(base).descriptionsDated).toBeUndefined();
+  });
+});
+
 describe('loadSourceFiles', () => {
   it('une fiche invalide est nommée dans l’erreur', () => {
     const dir = mkdtempSync(join(tmpdir(), 'polyechanges-'));

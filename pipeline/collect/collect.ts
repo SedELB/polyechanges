@@ -217,7 +217,7 @@ export async function collectUniversity(
     let found: HostCourseInput[];
     try {
       ({ pages, snapshots } = await sourcePages(db, fetcher, source, rawDir, opts));
-      found = getReader(source.reader)(pages);
+      found = await getReader(source.reader)(pages);
     } catch (err) {
       return fail(named(source, err instanceof Error ? err.message : String(err)));
     }

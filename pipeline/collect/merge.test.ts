@@ -52,6 +52,14 @@ describe('mergeCourses', () => {
     expect(res.courses[0].course).toMatchObject({ title: 'Titre officiel', credits: 2, level: 'grad' });
   });
 
+  it('un titre en coréen cède la place au premier titre sans hangul, même d’une source moins prioritaire', () => {
+    const main = source('main', [located(course('A1', { title: '알고리즘' }))]);
+    const catalogue = source('cat', [located(course('A1', { title: 'Algorithms', description: 'Sorting.' }))], 0, true);
+    expect(mergeCourses([main, catalogue]).courses[0].course.title).toBe('Algorithms');
+    const korean = source('cat', [located(course('A1', { title: '자료구조' }))], 0, true);
+    expect(mergeCourses([main, korean]).courses[0].course.title).toBe('알고리즘');
+  });
+
   it('à priorité égale, la première source dans l’ordre des fiches l’emporte', () => {
     const res = mergeCourses([
       source('a', [located(course('C1', { title: 'Titre A' }))]),

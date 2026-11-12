@@ -24,6 +24,8 @@ export interface HostCourseOut {
   sourceLine: number | null;
   /** Empreinte de la copie brute d'où vient le cours. */
   snapshotSha256: string | null;
+  /** Année du catalogue d'où vient la description, quand elle est plus ancienne que la liste des cours (absent sinon). */
+  descriptionsDated?: string;
 }
 
 export interface MatchOut {

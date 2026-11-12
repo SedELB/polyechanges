@@ -94,6 +94,27 @@ beforeEach(() => {
 const read = (name: string) => JSON.parse(readFileSync(join(tmp, `${name}.json`), 'utf8'));
 
 describe('exportSiteData', () => {
+  it('porte l’année du catalogue sur les cours dont la description vient d’une source datée, et seulement eux', async () => {
+    const sourcesDir = mkdtempSync(join(tmpdir(), 'sources-'));
+    writeFileSync(
+      join(sourcesDir, 'ntu-tw-catalogue.json'),
+      JSON.stringify({
+        id: 'ntu-tw-catalogue', universityId: 'ntu-tw', kind: 'pdf', urls: ['https://h.example/B2'],
+        reader: 'r', role: 'enrich', descriptionsDated: '2020',
+      }),
+    );
+    await exportSiteData(db, 'v0', tmp, criterionDir, sourcesDir);
+    const byCode = Object.fromEntries(read('host-courses').map((c: { code: string }) => [c.code, c]));
+    expect(byCode.B2.descriptionsDated).toBe('2020');
+    expect('descriptionsDated' in byCode.A1).toBe(false);
+  });
+
+  it('sans source datée, le fichier des cours n’a aucun champ descriptionsDated', async () => {
+    const sourcesDir = mkdtempSync(join(tmpdir(), 'sources-'));
+    await exportSiteData(db, 'v0', tmp, criterionDir, sourcesDir);
+    expect(readFileSync(join(tmp, 'host-courses.json'), 'utf8')).not.toContain('descriptionsDated');
+  });
+
   it('écrit les six fichiers, indentés de 2 espaces, avec saut de ligne final', async () => {
     await exportSiteData(db, 'v0', tmp, criterionDir);
     expect(readdirSync(tmp).sort()).toEqual(SITE_DATA_FILES.map((f) => `${f}.json`).sort());

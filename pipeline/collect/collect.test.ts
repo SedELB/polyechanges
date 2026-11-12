@@ -318,6 +318,17 @@ describe('source enregistrée d’une université d’accueil', () => {
 
   const opts = () => ({ rootDir: tmp });
 
+  it('un lecteur asynchrone (extraction d’un PDF) est attendu avant la fusion', async () => {
+    registerReader('lignes-async', async (pages) => {
+      await new Promise((resolve) => setTimeout(resolve, 5));
+      return pages.map((p) => ({ ...course('Z1'), sourceUrl: p.url }));
+    });
+    const file = save('async.txt', 'Z1 - Cours lu en différé\n');
+    const source = parseSourceFile({ id: 'ntu-async', universityId: 'ntu', kind: 'saved', urls: [listUrl()], files: [file], reader: 'lignes-async' });
+    const res = await collectSource(db, fetcher, source, join(tmp, 'raw'), NOW, opts());
+    expect(res).toEqual({ status: 'ok', diff: { added: ['Z1'], removed: [], modified: [] }, reason: null });
+  });
+
   it('lit une page enregistrée sans requête réseau : copie brute, date du fichier, position du code', async () => {
     const file = save('liste.html', '<html><body><h1>Cours</h1><p>A1 - Intro</p><p>B2 - Algo</p></body></html>');
     const source = parseSourceFile({ id: 'ntu-liste', universityId: 'ntu', kind: 'saved', urls: [listUrl()], files: [file], reader: 'test' });

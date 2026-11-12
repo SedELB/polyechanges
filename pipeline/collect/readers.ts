@@ -1,15 +1,19 @@
 import type { HostCourseInput } from '../../shared/types.js';
 import { manualReader } from './manualReader.js';
 
-export type Reader = (pages: { url: string; body: Buffer; contentType: string }[]) => HostCourseInput[];
+type Pages = { url: string; body: Buffer; contentType: string }[];
 
-const readers = new Map<string, Reader>();
+export type Reader = (pages: Pages) => HostCourseInput[];
+/** Lecteur asynchrone : l'extraction du texte d'un PDF l'est. */
+export type AsyncReader = (pages: Pages) => Promise<HostCourseInput[]>;
 
-export function registerReader(name: string, reader: Reader): void {
+const readers = new Map<string, Reader | AsyncReader>();
+
+export function registerReader(name: string, reader: Reader | AsyncReader): void {
   readers.set(name, reader);
 }
 
-export function getReader(name: string): Reader {
+export function getReader(name: string): Reader | AsyncReader {
   const reader = readers.get(name);
   if (!reader) throw new Error(`Lecteur inconnu : ${name}`);
   return reader;

@@ -1,8 +1,9 @@
-import { mkdirSync, renameSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { HostCourseOut, MatchOut, SiteData, SiteMeta } from '../../shared/siteData.js';
 import { SITE_DATA_FILES } from '../../shared/siteData.js';
 import type { Level, Notion, University } from '../../shared/types.js';
+import { loadSourceFiles } from '../collect/sourceFile.js';
 import { CRITERION_DIR, loadCriterion } from '../criterion/loadCriterion.js';
 import type { Db } from '../db/open.js';
 import { listPolyCourses } from '../db/polyCourses.js';
@@ -24,7 +25,19 @@ function assertExportable(db: Db, universities: University[]): void {
   }
 }
 
-function hostCourses(db: Db): HostCourseOut[] {
+/** Année du catalogue pour chaque adresse de source dont la fiche porte `descriptionsDated`. */
+function datedUrls(sourcesDir: string): Map<string, string> {
+  const dated = new Map<string, string>();
+  if (!existsSync(sourcesDir)) return dated;
+  for (const source of loadSourceFiles(sourcesDir)) {
+    if (source.descriptionsDated === undefined) continue;
+    for (const url of source.urls) dated.set(url, source.descriptionsDated);
+  }
+  return dated;
+}
+
+function hostCourses(db: Db, sourcesDir: string): HostCourseOut[] {
+  const dated = datedUrls(sourcesDir);
   const rows = db
     .prepare(
       `SELECT h.id, h.university_id, h.code, h.title, h.description, h.credits, h.contact_hours, h.language,
@@ -64,6 +77,8 @@ function hostCourses(db: Db): HostCourseOut[] {
     sourcePage: r.source_page,
     sourceLine: r.source_line,
     snapshotSha256: r.sha256,
+    // Seule l'adresse d'une description tirée d'un catalogue daté porte l'année (la description donne l'adresse du cours).
+    ...(r.description.trim() !== '' && dated.has(r.source_url) ? { descriptionsDated: dated.get(r.source_url) } : {}),
   }));
 }
 
@@ -120,7 +135,13 @@ const sortedNotions = (notions: Record<string, Notion[]>): Record<string, Notion
  * Écrit les JSON du site dans `outDir`. Tout est préparé dans un dossier voisin puis renommé :
  * un échec ne laisse jamais d'export partiel.
  */
-export async function exportSiteData(db: Db, version: string, outDir: string, criterionDir: string = CRITERION_DIR): Promise<void> {
+export async function exportSiteData(
+  db: Db,
+  version: string,
+  outDir: string,
+  criterionDir: string = CRITERION_DIR,
+  sourcesDir: string = 'data/sources',
+): Promise<void> {
   const criterion = loadCriterion(version, criterionDir);
   const universities = (db.prepare('SELECT id FROM universities ORDER BY id').all() as { id: string }[])
     .map((r) => getUniversity(db, r.id))
@@ -137,7 +158,7 @@ export async function exportSiteData(db: Db, version: string, outDir: string, cr
     meta,
     universities,
     polyCourses: listPolyCourses(db),
-    hostCourses: hostCourses(db),
+    hostCourses: hostCourses(db, sourcesDir),
     matches: matches(db, version),
     notions: sortedNotions(criterion.notions),
   };
