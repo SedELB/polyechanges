@@ -512,13 +512,13 @@
   "INF8111": [
     {
       "id": "data-preparation-and-transformation",
-      "fr": "préparation et transformation des données",
-      "en": "data preparation and transformation"
+      "fr": "préparation et transformation des données pour la fouille",
+      "en": "data preparation and transformation for data mining"
     },
     {
       "id": "data-reduction",
-      "fr": "réduction de données",
-      "en": "data reduction"
+      "fr": "réduction de données pour la fouille",
+      "en": "data reduction for data mining"
     },
     {
       "id": "data-mining-tasks",
@@ -1641,28 +1641,28 @@
   "LOG3420": [
     {
       "id": "requirements-classification",
-      "fr": "typologie des exigences",
-      "en": "requirements classification"
+      "fr": "typologie des exigences du logiciel",
+      "en": "software requirements classification"
     },
     {
       "id": "requirements-elicitation",
-      "fr": "élicitation des exigences",
-      "en": "requirements elicitation"
+      "fr": "élicitation des exigences du logiciel",
+      "en": "software requirements elicitation"
     },
     {
       "id": "requirements-analysis",
-      "fr": "analyse des exigences",
-      "en": "requirements analysis"
+      "fr": "analyse des exigences du logiciel",
+      "en": "software requirements analysis"
     },
     {
       "id": "requirements-validation",
-      "fr": "validation des exigences",
-      "en": "requirements validation"
+      "fr": "validation des exigences du logiciel",
+      "en": "software requirements validation"
     },
     {
       "id": "requirements-specification",
-      "fr": "spécification des exigences",
-      "en": "requirements specification"
+      "fr": "spécification des exigences du logiciel",
+      "en": "software requirements specification"
     },
     {
       "id": "software-prototyping",
@@ -1671,8 +1671,8 @@
     },
     {
       "id": "requirements-negotiation",
-      "fr": "négociation des exigences",
-      "en": "requirements negotiation"
+      "fr": "négociation des exigences du logiciel",
+      "en": "software requirements negotiation"
     },
     {
       "id": "risk-assessment",
@@ -1681,13 +1681,13 @@
     },
     {
       "id": "requirements-and-agile-methods",
-      "fr": "exigences et méthodes agiles",
-      "en": "requirements and agile methods"
+      "fr": "exigences du logiciel et méthodes agiles",
+      "en": "software requirements and agile methods"
     },
     {
       "id": "requirements-management",
-      "fr": "gestion des exigences",
-      "en": "requirements management"
+      "fr": "gestion des exigences du logiciel",
+      "en": "software requirements management"
     }
   ],
   "LOG3430": [
@@ -1698,8 +1698,8 @@
     },
     {
       "id": "testing-method-classification",
-      "fr": "classification des méthodes de test",
-      "en": "testing method classification"
+      "fr": "classification des méthodes de test du logiciel",
+      "en": "classification of software testing methods"
     },
     {
       "id": "structural-testing",
@@ -1723,13 +1723,13 @@
     },
     {
       "id": "statistical-validation",
-      "fr": "approches statistiques en validation",
-      "en": "statistical validation"
+      "fr": "approches statistiques en validation et vérification du logiciel",
+      "en": "statistical approaches to software verification and validation"
     },
     {
       "id": "software-reliability",
-      "fr": "fiabilité du logiciel",
-      "en": "software reliability"
+      "fr": "méthodes de développement pour assurer la fiabilité du logiciel",
+      "en": "development methods for software reliability"
     },
     {
       "id": "test-planning",
@@ -2109,13 +2109,13 @@
     },
     {
       "id": "profiling-and-debugging",
-      "fr": "profilage et débogage",
-      "en": "profiling and debugging"
+      "fr": "profilage et débogage des jeux",
+      "en": "game profiling and debugging"
     },
     {
       "id": "memory-management",
-      "fr": "gestion de la mémoire",
-      "en": "memory management"
+      "fr": "performance et gestion de la mémoire des jeux",
+      "en": "game performance and memory management"
     },
     {
       "id": "parallelism-models",

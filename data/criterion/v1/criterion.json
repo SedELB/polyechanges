@@ -1,0 +1,22 @@
+{
+  "version": "v1",
+  "model": {
+    "slug": "minilm",
+    "id": "Xenova/all-MiniLM-L6-v2",
+    "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+    "dtype": "fp32",
+    "pooling": "mean",
+    "prefixes": {
+      "notion": "",
+      "passage": ""
+    },
+    "sizeMillions": 23,
+    "library": "@huggingface/transformers@4.3.2"
+  },
+  "detectThreshold": 0.55,
+  "bandHigh": 0.6,
+  "bandLow": 0.3,
+  "workloadTolerance": 0.15,
+  "polyWeeks": 13,
+  "titleOnlyMaxLevel": "faible"
+}

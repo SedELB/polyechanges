@@ -6,3 +6,22 @@ v0 - 2026-11-10
   Seuils de départ : détection d'une notion 0.55, contenu « très » à partir de 0.7, « partiel » à partir de 0.4, tolérance de charge 15 %.
   Semaines de session à Poly : 13 (à vérifier : aucune source plus précise n'a été trouvée).
   Grilles de notions : INF3710, LOG3430 et INF2610 seulement. Les grilles des autres cours comparés viendront plus tard.
+
+v1 - 2026-11-12
+  Version gelée, choisie par un concours de modèles et calibrée sur 120 paires jugées à l'aveugle.
+  Modèle : Xenova/all-MiniLM-L6-v2 (révision 751bff37182d3f1213fa05d7196b954e230abad9, fp32, moyenne des vecteurs, sans préfixe), via @huggingface/transformers 4.3.2. Même modèle que v0.
+  Seuils : détection d'une notion 0.55, contenu « très » à partir de 0.60, « partiel » à partir de 0.30, tolérance de charge 15 %, 13 semaines de session à Poly.
+  Nouvelle règle : une paire comparée sur le titre seul (description non publiée) ne dépasse pas le niveau « faible ». Un titre ne permet pas de vérifier le contenu.
+  Grilles de notions : les 45 cours comparés. Celles de v0, corrigées une fois après le premier calcul de l'accord : 15 notions dans 4 cours (INF8111, LOG3420, LOG3430, LOG8715). Seules des notions trop générales, retrouvées à tort dans des cours sans rapport, ont été précisées d'après la description officielle du cours (par exemple « requirements analysis » devient « software requirements analysis »). Les mêmes jugements ont servi à corriger et à mesurer : le gain (0.825 à 0.842 pour le meilleur modèle, 0.800 à 0.817 pour MiniLM) est donc optimiste.
+
+  Concours des modèles (détail : data/calibration/report.txt)
+  Six candidats, chacun épinglé par un hachage de commit (data/criterion/candidates/) : all-MiniLM-L6-v2 (23 M de paramètres), bge-base-en-v1.5 (109 M), EmbeddingGemma 300m (303 M), Qwen3-Embedding 0.6B (596 M), et deux modèles plus récents : EmbeddingGemma 2 (270 M pour la partie texte) et harrier-oss-v1-270m (268 M). Les autres modèles récents écartés et leurs raisons sont dans data/calibration/excluded.json.
+  Chaque candidat a comparé toutes les paires avec les mêmes grilles ; ses seuils ont été cherchés sur une grille (détection 0.40 à 0.70, « très » 0.60 à 0.85, « partiel » 0.30 à 0.50, par pas de 0.05).
+  Deux échantillons de 60 paires décrites, chacun jugé par un juge distinct qui n'a vu ni le code du critère, ni les scores, ni les modèles :
+    - échantillon 1 (data/calibration/sample.json, graine 42) : 4 paires sur 5 parmi les 3 meilleurs cours d'accueil de chaque candidat, par cours de Poly et par université, et le reste au hasard. Jugements : élevée 0, moyenne 1, faible 12, pas équivalent 47.
+    - échantillon 2 (data/calibration/sample-2.json, graine 43), ajouté parce que le premier comptait trop peu d'équivalences : cours d'accueil classés premiers par au moins 2 candidats. Jugements : élevée 3, moyenne 5, faible 14, pas équivalent 38.
+  Accord sur les 120 paires, avec les grilles corrigées (kappa de Cohen entre parenthèses) :
+    Qwen3-Embedding 0.6B 0.842 (0.608) ; all-MiniLM-L6-v2 0.817 (0.539) ; harrier-oss-v1-270m 0.783 (0.535) ; bge-base-en-v1.5 0.767 (0.335) ; EmbeddingGemma 300m 0.767 (0.409) ; EmbeddingGemma 2 0.267 (0.095).
+  Un critère qui répondrait « pas équivalent » partout obtiendrait 0.708. La barre fixée pour geler était 0.858 (0.80, et 0.15 de plus que ce critère trivial) : aucun candidat ne l'atteint.
+  Choix des étudiants : all-MiniLM-L6-v2 (0.817, kappa 0.539) plutôt que Qwen3-Embedding 0.6B (0.842). L'écart est de 3 paires sur 120, et MiniLM est bien plus léger pour les cohortes suivantes : 91 Mo et moins d'une minute de calcul, contre 2,4 Go et 34 minutes. Aucune paire jugée « faible » ou « pas équivalent » ne sort « élevée » avec MiniLM.
+  Résultats sur la base au gel (62 280 paires) : élevée 11, moyenne 114, faible 346, sans niveau 61 809 (v0 : élevée 5, moyenne 55, faible 165, sans niveau 62 055).

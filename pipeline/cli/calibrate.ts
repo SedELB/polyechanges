@@ -1,6 +1,7 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { z } from 'zod';
+import { cleanContest } from '../calibration/clean.js';
 import {
   contestVersion,
   contestVersionsOnDisk,
@@ -24,7 +25,7 @@ import {
   type Judgment,
 } from '../calibration/score.js';
 import { runCompare } from '../compare/compare.js';
-import { createLocalEmbedder, type Embedder } from '../criterion/embedder.js';
+import { createLocalEmbedder, embedderKey, type Embedder } from '../criterion/embedder.js';
 import { CRITERION_DIR, loadCriterion } from '../criterion/loadCriterion.js';
 import { modelsDir } from '../criterion/modelsDir.js';
 import { openDb, type Db } from '../db/open.js';
@@ -46,7 +47,9 @@ const USAGE = [
   '  npm run calibrate:run -- <slug> [--notions <fichier>]       prépare, compare et mesure le candidat',
   '  npm run calibrate:sample -- --seed <n>                      tire data/calibration/sample.json',
   '  npm run calibrate:sample-2 -- --seed <n>                    tire data/calibration/sample-2.json (consensus des candidats)',
-  '  npm run calibrate:score [-- --out <fichier>]               calibre chaque candidat et écrit report.txt',
+  '  npm run calibrate:score [-- --out <fichier>] [--chosen <version> --reason <texte>]',
+  '                                                              calibre chaque candidat et écrit report.txt',
+  '  npm run calibrate:clean                                     après le gel : retire le concours de la base',
 ].join('\n');
 
 /** Version exacte de transformers.js épinglée dans package.json. */
@@ -219,20 +222,34 @@ function score(args: string[]): void {
     });
     const winner = pickWinner(candidates.map((c) => ({ version: c.version, sizeMillions: c.sizeMillions, agreement: c.result.agreement })));
     const computed = computedBy.get(winner) as Record<string, Judgment>;
-    const disagreements = ids
-      .filter((id) => computed[id] !== judgments[id])
-      .map((id) => {
-        const { label, entry } = sampleOf.get(id) as { label: string; entry: SampleFile['pairs'][number] };
-        const { polySigle } = parsePairId(id);
-        return {
-          pairId: id,
-          sample: label,
-          label: `${polySigle} / ${entry.university} ${entry.hostCourse.code} ${entry.hostCourse.title}`,
-          computed: computed[id],
-          judged: judgments[id],
-          reason: reasons[id] ?? null,
-        };
-      });
+    const disagreementsOf = (c: Record<string, Judgment>) =>
+      ids
+        .filter((id) => c[id] !== judgments[id])
+        .map((id) => {
+          const { label, entry } = sampleOf.get(id) as { label: string; entry: SampleFile['pairs'][number] };
+          const { polySigle } = parsePairId(id);
+          return {
+            pairId: id,
+            sample: label,
+            label: `${polySigle} / ${entry.university} ${entry.hostCourse.code} ${entry.hostCourse.title}`,
+            computed: c[id],
+            judged: judgments[id],
+            reason: reasons[id] ?? null,
+          };
+        });
+    // Candidat retenu par les étudiants, quand ce n'est pas le gagnant : sa matrice et ses désaccords sont ajoutés.
+    const chosenVersion = option(args, '--chosen');
+    const chosenComputed = chosenVersion ? computedBy.get(chosenVersion) : undefined;
+    if (chosenVersion && !chosenComputed) throw new Error(`Candidat choisi inconnu : ${chosenVersion}`);
+    const chosen =
+      chosenVersion && chosenComputed
+        ? {
+            version: chosenVersion,
+            reason: option(args, '--reason') ?? 'choix des étudiants',
+            confusion: confusionMatrix(pairsOf(chosenComputed, ids)),
+            disagreements: disagreementsOf(chosenComputed),
+          }
+        : undefined;
     const counts = (values: Judgment[]) =>
       Object.fromEntries(JUDGMENTS.map((j) => [j, values.filter((x) => x === j).length])) as Record<Judgment, number>;
     const levels = db
@@ -254,13 +271,30 @@ function score(args: string[]): void {
       candidates,
       winner,
       confusion: confusionMatrix(pairsOf(computed, ids)),
-      disagreements,
+      disagreements: disagreementsOf(computed),
+      chosen,
       excluded,
       v0Levels: { total: levels.reduce((a, l) => a + l.n, 0), byLevel: Object.fromEntries(levels.map((l) => [l.level, l.n])) },
     });
     writeFileSync(out, text, 'utf8');
     console.log(text);
   });
+}
+
+/** Taille de la base, journal WAL compris, en octets. */
+const dbBytes = (): number =>
+  [DB_FILE, `${DB_FILE}-wal`, `${DB_FILE}-shm`].reduce((n, f) => n + (existsSync(f) ? statSync(f).size : 0), 0);
+
+/** Après le gel : retire de la base les résultats du concours et les vecteurs des modèles qu'aucune version vN n'utilise. */
+function clean(): void {
+  const versions = readdirSync(CRITERION_DIR).filter((d) => /^v\d+$/.test(d) && existsSync(join(CRITERION_DIR, d, 'criterion.json')));
+  const keep = [...new Set(versions.map((v) => embedderKey(loadCriterion(v).params.model)))].sort();
+  const before = dbBytes();
+  const removed = withDb((db) => cleanContest(db, keep));
+  const after = dbBytes();
+  console.log(`Modèles gardés : ${keep.join(', ')} (versions ${versions.join(', ')}).`);
+  console.log(`Supprimés : ${removed.matches} résultats du concours, ${removed.versions} versions du concours, ${removed.embeddings} vecteurs.`);
+  console.log(`Base : ${(before / 1e6).toFixed(0)} Mo avant, ${(after / 1e6).toFixed(0)} Mo après.`);
 }
 
 async function main(): Promise<number> {
@@ -272,6 +306,7 @@ async function main(): Promise<number> {
     else if (command === 'sample') sample(args);
     else if (command === 'sample-2') sample2(args);
     else if (command === 'score') score(args);
+    else if (command === 'clean') clean();
     else {
       console.error(USAGE);
       return 1;

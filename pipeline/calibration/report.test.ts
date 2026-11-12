@@ -67,3 +67,24 @@ describe('formatReport', () => {
     expect(formatReport(input(0.85))).toContain('cible 0.858 : non atteinte');
   });
 });
+
+describe('formatReport, choix des étudiants', () => {
+  it('ajoute la matrice et les désaccords du candidat choisi, avec ses seuils', () => {
+    const text = formatReport({
+      ...input(0.875),
+      chosen: {
+        version: 'contest-minilm',
+        reason: 'presque le même accord, bien plus léger',
+        confusion: confusionMatrix([{ computed: 'elevee', judged: 'faible' }]),
+        disagreements: [
+          { pairId: 'LOG3430:9', sample: 'échantillon 1', label: 'LOG3430 / X T1 Testing', computed: 'elevee', judged: 'faible', reason: null },
+        ],
+      },
+    });
+    expect(text).toContain('Choix des étudiants : contest-minilm (accord 0.7 ; seuils 0.50 / 0.70 / 0.40) : presque le même accord, bien plus léger');
+    expect(text).toContain('Matrice de confusion de contest-minilm');
+    expect(text).toMatch(/faible\s+1\s+0\s+0\s+0/);
+    expect(text).toContain('Paires en désaccord pour contest-minilm (1)');
+    expect(text).toContain('LOG3430:9');
+  });
+});

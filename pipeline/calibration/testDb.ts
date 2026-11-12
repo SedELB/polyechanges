@@ -62,8 +62,12 @@ function pseudo(text: string): number {
  * Base neuve avec les universités, les cours et les résultats de chaque version donnée.
  * Deux versions de même `simKey` donnent les mêmes similarités, donc les mêmes classements.
  */
-export function seedContestDb(versions: string[], simKey: (version: string) => string = (v) => v): Db {
-  const db = openDb(':memory:');
+export function seedContestDb(
+  versions: string[],
+  simKey: (version: string) => string = (v) => v,
+  file = ':memory:',
+): Db {
+  const db = openDb(file);
   upsertPolyCourses(db, POLY_SIGLES.map(poly));
   for (const u of UNIVERSITIES) {
     upsertUniversity(db, university(u.id, u.country));

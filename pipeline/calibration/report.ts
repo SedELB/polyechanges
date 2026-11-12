@@ -50,6 +50,8 @@ export interface ReportInput {
   /** Matrice de confusion du gagnant : `confusion[jugé][calculé]`. */
   confusion: Record<Judgment, Record<Judgment, number>>;
   disagreements: Disagreement[];
+  /** Candidat retenu par les étudiants quand ce n'est pas le gagnant. */
+  chosen?: { version: string; reason: string; confusion: Record<Judgment, Record<Judgment, number>>; disagreements: Disagreement[] };
   excluded: { model: string; reason: string }[];
   v0Levels: { total: number; byLevel: Record<string, number> };
 }
@@ -66,6 +68,16 @@ function table(rows: string[][]): string[] {
   return rows.map((r) => r.map((cell, i) => cell.padEnd(widths[i])).join('  ').trimEnd());
 }
 
+const matrix = (who: string, m: Record<Judgment, Record<Judgment, number>>): string[] => [
+  `Matrice de confusion ${who} (lignes : jugement ; colonnes : niveau calculé)`,
+  ...table([['jugé \\ calculé', ...JUDGMENTS], ...JUDGMENTS.map((j) => [j, ...JUDGMENTS.map((c) => String(m[j][c]))])]).map((l) => `  ${l}`),
+];
+
+const disagreementLines = (who: string, ds: Disagreement[]): string[] => [
+  `Paires en désaccord pour ${who} (${ds.length})`,
+  ...ds.map((d) => `  ${d.pairId}  [${d.sample}] ${d.label} : calculé ${d.computed}, jugé ${d.judged}.${d.reason ? ` Juge : « ${d.reason} »` : ''}`),
+];
+
 /** Rapport du concours, en texte : relu par les étudiants avant le gel. */
 export function formatReport(r: ReportInput): string {
   const winner = r.candidates.find((c) => c.version === r.winner);
@@ -73,6 +85,16 @@ export function formatReport(r: ReportInput): string {
   const total = r.samples.reduce((n, s) => n + s.size, 0);
   const target = Math.max(TARGET_AGREEMENT, round3(r.trivial + MIN_MARGIN));
   const reached = meetsTarget(winner.result.agreement, r.trivial);
+  const chosenLine = r.chosen ? r.candidates.find((c) => c.version === r.chosen?.version) : undefined;
+  if (r.chosen && !chosenLine) throw new Error(`Le candidat choisi ${r.chosen.version} n'est pas parmi les candidats`);
+  const chosenSection = (choice: NonNullable<ReportInput['chosen']>, c: CandidateLine): string[] => [
+    `Choix des étudiants : ${c.version} (accord ${c.result.agreement} ; seuils ${c.result.detectThreshold.toFixed(2)} / ${c.result.bandHigh.toFixed(2)} / ${c.result.bandLow.toFixed(2)}) : ${choice.reason}`,
+    '',
+    ...matrix(`de ${c.version}`, choice.confusion),
+    '',
+    ...disagreementLines(c.version, choice.disagreements),
+    '',
+  ];
   const range = (xs: number[]) => `${xs[0].toFixed(2)} à ${xs[xs.length - 1].toFixed(2)}`;
   const counts = (judged: Record<Judgment, number>) => JUDGMENTS.map((j) => `${j} ${judged[j] ?? 0}`).join(', ');
   const lines: string[] = [
@@ -115,18 +137,11 @@ export function formatReport(r: ReportInput): string {
     '',
     `Gagnant : ${r.winner} (accord ${winner.result.agreement} sur ${total} paires ; cible ${target} : ${reached ? 'atteinte' : 'non atteinte'})`,
     '',
-    'Matrice de confusion du gagnant (lignes : jugement ; colonnes : niveau calculé)',
-    ...table([
-      ['jugé \\ calculé', ...JUDGMENTS],
-      ...JUDGMENTS.map((j) => [j, ...JUDGMENTS.map((c) => String(r.confusion[j][c]))]),
-    ]).map((l) => `  ${l}`),
+    ...matrix('du gagnant', r.confusion),
     '',
-    `Paires en désaccord pour le gagnant (${r.disagreements.length})`,
-    ...r.disagreements.map(
-      (d) =>
-        `  ${d.pairId}  [${d.sample}] ${d.label} : calculé ${d.computed}, jugé ${d.judged}.${d.reason ? ` Juge : « ${d.reason} »` : ''}`,
-    ),
+    ...disagreementLines('le gagnant', r.disagreements),
     '',
+    ...(r.chosen && chosenLine ? chosenSection(r.chosen, chosenLine) : []),
     'Candidats écartés',
     ...(r.excluded.length === 0 ? ['  aucun'] : r.excluded.map((e) => `  ${e.model} : ${e.reason}`)),
     '',
