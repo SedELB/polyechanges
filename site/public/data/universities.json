@@ -508,13 +508,15 @@
           "line": 202
         },
         "quote": "DEC | 2(수)~4(금) | Re-Admission Application Period 14(월)~18(금) | Final Examination Period 18(금) | End of Fall semester(16 weeks)",
-        "context": {
-          "locator": {
-            "page": 1,
-            "line": 184
-          },
-          "quote": "SEP | 1(화) | Fall Semester 2026 Begins"
-        }
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 184
+            },
+            "quote": "SEP | 1(화) | Fall Semester 2026 Begins"
+          }
+        ]
       },
       "terms.spring.start": {
         "url": "https://registrar.korea.edu/eduinfo/affairs/schedule.do?cYear=2026&hakGi=1&srCategoryId1=1668",
@@ -535,13 +537,15 @@
           "line": 206
         },
         "quote": "16(화)~22(월) | Final Examination Period 22(월) | End of Spring semester(16 weeks)",
-        "context": {
-          "locator": {
-            "page": 1,
-            "line": 203
-          },
-          "quote": "JUN | 3(수)~5(금) | Re-Admission Application Period 3(수) | 2026 Local Elections 6(토) | Memorial Day (National Holiday)"
-        }
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 203
+            },
+            "quote": "JUN | 3(수)~5(금) | Re-Admission Application Period 3(수) | 2026 Local Elections 6(토) | Memorial Day (National Holiday)"
+          }
+        ]
       }
     }
   },
@@ -812,13 +816,15 @@
           "line": 50
         },
         "quote": "(7)Classes begin.",
-        "context": {
-          "locator": {
-            "page": 1,
-            "line": 35
-          },
-          "quote": "Fall Semester: August 2026-January 2027"
-        }
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 35
+            },
+            "quote": "Fall Semester: August 2026-January 2027"
+          }
+        ]
       },
       "terms.spring.start": {
         "url": "https://web.ncku.edu.tw/var/file/0/1000/img/4970/844774256.pdf",
@@ -829,13 +835,15 @@
           "line": 43
         },
         "quote": "(22)Classes begin.",
-        "context": {
-          "locator": {
-            "page": 1,
-            "line": 34
-          },
-          "quote": "Spring Semester: February 2027-July 2027"
-        }
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 34
+            },
+            "quote": "Spring Semester: February 2027-July 2027"
+          }
+        ]
       },
       "restrictions": {
         "url": "https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en",
@@ -1186,13 +1194,15 @@
           "line": 11
         },
         "quote": "22 Mon. 1. Classes begin",
-        "context": {
-          "locator": {
-            "page": 2,
-            "line": 3
-          },
-          "quote": "Second Semester (Feb.2027 ~ Jul.2027)"
-        }
+        "context": [
+          {
+            "locator": {
+              "page": 2,
+              "line": 3
+            },
+            "quote": "Second Semester (Feb.2027 ~ Jul.2027)"
+          }
+        ]
       }
     }
   },
@@ -1945,13 +1955,15 @@
           "line": 247
         },
         "quote": "DECEMBER 14 (Mon) End of Fall semester classes",
-        "context": {
-          "locator": {
-            "page": 1,
-            "line": 153
-          },
-          "quote": "2026 MARCH 01 (Sun)"
-        }
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 153
+            },
+            "quote": "2026 MARCH 01 (Sun)"
+          }
+        ]
       },
       "terms.spring.end": {
         "url": "https://en.snu.ac.kr/academics/resources/calendar",
@@ -1962,13 +1974,15 @@
           "line": 185
         },
         "quote": "JUNE 15 (Mon) End of Spring semester classes",
-        "context": {
-          "locator": {
-            "page": 1,
-            "line": 153
-          },
-          "quote": "2026 MARCH 01 (Sun)"
-        }
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 153
+            },
+            "quote": "2026 MARCH 01 (Sun)"
+          }
+        ]
       },
       "terms.spring.start": {
         "url": "https://en.snu.ac.kr/academics/resources/calendar",
@@ -1979,13 +1993,15 @@
           "line": 157
         },
         "quote": "03 (Tue) Beginning of Spring semester classes",
-        "context": {
-          "locator": {
-            "page": 1,
-            "line": 153
-          },
-          "quote": "2026 MARCH 01 (Sun)"
-        }
+        "context": [
+          {
+            "locator": {
+              "page": 1,
+              "line": 153
+            },
+            "quote": "2026 MARCH 01 (Sun)"
+          }
+        ]
       }
     }
   },

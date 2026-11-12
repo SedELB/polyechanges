@@ -17,10 +17,14 @@ export const provenanceSchema = z.object({
   locator: z.object({ page: z.number().int().min(1), line: z.number().int().min(1) }),
   quote: z.string().refine(isSubstantialQuote, 'extrait trop court : au moins 8 caractères et 2 mots'),
   context: z
-    .object({
-      locator: z.object({ page: z.number().int().min(1), line: z.number().int().min(1) }),
-      quote: z.string().refine(isSubstantialQuote, 'extrait trop court : au moins 8 caractères et 2 mots'),
-    })
+    .array(
+      z.object({
+        locator: z.object({ page: z.number().int().min(1), line: z.number().int().min(1) }),
+        quote: z.string().refine(isSubstantialQuote, 'extrait trop court : au moins 8 caractères et 2 mots'),
+      }),
+    )
+    .min(1)
+    .max(2)
     .optional(),
   stale: z.literal(true).optional(),
 });

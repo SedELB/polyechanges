@@ -60,7 +60,7 @@ const ordered = (p: Provenance, stale: boolean): Provenance => ({
   sha256: p.sha256,
   locator: { page: p.locator.page, line: p.locator.line },
   quote: p.quote,
-  ...(p.context ? { context: { locator: { page: p.context.locator.page, line: p.context.locator.line }, quote: p.context.quote } } : {}),
+  ...(p.context ? { context: p.context.map((c) => ({ locator: { page: c.locator.page, line: c.locator.line }, quote: c.quote })) } : {}),
   ...(stale ? { stale: true as const } : {}),
 });
 
@@ -115,7 +115,10 @@ export async function refreshFactSources(
       }
       const { status, found, contextFound } = locateInPages(page.pages, p, rawKind(page.contentType));
       result.counts[status]++;
-      const context = p.context && contextFound ? { ...p.context, locator: contextFound } : p.context;
+      const context = p.context?.map((c, i) => {
+        const hit = contextFound?.[i];
+        return hit ? { ...c, locator: hit } : c;
+      });
       const updated: Provenance | null =
         status !== 'introuvable' && found ? { ...p, sha256: page.sha256, retrievedAt: now, locator: found, context } : null;
       // L'ordre est revérifié sur les positions recalées avant d'écrire quoi que ce soit.
@@ -124,8 +127,11 @@ export async function refreshFactSources(
       } else {
         next[fact] = ordered(p, true);
         // Chaque extrait perdu est nommé : l'extrait principal, le contexte, ou les deux.
-        const lost = [...(found ? [] : [p.quote]), ...(p.context && !contextFound ? [p.context.quote] : [])];
-        if (lost.length === 0) lost.push(p.context && updated ? p.context.quote : p.quote);
+        const lost = [
+          ...(found ? [] : [p.quote]),
+          ...(p.context ?? []).filter((_, i) => !contextFound?.[i]).map((c) => c.quote),
+        ];
+        if (lost.length === 0) lost.push(p.quote);
         for (const quote of lost) {
           result.missing.push({ universityId: u.id, fact, url: p.url, quote, nearest: nearestLines(page.pages, quote) });
         }

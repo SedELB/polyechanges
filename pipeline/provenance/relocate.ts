@@ -43,10 +43,13 @@ export async function relocateFactSources(universitiesPath: string, rawDir: stri
           moves.push({ universityId: u.id, fact, from: p.locator, to: found });
           next.locator = { page: found.page, line: found.line };
         }
-        if (p.context && next.context && contextFound && !same(contextFound, p.context.locator)) {
-          moves.push({ universityId: u.id, fact, from: p.context.locator, to: contextFound, context: true });
-          next.context.locator = { page: contextFound.page, line: contextFound.line };
-        }
+        p.context?.forEach((c, i) => {
+          const hit = contextFound?.[i];
+          if (hit && next.context && !same(hit, c.locator)) {
+            moves.push({ universityId: u.id, fact, from: c.locator, to: hit, context: true });
+            next.context[i].locator = { page: hit.page, line: hit.line };
+          }
+        });
         // L'ordre est revérifié sur les positions recalées : rien n'est écrit si le contexte ne précède plus.
         const after = contextProblem(fact, next, kind);
         if (after) {

@@ -13,10 +13,22 @@ const base: Provenance = {
 
 describe('FactSource', () => {
   it('affiche l’extrait de contexte sous l’extrait principal', () => {
-    const p: Provenance = { ...base, context: { locator: { page: 1, line: 3 }, quote: '2026 Academic Calendar' } };
+    const p: Provenance = { ...base, context: [{ locator: { page: 1, line: 3 }, quote: '2026 Academic Calendar' }] };
     render(<FactSource label="fin des examens" provenance={p} />);
     expect(screen.getByText('« 12-14 (Mon) Final exams end »')).toBeInTheDocument();
     expect(screen.getByText('Contexte : « 2026 Academic Calendar » (ligne 3)')).toBeInTheDocument();
+  });
+  it('affiche une ligne par extrait de contexte', () => {
+    const p: Provenance = {
+      ...base,
+      context: [
+        { locator: { page: 1, line: 3 }, quote: '2026 Academic Calendar' },
+        { locator: { page: 1, line: 8 }, quote: 'Month of December' },
+      ],
+    };
+    render(<FactSource label="fin des examens" provenance={p} />);
+    expect(screen.getByText('Contexte : « 2026 Academic Calendar » (ligne 3)')).toBeInTheDocument();
+    expect(screen.getByText('Contexte : « Month of December » (ligne 8)')).toBeInTheDocument();
   });
   it('sans contexte, n’affiche aucune ligne de contexte', () => {
     render(<FactSource label="fin des examens" provenance={base} />);

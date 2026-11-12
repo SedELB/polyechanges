@@ -128,14 +128,14 @@ describe('refreshFactSources', () => {
     const CTX = '2026 Academic Calendar';
     server.pages.set('/cal', page([CTX, START]));
     const prov = await seed('u1', '/cal', { 'terms.fall.start': [START, 3] });
-    const withCtx = { ...prov['terms.fall.start'], context: { locator: { page: 1, line: 2 }, quote: CTX } };
+    const withCtx = { ...prov['terms.fall.start'], context: [{ locator: { page: 1, line: 2 }, quote: CTX }] };
     writeFileSync(path, JSON.stringify([university('u1', { 'terms.fall.start': withCtx })], null, 2) + '\n');
 
     server.pages.set('/cal', page(['Notice', CTX, START]));
     const moved = await refreshFactSources(db, fetcher, path, rawDir, '2026-11-12T10:00:00.000Z');
     expect(moved.counts.déplacé).toBe(1);
     let p = JSON.parse(readFileSync(path, 'utf8'))[0].provenance['terms.fall.start'];
-    expect(p.context).toEqual({ locator: { page: 1, line: 3 }, quote: CTX });
+    expect(p.context).toEqual([{ locator: { page: 1, line: 3 }, quote: CTX }]);
     expect(p.locator).toEqual({ page: 1, line: 4 });
     expect(p.stale).toBeUndefined();
 
@@ -144,18 +144,18 @@ describe('refreshFactSources', () => {
     expect(lost.counts.introuvable).toBe(1);
     p = JSON.parse(readFileSync(path, 'utf8'))[0].provenance['terms.fall.start'];
     expect(p.stale).toBe(true);
-    expect(p.context.quote).toBe(CTX);
+    expect(p.context[0].quote).toBe(CTX);
   });
 
   it('choisit le contexte avant l’extrait principal ; sans occurrence avant, marque périmé sans rien écrire', async () => {
     const CTX = '2026 Academic Calendar';
     server.pages.set('/cal', page([CTX, START, CTX]));
     const prov = await seed('u1', '/cal', { 'terms.fall.start': [START, 3] });
-    const withCtx = { ...prov['terms.fall.start'], context: { locator: { page: 1, line: 2 }, quote: CTX } };
+    const withCtx = { ...prov['terms.fall.start'], context: [{ locator: { page: 1, line: 2 }, quote: CTX }] };
     writeFileSync(path, JSON.stringify([university('u1', { 'terms.fall.start': withCtx })], null, 2) + '\n');
     await refreshFactSources(db, fetcher, path, rawDir, '2026-11-12T10:00:00.000Z');
     let p = JSON.parse(readFileSync(path, 'utf8'))[0].provenance['terms.fall.start'];
-    expect(p.context.locator).toEqual({ page: 1, line: 2 });
+    expect(p.context[0].locator).toEqual({ page: 1, line: 2 });
     expect(p.stale).toBeUndefined();
 
     server.pages.set('/cal', page([START, CTX]));

@@ -116,7 +116,7 @@ describe('extrait sur plusieurs lignes', () => {
 
 describe('contextProblem', () => {
   const main = prov('a'.repeat(64), 5, 'Classes begin March 3');
-  const withCtx = (line: number, quote = '2026 Academic Calendar', page = 1): Provenance => ({ ...main, context: { locator: { page, line }, quote } });
+  const withCtx = (line: number, quote = '2026 Academic Calendar', page = 1): Provenance => ({ ...main, context: [{ locator: { page, line }, quote }] });
   it('permet un contexte sur une date, avant l’extrait principal', () => {
     expect(contextProblem('terms.fall.start', withCtx(2))).toBeNull();
     expect(contextProblem('terms.spring.examsEnd', withCtx(2))).toBeNull();
@@ -128,7 +128,7 @@ describe('contextProblem', () => {
   it('refuse un contexte qui ne précède pas l’extrait principal', () => {
     expect(contextProblem('terms.fall.start', withCtx(5))).toMatch(/précéder/);
     expect(contextProblem('terms.fall.start', withCtx(9))).toMatch(/précéder/);
-    expect(contextProblem('terms.fall.start', { ...main, locator: { page: 2, line: 1 }, context: { locator: { page: 1, line: 9 }, quote: '2026 Academic Calendar' } })).toBeNull();
+    expect(contextProblem('terms.fall.start', { ...main, locator: { page: 2, line: 1 }, context: [{ locator: { page: 1, line: 9 }, quote: '2026 Academic Calendar' }] })).toBeNull();
   });
   it('refuse un contexte trop court', () => {
     expect(contextProblem('terms.fall.start', withCtx(2, 'March'))).toMatch(/court/);
@@ -145,24 +145,24 @@ describe('contexte et vérification hors ligne', () => {
   const ctx = (line: number, quote: string) => ({ locator: { page: 1, line }, quote });
   it('un contexte exact laisse le fait inchangé', async () => {
     const hash = store(Buffer.from(doc), 'html');
-    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: ctx(1, '2026 Academic Calendar') };
-    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'inchangé', found: { page: 1, line: 3 }, contextFound: { page: 1, line: 1 } });
+    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: [ctx(1, '2026 Academic Calendar')] };
+    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'inchangé', found: { page: 1, line: 3 }, contextFound: [{ page: 1, line: 1 }] });
     expect((await verifyAll([uni({ 'terms.fall.end': p })], rawDir)).problems).toEqual([]);
   });
   it('un contexte introuvable met le fait en problème', async () => {
     const hash = store(Buffer.from(doc), 'html');
-    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: ctx(1, '2025 Academic Calendar') };
+    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: [ctx(1, '2025 Academic Calendar')] };
     expect((await verifyProvenance(p, rawDir)).status).toBe('introuvable');
     expect((await verifyAll([uni({ 'terms.fall.end': p })], rawDir)).problems.map((q) => q.status)).toEqual(['introuvable']);
   });
   it('un contexte déplacé rend le fait déplacé', async () => {
     const hash = store(Buffer.from(doc), 'html');
-    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: ctx(2, '2026 Academic Calendar') };
+    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: [ctx(2, '2026 Academic Calendar')] };
     expect((await verifyProvenance(p, rawDir)).status).toBe('déplacé');
   });
   it('une règle de contexte non respectée est un problème', async () => {
     const hash = store(Buffer.from(doc), 'html');
-    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: ctx(1, '2026 Academic Calendar') };
+    const p = { ...prov(hash, 3, '12-14 (Mon) Final exams end'), context: [ctx(1, '2026 Academic Calendar')] };
     const res = await verifyAll([uni({ contactHoursPerCredit: p })], rawDir);
     expect(res.problems.map((q) => [q.fact, q.status])).toEqual([['contactHoursPerCredit', 'contexte_invalide']]);
   });
@@ -178,22 +178,22 @@ describe('contexte répété dans la copie', () => {
   });
   it('retient la dernière occurrence avant l’extrait principal', async () => {
     const hash = store(Buffer.from(doc), 'html');
-    const p = { ...prov(hash, 4, '12-14 (Mon) Final exams end'), context: ctx(1) };
-    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'déplacé', found: { page: 1, line: 4 }, contextFound: { page: 1, line: 3 } });
-    expect((await verifyProvenance({ ...p, context: ctx(3) }, rawDir)).status).toBe('inchangé');
-    expect((await verifyProvenance({ ...p, context: ctx(1) }, rawDir)).status).toBe('déplacé');
+    const p = { ...prov(hash, 4, '12-14 (Mon) Final exams end'), context: [ctx(1)] };
+    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'déplacé', found: { page: 1, line: 4 }, contextFound: [{ page: 1, line: 3 }] });
+    expect((await verifyProvenance({ ...p, context: [ctx(3)] }, rawDir)).status).toBe('inchangé');
+    expect((await verifyProvenance({ ...p, context: [ctx(1)] }, rawDir)).status).toBe('déplacé');
   });
   it('principal déplacé et contexte inchangé : déplacé; inverse aussi', async () => {
     const hash = store(Buffer.from(doc), 'html');
-    expect((await verifyProvenance({ ...prov(hash, 9, '12-14 (Mon) Final exams end'), context: ctx(3) }, rawDir)).status).toBe('déplacé');
-    expect((await verifyProvenance({ ...prov(hash, 4, '12-14 (Mon) Final exams end'), context: ctx(2) }, rawDir)).status).toBe('déplacé');
+    expect((await verifyProvenance({ ...prov(hash, 9, '12-14 (Mon) Final exams end'), context: [ctx(3)] }, rawDir)).status).toBe('déplacé');
+    expect((await verifyProvenance({ ...prov(hash, 4, '12-14 (Mon) Final exams end'), context: [ctx(2)] }, rawDir)).status).toBe('déplacé');
   });
   it('aucune occurrence avant l’extrait principal : contexte_invalide', async () => {
     const hash = store(Buffer.from(doc), 'html');
-    const p = { ...prov(hash, 2, 'Fall classes begin Sep 7'), context: { locator: { page: 1, line: 1 }, quote: 'December' } };
+    const p = { ...prov(hash, 2, 'Fall classes begin Sep 7'), context: [{ locator: { page: 1, line: 1 }, quote: 'December' }] };
     const html2 = '<html><body><p>Fall classes begin Sep 7</p><p>Month of December</p></body></html>';
     const h2 = store(Buffer.from(html2), 'html');
-    const res = await verifyAll([uni({ 'terms.fall.start': { ...p, sha256: h2, locator: { page: 1, line: 2 }, context: { locator: { page: 1, line: 1 }, quote: 'Month of December' } } })], rawDir);
+    const res = await verifyAll([uni({ 'terms.fall.start': { ...p, sha256: h2, locator: { page: 1, line: 2 }, context: [{ locator: { page: 1, line: 1 }, quote: 'Month of December' }] } })], rawDir);
     expect(res.problems.map((q) => q.status)).toEqual(['contexte_invalide']);
   });
 });
@@ -208,7 +208,7 @@ describe('contexte dans une copie PDF', () => {
   const MAIN = 'Sept 14 Classes Begin';
   const withCtx = (hash: string, mainLine: number, ctxLine: number, ctxPage = 1): Provenance => ({
     ...prov(hash, mainLine, MAIN),
-    context: { locator: { page: ctxPage, line: ctxLine }, quote: TITLE },
+    context: [{ locator: { page: ctxPage, line: ctxLine }, quote: TITLE }],
   });
   it('contextProblem : même page permise après l’extrait principal en PDF seulement', () => {
     const p = withCtx('a'.repeat(64), 1, 3);
@@ -216,32 +216,75 @@ describe('contexte dans une copie PDF', () => {
     expect(contextProblem('terms.fall.start', p, 'html')).toMatch(/précéder/);
     expect(contextProblem('terms.fall.start', p)).toMatch(/précéder/);
     expect(contextProblem('terms.fall.start', p, null)).toBeNull();
-    const later: Provenance = { ...p, context: { locator: { page: 2, line: 1 }, quote: TITLE } };
+    const later: Provenance = { ...p, context: [{ locator: { page: 2, line: 1 }, quote: TITLE }] };
     expect(contextProblem('terms.fall.start', later, 'pdf')).toMatch(/page/);
   });
   it('titre après les événements, sur la même page : inchangé', async () => {
     const hash = store(makePdf([[MAIN, 'Oct 1 Holiday', TITLE]]), 'pdf');
     const p = withCtx(hash, 1, 3);
-    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'inchangé', found: { page: 1, line: 1 }, contextFound: { page: 1, line: 3 } });
+    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'inchangé', found: { page: 1, line: 1 }, contextFound: [{ page: 1, line: 3 }] });
     expect((await verifyAll([uni({ 'terms.fall.start': p })], rawDir)).problems).toEqual([]);
   });
   it('choisit l’occurrence de la page la plus proche, à égalité la plus tôt', async () => {
     const hash = store(makePdf([[TITLE, 'x one', 'x two', MAIN, 'y one', TITLE]]), 'pdf');
-    expect((await verifyProvenance(withCtx(hash, 4, 1), rawDir)).contextFound).toEqual({ page: 1, line: 6 });
+    expect((await verifyProvenance(withCtx(hash, 4, 1), rawDir)).contextFound).toEqual([{ page: 1, line: 6 }]);
     const hash2 = store(makePdf([[TITLE, MAIN, 'y one', 'y two', TITLE]]), 'pdf');
-    expect((await verifyProvenance(withCtx(hash2, 2, 5), rawDir)).contextFound).toEqual({ page: 1, line: 1 });
+    expect((await verifyProvenance(withCtx(hash2, 2, 5), rawDir)).contextFound).toEqual([{ page: 1, line: 1 }]);
     const hash3 = store(makePdf([[TITLE, 'a', MAIN, 'b', TITLE]]), 'pdf');
-    expect((await verifyProvenance(withCtx(hash3, 3, 5), rawDir)).contextFound).toEqual({ page: 1, line: 1 });
+    expect((await verifyProvenance(withCtx(hash3, 3, 5), rawDir)).contextFound).toEqual([{ page: 1, line: 1 }]);
   });
   it('à défaut de la page, la dernière occurrence d’une page antérieure', async () => {
     const hash = store(makePdf([[TITLE, 'p1'], [TITLE, 'p2'], [MAIN]]), 'pdf');
-    const p: Provenance = { ...prov(hash, 1, MAIN), locator: { page: 3, line: 1 }, context: { locator: { page: 1, line: 1 }, quote: TITLE } };
-    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'déplacé', found: { page: 3, line: 1 }, contextFound: { page: 2, line: 1 } });
+    const p: Provenance = { ...prov(hash, 1, MAIN), locator: { page: 3, line: 1 }, context: [{ locator: { page: 1, line: 1 }, quote: TITLE }] };
+    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'déplacé', found: { page: 3, line: 1 }, contextFound: [{ page: 2, line: 1 }] });
   });
   it('titre seulement sur une page postérieure : contexte_invalide', async () => {
     const hash = store(makePdf([[MAIN], [TITLE, 'p2']]), 'pdf');
-    const p: Provenance = { ...prov(hash, 1, MAIN), context: { locator: { page: 1, line: 1 }, quote: TITLE } };
-    const res = await verifyAll([uni({ 'terms.fall.start': { ...p, locator: { page: 1, line: 1 }, context: { locator: { page: 1, line: 2 }, quote: TITLE } } })], rawDir);
+    const p: Provenance = { ...prov(hash, 1, MAIN), context: [{ locator: { page: 1, line: 1 }, quote: TITLE }] };
+    const res = await verifyAll([uni({ 'terms.fall.start': { ...p, locator: { page: 1, line: 1 }, context: [{ locator: { page: 1, line: 2 }, quote: TITLE }] } })], rawDir);
     expect(res.problems.map((q) => q.status)).toContain('contexte_invalide');
+  });
+});
+
+describe('deux extraits de contexte', () => {
+  const doc = '<html><body><p>2026 Fall Academic Calendar</p><p>Month of September</p><p>Sep 14 Classes Begin</p></body></html>';
+  const uni = (provenance: Record<string, Provenance>): University => ({
+    id: 'x', name: 'X University', moveOnName: 'X', countryCode: 'TW', city: '', lat: 1, lng: 2,
+    website: '', catalogUrl: null, creditSystem: 'local', contactHoursPerCredit: null,
+    terms: { fall: null, spring: null }, restrictions: null, exchangeContact: null, catalogPublic: true, provenance,
+  });
+  const c = (line: number, quote: string) => ({ locator: { page: 1, line }, quote });
+  const year = (line: number) => c(line, '2026 Fall Academic Calendar');
+  const month = (line: number) => c(line, 'Month of September');
+  const main = { ...prov('a'.repeat(64), 5, 'Sep 14 Classes Begin') };
+
+  it('contextProblem accepte deux extraits, refuse un troisième ou un tableau vide', () => {
+    expect(contextProblem('terms.fall.start', { ...main, context: [year(1), month(2)] })).toBeNull();
+    expect(contextProblem('terms.fall.start', { ...main, context: [year(1), month(2), year(3)] })).toMatch(/deux/);
+    expect(contextProblem('terms.fall.start', { ...main, context: [] })).toMatch(/au moins un/);
+  });
+  it('chaque extrait suit les règles : un seul mal placé suffit', () => {
+    expect(contextProblem('terms.fall.start', { ...main, context: [year(1), month(9)] })).toMatch(/précéder/);
+    expect(contextProblem('terms.fall.start', { ...main, context: [year(1), c(2, 'March')] })).toMatch(/court/);
+    expect(contextProblem('contactHoursPerCredit', { ...main, context: [year(1), month(2)] })).toMatch(/dates/);
+  });
+  it('deux contextes exacts : inchangé, une position par extrait', async () => {
+    const hash = store(Buffer.from(doc), 'html');
+    const p = { ...prov(hash, 3, 'Sep 14 Classes Begin'), context: [year(1), month(2)] };
+    expect(await verifyProvenance(p, rawDir)).toEqual({ status: 'inchangé', found: { page: 1, line: 3 }, contextFound: [{ page: 1, line: 1 }, { page: 1, line: 2 }] });
+    expect((await verifyAll([uni({ 'terms.fall.start': p })], rawDir)).problems).toEqual([]);
+  });
+  it('un contexte déplacé et l’autre introuvable : le pire l’emporte', async () => {
+    const hash = store(Buffer.from(doc), 'html');
+    const p = { ...prov(hash, 3, 'Sep 14 Classes Begin'), context: [year(1), month(2)] };
+    expect((await verifyProvenance({ ...p, context: [year(1), month(1)] }, rawDir)).status).toBe('déplacé');
+    expect((await verifyProvenance({ ...p, context: [month(1), c(2, 'Month of October')] }, rawDir)).status).toBe('introuvable');
+  });
+  it('un contexte valable et un mal placé : contexte_invalide', async () => {
+    const html2 = '<html><body><p>2026 Fall Academic Calendar</p><p>Sep 14 Classes Begin</p><p>Month of September</p></body></html>';
+    const hash = store(Buffer.from(html2), 'html');
+    const p = { ...prov(hash, 2, 'Sep 14 Classes Begin'), context: [year(1), month(1)] };
+    const res = await verifyAll([uni({ 'terms.fall.start': p })], rawDir);
+    expect(res.problems.map((q) => q.status)).toEqual(['contexte_invalide']);
   });
 });

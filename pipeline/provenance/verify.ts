@@ -70,39 +70,43 @@ function pickContext(hits: Pos[], kind: RawKind, m: Pos): Pos | null {
   return ok[ok.length - 1] ?? null;
 }
 
-/** Cherche l'extrait principal puis le contexte ; le statut est le pire des deux (introuvable > déplacé > inchangé). */
+/** Cherche l'extrait principal puis chaque contexte ; le statut est le pire de tous (introuvable > déplacé > inchangé). */
 export function locateInPages(
   pages: string[][],
   p: Pick<Provenance, 'quote' | 'locator' | 'context'>,
   kind: RawKind = 'html',
-): Located & { contextFound?: { page: number; line: number } | null; contextMisplaced?: true } {
+): Located & { contextFound?: (Pos | null)[]; contextMisplaced?: true } {
   const main = locateQuote(pages, p);
   if (!p.context) return main;
-  const hits = findQuote(pages, p.context.quote);
-  const contextFound = pickContext(hits, kind, main.found ?? p.locator);
-  const declared = p.context.locator;
-  const ctxStatus: Located['status'] = !contextFound
-    ? 'introuvable'
-    : contextFound.page === declared.page && contextFound.line === declared.line ? 'inchangé' : 'déplacé';
-  return {
-    status: RANK[ctxStatus] > RANK[main.status] ? ctxStatus : main.status,
-    found: main.found,
-    contextFound,
-    ...(!contextFound && hits.length > 0 ? { contextMisplaced: true as const } : {}),
-  };
+  let status = main.status;
+  let misplaced = false;
+  const contextFound = p.context.map((c) => {
+    const hits = findQuote(pages, c.quote);
+    const hit = pickContext(hits, kind, main.found ?? p.locator);
+    const s: Located['status'] = !hit
+      ? 'introuvable'
+      : hit.page === c.locator.page && hit.line === c.locator.line ? 'inchangé' : 'déplacé';
+    if (RANK[s] > RANK[status]) status = s;
+    if (!hit && hits.length > 0) misplaced = true;
+    return hit;
+  });
+  return { status, found: main.found, contextFound, ...(misplaced ? { contextMisplaced: true as const } : {}) };
 }
 
-/** Un contexte n'est permis que sur une date, doit être un extrait valable et bien placé par rapport à l'extrait principal. */
+/** Un contexte (un ou deux extraits) n'est permis que sur une date ; chaque extrait est valable et bien placé par rapport à l'extrait principal. */
 export function contextProblem(fact: UniversityFact, p: Provenance, kind: RawKind = 'html'): string | null {
   if (!p.context) return null;
-  if (!/^terms\.(fall|spring)\./.test(fact)) return 'le contexte n’est permis que sur les dates des périodes';
-  if (!isSubstantialQuote(p.context.quote)) return 'extrait de contexte trop court : au moins 8 caractères et 2 mots';
-  const c = p.context.locator;
+  if (!/^terms.(fall|spring)./.test(fact)) return 'le contexte n’est permis que sur les dates des périodes';
+  if (p.context.length < 1) return 'le contexte doit contenir au moins un extrait';
+  if (p.context.length > 2) return 'le contexte contient au plus deux extraits';
   const m = p.locator;
-  if (!contextAllowed(kind, c, m)) {
-    return kind === 'pdf'
-      ? 'le contexte doit être sur la page de l’extrait principal ou sur une page antérieure'
-      : 'le contexte doit précéder l’extrait principal (page, ligne)';
+  for (const { quote, locator: c } of p.context) {
+    if (!isSubstantialQuote(quote)) return 'extrait de contexte trop court : au moins 8 caractères et 2 mots';
+    if (!contextAllowed(kind, c, m)) {
+      return kind === 'pdf'
+        ? 'le contexte doit être sur la page de l’extrait principal ou sur une page antérieure'
+        : 'le contexte doit précéder l’extrait principal (page, ligne)';
+    }
   }
   return null;
 }
@@ -111,7 +115,7 @@ export function contextProblem(fact: UniversityFact, p: Provenance, kind: RawKin
 export async function verifyProvenance(
   p: Provenance,
   rawDir: string,
-): Promise<{ status: FactStatus; found: { page: number; line: number } | null; contextFound?: { page: number; line: number } | null; contextMisplaced?: true }> {
+): Promise<{ status: FactStatus; found: { page: number; line: number } | null; contextFound?: (Pos | null)[]; contextMisplaced?: true }> {
   const copy = findRawCopy(p.sha256, rawDir);
   if (!copy) return { status: 'copie_absente', found: null };
   const pages = await snapshotText(readFileSync(copy.path), copy.contentType);
