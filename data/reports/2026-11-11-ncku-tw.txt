@@ -1,3 +1,15 @@
+=== collecte automatique ===
+Rapport de collecte : ncku-tw
+Date : 2026-11-11
+Statut : ok
+Cours actifs : 16
+Ajoutés (16) : C120601, C133800, E212200, E220610, E221300, E223800, E227010, E231110, E238500, F711110, F720300, F720401, F720600, F724100, F724200, F725200
+Retirés (0) : aucun
+Modifiés (0) : aucun
+Sources : ncku-tw (saved), ncku-tw-syllabus (html, enrich)
+Codes ignorés de la source ncku-tw-syllabus (enrich, absents des autres sources) : 0
+=== fin de la collecte automatique ===
+
 Faits complétés le 2026-11-11 (UTC) : National Cheng Kung University
 Pages bloquées ou vides, non contournées : course.ncku.edu.tw et course-query.acad.ncku.edu.tw (CAPTCHA, jamais demandées). catalogUrl laissé à null : il viendra des pages enregistrées par l'étudiant.
 Piste trouvée : la page https://web.ncku.edu.tw/p/412-1000-6149.php?Lang=en (calendrier, copie déjà rangée) affiche « No academic calendars are currently available » parce qu'un script masque les anciens calendriers ; son tableau calendarData contient les PDF officiels de l'année 115 (2026-2027), téléchargés directement. reg-acad.ncku.edu.tw (accueil lu, robots.txt « Allow: / ») ne publie pas de calendrier.
@@ -19,3 +31,20 @@ Complément (deux contextes)
 Les deux dates de début de cours ont maintenant un second contexte pour le mois : « Sep. (2-3)English Module Registration(tentative).(2-4)NCKU Freshman » (p1:l45, copie 0a67ac5d...) et « Feb. (1)Credits wavier begins. (2/2-2/22) Payments of spring semester » (p1:l37, copie bb5750d8...). Année et période du semestre : premier contexte (inchangé).
 
 Correction du 2026-11-11 : restrictions remis à null. La phrase de la page des échanges (« Restrictions may include course tags… ») décrit des étiquettes possibles, pas une restriction de programme.
+
+Cours de la collecte du 2026-11-11 (pages enregistrées le 2026-11-10, semestre d'automne 2026-2027 = 115-1)
+Source principale ncku-tw : 3 pages enregistrées de l'Advanced Search (CSIE, EE, Mathematics), 202 rangées de table en tout (rangées de pratique comprises). Le College « Miin Wu School of Computing » ne donnait aucun résultat : aucune page.
+Écartées : 183 rangées sans « Course taught in English ». Parmi les 19 rangées en anglais (CSIE 9, EE 8, Mathematics 2), 3 sont hors périmètre : F724800 (ADVANCED ENGLISH COURSE-SCIENTIFIC ENGLISH I, cours de langue) et E120400 [ME2152] (TRANSFORMING IDEAS TO INNOVATION (2), génie mécanique, présent dans les listes CSIE et EE).
+Retenus : 16 cours (CSIE 7, EE 7, Mathematics 2), tous en anglais, tous à l'automne, 16 avec description, 11 avec plan hebdomadaire.
+Code = numéro de cours système (F720401), sections fusionnées (classe 2 de F720401 : seule section en anglais). Crédits = colonne Credits. Niveau : grad si le code d'attribut a un chiffre de 5 ou plus après les lettres (MATH5202 seulement, C133800) ; les 15 autres sont undergrad. Cette règle suit la numérotation de NCKU (1 à 4 : 1er cycle, 5 et plus : cycles supérieurs), mais aucune page enregistrée ni aucun plan de cours ne le dit en toutes lettres : le plan de MATH5202 demande « 2nd year math major » et la liste le met en année 3 (cours ouvert aux deux cycles probable). À vérifier si ce cours compte.
+Plans de cours (ncku-tw-syllabus, role enrich) : 16 adresses lues dans les liens « Syllabus » des rangées retenues par pipeline/readers/ncku-tw.discover.ts (script à relancer après un nouvel enregistrement, aucune requête réseau). Les adresses syllabus.php redirigent vers online_display.php. Description = texte anglais seulement (lignes en chinois retirées) ; si le contenu fait moins de 80 caractères, objectifs puis contenu. F724200 n'a que 54 caractères. Langue du plan (Medium of Instruction) : « English » pour les 16, aucun désaccord avec la liste.
+Faits : catalogPublic true (« Fall semester of 2026-2027 », p1:l5) et catalogUrl https://course.ncku.edu.tw/index.php?c=qry11215&m=en_query (« Advanced Search », p1:l13), tous deux de la copie de liste-ee-115-1.html.htm (sha256 aeaa4308...), seul fichier enregistré sans commentaire « saved from url » : son adresse d'origine est donc cette adresse par défaut. Les deux autres fichiers portent chacun une adresse à jeton i=... de 277 caractères, gardée telle quelle dans la fiche.
+Aucune requête vers course.ncku.edu.tw ni course-query.acad.ncku.edu.tw.
+
+Vérification de 5 cours tirés au hasard, chacun sur sa copie de plan de cours (class-qry.acad.ncku.edu.tw, titre, crédits, langue, semestre) :
+- E238500 INTRODUCTION TO COMPUTER AND NETWORK SECURITY : titre identique, 2 crédits, English, 0115 semestre 1 (automne).
+- C120601 INTRODUCTION TO PROBABILITY : titre identique, 3 crédits, English, 0115 semestre 1.
+- C133800 COMPLEX VARIABLES : titre identique, 3 crédits, English, 0115 semestre 1.
+- F720300 DATA STRUCTURE : titre identique, 3 crédits, English, 0115 semestre 1.
+- F724100 UNSUPERVISED ALGORITHMS IN MACHINE LEARNING : titre identique, 1 crédit, English, 0115 semestre 1.
+Les 16 cours ont aussi été comparés à leur plan (crédits, langue, semestre) : aucun écart.

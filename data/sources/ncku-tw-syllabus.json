@@ -1,0 +1,25 @@
+{
+  "id": "ncku-tw-syllabus",
+  "universityId": "ncku-tw",
+  "kind": "html",
+  "urls": [
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=F720401&class_code=2",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=F711110&class_code=",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=F720600&class_code=2",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=F720300&class_code=2",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=F724100&class_code=",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=F724200&class_code=",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=F725200&class_code=",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=E212200&class_code=3",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=E220610&class_code=3",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=E227010&class_code=3",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=E231110&class_code=3",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=E221300&class_code=3",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=E223800&class_code=",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=E238500&class_code=",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=C120601&class_code=1",
+    "https://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0115&sem=1&co_no=C133800&class_code="
+  ],
+  "reader": "ncku-tw-syllabus",
+  "role": "enrich"
+}

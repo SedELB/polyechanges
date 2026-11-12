@@ -1823,7 +1823,7 @@
     "lat": 23,
     "lng": 120.217,
     "website": "https://web.ncku.edu.tw/index.php?Lang=en",
-    "catalogUrl": null,
+    "catalogUrl": "https://course.ncku.edu.tw/index.php?c=qry11215&m=en_query",
     "creditSystem": "local",
     "contactHoursPerCredit": 18,
     "terms": {
@@ -1840,7 +1840,7 @@
     },
     "restrictions": null,
     "exchangeContact": "Division of Study Abroad",
-    "catalogPublic": false,
+    "catalogPublic": true,
     "provenance": {
       "name": {
         "url": "https://en.wikipedia.org/wiki/National_Cheng_Kung_University",
@@ -1913,14 +1913,14 @@
         "quote": "1 credit = 1 lecture hour/week, totaling at least 18 hours per semester."
       },
       "catalogPublic": {
-        "url": "https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en",
-        "retrievedAt": "2026-11-10T19:34:35.051Z",
-        "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
+        "url": "https://course.ncku.edu.tw/index.php?c=qry11215&m=en_query",
+        "retrievedAt": "2026-11-11T02:19:57.898Z",
+        "sha256": "aeaa4308cdc828ffeca6de25893fc3361446d150416068f9491e99eae23546d4",
         "locator": {
           "page": 1,
-          "line": 175
+          "line": 5
         },
-        "quote": "Primarily Chinese, with some courses offered in English as a supplement."
+        "quote": "Fall semester of 2026-2027"
       },
       "terms.fall.start": {
         "url": "https://web.ncku.edu.tw/var/file/0/1000/img/4970/769644400.pdf",
@@ -1973,6 +1973,16 @@
             "quote": "Feb. (1)Credits wavier begins. (2/2-2/22) Payments of spring semester"
           }
         ]
+      },
+      "catalogUrl": {
+        "url": "https://course.ncku.edu.tw/index.php?c=qry11215&m=en_query",
+        "retrievedAt": "2026-11-11T02:19:57.898Z",
+        "sha256": "aeaa4308cdc828ffeca6de25893fc3361446d150416068f9491e99eae23546d4",
+        "locator": {
+          "page": 1,
+          "line": 13
+        },
+        "quote": "Advanced Search"
       }
     }
   },

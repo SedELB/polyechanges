@@ -24098,5 +24098,293 @@
     "sourcePage": 1,
     "sourceLine": 502,
     "snapshotSha256": "446412846de693a59a7c61917f5cccc5f2c4822644e22fa96918dbb187e0a3a0"
+  },
+  {
+    "id": 1391,
+    "universityId": "ncku-tw",
+    "code": "F720401",
+    "title": "INTRODUCTION TO CIRCUITS THEORY AND DIGITAL ELECTRONICS",
+    "description": "1. Introduction\n2. Basic RLC Circuit Theory\n3. Frequency response and Bode plot\n4. Semiconductor and Transistors\n5. Transistor Circuitry and Amplifier\nLogic Circuits",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=F720401&class_code=2",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "74e005224935a1fcbeadde263d572568c4bbbc292cf9ea42cf5ef058ad140376"
+  },
+  {
+    "id": 1392,
+    "universityId": "ncku-tw",
+    "code": "F711110",
+    "title": "PROGRAM DESIGN(1)",
+    "description": "Understand the history and fundamental concepts of the C programming language.\nKnow how to build computer programs in C\nDesign and develop computer programs in C to solve problems effectively.\nLearn how to develop usable programs and basic debugging skills\n\nThe course intends to have students to be familiar with C language programming.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=F711110&class_code=",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "80a3af2275830651e7ab94cdbbb8ea5c0007c59e63466fca918817259c14e7a1"
+  },
+  {
+    "id": 1393,
+    "universityId": "ncku-tw",
+    "code": "F720600",
+    "title": "DISCRETE MATHEMATICS",
+    "description": "This course broadly introduces the mathematics theorems and application of computation usage. It will introduce the fundamental principles of counting, logic, set theory, mathematical induction, relations, finite state machine, the principle of inclusion and exclusion, generating functions, recurrence relations, and graph theory.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=F720600&class_code=2",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "d51e09fbbc109c625d36c51ec5d2adea5b0fb57ca5e587af8c5c264da2137373"
+  },
+  {
+    "id": 1394,
+    "universityId": "ncku-tw",
+    "code": "F720300",
+    "title": "DATA STRUCTURE",
+    "description": "1.Basic Concepts 2.Array and Structures 3.Stacks and Queues 4.Lists 5.Trees 6.Graphs 7.Sorting 8.Hashing",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=F720300&class_code=2",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "8f56eac3f52218eceb03468d6325cfe3dcec01972f3adbc1d02425bf49d94eab"
+  },
+  {
+    "id": 1395,
+    "universityId": "ncku-tw",
+    "code": "F724100",
+    "title": "UNSUPERVISED ALGORITHMS IN MACHINE LEARNING",
+    "description": "Understand supervised learning algorithms\nUnderstand how to code in Python\nUnderstand matrix factorization methods",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=F724100&class_code=",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "b6114f0fbe3849a34d186e046ee71ab17a8fe748f35d76ba9dd8a8e42ce6e13b"
+  },
+  {
+    "id": 1396,
+    "universityId": "ncku-tw",
+    "code": "F724200",
+    "title": "CONVOLUTIONAL NEURAL NETWORKS",
+    "description": "Understand CNN\nBuild CNN\nUndertand applications of CNN",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=F724200&class_code=",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "e6411e40e57937c42f10526bcb6d924e497807da9cc878fed29c467283bece9c"
+  },
+  {
+    "id": 1397,
+    "universityId": "ncku-tw",
+    "code": "F725200",
+    "title": "DATA VISUALIZATION AND EXPLORATION",
+    "description": "Understand how to plot in Python\nUnderstand data representation techniques\nApply exploratory data analysis to applications",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=F725200&class_code=",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "e7918677e9c1ab91b3018a084e7a0b40ba618df4814e6fc802b9aedea6bb88d8"
+  },
+  {
+    "id": 1398,
+    "universityId": "ncku-tw",
+    "code": "E212200",
+    "title": "INTRODUCTION TO COMPUTER SCIENCE",
+    "description": "This course will introduce the basic concepts of computers and implement them with programming languages so that students can develop a deeper understanding of the aforementioned concepts.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E212200&class_code=3",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "6b67b855169a3cadd7c4332753e02243463fe5f43ac790665b382dc50694eb11"
+  },
+  {
+    "id": 1399,
+    "universityId": "ncku-tw",
+    "code": "E220610",
+    "title": "ENGINEERING MATHEMATICS (1)",
+    "description": "This course introduces the mathematics required by engineering and applied sciences, and the application of mathematics to problems in engineering and applied sciences.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E220610&class_code=3",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "97820b46a60207cee633d76bf9b5ca2f88d226ca2bf3688de9fc0669ed2cd6d4"
+  },
+  {
+    "id": 1400,
+    "universityId": "ncku-tw",
+    "code": "E227010",
+    "title": "ELECTRONICS (1)",
+    "description": "Microelectronic Circuits(1) introduces \"devices and basic circuits\", including: Signals, Amplifiers, and Semiconductors, Operational Amplifiers, Diodes, Bipolar Junction Transistors (BJTs), MOS Field-Effect Transistors (MOSFETs), Transistor Amplifiers.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E227010&class_code=3",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "3d439d05c3d875356af6b9737af0b03e3f49ff1c4198e7063b9953af9289f6f8"
+  },
+  {
+    "id": 1401,
+    "universityId": "ncku-tw",
+    "code": "E231110",
+    "title": "ELECTROMAGNETIC FIELDS AND WAVES (1)",
+    "description": "Electrostatic Fields, Magnetostatic Fields, Time-Varying Electromagnetic Fields, and Maxwell's Equations.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E231110&class_code=3",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "1b7848adc6742b324c2348e824626e14bb85055f96ec92dc35769f959a506285"
+  },
+  {
+    "id": 1402,
+    "universityId": "ncku-tw",
+    "code": "E221300",
+    "title": "ELECTRIC INSTRUMENTS",
+    "description": "This course introduces Electronic Instrumentation and Measurement, from simple instrumentations like Electronic Meters, to more complicated instrumentations like Biomedical Acquisition System & Function Generator.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E221300&class_code=3",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "b9783de0b6bb2348a9e663b99194656492302a0a4f3ec0a4fda5efd7cd72c189"
+  },
+  {
+    "id": 1403,
+    "universityId": "ncku-tw",
+    "code": "E223800",
+    "title": "INTRODUCTION TO CYBERSECURITY",
+    "description": "This course is primarily designed for beginners with an interest in information security. It leverages the resources available on the Coursera platform to introduce the foundational knowledge of professional terminology in cybersecurity, network security, security operations, and policies and procedures. The main topics include security principles, incident response, business continuity, disaster recovery, access control, and network security.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E223800&class_code=",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "0d03c68655babcc113087e3d7678c0af97a94225bcf698dc31d25c595898bd4d"
+  },
+  {
+    "id": 1404,
+    "universityId": "ncku-tw",
+    "code": "E238500",
+    "title": "INTRODUCTION TO COMPUTER AND NETWORK SECURITY",
+    "description": "This course is a fundamental introduction to cyber-security. Course students will learn the basic concepts of computer and network system security by watching on-line English videos, understanding user access control, data transmission security, vulnerability, risk assessment, and other related topics. The students are required to complete online quizzes to review their learning.",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=E238500&class_code=",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "c3191a3fe48bd53bca83550426f9540c00e42466c2aae36d9398e763410e123f"
+  },
+  {
+    "id": 1405,
+    "universityId": "ncku-tw",
+    "code": "C120601",
+    "title": "INTRODUCTION TO PROBABILITY",
+    "description": "Definition of Probability, Random Variable, Joint Random Variable and it's Distribution, Moment Generating Function, Characteristic Function, Limiting Theory.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=C120601&class_code=1",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "5dea29931d28791baba30890226b83a5f9113a9f8a69c55b782a6069992e0471"
+  },
+  {
+    "id": 1406,
+    "universityId": "ncku-tw",
+    "code": "C133800",
+    "title": "COMPLEX VARIABLES",
+    "description": "This course provides the mathematical foundations needed for understanding and working with the modern analysis. The main topics are complex number system, analytic functions, integrations, conformal mappings and some integral transformations. Some applications in physics and engineering will also be included.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0115&sem=1&co_no=C133800&class_code=",
+    "collectedAt": "2026-11-11T02:45:35.657Z",
+    "sourcePage": 1,
+    "sourceLine": 11,
+    "snapshotSha256": "3d8d2dd428530d7411d3ff96d5749f38c4b2aee0b63c6a394246bfec71c4c600"
   }
 ]
