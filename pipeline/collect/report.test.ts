@@ -38,3 +38,14 @@ describe('writeReport', () => {
     expect(readFileSync(path, 'utf8')).toBe(once);
   });
 });
+
+describe('renderReport, avertissements', () => {
+  it('écrit les avertissements en tête du rapport', () => {
+    const text = renderReport({ ...input, warnings: ['Pages enregistrées le 2025-01-05 : à réenregistrer depuis un navigateur (source s)'] });
+    expect(text.split('\n')[0]).toBe('Pages enregistrées le 2025-01-05 : à réenregistrer depuis un navigateur (source s)');
+    expect(text.split('\n')[1]).toBe('Rapport de collecte : x-tw');
+  });
+  it('sans avertissement, le rapport commence par son titre', () => {
+    expect(renderReport(input).split('\n')[0]).toBe('Rapport de collecte : x-tw');
+  });
+});

@@ -73,13 +73,24 @@ function htmlLines(html: string): string[] {
   return lines;
 }
 
-/** Texte d'une copie brute : pages, puis lignes (une seule page pour du HTML). */
+/**
+ * Texte brut : une ligne du fichier = une ligne extraite (normalisée, lignes vides gardées pour que la position
+ * soit celle du fichier), sur une seule page. Le saut de ligne final ne compte pas pour une ligne.
+ */
+function plainLines(text: string): string[] {
+  if (text === '') return [];
+  return text.replace(/\r?\n$/, '').split(/\r\n|\n|\r/).map(normalizeText);
+}
+
+/** Texte d'une copie brute : pages, puis lignes (une seule page pour du HTML ou du texte brut). */
 export async function snapshotText(body: Buffer, contentType: string): Promise<string[][]> {
-  if (contentType.toLowerCase().includes('pdf')) {
+  const type = contentType.toLowerCase();
+  if (type.includes('pdf')) {
     const pdf = await getDocumentProxy(new Uint8Array(body));
     const { text } = await extractText(pdf, { mergePages: false });
     return text.map((page) => page.split(/\r?\n/).map(normalizeText).filter((l) => l !== ''));
   }
+  if (type.includes('text/plain')) return [plainLines(body.toString('utf8'))];
   return [htmlLines(body.toString('utf8'))];
 }
 

@@ -7,7 +7,7 @@ import { UNIVERSITIES_PATH, loadUniversities, syncUniversities } from '../partne
 import { ensureFactsSource, refreshFactSources, writeSourcesReport } from '../provenance/refresh.js';
 import { findQuoteSpans, linesListing, snapshotText } from '../provenance/snapshotText.js';
 import { relocateCourses, relocateFactSources } from '../provenance/relocate.js';
-import { findRawCopy, verifyAll } from '../provenance/verify.js';
+import { findRawCopy, RAW_CONTENT_TYPES, verifyAll } from '../provenance/verify.js';
 
 const DATA_DIR = 'data';
 const RAW_DIR = join(DATA_DIR, 'raw');
@@ -95,9 +95,9 @@ async function rewriteLinesViews(): Promise<number> {
   const dirs = [RAW_DIR, ...readdirSync(RAW_DIR).map((d) => join(RAW_DIR, d)).filter((d) => statSync(d).isDirectory())];
   for (const dir of dirs) {
     for (const name of readdirSync(dir)) {
-      const m = /^([0-9a-f]{64})\.(html|pdf)$/.exec(name);
+      const m = /^([0-9a-f]{64})\.(html|pdf|txt)$/.exec(name);
       if (!m || !existsSync(join(dir, `${m[1]}.lines.txt`))) continue;
-      const pages = await snapshotText(readFileSync(join(dir, name)), m[2] === 'pdf' ? 'application/pdf' : 'text/html');
+      const pages = await snapshotText(readFileSync(join(dir, name)), RAW_CONTENT_TYPES[m[2]]);
       writeFileSync(join(dir, `${m[1]}.lines.txt`), linesListing(pages));
       n++;
     }

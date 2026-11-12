@@ -10,14 +10,21 @@ export interface RawCopy {
   contentType: string;
 }
 
-/** Cherche la copie brute `<sha256>.html|pdf` dans le magasin (un sous-dossier par source). */
+/** Type de contenu d'une copie brute d'après son extension dans le magasin. */
+export const RAW_CONTENT_TYPES: Readonly<Record<string, string>> = {
+  html: 'text/html',
+  pdf: 'application/pdf',
+  txt: 'text/plain',
+};
+
+/** Cherche la copie brute `<sha256>.html|pdf|txt` dans le magasin (un sous-dossier par source). */
 export function findRawCopy(sha256: string, rawDir: string): RawCopy | null {
   if (!existsSync(rawDir)) return null;
   const dirs = [rawDir, ...readdirSync(rawDir).map((d) => join(rawDir, d)).filter((d) => statSync(d).isDirectory())];
   for (const dir of dirs) {
-    for (const ext of ['html', 'pdf']) {
+    for (const [ext, contentType] of Object.entries(RAW_CONTENT_TYPES)) {
       const path = join(dir, `${sha256}.${ext}`);
-      if (existsSync(path)) return { path, contentType: ext === 'pdf' ? 'application/pdf' : 'text/html' };
+      if (existsSync(path)) return { path, contentType };
     }
   }
   return null;
@@ -35,7 +42,10 @@ function locateQuote(pages: string[][], p: { quote: string; locator: { page: num
 
 const RANK: Record<Located['status'], number> = { inchangé: 0, déplacé: 1, introuvable: 2 };
 
-/** Nature de la copie brute : la règle de placement du contexte en dépend. `null` : copie inconnue, ordre non jugé. */
+/**
+ * Nature de la copie brute : la règle de placement du contexte en dépend. Le texte brut, d'une seule page, suit la
+ * règle du HTML. `null` : copie inconnue, ordre non jugé.
+ */
 export type RawKind = 'html' | 'pdf' | null;
 
 export const rawKind = (contentType: string): 'html' | 'pdf' => (/pdf/i.test(contentType) ? 'pdf' : 'html');

@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import type { CollectionDiff } from '../db/hostCourses.js';
 
 export interface ReportInput {
+  /** Université (un rapport par université, toutes ses sources ensemble) ou source de Poly. */
   sourceId: string;
   /** AAAA-MM-JJ */
   date: string;
@@ -14,6 +15,8 @@ export interface ReportInput {
   notes?: string[];
   /** Note de la fiche d'une source qui ne publie pas de descriptions. */
   descriptionsNote?: string;
+  /** Lignes écrites en tête du rapport (pages enregistrées à réenregistrer). */
+  warnings?: string[];
 }
 
 const list = (label: string, codes: string[]) =>
@@ -21,6 +24,7 @@ const list = (label: string, codes: string[]) =>
 
 export function renderReport(r: ReportInput): string {
   const lines = [
+    ...(r.warnings ?? []),
     `Rapport de collecte : ${r.sourceId}`,
     `Date : ${r.date}`,
     `Statut : ${r.status}`,

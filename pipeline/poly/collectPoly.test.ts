@@ -135,11 +135,28 @@ describe('collectPoly', () => {
     expect(listPolyCourses(db)).toHaveLength(16);
   });
 
-  it("échoue proprement quand le fichier enregistré est absent", async () => {
+  it("échoue proprement quand le fichier enregistré est absent, en le nommant", async () => {
     rmSync(page);
     const res = await collectPoly(db, source, rawDir, '2026-11-10T10:00:00.000Z');
     expect(res.status).toBe('failed');
-    expect(res.reason).toBeTruthy();
+    expect(res.reason).toContain(`Fichier enregistré absent : ${page}`);
     expect(lastRun(db, 'poly-log')?.status).toBe('failed');
+  });
+
+  it('avec --accept-loss, une perte de plus de 30 % passe et sa raison est notée', async () => {
+    await collectPoly(db, source, rawDir, '2026-11-10T10:00:00.000Z');
+    const html = readFileSync(page, 'utf8');
+    writeFileSync(page, html.slice(0, html.indexOf('>LOG3430<')) + '</body></html>');
+    const res = await collectPoly(db, source, rawDir, '2026-11-11T10:00:00.000Z', { acceptLoss: 'Programme réduit' });
+    expect(res.status).toBe('ok');
+    expect(res.notes?.[0]).toBe('Perte acceptée (--accept-loss) : Programme réduit');
+    expect(listPolyCourses(db).length).toBeLessThan(16);
+  });
+
+  it('signale une page de Poly enregistrée il y a plus de 300 jours', async () => {
+    const old = new Date('2025-09-01T10:00:00.000Z');
+    utimesSync(page, old, old);
+    const res = await collectPoly(db, source, rawDir, '2026-11-10T10:00:00.000Z');
+    expect(res.warnings).toEqual(['Pages enregistrées le 2025-09-01 : à réenregistrer depuis un navigateur (source poly-log)']);
   });
 });

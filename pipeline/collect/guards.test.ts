@@ -33,3 +33,21 @@ describe('checkGuards, source sans descriptions publiées', () => {
     expect(checkGuards(courses(10, 10), 0).ok).toBe(false);
   });
 });
+
+describe('checkGuards, baisse voulue', () => {
+  it('sans l’option, une perte de plus de 30 % échoue et dit comment la déclarer voulue', () => {
+    const res = checkGuards(courses(5), 100);
+    expect(res.ok).toBe(false);
+    expect(res.ok ? '' : res.reason).toMatch(/perte de plus de 30 %.*--accept-loss/);
+  });
+  it('avec l’option, la perte passe et le résultat le dit', () => {
+    expect(checkGuards(courses(5), 100, { acceptLoss: true })).toEqual({ ok: true, lossAccepted: true });
+  });
+  it('l’option ne change rien sans perte', () => {
+    expect(checkGuards(courses(90), 100, { acceptLoss: true })).toEqual({ ok: true });
+  });
+  it('l’option ne lève ni le garde-fou du zéro cours ni celui des descriptions vides', () => {
+    expect(checkGuards([], 100, { acceptLoss: true }).ok).toBe(false);
+    expect(checkGuards(courses(10, 10), 100, { acceptLoss: true })).toEqual({ ok: false, reason: '10 descriptions vides sur 10' });
+  });
+});

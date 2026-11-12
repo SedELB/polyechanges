@@ -1,9 +1,10 @@
 import type { Db } from '../db/open.js';
 import { listPolyCourses, upsertPolyCourses } from '../db/polyCourses.js';
 import { recordRun } from '../db/runs.js';
-import { readSnapshot, takeSavedSnapshot } from '../fetch/snapshots.js';
+import type { RawSnapshot } from '../fetch/snapshots.js';
 import { checkGuards } from '../collect/guards.js';
-import { recordFailure, type CollectResult } from '../collect/collect.js';
+import { lossNotes, recordFailure, type CollectResult } from '../collect/collect.js';
+import { staleSavedWarning, takeSavedSnapshots } from '../collect/saved.js';
 import type { SourceFile } from '../collect/sourceFile.js';
 import type { PolyCourse } from '../../shared/types.js';
 import { findCode, snapshotText } from '../provenance/snapshotText.js';
@@ -28,9 +29,15 @@ const fingerprint = (c: PolyCourse): string =>
 /**
  * Collecte les cours de Poly depuis les pages enregistrées à la main : copies brutes, lecture,
  * admissibilité, garde-fous, puis une seule transaction. Les cours absents de la nouvelle lecture
- * passent à `active = 0` (jamais supprimés). Rien n'est téléchargé.
+ * passent à `active = 0` (jamais supprimés). Rien n'est téléchargé. `acceptLoss` : baisse voulue.
  */
-export async function collectPoly(db: Db, source: SourceFile, rawDir: string, now: string): Promise<CollectResult> {
+export async function collectPoly(
+  db: Db,
+  source: SourceFile,
+  rawDir: string,
+  now: string,
+  opts?: { acceptLoss?: string },
+): Promise<CollectResult> {
   db.prepare(
     `INSERT INTO sources (id, university_id, kind, url, reader) VALUES (?, ?, ?, ?, ?)
      ON CONFLICT(id) DO UPDATE SET university_id = excluded.university_id, kind = excluded.kind,
@@ -41,16 +48,16 @@ export async function collectPoly(db: Db, source: SourceFile, rawDir: string, no
   const previous = before.size;
 
   let found: PolyCourse[];
+  let snapshots: RawSnapshot[] = [];
   try {
-    if (source.kind !== 'saved' || !source.files) throw new Error(`La source ${source.id} n'est pas une page enregistrée`);
+    const saved = takeSavedSnapshots(db, source, rawDir);
+    snapshots = saved.map((s) => s.snapshot);
     const bySigle = new Map<string, PolyCourse>();
-    for (const [i, file] of source.files.entries()) {
-      const snap = takeSavedSnapshot(db, source.id, source.urls[i], file, rawDir);
-      const body = readSnapshot(snap, rawDir);
+    for (const [i, { snapshot: snap, body }] of saved.entries()) {
       // Les positions ne doivent jamais faire échouer la collecte : en cas d'erreur, elles restent nulles.
       let text: string[][] = [];
       try {
-        text = await snapshotText(body, 'text/html');
+        text = await snapshotText(body, snap.contentType);
       } catch {
         text = [];
       }
@@ -74,8 +81,10 @@ export async function collectPoly(db: Db, source: SourceFile, rawDir: string, no
     return recordFailure(db, source, now, err instanceof Error ? err.message : String(err), previous);
   }
 
-  const guard = checkGuards(found, previous);
-  if (!guard.ok) return recordFailure(db, source, now, guard.reason, previous);
+  const stale = staleSavedWarning(source.id, snapshots, now);
+  const warnings = stale ? { warnings: [stale] } : {};
+  const guard = checkGuards(found, previous, { acceptLoss: opts?.acceptLoss !== undefined, target: source.id });
+  if (!guard.ok) return { ...recordFailure(db, source, now, guard.reason, previous), ...warnings };
 
   const diff = db.transaction(() => {
     upsertPolyCourses(db, found);
@@ -109,7 +118,8 @@ export async function collectPoly(db: Db, source: SourceFile, rawDir: string, no
     });
     return d;
   })();
-  return { status: 'ok', diff, reason: null };
+  const notes = lossNotes(opts?.acceptLoss, guard, diff.removed);
+  return { status: 'ok', diff, reason: null, ...warnings, ...(notes.length > 0 ? { notes } : {}) };
 }
 
 /** Chiffres de synthèse des cours de Poly actifs, pour le rapport. */

@@ -103,3 +103,21 @@ describe('extraits sur plusieurs lignes', () => {
     expect(findCode([['Curriculum', 'CS 101']], 'Curriculum CS101')).toEqual([]);
   });
 });
+
+describe('texte brut', () => {
+  const txt = Buffer.from('﻿Course list 2026\r\nCSIE1212\tData  Structures\tEnglish\n\nCSIE2136 Algorithm Design\n');
+
+  it('une ligne de texte = une ligne extraite, sur une seule page', async () => {
+    expect(await snapshotText(txt, 'text/plain')).toEqual([
+      ['Course list 2026', 'CSIE1212 Data Structures English', '', 'CSIE2136 Algorithm Design'],
+    ]);
+    expect(await snapshotText(Buffer.from(''), 'text/plain; charset=utf-8')).toEqual([[]]);
+  });
+
+  it('findQuoteSpans et findCode y retrouvent extraits et codes', async () => {
+    const pages = await snapshotText(txt, 'text/plain');
+    expect(findQuoteSpans(pages, 'CSIE1212 Data Structures')).toEqual([{ page: 1, line: 2, lines: 1 }]);
+    expect(findQuoteSpans(pages, 'Course list 2026 CSIE1212')).toEqual([{ page: 1, line: 1, lines: 2 }]);
+    expect(findCode(pages, 'CSIE2136')).toEqual([{ page: 1, line: 4 }]);
+  });
+});

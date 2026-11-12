@@ -1,7 +1,11 @@
 import { spawnSync } from 'node:child_process';
 import { openDb } from '../db/open.js';
 
-/** Étapes de collecte, dans l'ordre. La comparaison et l'export suivent, pour une version du critère. */
+/**
+ * Étapes de collecte, dans l'ordre. La comparaison et l'export suivent, pour une version du critère.
+ * `collect -- all` collecte par université, toutes ses sources ensemble ; une source `saved` relit les fichiers
+ * enregistrés présents, et le rapport de l'université signale en tête ceux qui ont plus de 300 jours.
+ */
 const COLLECT_STEPS: { label: string; args: string[] }[] = [
   { label: 'partners:check', args: ['run', 'partners:check'] },
   { label: 'collect -- all', args: ['run', 'collect', '--', 'all'] },
