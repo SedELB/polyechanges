@@ -1,0 +1,29 @@
+=== collecte automatique ===
+Rapport de collecte : snu-kr
+Date : 2026-11-12
+Statut : ok
+Cours actifs : 94
+Ajoutés (94) : 326.521, 326.638, 326.747, 3341.446, 3341.454, 3341.608, 3341.715, 3341.721A, 3341.741A, 3341.753, 400.018, 4190.101, 4190.206A, 4190.308, 4190.309A, 4190.406B, 4190.407, 4190.408, 4190.409, 4190.411, 4190.412, 4190.423, 4190.428, 4190.571, 4190.672, 4190.762, 4190.771, 430.201A, 430.202B, 430.203A, 430.207B, 430.211, 430.213A, 430.216, 430.217, 430.301C, 430.306, 430.314, 430.329, 430.417, 430.423, 430.425, 430.435, 430.447, 430.452A, 430.456, 430.457, 430.512, 430.534A, 430.604A, 430.610A, 430.629A, 430.659, 430.729, 430.759, 430.828, 430.831, 430.859, 881.003, 881.007, F31.104, F31.104L, F31.105, F31.105L, F31.108, F31.113, F32.102, F37.202, M1407.000500, M1407.001600, M1407.002400, M1407.002500, M1407.002600, M1407.004500, M1407.004600, M1407.005600, M1522.000600, M1522.000700, M1522.000800, M1522.000900, M1522.001000, M1522.001200, M1522.001400, M1522.002400, M1522.003600, M1522.004700, M1522.005300, M1522.005500, M1522.006000, M1522.007400, M2177.003100, M2177.004300, M2608.001200, M2608.002700
+Retirés (0) : aucun
+Modifiés (0) : aucun
+Descriptions non publiées : L'export de la recherche de cours de SNU n'a aucune description ; seuls les cours du département d'informatique reçoivent une description, tirée du catalogue 2020 du département (source snu-kr-catalog-cse).
+Sources : snu-kr (saved), snu-kr-catalog-cse (pdf, enrich)
+Codes ignorés de la source snu-kr-catalog-cse (enrich, absents des autres sources) : 51
+=== fin de la collecte automatique ===
+
+Notes sur la collecte
+- Sources : les quatre exports Excel de https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action, convertis en texte Unicode par npm run saved:xls-to-txt (jamais de requête vers sugang.snu.ac.kr), et le catalogue 2020 du département d'informatique (en-cdn.snu.ac.kr, PDF), source enrich avec descriptionsDated 2020. Catalogues ECE, mathématiques et statistique non ajoutés : 3 %, 17 % et 0 % des cours retenus du département appariés (seuil 30 %).
+- Trois exports sur quatre (printemps ingénierie, automne et printemps sciences) sont ceux de l'interface coréenne : en-têtes et titres en coréen. 64 des 94 cours n'ont qu'un titre en coréen (conservé tel quel) ; 3 cours ont reçu le titre anglais du catalogue 2020 ou de l'export anglais par numéro de cours exact.
+- Retenus par département (cours distincts) : informatique 31, génie électrique et informatique 36, mathématiques 23, statistique 4. Écartés : coréen 193, thèse 3.
+- Descriptions : 10 cours d'informatique, tirées du catalogue de 2020 ; 84 cours sans description.
+- Export de l'étudiant de l'automne (snu-eng-2026-fall) : complet pour le 1er cycle (CSE 33 rangées contre 30 au printemps, ECE 62 contre 60), mais sans aucune rangée de cycles supérieurs (printemps : 688). Cours de cycles supérieurs de l'automne de CSE et ECE absents.
+- La position d'un cours est la première ligne où son numéro apparaît dans les exports (une section en coréen peut précéder la section en anglais retenue, par exemple 881.003 : ligne 460 pour la section 001 en coréen, la section anglaise est 002).
+- Contact et dates : voir le rapport du 2026-11-10 (inchangé).
+
+Vérification de 5 cours (2026-11-12), rangée de l'export puis valeur collectée
+1. 3341.446 : sci-2026-fall.txt ligne 702, Mathematical Sciences, Bachelor, section 001, « 수학특강 2 », 3 crédits, 영어, 설강. Collecté : undergrad, 3 crédits, fall, titre identique.
+2. 430.425 : eng-2026-fall.txt ligne 167, Electrical and Computer Engineering, Bachelor, « Bio Instrumentation », 3 crédits, English, Open Lecture. Collecté : identique, fall.
+3. 881.003 : sci-2026-fall.txt ligne 460, section 001 en coréen ; la section retenue (002) est en 영어, 설강, 3 crédits. Collecté : « 미분방정식 », 3 crédits, fall, undergrad.
+4. M1522.001000 : eng-2026-spring.txt ligne 981, Computer Science and Engineering, 학사, « 컴퓨터비전 », 3 crédits, 영어, 설강. Collecté : spring, undergrad, 3 crédits.
+5. 4190.408 : export anglais de l'automne (Artificial Intelligence, 3 crédits, English, Open Lecture) ; description du catalogue 2020 (copie f67986ee…, page 5 ligne 16 pour le numéro, « This course probes into artificial intelligence, focusing on heuristic search… » à la ligne 26), titre « Artificial Intelligence ». Collecté : identique.
+Résultat : 5 sur 5 identiques (titre, crédits, langue, trimestre). Contrôle fait par lecture de la base et des fichiers, pas par un second lecteur.

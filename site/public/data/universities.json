@@ -2008,7 +2008,7 @@
     "lat": 37.46,
     "lng": 126.9525,
     "website": "https://en.snu.ac.kr/",
-    "catalogUrl": null,
+    "catalogUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
     "creditSystem": "local",
     "contactHoursPerCredit": 15,
     "terms": {
@@ -2025,7 +2025,7 @@
     },
     "restrictions": "Undergraduate applicants for Dept. of Computer Science and Engineering must have earned at least 15 credits in CSE-related courses",
     "exchangeContact": "incoming@snu.ac.kr",
-    "catalogPublic": false,
+    "catalogPublic": true,
     "provenance": {
       "name": {
         "url": "https://en.wikipedia.org/wiki/Seoul_National_University",
@@ -2108,14 +2108,14 @@
         "quote": "Undergraduate applicants for Dept. of Computer Science and Engineering must have earned at least 15 credits in CSE-related courses"
       },
       "catalogPublic": {
-        "url": "https://oga.snu.ac.kr/isss/academics-for-students/course/",
-        "retrievedAt": "2026-11-10T21:30:52.807Z",
-        "sha256": "e897ddd35a2cbfad065b2661a4a174b2368a73eb049e545cafa60bfdefbb52e3",
+        "url": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+        "retrievedAt": "2026-11-12T22:15:05.371Z",
+        "sha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32",
         "locator": {
           "page": 1,
-          "line": 204
+          "line": 2
         },
-        "quote": "in the course search of the registration website"
+        "quote": "Year : 2026, Semester : 2학기, General Education : All"
       },
       "terms.fall.end": {
         "url": "https://en.snu.ac.kr/academics/resources/calendar",
@@ -2199,6 +2199,16 @@
             "quote": "SEPTEMBER 01 (Tue) Start of Fall semester"
           }
         ]
+      },
+      "catalogUrl": {
+        "url": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+        "retrievedAt": "2026-11-12T22:15:05.371Z",
+        "sha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32",
+        "locator": {
+          "page": 1,
+          "line": 1
+        },
+        "quote": "Course Search"
       }
     }
   },

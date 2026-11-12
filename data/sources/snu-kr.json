@@ -1,0 +1,20 @@
+{
+  "id": "snu-kr",
+  "universityId": "snu-kr",
+  "kind": "saved",
+  "urls": [
+    "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action"
+  ],
+  "files": [
+    "data/saved/snu-kr/snu-eng-2026-fall.txt",
+    "data/saved/snu-kr/snu-sci-2026-fall.txt",
+    "data/saved/snu-kr/snu-eng-2026-spring.txt",
+    "data/saved/snu-kr/snu-sci-2026-spring.txt"
+  ],
+  "reader": "snu-kr",
+  "descriptions": "none",
+  "descriptionsNote": "L'export de la recherche de cours de SNU n'a aucune description ; seuls les cours du département d'informatique reçoivent une description, tirée du catalogue 2020 du département (source snu-kr-catalog-cse)."
+}

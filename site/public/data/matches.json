@@ -2467,6 +2467,28 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF8175",
+    "hostCourseId": 1418,
+    "notionsFound": [
+      "intelligent-agents",
+      "search-strategies",
+      "knowledge-representation",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "adversarial-search",
+      "local-search",
+      "constraint-programming",
+      "propositional-logic"
+    ],
+    "contentScore": 0.6,
+    "workload": "trop_legere",
+    "level": "moyenne",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8215",
     "hostCourseId": 60,
     "notionsFound": [
@@ -3190,6 +3212,28 @@
     "contentScore": 0.3,
     "workload": "inconnue",
     "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8215",
+    "hostCourseId": 1418,
+    "notionsFound": [
+      "intelligent-agents",
+      "search-strategies",
+      "knowledge-representation",
+      "supervised-learning",
+      "neural-networks",
+      "reinforcement-learning"
+    ],
+    "notionsMissing": [
+      "adversarial-search",
+      "local-search",
+      "constraint-programming",
+      "propositional-logic"
+    ],
+    "contentScore": 0.6,
+    "workload": "trop_legere",
+    "level": "moyenne",
     "textUsed": "description"
   },
   {
@@ -5217,6 +5261,28 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF8402",
+    "hostCourseId": 1485,
+    "notionsFound": [
+      "ad-hoc-networks",
+      "sensor-networks",
+      "virtual-private-networks"
+    ],
+    "notionsMissing": [
+      "network-security-standards",
+      "ethernet-security",
+      "tcp-ip-security",
+      "mobile-network-security",
+      "ims-security",
+      "peer-to-peer-network-security",
+      "virtual-lans"
+    ],
+    "contentScore": 0.3,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8405",
     "hostCourseId": 28,
     "notionsFound": [
@@ -5675,6 +5741,50 @@
     ],
     "contentScore": 0.4,
     "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "INF8405",
+    "hostCourseId": 1412,
+    "notionsFound": [
+      "mobile-application-characterization",
+      "mobile-network-architectures",
+      "mobile-operating-systems"
+    ],
+    "notionsMissing": [
+      "wireless-networks",
+      "mobility-and-location-management",
+      "cellular-systems",
+      "next-generation-networks",
+      "ad-hoc-network-deployment",
+      "quality-of-service-and-routing",
+      "internet-of-things"
+    ],
+    "contentScore": 0.3,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "titre"
+  },
+  {
+    "polySigle": "INF8405",
+    "hostCourseId": 1485,
+    "notionsFound": [
+      "wireless-networks",
+      "mobile-network-architectures",
+      "next-generation-networks"
+    ],
+    "notionsMissing": [
+      "mobility-and-location-management",
+      "mobile-application-characterization",
+      "mobile-operating-systems",
+      "cellular-systems",
+      "ad-hoc-network-deployment",
+      "quality-of-service-and-routing",
+      "internet-of-things"
+    ],
+    "contentScore": 0.3,
+    "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description"
   },
@@ -6945,6 +7055,28 @@
     "textUsed": "description"
   },
   {
+    "polySigle": "INF8775",
+    "hostCourseId": 1416,
+    "notionsFound": [
+      "asymptotic-notation",
+      "greedy-algorithms",
+      "dynamic-programming",
+      "metaheuristics"
+    ],
+    "notionsMissing": [
+      "resource-consumption-analysis",
+      "empirical-and-theoretical-analysis",
+      "worst-case-and-amortized-analysis",
+      "divide-and-conquer",
+      "complexity-classes-p-and-np",
+      "decidability"
+    ],
+    "contentScore": 0.4,
+    "workload": "trop_legere",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
     "polySigle": "INF8808",
     "hostCourseId": 548,
     "notionsFound": [
@@ -7367,6 +7499,27 @@
     ],
     "contentScore": 0.333,
     "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG2400",
+    "hostCourseId": 1430,
+    "notionsFound": [
+      "structural-modeling",
+      "behavioral-modeling",
+      "architectural-modeling"
+    ],
+    "notionsMissing": [
+      "software-process-and-life-cycle",
+      "standard-modeling-notation",
+      "software-analysis-and-design",
+      "object-oriented-design",
+      "layered-architecture",
+      "design-patterns"
+    ],
+    "contentScore": 0.333,
+    "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description"
   },
@@ -9713,6 +9866,28 @@
     ],
     "contentScore": 0.3,
     "workload": "inconnue",
+    "level": "faible",
+    "textUsed": "description"
+  },
+  {
+    "polySigle": "LOG8430",
+    "hostCourseId": 1429,
+    "notionsFound": [
+      "architecture-selection",
+      "multi-tier-architecture",
+      "component-based-architecture"
+    ],
+    "notionsMissing": [
+      "client-server-architecture",
+      "dynamic-component-loading",
+      "frameworks-and-plugins",
+      "advanced-design-patterns",
+      "distributed-systems-patterns",
+      "aspect-oriented-design",
+      "service-oriented-architecture"
+    ],
+    "contentScore": 0.3,
+    "workload": "trop_legere",
     "level": "faible",
     "textUsed": "description"
   },

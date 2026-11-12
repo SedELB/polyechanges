@@ -1,0 +1,11 @@
+{
+  "id": "snu-kr-catalog-cse",
+  "universityId": "snu-kr",
+  "kind": "pdf",
+  "urls": [
+    "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf"
+  ],
+  "reader": "snu-kr-catalog",
+  "role": "enrich",
+  "descriptionsDated": "2020"
+}

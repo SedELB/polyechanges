@@ -24386,5 +24386,1712 @@
     "sourcePage": 1,
     "sourceLine": 11,
     "snapshotSha256": "3d8d2dd428530d7411d3ff96d5749f38c4b2aee0b63c6a394246bfec71c4c600"
+  },
+  {
+    "id": 1407,
+    "universityId": "snu-kr",
+    "code": "430.423",
+    "title": "Introduction to Photonics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 57,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1408,
+    "universityId": "snu-kr",
+    "code": "4190.428",
+    "title": "Introduction to Machine Learning",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 94,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1409,
+    "universityId": "snu-kr",
+    "code": "430.202B",
+    "title": "Introduction to Electromagnetism with Practice",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 113,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1410,
+    "universityId": "snu-kr",
+    "code": "430.201A",
+    "title": "Digital Logic Design and Lab.",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 119,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1411,
+    "universityId": "snu-kr",
+    "code": "M2608.001200",
+    "title": "Introduction to Data Communication Networks",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 125,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1412,
+    "universityId": "snu-kr",
+    "code": "4190.406B",
+    "title": "Mobile Computing and Its Applications",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 144,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1413,
+    "universityId": "snu-kr",
+    "code": "430.425",
+    "title": "Bio Instrumentation",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 167,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1414,
+    "universityId": "snu-kr",
+    "code": "M1522.000800",
+    "title": "System Programming",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 181,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1415,
+    "universityId": "snu-kr",
+    "code": "430.301C",
+    "title": "Analog Electronic Circuits",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 183,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1416,
+    "universityId": "snu-kr",
+    "code": "4190.407",
+    "title": "Algorithms",
+    "description": "This course reviews the techniques for algorithm design and analysis. Specific topics will include asymptotic notation, recurrence, sorting, order statistics, and dynamic programming.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 5,
+    "sourceLine": 5,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1417,
+    "universityId": "snu-kr",
+    "code": "430.329",
+    "title": "Introduction to Algorithms",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 186,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1418,
+    "universityId": "snu-kr",
+    "code": "4190.408",
+    "title": "Artificial Intelligence",
+    "description": "This course probes into artificial intelligence, focusing on heuristic search, reasoning, learning, and knowledge representation. It also covers the methods of logical theorem proving, playing games, intelligent agents, and neural networks.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 5,
+    "sourceLine": 16,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1419,
+    "universityId": "snu-kr",
+    "code": "M1522.000900",
+    "title": "Data Structures",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 235,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1420,
+    "universityId": "snu-kr",
+    "code": "430.217",
+    "title": "Introduction to Data Structures",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 236,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1421,
+    "universityId": "snu-kr",
+    "code": "430.216",
+    "title": "Linear Algebra for Electrical Systems",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 272,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1422,
+    "universityId": "snu-kr",
+    "code": "4190.206A",
+    "title": "Electrical and Electronic Circuits",
+    "description": "This course deals with the basics on the electrical and electronics circuits. In the first half of the course, it covers the electrical characteristics of three major components (resistor, capacitor, and inductor) and some analysis techniques of the linear and time invariant RLC circuits. In the second half, students will learn the operation principle of diode and transistor elements and analysis techniques of electronics circuits. In particular, they will understand the electrical characteristics of a logic element which is an electronic circuit inside.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 105,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1423,
+    "universityId": "snu-kr",
+    "code": "430.447",
+    "title": "Power System Economics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 278,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1424,
+    "universityId": "snu-kr",
+    "code": "430.435",
+    "title": "Introduction to Electro-physics",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 281,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1425,
+    "universityId": "snu-kr",
+    "code": "430.457",
+    "title": "Introduction to Intelligent Systems",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 293,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1426,
+    "universityId": "snu-kr",
+    "code": "400.018",
+    "title": "Creative Engineering Design",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 299,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1427,
+    "universityId": "snu-kr",
+    "code": "4190.409",
+    "title": "Compilers",
+    "description": "This course deals with the Compiler which translates high-level languange into assembly language. It focuses on lexical/syntax/semantic analysis, intermediate code generator, and optimization technique.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 5,
+    "sourceLine": 31,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1428,
+    "universityId": "snu-kr",
+    "code": "M1522.001200",
+    "title": "Topics in New Computer Technology",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 317,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1429,
+    "universityId": "snu-kr",
+    "code": "4190.308",
+    "title": "Computer Architecture",
+    "description": "This course introduces main components of digital computers, their functionalities and interactions. It studies various design techniques for implementing modern computer systems. Specific topics will include instruction set architecture, CPU, pipelining, and hierarchical memory organization.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 3,
+    "sourceLine": 31,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1430,
+    "universityId": "snu-kr",
+    "code": "4190.412",
+    "title": "Computer Modeling",
+    "description": "This course reviews how to model computing resources in terms of quantity and analyzes the performance of the models. It covers basic stochastic modeling, the theory of queues and its application to real cases.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 5,
+    "sourceLine": 68,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1431,
+    "universityId": "snu-kr",
+    "code": "4190.423",
+    "title": "Computer Convergence Application",
+    "description": "Computer technology now moves towards the new paradigm of convergence with various other areas beyond classical computing paradigm, This course will cover various technologies and ideas behind computer fusion applications such as IT + BT, IT + Finance, IT + Car Telematics, IT + Handset Devices, etc. Students will study and practice various computer convergence application cases.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 6,
+    "sourceLine": 109,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1432,
+    "universityId": "snu-kr",
+    "code": "F37.202",
+    "title": "Digital Computer Concept and Practice",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 322,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1433,
+    "universityId": "snu-kr",
+    "code": "M1522.000600",
+    "title": "Computer Programming",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 326,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1434,
+    "universityId": "snu-kr",
+    "code": "F31.113",
+    "title": "경영학을 위한 수학",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 7,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1435,
+    "universityId": "snu-kr",
+    "code": "326.521",
+    "title": "고급통계적방법론",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 60,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1436,
+    "universityId": "snu-kr",
+    "code": "M1407.005600",
+    "title": "대수적위상수학",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 125,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1437,
+    "universityId": "snu-kr",
+    "code": "3341.715",
+    "title": "대수학특강 : 디오판토스 해석",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 128,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1438,
+    "universityId": "snu-kr",
+    "code": "881.003",
+    "title": "미분방정식",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 460,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1439,
+    "universityId": "snu-kr",
+    "code": "F31.108",
+    "title": "미적분학의 첫걸음",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall",
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 479,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1440,
+    "universityId": "snu-kr",
+    "code": "326.747",
+    "title": "범주형자료분석",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 482,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1441,
+    "universityId": "snu-kr",
+    "code": "881.007",
+    "title": "선형대수학",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 600,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1442,
+    "universityId": "snu-kr",
+    "code": "F31.105",
+    "title": "수학 2",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 621,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1443,
+    "universityId": "snu-kr",
+    "code": "F31.105L",
+    "title": "수학연습 2",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 653,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1444,
+    "universityId": "snu-kr",
+    "code": "M1407.000500",
+    "title": "수학적 알고리즘 2",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 701,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1445,
+    "universityId": "snu-kr",
+    "code": "3341.446",
+    "title": "수학특강 2",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 702,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1446,
+    "universityId": "snu-kr",
+    "code": "3341.741A",
+    "title": "위상수학특강 : 동역학에서의 스펙트럴 방법론",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 723,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1447,
+    "universityId": "snu-kr",
+    "code": "F32.102",
+    "title": "통계학",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 814,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1448,
+    "universityId": "snu-kr",
+    "code": "3341.721A",
+    "title": "해석학특강 : 현대 비국소 연산자 연구 중 일부 고찰",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 854,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1449,
+    "universityId": "snu-kr",
+    "code": "M1407.002400",
+    "title": "현대 계산수학",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 871,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1450,
+    "universityId": "snu-kr",
+    "code": "M1407.004600",
+    "title": "현대기하학탐구",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 872,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1451,
+    "universityId": "snu-kr",
+    "code": "M1407.002600",
+    "title": "확률미분방정식",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 953,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1452,
+    "universityId": "snu-kr",
+    "code": "M1522.007400",
+    "title": "강화학습",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 7,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1453,
+    "universityId": "snu-kr",
+    "code": "M1522.004700",
+    "title": "계산이론연구 : 프라이버시 강화 암호",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 65,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1454,
+    "universityId": "snu-kr",
+    "code": "430.534A",
+    "title": "고급디지털집적회로",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 76,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1455,
+    "universityId": "snu-kr",
+    "code": "430.610A",
+    "title": "고급전력시장이론",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 85,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1456,
+    "universityId": "snu-kr",
+    "code": "4190.571",
+    "title": "고급컴퓨터구조",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 88,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1457,
+    "universityId": "snu-kr",
+    "code": "4190.762",
+    "title": "그래픽스특강 : 컴퓨테이셔널 이미징",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 145,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1458,
+    "universityId": "snu-kr",
+    "code": "430.207B",
+    "title": "기초전자회로 및 실험",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 212,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1459,
+    "universityId": "snu-kr",
+    "code": "430.213A",
+    "title": "기초회로이론 및 실험",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 215,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1460,
+    "universityId": "snu-kr",
+    "code": "M1522.000700",
+    "title": "논리설계",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 118,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1461,
+    "universityId": "snu-kr",
+    "code": "M1522.001400",
+    "title": "데이터마이닝 개론",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 593,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1462,
+    "universityId": "snu-kr",
+    "code": "M2177.003100",
+    "title": "딥러닝",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 614,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1463,
+    "universityId": "snu-kr",
+    "code": "M2177.004300",
+    "title": "딥러닝의 기초",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 136,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1464,
+    "universityId": "snu-kr",
+    "code": "430.452A",
+    "title": "로봇공학개론",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 616,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1465,
+    "universityId": "snu-kr",
+    "code": "M2608.002700",
+    "title": "로봇학습",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 617,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1466,
+    "universityId": "snu-kr",
+    "code": "430.828",
+    "title": "반도체소자특강",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 655,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1467,
+    "universityId": "snu-kr",
+    "code": "M1522.003600",
+    "title": "생물정보학을 위한 기계학습",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 689,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1468,
+    "universityId": "snu-kr",
+    "code": "430.512",
+    "title": "선형시스템이론",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 709,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1469,
+    "universityId": "snu-kr",
+    "code": "M1522.002400",
+    "title": "소프트웨어 개발의 원리와 실습",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 176,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1470,
+    "universityId": "snu-kr",
+    "code": "430.306",
+    "title": "신호 및 시스템",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 741,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1471,
+    "universityId": "snu-kr",
+    "code": "4190.672",
+    "title": "실시간시스템",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 747,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1472,
+    "universityId": "snu-kr",
+    "code": "4190.771",
+    "title": "알고리즘특강 : Advanced Algorithms",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 751,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1473,
+    "universityId": "snu-kr",
+    "code": "4190.101",
+    "title": "Discrete Mathematics",
+    "description": "This course introduces mathematical foundations for computer science and engineering. Specific topics will include logic, sets, functions, computational complexity, and number theory.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 7,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1474,
+    "universityId": "snu-kr",
+    "code": "M1522.005300",
+    "title": "인간중심컴퓨팅연구 : 텔레프레즌스 응용 및 시스템",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 815,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1475,
+    "universityId": "snu-kr",
+    "code": "M1522.005500",
+    "title": "인공지능연구",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 828,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1476,
+    "universityId": "snu-kr",
+    "code": "430.417",
+    "title": "임베디드시스템설계",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 837,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1477,
+    "universityId": "snu-kr",
+    "code": "430.629A",
+    "title": "전기에너지변환 및 회로특강",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 902,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1478,
+    "universityId": "snu-kr",
+    "code": "430.203A",
+    "title": "전자기학",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 912,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1479,
+    "universityId": "snu-kr",
+    "code": "430.859",
+    "title": "전자물리특강",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 914,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1480,
+    "universityId": "snu-kr",
+    "code": "430.729",
+    "title": "제어자동화특강",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 925,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1481,
+    "universityId": "snu-kr",
+    "code": "430.831",
+    "title": "집적회로특강 : SoC설계",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 943,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1482,
+    "universityId": "snu-kr",
+    "code": "430.456",
+    "title": "최신제어기법",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 961,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1483,
+    "universityId": "snu-kr",
+    "code": "430.604A",
+    "title": "최적화기법의 전력시스템 응용",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 962,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1484,
+    "universityId": "snu-kr",
+    "code": "430.659",
+    "title": "컴퓨터 및 VLSI특강",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 967,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1485,
+    "universityId": "snu-kr",
+    "code": "4190.411",
+    "title": "Computer Networks",
+    "description": "This course deals with the Internet technology in detail. It covers Internet architecture and protocol applications.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 5,
+    "sourceLine": 60,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1486,
+    "universityId": "snu-kr",
+    "code": "M1522.001000",
+    "title": "컴퓨터비전",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 981,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1487,
+    "universityId": "snu-kr",
+    "code": "430.759",
+    "title": "통신공학특강",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 1010,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1488,
+    "universityId": "snu-kr",
+    "code": "430.211",
+    "title": "프로그래밍방법론",
+    "description": "",
+    "credits": 4,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 331,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1489,
+    "universityId": "snu-kr",
+    "code": "M1522.006000",
+    "title": "프로그래밍언어연구 : 느슨한 메모리 동시성 모델",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 1022,
+    "snapshotSha256": "320d639f37396381919f2be9151be6f8fd628a3c5157be809617937950dbf1c7"
+  },
+  {
+    "id": 1490,
+    "universityId": "snu-kr",
+    "code": "4190.309A",
+    "title": "Hardware System Design",
+    "description": "This course introduces computer hardware design using CAD tools. It also covers VHDL as a hardware description language.",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://en-cdn.snu.ac.kr/webdata/uploads/eng/file/2020/02/Computer_Science_and_Engineering.pdf",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 3,
+    "sourceLine": 45,
+    "snapshotSha256": "f67986eea312dad5eb74de7849befa28fc889cfb6a7f0b742a0d1e0c8490aad1",
+    "descriptionsDated": "2020"
+  },
+  {
+    "id": 1491,
+    "universityId": "snu-kr",
+    "code": "430.314",
+    "title": "확률변수 및 확률과정의 기초",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 371,
+    "snapshotSha256": "3501c1a13b25baf0920efad76e798882a31b33e3e111098321b9083e61c8dc32"
+  },
+  {
+    "id": 1492,
+    "universityId": "snu-kr",
+    "code": "326.638",
+    "title": "고급생물통계학",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 41,
+    "snapshotSha256": "87681ac3f4e7d5f808a9390d29cc37102b1bdd87d25b23bd384ae4ee9027bd91"
+  },
+  {
+    "id": 1493,
+    "universityId": "snu-kr",
+    "code": "3341.608",
+    "title": "대수적위상수학 2",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 117,
+    "snapshotSha256": "87681ac3f4e7d5f808a9390d29cc37102b1bdd87d25b23bd384ae4ee9027bd91"
+  },
+  {
+    "id": 1494,
+    "universityId": "snu-kr",
+    "code": "M1407.001600",
+    "title": "대수학 특수 연구 : 정수론 관련 주제",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 127,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1495,
+    "universityId": "snu-kr",
+    "code": "M1407.004500",
+    "title": "미분기하학 개론",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 442,
+    "snapshotSha256": "87681ac3f4e7d5f808a9390d29cc37102b1bdd87d25b23bd384ae4ee9027bd91"
+  },
+  {
+    "id": 1496,
+    "universityId": "snu-kr",
+    "code": "3341.753",
+    "title": "수리확률론특강 : (비대칭) 디리클레 형식과 관련된 주제",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 600,
+    "snapshotSha256": "87681ac3f4e7d5f808a9390d29cc37102b1bdd87d25b23bd384ae4ee9027bd91"
+  },
+  {
+    "id": 1497,
+    "universityId": "snu-kr",
+    "code": "F31.104",
+    "title": "수학 1",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 619,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1498,
+    "universityId": "snu-kr",
+    "code": "F31.104L",
+    "title": "수학연습 1",
+    "description": "",
+    "credits": 1,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 649,
+    "snapshotSha256": "4b7d7ddcb6f1b2c8bd943ed71c300b0b5cfaf71271fcd8a7cccd77717ebe55d3"
+  },
+  {
+    "id": 1499,
+    "universityId": "snu-kr",
+    "code": "3341.454",
+    "title": "최적화의 수학적 이론 및 계산",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 779,
+    "snapshotSha256": "87681ac3f4e7d5f808a9390d29cc37102b1bdd87d25b23bd384ae4ee9027bd91"
+  },
+  {
+    "id": 1500,
+    "universityId": "snu-kr",
+    "code": "M1407.002500",
+    "title": "측도이론과 확률",
+    "description": "",
+    "credits": 3,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action",
+    "collectedAt": "2026-11-12T22:27:22.072Z",
+    "sourcePage": 1,
+    "sourceLine": 781,
+    "snapshotSha256": "87681ac3f4e7d5f808a9390d29cc37102b1bdd87d25b23bd384ae4ee9027bd91"
   }
 ]
