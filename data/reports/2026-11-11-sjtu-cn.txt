@@ -1,0 +1,21 @@
+=== collecte automatique ===
+Rapport de collecte : sjtu-cn
+Date : 2026-11-11
+Statut : ok
+Cours actifs : 121
+Ajoutés (1) : ENGR1010J
+Retirés (0) : aucun
+Modifiés (0) : aucun
+=== fin de la collecte automatique ===
+
+Correctifs de périmètre
+- ENGR1010J (Introduction to Computers and Programming) est gardé par son code exact (4 crédits, 1er cycle) : c'est de
+  l'informatique. Les 10 autres ENGR (gestion, éthique, rédaction, projets) restent écartés. Index relu : 355 cours, 122
+  adresses retenues (121 cours après fusion d'ECE4130J), 233 écartés (ENGR 10 au lieu de 11).
+- Ouverture du Global College aux échangistes : confirmée par la page « Academic Information » de l'International Programs
+  Office du Global College (https://gc.sjtu.edu.cn/ipo/en/study/page/1029, copie 3703c597bec4b2cbf46cd4e88ddc6f0685e8e4b7b7a337cd5dce015d86c37b26,
+  lue le 2026-11-11). Ligne 55 : « Exchange and visiting students should enroll in courses a few weeks before the new semester
+  begins. » ; ligne 54 : « All courses at Global College, including supporting recitation sessions, are taught exclusively in
+  English ... » ; ligne 52 : « Please note that Spring is not a major semester at GC therefore the course options will be
+  limited. » Ce n'est pas une limite d'accès : la restriction actuelle (admission par une école précise) est conservée telle quelle.
+- La ligne 54 est aussi une meilleure source de la langue « en » que la page d'admission au 1er cycle citée plus haut.

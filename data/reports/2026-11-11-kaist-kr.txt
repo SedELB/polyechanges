@@ -1,0 +1,17 @@
+=== collecte automatique ===
+Rapport de collecte : kaist-kr
+Date : 2026-11-11
+Statut : ok
+Cours actifs : 366
+Ajoutés (66) : CS.30702, CS.30707, CS.30708, CS.40006, CS.40203, CS.40204, CS.40301, CS.40504, CS.40710, CS.49902, CS.50004, CS.50200, CS.50202, CS.50401, CS.50402, CS.50403, CS.50406, CS.50502, CS.50504, CS.50602, CS.50702, CS.50704, CS.50706, CS.50709, CS.50808, CS.50900, CS.59900, CS.60000, CS.60100, CS.60302, CS.60304, CS.60500, CS.60504, CS.60604, CS.60605, CS.60701, CS.60702, CS.60706, CS.60800, CS.60801, CS.70900, CS.79900, CS.79901, CS.79902, CS.79904, CS.79905, CS.79906, CS.79907, CS.79908, CS.79909, CS.79910, CS.79911, CS.79913, CS.79915, CS.79917, CS.89900, CS.89901, CS.89902, CS.91000, CS.91100, CS.91200, CS.92100, CS.92200, CS.93000, CS.93100, CS.93200
+Retirés (7) : EE.91101, EE.91200, EE.93001, EE.93100, EE.93200, EE.94100, EE.94200
+Modifiés (88) : CC.50010, CS.10001, CS.10009, CS.20002, CS.20004, CS.20006, CS.20101, CS.20200, CS.20300, CS.20700, CS.30000, CS.30100, CS.30101, CS.30200, CS.30202, CS.30300, CS.30401, CS.30408, CS.30500, CS.30600, CS.30601, CS.30700, CS.30701, CS.30703, CS.30704, CS.30705, CS.30706, CS.30800, CS.40002, CS.40008, CS.40009, CS.40101, CS.40200, CS.40202, CS.40400, CS.40402, CS.40403, CS.40407, CS.40503, CS.40507, CS.40508, CS.40509, CS.40701, CS.40703, CS.40704, CS.40705, CS.40707, CS.40709, CS.40801, CS.40802, CS.40803, CS.40805, CS.40806, CS.40809, CS.49900, CS.49901, CS.50000, CS.50100, CS.50204, CS.50300, CS.50400, CS.50408, CS.50500, CS.50600, CS.50604, CS.50605, CS.50700, CS.50705, CS.50707, CS.50708, CS.50800, CS.50804, CS.50806, CS.50901, CS.60102, CS.60200, CS.60306, CS.60404, CS.60406, CS.60502, CS.60505, CS.60506, CS.60600, CS.60602, CS.60700, CS.60704, CS.60802, CS.79912
+=== fin de la collecte automatique ===
+
+Correctifs de périmètre et de langue
+- Langue : le drapeau « 영어강의여부 » est dans un commentaire HTML d'un tableau caché, absent du texte extrait
+  (`source:find` ne le trouve pas) : invérifiable. Il n'est plus lu. Les 154 cours d'informatique (88 anciennement « en » et
+  les 66 anciennement marqués N, qui reviennent) ont la langue « unknown », comme les 212 cours de génie électrique.
+- Filtre : les cours dont le titre contient thesis, individual study, seminar, internship ou research sont écartés
+  (règle isResearchTitle, testée). 7 cours écartés : EE.91101, EE.91200, EE.93001, EE.93100, EE.93200, EE.94100, EE.94200.
+  Génie électrique : 219 -> 212 cours. Total : 154 + 212 = 366 cours actifs.

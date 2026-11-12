@@ -14,6 +14,11 @@ export function termsOf(text: string): HostTerm[] {
   return terms;
 }
 
+/** Titre d'un cours de recherche, de thèse, de séminaire, d'étude individuelle ou de stage (écarté du périmètre). */
+export function isResearchTitle(title: string): boolean {
+  return /thesis|individual study|seminar|internship|\bresearch\b/i.test(title);
+}
+
 /** « 강:실:학(숙) » : cours:laboratoire:crédits. Les crédits sont le troisième nombre ; « :: » ou absent donne null. */
 export function creditsOf(text: string): number | null {
   const m = /^\s*\d+\s*:\s*\d+\s*:\s*(\d+(?:\.\d+)?)/.exec(text);
@@ -23,10 +28,10 @@ export function creditsOf(text: string): number | null {
 
 /**
  * Page informatique (cs.kaist.ac.kr/education/undergraduate ou graduate) : un tableau caché par cours, avec code,
- * crédits, semestre d'ouverture, description anglaise et, en commentaire HTML, « 영어강의여부 » (Y/N). Les cours
- * marqués N ne sont pas retournés.
+ * crédits, semestre d'ouverture et description anglaise. Le drapeau « 영어강의여부 » (Y/N) n'est pas lu : il est dans un
+ * commentaire HTML d'un tableau caché, absent du texte extrait, donc invérifiable. La langue reste « unknown ».
  */
-function readComputing(page: { url: string; body: Buffer }, skipped?: string[]): HostCourseInput[] {
+function readComputing(page: { url: string; body: Buffer }): HostCourseInput[] {
   const $ = cheerio.load(page.body.toString('utf8'));
   const courses: HostCourseInput[] = [];
   $('tr.inTable').each((_, tr) => {
@@ -42,11 +47,6 @@ function readComputing(page: { url: string; body: Buffer }, skipped?: string[]):
     const code = cells.get('과목코드') ?? '';
     const title = cells.get('과목명') ?? '';
     if (!code || !title) throw new Error(`Cours illisible dans ${page.url}`);
-    const flag = /<!--\s*<td>\s*영어강의여부\s*<\/td>\s*<td>\s*([YN])\s*<\/td>\s*-->/.exec($.html(tr))?.[1];
-    if (flag === 'N') {
-      skipped?.push(code);
-      return;
-    }
     const level = cells.get('과정') === '대학원과정' ? 'grad' : cells.get('과정') === '학부과정' ? 'undergrad' : null;
     if (!level) throw new Error(`Cycle illisible pour ${code} dans ${page.url}`);
     courses.push({
@@ -56,8 +56,7 @@ function readComputing(page: { url: string; body: Buffer }, skipped?: string[]):
       outline: null,
       credits: creditsOf(cells.get('강:실:학(숙)') ?? ''),
       contactHours: null,
-      // Y : la page le dit ; absent : on ne le sait pas.
-      language: flag === 'Y' ? 'en' : 'unknown',
+      language: 'unknown',
       terms: termsOf(cells.get('개설학기') ?? ''),
       level,
       sourceUrl: page.url,
@@ -77,8 +76,8 @@ function readElectrical(page: { url: string; body: Buffer }): HostCourseInput[] 
   $('article.ecs-post-loop').each((_, article) => {
     const a = $(article);
     const title = clean(a.find('h2.elementor-heading-title a').first().text());
-    // Recherche de thèse : pas un cours, et fermé aux échanges (page des échanges entrants).
-    if (/thesis/i.test(title)) return;
+    // Recherche, séminaire, étude individuelle et stage : pas des cours à comparer (la recherche de thèse est fermée aux échanges).
+    if (isResearchTitle(title)) return;
     const code = a
       .find('.elementor-widget-text-editor .elementor-widget-container')
       .map((__, el) => clean($(el).text()))
@@ -114,10 +113,10 @@ export function electricalPageCount(html: string): number {
   return Number(m[1]);
 }
 
-/** Cours de la page selon son hôte ; `skipped` reçoit les codes d'informatique exclus (« 영어강의여부 » = N). */
-export function readKaistPage(page: { url: string; body: Buffer }, skipped?: string[]): HostCourseInput[] {
+/** Cours de la page selon son hôte. */
+export function readKaistPage(page: { url: string; body: Buffer }): HostCourseInput[] {
   const host = new URL(page.url).hostname;
-  if (host === 'cs.kaist.ac.kr') return readComputing(page, skipped);
+  if (host === 'cs.kaist.ac.kr') return readComputing(page);
   if (host === 'ee.kaist.ac.kr') return readElectrical(page);
   throw new Error(`Hôte KAIST inconnu : ${page.url}`);
 }

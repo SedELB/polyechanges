@@ -96,6 +96,7 @@ describe('liste des matières de l ISTC', () => {
       credits: 2,
       term: 'fall',
       notAvailable: false,
+      reserved: false,
       cohort: null,
       page: 14,
       line: 11,
@@ -128,7 +129,24 @@ describe('liste des matières de l ISTC', () => {
     expect(why('31691010')).toBeNull();
   });
 
-  it('retient 31 cours et en exclut 79 dont 30 de recherche et 10 non offerts', () => {
+  it('exclut les cours hors informatique, génie électrique et mathématiques, et ceux réservés au département', () => {
+    const why = (code: string) => istcExclusion(byCode(code));
+    for (const code of ['31695004', '31695005', '31695006', '31695011', '31695012', '31696503', '31696504', '31696506', '31696507', '31696511']) {
+      expect(why(code), code).toBe('out-of-field');
+    }
+    expect(byCode('31692010').reserved).toBe(true);
+    expect(byCode('31692011').reserved).toBe(true);
+    expect(why('31692010')).toBe('reserved');
+    expect(why('31692011')).toBe('reserved');
+    // Obligatoires pour le département mais pas fermés aux autres : gardés.
+    expect(byCode('31692008').reserved).toBe(false);
+    expect(why('31692008')).toBeNull();
+    expect(why('31692009')).toBeNull();
+    // Mathématiques et informatique voisins : gardés.
+    for (const code of ['31695001', '31695002', '31695003', '31695013', '31696502', '31696505', '31696512']) expect(why(code), code).toBeNull();
+  });
+
+  it('retient 19 cours et en exclut 91 dont 30 de recherche, 10 non offerts, 10 hors discipline et 2 réservés', () => {
     const counts: Record<string, number> = {};
     let kept = 0;
     for (const r of rows) {
@@ -136,8 +154,8 @@ describe('liste des matières de l ISTC', () => {
       if (w) counts[w] = (counts[w] ?? 0) + 1;
       else kept++;
     }
-    expect(kept).toBe(31);
-    expect(counts).toEqual({ 'out-of-family': 37, research: 30, 'not-available': 10, 'old-cohort': 2 });
+    expect(kept).toBe(19);
+    expect(counts).toEqual({ 'out-of-family': 37, research: 30, 'not-available': 10, 'old-cohort': 2, 'out-of-field': 10, reserved: 2 });
   });
 
   it('construit un cours de cycles supérieurs avec ses champs complets', () => {
@@ -149,7 +167,7 @@ describe('liste des matières de l ISTC', () => {
       outline: null,
       credits: 2,
       contactHours: null,
-      language: 'en',
+      language: 'unknown',
       terms: ['fall'],
       level: 'grad',
       sourceUrl: 'https://example.test/guide.pdf',

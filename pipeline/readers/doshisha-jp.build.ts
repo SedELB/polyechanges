@@ -4,7 +4,7 @@
 //   sont retenus ;
 // - le guide d'inscription 2026 de l'ISTC (International Science and Technology Course, cycles supérieurs de la
 //   faculté de sciences et génie) : matières de l'informatique, du génie électrique, des mathématiques et du tronc
-//   commun, hors thèses, stages et expériences de recherche.
+//   commun, hors thèses, stages, expériences de recherche, cours hors discipline et cours réservés au département.
 // Aucune des deux listes ne donne de description ni d'heures de contact.
 // À lancer à la main : npx tsx pipeline/readers/doshisha-jp.build.ts
 import { createHash } from 'node:crypto';
@@ -129,6 +129,8 @@ export interface IstcRow {
   /** `null` : « not available this year » ou semestre « All » (stages). */
   term: HostTerm | null;
   notAvailable: boolean;
+  /** Note « Only for the students in the department ... » : cours réservé aux étudiants du département. */
+  reserved: boolean;
   /** Mention « For students enrolled in ... » si présente. */
   cohort: string | null;
   page: number;
@@ -164,6 +166,7 @@ export function parseIstcRows(pages: string[][]): IstcRow[] {
         credits: digits.length > 0 ? Number(digits[digits.length - 1]![1]) : null,
         term: !notAvailable && termMatch && termMatch[1] !== 'All' ? (termMatch[1] === 'Spring' ? 'spring' : 'fall') : null,
         notAvailable,
+        reserved: /Only for the students/.test(text),
         cohort: text.match(/【For students enrolled in ([^】]*)】/)?.[1] ?? null,
         page,
         line: i + 1,
@@ -175,12 +178,28 @@ export function parseIstcRows(pages: string[][]): IstcRow[] {
   return out;
 }
 
-export type IstcExclusion = 'out-of-family' | 'research' | 'not-available' | 'old-cohort';
+export type IstcExclusion = 'out-of-family' | 'out-of-field' | 'research' | 'not-available' | 'old-cohort' | 'reserved';
+
+/** Cours des familles retenues mais hors informatique, génie électrique et mathématiques (environnement, écologie, physique, chimie, biologie). */
+export const OUT_OF_FIELD_CODES: readonly string[] = [
+  '31695004',
+  '31695005',
+  '31695006',
+  '31695011',
+  '31695012',
+  '31696503',
+  '31696504',
+  '31696506',
+  '31696507',
+  '31696511',
+];
 
 /** Retenus : informatique 31691, électrique 31692, mathématiques 31695, tronc commun 3169650x et 3169651x. */
 export function istcExclusion(r: IstcRow): IstcExclusion | null {
   if (!/^(31691|31692|31695|3169650|3169651)/.test(r.code)) return 'out-of-family';
+  if (OUT_OF_FIELD_CODES.includes(r.code)) return 'out-of-field';
   if (/Internship|Research and Experiments|Master's Thesis/.test(r.title)) return 'research';
+  if (r.reserved) return 'reserved';
   if (r.notAvailable) return 'not-available';
   if (r.cohort && /and before$/.test(r.cohort)) return 'old-cohort';
   return null;
@@ -199,7 +218,8 @@ export function istcToCourse(
     outline: null,
     credits: r.credits,
     contactHours: null,
-    language: 'en',
+    // Le guide marque « (E) » sans l'expliquer : la langue n'est pas établie.
+    language: 'unknown',
     terms: r.term ? [r.term] : [],
     level: 'grad',
     sourceUrl: url,

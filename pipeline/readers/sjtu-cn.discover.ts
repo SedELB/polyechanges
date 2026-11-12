@@ -8,6 +8,8 @@ import { createPoliteFetcher, type PoliteFetcher } from '../fetch/politeFetch.js
 export const INDEX_URL = 'https://gc.sjtu.edu.cn/academics/courses/courses-by-number/';
 /** Préfixes retenus : génie électrique et informatique (ECE), informatique (CS), mathématiques (MATH), science des données (DS). */
 export const CODE_PREFIXES = ['ECE', 'CS', 'MATH', 'DS'];
+/** Cours gardés par leur code exact : ENGR1010J (Introduction to Computers and Programming) est de l'informatique ; les autres ENGR restent écartés. */
+export const EXTRA_CODES = ['ENGR1010J'];
 
 export interface ListedCourse {
   code: string;
@@ -20,7 +22,7 @@ export function prefixOf(code: string): string {
 }
 
 export function isWanted(code: string): boolean {
-  return CODE_PREFIXES.includes(prefixOf(code));
+  return CODE_PREFIXES.includes(prefixOf(code)) || EXTRA_CODES.includes(code);
 }
 
 /** Lit l'index : chaque lien vers une fiche de cours, « CODE – Titre », sans doublon d'adresse. */

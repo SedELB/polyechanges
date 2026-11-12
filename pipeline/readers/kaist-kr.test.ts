@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { getReader } from '../collect/readers.js';
 import './index.js';
-import { creditsOf, electricalPageCount, readKaistCourses, readKaistPage, termsOf } from './kaist-kr.js';
+import { creditsOf, electricalPageCount, isResearchTitle, readKaistCourses, readKaistPage, termsOf } from './kaist-kr.js';
 import { electricalUrls, listPageUrl } from './kaist-kr.discover.js';
 
 const URLS = {
@@ -28,11 +28,10 @@ describe('lecteur kaist-kr', () => {
     expect(getReader('kaist-kr')).toBe(readKaistCourses);
   });
 
-  it('informatique 1er cycle : exactement 4 cours en anglais sur 5, le cours « N » est écarté', () => {
-    const skipped: string[] = [];
-    const courses = readKaistPage(csUg, skipped);
-    expect(courses.map((c) => c.code)).toEqual(['CS.10001', 'CS.20101', 'CS.30100', 'CS.49901']);
-    expect(skipped).toEqual(['CS.30702']);
+  it('informatique 1er cycle : exactement 5 cours, aucun écarté ni lu comme anglais (drapeau non lu)', () => {
+    const courses = readKaistPage(csUg);
+    expect(courses.map((c) => c.code)).toEqual(['CS.10001', 'CS.20101', 'CS.30100', 'CS.30702', 'CS.49901']);
+    expect(courses.every((c) => c.language === 'unknown')).toBe(true);
   });
 
   it('lit tous les champs d un cours d informatique', () => {
@@ -42,7 +41,7 @@ describe('lecteur kaist-kr', () => {
       title: '프로그래밍기초',
       credits: 3,
       contactHours: null,
-      language: 'en',
+      language: 'unknown',
       terms: ['fall', 'spring'],
       level: 'undergrad',
       sourceUrl: URLS.csUg,
@@ -57,11 +56,10 @@ describe('lecteur kaist-kr', () => {
     expect(fall).toMatchObject({ code: 'CS.30100', credits: 4, terms: ['fall'] });
   });
 
-  it('informatique cycles supérieurs : 2 cours en anglais sur 3, cycle grad, description vide gardée vide', () => {
-    const skipped: string[] = [];
-    const courses = readKaistPage(csGr, skipped);
-    expect(courses.map((c) => c.code)).toEqual(['CC.50010', 'CS.50000']);
-    expect(skipped).toEqual(['CS.50004']);
+  it('informatique cycles supérieurs : exactement 3 cours, cycle grad, description vide gardée vide', () => {
+    const courses = readKaistPage(csGr);
+    expect(courses.map((c) => c.code)).toEqual(['CC.50010', 'CS.50000', 'CS.50004']);
+    expect(courses.every((c) => c.language === 'unknown')).toBe(true);
     expect(courses.every((c) => c.level === 'grad')).toBe(true);
     expect(courses[0]!.description).toBe('');
   });
@@ -94,8 +92,26 @@ describe('lecteur kaist-kr', () => {
     ]);
   });
 
-  it('écarte la recherche de thèse', () => {
-    expect(readKaistPage(eeGr9).map((c) => c.code)).toEqual(['EE.94200']);
+  it('écarte la recherche, le séminaire et le stage : la page de fixture ne donne plus aucun cours', () => {
+    expect(readKaistPage(eeGr9)).toEqual([]);
+  });
+
+  it('reconnaît par le titre la recherche, le séminaire, l étude individuelle et le stage', () => {
+    for (const title of [
+      'M.S. Thesis Research',
+      'Research',
+      'Individual Study',
+      'M.S. Individual Study',
+      'Seminar',
+      'Ph.D Seminar',
+      'M.S. Thesis Seminar',
+      'Internship Program and Research (M.S.)',
+    ]) {
+      expect(isResearchTitle(title), title).toBe(true);
+    }
+    for (const title of ['Circuit Theory', 'Special Topics in Electronic Engineering 〈Deep Learning for Computer Vision〉', '프로그래밍기초']) {
+      expect(isResearchTitle(title), title).toBe(false);
+    }
   });
 
   it('garde la description la plus longue quand un code est répété', () => {

@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { getReader } from '../collect/readers.js';
 import './index.js';
 import { readSjtuCourses } from './sjtu-cn.js';
-import { excludedByPrefix, parseIndex, selectCourses } from './sjtu-cn.discover.js';
+import { excludedByPrefix, isWanted, parseIndex, selectCourses } from './sjtu-cn.discover.js';
 
 const BASE = 'https://gc.sjtu.edu.cn/academics/courses/courses-by-number/course-info/?id=';
 function fixture(name: string): Buffer {
@@ -77,5 +77,19 @@ describe('découverte sjtu-cn', () => {
   it('garde ECE, CS, MATH et DS (19 cours) et écarte ME (6 cours)', () => {
     expect(selectCourses(all)).toHaveLength(19);
     expect(excludedByPrefix(all)).toEqual({ ME: 6 });
+  });
+});
+
+describe('découverte sjtu-cn : exception ENGR1010J', () => {
+  const link = (id: number, text: string) => `<a href="course-info/?id=${id}">${text}</a>`;
+  const html = `<html><body>${link(1, 'ENGR1010J – Introduction to Computers and Programming')}${link(2, 'ENGR2000J – Engineering Ethics')}${link(3, 'ENGR1000J – Intro to Engineering')}${link(4, 'ECE2800J – Programming')}</body></html>`;
+  const all = parseIndex(html);
+
+  it('garde ENGR1010J par son code exact et écarte les autres ENGR', () => {
+    expect(isWanted('ENGR1010J')).toBe(true);
+    expect(isWanted('ENGR1010')).toBe(false);
+    expect(isWanted('ENGR2000J')).toBe(false);
+    expect(selectCourses(all)).toHaveLength(2);
+    expect(excludedByPrefix(all)).toEqual({ ENGR: 2 });
   });
 });
