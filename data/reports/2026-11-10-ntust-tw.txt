@@ -58,3 +58,5 @@ Faits restés vides
 - terms.fall.end et terms.spring.end : le calendrier n'écrit aucun dernier jour de cours (seulement « Final exams begin » et « First/Second semester ends », fin administrative). Laissés à null.
 - restrictions : page des échanges entrants (oia.ntust.edu.tw/p/412-1060-8919.php) lue : « Students can take courses in different departments/on different levels », aucune restriction de programme. Laissé à null.
 - catalogUrl : le lien « Course Catalog » de la page du Bureau des affaires académiques (academic.ntust.edu.tw) pointe vers https://querycourse.ntust.edu.tw/querycourse/, application sans texte dans le HTML ; aucun extrait ne peut identifier cette adresse elle-même. Laissé à null.
+
+Correction du 2026-11-11 : terms.spring.start reçoit un second contexte, « Feb. 11 Thu. Chinese New Year holiday ends » (p2:l7), qui donne le mois ; « Second Semester (Feb.2027 ~ Jul.2027) » ne donnait qu'un intervalle.

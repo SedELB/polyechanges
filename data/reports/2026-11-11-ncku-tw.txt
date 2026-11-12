@@ -17,3 +17,5 @@ Faits restés vides
 
 Complément (deux contextes)
 Les deux dates de début de cours ont maintenant un second contexte pour le mois : « Sep. (2-3)English Module Registration(tentative).(2-4)NCKU Freshman » (p1:l45, copie 0a67ac5d...) et « Feb. (1)Credits wavier begins. (2/2-2/22) Payments of spring semester » (p1:l37, copie bb5750d8...). Année et période du semestre : premier contexte (inchangé).
+
+Correction du 2026-11-11 : restrictions remis à null. La phrase de la page des échanges (« Restrictions may include course tags… ») décrit des étiquettes possibles, pas une restriction de programme.

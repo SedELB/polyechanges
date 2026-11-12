@@ -850,7 +850,7 @@
         "examsEnd": null
       }
     },
-    "restrictions": "Restrictions may include course tags (e.g., COURSERA, which is reserved for local students) or specific notes such as prerequisites or limited eligibility based on program/module.",
+    "restrictions": null,
     "exchangeContact": "Division of Study Abroad",
     "catalogPublic": false,
     "provenance": {
@@ -985,16 +985,6 @@
             "quote": "Feb. (1)Credits wavier begins. (2/2-2/22) Payments of spring semester"
           }
         ]
-      },
-      "restrictions": {
-        "url": "https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en",
-        "retrievedAt": "2026-11-10T19:34:35.051Z",
-        "sha256": "ec24ebec45b72cf80e72cee5284c830b4bc25e6c460824f25f8d2faa41b24085",
-        "locator": {
-          "page": 1,
-          "line": 177
-        },
-        "quote": "Restrictions may include course tags (e.g., COURSERA, which is reserved for local students) or specific notes such as prerequisites or limited eligibility based on program/module."
       }
     }
   },
@@ -1342,6 +1332,13 @@
               "line": 3
             },
             "quote": "Second Semester (Feb.2027 ~ Jul.2027)"
+          },
+          {
+            "locator": {
+              "page": 2,
+              "line": 7
+            },
+            "quote": "Feb. 11 Thu. Chinese New Year holiday ends"
           }
         ]
       }
@@ -1873,7 +1870,7 @@
       "fall": {
         "start": "2026-09-14",
         "end": null,
-        "examsEnd": "2026-12-18"
+        "examsEnd": null
       },
       "spring": null
     },
@@ -1980,25 +1977,6 @@
           "line": 3
         },
         "quote": "Sept 14 Classes Begin",
-        "context": [
-          {
-            "locator": {
-              "page": 1,
-              "line": 28
-            },
-            "quote": "Global College Academic Calendar for 2026 Fall Semester"
-          }
-        ]
-      },
-      "terms.fall.examsEnd": {
-        "url": "https://gc.sjtu.edu.cn/wp-content/uploads/2026/07/2026-Fall1.pdf",
-        "retrievedAt": "2026-11-10T23:35:12.107Z",
-        "sha256": "735dce8e03fcbbc415f7113c9234efb82992e0723f5c76d4f387532d3b9f845d",
-        "locator": {
-          "page": 1,
-          "line": 15
-        },
-        "quote": "Dec 14-18 Examination Week",
         "context": [
           {
             "locator": {
