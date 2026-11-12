@@ -12649,7 +12649,7 @@
       "spring"
     ],
     "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-    "collectedAt": "2026-11-10T21:46:32.040Z",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
     "sourcePage": 2,
     "sourceLine": 15,
     "snapshotSha256": null
@@ -12667,7 +12667,7 @@
       "spring"
     ],
     "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-    "collectedAt": "2026-11-10T21:46:32.040Z",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
     "sourcePage": 2,
     "sourceLine": 17,
     "snapshotSha256": null
@@ -12685,7 +12685,7 @@
       "fall"
     ],
     "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-    "collectedAt": "2026-11-10T21:46:32.040Z",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
     "sourcePage": 2,
     "sourceLine": 20,
     "snapshotSha256": null
@@ -12703,7 +12703,7 @@
       "spring"
     ],
     "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-    "collectedAt": "2026-11-10T21:46:32.040Z",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
     "sourcePage": 2,
     "sourceLine": 22,
     "snapshotSha256": null
@@ -22620,5 +22620,563 @@
     "sourcePage": 1,
     "sourceLine": 494,
     "snapshotSha256": "6dbdc4d89c5f3b9db95404ed46b3ab810b83250efaa2c7e139990ffd67e3f326"
+  },
+  {
+    "id": 1293,
+    "universityId": "doshisha-jp",
+    "code": "31691001",
+    "title": "Advanced Communications Engineering",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 2,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1294,
+    "universityId": "doshisha-jp",
+    "code": "31691005",
+    "title": "Advanced Nature-Inspired Computing",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 5,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1295,
+    "universityId": "doshisha-jp",
+    "code": "31691017",
+    "title": "Advanced Information and Computer Sciences Ⅰ",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 7,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1296,
+    "universityId": "doshisha-jp",
+    "code": "31691010",
+    "title": "Advanced Natural Language Processing",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 11,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1297,
+    "universityId": "doshisha-jp",
+    "code": "31691012",
+    "title": "Advanced Knowledge Discovery in Databases",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 13,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1298,
+    "universityId": "doshisha-jp",
+    "code": "31691014",
+    "title": "Advanced Digital Signal Processing",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 14,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1299,
+    "universityId": "doshisha-jp",
+    "code": "31691015",
+    "title": "Advanced Data Science",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 15,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1300,
+    "universityId": "doshisha-jp",
+    "code": "31691016",
+    "title": "Advanced Pattern Recognition",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 16,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1301,
+    "universityId": "doshisha-jp",
+    "code": "31692001",
+    "title": "Advanced Infrastructure Engineering",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 26,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1302,
+    "universityId": "doshisha-jp",
+    "code": "31692012",
+    "title": "Advanced Optical Communication Engineering",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 27,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1303,
+    "universityId": "doshisha-jp",
+    "code": "31692008",
+    "title": "Electrical Power Systems Engineering",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 28,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1304,
+    "universityId": "doshisha-jp",
+    "code": "31692009",
+    "title": "Advanced Applications of Electronics",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 33,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1305,
+    "universityId": "doshisha-jp",
+    "code": "31692010",
+    "title": "Advanced Electrical and Electronic Engineering Ⅰ",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 38,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1306,
+    "universityId": "doshisha-jp",
+    "code": "31692011",
+    "title": "Advanced Electrical and Electronic Engineering Ⅱ",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 14,
+    "sourceLine": 43,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1307,
+    "universityId": "doshisha-jp",
+    "code": "31695001",
+    "title": "Advanced Analysis",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 20,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1308,
+    "universityId": "doshisha-jp",
+    "code": "31695002",
+    "title": "Advanced Numerical Analysis",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 21,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1309,
+    "universityId": "doshisha-jp",
+    "code": "31695003",
+    "title": "Advanced Difference / Differential Equations",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 22,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1310,
+    "universityId": "doshisha-jp",
+    "code": "31695004",
+    "title": "Advanced Natural Environment Studies",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 23,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1311,
+    "universityId": "doshisha-jp",
+    "code": "31695005",
+    "title": "Advanced Earth and Planetary Environment Science",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 24,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1312,
+    "universityId": "doshisha-jp",
+    "code": "31695006",
+    "title": "Advanced Ecology",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 25,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1313,
+    "universityId": "doshisha-jp",
+    "code": "31695011",
+    "title": "Advanced Biodiversity Science",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 29,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1314,
+    "universityId": "doshisha-jp",
+    "code": "31695012",
+    "title": "Advanced Atmospheric Environment Studies",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 30,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1315,
+    "universityId": "doshisha-jp",
+    "code": "31695013",
+    "title": "Advanced Geometry",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 31,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1316,
+    "universityId": "doshisha-jp",
+    "code": "31696502",
+    "title": "Electric Circuit Theory",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 49,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1317,
+    "universityId": "doshisha-jp",
+    "code": "31696503",
+    "title": "Nonlinear Physics",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 55,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1318,
+    "universityId": "doshisha-jp",
+    "code": "31696504",
+    "title": "Materials Chemistry",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 56,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1319,
+    "universityId": "doshisha-jp",
+    "code": "31696511",
+    "title": "Chemical Biology",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 57,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1320,
+    "universityId": "doshisha-jp",
+    "code": "31696512",
+    "title": "Advanced Distributed Systems",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 58,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1321,
+    "universityId": "doshisha-jp",
+    "code": "31696505",
+    "title": "Applied Mathematical Analysis",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 60,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1322,
+    "universityId": "doshisha-jp",
+    "code": "31696506",
+    "title": "Biology",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 61,
+    "snapshotSha256": null
+  },
+  {
+    "id": 1323,
+    "universityId": "doshisha-jp",
+    "code": "31696507",
+    "title": "Neuroscience",
+    "description": "",
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "collectedAt": "2026-11-11T00:17:40.738Z",
+    "sourcePage": 15,
+    "sourceLine": 62,
+    "snapshotSha256": null
   }
 ]

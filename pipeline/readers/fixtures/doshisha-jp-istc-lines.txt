@@ -1,0 +1,180 @@
+p14:l1 Department Code Class Subject Credit Lecturer Semester Day/Period Note *4
+p14:l2 31691001 Advanced Communications Engineering (E) 2 JUN CHENG Spring Mon／２
+p14:l3 31691002 Advanced Emergent Systems (E)【For students enrolled in 2022 and before】 2 （not available this year） － －
+p14:l4 31691008 Advanced Programming Language (E) 【For students enrolled in 2024 and before】 2 （not available this year） － －
+p14:l5 31691005 Advanced Nature-Inspired Computing (E) 2 IVAN TANEV Fall Thu／２
+p14:l6 31691006 Advanced Information and Computer Sciences (E) 【For students enrolled in 2023 and before】 2 ANDREW DAVIES Fall Thu／１
+p14:l7 31691017 Advanced Information and Computer Sciences Ⅰ (E) 【For students enrolled in 2024 and after】 2 ANDREW DAVIES Fall Thu／１
+p14:l8 31691007 Internship (E) 2 IVAN TANEV All Intensive
+p14:l9 31691009 Advanced Distributed Systems (E) 【For students enrolled in 2024 and before】 2 KOITA Takahiro Spring Fri／１ *Prior
+p14:l10 Registration
+p14:l11 31691010 Advanced Natural Language Processing (E) 2 TAMURA Akihiro Fall Mon／４
+p14:l12 31691011 Advanced Optimization Technologies (E) 2 （not available this year） － －
+p14:l13 31691012 Advanced Knowledge Discovery in Databases (E) 2 OSAKI Miho Fall Fri／４
+p14:l14 31691014 Advanced Digital Signal Processing (E) 2 KATO Tsuneo Spring Thu／２
+p14:l15 31691015 Advanced Data Science (E) 【For students enrolled in 2024 and after】 2 KATSURAI Marie Fall Tue／２
+p14:l16 31691016 Advanced Pattern Recognition (E) 【For students enrolled in 2024 and after】 2 SHIRAHAMA Kimiaki Spring Wed／４
+p14:l17 31691081 *1 Research and Experiments Ⅰ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 1st year
+p14:l18 31691082 *1 Research and Experiments Ⅱ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 1st year
+p14:l19 31691083 *1 Research and Experiments Ⅲ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 2nd year
+p14:l20 31691084 *1 Research and Experiments Ⅳ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 2nd year
+p14:l21 31691091 *1 Research and Experiments Ⅰ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 1st year
+p14:l22 31691092 *1 Research and Experiments Ⅱ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 1st year
+p14:l23 31691093 *1 Research and Experiments Ⅲ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 2nd year
+p14:l24 31691094 *1 Research and Experiments Ⅳ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 2nd year
+p14:l25 31691090 Master's Thesis (E) － － － Intensive *3
+p14:l26 31692001 Advanced Infrastructure Engineering (E) 2 NAGAOKA Naoto Fall Fri／３
+p14:l27 31692012 Advanced Optical Communication Engineering (E) 2 TODA Hiroyuki Fall Thu／２
+p14:l28 31692008
+p14:l29 Electrical Power Systems Engineering (E)
+p14:l30 *This subject is compulsory for the students who are enrolled in the department of Electrical and Electronic
+p14:l31 Engineering.
+p14:l32 2 BEVRANI HASSAN Spring Intensive 1st year
+p14:l33 31692009
+p14:l34 Advanced Applications of Electronics (E)
+p14:l35 *This subject is compulsory for the students who are enrolled in the department of Electrical and Electronic
+p14:l36 Engineering.
+p14:l37 2 NAGAOKA Naoto Fall Intensive 1st year
+p14:l38 31692010
+p14:l39 Advanced Electrical and Electronic Engineering Ⅰ(E)
+p14:l40 *Only for the students in the department of Electrical and Electronic Engineering who have completed Code 31692008
+p14:l41 or 31692009.
+p14:l42 2 BEVRANI HASSAN Spring Intensive 2nd year
+p14:l43 31692011
+p14:l44 Advanced Electrical and Electronic Engineering Ⅱ(E)
+p14:l45 *Only for the students in the department of Electrical and Electronic Engineering who have completed Code 31692008
+p14:l46 or 31692009.
+p14:l47 2 NAGAOKA Naoto Fall Intensive 2nd year
+p14:l48 31692007 Internship (E) 2 KASUYA Toshiro All Intensive
+p14:l49 31692081 *1 Research and Experiments Ⅰ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 1st year
+p14:l50 31692082 *1 Research and Experiments Ⅱ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 1st year
+p14:l51 31692083 *1 Research and Experiments Ⅲ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 2nd year
+p14:l52 31692084 *1 Research and Experiments Ⅳ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 2nd year
+p14:l53 31692091 *1 Research and Experiments Ⅰ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 1st year
+p14:l54 31692092 *1 Research and Experiments Ⅱ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 1st year
+p14:l55 31692093 *1 Research and Experiments Ⅲ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 2nd year
+p14:l56 31692094 *1 Research and Experiments Ⅳ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 2nd year
+p14:l57 31692090 Master's Thesis (E) － － － Intensive *3
+p14:l58 31693001 Advanced Fluid Dynamics (E) 2 HIRATA Katsuya Spring Sat／１
+p14:l59 31693002 Advanced Mechanics of Materials (E) 2 OKUBO Kazuya Fall Thu／２
+p14:l60 31693003 Advanced Spray Combustion Science (E) 2 （not available this year） － －
+p14:l61 31693004 Advanced Fluid Engineering (E) 2 （not available this year） － －
+p14:l62 31693005 Advanced Mechanical Materials (E) 2 MIYAMOTO Hiroyuki Spring Fri／３
+p14:l63 31693006 Advanced Mechanical EngineeringⅠ(E) 2 （not available this year） － －
+p14:l64 31693007 Advanced Mechanical EngineeringⅡ(E) 2 （not available this year） － －
+p14:l65 31693008 Internship (E) 2 ITO Akihito All Intensive
+p14:l66 31693081 *1 Research and Experiments Ⅰ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 1st year
+p14:l67 31693082 *1 Research and Experiments Ⅱ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 1st year
+p14:l68 31693083 *1 Research and Experiments Ⅲ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 2nd year
+p14:l69 31693084 *1 Research and Experiments Ⅳ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 2nd year
+p14:l70 31693091 *1 Research and Experiments Ⅰ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 1st year
+p14:l71 31693092 *1 Research and Experiments Ⅱ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 1st year
+p14:l72 31693093 *1 Research and Experiments Ⅲ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 2nd year
+p14:l73 31693094 *1 Research and Experiments Ⅳ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 2nd year
+p14:l74 31693090 Master's Thesis (E) － － － Intensive *3
+p14:l75 <AY2026> List of Subjects for ISTC,
+p14:l76 Graduate School of Science and Engineering
+p14:l77 AⅠ(Subjects of Specialized Fields)
+p14:l78 Information
+p14:l79 and
+p14:l80 Computer
+p14:l81 Science
+p14:l82 Electrical and
+p14:l83 Electronic
+p14:l84 Engineering
+p14:l85 Mechanical
+p14:l86 Engineering
+p14:l87 13
+p15:l1 AⅠ(Subjects of Specialized Fields)
+p15:l2 Department Code Class Subject Credit Lecturer Semester Day/Period Note *4
+p15:l3 31694001 Advanced Organic Chemistry (E) 2 MIZUTANI Tadashi
+p15:l4 HITOMI Yutaka Spring Tue／２
+p15:l5 31694002 Advanced Inorganic Chemistry (E) 2 DOI Takayuki
+p15:l6 ENDO Takatsugu Spring Fri／２
+p15:l7 31694003 Advanced Physical Chemistry (E) 2 KIMURA Yoshifumi Fall Fri／２
+p15:l8 31694004 Advanced Analytical Chemistry (E) 2 TSUKAGOSHI Kazuhiko Fall Tue／２
+p15:l9 31694005 Advanced Transport Phenomena (E) 2 TSUCHIYA Katsumi Fall Thu／３
+p15:l10 31694006 Internship (E) 2 MIZUTANI Tadashi All Intensive
+p15:l11 31694081 *1 Research and Experiments Ⅰ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 1st year
+p15:l12 31694082 *1 Research and Experiments Ⅱ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 1st year
+p15:l13 31694083 *1 Research and Experiments Ⅲ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 2nd year
+p15:l14 31694084 *1 Research and Experiments Ⅳ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 2nd year
+p15:l15 31694091 *1 Research and Experiments Ⅰ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 1st year
+p15:l16 31694092 *1 Research and Experiments Ⅱ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 1st year
+p15:l17 31694093 *1 Research and Experiments Ⅲ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 2nd year
+p15:l18 31694094 *1 Research and Experiments Ⅳ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 2nd year
+p15:l19 31694090 Master's Thesis (E) － － － Intensive *3
+p15:l20 31695001 Advanced Analysis (E) 2 TAKEI Yoshitsugu Fall Tue／１
+p15:l21 31695002 Advanced Numerical Analysis (E) 2 YOSHIKAWA Hitoshi Spring Thu／２
+p15:l22 31695003 Advanced Difference / Differential Equations (E) 2 SAITO Seiji Fall Wed／３
+p15:l23 31695004 Advanced Natural Environment Studies (E) 2 TSUTSUMI Hiroyuki Spring Tue／２
+p15:l24 31695005 Advanced Earth and Planetary Environment Science (E) 2 KOBATAKE Hidekazu Fall Thu／２
+p15:l25 31695006 Advanced Ecology (E) 2 HASEGAWA Motohiro Spring Mon／３
+p15:l26 31695007 Advanced Environmental Systems Engineering (E) 【For students enrolled in 2024 and before】 2 （not available this year） － －
+p15:l27 31695009 Advanced Human and Environmental Studies (E) 2 （not available this year） － －
+p15:l28 31695010 Advanced Statistical Finance (E) 2 （not available this year） － －
+p15:l29 31695011 Advanced Biodiversity Science (E) 2 OSONO Takashi Fall Thu／４
+p15:l30 31695012 Advanced Atmospheric Environment Studies (E) 2 YAMANE Shozo Spring Thu／１
+p15:l31 31695013 Advanced Geometry (E)【For students enrolled in 2026 and after】 2 ASAOKA Masayuki Fall Wed／３
+p15:l32 31695008 Internship (E) 2 AKAO Satoshi All Intensive
+p15:l33 31695081 *1 Research and Experiments Ⅰ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 1st year
+p15:l34 31695082 *1 Research and Experiments Ⅱ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 1st year
+p15:l35 31695083 *1 Research and Experiments Ⅲ (E) 【For students enrolled in spring】 2 *2 Spring Intensive 2nd year
+p15:l36 31695084 *1 Research and Experiments Ⅳ (E) 【For students enrolled in spring】 2 *2 Fall Intensive 2nd year
+p15:l37 31695091 *1 Research and Experiments Ⅰ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 1st year
+p15:l38 31695092 *1 Research and Experiments Ⅱ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 1st year
+p15:l39 31695093 *1 Research and Experiments Ⅲ (E) 【For students enrolled in fall】 2 *2 Fall Intensive 2nd year
+p15:l40 31695094 *1 Research and Experiments Ⅳ (E) 【For students enrolled in fall】 2 *2 Spring Intensive 2nd year
+p15:l41 31695090 Master's Thesis (E) － － － Intensive *3
+p15:l42 Department Code Class Subject Credit Lecturer Semester Day/Period Note *4
+p15:l43 31696501 Computation Structure (E) 【For students enrolled in 2024 and before】 2 （not available this year） － －
+p15:l44 31696508 Advanced Information and Computer Sciences Ⅱ (E) 【For students enrolled in 2024 and before】 2 （not available this year） － －
+p15:l45 31696509 Advanced Information and Computer Sciences Ⅲ (E) 【For students enrolled in 2024 and before】
+p15:l46 *Lectures will be given via internet 2 （not available this year） － －
+p15:l47 31696510 Advanced Information and Computer Sciences Ⅳ (E) 【For students enrolled in 2024 and before】
+p15:l48 *Lectures will be given via internet 2 （not available this year） － －
+p15:l49 31696502 Electric Circuit Theory (E) 2
+p15:l50 TODA Hiroyuki
+p15:l51 INOUE Kaoru
+p15:l52 KOYAMA Daisuke
+p15:l53 IBI Shinsuke
+p15:l54 Fall Wed／２
+p15:l55 31696503 Nonlinear Physics (E) 2 TAKAOKA Masanori Spring Mon／４
+p15:l56 31696504 Materials Chemistry (E) 2 NOMURA Akiko Spring Wed／２
+p15:l57 31696511 Chemical Biology (E)【For students enrolled in 2024 and after】 2 NOMURA Akiko Fall Wed／２
+p15:l58 31696512 Advanced Distributed Systems (E) 【For students enrolled in 2025 and after】 2 KOITA Takahiro Spring Fri／１ *Prior
+p15:l59 Registration
+p15:l60 31696505 Applied Mathematical Analysis (E) 2 YOSHIKAWA Hitoshi Fall Thu／２
+p15:l61 31696506 001 Biology (E) 2 IKEGAWA Masaya Fall Fri／４
+p15:l62 31696507 Neuroscience (E) 2 KOBAYASHI Kota Spring Fri／２
+p15:l63 Department Code Class Subject Credit Lecturer Semester Day/Period Note *4
+p15:l64 31696601 Ethics for Scientists and Engineers (E) 2 PHILIP TROMOVITCH Spring Thu／４
+p15:l65 31696602 Technology and Business Project Management (E) 2 SARATA Makoto Spring Tue／３･４
+p15:l66 001 Science and Engineering Writing 1 (E) 2 PHILIP TROMOVITCH Spring Wed／３
+p15:l67 002 Science and Engineering Writing 1 (E)
+p15:l68 *Lectures will be given via internet 2 CAMILLE-FAITH PASCUA
+p15:l69 ROMERO Fall Fri／３
+p15:l70 001 Science and Engineering Writing 2 (E) 2 PHILIP TROMOVITCH Spring Thu／３
+p15:l71 002 Science and Engineering Writing 2 (E) 2 （not available this year） － －
+p15:l72 31696605 Presentation Skills for Scientists and Engineers (E) 1 （not available this year） － －
+p15:l73 31696606 R & D Planning for Scientists and Engineers (E) 2 CAMILLE-FAITH PASCUA
+p15:l74 ROMERO Fall Thu／２
+p15:l75 31696607 Japanese Corporate Culture (E) 2 SARATA Makoto Fall Tue／３･４
+p15:l76 *1 Please choose the class code from the list on the next page, p.15.
+p15:l77 *2 It will be lectured by your supervisor.
+p15:l78 *3 【Master's Thesis】 should be registered in final Spring semester.
+p15:l79 *4 1st year＝the first and second semester, 2nd year＝the third and fourth semester
+p15:l80 Applied
+p15:l81 Chemistry
+p15:l82 Science of
+p15:l83 Environment
+p15:l84 and
+p15:l85 Mathematical
+p15:l86 Modeling
+p15:l87 AⅡ（Common Core Subjects）
+p15:l88 ALL
+p15:l89 Ｂ（Common General Subjects）
+p15:l90 ALL
+p15:l91 31696603
+p15:l92 31696608
+p15:l93 14

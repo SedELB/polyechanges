@@ -15,7 +15,7 @@
     "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
     "provenance": {
       "url": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-      "retrievedAt": "2026-11-10T21:45:51.032Z",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
       "sha256": "24bf3b1ca3af6dc3cea3a66cddec92920a8442a3ed630e7702509cb3b87e26c2",
       "locator": {
         "page": 2,
@@ -39,7 +39,7 @@
     "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
     "provenance": {
       "url": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-      "retrievedAt": "2026-11-10T21:45:51.032Z",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
       "sha256": "24bf3b1ca3af6dc3cea3a66cddec92920a8442a3ed630e7702509cb3b87e26c2",
       "locator": {
         "page": 2,
@@ -63,7 +63,7 @@
     "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
     "provenance": {
       "url": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-      "retrievedAt": "2026-11-10T21:45:51.032Z",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
       "sha256": "24bf3b1ca3af6dc3cea3a66cddec92920a8442a3ed630e7702509cb3b87e26c2",
       "locator": {
         "page": 2,
@@ -87,13 +87,757 @@
     "sourceUrl": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
     "provenance": {
       "url": "https://intad.doshisha.ac.jp/file/2026_GEM_course_List.pdf",
-      "retrievedAt": "2026-11-10T21:45:51.032Z",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
       "sha256": "24bf3b1ca3af6dc3cea3a66cddec92920a8442a3ed630e7702509cb3b87e26c2",
       "locator": {
         "page": 2,
         "line": 22
       },
       "quote": "99200029 000 Mathematics and its History VILLE JOONAS JOHANNES SYRJAENEN I S 2 Advanced Registration △"
+    }
+  },
+  {
+    "code": "31691001",
+    "title": "Advanced Communications Engineering",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 2
+      },
+      "quote": "31691001 Advanced Communications Engineering (E) 2 JUN CHENG Spring Mon／２"
+    }
+  },
+  {
+    "code": "31691005",
+    "title": "Advanced Nature-Inspired Computing",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 5
+      },
+      "quote": "31691005 Advanced Nature-Inspired Computing (E) 2 IVAN TANEV Fall Thu／２"
+    }
+  },
+  {
+    "code": "31691017",
+    "title": "Advanced Information and Computer Sciences Ⅰ",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 7
+      },
+      "quote": "31691017 Advanced Information and Computer Sciences Ⅰ (E) 【For students enrolled in 2024 and after】 2 ANDREW DAVIES Fall Thu／１"
+    }
+  },
+  {
+    "code": "31691010",
+    "title": "Advanced Natural Language Processing",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 11
+      },
+      "quote": "31691010 Advanced Natural Language Processing (E) 2 TAMURA Akihiro Fall Mon／４"
+    }
+  },
+  {
+    "code": "31691012",
+    "title": "Advanced Knowledge Discovery in Databases",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 13
+      },
+      "quote": "31691012 Advanced Knowledge Discovery in Databases (E) 2 OSAKI Miho Fall Fri／４"
+    }
+  },
+  {
+    "code": "31691014",
+    "title": "Advanced Digital Signal Processing",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 14
+      },
+      "quote": "31691014 Advanced Digital Signal Processing (E) 2 KATO Tsuneo Spring Thu／２"
+    }
+  },
+  {
+    "code": "31691015",
+    "title": "Advanced Data Science",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 15
+      },
+      "quote": "31691015 Advanced Data Science (E) 【For students enrolled in 2024 and after】 2 KATSURAI Marie Fall Tue／２"
+    }
+  },
+  {
+    "code": "31691016",
+    "title": "Advanced Pattern Recognition",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 16
+      },
+      "quote": "31691016 Advanced Pattern Recognition (E) 【For students enrolled in 2024 and after】 2 SHIRAHAMA Kimiaki Spring Wed／４"
+    }
+  },
+  {
+    "code": "31692001",
+    "title": "Advanced Infrastructure Engineering",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 26
+      },
+      "quote": "31692001 Advanced Infrastructure Engineering (E) 2 NAGAOKA Naoto Fall Fri／３"
+    }
+  },
+  {
+    "code": "31692012",
+    "title": "Advanced Optical Communication Engineering",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 27
+      },
+      "quote": "31692012 Advanced Optical Communication Engineering (E) 2 TODA Hiroyuki Fall Thu／２"
+    }
+  },
+  {
+    "code": "31692008",
+    "title": "Electrical Power Systems Engineering",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 28
+      },
+      "quote": "31692008 Electrical Power Systems Engineering (E) *This subject is compulsory for the students who are enrolled in the department of Electrical and Electronic"
+    }
+  },
+  {
+    "code": "31692009",
+    "title": "Advanced Applications of Electronics",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 33
+      },
+      "quote": "31692009 Advanced Applications of Electronics (E) *This subject is compulsory for the students who are enrolled in the department of Electrical and Electronic"
+    }
+  },
+  {
+    "code": "31692010",
+    "title": "Advanced Electrical and Electronic Engineering Ⅰ",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 38
+      },
+      "quote": "31692010 Advanced Electrical and Electronic Engineering Ⅰ(E) *Only for the students in the department of Electrical and Electronic Engineering who have completed Code 31692008"
+    }
+  },
+  {
+    "code": "31692011",
+    "title": "Advanced Electrical and Electronic Engineering Ⅱ",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 14,
+        "line": 43
+      },
+      "quote": "31692011 Advanced Electrical and Electronic Engineering Ⅱ(E) *Only for the students in the department of Electrical and Electronic Engineering who have completed Code 31692008"
+    }
+  },
+  {
+    "code": "31695001",
+    "title": "Advanced Analysis",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 20
+      },
+      "quote": "31695001 Advanced Analysis (E) 2 TAKEI Yoshitsugu Fall Tue／１"
+    }
+  },
+  {
+    "code": "31695002",
+    "title": "Advanced Numerical Analysis",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 21
+      },
+      "quote": "31695002 Advanced Numerical Analysis (E) 2 YOSHIKAWA Hitoshi Spring Thu／２"
+    }
+  },
+  {
+    "code": "31695003",
+    "title": "Advanced Difference / Differential Equations",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 22
+      },
+      "quote": "31695003 Advanced Difference / Differential Equations (E) 2 SAITO Seiji Fall Wed／３"
+    }
+  },
+  {
+    "code": "31695004",
+    "title": "Advanced Natural Environment Studies",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 23
+      },
+      "quote": "31695004 Advanced Natural Environment Studies (E) 2 TSUTSUMI Hiroyuki Spring Tue／２"
+    }
+  },
+  {
+    "code": "31695005",
+    "title": "Advanced Earth and Planetary Environment Science",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 24
+      },
+      "quote": "31695005 Advanced Earth and Planetary Environment Science (E) 2 KOBATAKE Hidekazu Fall Thu／２"
+    }
+  },
+  {
+    "code": "31695006",
+    "title": "Advanced Ecology",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 25
+      },
+      "quote": "31695006 Advanced Ecology (E) 2 HASEGAWA Motohiro Spring Mon／３"
+    }
+  },
+  {
+    "code": "31695011",
+    "title": "Advanced Biodiversity Science",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 29
+      },
+      "quote": "31695011 Advanced Biodiversity Science (E) 2 OSONO Takashi Fall Thu／４"
+    }
+  },
+  {
+    "code": "31695012",
+    "title": "Advanced Atmospheric Environment Studies",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 30
+      },
+      "quote": "31695012 Advanced Atmospheric Environment Studies (E) 2 YAMANE Shozo Spring Thu／１"
+    }
+  },
+  {
+    "code": "31695013",
+    "title": "Advanced Geometry",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 31
+      },
+      "quote": "31695013 Advanced Geometry (E)【For students enrolled in 2026 and after】 2 ASAOKA Masayuki Fall Wed／３"
+    }
+  },
+  {
+    "code": "31696502",
+    "title": "Electric Circuit Theory",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 49
+      },
+      "quote": "31696502 Electric Circuit Theory (E) 2 TODA Hiroyuki INOUE Kaoru"
+    }
+  },
+  {
+    "code": "31696503",
+    "title": "Nonlinear Physics",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 55
+      },
+      "quote": "31696503 Nonlinear Physics (E) 2 TAKAOKA Masanori Spring Mon／４"
+    }
+  },
+  {
+    "code": "31696504",
+    "title": "Materials Chemistry",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 56
+      },
+      "quote": "31696504 Materials Chemistry (E) 2 NOMURA Akiko Spring Wed／２"
+    }
+  },
+  {
+    "code": "31696511",
+    "title": "Chemical Biology",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 57
+      },
+      "quote": "31696511 Chemical Biology (E)【For students enrolled in 2024 and after】 2 NOMURA Akiko Fall Wed／２"
+    }
+  },
+  {
+    "code": "31696512",
+    "title": "Advanced Distributed Systems",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 58
+      },
+      "quote": "31696512 Advanced Distributed Systems (E) 【For students enrolled in 2025 and after】 2 KOITA Takahiro Spring Fri／１ *Prior Registration"
+    }
+  },
+  {
+    "code": "31696505",
+    "title": "Applied Mathematical Analysis",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 60
+      },
+      "quote": "31696505 Applied Mathematical Analysis (E) 2 YOSHIKAWA Hitoshi Fall Thu／２"
+    }
+  },
+  {
+    "code": "31696506",
+    "title": "Biology",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "fall"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 61
+      },
+      "quote": "31696506 001 Biology (E) 2 IKEGAWA Masaya Fall Fri／４"
+    }
+  },
+  {
+    "code": "31696507",
+    "title": "Neuroscience",
+    "description": "",
+    "outline": null,
+    "credits": 2,
+    "contactHours": null,
+    "language": "en",
+    "terms": [
+      "spring"
+    ],
+    "level": "grad",
+    "sourceUrl": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+    "provenance": {
+      "url": "https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf",
+      "retrievedAt": "2026-11-11T00:16:35.087Z",
+      "sha256": "aaaf60da0f53b83e1c731ceeb8c06e38c8fbbd824440a0407a80e14a7f7839d6",
+      "locator": {
+        "page": 15,
+        "line": 62
+      },
+      "quote": "31696507 Neuroscience (E) 2 KOBAYASHI Kota Spring Fri／２"
     }
   }
 ]

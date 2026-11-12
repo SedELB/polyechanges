@@ -1,0 +1,64 @@
+=== collecte automatique ===
+Rapport de collecte : doshisha-jp
+Date : 2026-11-11
+Statut : ok
+Cours actifs : 35
+Ajoutés (31) : 31691001, 31691005, 31691010, 31691012, 31691014, 31691015, 31691016, 31691017, 31692001, 31692008, 31692009, 31692010, 31692011, 31692012, 31695001, 31695002, 31695003, 31695004, 31695005, 31695006, 31695011, 31695012, 31695013, 31696502, 31696503, 31696504, 31696505, 31696506, 31696507, 31696511, 31696512
+Retirés (0) : aucun
+Modifiés (0) : aucun
+Descriptions non publiées : Les deux listes officielles (cours du Global Education Module et guide d'inscription 2026 de l'ISTC) ne donnent que le code, le titre, les crédits, l'enseignant et le trimestre. Les syllabus (syllabus.doshisha.ac.jp) répondent 403 Forbidden, robots.txt compris, et ne sont donc pas lisibles par programme : les descriptions viendront des fiches de syllabus enregistrées à la main depuis un navigateur (data/saved/doshisha-jp/).
+=== fin de la collecte automatique ===
+
+Notes sur la collecte (cycles supérieurs de l'ISTC)
+- Source : guide d'inscription 2026 du master de l'ISTC (International Science and Technology Course, Graduate School of
+  Science and Engineering), https://istc.doshisha.ac.jp/files/koujm/page/MasterCourseRegistrationGuideSE2026.pdf.
+  Liste des matières aux pages 14 et 15 du texte extrait (pages imprimées 13 et 14) ; les emplacements des extraits
+  utilisent les pages du texte extrait. La page imprimée 16 (texte extrait p17), « List of Subjects taught in English for Regular Course (non-ISTC) »,
+  ne contient qu'un cours (31620049, génie électrique, hors ISTC et hors des familles retenues) : non retenu.
+- Version 2027 : la page https://istc.doshisha.ac.jp/en/currentstudents/currentstudents.html (redirigée vers
+  /istc/en/currentstudents/) ne lie que « MasterCourseRegistrationGuideSE2026.pdf », « 2026CourseRegistrationGuideDoctor.pdf »
+  et « Class List for 2026(LMS).pdf » : aucun guide 2027, donc le guide 2026 est gardé.
+- Familles retenues : 31691 (informatique), 31692 (électrique), 31695 (mathématiques et environnement), et le tronc commun
+  3169650x et 3169651x. 110 rangées à code lues sur les deux pages ; 31 cours retenus, 79 exclus :
+  * 30 recherche, dans les familles retenues : 3 stages (« Internship » 31691007, 31692007, 31695008), 24 « Research and
+    Experiments » Ⅰ à Ⅳ (8 par famille), 3 thèses (« Master's Thesis ») ;
+  * 10 « （not available this year） » (31691002, 31691008, 31691011, 31695007, 31695009, 31695010, 31696501, 31696508,
+    31696509, 31696510) ;
+  * 2 réservés à d'anciennes promotions (31691006 : « For students enrolled in 2023 and before » ; 31691009 :
+    « 2024 and before ») ;
+  * 37 hors des familles retenues : 17 de mécanique (31693), 15 de chimie appliquée (31694) et 5 du groupe B de
+    compétences générales (31696601, 31696602, 31696605, 31696606, 31696607 : éthique, gestion de projet, exposé,
+    planification R&D, culture d'entreprise). Les deux cours d'écriture sans code de 8 chiffres et les codes
+    31696603 et 31696608 (colonnes de la page) ne sont pas lus.
+  Les 27 codes de la liste d'enregistrement : 18 retenus, 9 exclus (7 non offerts : 31691002, 31691008, 31691011,
+  31696501, 31696508, 31696509, 31696510 ; 2 anciennes promotions : 31691006, 31691009).
+- Trimestre : colonne « Semester » (Spring -> spring, Fall -> fall). Crédits : colonne « Credit ». Niveau : grad.
+- Langue : « en » pour tous. Le guide ne dit nulle part en une phrase que les matières de l'ISTC sont enseignées en
+  anglais ; il marque « (E) » à la fin de chaque titre de la liste (par exemple « 31691010 Advanced Natural Language
+  Processing (E) 2 TAMURA Akihiro Fall Mon／４ », p14:l11), sans définir le sigle, et oppose cette liste à la
+  « List of Subjects taught in English for Regular Course (non-ISTC) » (p17:l10). Le programme s'appelle
+  « International Science and Technology Course » (p1:l6). À faire confirmer par l'étudiant (aucune page lisible de
+  l'ISTC n'est plus explicite : la page d'accueil n'a pas pu être lue).
+- Rangées sur plusieurs lignes : pour 31692008 à 31692011 et 31696502, la rangée tient sur 5 ou 6 lignes (code, titre,
+  note, puis crédits, enseignant, trimestre). L'extrait garde les 3 premières lignes ou la première seulement : il
+  prouve le code et le titre, pas le trimestre ni les crédits, lus plus bas dans la même rangée (31692008 : p14:l32 ;
+  31692009 : p14:l37 ; 31692010 : p14:l42 ; 31692011 : p14:l47 ; 31696502 : p15:l54 pour « Fall Wed／２ »).
+- Cours réservés : 31692010 et 31692011 sont « Only for the students in the department of Electrical and Electronic
+  Engineering who have completed Code 31692008 or 31692009 » ; 31692008 et 31692009 sont obligatoires pour ce
+  département. 31696512 et 31691009 portent « *Prior Registration ». 31691017, 31691015, 31691016, 31696511 et 31696512
+  sont réservés aux promotions récentes (« 2024 and after », « 2025 and after ») ; 31695013 à « 2026 and after ».
+- Hors discipline : 31695004, 31695005, 31695006, 31695011, 31695012 (environnement, écologie), 31696503, 31696504,
+  31696506, 31696507, 31696511 (physique, chimie, biologie) viennent de la famille de code et sont gardés tels quels.
+
+Vérification de 5 cours au hasard dans une seconde publication
+- Seconde publication : « Class List for 2026(LMS).pdf » de l'ISTC (https://istc.doshisha.ac.jp/files/koujm/page/Class%20List%20for%202026(LMS).pdf,
+  lue le 2026-11-11), liste des matières de la Graduate School of Life and Medical Sciences. Elle ne reprend que 7 des 31
+  cours (matières communes, sous d'autres codes 31405xxx) : les 24 autres cours n'ont pas de seconde publication.
+  Tirage au hasard parmi les 7 :
+- 31696502 Electric Circuit Theory : 2 crédits, automne, Wed／２, mêmes quatre enseignants (p1:l46 à l51) : conforme.
+- 31696505 Applied Mathematical Analysis : 2 crédits, automne, Thu／２, YOSHIKAWA Hitoshi (p1:l54) : conforme.
+- 31696507 Neuroscience : 2 crédits, printemps, Fri／２, KOBAYASHI Kota (p1:l45) : conforme.
+- 31696504 Materials Chemistry : 2 crédits, printemps, Wed／２, NOMURA Akiko (p1:l53) : conforme.
+- 31696512 Advanced Distributed Systems : 2 crédits, printemps, Fri／１, KOITA Takahiro (p1:l56) : conforme (la seconde liste
+  n'a pas la mention « For students enrolled in 2025 and after »).
+- Cette seconde liste marque aussi « (E) » sur chaque titre et ne dit pas non plus que (E) signifie anglais.
