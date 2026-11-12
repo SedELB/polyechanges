@@ -78,6 +78,7 @@ async function main(): Promise<number> {
           descriptionsNote,
           notes: notes.length > 0 ? notes : undefined,
           warnings: result.warnings,
+          permanent: result.permanent,
         });
         for (const w of result.warnings ?? []) console.warn(`${id} : ${w}`);
         console.log(`${id} : ${result.status}${result.reason ? ` (${result.reason})` : ''} -> ${path}`);

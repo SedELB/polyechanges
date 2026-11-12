@@ -3,7 +3,8 @@ import { listPolyCourses, upsertPolyCourses } from '../db/polyCourses.js';
 import { recordRun } from '../db/runs.js';
 import type { RawSnapshot } from '../fetch/snapshots.js';
 import { checkGuards } from '../collect/guards.js';
-import { lossNotes, recordFailure, type CollectResult } from '../collect/collect.js';
+import { lossLines, recordFailure, withLines, type CollectResult } from '../collect/collect.js';
+import { upsertSource } from '../db/sources.js';
 import { staleSavedWarning, takeSavedSnapshots } from '../collect/saved.js';
 import type { SourceFile } from '../collect/sourceFile.js';
 import type { PolyCourse } from '../../shared/types.js';
@@ -38,11 +39,7 @@ export async function collectPoly(
   now: string,
   opts?: { acceptLoss?: string },
 ): Promise<CollectResult> {
-  db.prepare(
-    `INSERT INTO sources (id, university_id, kind, url, reader) VALUES (?, ?, ?, ?, ?)
-     ON CONFLICT(id) DO UPDATE SET university_id = excluded.university_id, kind = excluded.kind,
-       url = excluded.url, reader = excluded.reader`,
-  ).run(source.id, source.universityId, source.kind, source.urls[0] ?? `saved:${source.id}`, source.reader);
+  upsertSource(db, { ...source, url: source.urls[0] ?? `saved:${source.id}` });
 
   const before = new Map(listPolyCourses(db).map((c) => [c.sigle, c]));
   const previous = before.size;
@@ -82,9 +79,9 @@ export async function collectPoly(
   }
 
   const stale = staleSavedWarning(source.id, snapshots, now);
-  const warnings = stale ? { warnings: [stale] } : {};
+  const warnings = stale ? [stale] : [];
   const guard = checkGuards(found, previous, { acceptLoss: opts?.acceptLoss !== undefined, target: source.id });
-  if (!guard.ok) return { ...recordFailure(db, source, now, guard.reason, previous), ...warnings };
+  if (!guard.ok) return withLines(recordFailure(db, source, now, guard.reason, previous), warnings, []);
 
   const diff = db.transaction(() => {
     upsertPolyCourses(db, found);
@@ -118,8 +115,8 @@ export async function collectPoly(
     });
     return d;
   })();
-  const notes = lossNotes(opts?.acceptLoss, guard, diff.removed);
-  return { status: 'ok', diff, reason: null, ...warnings, ...(notes.length > 0 ? { notes } : {}) };
+  const loss = lossLines(opts?.acceptLoss, guard, diff.removed, now);
+  return withLines({ status: 'ok', diff, reason: null }, warnings, loss.notes, loss.permanent);
 }
 
 /** Chiffres de synthèse des cours de Poly actifs, pour le rapport. */

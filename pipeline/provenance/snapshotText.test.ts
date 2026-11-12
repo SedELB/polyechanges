@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { makePdf } from './testPdf.js';
-import { findCode, findQuote, findQuoteSpans, isSubstantialQuote, linesListing, snapshotText } from './snapshotText.js';
+import { decodeText, findCode, findQuote, findQuoteSpans, isSubstantialQuote, linesListing, snapshotText } from './snapshotText.js';
 
 describe('snapshotText', () => {
   it('extrait les lignes d’une page HTML', async () => {
@@ -119,5 +119,14 @@ describe('texte brut', () => {
     expect(findQuoteSpans(pages, 'CSIE1212 Data Structures')).toEqual([{ page: 1, line: 2, lines: 1 }]);
     expect(findQuoteSpans(pages, 'Course list 2026 CSIE1212')).toEqual([{ page: 1, line: 1, lines: 2 }]);
     expect(findCode(pages, 'CSIE2136')).toEqual([{ page: 1, line: 4 }]);
+  });
+});
+
+describe('texte brut UTF-16', () => {
+  it('lit un .txt « Texte Unicode » (UTF-16 LE avec marque d’ordre)', async () => {
+    const body = Buffer.concat([Buffer.from([0xff, 0xfe]), Buffer.from('CSIE1212\tData Structures\r\nCSIE2136\n', 'utf16le')]);
+    expect(await snapshotText(body, 'text/plain')).toEqual([['CSIE1212 Data Structures', 'CSIE2136']]);
+    expect(decodeText(body)).toBe('CSIE1212\tData Structures\r\nCSIE2136\n');
+    expect(decodeText(Buffer.from('é'))).toBe('é');
   });
 });

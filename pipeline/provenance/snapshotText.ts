@@ -82,6 +82,15 @@ function plainLines(text: string): string[] {
   return text.replace(/\r?\n$/, '').split(/\r\n|\n|\r/).map(normalizeText);
 }
 
+/**
+ * Texte d'un fichier texte brut : UTF-16 LE quand il commence par sa marque d'ordre (FF FE, « Texte Unicode »
+ * d'Excel), UTF-8 sinon. À utiliser aussi par les lecteurs de `.txt`.
+ */
+export function decodeText(body: Buffer): string {
+  if (body.length >= 2 && body[0] === 0xff && body[1] === 0xfe) return body.subarray(2).toString('utf16le');
+  return body.toString('utf8');
+}
+
 /** Texte d'une copie brute : pages, puis lignes (une seule page pour du HTML ou du texte brut). */
 export async function snapshotText(body: Buffer, contentType: string): Promise<string[][]> {
   const type = contentType.toLowerCase();
@@ -90,7 +99,7 @@ export async function snapshotText(body: Buffer, contentType: string): Promise<s
     const { text } = await extractText(pdf, { mergePages: false });
     return text.map((page) => page.split(/\r?\n/).map(normalizeText).filter((l) => l !== ''));
   }
-  if (type.includes('text/plain')) return [plainLines(body.toString('utf8'))];
+  if (type.includes('text/plain')) return [plainLines(decodeText(body))];
   return [htmlLines(body.toString('utf8'))];
 }
 

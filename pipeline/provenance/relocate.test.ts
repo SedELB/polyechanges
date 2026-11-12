@@ -90,6 +90,64 @@ describe('relocateCourses', () => {
   });
 });
 
+describe('relocateCourses, copies de même adresse', () => {
+  let db: Db;
+  const URL = 'https://example.org/liste';
+  /** Range une copie brute de la source `s` et sa ligne snapshots ; renvoie son id. */
+  function copy(text: string): { id: number; sha: string } {
+    const body = Buffer.from(text);
+    const h = createHash('sha256').update(body).digest('hex');
+    mkdirSync(join(rawDir, 's'), { recursive: true });
+    writeFileSync(join(rawDir, 's', `${h}.txt`), body);
+    const r = db.prepare("INSERT INTO snapshots (source_id, url, fetched_at, sha256, path, content_type) VALUES ('s', ?, '2026-11-10', ?, ?, 'text/plain')").run(URL, h, `s/${h}.txt`);
+    return { id: Number(r.lastInsertRowid), sha: h };
+  }
+  const course = (code: string, snapshotId: number, line: number | null) =>
+    db.prepare("INSERT INTO host_courses (university_id, code, title, description, language, terms_json, level, source_url, snapshot_id, collected_at, source_page, source_line) VALUES ('x', ?, 't', 'd', 'en', '[]', 'undergrad', ?, ?, '2026-11-10', 1, ?)").run(code, URL, snapshotId, line);
+  const rows = () => db.prepare('SELECT code, snapshot_id AS snap, source_line AS line FROM host_courses ORDER BY code').all();
+
+  beforeEach(() => {
+    db = openDb(':memory:');
+    db.prepare("INSERT INTO universities (id, name, move_on_name, country_code, city, lat, lng, website, credit_system, terms_json, catalog_public) VALUES ('x', 'U', 'U', 'TW', '', 0, 0, '', 'local', '{}', 1)").run();
+    db.prepare("INSERT INTO sources (id, university_id, kind, url, reader) VALUES ('s', 'x', 'saved', ?, 'r')").run(URL);
+  });
+  afterEach(() => db.close());
+
+  it('cherche le code dans la copie du cours, pas dans la dernière copie de son adresse', async () => {
+    const one = copy('A1 Alpha\nA2 Beta\n');
+    const two = copy('B0 Gamma\nB1 Delta\n');
+    course('A2', one.id, 7);
+    course('B1', two.id, 7);
+    const r = await relocateCourses(db, rawDir);
+    expect(r.host).toEqual({ changed: 2, total: 2 });
+    expect(rows()).toEqual([{ code: 'A2', snap: one.id, line: 2 }, { code: 'B1', snap: two.id, line: 2 }]);
+  });
+
+  it('code absent de sa copie mais présent dans une autre copie de la source : la copie et la ligne changent ensemble', async () => {
+    const one = copy('A1 Alpha\nA2 Beta\n');
+    const two = copy('B0 Gamma\nB1 Delta\n');
+    course('A1', one.id, 1);
+    course('B0', two.id, 1);
+    course('A2', two.id, null);
+    await relocateCourses(db, rawDir);
+    expect(rows()).toEqual([
+      { code: 'A1', snap: one.id, line: 1 },
+      { code: 'A2', snap: one.id, line: 2 },
+      { code: 'B0', snap: two.id, line: 1 },
+    ]);
+  });
+
+  it('copie du cours absente du magasin : rien ne change', async () => {
+    const one = copy('A1 Alpha\nA2 Beta\n');
+    const gone = db.prepare("INSERT INTO snapshots (source_id, url, fetched_at, sha256, path, content_type) VALUES ('s', ?, '2026-11-10', ?, 's/absent.txt', 'text/plain')").run(URL, 'f'.repeat(64));
+    course('A1', one.id, 1);
+    course('A2', Number(gone.lastInsertRowid), null);
+    const r = await relocateCourses(db, rawDir);
+    expect(r.host.changed).toBe(0);
+    expect(rows()).toEqual([{ code: 'A1', snap: one.id, line: 1 }, { code: 'A2', snap: Number(gone.lastInsertRowid), line: null }]);
+  });
+});
+
 describe('relocateFactSources, extrait sur plusieurs lignes', () => {
   it('recale un extrait réparti sur deux lignes sur sa première ligne', async () => {
     const body = Buffer.from('<body><div>03-03</div><div>Classes begin</div></body>');

@@ -17,6 +17,11 @@ export interface ReportInput {
   descriptionsNote?: string;
   /** Lignes écrites en tête du rapport (pages enregistrées à réenregistrer). */
   warnings?: string[];
+  /**
+   * Lignes datées (baisse voulue) ajoutées à la fin du fichier, hors du bloc automatique : comme les notes à la main,
+   * elles ne sont jamais réécrites ni retirées par une autre collecte.
+   */
+  permanent?: string[];
 }
 
 const list = (label: string, codes: string[]) =>
@@ -46,7 +51,7 @@ export const BLOCK_END = '=== fin de la collecte automatique ===';
 /**
  * Écrit `<dir>/<AAAA-MM-JJ>-<sourceId>.txt` et renvoie son chemin. Seul le bloc entre les deux marques est
  * remplacé ; les notes ajoutées à la main restent. Fichier neuf : le bloc seul. Fichier sans marques : le bloc
- * est placé en tête, le contenu existant suit.
+ * est placé en tête, le contenu existant suit. Les lignes `permanent` s'ajoutent à la fin du fichier.
  */
 export function writeReport(dir: string, r: ReportInput): string {
   mkdirSync(dir, { recursive: true });
@@ -63,6 +68,10 @@ export function writeReport(dir: string, r: ReportInput): string {
     } else if (old !== '') {
       text = `${block}\n${old}`;
     }
+  }
+  if (r.permanent && r.permanent.length > 0) {
+    const ended = text.endsWith('\n') ? text : `${text}\n`;
+    text = `${ended}${r.permanent.join('\n')}\n`;
   }
   writeFileSync(path, text, 'utf8');
   return path;

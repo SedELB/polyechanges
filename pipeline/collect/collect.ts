@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import type { Db } from '../db/open.js';
 import { activeHostCourses, applyCollection, type CollectionDiff } from '../db/hostCourses.js';
 import { recordRun } from '../db/runs.js';
+import { upsertSource } from '../db/sources.js';
 import { readSnapshot, takeSnapshot, type RawSnapshot } from '../fetch/snapshots.js';
 import type { PoliteFetcher } from '../fetch/politeFetch.js';
 import type { HostCourseInput } from '../../shared/types.js';
@@ -23,8 +24,10 @@ export interface CollectResult {
   reason: string | null;
   /** Lignes à écrire en tête du rapport (pages enregistrées à réenregistrer) ; absent s'il n'y en a pas. */
   warnings?: string[];
-  /** Lignes de détail du rapport (sources, codes ignorés, perte acceptée) ; absent s'il n'y en a pas. */
+  /** Lignes de détail du bloc automatique du rapport (sources, codes ignorés) ; absent s'il n'y en a pas. */
   notes?: string[];
+  /** Lignes datées d'une baisse voulue, écrites hors du bloc automatique et jamais réécrites ; absent s'il n'y en a pas. */
+  permanent?: string[];
 }
 
 export interface CollectOptions {
@@ -53,19 +56,38 @@ export function recordFailure(db: Db, source: SourceFile, now: string, reason: s
   return { status: 'failed', diff: null, reason };
 }
 
-/** Ajoute avertissements et notes au résultat, seulement s'il y en a. */
-function withLines(result: CollectResult, warnings: string[], notes: string[]): CollectResult {
-  return { ...result, ...(warnings.length > 0 ? { warnings } : {}), ...(notes.length > 0 ? { notes } : {}) };
+/** Ajoute avertissements, notes et lignes permanentes au résultat, seulement s'il y en a. */
+export function withLines(result: CollectResult, warnings: string[], notes: string[], permanent: string[] = []): CollectResult {
+  return {
+    ...result,
+    ...(warnings.length > 0 ? { warnings } : {}),
+    ...(notes.length > 0 ? { notes } : {}),
+    ...(permanent.length > 0 ? { permanent } : {}),
+  };
 }
 
-/** Lignes de rapport d'une baisse voulue : sa raison et les codes retirés, ou le constat qu'elle n'a servi à rien. */
-export function lossNotes(acceptLoss: string | undefined, guard: GuardResult, removed: string[]): string[] {
-  if (acceptLoss === undefined) return [];
-  if (!(guard.ok && guard.lossAccepted)) return ['Option --accept-loss sans effet : pas de perte de plus de 30 %'];
-  return [
-    `Perte acceptée (--accept-loss) : ${acceptLoss}`,
-    `Codes retirés par cette baisse voulue (${removed.length}) : ${removed.length ? removed.join(', ') : 'aucun'}`,
-  ];
+/**
+ * Lignes de rapport d'une baisse voulue. Acceptée : sa raison et les codes retirés, datées à la minute (UTC), à garder
+ * hors du bloc automatique (`permanent`) pour qu'une autre collecte du jour ne les efface pas. Inutile : une note du bloc.
+ */
+export function lossLines(
+  acceptLoss: string | undefined,
+  guard: GuardResult,
+  removed: string[],
+  now: string,
+): { notes: string[]; permanent: string[] } {
+  if (acceptLoss === undefined) return { notes: [], permanent: [] };
+  if (!(guard.ok && guard.lossAccepted)) {
+    return { notes: ['Option --accept-loss sans effet : pas de perte de plus de 30 %'], permanent: [] };
+  }
+  const stamp = `${now.slice(0, 16)}Z`;
+  return {
+    notes: [],
+    permanent: [
+      `${stamp} Perte acceptée (--accept-loss) : ${acceptLoss}`,
+      `${stamp} Codes retirés par cette baisse voulue (${removed.length}) : ${removed.length ? removed.join(', ') : 'aucun'}`,
+    ],
+  };
 }
 
 /** Note de descriptions du rapport : seulement si toutes les sources de l'université déclarent n'en publier aucune. */
@@ -75,29 +97,47 @@ export function descriptionsNoteOf(sources: SourceFile[]): string | undefined {
   return sources.map((s) => `${s.id} : ${s.descriptionsNote ?? ''}`).join(' ');
 }
 
+type Placement = { snapshotId: number | null; locator: { page: number; line: number } | null };
+
 /**
- * Position (1-based) du code de chaque cours dans le texte de sa copie brute : la page d'où il vient
- * d'abord, puis les autres. Nulle si le code n'y est pas ; une saisie manuelle donne sa position elle-même.
+ * Copie brute et position (1-based) de chaque cours, prises dans le même fichier : la première copie où son code
+ * apparaît, les pages de son adresse d'abord (plusieurs fichiers enregistrés peuvent partager une adresse), puis
+ * les autres. Code introuvable : la première copie de son adresse, sans position. Une saisie manuelle donne sa
+ * position elle-même. `snapshots[i]` est la copie de `pages[i]`.
  */
-async function courseLocators(
+async function coursePlacements(
   source: SourceFile,
   pages: Page[],
+  snapshots: RawSnapshot[],
   found: HostCourseInput[],
-): Promise<(c: HostCourseInput) => { page: number; line: number } | null> {
-  if (source.kind === 'manual') return (c) => c.provenance?.locator ?? null;
-  const texts = await Promise.all(pages.map((p) => snapshotText(p.body, p.contentType)));
-  const result = new Map<string, { page: number; line: number } | null>();
-  for (const c of found) {
-    const own = pages.findIndex((p) => p.url === c.sourceUrl);
-    const order = [...(own >= 0 ? [own] : []), ...texts.keys()].filter((v, i, a) => a.indexOf(v) === i);
-    let hit: { page: number; line: number } | null = null;
-    for (const i of order) {
-      hit = findCode(texts[i], c.code)[0] ?? null;
-      if (hit) break;
-    }
-    result.set(c.code, hit);
+): Promise<(c: HostCourseInput) => Placement> {
+  if (source.kind === 'manual') return (c) => ({ snapshotId: null, locator: c.provenance?.locator ?? null });
+  const unplaced = (c: HostCourseInput): Placement => ({
+    snapshotId: (snapshots.find((s) => s.url === c.sourceUrl) ?? snapshots[0])?.id ?? null,
+    locator: null,
+  });
+  let texts: string[][][];
+  try {
+    texts = await Promise.all(pages.map((p) => snapshotText(p.body, p.contentType)));
+  } catch {
+    // Les positions ne doivent jamais faire échouer la collecte.
+    return unplaced;
   }
-  return (c) => result.get(c.code) ?? null;
+  const result = new Map<string, Placement>();
+  for (const c of found) {
+    const own = [...pages.keys()].filter((i) => pages[i].url === c.sourceUrl);
+    const order = [...own, ...[...pages.keys()].filter((i) => !own.includes(i))];
+    let placement = unplaced(c);
+    for (const i of order) {
+      const hit = findCode(texts[i], c.code)[0];
+      if (hit) {
+        placement = { snapshotId: snapshots[i]?.id ?? null, locator: hit };
+        break;
+      }
+    }
+    result.set(c.code, placement);
+  }
+  return (c) => result.get(c.code) ?? unplaced(c);
 }
 
 /** Pages d'une source : fichier manuel, fichiers enregistrés (sans réseau) ou pages téléchargées. */
@@ -147,11 +187,7 @@ export async function collectUniversity(
   const strange = sources.find((s) => s.universityId !== universityId);
   if (strange) throw new Error(`La source ${strange.id} n'est pas une source de l'université ${universityId}`);
   for (const source of sources) {
-    db.prepare(
-      `INSERT INTO sources (id, university_id, kind, url, reader) VALUES (?, ?, ?, ?, ?)
-       ON CONFLICT(id) DO UPDATE SET university_id = excluded.university_id, kind = excluded.kind,
-         url = excluded.url, reader = excluded.reader`,
-    ).run(source.id, universityId, source.kind, source.urls[0] ?? `manual:${source.id}`, source.reader);
+    upsertSource(db, { ...source, universityId, url: source.urls[0] ?? `manual:${source.id}` });
   }
 
   const previous = activeHostCourses(db, universityId).length;
@@ -196,19 +232,12 @@ export async function collectUniversity(
       seen.add(c.code);
     }
 
-    let locatorFor: (c: HostCourseInput) => { page: number; line: number } | null;
-    try {
-      locatorFor = await courseLocators(source, pages, found);
-    } catch {
-      locatorFor = () => null;
-    }
-    const snapshotFor = (c: HostCourseInput): number | null =>
-      snapshots.find((s) => s.url === c.sourceUrl)?.id ?? snapshots[0]?.id ?? null;
+    const placementOf = await coursePlacements(source, pages, snapshots, found);
     read.push({
       sourceId: source.id,
       priority: source.priority ?? 0,
       enrich: source.role === 'enrich',
-      courses: found.map((c): LocatedCourse => ({ course: c, snapshotId: snapshotFor(c), locator: locatorFor(c) })),
+      courses: found.map((c): LocatedCourse => ({ course: c, ...placementOf(c) })),
     });
   }
 
@@ -250,11 +279,15 @@ export async function collectUniversity(
     }
     return d;
   })();
-  notes.push(...lossNotes(opts?.acceptLoss, guard, diff.removed));
-  return withLines({ status: 'ok', diff, reason: null }, warnings, notes);
+  const loss = lossLines(opts?.acceptLoss, guard, diff.removed, now);
+  notes.push(...loss.notes);
+  return withLines({ status: 'ok', diff, reason: null }, warnings, notes, loss.permanent);
 }
 
-/** Collecte une université qui n'a qu'une source. */
+/**
+ * Tests seulement : collecte une université qui n'a qu'une source. Sur une université à plusieurs fiches, elle
+ * désactiverait les cours des autres ; la CLI passe toujours par `collectUniversity` avec toutes les sources.
+ */
 export async function collectSource(
   db: Db,
   fetcher: PoliteFetcher,

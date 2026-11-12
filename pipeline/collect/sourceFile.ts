@@ -64,12 +64,18 @@ export function parseSourceFile(raw: unknown): SourceFile {
   return source;
 }
 
-/** Charge toutes les fiches `*.json` d'un dossier, par ordre alphabétique de nom de fichier. */
+/** Charge toutes les fiches `*.json` d'un dossier, par ordre alphabétique de nom de fichier ; une erreur nomme la fiche. */
 export function loadSourceFiles(dir: string): LoadedSourceFile[] {
   return readdirSync(dir)
     .filter((f) => f.endsWith('.json'))
     .sort()
-    .map((f) => ({ ...parseSourceFile(JSON.parse(readFileSync(join(dir, f), 'utf8'))), fileName: f }));
+    .map((f) => {
+      try {
+        return { ...parseSourceFile(JSON.parse(readFileSync(join(dir, f), 'utf8'))), fileName: f };
+      } catch (err) {
+        throw new Error(`Fiche ${f} : ${err instanceof Error ? err.message : String(err)}`);
+      }
+    });
 }
 
 export interface UniversitySources {

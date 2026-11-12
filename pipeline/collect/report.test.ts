@@ -49,3 +49,20 @@ describe('renderReport, avertissements', () => {
     expect(renderReport(input).split('\n')[0]).toBe('Rapport de collecte : x-tw');
   });
 });
+
+describe('writeReport, lignes permanentes', () => {
+  const lossLine = '2026-11-10T09:12Z Perte acceptée (--accept-loss) : catalogue réduit';
+  it('les écrit après la marque de fin, et une autre écriture du même jour les garde', () => {
+    const path = writeReport(dir, { ...input, permanent: [lossLine] });
+    expect(readFileSync(path, 'utf8')).toBe(`${BLOCK_START}\n${renderReport(input)}${BLOCK_END}\n${lossLine}\n`);
+    writeReport(dir, { ...input, courseCount: 9 });
+    expect(readFileSync(path, 'utf8')).toBe(`${BLOCK_START}\n${renderReport({ ...input, courseCount: 9 })}${BLOCK_END}\n${lossLine}\n`);
+  });
+  it('ajoute les suivantes à la fin, dans l’ordre, après les notes à la main', () => {
+    const path = writeReport(dir, { ...input, permanent: [lossLine] });
+    writeFileSync(path, `${readFileSync(path, 'utf8')}Note à la main\n`);
+    const next = '2026-11-10T15:40Z Perte acceptée (--accept-loss) : deuxième baisse';
+    writeReport(dir, { ...input, permanent: [next] });
+    expect(readFileSync(path, 'utf8')).toBe(`${BLOCK_START}\n${renderReport(input)}${BLOCK_END}\n${lossLine}\nNote à la main\n${next}\n`);
+  });
+});

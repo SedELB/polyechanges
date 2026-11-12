@@ -59,8 +59,12 @@ describe('parseCollectArgs', () => {
     expect(parseCollectArgs(['ntu-tw', '--accept-loss'])).toMatchObject({ error: expect.stringMatching(/raison/) });
     expect(parseCollectArgs(['ntu-tw', '--accept-loss', '  '])).toMatchObject({ error: expect.stringMatching(/raison/) });
   });
+  it('refuse une raison d’un seul mot, qui avalerait un id', () => {
+    expect(parseCollectArgs(['--accept-loss', 'kaist-kr', 'ntu-tw'])).toMatchObject({ error: expect.stringMatching(/deux mots/) });
+    expect(parseCollectArgs(['ntu-tw', '--accept-loss', 'x'])).toMatchObject({ error: expect.stringMatching(/deux mots/) });
+  });
   it('refuse --accept-loss avec all : une seule université à la fois', () => {
-    expect(parseCollectArgs(['all', '--accept-loss', 'x'])).toMatchObject({ error: expect.stringMatching(/une seule/) });
+    expect(parseCollectArgs(['all', '--accept-loss', 'baisse voulue'])).toMatchObject({ error: expect.stringMatching(/une seule/) });
   });
   it('refuse une option inconnue, une deuxième cible ou aucune cible', () => {
     expect(parseCollectArgs(['ntu-tw', '--force'])).toHaveProperty('error');

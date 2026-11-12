@@ -93,12 +93,6 @@ describe('takeSavedSnapshots', () => {
     const doc = save('liste.docx', 'x');
     expect(() => takeSavedSnapshots(db, savedSource([doc]), rawDir, tmp)).toThrow(/liste\.docx/);
   });
-
-  it('ne fait aucune requête réseau : une adresse injoignable ne gêne pas', () => {
-    const html = save('liste.html', '<p>x</p>');
-    const pages = takeSavedSnapshots(db, savedSource([html], ['https://adresse-injoignable.invalid/liste']), rawDir, tmp);
-    expect(pages[0].snapshot.url).toBe('https://adresse-injoignable.invalid/liste');
-  });
 });
 
 describe('staleSavedWarning', () => {

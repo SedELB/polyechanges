@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { mkdirSync, mkdtempSync, readFileSync, rmSync, utimesSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -7,6 +8,7 @@ import { upsertUniversity } from '../db/universities.js';
 import { activeHostCourses } from '../db/hostCourses.js';
 import { lastRun } from '../db/runs.js';
 import { createPoliteFetcher } from '../fetch/politeFetch.js';
+import { relocateCourses } from '../provenance/relocate.js';
 import { startTestServer, type TestServer } from '../fetch/testServer.js';
 import type { HostCourseInput, University } from '../../shared/types.js';
 import { collectSource, collectUniversity } from './collect.js';
@@ -300,7 +302,8 @@ registerReader('lignes', (pages) =>
 describe('source enregistrée d’une université d’accueil', () => {
   const SAVED_AT = new Date('2026-10-20T09:00:00.000Z');
   const NOW = '2026-11-10T10:00:00.000Z';
-  const LIST_URL = 'https://ntu.example/cours-en-anglais';
+  /** Adresse d'origine sur le serveur de test : tout téléchargement de la page enregistrée serait compté. */
+  const listUrl = () => `${server.base}/liste`;
 
   /** Écrit `data/saved/ntu/<name>` sous la racine de test et renvoie son chemin depuis la racine. */
   function save(name: string, body: string, at = SAVED_AT): string {
@@ -311,13 +314,13 @@ describe('source enregistrée d’une université d’accueil', () => {
   }
 
   const listSource = (files: string[], extra: Partial<SourceFile> = {}): SourceFile =>
-    parseSourceFile({ id: 'ntu-liste', universityId: 'ntu', kind: 'saved', urls: files.map(() => LIST_URL), files, reader: 'lignes', ...extra });
+    parseSourceFile({ id: 'ntu-liste', universityId: 'ntu', kind: 'saved', urls: files.map(() => listUrl()), files, reader: 'lignes', ...extra });
 
   const opts = () => ({ rootDir: tmp });
 
   it('lit une page enregistrée sans requête réseau : copie brute, date du fichier, position du code', async () => {
     const file = save('liste.html', '<html><body><h1>Cours</h1><p>A1 - Intro</p><p>B2 - Algo</p></body></html>');
-    const source = parseSourceFile({ id: 'ntu-liste', universityId: 'ntu', kind: 'saved', urls: [LIST_URL], files: [file], reader: 'test' });
+    const source = parseSourceFile({ id: 'ntu-liste', universityId: 'ntu', kind: 'saved', urls: [listUrl()], files: [file], reader: 'test' });
     current = [course('A1'), course('B2')];
     const hitsBefore = server.hits.length;
     const res = await collectSource(db, fetcher, source, join(tmp, 'raw'), NOW, opts());
@@ -327,9 +330,33 @@ describe('source enregistrée d’une université d’accueil', () => {
       .prepare('SELECT h.code, h.source_line, s.url, s.fetched_at, s.content_type FROM host_courses h JOIN snapshots s ON s.id = h.snapshot_id ORDER BY h.code')
       .all();
     expect(rows).toEqual([
-      { code: 'A1', source_line: 2, url: LIST_URL, fetched_at: SAVED_AT.toISOString(), content_type: 'text/html' },
-      { code: 'B2', source_line: 3, url: LIST_URL, fetched_at: SAVED_AT.toISOString(), content_type: 'text/html' },
+      { code: 'A1', source_line: 2, url: listUrl(), fetched_at: SAVED_AT.toISOString(), content_type: 'text/html' },
+      { code: 'B2', source_line: 3, url: listUrl(), fetched_at: SAVED_AT.toISOString(), content_type: 'text/html' },
     ]);
+  });
+
+  it('plusieurs fichiers de même adresse : chaque cours garde la copie et la ligne du fichier où son code est', async () => {
+    const one = save('page-1.txt', 'A1\tAlpha\tDescription A1.\nA2\tBeta\tDescription A2.\n');
+    const two = save('page-2.txt', 'B0\tGamma\tDescription B0.\nB1\tDelta\tDescription B1.\n');
+    const sha = (f: string) => createHash('sha256').update(readFileSync(join(tmp, f))).digest('hex');
+    const rawDir = join(tmp, 'raw');
+    const res = await collectSource(db, fetcher, listSource([one, two]), rawDir, NOW, opts());
+    expect(res.status).toBe('ok');
+    const placed = () =>
+      db
+        .prepare('SELECT h.code, s.sha256, h.source_line FROM host_courses h JOIN snapshots s ON s.id = h.snapshot_id ORDER BY h.code')
+        .all();
+    const expected = [
+      { code: 'A1', sha256: sha(one), source_line: 1 },
+      { code: 'A2', sha256: sha(one), source_line: 2 },
+      { code: 'B0', sha256: sha(two), source_line: 1 },
+      { code: 'B1', sha256: sha(two), source_line: 2 },
+    ];
+    expect(placed()).toEqual(expected);
+
+    db.prepare("UPDATE host_courses SET source_line = 9 WHERE code = 'B1'").run();
+    await relocateCourses(db, rawDir);
+    expect(placed()).toEqual(expected);
   });
 
   it('fichier absent : la collecte échoue en nommant le fichier, sans toucher aux cours existants', async () => {
@@ -363,7 +390,7 @@ describe('source enregistrée d’une université d’accueil', () => {
     const b1 = db
       .prepare("SELECT h.source_line, s.content_type, s.url FROM host_courses h JOIN snapshots s ON s.id = h.snapshot_id WHERE code = 'B1'")
       .get();
-    expect(b1).toEqual({ source_line: 1, content_type: 'text/plain', url: LIST_URL });
+    expect(b1).toEqual({ source_line: 1, content_type: 'text/plain', url: listUrl() });
     expect(again.notes?.[0]).toBe('Sources : ntu-catalogue (html), ntu-liste (saved)');
   });
 
@@ -436,18 +463,30 @@ describe('baisse voulue', () => {
     expect(res.diff?.removed).toEqual(['C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9']);
     expect(activeHostCourses(db, 'ntu')).toHaveLength(3);
 
-    const path = writeReport(join(tmp, 'reports'), {
-      sourceId: 'ntu',
-      date: '2026-11-11',
-      status: res.status,
-      courseCount: 3,
-      diff: res.diff,
-      reason: res.reason,
-      notes: res.notes,
-    });
-    const text = readFileSync(path, 'utf8');
-    expect(text).toContain('Perte acceptée (--accept-loss) : NTU ne publie plus que les cours en anglais');
-    expect(text).toContain('Codes retirés par cette baisse voulue (7) : C3, C4, C5, C6, C7, C8, C9');
+    const report = (r: typeof res) =>
+      writeReport(join(tmp, 'reports'), {
+        sourceId: 'ntu',
+        date: '2026-11-11',
+        status: r.status,
+        courseCount: activeHostCourses(db, 'ntu').length,
+        diff: r.diff,
+        reason: r.reason,
+        notes: r.notes,
+        permanent: r.permanent,
+      });
+    const lines = [
+      '2026-11-11T10:00Z Perte acceptée (--accept-loss) : NTU ne publie plus que les cours en anglais',
+      '2026-11-11T10:00Z Codes retirés par cette baisse voulue (7) : C3, C4, C5, C6, C7, C8, C9',
+    ];
+    expect(readFileSync(report(res), 'utf8')).toContain(lines.join('\n'));
+
+    // Une autre collecte du même jour réécrit le bloc automatique, jamais les lignes de la baisse voulue.
+    const later = await collectSource(db, fetcher, htmlSource(), tmp, '2026-11-11T15:00:00.000Z');
+    expect(later.permanent).toBeUndefined();
+    const text = readFileSync(report(later), 'utf8');
+    expect(text).toContain('Retirés (0) : aucun');
+    expect(text).toContain(lines.join('\n'));
+    expect(text.indexOf(lines[0])).toBeGreaterThan(text.indexOf('=== fin de la collecte automatique ==='));
   });
 
   it('--accept-loss sans perte ne change rien et le dit', async () => {

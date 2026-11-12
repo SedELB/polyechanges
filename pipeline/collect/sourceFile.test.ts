@@ -1,5 +1,8 @@
+import { mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { groupByUniversity, parseSourceFile, type LoadedSourceFile } from './sourceFile.js';
+import { groupByUniversity, loadSourceFiles, parseSourceFile, type LoadedSourceFile } from './sourceFile.js';
 
 const source = (id: string, universityId: string, extra: Record<string, unknown> = {}, fileName = `${id}.json`): LoadedSourceFile => ({
   ...parseSourceFile({ id, universityId, kind: 'html', urls: ['https://example.org/a'], reader: 'r', ...extra }),
@@ -111,5 +114,18 @@ describe('parseSourceFile, descriptions non publiées', () => {
   });
   it('sans le champ, rien ne change', () => {
     expect(parseSourceFile(base).descriptions).toBeUndefined();
+  });
+});
+
+describe('loadSourceFiles', () => {
+  it('une fiche invalide est nommée dans l’erreur', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'polyechanges-'));
+    try {
+      writeFileSync(join(dir, 'a-bonne.json'), JSON.stringify({ id: 'a', universityId: 'u', kind: 'html', urls: ['https://a.example'], reader: 'r' }));
+      writeFileSync(join(dir, 'b-mauvaise.json'), JSON.stringify({ id: 'b', universityId: 'u', kind: 'html', urls: ['https://b.example'], reader: 'r', priority: '1' }));
+      expect(() => loadSourceFiles(dir)).toThrow(/^Fiche b-mauvaise\.json : /);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
   });
 });

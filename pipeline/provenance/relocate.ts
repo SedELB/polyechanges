@@ -81,8 +81,9 @@ export interface RelocateCoursesResult {
 
 /**
  * Recalcule dans la base locale la position des cours (première position du code en mot entier) depuis les
- * copies brutes : pour un cours d'hôte, sa propre copie d'abord, puis la dernière copie de chaque autre page de
- * la même source ; pour un cours de Poly, la copie nommée par son repère. Copie absente : position inchangée.
+ * copies brutes : pour un cours d'hôte, sa propre copie (par empreinte) ; si le code n'y est pas, une autre copie
+ * de la même source qui porte des cours actifs, et la copie du cours change avec la ligne. Pour un cours de Poly,
+ * la copie nommée par son repère. Copie absente : rien ne change.
  */
 export async function relocateCourses(db: Db, rawDir: string): Promise<RelocateCoursesResult> {
   const textCache = new Map<string, string[][] | null>();
@@ -98,29 +99,49 @@ export async function relocateCourses(db: Db, rawDir: string): Promise<RelocateC
 
   const hostRows = db
     .prepare(
-      `SELECT h.id, h.code, h.source_page, h.source_line, s.source_id, s.sha256
+      `SELECT h.id, h.code, h.snapshot_id, h.source_page, h.source_line, s.source_id, s.sha256
        FROM host_courses h JOIN snapshots s ON s.id = h.snapshot_id`,
     )
-    .all() as { id: number; code: string; source_page: number | null; source_line: number | null; source_id: string; sha256: string }[];
-  const latest = db
-    .prepare('SELECT sha256 FROM snapshots WHERE id IN (SELECT MAX(id) FROM snapshots WHERE source_id = ? GROUP BY url) ORDER BY id')
-    .pluck();
-  const setHost = db.prepare('UPDATE host_courses SET source_page = ?, source_line = ? WHERE id = ?');
+    .all() as {
+    id: number;
+    code: string;
+    snapshot_id: number;
+    source_page: number | null;
+    source_line: number | null;
+    source_id: string;
+    sha256: string;
+  }[];
+  // Les autres copies de la source : celles qui portent des cours actifs, une par empreinte (jamais « une par
+  // adresse » : plusieurs fichiers enregistrés peuvent partager une adresse).
+  const otherCopies = db.prepare(
+    `SELECT MAX(id) AS id, sha256 FROM snapshots
+     WHERE source_id = ? AND id IN (SELECT snapshot_id FROM host_courses WHERE active = 1 AND snapshot_id IS NOT NULL)
+     GROUP BY sha256 ORDER BY MIN(id)`,
+  );
+  const setHost = db.prepare('UPDATE host_courses SET snapshot_id = ?, source_page = ?, source_line = ? WHERE id = ?');
   for (const r of hostRows) {
     result.host.total++;
-    const order = [r.sha256, ...(latest.all(r.source_id) as string[])].filter((v, i, a) => a.indexOf(v) === i);
-    let hit: { page: number; line: number } | null = null;
-    let available = false;
-    for (const sha of order) {
-      const pages = await textOf(sha);
-      if (!pages) continue;
-      available = true;
-      hit = findCode(pages, r.code)[0] ?? null;
-      if (hit) break;
+    const own = await textOf(r.sha256);
+    // Copie du cours absente du magasin : rien ne change.
+    if (!own) continue;
+    let snapshotId = r.snapshot_id;
+    let hit: { page: number; line: number } | null = findCode(own, r.code)[0] ?? null;
+    if (!hit) {
+      // Code absent de sa copie : la copie et la ligne changent ensemble, vers une autre copie qui le contient.
+      for (const other of otherCopies.all(r.source_id) as { id: number; sha256: string }[]) {
+        if (other.sha256 === r.sha256) continue;
+        const pages = await textOf(other.sha256);
+        const found = pages ? findCode(pages, r.code)[0] : undefined;
+        if (found) {
+          hit = found;
+          snapshotId = other.id;
+          break;
+        }
+      }
     }
-    if (!available) continue;
-    if ((hit?.page ?? null) === r.source_page && (hit?.line ?? null) === r.source_line) continue;
-    setHost.run(hit?.page ?? null, hit?.line ?? null, r.id);
+    const same = snapshotId === r.snapshot_id && (hit?.page ?? null) === r.source_page && (hit?.line ?? null) === r.source_line;
+    if (same) continue;
+    setHost.run(snapshotId, hit?.page ?? null, hit?.line ?? null, r.id);
     result.host.changed++;
   }
 

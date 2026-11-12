@@ -41,6 +41,12 @@ export function parseCollectArgs(args: string[]): { target: string; acceptLoss?:
       if (reason === undefined || reason.startsWith('--') || reason.trim() === '') {
         return { error: '--accept-loss demande une raison : npm run collect -- <universityId> --accept-loss "<raison>"' };
       }
+      // Un seul mot avalerait un id (`--accept-loss kaist-kr ntu-tw`) : la raison se décrit, entre guillemets.
+      if (reason.trim().split(/\s+/).length < 2) {
+        return {
+          error: `Raison de --accept-loss trop courte (« ${reason} ») : au moins deux mots, entre guillemets : npm run collect -- <universityId> --accept-loss "<raison>"`,
+        };
+      }
       acceptLoss = reason.trim();
       i++;
     } else if (arg.startsWith('--')) {

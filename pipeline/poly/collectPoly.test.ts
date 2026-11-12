@@ -149,7 +149,7 @@ describe('collectPoly', () => {
     writeFileSync(page, html.slice(0, html.indexOf('>LOG3430<')) + '</body></html>');
     const res = await collectPoly(db, source, rawDir, '2026-11-11T10:00:00.000Z', { acceptLoss: 'Programme réduit' });
     expect(res.status).toBe('ok');
-    expect(res.notes?.[0]).toBe('Perte acceptée (--accept-loss) : Programme réduit');
+    expect(res.permanent?.[0]).toBe('2026-11-11T10:00Z Perte acceptée (--accept-loss) : Programme réduit');
     expect(listPolyCourses(db).length).toBeLessThan(16);
   });
 
