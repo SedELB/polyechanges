@@ -1,0 +1,26 @@
+p1:l1 CS3334 - Data Structures
+p1:l2 Offering Academic Unit Department of Computer Science
+p1:l3 Credit Units 3
+p1:l4 Course Duration One Semester
+p1:l5 Pre-requisite(s) CS2310 or CS2311 or CS2312
+p1:l6 Exclusive Courses: CS2334
+p1:l7 Course Offering Term*: Semester A 2026/27, Semester B 2026/27
+p1:l8 * The offering term is subject to change without prior notice
+p1:l9 Course Aims
+p1:l10 This course aims to provide students an appreciation to the fundamentals of computer science. Models and applications of data structures
+p1:l11 including heaps, search trees, hash tables and disjoint sets are introduced and evaluated. Mathematical tools for analysis of algorithms and
+p1:l12 data structures are discussed and applied. Students are given the opportunity to develop and implement applications of the data structures
+p1:l13 and their derivatives.
+p1:l14 Assessment (Indicative only, please check the detailed course information)
+p1:l15 Continuous Assessment: 40%
+p1:l16 Examination: 60%
+p1:l17 Examination Duration: 2 hours
+p1:l18 Min. Continuous Assessment Passing Requirement: 40%
+p1:l19 Min. Examination Passing Requirement: 30%
+p1:l20 For a student to pass the course, at least 40% of the maximum mark for the continuous assessment and 30% of the maximum mark for the
+p1:l21 examination must be obtained.
+p1:l22 Detailed Course Information
+p1:l23 CS3334.pdf
+p1:l24 COURSES >>>
+p1:l25 OK We use cookies to ensure you get the best experience on our website.
+p1:l26 More information

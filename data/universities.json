@@ -7,8 +7,8 @@
     "city": "Kowloon Tong",
     "lat": 22.3364222,
     "lng": 114.1729889,
-    "website": "",
-    "catalogUrl": null,
+    "website": "https://www.cityu.edu.hk/",
+    "catalogUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
     "creditSystem": "local",
     "contactHoursPerCredit": null,
     "terms": {
@@ -16,8 +16,8 @@
       "spring": null
     },
     "restrictions": null,
-    "exchangeContact": null,
-    "catalogPublic": false,
+    "exchangeContact": "Admissions Office",
+    "catalogPublic": true,
     "provenance": {
       "name": {
         "url": "https://en.wikipedia.org/wiki/City_University_of_Hong_Kong",
@@ -48,6 +48,56 @@
           "line": 130
         },
         "quote": "22.3364222°N 114.1729889°E"
+      },
+      "website": {
+        "url": "https://www.cityu.edu.hk/admo/admissions/exchange-students",
+        "retrievedAt": "2026-11-12T02:26:34.000Z",
+        "sha256": "08ac6b16651845cd43c47b9fb3339399e0bbc3daea3a9e71641e7420fa1e918d",
+        "locator": {
+          "page": 6,
+          "line": 7
+        },
+        "quote": "©2026 City University of Hong Kong. All Rights Reserved."
+      },
+      "catalogUrl": {
+        "url": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+        "retrievedAt": "2026-11-12T02:26:34.000Z",
+        "sha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5",
+        "locator": {
+          "page": 1,
+          "line": 3
+        },
+        "quote": "Inbound Student Exchange Course List"
+      },
+      "catalogPublic": {
+        "url": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+        "retrievedAt": "2026-11-12T02:26:34.000Z",
+        "sha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5",
+        "locator": {
+          "page": 1,
+          "line": 4
+        },
+        "quote": "Application Term: 202602"
+      },
+      "exchangeContact": {
+        "url": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+        "retrievedAt": "2026-11-12T02:26:34.000Z",
+        "sha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5",
+        "locator": {
+          "page": 1,
+          "line": 2
+        },
+        "quote": "Please refer to Admissions Office website for more information"
+      },
+      "creditSystem": {
+        "url": "https://www.cityu.edu.hk/catalogue/ug/current/course/cs3103.htm",
+        "retrievedAt": "2026-11-12T02:35:34.000Z",
+        "sha256": "4eb67f07403b3592951c3c1e7bd4d893672e22f49b06f4356570a4088d5e7e41",
+        "locator": {
+          "page": 1,
+          "line": 3
+        },
+        "quote": "Credit Units 3"
       }
     }
   },

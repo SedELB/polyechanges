@@ -1,0 +1,23 @@
+p1:l1 Home Academic Programmes Student Exchange Exchange Course List
+p1:l2 Please refer to Admissions Office website for more information
+p1:l3 Inbound Student Exchange Course List
+p1:l4 Application Term: 202602
+p1:l5 Course Code Course Title Unit
+p1:l6 CS1102 Introduction to Computer Studies 3
+p1:l7 CS1302 Introduction to Computer Programming 3
+p1:l8 CS2204 Fundamentals of Internet Applications Development 3
+p1:l9 CS2311 Computer Programming 3
+p1:l10 CS2312 Problem Solving and Programming 3
+p1:l11 CS2402 Introduction to Computational Probability Modeling 3
+p1:l12 CS2403 Data Management and Cloud Storage 3
+p1:l13 CS2468 Data Structures and Data Management 3
+p2:l12 Course Code Course Title Unit
+p2:l13 CS3103 Operating Systems 3
+p2:l14 CS3334 Data Structures 3
+p2:l15 CS3391 Advanced Programming 3
+p2:l16 CS4286 Internet Security and e-Commerce Protocols 3
+p2:l17 CS4293 Topics in Cybersecurity 3
+p2:l18 CS4465 Computational Biology and Bioinformatics 3
+p2:l19 GE1361 Digital Literacy: New Technologies, Society, and You 3
+p2:l20 GE2324 The Art and Science of Data 3
+p2:l21 GE2338 Everyday Security - Protecting Yourself in the Digital Age 3

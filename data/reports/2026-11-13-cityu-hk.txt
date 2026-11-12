@@ -1,0 +1,24 @@
+=== collecte automatique ===
+Rapport de collecte : cityu-hk
+Date : 2026-11-13
+Statut : ok
+Cours actifs : 14
+Ajoutés (0) : aucun
+Retirés (0) : aucun
+Modifiés (0) : aucun
+Descriptions non publiées : La liste des cours d'échange du département d'informatique ne donne que le code, le titre et les crédits ; les descriptions viennent des fiches du catalogue de 1er cycle (source cityu-hk-catalogue), qui n'en donne que pour 6 des 14 cours. La page d'admission des étudiants d'échange (deuxième fichier) ne sert qu'à sourcer un fait de l'université : le lecteur ne la lit pas comme liste.
+Sources : cityu-hk (saved), cityu-hk-catalogue (saved, enrich)
+Codes ignorés de la source cityu-hk-catalogue (enrich, absents des autres sources) : 0
+=== fin de la collecte automatique ===
+
+2026-11-13 Vérification de 5 cours (page enregistrée du cours ou de la liste lue à la main, comparée à la ligne de la base : titre, crédits, trimestre, description)
+- CS3103 Operating Systems : fiche du catalogue « Credit Units 3 », « Semester A 2026/27, Semester B 2026/27 » ; la liste (terme 202602, semestre B) la contient : trimestre spring. Description = « Course Aims » (616 caractères). Identique.
+- CS3391 Advanced Programming : « Credit Units 3 », « Semester B 2026/27 » seulement : spring. Identique.
+- CS4286 Internet Security and e-Commerce Protocols : « Credit Units 3 », « Semester B 2026/27 ». Identique.
+- CS4465 Computational Biology and Bioinformatics : « Credit Units 3 », « Semester B 2026/27 ». Identique.
+- CS2311 Computer Programming : liste seulement (3 crédits, terme 202602) ; pas de fiche enregistrée, donc pas de description (8 cours sur 14 sont dans ce cas).
+Langue : aucune page enregistrée ne dit que l'enseignement est en anglais (fiches du catalogue, liste, page d'admission, page du bureau des échanges lues) : « unknown » pour les 14 cours.
+Cours de formation générale de la liste non retenus (titres généraux, ni informatique, ni génie électrique, ni mathématiques) : GE1361 Digital Literacy: New Technologies, Society, and You ; GE2324 The Art and Science of Data ; GE2338 Everyday Security - Protecting Yourself in the Digital Age.
+Heures de contact : les fiches n'en donnent pas (rubrique « Detailed Course Information » non enregistrée) ; contactHours reste vide.
+Adresses d'origine des fiches du catalogue : non écrites dans les PDF ; construites d'après le modèle des notes (…/catalogue/ug/current/course/<code en minuscules>.htm).
+Faits : website, catalogUrl, catalogPublic, creditSystem, exchangeContact sourcés ; restrictions et contactHoursPerCredit restent vides (aucune page enregistrée ne les donne ; la page d'admission dit seulement que certains accords limitent la discipline, sans règle pour la liste).

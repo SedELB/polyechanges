@@ -1,0 +1,16 @@
+{
+  "id": "cityu-hk",
+  "universityId": "cityu-hk",
+  "kind": "saved",
+  "urls": [
+    "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+    "https://www.cityu.edu.hk/admo/admissions/exchange-students"
+  ],
+  "files": [
+    "data/saved/cityu-hk/cs-echange-liste.pdf",
+    "data/saved/cityu-hk/echange-entrants.pdf"
+  ],
+  "reader": "cityu-hk",
+  "descriptions": "none",
+  "descriptionsNote": "La liste des cours d'échange du département d'informatique ne donne que le code, le titre et les crédits ; les descriptions viennent des fiches du catalogue de 1er cycle (source cityu-hk-catalogue), qui n'en donne que pour 6 des 14 cours. La page d'admission des étudiants d'échange (deuxième fichier) ne sert qu'à sourcer un fait de l'université : le lecteur ne la lit pas comme liste."
+}

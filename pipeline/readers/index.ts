@@ -8,3 +8,5 @@ import './kaist-kr.js';
 import './snu-kr.js';
 import './snu-kr-catalog.js';
 import './doshisha-jp-syllabus.js';
+import './cityu-hk.js';
+import './cityu-hk-catalogue.js';

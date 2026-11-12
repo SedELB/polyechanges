@@ -1,0 +1,23 @@
+{
+  "id": "cityu-hk-catalogue",
+  "universityId": "cityu-hk",
+  "kind": "saved",
+  "urls": [
+    "https://www.cityu.edu.hk/catalogue/ug/current/course/cs3103.htm",
+    "https://www.cityu.edu.hk/catalogue/ug/current/course/cs3334.htm",
+    "https://www.cityu.edu.hk/catalogue/ug/current/course/cs3391.htm",
+    "https://www.cityu.edu.hk/catalogue/ug/current/course/cs4286.htm",
+    "https://www.cityu.edu.hk/catalogue/ug/current/course/cs4293.htm",
+    "https://www.cityu.edu.hk/catalogue/ug/current/course/cs4465.htm"
+  ],
+  "files": [
+    "data/saved/cityu-hk/catalogue-CS3103.pdf",
+    "data/saved/cityu-hk/catalogue-CS3334.pdf",
+    "data/saved/cityu-hk/catalogue-CS3391.pdf",
+    "data/saved/cityu-hk/catalogue-CS4286.pdf",
+    "data/saved/cityu-hk/catalogue-CS4293.pdf",
+    "data/saved/cityu-hk/catalogue-CS4465.pdf"
+  ],
+  "reader": "cityu-hk-catalogue",
+  "role": "enrich"
+}

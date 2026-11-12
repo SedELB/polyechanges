@@ -3,12 +3,8 @@ import type { UniversityFact } from '../../shared/types.js';
 import { missingProvenance } from '../provenance/verify.js';
 import { loadUniversities } from './registry.js';
 
-// Seuls faits non annulables (creditSystem, catalogPublic) encore sans source parce que le site est bloqué.
-// Chaque entrée doit disparaître dès que le fait reçoit sa source.
-const UNSOURCED_ALLOWED: Record<string, UniversityFact[]> = {
-  // catalogue bloqué : Incapsula
-  'cityu-hk': ['creditSystem', 'catalogPublic'],
-};
+// Faits non annulables encore sans source (id d'université → faits). Chaque entrée doit disparaître dès que le fait reçoit sa source.
+const UNSOURCED_ALLOWED: Record<string, UniversityFact[]> = {};
 
 describe('sources des faits du registre', () => {
   it('chaque fait non vide a une source, sauf ceux de la table des exceptions', () => {

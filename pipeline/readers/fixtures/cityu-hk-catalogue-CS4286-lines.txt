@@ -1,0 +1,24 @@
+p1:l1 CS4286 - Internet Security and e-Commerce Protocols
+p1:l2 Offering Academic Unit Department of Computer Science
+p1:l3 Credit Units 3
+p1:l4 Course Duration One Semester
+p1:l5 Pre-requisite(s) CS3201 or CHEM2808 or CHEM2809(For students intending to take a
+p1:l6 Minor in Forensic Studies)
+p1:l7 Course Offering Term*: Semester B 2026/27
+p1:l8 * The offering term is subject to change without prior notice
+p1:l9 Course Aims
+p1:l10 This course aims to provide an understanding of information security. Students are expected to gain a broad understanding of information
+p1:l11 security with the goal of recognising security problems and discovering the security requirements of current computer systems. The course
+p1:l12 explores existing security mechanisms and offers students the opportunity to evaluate and design techniques for enforcing computer and
+p1:l13 network security and developing secure e-commerce protocols.
+p1:l14 Assessment (Indicative only, please check the detailed course information)
+p1:l15 Continuous Assessment: 30%
+p1:l16 Examination: 70%
+p1:l17 Examination Duration: 2 hours
+p1:l18 Min. Examination Passing Requirement: 30%
+p1:l19 For a student to pass the course, at least 30% of the maximum mark for the examination must be obtained.
+p1:l20 Detailed Course Information
+p1:l21 CS4286.pdf
+p1:l22 COURSES >>>
+p1:l23 OK We use cookies to ensure you get the best experience on our website.
+p1:l24 More information
