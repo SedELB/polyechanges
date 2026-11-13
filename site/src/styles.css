@@ -267,6 +267,7 @@ a {
 }
 
 .btn--ghost {
+  color: var(--ink);
   background: transparent;
   box-shadow: none;
 }
