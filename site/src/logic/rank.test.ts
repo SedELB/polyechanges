@@ -21,6 +21,17 @@ describe('rankUniversities', () => {
     expect(r[0].total).toBe(2);
   });
 
+  it('un catalogue non lu cette année est signalé et classé avec les catalogues non publics', () => {
+    const data = { ...fixtureData, meta: { ...fixtureData.meta, unreadCatalogs: ['nycu-tw'] } };
+    const r = rankUniversities({ ...base, data, selectedSigles: ['INF3710', 'LOG3430'] });
+    expect(r[0].university.id).toBe('ntu-tw');
+    expect(Object.fromEntries(r.map((u) => [u.university.id, u.status]))).toEqual({
+      'ntu-tw': 'ok',
+      'ncku-tw': 'catalogue_non_public',
+      'nycu-tw': 'catalogue_non_lu',
+    });
+  });
+
   it('ne compte que les cours choisis et comparés', () => {
     const r = rankUniversities({ ...base, selectedSigles: ['INF3710', 'LOG3900', 'SSH3501'] });
     expect(r[0].total).toBe(1);

@@ -57,3 +57,43 @@ export function staleSavedWarning(sourceId: string, snapshots: RawSnapshot[], no
 export function savedSourceUrls(sources: SourceFile[]): Set<string> {
   return new Set(sources.filter((s) => s.kind === 'saved').flatMap((s) => s.urls));
 }
+
+/**
+ * Ligne de tête du rapport d'une collecte ignorée quand rien n'est en base pour elle : le site dira « catalogue non lu
+ * cette année » (université), ou l'export sera refusé (Poly). Nulle si des cours restent en base.
+ */
+export function emptySkippedWarning(kind: 'university' | 'poly', courseCount: number): string | null {
+  if (courseCount > 0) return null;
+  return kind === 'poly'
+    ? 'Aucun cours de Poly en base : l’export sera refusé tant que la page du programme n’est pas enregistrée.'
+    : 'Aucun cours de cette université en base : le site affichera « catalogue non lu cette année » au lieu d’une liste de cours.';
+}
+
+/**
+ * Lignes à afficher en tête de `npm run refresh` : cibles dont des pages enregistrées manquent et qui n'ont aucun cours
+ * en base (Poly, puis les universités). Vide s'il n'y en a pas.
+ */
+export function emptySkippedLines(db: Db, sources: SourceFile[], rootDir?: string): string[] {
+  const universities = new Set<string>();
+  let polyFile: string | null = null;
+  for (const s of sources) {
+    const missing = missingSavedPages(s, rootDir);
+    if (missing.length === 0) continue;
+    if (s.universityId === null) polyFile ??= s.files?.[0] ?? missing[0].file;
+    else universities.add(s.universityId);
+  }
+  const count = (sql: string, ...args: string[]): number => (db.prepare(sql).get(...args) as { n: number }).n;
+  const lines: string[] = [];
+  if (polyFile !== null && count('SELECT COUNT(*) AS n FROM poly_courses WHERE active = 1') === 0) {
+    lines.push(
+      `Cours de Poly ignorés et absents de la base : l’export sera refusé. Enregistre la page du programme de Poly (${polyFile}, voir README.txt).`,
+    );
+  }
+  const empty = [...universities]
+    .sort()
+    .filter((id) => count('SELECT COUNT(*) AS n FROM host_courses WHERE university_id = ? AND active = 1', id) === 0);
+  if (empty.length > 0) {
+    lines.push(`Universités ignorées sans aucun cours en base (le site affichera « catalogue non lu cette année ») : ${empty.join(', ')}`);
+  }
+  return lines;
+}

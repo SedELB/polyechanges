@@ -192,7 +192,7 @@ const matches: MatchOut[] = [
 ];
 
 export const fixtureData: SiteData = {
-  meta: { criterionVersion: 'v0', generatedAt: '2026-11-10T18:26:41.134Z', polyWeeks: 13, workloadTolerance: 0.15 },
+  meta: { criterionVersion: 'v0', generatedAt: '2026-11-10T18:26:41.134Z', polyWeeks: 13, workloadTolerance: 0.15, unreadCatalogs: [] },
   universities: [ntu, nycu, ncku, tohoku],
   polyCourses,
   hostCourses,

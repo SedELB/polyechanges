@@ -42,7 +42,7 @@ export function UniversityCard({
         {status === 'ok' ? (
           <p className="badge">{`${covered} cours sur ${total} ${covered > 1 ? 'couverts' : 'couvert'}`}</p>
         ) : (
-          <p className="badge">Catalogue non public</p>
+          <p className="badge">{status === 'catalogue_non_lu' ? 'Catalogue non lu cette année' : 'Catalogue non public'}</p>
         )}
         {onToggleChoice && (
           <button type="button" className={chosen ? "btn btn--ghost" : "btn"} onClick={onToggleChoice}>
@@ -51,7 +51,18 @@ export function UniversityCard({
         )}
       </header>
 
-      {status === 'catalogue_non_public' ? (
+      {status === 'catalogue_non_lu' ? (
+        <div className="ucard__body">
+          <p className="small">
+            Les pages du catalogue de cette université n’ont pas été lues cette année : la liste de ses cours n’est pas
+            connue, ce qui ne veut pas dire qu’aucun cours ne correspond.
+          </p>
+          <p>
+            {university.exchangeContact ? `Contact des échanges : ${university.exchangeContact}` : 'Contact des échanges non publié'}{' '}
+            <FactSource label="contact des échanges" provenance={university.provenance.exchangeContact} />
+          </p>
+        </div>
+      ) : status === 'catalogue_non_public' ? (
         <div className="ucard__body">
           <p className="small">
             Le catalogue des cours n’est pas public{' '}

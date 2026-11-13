@@ -1,7 +1,9 @@
 import { spawnSync } from 'node:child_process';
+import { mkdirSync } from 'node:fs';
 import { latestFrozenVersion, refreshVersion } from '../criterion/frozen.js';
-import { missingSavedPages, skippedSavedWarning } from '../collect/saved.js';
+import { emptySkippedLines, missingSavedPages, skippedSavedWarning } from '../collect/saved.js';
 import { loadSourceFiles } from '../collect/sourceFile.js';
+import { openDb } from '../db/open.js';
 
 /**
  * Étapes de collecte, dans l'ordre. La comparaison et l'export suivent, pour une version du critère.
@@ -14,10 +16,23 @@ const COLLECT_STEPS: { label: string; args: string[] }[] = [
   { label: 'refresh-sources', args: ['run', 'refresh-sources'] },
 ];
 
-/** Avertissement des pages enregistrées absentes (universités ignorées par la collecte), ou nul s'il n'en manque aucune. */
+/**
+ * Avertissement des pages enregistrées absentes (universités ignorées par la collecte), ou nul s'il n'en manque aucune.
+ * En tête : Poly et les universités ignorées qui n'ont aucun cours en base (export refusé, « catalogue non lu »).
+ */
 function missingPagesWarning(): string | null {
-  const files = loadSourceFiles('data/sources').flatMap((s) => missingSavedPages(s).map((m) => m.file));
-  return files.length > 0 ? `${skippedSavedWarning(files)}\n(leurs cours déjà en base restent tels quels ; voir README.txt)` : null;
+  const sources = loadSourceFiles('data/sources');
+  const files = sources.flatMap((s) => missingSavedPages(s).map((m) => m.file));
+  if (files.length === 0) return null;
+  mkdirSync('data', { recursive: true });
+  const db = openDb('data/polyechanges.sqlite');
+  let empty: string[];
+  try {
+    empty = emptySkippedLines(db, sources);
+  } finally {
+    db.close();
+  }
+  return [...empty, skippedSavedWarning(files), '(les cours déjà en base de ces universités restent tels quels ; voir README.txt)'].join('\n');
 }
 
 function main(): number {
@@ -33,6 +48,9 @@ function main(): number {
     { label: `compare -- ${version}`, args: ['run', 'compare', '--', version] },
     { label: `export -- ${version}`, args: ['run', 'export', '--', version] },
   ];
+  // Dit d'emblée ce qui sera ignoré, avant les sorties des étapes.
+  const before = missingPagesWarning();
+  if (before) console.warn(`${before}\n`);
   for (const [i, step] of STEPS.entries()) {
     console.log(`Étape ${i + 1} sur ${STEPS.length} : ${step.label}`);
     const r = spawnSync('npm', step.args, { stdio: 'inherit', shell: true });

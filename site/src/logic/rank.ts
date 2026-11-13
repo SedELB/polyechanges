@@ -21,7 +21,8 @@ export interface RankedUniversity {
   covered: number;
   total: number;
   pairs: PairResult[];
-  status: 'ok' | 'catalogue_non_public';
+  /** `catalogue_non_lu` : catalogue public dont aucun cours n'a été lu cette année (pages non enregistrées). */
+  status: 'ok' | 'catalogue_non_public' | 'catalogue_non_lu';
 }
 
 const LEVEL_RANK: Record<Level, number> = { elevee: 2, moyenne: 1, faible: 0 };
@@ -46,6 +47,7 @@ export function rankUniversities(input: {
   const comparable = new Set(data.polyCourses.filter((c) => c.compared).map((c) => c.sigle));
   const sigles = selectedSigles.filter((s) => comparable.has(s));
   const hostById = new Map(data.hostCourses.map((c) => [c.id, c]));
+  const unread = new Set(data.meta.unreadCatalogs);
 
   const ranked = data.universities
     .filter((u) => u.countryCode === countryCode)
@@ -93,14 +95,14 @@ export function rankUniversities(input: {
         covered: pairs.filter((p) => p.best !== null).length,
         total: sigles.length,
         pairs,
-        status: university.catalogPublic ? 'ok' : 'catalogue_non_public',
+        status: !university.catalogPublic ? 'catalogue_non_public' : unread.has(university.id) ? 'catalogue_non_lu' : 'ok',
       };
     });
 
   const countLevel = (r: RankedUniversity, level: Level) => r.pairs.filter((p) => p.best?.match.level === level).length;
   return ranked.sort(
     (a, b) =>
-      Number(a.status === 'catalogue_non_public') - Number(b.status === 'catalogue_non_public') ||
+      Number(a.status !== 'ok') - Number(b.status !== 'ok') ||
       b.covered - a.covered ||
       countLevel(b, 'elevee') - countLevel(a, 'elevee') ||
       countLevel(b, 'moyenne') - countLevel(a, 'moyenne') ||

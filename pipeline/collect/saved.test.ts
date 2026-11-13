@@ -6,7 +6,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { openDb, type Db } from '../db/open.js';
 import { makePdf } from '../provenance/testPdf.js';
 import { findRawCopy } from '../provenance/verify.js';
-import { SAVED_MAX_AGE_DAYS, staleSavedWarning, takeSavedSnapshots } from './saved.js';
+import { emptySkippedLines, emptySkippedWarning, SAVED_MAX_AGE_DAYS, staleSavedWarning, takeSavedSnapshots } from './saved.js';
 import type { SourceFile } from './sourceFile.js';
 
 const SAVED_AT = new Date('2026-10-01T08:30:00.000Z');
@@ -106,5 +106,45 @@ describe('staleSavedWarning', () => {
   it('rien pour des pages récentes', () => {
     expect(staleSavedWarning('s', [snap('2026-03-01T10:00:00.000Z')], '2026-11-10T10:00:00.000Z')).toBeNull();
     expect(staleSavedWarning('s', [], '2026-11-10T10:00:00.000Z')).toBeNull();
+  });
+});
+
+describe('emptySkippedLines : pages absentes et rien en base', () => {
+  const polySource: SourceFile = {
+    id: 'poly-log', universityId: null, kind: 'saved', urls: ['https://poly.example/programme'],
+    files: ['data/manual/poly/programme-LOG.html'], reader: 'poly',
+  };
+
+  it('nomme en tête l’université ignorée sans aucun cours et Poly sans aucun cours', () => {
+    const lines = emptySkippedLines(db, [savedSource(['data/saved/ntu/absent.html']), polySource], tmp);
+    expect(lines).toEqual([
+      'Cours de Poly ignorés et absents de la base : l’export sera refusé. Enregistre la page du programme de Poly (data/manual/poly/programme-LOG.html, voir README.txt).',
+      'Universités ignorées sans aucun cours en base (le site affichera « catalogue non lu cette année ») : ntu',
+    ]);
+  });
+
+  it('rien quand l’université ignorée a encore ses cours en base, ou quand ses pages sont là', () => {
+    db.prepare(
+      "INSERT INTO host_courses (university_id, code, title, description, language, terms_json, level, source_url, collected_at) VALUES ('ntu','C1','T','D','en','[]','undergrad','x','2026-01-01')",
+    ).run();
+    expect(emptySkippedLines(db, [savedSource(['data/saved/ntu/absent.html'])], tmp)).toEqual([]);
+    db.prepare('DELETE FROM host_courses').run();
+    expect(emptySkippedLines(db, [savedSource([save('present.html', '<p>x</p>')])], tmp)).toEqual([]);
+  });
+});
+
+describe('emptySkippedWarning : ligne de tête du rapport d’une collecte ignorée', () => {
+  it('université sans cours en base', () => {
+    expect(emptySkippedWarning('university', 0)).toBe(
+      'Aucun cours de cette université en base : le site affichera « catalogue non lu cette année » au lieu d’une liste de cours.',
+    );
+  });
+  it('Poly sans cours en base', () => {
+    expect(emptySkippedWarning('poly', 0)).toBe(
+      'Aucun cours de Poly en base : l’export sera refusé tant que la page du programme n’est pas enregistrée.',
+    );
+  });
+  it('rien quand des cours restent en base', () => {
+    expect(emptySkippedWarning('university', 3)).toBeNull();
   });
 });

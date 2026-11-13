@@ -6,6 +6,7 @@ import { createPoliteFetcher } from '../fetch/politeFetch.js';
 import { collectUniversity, descriptionsNoteOf, type CollectResult } from '../collect/collect.js';
 import { collectJobs, parseCollectArgs, type CollectJob } from '../collect/jobs.js';
 import { writeReport } from '../collect/report.js';
+import { emptySkippedWarning } from '../collect/saved.js';
 import { collectPoly, polySummary } from '../poly/collectPoly.js';
 import { loadSourceFiles } from '../collect/sourceFile.js';
 import { syncUniversities } from '../partners/registry.js';
@@ -68,6 +69,9 @@ async function main(): Promise<number> {
           notes = result.notes ?? [];
           descriptionsNote = descriptionsNoteOf(job.sources);
         }
+        // Ignorée et rien en base : dit en tête que le site montrera « catalogue non lu » (ou que l'export sera refusé, pour Poly).
+        const empty = result.status === 'skipped' ? emptySkippedWarning(job.kind === 'poly' ? 'poly' : 'university', courseCount) : null;
+        if (empty) result = { ...result, warnings: [empty, ...(result.warnings ?? [])] };
         const path = writeReport(join(dataDir, 'reports'), {
           sourceId: id,
           date: now.slice(0, 10),

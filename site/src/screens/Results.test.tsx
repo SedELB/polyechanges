@@ -47,6 +47,16 @@ describe('Results', () => {
     expect(within(c).getByText(/echange@ncku\.example\.tw/)).toBeInTheDocument();
   });
 
+  it('un catalogue non lu cette année le dit, sans liste vide présentée comme complète', () => {
+    const data = { ...fixtureData, meta: { ...fixtureData.meta, unreadCatalogs: ['nycu-tw'] } };
+    renderResults({ data });
+    const c = card('Yang Ming');
+    expect(within(c).getByText('Catalogue non lu cette année')).toBeInTheDocument();
+    expect(within(c).queryByText(/cours sur/)).toBeNull();
+    expect(within(c).queryByRole('button', { name: /INF3710/ })).toBeNull();
+    expect(within(c).getByText(/n’ont pas été lues cette année/)).toBeInTheDocument();
+  });
+
   it('le détail montre le lien source et la date de collecte', () => {
     renderResults();
     const c = card('National Taiwan University');

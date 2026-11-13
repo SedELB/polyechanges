@@ -39,6 +39,41 @@ function assertComputedWith(db: Db, version: string, paramsHash: string): void {
   }
 }
 
+/** Fichier attendu de la page du programme de Poly, d'après la fiche de source de Poly (lecteur `poly`). */
+function polyPageFile(sourcesDir: string): string {
+  const source = existsSync(sourcesDir) ? loadSourceFiles(sourcesDir).find((s) => s.reader === 'poly') : undefined;
+  return source?.files?.[0] ?? 'data/manual/poly/programme-LOG.html';
+}
+
+/**
+ * Refuse un site sans rien à comparer : aucun cours de Poly comparé doté d'une grille, ou aucune paire calculée. Sur un
+ * clone neuf sans la page du programme de Poly, la collecte ignore Poly et l'export publierait un site vide.
+ */
+function assertSomethingCompared(data: SiteData, version: string, sourcesDir: string): void {
+  const page = `Enregistre la page du programme de Poly dans ${polyPageFile(sourcesDir)} (voir README.txt, PAGES À ENREGISTRER À LA MAIN), puis relance npm run refresh.`;
+  const compared = data.polyCourses.filter((c) => c.compared && (data.notions[c.sigle]?.length ?? 0) > 0);
+  if (compared.length === 0) {
+    throw new Error(`Export bloqué : aucun cours de Poly comparé (0 cours de Poly actif doté d'une grille du critère ${version}). ${page}`);
+  }
+  if (data.matches.length === 0) {
+    throw new Error(`Export bloqué : aucune paire calculée pour le critère ${version} (0 paire avec un niveau). Si les cours manquent : ${page} Sinon : npm run compare -- ${version}.`);
+  }
+}
+
+/** Universités au catalogue public sans aucun cours actif en base : catalogue non lu. */
+function unreadCatalogs(db: Db): string[] {
+  return (
+    db
+      .prepare(
+        `SELECT u.id FROM universities u
+         WHERE u.catalog_public = 1
+           AND NOT EXISTS (SELECT 1 FROM host_courses h WHERE h.university_id = u.id AND h.active = 1)
+         ORDER BY u.id`,
+      )
+      .all() as { id: string }[]
+  ).map((r) => r.id);
+}
+
 /** Année du catalogue pour chaque adresse de source dont la fiche porte `descriptionsDated`. */
 function datedUrls(sourcesDir: string): Map<string, string> {
   const dated = new Map<string, string>();
@@ -170,6 +205,7 @@ export async function exportSiteData(
     generatedAt: latestCollection(db),
     polyWeeks: criterion.params.polyWeeks,
     workloadTolerance: criterion.params.workloadTolerance,
+    unreadCatalogs: unreadCatalogs(db),
   };
   const data: SiteData = {
     meta,
@@ -179,6 +215,7 @@ export async function exportSiteData(
     matches: matches(db, version),
     notions: sortedNotions(criterion.notions),
   };
+  assertSomethingCompared(data, version, sourcesDir);
   const files: Record<(typeof SITE_DATA_FILES)[number], unknown> = {
     meta: data.meta,
     universities: data.universities,

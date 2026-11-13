@@ -5,6 +5,11 @@ export interface SiteMeta {
   generatedAt: string;
   polyWeeks: number;
   workloadTolerance: number;
+  /**
+   * Universités au catalogue public dont aucun cours n'est en base (pages enregistrées absentes cette année, par
+   * exemple) : le site dit « catalogue non lu cette année » au lieu d'une liste vide présentée comme complète.
+   */
+  unreadCatalogs: string[];
 }
 
 export interface HostCourseOut {

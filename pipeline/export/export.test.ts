@@ -141,11 +141,46 @@ describe('exportSiteData', () => {
     expect(readdirSync(join(tmp, '..')).filter((n) => n === basename(tmp) + '.tmp' || n === basename(tmp) + '.old')).toEqual([]);
   });
 
-  it('meta : date de collecte la plus récente, semaines et tolérance', async () => {
+  it('meta : date de collecte la plus récente, semaines, tolérance et catalogues non lus', async () => {
     await exportSiteData(db, 'v0', tmp, criterionDir);
+    // a-tw : catalogue public mais aucun cours actif en base (université ignorée faute de pages, par exemple).
     expect(read('meta')).toEqual({
-      criterionVersion: 'v0', generatedAt: '2026-01-02', polyWeeks: 13, workloadTolerance: 0.15,
+      criterionVersion: 'v0', generatedAt: '2026-01-02', polyWeeks: 13, workloadTolerance: 0.15, unreadCatalogs: ['a-tw'],
     });
+  });
+
+  it('un catalogue non public sans cours n’est pas compté comme non lu', async () => {
+    upsertUniversity(db, { ...uni('a-tw'), catalogPublic: false });
+    await exportSiteData(db, 'v0', tmp, criterionDir);
+    expect(read('meta').unreadCatalogs).toEqual([]);
+  });
+
+  it('refuse un site sans cours de Poly comparé et dit d’enregistrer la page du programme', async () => {
+    const sourcesDir = mkdtempSync(join(tmpdir(), 'sources-'));
+    writeFileSync(
+      join(sourcesDir, 'poly-log.json'),
+      JSON.stringify({
+        id: 'poly-log', universityId: null, kind: 'saved', urls: ['https://poly.example/programme'],
+        files: ['data/manual/poly/programme-LOG.html'], reader: 'poly',
+      }),
+    );
+    db.prepare("UPDATE poly_courses SET active = 0 WHERE sigle = 'INF3710'").run();
+    await expect(exportSiteData(db, 'v0', tmp, criterionDir, sourcesDir)).rejects.toThrow(
+      /aucun cours de Poly comparé.*data\/manual\/poly\/programme-LOG\.html/,
+    );
+    expect(readdirSync(tmp)).toHaveLength(0);
+  });
+
+  it('refuse un cours de Poly comparé sans grille comme s’il n’y en avait aucun', async () => {
+    upsertPolyCourses(db, [{ ...poly('INF3710'), sigle: 'LOG9999' }]);
+    db.prepare("UPDATE poly_courses SET active = 0 WHERE sigle = 'INF3710'").run();
+    await expect(exportSiteData(db, 'v0', tmp, criterionDir)).rejects.toThrow(/aucun cours de Poly comparé/);
+  });
+
+  it('refuse un site sans aucune paire calculée', async () => {
+    db.prepare("DELETE FROM matches WHERE criterion_version = 'v0'").run();
+    await expect(exportSiteData(db, 'v0', tmp, criterionDir)).rejects.toThrow(/aucune paire calculée.*page du programme de Poly/);
+    expect(readdirSync(tmp)).toHaveLength(0);
   });
 
   it('n’exporte pas les paires de niveau null, triées par sigle puis cours d’accueil', async () => {

@@ -41,12 +41,13 @@ PREMIER LANCEMENT SUR UN CLONE NEUF
 -----------------------------------
 Sans base ni copie brute, tout se recrée depuis les sites des universités (connexion Internet nécessaire).
   1. npm ci
-  2. Enregistrer d'abord la page du programme de Poly et les pages à la main (section PAGES À ENREGISTRER À LA MAIN plus bas). Sans elles, ces universités sont « ignorées » et le calcul n'a rien à comparer pour Poly.
+  2. Enregistrer d'abord la page du programme de Poly et les pages à la main (section PAGES À ENREGISTRER À LA MAIN plus bas). Sans la page de Poly, l'export est refusé (aucun cours de Poly à comparer) : le site ne serait qu'une liste vide.
   3. npm run refresh
      (elle prend seule la dernière version gelée du dépôt, v1 : rien à geler sur une base neuve)
   4. npm run dev, et vérifier le site.
 Le premier calcul télécharge le modèle (environ 91 Mo) dans data/models/.
-Pages manquantes : l'université est « ignorée » (statut distinct de l'échec). Ses cours déjà en base restent tels quels, l'export n'est pas bloqué, et la liste « Pages à réenregistrer depuis un navigateur : ... » apparaît en tête du rapport de collecte et à la fin de npm run refresh.
+Pages manquantes : l'université est « ignorée » (statut distinct de l'échec). Ses cours déjà en base restent tels quels, l'export n'est pas bloqué, et la liste « Pages à réenregistrer depuis un navigateur : ... » apparaît en tête du rapport de collecte, au début et à la fin de npm run refresh.
+Une université ignorée qui n'a aucun cours en base (clone neuf) est nommée en tête de ces messages ; le site affiche pour elle « Catalogue non lu cette année » au lieu d'une liste vide. Poly ignoré sans aucun cours en base : l'export est refusé.
 
 
 PROCÉDURE ANNUELLE
