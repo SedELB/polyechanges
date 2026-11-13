@@ -1,7 +1,7 @@
 import type { PolyTerm, TermDates, University, UniversityFact } from '../../../shared/types';
 import { TERM_MAP } from '../logic/rank';
 import { outdatedYears } from '../logic/termDates';
-import { formatDate } from './Banner';
+import { formatDay } from '../logic/format';
 import { FactSource } from './FactSource';
 import './TermToggle.css';
 
@@ -24,7 +24,7 @@ function UniversityDates({ university, term, year }: { university: University; t
         {dates &&
           rows.map((row) => (
             <span key={row.key} className="termdates__row">
-              {row.label} : {dates[row.key] === null ? 'non publiée' : formatDate(dates[row.key] as string)}{' '}
+              {row.label} : {dates[row.key] === null ? 'non publiée' : formatDay(dates[row.key] as string)}{' '}
               <FactSource
                 label={row.source}
                 provenance={dates[row.key] === null ? undefined : university.provenance[`terms.${host}.${row.key}` as UniversityFact]}

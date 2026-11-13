@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import type { PolyCourse } from '../../../shared/types';
+import { formatCredits } from '../logic/format';
 import './CoursePicker.css';
 
 const MIN_FULL_TIME_CREDITS = 12;
@@ -114,7 +115,7 @@ export function CoursePicker({
 
       <div className="picker__bar card">
         <p className="picker__total" aria-live="polite">
-          {credits} crédits Poly
+          {formatCredits(credits, ' Poly')}
         </p>
         {credits < MIN_FULL_TIME_CREDITS && (
           <p className="small">Il te faut au moins 12 crédits pour être à temps plein.</p>

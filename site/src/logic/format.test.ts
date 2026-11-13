@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { formatDay, formatHigh, formatLow, formatNumber } from './format';
+import { formatCredits, formatDay, formatHigh, formatLow, formatNumber } from './format';
 
 describe('format', () => {
   it('arrondit la borne haute vers le bas', () => expect(formatHigh(74.75)).toBe('74,7'));
@@ -21,4 +21,12 @@ describe('formatDay', () => {
     expect(formatDay('2026-11-01')).toBe('1er novembre 2026');
   });
   it('rend tel quel un texte qui n’est pas une date', () => expect(formatDay('bientôt')).toBe('bientôt'));
+});
+
+describe('formatCredits', () => {
+  it('singulier sous 2, virgule décimale', () => {
+    expect(formatCredits(1)).toBe('1 crédit');
+    expect(formatCredits(1.5, ' Poly')).toBe('1,5 crédit Poly');
+    expect(formatCredits(3, ' Poly')).toBe('3 crédits Poly');
+  });
 });

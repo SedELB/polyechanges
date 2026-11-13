@@ -94,3 +94,16 @@ describe('PairDetail, cycle d’études du cours d’accueil', () => {
     expect(screen.queryByText('Cycles supérieurs')).toBeNull();
   });
 });
+
+describe('PairDetail, calcul de charge', () => {
+  it('écrit les heures du triplet avec la virgule et « crédit » au singulier', () => {
+    const match = fixtureData.matches[0];
+    const course = { ...fixtureData.hostCourses.find((c) => c.id === match.hostCourseId)!, contactHours: null, credits: 1 };
+    const pair: PairResult = { polySigle: match.polySigle, best: { course, match, termUnknown: false }, alternatives: [] };
+    const poly = { ...fixtureData.polyCourses.find((p) => p.sigle === match.polySigle)!, triplet: [3, 1.5, 4.5] as [number, number, number] };
+    const university = fixtureData.universities.find((u) => u.id === course.universityId)!;
+    render(<PairDetail pair={pair} poly={poly} university={university} data={fixtureData} />);
+    expect(screen.getByText(/3 h de cours \+ 1,5 h de labo × 13 semaines/)).toBeInTheDocument();
+    expect(screen.getByText(/\(1 crédit × 18 h\)/)).toBeInTheDocument();
+  });
+});

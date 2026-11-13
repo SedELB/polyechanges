@@ -63,7 +63,7 @@ describe('Results', () => {
     fireEvent.click(within(c).getByRole('button', { name: /INF3710/ }));
     const link = within(c).getByRole('link', { name: /CSIE3010/ });
     expect(link).toHaveAttribute('href', 'https://www.ntu.example/catalog/CSIE3010');
-    expect(within(c).getAllByText(/collecté le 2026-11-20/i).length).toBeGreaterThan(0);
+    expect(within(c).getAllByText(/collecté le 20 novembre 2026/i).length).toBeGreaterThan(0);
     expect(within(c).getByText(/ligne 10 de la copie conservée/)).toBeInTheDocument();
     expect(within(c).getAllByText('Relational model, SQL, normalization and transactions.').length).toBeGreaterThan(0);
     expect(within(c).getByText('Normalisation')).toBeInTheDocument();
@@ -160,7 +160,7 @@ describe('Results', () => {
     fireEvent.click(within(src).getByText('source'));
     expect(within(src).getByText('« Fall semester begins Sep 14 »')).toBeInTheDocument();
     expect(within(src).getByRole('link')).toHaveAttribute('href', 'https://www.ntu.example.tw/calendar');
-    expect(within(src).getByText(/consulté le 2026-11-02/)).toBeInTheDocument();
+    expect(within(src).getByText(/consulté le 2 novembre 2026/)).toBeInTheDocument();
   });
 
   it('un fait sans source affiche « source non disponible »', () => {

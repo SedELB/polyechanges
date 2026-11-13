@@ -33,5 +33,8 @@ export function formatDay(iso: string): string {
   return `${day === 1 ? '1er' : day} ${MONTHS[month - 1]} ${year}`;
 }
 
+/** « 1 crédit », « 1,5 crédit », « 3 crédits » (pluriel à partir de 2), suivi de `suffix` (« Poly »). */
+export const formatCredits = (n: number, suffix = ''): string => `${formatNumber(n)} ${Math.abs(n) >= 2 ? 'crédits' : 'crédit'}${suffix}`;
+
 /** Cycle d’études d’un cours d’accueil, tel qu’affiché. */
 export const CYCLE_LABEL: Record<HostCourseOut['level'], string> = { undergrad: '1er cycle', grad: 'Cycles supérieurs' };

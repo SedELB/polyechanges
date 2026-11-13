@@ -2,7 +2,7 @@ import { explainWorkload, hostContactHours } from '../../../shared/workload';
 import type { PolyCourseOut, SiteData } from '../../../shared/siteData';
 import type { HostTerm, Level, PolyCourse, University, Workload } from '../../../shared/types';
 import type { Candidate, PairResult } from '../logic/rank';
-import { CYCLE_LABEL, formatDay, formatGap, formatHigh, formatLow, formatNumber as fmt } from '../logic/format';
+import { CYCLE_LABEL, formatCredits, formatDay, formatGap, formatHigh, formatLow, formatNumber as fmt } from '../logic/format';
 import { FactSource } from './FactSource';
 import './PairDetail.css';
 
@@ -31,13 +31,13 @@ function WorkloadBlock({ candidate, poly, university, data }: { candidate: Candi
   );
   const unit = ects ? "ECTS" : "h";
   const expectedHow = ects
-    ? `2 × ${poly.credits} crédits Poly`
-    : `${lecture} h de cours + ${lab} h de labo × ${data.meta.polyWeeks} semaines`;
+    ? `2 × ${formatCredits(poly.credits, ' Poly')}`
+    : `${fmt(lecture)} h de cours + ${fmt(lab)} h de labo × ${data.meta.polyWeeks} semaines`;
   const hereHow = ects
     ? "ECTS publiés"
     : course.contactHours !== null
       ? "heures de contact publiées"
-      : `${course.credits} crédits × ${university.contactHoursPerCredit} h`;
+      : `${course.credits === null ? '?' : formatCredits(course.credits)} × ${String(university.contactHoursPerCredit).replace(".", ",")} h`;
   return (
     <div className="pair__block">
       <p className="pair__workload" data-workload={e.status}>
@@ -60,7 +60,7 @@ function WorkloadBlock({ candidate, poly, university, data }: { candidate: Candi
         {university.creditSystem === "local" && university.contactHoursPerCredit !== null && (
           <>
             {" "}
-            · {university.contactHoursPerCredit} h de contact par crédit{" "}
+            · {String(university.contactHoursPerCredit).replace(".", ",")} h de contact par crédit{" "}
             <FactSource label="heures par crédit" provenance={university.provenance.contactHoursPerCredit} />
           </>
         )}
@@ -168,7 +168,7 @@ function CandidateDetail({ candidate, poly, university, data, heading }: { candi
         <a href={course.sourceUrl} target="_blank" rel="noreferrer">
           {course.code}, page du cours
         </a>
-        , collecté le {course.collectedAt}
+        , collecté le {formatDay(course.collectedAt)}
         {course.sourceLine !== null && ` · ligne ${course.sourceLine} de la copie conservée`}
       </p>
     </section>

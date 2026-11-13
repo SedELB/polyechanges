@@ -1,7 +1,7 @@
 import { useRef, useState, type FormEvent } from 'react';
 import type { University, Workload } from '../../../shared/types';
 import type { ContractDraft as Draft, ManualEntry } from '../logic/contract';
-import { CYCLE_LABEL, formatGap, formatHigh, formatLow, formatNumber } from '../logic/format';
+import { CYCLE_LABEL, formatCredits, formatDay, formatGap, formatHigh, formatLow, formatNumber } from '../logic/format';
 import type { PairResult } from '../logic/rank';
 import './ContractDraft.css';
 import '../print.css';
@@ -201,7 +201,7 @@ export function ContractDraftView({
                           </span>
                         </>
                       )}
-                      {course && <span className="small contract__source"> collecté le {course.collectedAt}</span>}
+                      {course && <span className="small contract__source"> collecté le {formatDay(course.collectedAt)}</span>}
                       {r.manual && <span className="small contract__source"> ajouté à la main</span>}
                     </td>
                     <td>{r.hostCredits === null ? 'non publié' : formatNumber(r.hostCredits)}</td>
@@ -231,7 +231,7 @@ export function ContractDraftView({
                 <th scope="row" colSpan={3}>
                   Total
                 </th>
-                <td>{draft.totalPolyCredits} crédits Poly</td>
+                <td>{formatCredits(draft.totalPolyCredits, ' Poly')}</td>
                 <td className="contract__noprint" />
               </tr>
             </tfoot>
