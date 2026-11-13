@@ -417,14 +417,43 @@ describe('source enregistrée d’une université d’accueil', () => {
     ]);
   });
 
-  it('fichier absent : la collecte échoue en nommant le fichier, sans toucher aux cours existants', async () => {
+  it('fichier absent : l’université est ignorée (pas un échec), ses cours et ses historiques ne changent pas', async () => {
     current = [course('A1'), course('A2')];
     await collectSource(db, fetcher, htmlSource(), tmp, NOW);
+    const before = db.prepare('SELECT COUNT(*) AS n FROM collection_runs').get();
     const res = await collectUniversity(db, fetcher, [htmlSource(), listSource(['data/saved/ntu/absent.txt'])], join(tmp, 'raw'), NOW, opts());
-    expect(res.status).toBe('failed');
-    expect(res.reason).toMatch(/^ntu-liste : .*data\/saved\/ntu\/absent\.txt.*navigateur/);
+    expect(res).toEqual({
+      status: 'skipped',
+      diff: null,
+      reason: null,
+      warnings: ['Pages à réenregistrer depuis un navigateur : data/saved/ntu/absent.txt'],
+    });
     expect(activeHostCourses(db, 'ntu').map((c) => c.code)).toEqual(['A1', 'A2']);
-    expect(lastRun(db, 'ntu-catalogue')?.status).toBe('failed');
+    expect(db.prepare('SELECT COUNT(*) AS n FROM collection_runs').get()).toEqual(before);
+    expect(lastRun(db, 'ntu-catalogue')?.status).toBe('ok');
+    expect(lastRun(db, 'ntu-liste')).toBeNull();
+  });
+
+  it('université ignorée : le rapport l’annonce en tête et nomme les pages à réenregistrer', () => {
+    const path = writeReport(join(tmp, 'reports'), {
+      sourceId: 'ntu',
+      date: '2026-11-11',
+      status: 'skipped',
+      courseCount: 2,
+      diff: null,
+      reason: null,
+      warnings: ['Pages à réenregistrer depuis un navigateur : data/saved/ntu/absent.txt'],
+    });
+    const lines = readFileSync(path, 'utf8').split('\n');
+    expect(lines[1]).toBe('Pages à réenregistrer depuis un navigateur : data/saved/ntu/absent.txt');
+    expect(lines).toContain('Statut : ignorée (pages enregistrées absentes)');
+  });
+
+  it('fichier présent : les garde-fous bloquent toujours (0 cours lu)', async () => {
+    const txt = save('vide.txt', 'rien\n');
+    current = [];
+    const res = await collectUniversity(db, fetcher, [listSource([txt])], join(tmp, 'raw'), NOW, opts());
+    expect(res.status).toBe('failed');
     expect(lastRun(db, 'ntu-liste')?.status).toBe('failed');
   });
 

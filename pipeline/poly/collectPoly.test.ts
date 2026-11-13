@@ -135,12 +135,13 @@ describe('collectPoly', () => {
     expect(listPolyCourses(db)).toHaveLength(16);
   });
 
-  it("échoue proprement quand le fichier enregistré est absent, en le nommant", async () => {
+  it('est ignorée, sans échec, quand le fichier enregistré est absent : les cours en base restent', async () => {
+    await collectPoly(db, source, rawDir, '2026-11-10T10:00:00.000Z');
     rmSync(page);
-    const res = await collectPoly(db, source, rawDir, '2026-11-10T10:00:00.000Z');
-    expect(res.status).toBe('failed');
-    expect(res.reason).toContain(`Fichier enregistré absent : ${page}`);
-    expect(lastRun(db, 'poly-log')?.status).toBe('failed');
+    const res = await collectPoly(db, source, rawDir, '2026-11-11T10:00:00.000Z');
+    expect(res).toEqual({ status: 'skipped', diff: null, reason: null, warnings: [`Pages à réenregistrer depuis un navigateur : ${page}`] });
+    expect(listPolyCourses(db)).toHaveLength(16);
+    expect(lastRun(db, 'poly-log')).toMatchObject({ status: 'ok', startedAt: '2026-11-10T10:00:00.000Z' });
   });
 
   it('avec --accept-loss, une perte de plus de 30 % passe et sa raison est notée', async () => {

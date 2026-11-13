@@ -3,9 +3,9 @@ import { listPolyCourses, upsertPolyCourses } from '../db/polyCourses.js';
 import { recordRun } from '../db/runs.js';
 import type { RawSnapshot } from '../fetch/snapshots.js';
 import { checkGuards } from '../collect/guards.js';
-import { lossLines, recordFailure, withLines, type CollectResult } from '../collect/collect.js';
+import { lossLines, recordFailure, skippedResult, withLines, type CollectResult } from '../collect/collect.js';
 import { upsertSource } from '../db/sources.js';
-import { staleSavedWarning, takeSavedSnapshots } from '../collect/saved.js';
+import { missingSavedPages, staleSavedWarning, takeSavedSnapshots } from '../collect/saved.js';
 import type { SourceFile } from '../collect/sourceFile.js';
 import type { PolyCourse } from '../../shared/types.js';
 import { findCode, snapshotText } from '../provenance/snapshotText.js';
@@ -43,6 +43,10 @@ export async function collectPoly(
 
   const before = new Map(listPolyCourses(db).map((c) => [c.sigle, c]));
   const previous = before.size;
+
+  // Pages enregistrées absentes : ignorée (les cours de Poly en base restent), ce n'est pas un échec.
+  const absent = missingSavedPages(source).map((m) => m.file);
+  if (absent.length > 0) return skippedResult(absent);
 
   let found: PolyCourse[];
   let snapshots: RawSnapshot[] = [];

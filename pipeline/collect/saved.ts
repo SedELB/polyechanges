@@ -7,6 +7,19 @@ import type { SourceFile } from './sourceFile.js';
 /** Au-delà de cet âge, les pages enregistrées sont à réenregistrer (procédure annuelle). */
 export const SAVED_MAX_AGE_DAYS = 300;
 
+/** Fichiers d'une source enregistrée qui manquent sur le disque, avec l'adresse à enregistrer. Vide pour toute autre source. */
+export function missingSavedPages(source: SourceFile, rootDir?: string): { file: string; url: string }[] {
+  if (source.kind !== 'saved' || !source.files) return [];
+  return source.files
+    .map((file, i) => ({ file, url: source.urls[i] }))
+    .filter(({ file }) => !existsSync(rootDir === undefined ? file : resolve(rootDir, file)));
+}
+
+/** Ligne de rapport et de sortie des pages absentes (université ignorée) : « pages à réenregistrer depuis un navigateur : <liste> ». */
+export function skippedSavedWarning(files: string[]): string {
+  return `Pages à réenregistrer depuis un navigateur : ${files.join(', ')}`;
+}
+
 export interface SavedPage {
   snapshot: RawSnapshot;
   body: Buffer;
@@ -21,9 +34,7 @@ export function takeSavedSnapshots(db: Db, source: SourceFile, rawDir: string, r
   if (source.kind !== 'saved' || !source.files) throw new Error(`La source ${source.id} n'est pas une page enregistrée`);
   const files = source.files;
   for (const file of files) savedFileType(file);
-  const missing = files
-    .map((file, i) => ({ file, url: source.urls[i] }))
-    .filter(({ file }) => !existsSync(rootDir === undefined ? file : resolve(rootDir, file)));
+  const missing = missingSavedPages(source, rootDir);
   if (missing.length > 0) throw new Error(missing.map(({ file, url }) => missingSavedFile(file, url)).join(' '));
   return files.map((file, i) => {
     const snapshot = takeSavedSnapshot(db, source.id, source.urls[i], file, rawDir, rootDir);

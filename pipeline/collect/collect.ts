@@ -11,7 +11,7 @@ import { findCode, lineSupportsCourse, snapshotText } from '../provenance/snapsh
 import { checkGuards, type GuardResult } from './guards.js';
 import { mergeCourses, type LocatedCourse, type SourceCourses } from './merge.js';
 import { getReader } from './readers.js';
-import { staleSavedWarning, takeSavedSnapshots } from './saved.js';
+import { missingSavedPages, skippedSavedWarning, staleSavedWarning, takeSavedSnapshots } from './saved.js';
 import type { SourceFile } from './sourceFile.js';
 
 export type { CollectionDiff } from '../db/hostCourses.js';
@@ -19,7 +19,8 @@ export { lastRun } from '../db/runs.js';
 export { activeHostCourses } from '../db/hostCourses.js';
 
 export interface CollectResult {
-  status: 'ok' | 'failed';
+  /** `skipped` : pages enregistrées absentes ; rien n'est lu ni écrit, les cours en base restent tels quels et l'export n'est pas bloqué. */
+  status: 'ok' | 'failed' | 'skipped';
   diff: CollectionDiff | null;
   reason: string | null;
   /** Lignes à écrire en tête du rapport (pages enregistrées à réenregistrer) ; absent s'il n'y en a pas. */
@@ -37,6 +38,15 @@ export interface CollectOptions {
   rootDir?: string;
   /** Baisse voulue (`--accept-loss`) : sa raison laisse passer une perte de plus de 30 %, écrite au rapport. */
   acceptLoss?: string;
+}
+
+/**
+ * Résultat d'une collecte ignorée parce que des pages enregistrées manquent (clone neuf, pages pas encore
+ * réenregistrées). Aucune ligne d'historique : l'état de la base et le dernier résultat de chaque source ne changent pas.
+ */
+export function skippedResult(files: string[]): CollectResult {
+  const warning = skippedSavedWarning(files);
+  return { status: 'skipped', diff: null, reason: null, warnings: [warning] };
 }
 
 type Page = { url: string; body: Buffer; contentType: string };
@@ -190,7 +200,7 @@ async function sourcePages(
 /**
  * Collecte une université avec toutes ses sources (dans l'ordre de leurs fiches) : lecture de chaque source,
  * fusion par code, garde-fous sur le résultat fusionné, puis une seule transaction. Une source qui échoue fait
- * échouer toute l'université ; un échec n'écrit que les lignes d'historique (une par source).
+ * échouer toute l'université (sauf un fichier enregistré absent : l'université est ignorée, sans rien écrire) ; un échec n'écrit que les lignes d'historique (une par source).
  */
 export async function collectUniversity(
   db: Db,
@@ -227,6 +237,10 @@ export async function collectUniversity(
     return withLines({ status: 'failed', diff: null, reason }, warnings, notes);
   };
   const named = (source: SourceFile, message: string): string => (several ? `${source.id} : ${message}` : message);
+
+  // Pages enregistrées absentes : l'université est ignorée, ce n'est pas un échec.
+  const absent = sources.flatMap((s) => missingSavedPages(s, opts?.rootDir).map((m) => m.file));
+  if (absent.length > 0) return skippedResult(absent);
 
   const read: SourceCourses[] = [];
   for (const source of sources) {

@@ -7,7 +7,7 @@ export interface ReportInput {
   sourceId: string;
   /** AAAA-MM-JJ */
   date: string;
-  status: 'ok' | 'failed';
+  status: 'ok' | 'failed' | 'skipped';
   courseCount: number;
   diff: CollectionDiff | null;
   reason: string | null;
@@ -32,7 +32,7 @@ export function renderReport(r: ReportInput): string {
     ...(r.warnings ?? []),
     `Rapport de collecte : ${r.sourceId}`,
     `Date : ${r.date}`,
-    `Statut : ${r.status}`,
+    `Statut : ${r.status === 'skipped' ? 'ignorée (pages enregistrées absentes)' : r.status}`,
     `Cours actifs : ${r.courseCount}`,
   ];
   if (r.diff) {
