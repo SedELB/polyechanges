@@ -16,6 +16,7 @@
   body:has(.is-printing) .choices > :not(.choices__uni),
   body:has(.is-printing) .choices__uni:not(:has(.is-printing)),
   body:has(.is-printing) .choices__head,
+  body:has(.is-printing) .choices__uni > .restrictions,
   body:has(.is-printing) .contract > :not(.contract-print),
   .contract__noprint {
     display: none !important;

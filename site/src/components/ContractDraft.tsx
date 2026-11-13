@@ -16,6 +16,10 @@ const WORKLOAD_TEXT: Record<Workload, string> = {
 export const CONTRACT_REMINDER =
   'Ébauche à recopier dans le formulaire officiel de contrat d’études ; seule la personne coordonnatrice des échanges du département décide.';
 
+/** Mention portée par l’ébauche imprimée ou copiée, qui peut circuler sans le reste du site. */
+export const draftNotice = (criterionVersion: string): string =>
+  `Projet étudiant non officiel · critère ${criterionVersion} · niveaux non vérifiés par un humain`;
+
 const HEADER = ['Cours d’accueil', 'Titre d’accueil', 'Crédits d’accueil', 'Cycle d’accueil', 'Cours Poly', 'Titre Poly', 'Crédits Poly'];
 
 /** Copie via l’API du presse-papiers, sinon via un champ temporaire. Lève une erreur si les deux échouent. */
@@ -42,8 +46,8 @@ export async function copyText(text: string): Promise<void> {
   }
 }
 
-/** Tableau en texte tabulé, collable dans un tableur. */
-export function draftToText(draft: Draft): string {
+/** Tableau en texte tabulé, collable dans un tableur, précédé de la mention non officielle. */
+export function draftToText(draft: Draft, criterionVersion: string): string {
   const lines = draft.rows.map((r) =>
     [
       r.hostCode,
@@ -55,7 +59,7 @@ export function draftToText(draft: Draft): string {
       String(r.polyCredits),
     ].join('\t'),
   );
-  return [HEADER.join('\t'), ...lines].join('\n');
+  return [draftNotice(criterionVersion), HEADER.join('\t'), ...lines].join('\n');
 }
 
 function ManualForm({ onAdd }: { onAdd: (entry: ManualEntry) => void }) {
@@ -124,12 +128,14 @@ function ManualForm({ onAdd }: { onAdd: (entry: ManualEntry) => void }) {
 /** Ébauche de contrat d’une université : tableau, vérification de charge du total, avertissements, copie et impression. */
 export function ContractDraftView({
   university,
+  criterionVersion,
   draft,
   pairs,
   onAddManual,
   onRemoveManual,
 }: {
   university: University;
+  criterionVersion: string;
   draft: Draft;
   pairs: PairResult[];
   onAddManual: (entry: ManualEntry) => void;
@@ -144,7 +150,7 @@ export function ContractDraftView({
 
   const copy = async () => {
     try {
-      await copyText(draftToText(draft));
+      await copyText(draftToText(draft, criterionVersion));
       setCopied('ok');
     } catch {
       setCopied('fail');
@@ -164,6 +170,7 @@ export function ContractDraftView({
   return (
     <div className="contract stack">
       <div ref={printRef} className="contract-print stack">
+        <p className="small contract__notice">{draftNotice(criterionVersion)}</p>
         <h3 className="contract__title">{university.name}</h3>
         <div className="contract__scroll">
           <table className="contract__table" aria-label={tableName}>

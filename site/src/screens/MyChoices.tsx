@@ -67,6 +67,7 @@ export function MyChoices({
       <h1 id="choices-title" className="question">
         Mes choix
       </h1>
+      <p className="notice">Niveaux calculés automatiquement, non vérifiés par un humain</p>
       <p className="small">Jusqu’à 3 universités, gardées dans ce navigateur. Les cours sont ceux que tu as sélectionnés, pour le trimestre {term}.</p>
       {chosen.map((r) => {
         const entries = manual[r.university.id] ?? [];
@@ -97,6 +98,7 @@ export function MyChoices({
             <Restrictions university={r.university} />
             <ContractDraftView
               university={r.university}
+              criterionVersion={data.meta.criterionVersion}
               draft={draft}
               pairs={r.pairs}
               onAddManual={(entry) => update([...entries, entry])}

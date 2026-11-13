@@ -85,15 +85,25 @@ describe('MyChoices', () => {
     renderChoices(['ntu-tw']);
     fireEvent.click(screen.getByRole('button', { name: 'Copier le tableau' }));
     const text = vi.mocked(navigator.clipboard.writeText).mock.calls[0]![0];
-    const row = text.split('\n')[1]!.split('\t');
+    const lines = text.split('\n');
+    // La copie peut circuler seule : elle commence par la mention non officielle.
+    expect(lines[0]).toBe('Projet étudiant non officiel · critère v0 · niveaux non vérifiés par un humain');
+    const row = lines[2]!.split('\t');
     expect(row).toContain('CSIE3010');
     expect(row).toContain('INF3710');
   });
 
-  it('imprime', () => {
-    renderChoices(['ntu-tw']);
+  it('imprime, avec la mention non officielle dans la partie imprimée', () => {
+    const { container } = renderChoices(['ntu-tw']);
+    const printed = container.querySelector('.contract-print') as HTMLElement;
+    expect(within(printed).getByText('Projet étudiant non officiel · critère v0 · niveaux non vérifiés par un humain')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Imprimer' }));
     expect(window.print).toHaveBeenCalled();
+  });
+
+  it('rappelle que les niveaux ne sont pas vérifiés par un humain', () => {
+    renderChoices(['ntu-tw']);
+    expect(screen.getByText('Niveaux calculés automatiquement, non vérifiés par un humain')).toBeInTheDocument();
   });
 
   it('ajoute un cours à la main et avertit', () => {
