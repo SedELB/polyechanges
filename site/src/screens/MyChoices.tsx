@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import type { SiteData } from '../../../shared/siteData';
 import type { PolyTerm } from '../../../shared/types';
 import { ContractDraftView } from '../components/ContractDraft';
+import { Restrictions } from '../components/Restrictions';
 import { loadManual, saveManual } from '../logic/choices';
 import { buildContractDraft, type ManualEntry } from '../logic/contract';
 import { rankUniversities, type RankedUniversity } from '../logic/rank';
@@ -93,6 +94,7 @@ export function MyChoices({
                 {`Retirer ${r.university.name}`}
               </button>
             </header>
+            <Restrictions university={r.university} />
             <ContractDraftView
               university={r.university}
               draft={draft}

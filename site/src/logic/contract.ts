@@ -27,6 +27,8 @@ export interface ContractRow {
   hostCode: string;
   hostTitle: string;
   hostCredits: number | null;
+  /** Cycle d'études du cours d'accueil ; nul pour un cours ajouté à la main. */
+  hostLevel: HostCourseOut['level'] | null;
   polyCode: string;
   polyTitle: string;
   polyCredits: number;
@@ -74,6 +76,7 @@ export function buildContractDraft(input: {
         hostCode: host.code,
         hostTitle: host.title,
         hostCredits: host.credits,
+        hostLevel: host.level,
         polyCode: poly.sigle,
         polyTitle: poly.title,
         polyCredits: poly.credits,
@@ -85,6 +88,7 @@ export function buildContractDraft(input: {
         hostCode: e.hostCode,
         hostTitle: e.hostTitle,
         hostCredits: e.hostCredits,
+        hostLevel: null,
         polyCode: manualPolyCode(e),
         polyTitle: MANUAL_TITLE[e.kind],
         polyCredits: e.polyCredits,

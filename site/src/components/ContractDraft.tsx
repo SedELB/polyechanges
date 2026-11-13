@@ -1,7 +1,7 @@
 import { useRef, useState, type FormEvent } from 'react';
 import type { University, Workload } from '../../../shared/types';
 import type { ContractDraft as Draft, ManualEntry } from '../logic/contract';
-import { formatGap, formatHigh, formatLow, formatNumber } from '../logic/format';
+import { CYCLE_LABEL, formatGap, formatHigh, formatLow, formatNumber } from '../logic/format';
 import type { PairResult } from '../logic/rank';
 import './ContractDraft.css';
 import '../print.css';
@@ -16,7 +16,7 @@ const WORKLOAD_TEXT: Record<Workload, string> = {
 export const CONTRACT_REMINDER =
   'Ébauche à recopier dans le formulaire officiel de contrat d’études ; seule la personne coordonnatrice des échanges du département décide.';
 
-const HEADER = ['Cours d’accueil', 'Titre d’accueil', 'Crédits d’accueil', 'Cours Poly', 'Titre Poly', 'Crédits Poly'];
+const HEADER = ['Cours d’accueil', 'Titre d’accueil', 'Crédits d’accueil', 'Cycle d’accueil', 'Cours Poly', 'Titre Poly', 'Crédits Poly'];
 
 /** Copie via l’API du presse-papiers, sinon via un champ temporaire. Lève une erreur si les deux échouent. */
 export async function copyText(text: string): Promise<void> {
@@ -45,7 +45,15 @@ export async function copyText(text: string): Promise<void> {
 /** Tableau en texte tabulé, collable dans un tableur. */
 export function draftToText(draft: Draft): string {
   const lines = draft.rows.map((r) =>
-    [r.hostCode, r.hostTitle, r.hostCredits === null ? '' : formatNumber(r.hostCredits), r.polyCode, r.polyTitle, String(r.polyCredits)].join('\t'),
+    [
+      r.hostCode,
+      r.hostTitle,
+      r.hostCredits === null ? '' : formatNumber(r.hostCredits),
+      r.hostLevel === null ? '' : CYCLE_LABEL[r.hostLevel],
+      r.polyCode,
+      r.polyTitle,
+      String(r.polyCredits),
+    ].join('\t'),
   );
   return [HEADER.join('\t'), ...lines].join('\n');
 }
@@ -185,6 +193,14 @@ export function ContractDraftView({
                         <span>{r.hostCode}</span>
                       )}{' '}
                       {r.hostTitle}
+                      {r.hostLevel !== null && (
+                        <>
+                          {' · '}
+                          <span className="cycle" data-cycle={r.hostLevel}>
+                            {CYCLE_LABEL[r.hostLevel]}
+                          </span>
+                        </>
+                      )}
                       {course && <span className="small contract__source"> collecté le {course.collectedAt}</span>}
                       {r.manual && <span className="small contract__source"> ajouté à la main</span>}
                     </td>

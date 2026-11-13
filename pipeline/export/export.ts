@@ -41,7 +41,7 @@ function hostCourses(db: Db, sourcesDir: string): HostCourseOut[] {
   const rows = db
     .prepare(
       `SELECT h.id, h.university_id, h.code, h.title, h.description, h.credits, h.contact_hours, h.language,
-         h.terms_json, h.source_url, h.collected_at, h.source_page, h.source_line, s.sha256
+         h.terms_json, h.level, h.source_url, h.collected_at, h.source_page, h.source_line, s.sha256
        FROM host_courses h LEFT JOIN snapshots s ON s.id = h.snapshot_id
        WHERE h.active = 1 AND h.language IN ('en', 'unknown')
        ORDER BY h.id`,
@@ -56,6 +56,7 @@ function hostCourses(db: Db, sourcesDir: string): HostCourseOut[] {
     contact_hours: number | null;
     language: 'en' | 'unknown';
     terms_json: string;
+    level: HostCourseOut['level'];
     source_url: string;
     collected_at: string;
     source_page: number | null;
@@ -72,6 +73,7 @@ function hostCourses(db: Db, sourcesDir: string): HostCourseOut[] {
     contactHours: r.contact_hours,
     language: r.language,
     terms: (JSON.parse(r.terms_json) as HostCourseOut['terms']).slice().sort(),
+    level: r.level,
     sourceUrl: r.source_url,
     collectedAt: r.collected_at,
     sourcePage: r.source_page,

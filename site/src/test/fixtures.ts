@@ -144,6 +144,7 @@ function host(id: number, universityId: string, code: string, title: string, des
     contactHours: universityId === 'ntu-tw' ? 60 : null,
     language: 'en',
     terms: ['fall'],
+    level: 'undergrad',
     sourceUrl: `https://www.${universityId.split('-')[0]}.example/catalog/${code}`,
     collectedAt: '2026-11-20',
     sourcePage: 1,
@@ -155,7 +156,7 @@ function host(id: number, universityId: string, code: string, title: string, des
 
 const hostCourses: HostCourseOut[] = [
   host(1, 'ntu-tw', 'CSIE3010', 'Database Systems', 'Relational model, SQL, normalization and transactions.'),
-  host(2, 'ntu-tw', 'CSIE3020', 'Software Testing', 'Unit testing, coverage, integration and regression testing.'),
+  host(2, 'ntu-tw', 'CSIE3020', 'Software Testing', 'Unit testing, coverage, integration and regression testing.', { level: 'grad' }),
   host(3, 'ntu-tw', 'CSIE3030', 'Software Verification', 'Verification of programs.', { terms: [], credits: null, contactHours: null }),
   host(4, 'ntu-tw', 'CSIE3040', 'Introduction to Databases', 'Relational model and SQL queries.', { terms: ['spring'] }),
   host(5, 'ntu-tw', 'CSIE3050', 'Network Programming', 'Sockets and basic protocols.', { contactHours: 30 }),

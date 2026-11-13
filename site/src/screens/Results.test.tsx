@@ -61,6 +61,42 @@ describe('Results', () => {
     expectNoForbiddenWords(document.body);
   });
 
+  it('la liste des paires montre le cycle d’études de chaque cours trouvé', () => {
+    renderResults();
+    const c = card('National Taiwan University');
+    expect(within(c).getByRole('button', { name: /CSIE3010 · niveau élevée · 1er cycle/ })).toBeInTheDocument();
+    expect(within(c).getByRole('button', { name: /CSIE3020 · niveau moyenne · Cycles supérieurs/ })).toBeInTheDocument();
+  });
+
+  it('une université avec restriction l’affiche avec sa source', () => {
+    const text = 'Exchange students are not allowed to enroll in graduate courses.';
+    const data = {
+      ...fixtureData,
+      universities: fixtureData.universities.map((u) =>
+        u.id === 'ntu-tw'
+          ? { ...u, restrictions: text, provenance: { ...u.provenance, restrictions: { ...u.provenance.name!, quote: text, locator: { page: 1, line: 40 } } } }
+          : u,
+      ),
+    };
+    renderResults({ data });
+    const c = card('National Taiwan University');
+    expect(within(c).getByText('Restrictions pour les étudiants d’échange')).toBeInTheDocument();
+    expect(within(c).getByText(`: ${text}`)).toBeInTheDocument();
+    const src = within(c).getByRole('group', { name: 'Source : restrictions' });
+    fireEvent.click(within(src).getByText('source'));
+    expect(within(src).getByText(`« ${text} »`)).toBeInTheDocument();
+  });
+
+  it('sans restriction publiée, la carte n’en montre aucune', () => {
+    const data = {
+      ...fixtureData,
+      universities: fixtureData.universities.map((u) => (u.id === 'nycu-tw' ? { ...u, restrictions: '  ' } : u)),
+    };
+    renderResults({ data });
+    expect(screen.queryByText('Restrictions pour les étudiants d’échange')).toBeNull();
+    expect(screen.queryByRole('group', { name: 'Source : restrictions' })).toBeNull();
+  });
+
   it('montre les notions manquantes et la charge insuffisante', () => {
     renderResults({ selectedSigles: ['INF3405'] });
     const c = card('National Taiwan University');

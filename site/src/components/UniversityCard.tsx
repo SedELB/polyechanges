@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import type { SiteData } from '../../../shared/siteData';
 import type { PolyCourse } from '../../../shared/types';
+import { CYCLE_LABEL } from '../logic/format';
 import type { RankedUniversity } from '../logic/rank';
 import { FactSource } from './FactSource';
 import { LEVEL_LABEL, PairDetail } from './PairDetail';
+import { Restrictions } from './Restrictions';
 import './UniversityCard.css';
 
 export function UniversityCard({
@@ -36,6 +38,7 @@ export function UniversityCard({
           {university.name}
         </h2>
         <p className="small">{university.city}</p>
+        <Restrictions university={university} />
         {status === 'ok' ? (
           <p className="badge">{`${covered} cours sur ${total} ${covered > 1 ? 'couverts' : 'couvert'}`}</p>
         ) : (
@@ -72,9 +75,17 @@ export function UniversityCard({
                     <strong>{poly.sigle}</strong> {poly.title}
                   </span>
                   <span className="ucard__summary small">
-                    {pair.best
-                      ? `${pair.best.course.code} · niveau ${LEVEL_LABEL[pair.best.match.level]}${pair.best.termUnknown ? ' · trimestre non publié' : ''}`
-                      : 'Aucun équivalent trouvé'}
+                    {pair.best ? (
+                      <>
+                        {`${pair.best.course.code} · niveau ${LEVEL_LABEL[pair.best.match.level]} · `}
+                        <span className="cycle" data-cycle={pair.best.course.level}>
+                          {CYCLE_LABEL[pair.best.course.level]}
+                        </span>
+                        {pair.best.termUnknown ? ' · trimestre non publié' : ''}
+                      </>
+                    ) : (
+                      'Aucun équivalent trouvé'
+                    )}
                   </span>
                 </button>
                 <div id={panelId} hidden={!isOpen}>

@@ -7,9 +7,9 @@ import { MyChoices } from './MyChoices';
 const onRemove = vi.fn();
 const onBack = vi.fn();
 
-function renderChoices(ids: string[]) {
+function renderChoices(ids: string[], data = fixtureData) {
   return render(
-    <MyChoices data={fixtureData} ids={ids} term="automne" selectedSigles={['INF3710', 'LOG3430']} onRemove={onRemove} onBack={onBack} />,
+    <MyChoices data={data} ids={ids} term="automne" selectedSigles={['INF3710', 'LOG3430']} onRemove={onRemove} onBack={onBack} />,
   );
 }
 
@@ -42,6 +42,37 @@ describe('MyChoices', () => {
     expect(screen.getByText(/Moins de 12 crédits Poly : temps plein non atteint/)).toBeInTheDocument();
     expect(screen.getByText(/Attendu :/)).toBeInTheDocument();
     expectNoForbiddenWords(document.body);
+  });
+
+  it('la carte montre les restrictions publiées, avec leur source', () => {
+    const text = 'Graduate courses are restricted to graduate students.';
+    const data = {
+      ...fixtureData,
+      universities: fixtureData.universities.map((u) =>
+        u.id === 'ntu-tw' ? { ...u, restrictions: text, provenance: { ...u.provenance, restrictions: { ...u.provenance.name!, quote: text } } } : u,
+      ),
+    };
+    renderChoices(['ntu-tw'], data);
+    const card = screen.getByRole('article', { name: 'National Taiwan University' });
+    expect(within(card).getByText('Restrictions pour les étudiants d’échange')).toBeInTheDocument();
+    expect(within(card).getByText(`: ${text}`)).toBeInTheDocument();
+    expect(within(card).getByRole('group', { name: 'Source : restrictions' })).toBeInTheDocument();
+  });
+
+  it('sans restriction publiée, la carte n’en montre aucune', () => {
+    renderChoices(['ntu-tw']);
+    expect(screen.queryByText('Restrictions pour les étudiants d’échange')).toBeNull();
+  });
+
+  it('chaque cours d’accueil de l’ébauche montre son cycle d’études, aussi dans la copie', () => {
+    renderChoices(['ntu-tw']);
+    const table = screen.getByRole('table', { name: /National Taiwan University/ });
+    const rowOf = (code: string) => within(table).getByRole('link', { name: code }).closest('tr')!;
+    expect(within(rowOf('CSIE3010')).getByText(/1er cycle/)).toBeInTheDocument();
+    expect(within(rowOf('CSIE3020')).getByText(/Cycles supérieurs/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Copier le tableau' }));
+    const lines = vi.mocked(navigator.clipboard.writeText).mock.calls[0]![0].split('\n');
+    expect(lines.find((l) => l.startsWith('CSIE3020'))!.split('\t')).toContain('Cycles supérieurs');
   });
 
   it('retire un choix', () => {

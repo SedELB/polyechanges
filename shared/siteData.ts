@@ -17,6 +17,8 @@ export interface HostCourseOut {
   contactHours: number | null;
   language: 'en' | 'unknown';
   terms: HostTerm[];
+  /** Cycle d'études du cours : 1er cycle ou cycles supérieurs. */
+  level: 'undergrad' | 'grad';
   sourceUrl: string;
   collectedAt: string;
   /** Position du code du cours dans le texte de sa copie brute (1-based). */

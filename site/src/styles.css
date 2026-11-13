@@ -302,3 +302,16 @@ a {
     animation: none !important;
   }
 }
+
+/* Cycle d'études d'un cours d'accueil : les cycles supérieurs se remarquent. */
+.cycle[data-cycle='grad'] {
+  font-weight: 800;
+}
+
+.restrictions {
+  margin: 0;
+  padding: var(--space-2) var(--space-3);
+  border-left: 4px solid var(--level-mid);
+  background: var(--paper-2);
+  border-radius: var(--radius-sm);
+}

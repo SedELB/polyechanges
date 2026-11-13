@@ -2,7 +2,7 @@ import { explainWorkload, hostContactHours } from '../../../shared/workload';
 import type { SiteData } from '../../../shared/siteData';
 import type { HostTerm, Level, PolyCourse, University, Workload } from '../../../shared/types';
 import type { Candidate, PairResult } from '../logic/rank';
-import { formatGap, formatHigh, formatLow, formatNumber as fmt } from '../logic/format';
+import { CYCLE_LABEL, formatGap, formatHigh, formatLow, formatNumber as fmt } from '../logic/format';
 import { FactSource } from './FactSource';
 import './PairDetail.css';
 
@@ -95,6 +95,12 @@ function CandidateDetail({ candidate, poly, university, data, heading }: { candi
       <h4 className="pair__cand-title">
         {heading} : {course.code}, {course.title}
       </h4>
+      <p className="small">
+        Cycle d’études :{' '}
+        <span className="cycle" data-cycle={course.level}>
+          {CYCLE_LABEL[course.level]}
+        </span>
+      </p>
       <p>
         <span className="pair__level" data-level={match.level}>
           Niveau : {LEVEL_LABEL[match.level]}

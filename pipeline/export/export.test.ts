@@ -73,7 +73,7 @@ beforeEach(() => {
   ).run();
   applyCollection(
     db, 'ntu-tw',
-    [course('B2'), course('A1', { language: 'unknown' }), course('O1', { language: 'other' })],
+    [course('B2'), course('A1', { language: 'unknown', level: 'grad' }), course('O1', { language: 'other' })],
     () => 1, '2026-01-02', () => ({ page: 2, line: 5 }),
   );
   // Cours retiré de la page : désactivé, jamais exporté.
@@ -170,6 +170,7 @@ describe('exportSiteData', () => {
     expect(hosts.map((h: { code: string }) => h.code)).toEqual(['B2', 'A1']);
     expect(hosts[0]).toMatchObject({ sourcePage: 2, sourceLine: 5, snapshotSha256: 'shaX', collectedAt: '2026-01-02' });
     expect(hosts[0]).not.toHaveProperty('outline');
+    expect(hosts.map((h: { level: string }) => h.level)).toEqual(['undergrad', 'grad']);
   });
 
   it('exporte les universités avec leur provenance et les notions', async () => {

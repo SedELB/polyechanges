@@ -47,3 +47,24 @@ describe('PairDetail, description du cours d’accueil', () => {
     expect(screen.queryByText(/Description tirée du catalogue/)).toBeNull();
   });
 });
+
+describe('PairDetail, cycle d’études du cours d’accueil', () => {
+  function renderLevel(level: 'undergrad' | 'grad') {
+    const match = fixtureData.matches[0];
+    const course = { ...fixtureData.hostCourses.find((c) => c.id === match.hostCourseId)!, level };
+    const pair: PairResult = { polySigle: match.polySigle, best: { course, match, termUnknown: false }, alternatives: [] };
+    const poly = fixtureData.polyCourses.find((p) => p.sigle === match.polySigle)!;
+    const university = fixtureData.universities.find((u) => u.id === course.universityId)!;
+    render(<PairDetail pair={pair} poly={poly} university={university} data={fixtureData} />);
+  }
+  it('un cours de cycles supérieurs l’affiche', () => {
+    renderLevel('grad');
+    expect(screen.getByText('Cycles supérieurs')).toBeInTheDocument();
+    expect(screen.queryByText('1er cycle')).toBeNull();
+  });
+  it('un cours de 1er cycle l’affiche', () => {
+    renderLevel('undergrad');
+    expect(screen.getByText('1er cycle')).toBeInTheDocument();
+    expect(screen.queryByText('Cycles supérieurs')).toBeNull();
+  });
+});
