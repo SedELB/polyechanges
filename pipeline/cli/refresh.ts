@@ -32,7 +32,7 @@ function missingPagesWarning(): string | null {
   } finally {
     db.close();
   }
-  return [...empty, skippedSavedWarning(files), '(les cours déjà en base de ces universités restent tels quels ; voir README.txt)'].join('\n');
+  return [...empty, skippedSavedWarning(files), '(les cours déjà en base de ces universités restent tels quels)'].join('\n');
 }
 
 function main(): number {

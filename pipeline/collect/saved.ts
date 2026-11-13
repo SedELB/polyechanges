@@ -86,7 +86,7 @@ export function emptySkippedLines(db: Db, sources: SourceFile[], rootDir?: strin
   const lines: string[] = [];
   if (polyFile !== null && count('SELECT COUNT(*) AS n FROM poly_courses WHERE active = 1') === 0) {
     lines.push(
-      `Cours de Poly ignorés et absents de la base : l’export sera refusé. Enregistre la page du programme de Poly (${polyFile}, voir README.txt).`,
+      `Cours de Poly ignorés et absents de la base : l’export sera refusé. Enregistre la page du programme de Poly dans ${polyFile}.`,
     );
   }
   const empty = [...universities]

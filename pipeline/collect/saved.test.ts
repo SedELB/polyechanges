@@ -118,7 +118,7 @@ describe('emptySkippedLines : pages absentes et rien en base', () => {
   it('nomme en tête l’université ignorée sans aucun cours et Poly sans aucun cours', () => {
     const lines = emptySkippedLines(db, [savedSource(['data/saved/ntu/absent.html']), polySource], tmp);
     expect(lines).toEqual([
-      'Cours de Poly ignorés et absents de la base : l’export sera refusé. Enregistre la page du programme de Poly (data/manual/poly/programme-LOG.html, voir README.txt).',
+      'Cours de Poly ignorés et absents de la base : l’export sera refusé. Enregistre la page du programme de Poly dans data/manual/poly/programme-LOG.html.',
       'Universités ignorées sans aucun cours en base (le site affichera « catalogue non lu cette année ») : ntu',
     ]);
   });

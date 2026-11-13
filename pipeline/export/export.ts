@@ -50,7 +50,7 @@ function polyPageFile(sourcesDir: string): string {
  * clone neuf sans la page du programme de Poly, la collecte ignore Poly et l'export publierait un site vide.
  */
 function assertSomethingCompared(data: SiteData, version: string, sourcesDir: string): void {
-  const page = `Enregistre la page du programme de Poly dans ${polyPageFile(sourcesDir)} (voir README.txt, PAGES À ENREGISTRER À LA MAIN), puis relance npm run refresh.`;
+  const page = `Enregistre la page du programme de Poly dans ${polyPageFile(sourcesDir)}, puis relance npm run refresh.`;
   const compared = data.polyCourses.filter((c) => c.compared && (data.notions[c.sigle]?.length ?? 0) > 0);
   if (compared.length === 0) {
     throw new Error(`Export bloqué : aucun cours de Poly comparé (0 cours de Poly actif doté d'une grille du critère ${version}). ${page}`);
