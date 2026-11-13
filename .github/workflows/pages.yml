@@ -26,8 +26,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      # --ignore-scripts : better-sqlite3 livre ses binaires précompilés, inutile de le recompiler.
-      - run: npm ci --ignore-scripts
+      # Sans --ignore-scripts : le script d'installation de better-sqlite3 télécharge son binaire précompilé,
+      # sans lequel les tests qui ouvrent la base échouent.
+      - run: npm ci
       - run: npm test
       - run: npm run build
         env:

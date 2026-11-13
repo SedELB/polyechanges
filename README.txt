@@ -19,8 +19,8 @@ Chaque cours d'accueil affiché porte son lien source et sa date de collecte. Se
 INSTALLER ET LANCER LE SITE EN LOCAL
 ------------------------------------
 Il faut Node.js 22 (Windows). Pas de Python.
-  1. Dans le dossier du projet : npm ci --ignore-scripts
-     (--ignore-scripts : la base SQLite utilisée, better-sqlite3, est livrée précompilée ; sans cette option, Windows tente de la recompiler et échoue sans les outils C++ de Visual Studio.)
+  1. Dans le dossier du projet : npm ci
+     (better-sqlite3, la base SQLite, télécharge son binaire précompilé pendant l'installation. Si l'installation échoue en essayant de le recompiler, vérifier la version de Node (22) et la connexion Internet, ou installer les outils C++ de Visual Studio (« Build Tools ») puis relancer. N'utilisez pas --ignore-scripts : sans ce binaire, la collecte et les tests qui ouvrent la base échouent.)
   2. Lancer le site : npm run dev  (puis ouvrir l'adresse affichée)
   3. Lancer les tests : npm test  (environ 20 secondes ; tourne sans base ni pages enregistrées)
   4. Vérifier les types : npm run typecheck
@@ -40,7 +40,7 @@ Ce qui est versionné : le code, data/sources/ (fiches de sources), data/manual/
 PREMIER LANCEMENT SUR UN CLONE NEUF
 -----------------------------------
 Sans base ni copie brute, tout se recrée depuis les sites des universités (connexion Internet nécessaire).
-  1. npm ci --ignore-scripts
+  1. npm ci
   2. Enregistrer d'abord la page du programme de Poly et les pages à la main (section PAGES À ENREGISTRER À LA MAIN plus bas). Sans elles, ces universités sont « ignorées » et le calcul n'a rien à comparer pour Poly.
   3. npm run refresh -- v1
      (sans version gelée dans la base, il faut nommer la version : v1 est la version gelée du dépôt)
