@@ -3,6 +3,7 @@ import { mkdtempSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createLocalEmbedder } from '../criterion/embedder.js';
+import { latestFrozenVersion } from '../criterion/frozen.js';
 import { loadCriterion } from '../criterion/loadCriterion.js';
 import { modelsDir } from '../criterion/modelsDir.js';
 import { applyCollection } from '../db/hostCourses.js';
@@ -13,7 +14,8 @@ import type { HostCourseInput, PolyCourse, University } from '../../shared/types
 import { runCompare } from './compare.js';
 
 const run = process.env.RUN_MODEL_TESTS === '1';
-const version = process.env.CRITERION_VERSION ?? 'v0';
+// Par défaut, le critère publié : la dernière version gelée du dépôt.
+const version = process.env.CRITERION_VERSION ?? latestFrozenVersion() ?? 'v0';
 
 const university: University = {
   id: 'test-u', name: 'Test', moveOnName: 'Test', countryCode: 'TW', city: 'x', lat: 0, lng: 0, website: 'https://x',

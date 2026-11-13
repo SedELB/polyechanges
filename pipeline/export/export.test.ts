@@ -10,6 +10,7 @@ import { openDb, type Db } from '../db/open.js';
 import { upsertPolyCourses } from '../db/polyCourses.js';
 import { recordRun } from '../db/runs.js';
 import { upsertUniversity } from '../db/universities.js';
+import { loadCriterion } from '../criterion/loadCriterion.js';
 import { exportSiteData } from './export.js';
 
 const prov: Provenance = {
@@ -79,7 +80,7 @@ beforeEach(() => {
   // Cours retiré de la page : désactivé, jamais exporté.
   applyCollection(db, 'a-tw', [course('Z9')], () => null, '2026-01-01');
   db.prepare("UPDATE host_courses SET active = 0 WHERE code = 'Z9'").run();
-  db.prepare("INSERT INTO criterion_versions (version, params_hash, params_json) VALUES ('v0','h','{}')").run();
+  db.prepare("INSERT INTO criterion_versions (version, params_hash, params_json) VALUES ('v0', ?, '{}')").run(loadCriterion('v0', criterionDir).paramsHash);
   replaceMatches(db, 'v0', [
     match('INF3710', hostId(db, 'B2'), 'elevee'),
     match('INF3710', hostId(db, 'A1'), 'moyenne'),

@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { openDb } from '../db/open.js';
+import { latestFrozenVersion, refreshVersion } from '../criterion/frozen.js';
 import { missingSavedPages, skippedSavedWarning } from '../collect/saved.js';
 import { loadSourceFiles } from '../collect/sourceFile.js';
 
@@ -14,18 +14,6 @@ const COLLECT_STEPS: { label: string; args: string[] }[] = [
   { label: 'refresh-sources', args: ['run', 'refresh-sources'] },
 ];
 
-/** Version gelée la plus récente de la base, ou nulle. */
-function latestFrozenVersion(): string | null {
-  const db = openDb('data/polyechanges.sqlite');
-  try {
-    const rows = db.prepare('SELECT version FROM criterion_versions WHERE frozen_at IS NOT NULL').all() as { version: string }[];
-    const numbers = rows.map((r) => ({ v: r.version, n: Number(r.version.slice(1)) })).sort((a, b) => b.n - a.n);
-    return numbers[0]?.v ?? null;
-  } finally {
-    db.close();
-  }
-}
-
 /** Avertissement des pages enregistrées absentes (universités ignorées par la collecte), ou nul s'il n'en manque aucune. */
 function missingPagesWarning(): string | null {
   const files = loadSourceFiles('data/sources').flatMap((s) => missingSavedPages(s).map((m) => m.file));
@@ -33,11 +21,13 @@ function missingPagesWarning(): string | null {
 }
 
 function main(): number {
-  const version = latestFrozenVersion() ?? process.argv[2];
-  if (!version) {
-    console.error('Aucune version du critère gelée : indique la version à comparer et exporter (npm run refresh -- v0).');
+  // La dernière version gelée du dépôt (data/criterion/v<N>/FROZEN.json), même sur une base neuve.
+  const chosen = refreshVersion(process.argv[2], latestFrozenVersion());
+  if ('error' in chosen) {
+    console.error(chosen.error);
     return 1;
   }
+  const { version } = chosen;
   const STEPS = [
     ...COLLECT_STEPS,
     { label: `compare -- ${version}`, args: ['run', 'compare', '--', version] },

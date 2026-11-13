@@ -5,6 +5,7 @@ import { SITE_DATA_FILES } from '../../shared/siteData.js';
 import type { Level, Notion, University } from '../../shared/types.js';
 import { loadSourceFiles } from '../collect/sourceFile.js';
 import { CRITERION_DIR, loadCriterion } from '../criterion/loadCriterion.js';
+import { getCriterionVersion } from '../db/criterion.js';
 import type { Db } from '../db/open.js';
 import { listPolyCourses } from '../db/polyCourses.js';
 import { lastRun } from '../db/runs.js';
@@ -22,6 +23,19 @@ function assertExportable(db: Db, universities: University[]): void {
     for (const [fact, p] of Object.entries(u.provenance).sort(([a], [b]) => a.localeCompare(b))) {
       if (p?.stale) throw new Error(`Export bloqué : le fait « ${fact} » de l'université ${u.id} est périmé (extrait introuvable)`);
     }
+  }
+}
+
+/** Les paires en base doivent venir des fichiers actuels du critère : sinon les grilles publiées ne seraient pas celles du calcul. */
+function assertComputedWith(db: Db, version: string, paramsHash: string): void {
+  const stored = getCriterionVersion(db, version);
+  if (!stored) {
+    throw new Error(`Export bloqué : le critère ${version} n'a jamais été calculé sur cette base. Lance npm run compare -- ${version}`);
+  }
+  if (stored.paramsHash !== paramsHash) {
+    throw new Error(
+      `Export bloqué : les paires en base ont été calculées avec d'autres réglages que les fichiers actuels du critère ${version}. Relance npm run compare -- ${version}`,
+    );
   }
 }
 
@@ -145,6 +159,7 @@ export async function exportSiteData(
   sourcesDir: string = 'data/sources',
 ): Promise<void> {
   const criterion = loadCriterion(version, criterionDir);
+  assertComputedWith(db, version, criterion.paramsHash);
   const universities = (db.prepare('SELECT id FROM universities ORDER BY id').all() as { id: string }[])
     .map((r) => getUniversity(db, r.id))
     .filter((u): u is University => u !== null);

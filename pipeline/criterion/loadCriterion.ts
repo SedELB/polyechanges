@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { z } from 'zod';
 import type { Level, Notion } from '../../shared/types.js';
 import type { ModelConfig } from './embedder.js';
+import { assertFrozenIntact, readFrozenMark, type FrozenMark } from './frozen.js';
 
 export const CRITERION_DIR = 'data/criterion';
 
@@ -24,6 +25,8 @@ export interface LoadedCriterion {
   params: CriterionParams;
   notions: Record<string, Notion[]>;
   paramsHash: string;
+  /** Marque de gel versionnée (FROZEN.json) ; absente si la version n'est pas gelée dans le dépôt. */
+  frozen?: FrozenMark;
 }
 
 const paramsSchema = z.strictObject({
@@ -70,7 +73,10 @@ function canonical(value: unknown): string {
   return JSON.stringify(value);
 }
 
-/** Lit `<dir>/<version>/criterion.json` et `notions.json`. Le hash couvre les deux fichiers. */
+/**
+ * Lit `<dir>/<version>/criterion.json` et `notions.json`. Le hash couvre les deux fichiers. Une version gelée dans le
+ * dépôt (FROZEN.json) dont le hash recalculé n'est plus celui du gel est refusée : comparaison et export s'arrêtent là.
+ */
 export function loadCriterion(version: string, dir: string = CRITERION_DIR): LoadedCriterion {
   const read = (file: string): unknown => JSON.parse(readFileSync(`${dir}/${version}/${file}`, 'utf8'));
   const rawParams = read('criterion.json');
@@ -83,5 +89,7 @@ export function loadCriterion(version: string, dir: string = CRITERION_DIR): Loa
   const paramsHash = createHash('sha256')
     .update(canonical({ criterion: rawParams, notions: rawNotions }))
     .digest('hex');
-  return { params, notions, paramsHash };
+  const frozen = readFrozenMark(version, dir);
+  assertFrozenIntact(version, paramsHash, frozen, dir);
+  return { params, notions, paramsHash, ...(frozen ? { frozen } : {}) };
 }

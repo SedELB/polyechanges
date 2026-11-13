@@ -8,7 +8,8 @@ import type { HostCourseInput, PolyCourse, University } from '../../shared/types
 import type { LoadedCriterion } from '../criterion/loadCriterion.js';
 import { detectNotions } from '../criterion/content.js';
 import { splitPassages } from '../criterion/passages.js';
-import { CriterionFrozenError, freezeCriterion, runCompare } from './compare.js';
+import { setFrozen } from '../db/criterion.js';
+import { CriterionFrozenError, runCompare } from './compare.js';
 
 /** Vecteur déterministe : un axe par mot-clé connu. */
 const AXES = ['sql', 'transaction', 'kernel'];
@@ -123,7 +124,7 @@ describe('runCompare', () => {
 
   it('refuse de recalculer une version gelée dont les paramètres ont changé', async () => {
     await runCompare(db, v0, fake);
-    freezeCriterion(db, 'v0', '2026-12-10');
+    setFrozen(db, 'v0', '2026-12-10');
     await expect(runCompare(db, { ...v0, paramsHash: 'autre' }, fake)).rejects.toBeInstanceOf(CriterionFrozenError);
     await expect(runCompare(db, { ...v0, paramsHash: 'autre' }, fake)).rejects.toThrow(
       'Le critère v0 est gelé : crée une nouvelle version',
@@ -133,19 +134,8 @@ describe('runCompare', () => {
 
   it('accepte de recalculer une version gelée aux paramètres identiques', async () => {
     await runCompare(db, v0, fake);
-    freezeCriterion(db, 'v0', '2026-12-10');
+    setFrozen(db, 'v0', '2026-12-10');
     await expect(runCompare(db, v0, fake)).resolves.toEqual({ pairs: 3 });
-  });
-});
-
-describe('freezeCriterion', () => {
-  it("échoue si la version n'a jamais été calculée", () => {
-    expect(() => freezeCriterion(db, 'v9', '2026-12-10')).toThrow();
-  });
-  it('pose frozen_at', async () => {
-    await runCompare(db, v0, fake);
-    freezeCriterion(db, 'v0', '2026-12-10');
-    expect((db.prepare('SELECT frozen_at FROM criterion_versions').get() as { frozen_at: string }).frozen_at).toBe('2026-12-10');
   });
 });
 

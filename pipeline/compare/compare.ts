@@ -4,7 +4,9 @@ import { scoreNotions } from '../criterion/content.js';
 import type { Embedder } from '../criterion/embedder.js';
 import { createCachedEmbedder } from '../criterion/embeddingCache.js';
 import { capLevel, contentBand, contentScore, levelFor } from '../criterion/levels.js';
-import type { LoadedCriterion } from '../criterion/loadCriterion.js';
+import type { ModelConfig } from '../criterion/embedder.js';
+import { CriterionFrozenError, writeFrozenMark } from '../criterion/frozen.js';
+import { CRITERION_DIR, loadCriterion, type LoadedCriterion } from '../criterion/loadCriterion.js';
 import { splitPassages } from '../criterion/passages.js';
 import { getCriterionVersion, setFrozen, upsertCriterionVersion } from '../db/criterion.js';
 import { activeHostCourses } from '../db/hostCourses.js';
@@ -13,7 +15,7 @@ import type { Db } from '../db/open.js';
 import { listPolyCourses } from '../db/polyCourses.js';
 import { getUniversity } from '../db/universities.js';
 
-export class CriterionFrozenError extends Error {}
+export { CriterionFrozenError } from '../criterion/frozen.js';
 
 /** Compare chaque cours de Poly doté d'une grille à chaque cours d'accueil actif en anglais ou de langue inconnue. */
 export async function runCompare(db: Db, criterion: LoadedCriterion, embedder: Embedder): Promise<{ pairs: number }> {
@@ -87,17 +89,49 @@ export async function runCompare(db: Db, criterion: LoadedCriterion, embedder: E
 
   db.transaction(() => {
     upsertCriterionVersion(db, params.version, paramsHash, JSON.stringify(params));
+    // Une base neuve apprend le gel versionné dans le dépôt.
+    if (criterion.frozen && !stored?.frozenAt) setFrozen(db, params.version, criterion.frozen.frozenAt);
     replaceMatches(db, params.version, rows);
   })();
   return { pairs: rows.length };
 }
 
-/** Gèle une version : ses paramètres ne pourront plus changer. */
-export function freezeCriterion(db: Db, version: string, now: string): void {
-  if (!getCriterionVersion(db, version)) {
+/** Charge la version (refusée si elle est gelée et que ses fichiers ont changé), puis compare. */
+export async function compareVersion(
+  db: Db,
+  version: string,
+  embedderFor: (model: ModelConfig) => Promise<Embedder>,
+  criterionDir: string = CRITERION_DIR,
+): Promise<{ pairs: number }> {
+  const criterion = loadCriterion(version, criterionDir);
+  return runCompare(db, criterion, await embedderFor(criterion.params.model));
+}
+
+/**
+ * Gèle une version : écrit `<criterionDir>/<version>/FROZEN.json` (date et hachage, versionnés avec le code) et le note
+ * dans la base. Les paires en base doivent venir des fichiers actuels. Une date de gel déjà connue (dépôt ou base) est
+ * gardée : regeler ne change rien.
+ */
+export function freezeCriterion(
+  db: Db,
+  version: string,
+  now: string,
+  criterionDir: string = CRITERION_DIR,
+): { frozenAt: string; paramsHash: string } {
+  const criterion = loadCriterion(version, criterionDir);
+  const stored = getCriterionVersion(db, version);
+  if (!stored) {
     throw new Error(`Le critère ${version} n'a jamais été calculé : lance d'abord « npm run compare -- ${version} »`);
   }
-  setFrozen(db, version, now);
+  if (stored.paramsHash !== criterion.paramsHash) {
+    throw new Error(
+      `Les paires en base ont été calculées avec d'autres réglages que les fichiers de ${version} : relance « npm run compare -- ${version} » avant de geler`,
+    );
+  }
+  const frozenAt = criterion.frozen?.frozenAt ?? stored.frozenAt ?? now;
+  if (!stored.frozenAt) setFrozen(db, version, frozenAt);
+  if (!criterion.frozen) writeFrozenMark(criterionDir, { version, frozenAt, paramsHash: criterion.paramsHash });
+  return { frozenAt, paramsHash: criterion.paramsHash };
 }
 
 /** Texte réellement comparé : le plan s'ajoute à la description ; sans l'un ni l'autre, il ne reste que le titre. */

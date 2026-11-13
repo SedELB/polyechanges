@@ -42,11 +42,9 @@ PREMIER LANCEMENT SUR UN CLONE NEUF
 Sans base ni copie brute, tout se recrée depuis les sites des universités (connexion Internet nécessaire).
   1. npm ci
   2. Enregistrer d'abord la page du programme de Poly et les pages à la main (section PAGES À ENREGISTRER À LA MAIN plus bas). Sans elles, ces universités sont « ignorées » et le calcul n'a rien à comparer pour Poly.
-  3. npm run refresh -- v1
-     (sans version gelée dans la base, il faut nommer la version : v1 est la version gelée du dépôt)
-  4. npm run freeze -- v1
-     (note dans la nouvelle base que v1 est gelée ; ensuite « npm run refresh » seul suffit)
-  5. npm run dev, et vérifier le site.
+  3. npm run refresh
+     (elle prend seule la dernière version gelée du dépôt, v1 : rien à geler sur une base neuve)
+  4. npm run dev, et vérifier le site.
 Le premier calcul télécharge le modèle (environ 91 Mo) dans data/models/.
 Pages manquantes : l'université est « ignorée » (statut distinct de l'échec). Ses cours déjà en base restent tels quels, l'export n'est pas bloqué, et la liste « Pages à réenregistrer depuis un navigateur : ... » apparaît en tête du rapport de collecte et à la fin de npm run refresh.
 
@@ -56,7 +54,7 @@ PROCÉDURE ANNUELLE
 À faire une fois par année, avant l'ouverture des demandes d'échange.
   1. Réenregistrer les pages à la main (section suivante). Les rapports avertissent quand elles ont plus de 300 jours.
   2. npm run refresh
-     Elle enchaîne : partners:check (liste des partenaires sur MoveOn), collect -- all (toutes les universités et Poly), refresh-sources (sources des faits : dates, adresses), compare (version gelée la plus récente du critère), export (fichiers du site). Elle s'arrête à la première étape en échec.
+     Elle enchaîne : partners:check (liste des partenaires sur MoveOn), collect -- all (toutes les universités et Poly), refresh-sources (sources des faits : dates, adresses), compare (version gelée la plus récente du dépôt, celle qui a un FROZEN.json), export (fichiers du site). Elle s'arrête à la première étape en échec.
   3. Lire les rapports dans data/reports/ (un fichier AAAA-MM-JJ-<université>.txt par collecte) : statut, cours ajoutés, retirés, modifiés, avertissements en tête de fichier.
   4. npm run verify-sources  (hors ligne : chaque fait cité est-il toujours retrouvé dans sa copie brute ?)
      Si une position est inexacte : npm run verify-sources -- --fix
@@ -112,7 +110,7 @@ SJTU (Chine) : rien à enregistrer. Les pages sont téléchargées automatiqueme
 LE CRITÈRE (VERSIONS GELÉES)
 ----------------------------
 Le critère est l'ensemble des réglages qui produisent les niveaux : modèle, seuils, tolérance de charge, semaines de session à Poly, grilles de notions. Chaque version vit dans data/criterion/v<N>/ (criterion.json et notions.json). Son journal est data/criterion/CHANGELOG.txt.
-  - Une version gelée est immuable : ne jamais modifier ses fichiers. La comparaison refuse de tourner si les réglages d'une version gelée ont changé.
+  - Une version gelée est immuable : ne jamais modifier ses fichiers. Elle porte data/criterion/v<N>/FROZEN.json (date du gel et hachage de criterion.json et notions.json), versionné avec le code. La comparaison et l'export refusent une version gelée dont le hachage recalculé n'est plus celui de FROZEN.json, même sur une base neuve. L'export refuse aussi des paires calculées avec d'autres réglages que les fichiers actuels (relancer npm run compare).
   - La version actuelle est v1 (modèle all-MiniLM-L6-v2, calibrée sur 120 paires jugées à l'aveugle).
   - Les données changent chaque année, pas le critère : ne créer une nouvelle version que si un réglage doit changer (nouveau modèle, nouveaux seuils, nouvelles grilles de notions pour des cours de Poly).
 
@@ -122,9 +120,9 @@ Créer une nouvelle version :
   3. Tirer des paires à juger : npm run calibrate:sample -- --seed <n> (puis calibrate:sample-2 au besoin).
   4. Jugement à l'aveugle : une personne qui n'a vu ni le code du critère, ni les scores, ni les modèles remplit data/calibration/judgments.json (un niveau et une raison par paire).
   5. npm run calibrate:score -- --chosen <version> --reason "<raison>" écrit data/calibration/report.txt. Choisir, écrire l'entrée de data/criterion/CHANGELOG.txt.
-  6. npm run compare -- v2, vérifier les résultats, puis npm run freeze -- v2.
+  6. npm run compare -- v2, vérifier les résultats, puis npm run freeze -- v2 (écrit data/criterion/v2/FROZEN.json : à committer).
   7. npm run export -- v2, puis npm run calibrate:clean pour retirer le concours de la base.
-Ensuite, npm run refresh utilise la version gelée la plus récente.
+Ensuite, npm run refresh utilise la version gelée la plus récente (npm run refresh -- v1 n'est accepté que si v1 est cette version).
 
 POLYECHANGES_MODELS_DIR : variable d'environnement qui place le cache des modèles ailleurs que dans data/models. Utile quand le dossier du projet est synchronisé (OneDrive) et que le modèle est gros (Qwen3-Embedding : environ 2,4 Go). Exemple PowerShell : $env:POLYECHANGES_MODELS_DIR = "C:\Users\<nom>\AppData\Local\polyechanges\models"
 npm run test:model lance le test de déterminisme avec le vrai modèle (long, télécharge le modèle) ; il ne tourne pas dans la publication.
