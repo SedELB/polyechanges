@@ -26,10 +26,12 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      # Sans --ignore-scripts : le script d'installation de better-sqlite3 télécharge son binaire précompilé,
-      # sans lequel les tests qui ouvrent la base échouent.
+      # Sans --ignore-scripts : esbuild et onnxruntime-node installent leur binaire dans leur script d'installation
+      # (better-sqlite3 livre le sien précompilé).
       - run: npm ci
       - run: npm test
+      # vite ne vérifie pas les types : la publication s'arrête sur une erreur de type.
+      - run: npm run typecheck
       - run: npm run build
         env:
           BASE_PATH: /${{ github.event.repository.name }}/

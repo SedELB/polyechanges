@@ -20,9 +20,9 @@ INSTALLER ET LANCER LE SITE EN LOCAL
 ------------------------------------
 Il faut Node.js 22 (Windows). Pas de Python.
   1. Dans le dossier du projet : npm ci
-     (better-sqlite3, la base SQLite, télécharge son binaire précompilé pendant l'installation. Si l'installation échoue en essayant de le recompiler, vérifier la version de Node (22) et la connexion Internet, ou installer les outils C++ de Visual Studio (« Build Tools ») puis relancer. N'utilisez pas --ignore-scripts : sans ce binaire, la collecte et les tests qui ouvrent la base échouent.)
+     (better-sqlite3, la base SQLite, est livré avec son binaire précompilé pour Windows, Linux et macOS : rien à compiler. N'utilisez pas --ignore-scripts : esbuild (construction du site, tsx) et onnxruntime-node (modèle de comparaison) installent leur binaire dans leur script d'installation.)
   2. Lancer le site : npm run dev  (puis ouvrir l'adresse affichée)
-  3. Lancer les tests : npm test  (environ 20 secondes ; tourne sans base ni pages enregistrées)
+  3. Lancer les tests : npm test  (environ 30 secondes ; tourne sans base ni pages enregistrées)
   4. Vérifier les types : npm run typecheck
 Le site ne lit que les JSON déjà exportés dans site/public/data. Aucune clé d'API, aucun coût.
 
@@ -136,4 +136,4 @@ Le fichier .github/workflows/pages.yml publie le site à chaque envoi sur la bra
   1. Dans les réglages du dépôt GitHub : Settings > Pages > Source : « GitHub Actions » (une seule fois).
   2. Après une collecte : committer site/public/data et data/reports, puis envoyer sur main.
   3. Adresse du site : https://<compte>.github.io/<nom-du-dépôt>/
-Pour tester la construction à la main : définir BASE_PATH (par exemple /polyechanges/) puis npm run build ; npx vite preview --config site/vite.config.ts sert site/dist.
+Pour tester la construction à la main, depuis PowerShell : $env:BASE_PATH = '/polyechanges/' puis npm run build ; npx vite preview --config site/vite.config.ts sert site/dist. Pas depuis Git Bash : il réécrit /polyechanges/ en C:/Program Files/Git/polyechanges/ et le site construit pointe au mauvais endroit.
