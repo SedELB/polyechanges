@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import type { SiteData } from '../../../shared/siteData';
-import type { PolyCourse } from '../../../shared/types';
+import type { PolyCourseOut, SiteData } from '../../../shared/siteData';
 import { CYCLE_LABEL } from '../logic/format';
 import type { RankedUniversity } from '../logic/rank';
 import { FactSource } from './FactSource';
@@ -22,7 +21,7 @@ export function UniversityCard({
   const { university, covered, total, pairs, status } = ranked;
   const [open, setOpen] = useState<Set<string>>(new Set());
   const titleId = `uni-${university.id}`;
-  const polyBySigle = new Map<string, PolyCourse>(data.polyCourses.map((c) => [c.sigle, c]));
+  const polyBySigle = new Map<string, PolyCourseOut>(data.polyCourses.map((c) => [c.sigle, c]));
 
   const toggle = (sigle: string) =>
     setOpen((prev) => {

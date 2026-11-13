@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { HostCourseOut, MatchOut, SiteData, SiteMeta } from '../../shared/siteData.js';
+import type { HostCourseOut, MatchOut, PolyCourseOut, SiteData, SiteMeta } from '../../shared/siteData.js';
 import { SITE_DATA_FILES } from '../../shared/siteData.js';
 import type { Level, Notion, University } from '../../shared/types.js';
 import { loadSourceFiles } from '../collect/sourceFile.js';
@@ -166,6 +166,15 @@ function matches(db: Db, version: string): MatchOut[] {
   }));
 }
 
+/** Cours de Poly actifs, chacun avec l'adresse de la copie brute qui porte sa position (la page du programme). */
+function polyCourses(db: Db): PolyCourseOut[] {
+  const urlOf = db.prepare('SELECT url FROM snapshots WHERE sha256 = ? ORDER BY id LIMIT 1');
+  return listPolyCourses(db).map((c) => {
+    const row = c.sourceLocator ? (urlOf.get(c.sourceLocator.sha256) as { url: string } | undefined) : undefined;
+    return { ...c, pageUrl: row?.url ?? null };
+  });
+}
+
 /** Plus récente date de collecte de la base : l'export ne dépend pas de l'heure courante. */
 function latestCollection(db: Db): string {
   const r = db
@@ -210,7 +219,7 @@ export async function exportSiteData(
   const data: SiteData = {
     meta,
     universities,
-    polyCourses: listPolyCourses(db),
+    polyCourses: polyCourses(db),
     hostCourses: hostCourses(db, sourcesDir),
     matches: matches(db, version),
     notions: sortedNotions(criterion.notions),

@@ -1,0 +1,13 @@
+=== collecte automatique ===
+Rapport de collecte : poly-log
+Date : 2026-11-13
+Statut : ok
+Cours actifs : 137
+Ajoutés (0) : aucun
+Retirés (0) : aucun
+Modifiés (0) : aucun
+Comparés : 45
+Non admissibles : 2
+Obligatoires : 32
+Sigles comparés : GCH2730, INF2010, INF2610, INF2705, INF3405, INF3710, INF8085, INF8102, INF8103, INF8107, INF8111, INF8175, INF8215, INF8225, INF8245AE, INF8250E, INF8402, INF8405, INF8430, INF8460, INF8480, INF8602, INF8725, INF8770, INF8775, INF8801A, INF8808, LOG2400, LOG2420, LOG2440, LOG3000, LOG3210, LOG3420, LOG3430, LOG4715, LOG8100, LOG8235, LOG8371, LOG8415E, LOG8430, LOG8704, LOG8715, MTH2304, MTH3302, PHS4700
+=== fin de la collecte automatique ===

@@ -1,5 +1,5 @@
 import { round3 } from '../../../shared/workload';
-import type { HostCourseOut, MatchOut, SiteData } from '../../../shared/siteData';
+import type { HostCourseOut, MatchOut, PolyCourseOut, SiteData } from '../../../shared/siteData';
 import type { PolyCourse, Provenance, TermDates, University } from '../../../shared/types';
 
 const SHA = 'a'.repeat(64);
@@ -96,10 +96,10 @@ const tohoku: University = {
   },
 };
 
-const PROGRAM_URL = 'https://www.polymtl.example/programmes/genie-informatique';
+const PROGRAM_URL = 'https://www.polymtl.example/programmes/genie-logiciel';
 const GROUP = 'Filière classique (93 crédits)';
 
-function poly(sigle: string, title: string, description: string, credits: number, triplet: [number, number, number], line: number, extra: Partial<PolyCourse> = {}): PolyCourse {
+function poly(sigle: string, title: string, description: string, credits: number, triplet: [number, number, number], line: number, extra: Partial<PolyCourseOut> = {}): PolyCourseOut {
   return {
     sigle,
     title,
@@ -112,14 +112,15 @@ function poly(sigle: string, title: string, description: string, credits: number
     ineligibleReason: null,
     compared: true,
     groups: [GROUP],
-    sourceUrl: PROGRAM_URL,
+    sourceUrl: `https://www.polymtl.example/programmes/cours/${sigle.toLowerCase()}`,
     collectedAt: '2026-11-02',
     sourceLocator: { sha256: SHA, page: 1, line },
+    pageUrl: PROGRAM_URL,
     ...extra,
   };
 }
 
-const polyCourses: PolyCourse[] = [
+const polyCourses: PolyCourseOut[] = [
   poly('INF3710', 'Fichiers et bases de données', 'Modèle relationnel, SQL, normalisation et transactions.', 3, [3, 2, 4], 40),
   poly('LOG3430', 'Méthodes de test et de validation du logiciel', 'Tests unitaires, couverture, tests d’intégration et de régression.', 3, [3, 2, 4], 52),
   poly('INF2610', 'Noyau d’un système d’exploitation', 'Processus, fils d’exécution, mémoire virtuelle et systèmes de fichiers.', 3, [3, 2, 4], 31),

@@ -35,6 +35,15 @@ export interface HostCourseOut {
   descriptionsDated?: string;
 }
 
+/** Cours de Poly exporté, avec l'adresse de la page d'où il a été lu. */
+export interface PolyCourseOut extends PolyCourse {
+  /**
+   * Adresse de la copie brute où se trouve le cours (la page du programme, enregistrée à la main), retrouvée par
+   * l'empreinte de sa position ; nulle si la position est inconnue.
+   */
+  pageUrl: string | null;
+}
+
 export interface MatchOut {
   polySigle: string;
   hostCourseId: number;
@@ -49,7 +58,7 @@ export interface MatchOut {
 export interface SiteData {
   meta: SiteMeta;
   universities: University[];
-  polyCourses: PolyCourse[];
+  polyCourses: PolyCourseOut[];
   hostCourses: HostCourseOut[];
   matches: MatchOut[];
   notions: Record<string, Notion[]>;

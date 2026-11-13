@@ -1,8 +1,8 @@
 import { explainWorkload, hostContactHours } from '../../../shared/workload';
-import type { SiteData } from '../../../shared/siteData';
+import type { PolyCourseOut, SiteData } from '../../../shared/siteData';
 import type { HostTerm, Level, PolyCourse, University, Workload } from '../../../shared/types';
 import type { Candidate, PairResult } from '../logic/rank';
-import { CYCLE_LABEL, formatGap, formatHigh, formatLow, formatNumber as fmt } from '../logic/format';
+import { CYCLE_LABEL, formatDay, formatGap, formatHigh, formatLow, formatNumber as fmt } from '../logic/format';
 import { FactSource } from './FactSource';
 import './PairDetail.css';
 
@@ -86,7 +86,32 @@ function NotionList({ title, ids, label }: { title: string; ids: string[]; label
   );
 }
 
-function CandidateDetail({ candidate, poly, university, data, heading }: { candidate: Candidate; poly: PolyCourse; university: University; data: SiteData; heading: string }) {
+/** Source du cours de Poly : la page du programme enregistrée à la main (ou, sans position connue, la fiche du cours). */
+function PolySource({ poly }: { poly: PolyCourseOut }) {
+  return (
+    <p className="small">
+      Source :{' '}
+      {poly.pageUrl !== null ? (
+        <>
+          <a href={poly.pageUrl} target="_blank" rel="noreferrer">
+            page du programme
+          </a>
+          , enregistrée le {formatDay(poly.collectedAt)}
+        </>
+      ) : (
+        <>
+          <a href={poly.sourceUrl} target="_blank" rel="noreferrer">
+            {poly.sigle}, fiche du cours
+          </a>
+          , collecté le {formatDay(poly.collectedAt)}
+        </>
+      )}
+      {poly.sourceLocator !== null && ` · ligne ${poly.sourceLocator.line} de la copie conservée`}
+    </p>
+  );
+}
+
+function CandidateDetail({ candidate, poly, university, data, heading }: { candidate: Candidate; poly: PolyCourseOut; university: University; data: SiteData; heading: string }) {
   const { course, match, termUnknown } = candidate;
   const notions = new Map((data.notions[poly.sigle] ?? []).map((n) => [n.id, n.fr]));
   const label = (id: string) => notions.get(id) ?? id;
@@ -113,6 +138,7 @@ function CandidateDetail({ candidate, poly, university, data, heading }: { candi
             À Poly : {poly.sigle}, {poly.title}
           </strong>
           <p className="pair__desc">{poly.description}</p>
+          <PolySource poly={poly} />
         </div>
         <div>
           <strong>Ici : {course.code}</strong>
@@ -150,7 +176,7 @@ function CandidateDetail({ candidate, poly, university, data, heading }: { candi
 }
 
 /** Détail d'une paire : cours de Poly, meilleur candidat et au plus deux autres. */
-export function PairDetail({ pair, poly, university, data }: { pair: PairResult; poly: PolyCourse; university: University; data: SiteData }) {
+export function PairDetail({ pair, poly, university, data }: { pair: PairResult; poly: PolyCourseOut; university: University; data: SiteData }) {
   return (
     <div className="pair">
       {pair.best ? (

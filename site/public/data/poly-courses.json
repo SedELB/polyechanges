@@ -19,7 +19,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/amenagements-et-structures-hydrauliques",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 364
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "CIV8750",
@@ -41,7 +46,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/planification-durable-des-transports",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 217
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "CIV8780",
@@ -63,7 +73,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/systemes-de-transport-collectif-guides",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 411
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "DDI8001",
@@ -85,7 +100,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/developpement-durable-pour-ingenieurs",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 212
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "DDI8002",
@@ -107,7 +127,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/etudes-de-cas-en-develop-durable-pour-ing",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 214
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "DDI8003",
@@ -129,7 +154,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/analyse-du-cycle-de-vie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 350
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "DDI8004",
@@ -152,7 +182,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/vulgarisation-des-enjeux-environnementaux",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 219
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ELE8411",
@@ -174,7 +209,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/etude-des-grands-reseaux-electriques",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 372
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ELE8453",
@@ -196,7 +236,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/meth-opt-et-apprentissage-pour-reseaux-elec",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 374
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ELE8458",
@@ -218,7 +263,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/electricite-industrielle-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 376
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ELE8780",
@@ -240,7 +290,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/tech-ferroviaires-securite-et-signalisation",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 413
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ELE8781",
@@ -262,7 +317,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/electrification-des-transports-ferroviaires",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 419
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE6301",
@@ -284,7 +344,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/optimi-microreseaux-electriques-intelligents",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 382
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE6510",
@@ -306,7 +371,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/modelisation-energetique-des-batiments",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 390
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE8203",
@@ -328,7 +398,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/technologies-nucleaires",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 402
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE8210",
@@ -351,7 +426,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/efficacite-des-sources-denergie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 221
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE8220",
@@ -373,7 +453,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/transport-et-utilisation-de-lenergie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 342
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE8230",
@@ -395,7 +480,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/modelisa-techno-econo-des-syst-energeti",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 344
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE8280A",
@@ -417,7 +507,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/turbines-hydrauliques",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 392
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE8310",
@@ -439,7 +534,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/stockage-et-integration-des-syst-energeti",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 358
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE8412",
@@ -461,7 +561,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/gest-de-la-charge-et-de-la-prod-fluctuante",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 378
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ENE8610",
@@ -483,7 +588,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/elements-damenagements-hydroelectriques",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 368
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "GBM1611",
@@ -505,7 +615,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/biochimie-pour-genie-informatique-et-logiciel",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 173
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "GCH2730",
@@ -527,7 +642,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/energ-et-dev-durable-dans-les-syst-infor",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 160
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "GCH8729",
@@ -549,7 +669,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/dechets-solides-et-energie-residuelle",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 360
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8107",
@@ -571,7 +696,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/gestion-des-changements-technol-et-organis",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 307
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8108",
@@ -593,7 +723,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/creativite-en-sciences-et-en-genie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 248
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8110",
@@ -615,7 +750,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/enjeux-eco-du-developpement-durable-en-genie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 352
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8115",
@@ -637,7 +777,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/technologie-et-concurrence-internationale",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 314
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8116",
@@ -659,7 +804,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/mission-industrielle-poly-monde",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 323
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8119",
@@ -681,7 +831,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/gestion-dequipes-dans-un-environnement-tech",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 309
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8120",
@@ -703,7 +858,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/commercialisat-nouveaux-produits-et-services",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 250
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8121",
@@ -725,7 +885,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/ingenieur-en-coopdevelop-international",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 318
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8127A",
@@ -747,7 +912,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/mondialisation-et-firmes-internationales",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 316
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8137A",
@@ -769,7 +939,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/entrepreneuriat-technologique",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 240
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8138A",
@@ -791,7 +966,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/gestion-de-projets-internationaux-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 320
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8143",
@@ -813,7 +993,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/montage-projet-dentreprise-technologique",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 252
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8144",
@@ -835,7 +1020,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/financement-de-lentreprise-technologique",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 254
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8200",
@@ -857,7 +1047,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/organisation-industrielle",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 298
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8202",
@@ -879,7 +1074,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/production-durable",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 384
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8211",
@@ -901,7 +1101,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/ingenierie-des-systemes-dinformation",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 300
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8501",
@@ -923,7 +1128,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/droit-du-travail-pour-ingenieur",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 305
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8710",
@@ -945,7 +1155,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/gestion-de-la-rd-et-linnovation",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 243
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8711",
@@ -967,7 +1182,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/innovation-technologique-et-industrielle",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 245
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8774",
@@ -989,7 +1209,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/theorie-de-la-decision-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 302
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "IND8780",
@@ -1011,7 +1236,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/exploit-et-maint-des-systemes-ferroviaires",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 415
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF1007",
@@ -1033,7 +1263,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/introduction-la-programmation",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 110
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF1015",
@@ -1055,7 +1290,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/programmation-orientee-objet-avancee",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 112
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF1040",
@@ -1077,7 +1317,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/introduction-lingenierie-informatique",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 107
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF1205",
@@ -1099,7 +1344,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/habiletes-relationnelles-et-travail-en-equipe",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 121
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF1500",
@@ -1121,7 +1371,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/logique-des-systemes-numeriques",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 116
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF1600",
@@ -1143,7 +1398,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/architecture-des-micro-ordinateurs",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 118
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF1900",
@@ -1165,7 +1425,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/projet-initial-de-systeme-embarque",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 120
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF2010",
@@ -1187,7 +1452,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/structures-de-donnees-et-algorithmes",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 122
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF2610",
@@ -1209,7 +1479,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/noyau-dun-systeme-dexploitation",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 124
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF2705",
@@ -1231,7 +1506,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/infographie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 426
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF3405",
@@ -1254,7 +1534,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/reseaux-informatiques",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 126
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF3710",
@@ -1276,7 +1561,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/fichiers-et-bases-de-donnees",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 128
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8085",
@@ -1300,7 +1590,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/cybersecurite",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 188
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8102",
@@ -1322,7 +1617,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/securite-dans-les-environnements-infonuagique",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 462
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8103",
@@ -1344,7 +1644,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/strategie-et-modeles-op-de-la-cybersecurite",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 464
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8107",
@@ -1366,7 +1671,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/detection-dintrusion-et-supervision",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 466
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8111",
@@ -1389,7 +1699,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/fouille-de-donnees",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 335
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8175",
@@ -1413,7 +1728,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/intelligence-artif-methodes-et-algorithmes-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 190
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8215",
@@ -1435,7 +1755,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/intelligence-artif-methodes-et-algorithmes",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 191
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8225",
@@ -1457,7 +1782,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/iatech-probabilistes-et-dapprentissage",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 504
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8245AE",
@@ -1479,7 +1809,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/machine-learning-1",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 502
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8250E",
@@ -1501,7 +1836,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/reinforcement-learning-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 506
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8402",
@@ -1523,7 +1863,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/securite-des-reseaux-fixes-et-mobiles",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 468
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8405",
@@ -1545,7 +1890,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/informatique-mobile",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 470
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8430",
@@ -1567,7 +1917,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/investigation-numerique-en-informatique",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 472
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8460",
@@ -1589,7 +1944,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/traitement-automatique-de-la-langue-naturelle",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 508
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8480",
@@ -1611,7 +1971,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/systemes-repartis-et-infonuagique-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 130
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8602",
@@ -1633,7 +1998,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/securite-des-systemes-dexploitation",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 474
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8725",
@@ -1655,7 +2025,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/traitement-de-signaux-et-dimages",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 431
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8770",
@@ -1678,7 +2053,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/technologies-multimedias",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 433
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8775",
@@ -1701,7 +2081,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/analyse-et-conception-dalgorithmes-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 184
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8801A",
@@ -1723,7 +2108,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/applications-multimedias",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 435
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "INF8808",
@@ -1746,7 +2136,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/visualisation-de-donnees",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 437
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "ING8971",
@@ -1770,7 +2165,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/projet-integrateur-en-developpement-durable-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 196
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG1810",
@@ -1792,7 +2192,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/structures-discretes-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 123
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG2400",
@@ -1814,7 +2219,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/analyse-et-conception-de-logiciels-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 134
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG2420",
@@ -1836,7 +2246,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/anal-et-conc-des-interfaces-utilisateurs",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 136
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG2440",
@@ -1858,7 +2273,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/method-de-develop-et-conc-dapplic-web",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 137
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG2990",
@@ -1880,7 +2300,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/projet-de-logiciel-dapplication-web",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 140
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG3000",
@@ -1903,7 +2328,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/processus-du-genie-logiciel",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 142
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG3005",
@@ -1925,7 +2355,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/communication-ecrite-et-orale-6",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 144
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG3005A",
@@ -1947,7 +2382,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/ateliers-en-ceo-7",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 108
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG3005I",
@@ -1969,7 +2409,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/epreuves-initiales-de-communication-7",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 106
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG3210",
@@ -1991,7 +2436,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/elements-de-langages-et-compilateurs",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 146
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG3420",
@@ -2013,7 +2463,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/analyse-et-specif-des-exigences-du-logiciel",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 148
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG3430",
@@ -2035,7 +2490,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/methodes-de-test-et-de-validation-du-logiciel",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 150
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG3900",
@@ -2057,7 +2517,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/projet-devolution-dun-logiciel",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 107
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG4715",
@@ -2079,7 +2544,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/conception-de-jeux-video",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 439
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8100",
@@ -2101,7 +2571,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/devsecops-operations-et-dev-logiciel-secur",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 476
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8235",
@@ -2124,7 +2599,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/agents-intelligents-pour-jeux-video",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 441
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8371",
@@ -2146,7 +2626,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/ingenierie-de-la-qualite-en-logiciel",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 154
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8415E",
@@ -2169,7 +2654,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/advanced-concepts-cloud-computing",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 478
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8430",
@@ -2192,7 +2682,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/architecture-logicielle-et-conception-avancee",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 186
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8704",
@@ -2214,7 +2709,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/developpement-logiciel-en-realite-etendue",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 443
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8715",
@@ -2236,7 +2736,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/architecture-de-jeux-video",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 445
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8970",
@@ -2258,7 +2763,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/projet-final-en-genie-logiciel",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 194
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8975",
@@ -2280,7 +2790,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/projet-final-en-multimedia",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 448
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8980",
@@ -2302,7 +2817,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/projet-final-en-securite-et-mobilite-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 485
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "LOG8985",
@@ -2324,7 +2844,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/projet-final-en-intelligence-artificielle-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 493
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MEC1210",
@@ -2346,7 +2871,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/thermodynamique-0",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 175
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MEC6214",
@@ -2368,7 +2898,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/energie-solaire-et-applications",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 394
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MEC6216",
@@ -2390,7 +2925,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/geothermie-et-applications",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 396
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MEC8252",
@@ -2413,7 +2953,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/combustion-et-pollution-atmospherique",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 223
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MEC8256",
@@ -2435,7 +2980,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/design-et-efficacite-energetique-en-mecbat",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 225
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MEC8258",
@@ -2457,7 +3007,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/conversion-denergie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 346
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MEC8780",
@@ -2479,7 +3034,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/technologies-ferroviaires-materiel-roulant",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 417
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH1008",
@@ -2501,7 +3061,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/algebre-lineaire-appliquee",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 156
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH2304",
@@ -2523,7 +3088,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/probabilites-et-statistique-appliquees",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 151
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH3141",
@@ -2545,7 +3115,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/mathematiques-de-genie-un-recit-applique",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 266
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH3302",
@@ -2567,7 +3142,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/meth-prob-et-statist-pour-lintel-artif",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 495
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH3400",
@@ -2589,7 +3169,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/analyse-mathematique-pour-ingenieurs",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 271
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8107",
@@ -2611,7 +3196,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/mathematiques-de-lapprentissage-profond",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 264
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8207",
@@ -2633,7 +3223,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/mathematiques-des-elements-finis",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 273
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8211",
@@ -2655,7 +3250,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/algebre-lineaire-numerique-appliquee",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 268
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8301",
@@ -2677,7 +3277,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/planification-et-analyse-stat-dexperiences",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 278
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8302",
@@ -2699,7 +3304,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/analyse-de-regression-et-analyse-de-variance",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 280
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8303",
@@ -2721,7 +3331,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/processus-stochastiques",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 282
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8408",
@@ -2743,7 +3358,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/methodes-doptimisation-et-controle-optimal",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 285
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8414",
@@ -2765,7 +3385,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/outils-de-recherche-operationnelle-en-genie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 287
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8415",
@@ -2788,7 +3413,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/fondements-de-recherche-operationnelle",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 289
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8418",
@@ -2810,7 +3440,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/optimisation-sans-derivees",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 291
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8442",
@@ -2832,7 +3467,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/ordonnancement-de-la-production",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 293
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "MTH8515",
@@ -2854,7 +3494,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/analyse-mathematique-avancee-pour-ingenieurs",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 275
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "PHS1101",
@@ -2876,7 +3521,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/mecanique-pour-ingenieurs",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 177
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "PHS4700",
@@ -2898,7 +3548,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/physique-pour-les-applications-multimedia",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 179
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "PHS8603",
@@ -2921,7 +3576,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/energie-et-environnement",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 227
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "PHS8604E",
@@ -2943,7 +3603,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/direct-energy-conversion",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 406
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "SSH3101",
@@ -2965,7 +3630,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/analyse-sociologique-de-la-technologie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 164
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "SSH3201",
@@ -2987,7 +3657,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/economique-de-lingenieur",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 162
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "SSH3402",
@@ -3009,7 +3684,12 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/droit-de-lenvironnement",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 229
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   },
   {
     "sigle": "SSH3501",
@@ -3031,6 +3711,11 @@
     ],
     "sourceUrl": "https://www.polymtl.ca/programmes/cours/ethique-appliquee-lingenierie",
     "collectedAt": "2026-11-10T17:53:03.177Z",
-    "sourceLocator": null
+    "sourceLocator": {
+      "sha256": "5ef1e873479fa357038ad85d5920497beccc96ac267c41e99a3bb1a297cb1288",
+      "page": 1,
+      "line": 166
+    },
+    "pageUrl": "https://www.polymtl.ca/programmes/programmes/baccalaureat-en-genie-logiciel"
   }
 ]

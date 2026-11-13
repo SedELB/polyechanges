@@ -67,7 +67,11 @@ beforeEach(() => {
   db = openDb(':memory:');
   upsertUniversity(db, uni('ntu-tw'));
   upsertUniversity(db, uni('a-tw'));
-  upsertPolyCourses(db, [poly('INF3710'), poly('ABC1000', false)]);
+  upsertPolyCourses(db, [poly('INF3710'), { ...poly('ABC1000', false), sourceLocator: null }]);
+  db.prepare("INSERT INTO sources (id, university_id, kind, url, reader) VALUES ('poly-log', NULL, 'saved', 'https://poly.example/programme', 'poly')").run();
+  db.prepare(
+    "INSERT INTO snapshots (id, source_id, url, fetched_at, sha256, path, content_type) VALUES (50, 'poly-log','https://poly.example/programme','2026-01-01','def','poly-log/def.html','text/html')",
+  ).run();
   db.prepare("INSERT INTO sources (id, university_id, kind, url, reader) VALUES ('ntu-tw','ntu-tw','html','https://x','r')").run();
   db.prepare(
     "INSERT INTO snapshots (id, source_id, url, fetched_at, sha256, path, content_type) VALUES (1,'ntu-tw','https://x','2026-01-02','shaX','p','text/html')",
@@ -198,6 +202,9 @@ describe('exportSiteData', () => {
     expect(list.map((c: PolyCourse) => c.sigle)).toEqual(['ABC1000', 'INF3710']);
     expect(list[1].groups).toEqual(['Bloc A']);
     expect(list[1].sourceLocator).toEqual({ sha256: 'def', page: 1, line: 3 });
+    // Adresse de la copie lue (page du programme), retrouvée par l'empreinte de la position.
+    expect(list[1].pageUrl).toBe('https://poly.example/programme');
+    expect(list[0].pageUrl).toBeNull();
   });
 
   it('exporte les cours d’accueil actifs en anglais ou de langue inconnue, avec leur copie brute', async () => {
