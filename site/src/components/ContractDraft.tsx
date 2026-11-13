@@ -80,7 +80,7 @@ function ManualForm({ onAdd }: { onAdd: (entry: ManualEntry) => void }) {
         <label>
           Type de cours
           <select value={kind} onChange={(e) => setKind(e.target.value as ManualEntry['kind'])}>
-            <option value="orientation">Cours d’orientation (LOG500x)</option>
+            <option value="orientation">Cours d’orientation personnalisée (ING500x)</option>
             <option value="hors_genie">Cours hors génie (SSH500x)</option>
           </select>
         </label>

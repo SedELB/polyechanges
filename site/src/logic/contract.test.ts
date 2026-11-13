@@ -36,7 +36,7 @@ const manual = (kind: ManualEntry['kind'], polyCredits: number, hostCode = 'X1')
 
 describe('manualPolyCode', () => {
   it('code les cours ajoutés à la main', () => {
-    expect(manualPolyCode({ kind: 'orientation', hostCode: 'CSIE5001', hostTitle: 'X', hostCredits: 3, polyCredits: 3 })).toBe('LOG5003');
+    expect(manualPolyCode({ kind: 'orientation', hostCode: 'CSIE5001', hostTitle: 'X', hostCredits: 3, polyCredits: 3 })).toBe('ING5003');
     expect(manualPolyCode({ kind: 'hors_genie', hostCode: 'CHN101', hostTitle: 'Mandarin', hostCredits: 2, polyCredits: 2 })).toBe('SSH5002');
   });
 });

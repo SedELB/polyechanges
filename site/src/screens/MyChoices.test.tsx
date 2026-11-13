@@ -76,6 +76,17 @@ describe('MyChoices', () => {
     expect(screen.getByText(/ne sont pas inclus dans la vérification de charge/)).toBeInTheDocument();
   });
 
+  it('un cours d’orientation ajouté à la main porte le code ING500x', () => {
+    renderChoices(['ntu-tw']);
+    expect(screen.getByRole('option', { name: 'Cours d’orientation personnalisée (ING500x)' })).toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText('Code du cours d’accueil'), { target: { value: 'CSIE5001' } });
+    fireEvent.change(screen.getByLabelText('Titre du cours d’accueil'), { target: { value: 'Robotics' } });
+    fireEvent.change(screen.getByLabelText('Crédits Poly'), { target: { value: '3' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Ajouter ce cours' }));
+    expect(screen.getByText('ING5003')).toBeInTheDocument();
+    expect(screen.queryByText(/LOG500/)).toBeNull();
+  });
+
   function addManual(code: string) {
     fireEvent.change(screen.getByLabelText('Code du cours d’accueil'), { target: { value: code } });
     fireEvent.change(screen.getByLabelText('Titre du cours d’accueil'), { target: { value: 'Titre ' + code } });

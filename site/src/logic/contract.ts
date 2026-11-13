@@ -18,9 +18,9 @@ export interface ManualEntry {
   polyCredits: number;
 }
 
-/** Code Poly d’un cours ajouté à la main : LOG500x (orientation) ou SSH500x (hors génie), x = crédits Poly. */
+/** Code Poly d’un cours ajouté à la main : ING500x (orientation personnalisée) ou SSH500x (hors génie), x = crédits Poly (guide des contrats d’études hors Québec). */
 export function manualPolyCode(e: ManualEntry): string {
-  return `${e.kind === 'orientation' ? 'LOG500' : 'SSH500'}${e.polyCredits}`;
+  return `${e.kind === 'orientation' ? 'ING500' : 'SSH500'}${e.polyCredits}`;
 }
 
 export interface ContractRow {
@@ -43,7 +43,7 @@ export interface ContractDraft {
 }
 
 const MANUAL_TITLE: Record<ManualEntry['kind'], string> = {
-  orientation: 'Cours d’orientation',
+  orientation: 'Cours d’orientation personnalisée',
   hors_genie: 'Cours hors génie',
 };
 
