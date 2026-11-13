@@ -9,10 +9,15 @@ export function departureYear(term: PolyTerm, now: Date = new Date()): number {
   return term === 'automne' ? fall : fall + 1;
 }
 
-/** « 2026-2027 » quand les dates datent d'une année antérieure au départ, sinon null. */
+/**
+ * « 2026-2027 » quand les dates datent d'une année antérieure au départ, sinon null. Sans début publié, la première
+ * date publiée (fin, puis fin des examens) sert : une fin d'automne avant juillet appartient au trimestre commencé l'année d'avant.
+ */
 export function outdatedYears(dates: TermDates, term: PolyTerm, year: number): string | null {
-  if (dates.start === null) return null;
-  const startYear = Number(dates.start.slice(0, 4));
+  const first = dates.start ?? dates.end ?? dates.examsEnd;
+  if (first === null) return null;
+  let startYear = Number(first.slice(0, 4));
+  if (dates.start === null && term === 'automne' && Number(first.slice(5, 7)) < 7) startYear -= 1;
   if (!Number.isFinite(startYear) || startYear >= year) return null;
   return term === 'automne' ? `${startYear}-${startYear + 1}` : `${startYear - 1}-${startYear}`;
 }
