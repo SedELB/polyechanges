@@ -7,7 +7,7 @@ import { upsertSource } from '../db/sources.js';
 import { readSnapshot, takeSnapshot, type RawSnapshot } from '../fetch/snapshots.js';
 import type { PoliteFetcher } from '../fetch/politeFetch.js';
 import type { HostCourseInput } from '../../shared/types.js';
-import { findCode, snapshotText } from '../provenance/snapshotText.js';
+import { findCode, lineSupportsCourse, snapshotText } from '../provenance/snapshotText.js';
 import { checkGuards, type GuardResult } from './guards.js';
 import { mergeCourses, type LocatedCourse, type SourceCourses } from './merge.js';
 import { getReader } from './readers.js';
@@ -139,10 +139,11 @@ async function coursePlacements(
     const own = [...pages.keys()].filter((i) => pages[i].url === c.sourceUrl);
     const order = [...own, ...[...pages.keys()].filter((i) => !own.includes(i))];
     let placement = unplaced(c);
-    // Position fournie par le lecteur : gardée seulement si cette ligne de cette page contient bien le code.
+    // Position fournie par le lecteur : gardée seulement si cette ligne contient bien le code ou un morceau de la description.
     const given = c.placement;
-    if (given && texts[given.pageIndex] && findCode(texts[given.pageIndex], c.code).some((h) => h.page === 1 && h.line === given.line)) {
-      result.set(c.code, { snapshotId: snapshots[given.pageIndex]?.id ?? null, locator: { page: 1, line: given.line } });
+    const givenPage = given?.page ?? 1;
+    if (given && texts[given.pageIndex] && lineSupportsCourse(texts[given.pageIndex], { page: givenPage, line: given.line }, c.code, c.description)) {
+      result.set(c.code, { snapshotId: snapshots[given.pageIndex]?.id ?? null, locator: { page: givenPage, line: given.line } });
       continue;
     }
     for (const i of order) {

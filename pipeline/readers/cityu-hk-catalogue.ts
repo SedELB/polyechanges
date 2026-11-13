@@ -1,6 +1,6 @@
 import type { HostCourseInput } from '../../shared/types.js';
 import { registerReader, type AsyncReader } from '../collect/readers.js';
-import { snapshotText } from '../provenance/snapshotText.js';
+import { positionOf, snapshotText } from '../provenance/snapshotText.js';
 
 /** Première ligne d'une fiche : « CS3103 - Operating Systems ». */
 const TITLE_LINE = /^([A-Z]{2,4}\d{4}) - (.+)$/;
@@ -15,6 +15,8 @@ export interface CatalogueSheet {
   credits: number | null;
   /** « Course Aims », lignes recollées par une espace. */
   description: string;
+  /** Page et ligne (1-based) de la première ligne des objectifs, ou null sans objectifs. */
+  descriptionAt: { page: number; line: number } | null;
 }
 
 /** Lit une fiche du catalogue de CityU (texte extrait : pages, puis lignes). Null sans ligne de titre. */
@@ -33,7 +35,8 @@ export function parseCatalogueSheet(pages: string[][]): CatalogueSheet | null {
       aims.push(line);
     }
   }
-  return { code: code!, title: title!.trim(), credits: credits !== null && credits > 0 ? credits : null, description: aims.join(' ').trim() };
+  const descriptionAt = aims.length > 0 ? positionOf(pages, start + 1) : null;
+  return { code: code!, title: title!.trim(), credits: credits !== null && credits > 0 ? credits : null, description: aims.join(' ').trim(), descriptionAt };
 }
 
 /**
@@ -43,10 +46,11 @@ export function parseCatalogueSheet(pages: string[][]): CatalogueSheet | null {
  */
 export const readCityuCatalogue: AsyncReader = async (pages) => {
   const courses: HostCourseInput[] = [];
-  for (const page of pages) {
+  for (const [pageIndex, page] of pages.entries()) {
     const sheet = parseCatalogueSheet(await snapshotText(page.body, page.contentType));
     if (!sheet) throw new Error(`Fiche du catalogue illisible : ${page.url}`);
     courses.push({
+      ...(sheet.descriptionAt && sheet.description !== '' ? { placement: { pageIndex, page: sheet.descriptionAt.page, line: sheet.descriptionAt.line } } : {}),
       code: sheet.code,
       title: sheet.title,
       description: sheet.description,

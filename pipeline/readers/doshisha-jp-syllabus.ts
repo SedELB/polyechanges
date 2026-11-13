@@ -1,6 +1,6 @@
 import type { HostCourseInput, Language } from '../../shared/types.js';
 import { registerReader, type AsyncReader } from '../collect/readers.js';
-import { snapshotText } from '../provenance/snapshotText.js';
+import { positionOf, snapshotText } from '../provenance/snapshotText.js';
 
 /** Première ligne d'une fiche : « 31691010 △Ａｄｖ… » ou « 99200024-001 ○Statistics… » (code, classe facultative). */
 const CODE_LINE = /^(\d{8})(?:-(\d{3}))?\s/;
@@ -30,6 +30,8 @@ export interface SyllabusSheet {
   credits: number | null;
   /** Résumé, puis objectifs (lignes de la fiche, en anglais). */
   description: string;
+  /** Page et ligne (1-based) de la première ligne de la description dans le texte extrait, ou null sans description. */
+  descriptionAt: { page: number; line: number } | null;
   language: Language;
 }
 
@@ -45,23 +47,29 @@ export function parseSyllabus(pages: string[][]): SyllabusSheet | null {
   const credits = Number(lines[creditsAt].match(CREDITS_LINE)![1]);
 
   const sections = new Map<string, string[]>();
+  const firstLine = new Map<string, number>();
   let current: string[] | null = null;
-  for (const line of lines.slice(creditsAt + 1)) {
+  let currentName = '';
+  for (const [offset, line] of lines.slice(creditsAt + 1).entries()) {
     const heading = line.match(HEADING);
     if (heading) {
       const name = /Course Content Summary/.test(heading[1]) ? 'summary' : /Goals,Aims/.test(heading[1]) ? 'goals' : '';
       current = name === '' || sections.has(name) ? null : (sections.set(name, []), sections.get(name)!);
+      currentName = current ? name : '';
       if (/Schedule/.test(heading[1])) break;
       continue;
     }
+    if (current && current.length === 0) firstLine.set(currentName, creditsAt + 1 + offset);
     current?.push(line);
   }
   const description = [sections.get('summary'), sections.get('goals')]
     .filter((s): s is string[] => !!s && s.length > 0)
     .map(joinLines)
     .join('\n\n');
+  const first = ['summary', 'goals'].find((n) => (sections.get(n)?.length ?? 0) > 0);
+  const descriptionAt = first === undefined ? null : positionOf(pages, firstLine.get(first)!);
   const language: Language = lines.some((l, i) => TAUGHT_IN_ENGLISH.test(`${l} ${lines[i + 1] ?? ''}`)) ? 'en' : 'unknown';
-  return { code: code!, classCode: classCode ?? null, title, credits: credits > 0 ? credits : null, description, language };
+  return { code: code!, classCode: classCode ?? null, title, credits: credits > 0 ? credits : null, description, descriptionAt, language };
 }
 
 /** Code de cours à 8 chiffres au bout de l'adresse d'une fiche : « …/31691010000.html » ou « …/99200024001.html ». */
@@ -76,7 +84,7 @@ function codeOfUrl(url: string): string | null {
  */
 export const readDoshishaSyllabi: AsyncReader = async (pages) => {
   const courses: HostCourseInput[] = [];
-  for (const page of pages) {
+  for (const [pageIndex, page] of pages.entries()) {
     const sheet = parseSyllabus(await snapshotText(page.body, page.contentType));
     if (!sheet) throw new Error(`Fiche de syllabus illisible : ${page.url}`);
     const expected = codeOfUrl(page.url);
@@ -84,6 +92,7 @@ export const readDoshishaSyllabi: AsyncReader = async (pages) => {
       throw new Error(`La fiche ${page.url} porte le code ${sheet.code}, pas ${expected}`);
     }
     courses.push({
+      ...(sheet.descriptionAt ? { placement: { pageIndex, page: sheet.descriptionAt.page, line: sheet.descriptionAt.line } } : {}),
       code: sheet.code,
       title: sheet.title,
       description: sheet.description,

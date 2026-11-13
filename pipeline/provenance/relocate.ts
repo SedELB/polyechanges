@@ -2,7 +2,7 @@ import { readFileSync, renameSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import type { Db } from '../db/open.js';
 import type { Provenance, UniversityFact } from '../../shared/types.js';
-import { findCode, snapshotText } from './snapshotText.js';
+import { findCode, lineSupportsCourse, snapshotText } from './snapshotText.js';
 import { contextProblem, findRawCopy, rawKind, verifyProvenance, type FactProblem, type MovedFact } from './verify.js';
 
 type RawUniversity = { id: string; provenance?: Partial<Record<UniversityFact, Provenance>> } & Record<string, unknown>;
@@ -99,12 +99,13 @@ export async function relocateCourses(db: Db, rawDir: string): Promise<RelocateC
 
   const hostRows = db
     .prepare(
-      `SELECT h.id, h.code, h.snapshot_id, h.source_page, h.source_line, s.source_id, s.sha256
+      `SELECT h.id, h.code, h.description, h.snapshot_id, h.source_page, h.source_line, s.source_id, s.sha256
        FROM host_courses h JOIN snapshots s ON s.id = h.snapshot_id`,
     )
     .all() as {
     id: number;
     code: string;
+    description: string;
     snapshot_id: number;
     source_page: number | null;
     source_line: number | null;
@@ -129,6 +130,10 @@ export async function relocateCourses(db: Db, rawDir: string): Promise<RelocateC
     // La ligne citée qui contient encore le code reste (le lecteur a pu citer une autre section que la première).
     let hit: { page: number; line: number } | null =
       inOwn.find((h) => h.page === r.source_page && h.line === r.source_line) ?? inOwn[0] ?? null;
+    // Une ligne qui est un morceau de la description reste aussi (le lecteur a cité la description).
+    if (r.source_page !== null && r.source_line !== null && lineSupportsCourse(own, { page: r.source_page, line: r.source_line }, r.code, r.description)) {
+      hit = { page: r.source_page, line: r.source_line };
+    }
     if (!hit) {
       // Code absent de sa copie : la copie et la ligne changent ensemble, vers une autre copie qui le contient.
       for (const other of otherCopies.all(r.source_id) as { id: number; sha256: string }[]) {

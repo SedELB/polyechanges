@@ -42,6 +42,12 @@ describe('fiches de syllabus de Doshisha', () => {
     expect(s.description).toContain('IMPORTANT! This course is conducted in English.');
   });
 
+  it('donne la position de la première ligne de la description (règle : le début du résumé, pas l en-tête)', () => {
+    expect(parseSyllabus(sheet('31691010'))!.descriptionAt).toEqual({ page: 1, line: 16 });
+    expect(parseSyllabus(sheet('99200024'))!.descriptionAt).toEqual({ page: 1, line: 15 });
+    expect(sheet('31691010')[0][15]).toMatch(/^This course provides an overview/);
+  });
+
   it('lit le numéro de classe d\'un cours du Global Education Module', () => {
     const s = parseSyllabus(sheet('99200024'))!;
     expect(s).toMatchObject({ code: '99200024', classCode: '001', credits: 2 });

@@ -82,9 +82,10 @@ export interface HostCourseInput {
   provenance?: Provenance;
   /**
    * Position choisie par le lecteur (fichiers enregistrés) : rang de la page dans celles de la source et ligne
-   * (1-based) de la rangée qui a fait retenir le cours. Le collecteur la garde si cette ligne contient le code.
+   * (1-based) de la rangée qui a fait retenir le cours. `page` : page dans la copie (1 par défaut). Le collecteur la garde si cette ligne contient le code
+   * ou est un morceau de la description.
    */
-  placement?: { pageIndex: number; line: number };
+  placement?: { pageIndex: number; line: number; page?: number };
 }
 
 export interface PolyCourse {

@@ -395,6 +395,28 @@ describe('source enregistrée d’une université d’accueil', () => {
     ]);
   });
 
+  it('une ligne fournie qui fait partie de la description est gardée même sans le code', async () => {
+    registerReader('lignes-decrites', (pages) => [
+      { ...course('D1'), description: 'Cette fiche présente le cours en détail.', sourceUrl: pages[0].url, placement: { pageIndex: 0, line: 3 } },
+      // Ligne qui n'est ni le code ni un morceau de la description : retour au code.
+      { ...course('D2'), description: 'Autre texte.', sourceUrl: pages[0].url, placement: { pageIndex: 0, line: 3 } },
+    ]);
+    const file = save('decrites.txt', 'D1 D2\ntitre\nCette fiche présente le cours\n');
+    const source = parseSourceFile({ id: 'ntu-decrites', universityId: 'ntu', kind: 'saved', urls: [listUrl()], files: [file], reader: 'lignes-decrites' });
+    const res = await collectSource(db, fetcher, source, join(tmp, 'raw'), NOW, opts());
+    expect(res.status).toBe('ok');
+    expect(db.prepare('SELECT code, source_line FROM host_courses ORDER BY code').all()).toEqual([
+      { code: 'D1', source_line: 3 },
+      { code: 'D2', source_line: 1 },
+    ]);
+    // La relocalisation garde la ligne de la description.
+    await relocateCourses(db, join(tmp, 'raw'));
+    expect(db.prepare('SELECT code, source_line FROM host_courses ORDER BY code').all()).toEqual([
+      { code: 'D1', source_line: 3 },
+      { code: 'D2', source_line: 1 },
+    ]);
+  });
+
   it('fichier absent : la collecte échoue en nommant le fichier, sans toucher aux cours existants', async () => {
     current = [course('A1'), course('A2')];
     await collectSource(db, fetcher, htmlSource(), tmp, NOW);

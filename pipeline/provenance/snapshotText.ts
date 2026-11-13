@@ -167,3 +167,28 @@ export function findCode(pages: string[][], code: string): { page: number; line:
 export function linesListing(pages: string[][]): string {
   return pages.flatMap((lines, p) => lines.map((line, l) => `p${p + 1}:l${l + 1} ${line}\n`)).join('');
 }
+
+/**
+ * Vrai si la ligne (page et ligne 1-based) peut être citée pour un cours : elle contient son code, ou elle est un
+ * morceau (au moins 8 caractères) de sa description, donc la prouve.
+ */
+export function lineSupportsCourse(
+  pages: string[][],
+  at: { page: number; line: number },
+  code: string,
+  description: string,
+): boolean {
+  if (findCode(pages, code).some((h) => h.page === at.page && h.line === at.line)) return true;
+  const line = normalizeText(pages[at.page - 1]?.[at.line - 1] ?? '');
+  return line.length >= 8 && normalizeText(description).includes(line);
+}
+
+/** Page et ligne (1-based) de la ligne d'indice `index` dans les lignes mises à plat de `pages`. */
+export function positionOf(pages: string[][], index: number): { page: number; line: number } {
+  let rest = index;
+  for (const [p, lines] of pages.entries()) {
+    if (rest < lines.length) return { page: p + 1, line: rest + 1 };
+    rest -= lines.length;
+  }
+  throw new Error(`Ligne ${index} hors du texte`);
+}

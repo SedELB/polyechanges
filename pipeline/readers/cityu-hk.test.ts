@@ -63,6 +63,12 @@ describe('fiches du catalogue de CityU', () => {
     expect(s.description).not.toContain('Continuous Assessment');
   });
 
+  it('donne la position de la première ligne des objectifs (règle : le début de Course Aims, pas le titre)', () => {
+    const pages = pagesOf('cityu-hk-catalogue-CS4286-lines.txt');
+    expect(parseCatalogueSheet(pages)!.descriptionAt).toEqual({ page: 1, line: 10 });
+    expect(pages[0][9]).toMatch(/^This course aims to provide an understanding of information security[.]/);
+  });
+
   it('lit une seconde fiche', () => {
     const s = parseCatalogueSheet(pagesOf('cityu-hk-catalogue-CS3334-lines.txt'))!;
     expect(s).toMatchObject({ code: 'CS3334', title: 'Data Structures', credits: 3 });

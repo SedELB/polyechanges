@@ -80,14 +80,14 @@
         "quote": "Application Term: 202602"
       },
       "exchangeContact": {
-        "url": "https://www.cs.cityu.edu.hk/en/academic-programmes/student-exchange/exchange-course-list",
+        "url": "https://www.cityu.edu.hk/admo/admissions/exchange-students",
         "retrievedAt": "2026-11-12T02:26:34.000Z",
-        "sha256": "e0a29cb67b44f27193e7e454b3e956ee89c7424baddc18ed4967872cd0c9bdc5",
+        "sha256": "08ac6b16651845cd43c47b9fb3339399e0bbc3daea3a9e71641e7420fa1e918d",
         "locator": {
-          "page": 1,
-          "line": 2
+          "page": 5,
+          "line": 8
         },
-        "quote": "Please refer to Admissions Office website for more information"
+        "quote": "please write to the Admissions Office"
       },
       "creditSystem": {
         "url": "https://www.cityu.edu.hk/catalogue/ug/current/course/cs3103.htm",
