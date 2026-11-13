@@ -6,7 +6,7 @@ import { readSnapshot, takeSnapshot } from '../fetch/snapshots.js';
 import { loadUniversities, syncUniversities } from '../partners/registry.js';
 import type { Provenance, UniversityFact } from '../../shared/types.js';
 import { snapshotText } from './snapshotText.js';
-import { contextProblem, locateInPages, rawKind, type FactStatus } from './verify.js';
+import { contextProblem, findRawCopy, locateInPages, rawKind, type FactStatus } from './verify.js';
 
 export const factsSourceId = (universityId: string): string => `facts-${universityId}`;
 
@@ -30,11 +30,30 @@ export interface MissingFact {
   error?: string;
 }
 
+/** Fait dont la source est une page enregistrée à la main : jamais retéléchargé, vérifié hors ligne contre sa copie. */
+export interface SavedFact {
+  universityId: string;
+  fact: UniversityFact;
+  url: string;
+  /** `à réenregistrer` : copie brute absente (clone neuf), le fait reste tel quel et ne bloque rien. */
+  status: 'vérifiée hors ligne' | 'à réenregistrer' | 'introuvable';
+}
+
 export interface RefreshResult {
   counts: Record<FactStatus, number>;
   missing: MissingFact[];
   /** Adresses qui n'ont pas pu être téléchargées (leurs faits sont comptés `copie_absente`). */
   errors: string[];
+  /** Faits sourcés par une page enregistrée à la main, dans l'ordre du fichier. */
+  saved: SavedFact[];
+}
+
+export interface RefreshOptions {
+  /**
+   * Adresses des sources `saved` (pages enregistrées depuis un navigateur, hôtes qui bloquent les robots) : un fait
+   * qui cite l'une d'elles n'est jamais retéléchargé.
+   */
+  savedUrls?: ReadonlySet<string>;
 }
 
 const words = (s: string): Set<string> => new Set(s.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? []);
@@ -68,6 +87,8 @@ const ordered = (p: Provenance, stale: boolean): Provenance => ({
  * En ligne : retélécharge chaque adresse distincte une seule fois et relit l'extrait de chaque fait.
  * `inchangé` / `déplacé` : empreinte, date et position sont mises à jour (la marque `stale` est levée).
  * `introuvable` : le fait garde sa valeur et sa copie, et reçoit `stale: true`. Réécrit le fichier des universités.
+ * Un fait d'une page enregistrée à la main (`savedUrls`) n'est jamais retéléchargé : il est relu hors ligne dans sa
+ * propre copie brute (seule la position peut changer) ; sans copie, il est listé « à réenregistrer » et ne bloque rien.
  */
 export async function refreshFactSources(
   db: Db,
@@ -76,7 +97,9 @@ export async function refreshFactSources(
   rawDir: string,
   now: string,
   only?: string,
+  opts: RefreshOptions = {},
 ): Promise<RefreshResult> {
+  const savedUrls = opts.savedUrls ?? new Set<string>();
   const registry = loadUniversities(universitiesPath);
   if (only !== undefined && !registry.some((u) => u.id === only)) throw new Error(`Université introuvable : ${only}`);
   syncUniversities(db, universitiesPath);
@@ -86,14 +109,64 @@ export async function refreshFactSources(
     counts: { inchangé: 0, déplacé: 0, introuvable: 0, copie_absente: 0 },
     missing: [],
     errors: [],
+    saved: [],
   };
-  const pagesByUrl = new Map<string, { sha256: string; pages: string[][]; contentType: string } | { error: string }>();
+  type Pages = { sha256: string; pages: string[][]; contentType: string };
+  const pagesByUrl = new Map<string, Pages | { error: string }>();
+  // Copies brutes des pages enregistrées, par empreinte : lues sur le disque, jamais téléchargées.
+  const savedBySha = new Map<string, Pages | null>();
   let changed = false;
 
   for (const u of raw) {
     if ((only !== undefined && u.id !== only) || !u.provenance) continue;
     const next: Partial<Record<UniversityFact, Provenance>> = {};
+    /** Classe l'extrait dans la copie donnée et range le fait dans `next` ; vrai si l'extrait est retrouvé. */
+    const classify = (universityId: string, fact: UniversityFact, p: Provenance, page: Pages, retrievedAt: string): boolean => {
+      const { status, found, contextFound } = locateInPages(page.pages, p, rawKind(page.contentType));
+      result.counts[status]++;
+      const context = p.context?.map((c, i) => {
+        const hit = contextFound?.[i];
+        return hit ? { ...c, locator: hit } : c;
+      });
+      const updated: Provenance | null =
+        status !== 'introuvable' && found ? { ...p, sha256: page.sha256, retrievedAt, locator: found, context } : null;
+      // L'ordre est revérifié sur les positions recalées avant d'écrire quoi que ce soit.
+      if (updated && contextProblem(fact, updated, rawKind(page.contentType)) === null) {
+        next[fact] = ordered(updated, false);
+        return true;
+      }
+      next[fact] = ordered(p, true);
+      // Chaque extrait perdu est nommé : l'extrait principal, le contexte, ou les deux.
+      const lost = [
+        ...(found ? [] : [p.quote]),
+        ...(p.context ?? []).filter((_, i) => !contextFound?.[i]).map((c) => c.quote),
+      ];
+      if (lost.length === 0) lost.push(p.quote);
+      for (const quote of lost) {
+        result.missing.push({ universityId, fact, url: p.url, quote, nearest: nearestLines(page.pages, quote) });
+      }
+      return false;
+    };
     for (const [fact, p] of Object.entries(u.provenance) as [UniversityFact, Provenance][]) {
+      if (savedUrls.has(p.url)) {
+        if (!savedBySha.has(p.sha256)) {
+          const copy = findRawCopy(p.sha256, rawDir);
+          savedBySha.set(
+            p.sha256,
+            copy ? { sha256: p.sha256, pages: await snapshotText(readFileSync(copy.path), copy.contentType), contentType: copy.contentType } : null,
+          );
+        }
+        const copy = savedBySha.get(p.sha256);
+        if (!copy) {
+          next[fact] = ordered(p, p.stale === true);
+          result.saved.push({ universityId: u.id, fact, url: p.url, status: 'à réenregistrer' });
+          continue;
+        }
+        // Même copie, aucune nouvelle consultation : la date de consultation reste celle de l'enregistrement.
+        const ok = classify(u.id, fact, p, copy, p.retrievedAt);
+        result.saved.push({ universityId: u.id, fact, url: p.url, status: ok ? 'vérifiée hors ligne' : 'introuvable' });
+        continue;
+      }
       if (!pagesByUrl.has(p.url)) {
         try {
           const snap = await takeSnapshot(db, fetcher, ensureFactsSource(db, u.id, p.url), p.url, rawDir);
@@ -113,29 +186,7 @@ export async function refreshFactSources(
         result.missing.push({ universityId: u.id, fact, url: p.url, quote: p.quote, nearest: [], error: page?.error });
         continue;
       }
-      const { status, found, contextFound } = locateInPages(page.pages, p, rawKind(page.contentType));
-      result.counts[status]++;
-      const context = p.context?.map((c, i) => {
-        const hit = contextFound?.[i];
-        return hit ? { ...c, locator: hit } : c;
-      });
-      const updated: Provenance | null =
-        status !== 'introuvable' && found ? { ...p, sha256: page.sha256, retrievedAt: now, locator: found, context } : null;
-      // L'ordre est revérifié sur les positions recalées avant d'écrire quoi que ce soit.
-      if (updated && contextProblem(fact, updated, rawKind(page.contentType)) === null) {
-        next[fact] = ordered(updated, false);
-      } else {
-        next[fact] = ordered(p, true);
-        // Chaque extrait perdu est nommé : l'extrait principal, le contexte, ou les deux.
-        const lost = [
-          ...(found ? [] : [p.quote]),
-          ...(p.context ?? []).filter((_, i) => !contextFound?.[i]).map((c) => c.quote),
-        ];
-        if (lost.length === 0) lost.push(p.quote);
-        for (const quote of lost) {
-          result.missing.push({ universityId: u.id, fact, url: p.url, quote, nearest: nearestLines(page.pages, quote) });
-        }
-      }
+      classify(u.id, fact, p, page, now);
     }
     if (JSON.stringify(next) !== JSON.stringify(u.provenance)) {
       u.provenance = next;
@@ -152,6 +203,12 @@ export async function refreshFactSources(
   return result;
 }
 
+const SAVED_LABEL: Record<SavedFact['status'], string> = {
+  'vérifiée hors ligne': 'vérifiée hors ligne',
+  'à réenregistrer': 'à réenregistrer (copie brute absente)',
+  introuvable: 'extrait introuvable dans sa copie',
+};
+
 /** Texte du rapport : les comptes, puis chaque fait introuvable avec son ancien extrait et les lignes proches. */
 export function formatSourcesReport(date: string, r: RefreshResult): string {
   const out = [
@@ -162,6 +219,8 @@ export function formatSourcesReport(date: string, r: RefreshResult): string {
     `Copies absentes : ${r.counts.copie_absente}`,
   ];
   for (const e of r.errors) out.push(`Échec de téléchargement : ${e}`);
+  if (r.saved.length > 0) out.push('', 'Pages enregistrées à la main (jamais retéléchargées) :');
+  for (const f of r.saved) out.push(`Source enregistrée à la main, ${SAVED_LABEL[f.status]} : ${f.universityId}, ${f.fact} (${f.url})`);
   for (const m of r.missing) {
     out.push('', `${m.error === undefined ? 'Introuvable' : 'Non confirmé'} : ${m.universityId}, ${m.fact}`, `Adresse : ${m.url}`, `Ancien extrait : ${m.quote}`);
     if (m.error !== undefined) {

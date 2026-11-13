@@ -52,3 +52,8 @@ export function staleSavedWarning(sourceId: string, snapshots: RawSnapshot[], no
   if (Date.parse(now) - Date.parse(oldest) <= SAVED_MAX_AGE_DAYS * 24 * 60 * 60 * 1000) return null;
   return `Pages enregistrées le ${oldest.slice(0, 10)} : à réenregistrer depuis un navigateur (source ${sourceId})`;
 }
+
+/** Adresses des sources enregistrées à la main : les faits qui les citent ne sont jamais retéléchargés. */
+export function savedSourceUrls(sources: SourceFile[]): Set<string> {
+  return new Set(sources.filter((s) => s.kind === 'saved').flatMap((s) => s.urls));
+}

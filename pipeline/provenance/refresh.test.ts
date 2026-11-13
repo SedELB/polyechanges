@@ -171,3 +171,73 @@ describe('refreshFactSources', () => {
     await expect(refreshFactSources(db, fetcher, path, rawDir, '2026-11-12T10:00:00.000Z', 'zzz')).rejects.toThrow(/zzz/);
   });
 });
+
+describe('refreshFactSources, sources enregistrées à la main', () => {
+  const CHALLENGE = '<html><body><p>Request unsuccessful. Incapsula incident ID: 1234</p></body></html>';
+  const NOW = '2026-11-12T10:00:00.000Z';
+
+  it('ne retélécharge jamais un fait d’une page enregistrée : vérifié hors ligne, position recalée', async () => {
+    server.pages.set('/saved', page([START, EXAMS]));
+    const saved = await seed('u1', '/saved', { 'terms.fall.start': [START, 2], 'terms.fall.examsEnd': [EXAMS, 9] });
+    writeFileSync(path, JSON.stringify([university('u1', saved)], null, 2) + '\n');
+    // L'hôte bloque désormais les robots : un téléchargement rendrait le fait introuvable.
+    server.pages.set('/saved', CHALLENGE);
+    const hitsBefore = server.hits.filter((h) => h === '/saved').length;
+
+    const res = await refreshFactSources(db, fetcher, path, rawDir, NOW, undefined, { savedUrls: new Set([`${server.base}/saved`]) });
+
+    expect(server.hits.filter((h) => h === '/saved').length).toBe(hitsBefore);
+    expect(res.counts).toEqual({ inchangé: 1, déplacé: 1, introuvable: 0, copie_absente: 0 });
+    expect(res.saved.map((s) => [s.fact, s.status])).toEqual([
+      ['terms.fall.start', 'vérifiée hors ligne'],
+      ['terms.fall.examsEnd', 'vérifiée hors ligne'],
+    ]);
+    const file = JSON.parse(readFileSync(path, 'utf8'));
+    const exams = file[0].provenance['terms.fall.examsEnd'];
+    // Même copie, aucune nouvelle consultation : seule la position change.
+    expect(exams).toEqual({ ...saved['terms.fall.examsEnd'], locator: { page: 1, line: 3 } });
+    expect(file[0].provenance['terms.fall.start']).toEqual(saved['terms.fall.start']);
+    const report = formatSourcesReport('2026-11-12', res);
+    expect(report).toContain('Source enregistrée à la main, vérifiée hors ligne : u1, terms.fall.start');
+  });
+
+  it('copie brute absente : listé « à réenregistrer », sans marque périmée ni blocage', async () => {
+    const url = `${server.base}/saved-absent`;
+    server.pages.set('/saved-absent', CHALLENGE);
+    db.prepare("INSERT OR IGNORE INTO universities (id, name, move_on_name, country_code, city, lat, lng, website, credit_system, terms_json, catalog_public) VALUES ('u1', 'U', 'U', 'TW', '', 0, 0, '', 'local', '{}', 1)").run();
+    const p: Provenance = { url, retrievedAt: '2026-11-01T00:00:00.000Z', sha256: 'f'.repeat(64), locator: { page: 1, line: 4 }, quote: 'Course catalog behind a captcha' };
+    writeFileSync(path, JSON.stringify([university('u1', { catalogPublic: p })], null, 2) + '\n');
+    const before = readFileSync(path, 'utf8');
+
+    const res = await refreshFactSources(db, fetcher, path, rawDir, NOW, undefined, { savedUrls: new Set([url]) });
+
+    expect(server.hits).not.toContain('/saved-absent');
+    expect(res.counts).toEqual({ inchangé: 0, déplacé: 0, introuvable: 0, copie_absente: 0 });
+    expect(res.missing).toEqual([]);
+    expect(res.saved).toEqual([{ universityId: 'u1', fact: 'catalogPublic', url, status: 'à réenregistrer' }]);
+    expect(readFileSync(path, 'utf8')).toBe(before);
+    expect(formatSourcesReport('2026-11-12', res)).toContain(
+      'Source enregistrée à la main, à réenregistrer (copie brute absente) : u1, catalogPublic',
+    );
+  });
+
+  it('les autres faits gardent le comportement en ligne', async () => {
+    server.pages.set('/saved', page([START]));
+    server.pages.set('/cal', page([EXAMS]));
+    const saved = await seed('u1', '/saved', { 'terms.fall.start': [START, 2] });
+    const online = await seed('u1', '/cal', { 'terms.fall.examsEnd': [EXAMS, 2] });
+    writeFileSync(path, JSON.stringify([university('u1', { ...saved, ...online })], null, 2) + '\n');
+    server.pages.set('/cal', page(['Exams moved', EXAMS]));
+    const calBefore = server.hits.filter((h) => h === '/cal').length;
+    const savedBefore = server.hits.filter((h) => h === '/saved').length;
+
+    const res = await refreshFactSources(db, fetcher, path, rawDir, NOW, undefined, { savedUrls: new Set([`${server.base}/saved`]) });
+
+    expect(server.hits.filter((h) => h === '/cal').length - calBefore).toBe(1);
+    expect(server.hits.filter((h) => h === '/saved').length).toBe(savedBefore);
+    const exams = JSON.parse(readFileSync(path, 'utf8'))[0].provenance['terms.fall.examsEnd'];
+    expect(exams.retrievedAt).toBe(NOW);
+    expect(exams.locator).toEqual({ page: 1, line: 3 });
+    expect(res.saved.map((s) => s.fact)).toEqual(['terms.fall.start']);
+  });
+});

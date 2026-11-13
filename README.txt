@@ -55,6 +55,7 @@ PROCÉDURE ANNUELLE
   1. Réenregistrer les pages à la main (section suivante). Les rapports avertissent quand elles ont plus de 300 jours.
   2. npm run refresh
      Elle enchaîne : partners:check (liste des partenaires sur MoveOn), collect -- all (toutes les universités et Poly), refresh-sources (sources des faits : dates, adresses), compare (version gelée la plus récente du dépôt, celle qui a un FROZEN.json), export (fichiers du site). Elle s'arrête à la première étape en échec.
+     Les faits d'université tirés d'une page enregistrée à la main (CityU, SNU, NCKU : hôtes qui bloquent les robots) ne sont jamais retéléchargés par refresh-sources : ils sont vérifiés hors ligne dans leur copie brute (« source enregistrée à la main : vérifiée hors ligne » dans data/reports/AAAA-MM-JJ-sources.txt). Sans copie brute (clone neuf), ils sont listés « à réenregistrer » sans bloquer. Pour qu'un de ces faits suive une page réenregistrée : npm run source:find -- <sha256 de la nouvelle copie> "<extrait>", puis mettre à jour sa source dans data/universities.json.
   3. Lire les rapports dans data/reports/ (un fichier AAAA-MM-JJ-<université>.txt par collecte) : statut, cours ajoutés, retirés, modifiés, avertissements en tête de fichier.
   4. npm run verify-sources  (hors ligne : chaque fait cité est-il toujours retrouvé dans sa copie brute ?)
      Si une position est inexacte : npm run verify-sources -- --fix

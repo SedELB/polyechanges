@@ -1,5 +1,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
+import { savedSourceUrls } from '../collect/saved.js';
+import { loadSourceFiles } from '../collect/sourceFile.js';
 import { openDb } from '../db/open.js';
 import { createPoliteFetcher } from '../fetch/politeFetch.js';
 import { readSnapshot, takeSnapshot } from '../fetch/snapshots.js';
@@ -111,10 +113,16 @@ async function refresh(only?: string): Promise<number> {
   const db = openDb(DB_PATH);
   try {
     const now = new Date().toISOString();
-    const result = await refreshFactSources(db, createPoliteFetcher(), UNIVERSITIES_PATH, RAW_DIR, now, only);
+    // Les hôtes des pages enregistrées à la main bloquent les robots : leurs faits sont vérifiés hors ligne seulement.
+    const savedUrls = savedSourceUrls(loadSourceFiles(join(DATA_DIR, 'sources')));
+    const result = await refreshFactSources(db, createPoliteFetcher(), UNIVERSITIES_PATH, RAW_DIR, now, only, { savedUrls });
     const report = writeSourcesReport(join(DATA_DIR, 'reports'), now.slice(0, 10), result);
     const c = result.counts;
     console.log(`inchangés ${c.inchangé}, déplacés ${c.déplacé}, introuvables ${c.introuvable}, copies absentes ${c.copie_absente} -> ${report}`);
+    const offline = result.saved.filter((s) => s.status === 'vérifiée hors ligne').length;
+    const toSave = result.saved.filter((s) => s.status === 'à réenregistrer');
+    console.log(`pages enregistrées à la main (jamais retéléchargées) : ${offline} fait(s) vérifié(s) hors ligne, ${toSave.length} à réenregistrer`);
+    for (const s of toSave) console.warn(`à réenregistrer (copie brute absente, ne bloque pas) : ${s.universityId}, ${s.fact} (${s.url})`);
     for (const e of result.errors) console.error(`échec : ${e}`);
     return c.introuvable > 0 || c.copie_absente > 0 ? 1 : 0;
   } finally {
