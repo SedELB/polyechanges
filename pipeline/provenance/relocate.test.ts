@@ -113,6 +113,14 @@ describe('relocateCourses, copies de même adresse', () => {
   });
   afterEach(() => db.close());
 
+  it('garde la ligne citée quand elle contient encore le code, même si ce n’est pas sa première apparition', async () => {
+    const one = copy('A1 coréen\nA1 anglais\nA2 Beta\n');
+    course('A1', one.id, 2);
+    const r = await relocateCourses(db, rawDir);
+    expect(r.host).toEqual({ changed: 0, total: 1 });
+    expect(rows()).toEqual([{ code: 'A1', snap: one.id, line: 2 }]);
+  });
+
   it('cherche le code dans la copie du cours, pas dans la dernière copie de son adresse', async () => {
     const one = copy('A1 Alpha\nA2 Beta\n');
     const two = copy('B0 Gamma\nB1 Delta\n');

@@ -25,7 +25,7 @@ export interface MergeResult {
 
 const filled = (s: string | null): s is string => s !== null && s.trim() !== '';
 /** Un titre écrit en coréen : il cède la place à un titre sans hangul d'une autre source. */
-const HANGUL = /[㄰-㆏가-힯]/;
+export const HANGUL = /[㄰-㆏가-힯]/;
 const latin = (s: string | null): s is string => filled(s) && !HANGUL.test(s);
 
 /** Le candidat au texte non vide le plus long ; à longueur égale, le premier (priorité la plus haute). */
@@ -75,7 +75,7 @@ function mergeOne(candidates: LocatedCourse[]): LocatedCourse {
  * titre (le premier sans hangul, à défaut le premier non vide), crédits, heures de contact et niveau de la source de plus haute priorité qui en a un (non vide) ; langue :
  * la première différente de `unknown` par priorité décroissante ; trimestres : l'union ; description et plan : le plus
  * long non vide, et la description apporte son adresse, sa copie brute et sa position. À priorité égale, la fiche
- * la plus tôt dans l'ordre l'emporte. Les codes suivent leur première apparition dans les sources non `enrich`.
+ * la plus tôt dans l'ordre l'emporte. Le choix d'un titre sans hangul vaut pour toutes les universités. Les codes suivent leur première apparition dans les sources non `enrich`.
  */
 export function mergeCourses(sources: SourceCourses[]): MergeResult {
   const codes: string[] = [];

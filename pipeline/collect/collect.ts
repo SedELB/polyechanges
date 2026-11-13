@@ -110,7 +110,8 @@ export function descriptionsNoteOf(sources: SourceFile[]): string | undefined {
 type Placement = { snapshotId: number | null; locator: { page: number; line: number } | null };
 
 /**
- * Copie brute et position (1-based) de chaque cours, prises dans le même fichier : la première copie où son code
+ * Copie brute et position (1-based) de chaque cours, prises dans le même fichier : celles que le lecteur donne
+ * (`placement`) quand la ligne contient le code, sinon la première copie où son code
  * apparaît, les pages de son adresse d'abord (plusieurs fichiers enregistrés peuvent partager une adresse), puis
  * les autres. Code introuvable : la première copie de son adresse, sans position. Une saisie manuelle donne sa
  * position elle-même. `snapshots[i]` est la copie de `pages[i]`.
@@ -138,6 +139,12 @@ async function coursePlacements(
     const own = [...pages.keys()].filter((i) => pages[i].url === c.sourceUrl);
     const order = [...own, ...[...pages.keys()].filter((i) => !own.includes(i))];
     let placement = unplaced(c);
+    // Position fournie par le lecteur : gardée seulement si cette ligne de cette page contient bien le code.
+    const given = c.placement;
+    if (given && texts[given.pageIndex] && findCode(texts[given.pageIndex], c.code).some((h) => h.page === 1 && h.line === given.line)) {
+      result.set(c.code, { snapshotId: snapshots[given.pageIndex]?.id ?? null, locator: { page: 1, line: given.line } });
+      continue;
+    }
     for (const i of order) {
       const hit = findCode(texts[i], c.code)[0];
       if (hit) {

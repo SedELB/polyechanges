@@ -125,7 +125,10 @@ export async function relocateCourses(db: Db, rawDir: string): Promise<RelocateC
     // Copie du cours absente du magasin : rien ne change.
     if (!own) continue;
     let snapshotId = r.snapshot_id;
-    let hit: { page: number; line: number } | null = findCode(own, r.code)[0] ?? null;
+    const inOwn = findCode(own, r.code);
+    // La ligne citée qui contient encore le code reste (le lecteur a pu citer une autre section que la première).
+    let hit: { page: number; line: number } | null =
+      inOwn.find((h) => h.page === r.source_page && h.line === r.source_line) ?? inOwn[0] ?? null;
     if (!hit) {
       // Code absent de sa copie : la copie et la ligne changent ensemble, vers une autre copie qui le contient.
       for (const other of otherCopies.all(r.source_id) as { id: number; sha256: string }[]) {

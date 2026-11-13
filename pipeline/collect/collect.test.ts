@@ -370,6 +370,31 @@ describe('source enregistrée d’une université d’accueil', () => {
     expect(placed()).toEqual(expected);
   });
 
+  it('un lecteur peut citer la rangée retenue : la ligne et la copie fournies l’emportent sur la première apparition du code', async () => {
+    registerReader('lignes-placees', (pages) => [
+      // A1 apparaît d'abord ligne 1 du premier fichier (section écartée), la section retenue est ligne 2 du second.
+      { ...course('A1'), sourceUrl: pages[0].url, placement: { pageIndex: 1, line: 2 } },
+      // Ligne fournie qui ne contient pas le code : retour à la première apparition.
+      { ...course('A2'), sourceUrl: pages[0].url, placement: { pageIndex: 0, line: 3 } },
+      // Fichier fourni hors des pages : retour à la première apparition.
+      { ...course('A3'), sourceUrl: pages[0].url, placement: { pageIndex: 9, line: 1 } },
+    ]);
+    const one = save('placee-1.txt', 'A1\tAlpha\tcoréen\nA2\tBeta\nA3\tGamma\nA3 bis\n');
+    const two = save('placee-2.txt', 'B0\tAutre\nA1\tAlpha\tanglais\n');
+    const sha = (f: string) => createHash('sha256').update(readFileSync(join(tmp, f))).digest('hex');
+    const source = parseSourceFile({ id: 'ntu-placee', universityId: 'ntu', kind: 'saved', urls: [listUrl(), listUrl()], files: [one, two], reader: 'lignes-placees' });
+    const res = await collectSource(db, fetcher, source, join(tmp, 'raw'), NOW, opts());
+    expect(res.status).toBe('ok');
+    const placed = db
+      .prepare('SELECT h.code, s.sha256, h.source_line FROM host_courses h JOIN snapshots s ON s.id = h.snapshot_id ORDER BY h.code')
+      .all();
+    expect(placed).toEqual([
+      { code: 'A1', sha256: sha(two), source_line: 2 },
+      { code: 'A2', sha256: sha(one), source_line: 2 },
+      { code: 'A3', sha256: sha(one), source_line: 3 },
+    ]);
+  });
+
   it('fichier absent : la collecte échoue en nommant le fichier, sans toucher aux cours existants', async () => {
     current = [course('A1'), course('A2')];
     await collectSource(db, fetcher, htmlSource(), tmp, NOW);

@@ -15,6 +15,7 @@ try {
   $excel.DisplayAlerts = $false
   $excel.AutomationSecurity = 3   # msoAutomationSecurityForceDisable : aucune macro
   $book = $excel.Workbooks.Open($source, 0, $true)   # sans mise à jour des liens, lecture seule
+  # Seule la première feuille est convertie (un export de la recherche de cours n'en a qu'une).
   $sheet = $book.Worksheets.Item(1)
   # Un saut de ligne dans une cellule casserait « une rangée par ligne » : remplacé par une espace, en mémoire seulement.
   $null = $sheet.UsedRange.Replace([string][char]10, ' ', 2)

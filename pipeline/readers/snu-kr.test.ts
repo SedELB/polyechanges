@@ -41,6 +41,7 @@ describe('lecteur snu-kr, export Excel', () => {
       credits: 3,
       language: 'English',
       status: 'Open Lecture',
+      line: 6,
     });
     const ko = parseExport(sciFall.body).rows;
     expect(ko).toHaveLength(4);
@@ -84,9 +85,29 @@ describe('lecteur snu-kr, export Excel', () => {
       terms: ['fall'],
       level: 'undergrad',
       sourceUrl: URL_SEARCH,
+      placement: { pageIndex: 0, line: 4 },
     });
     // Automne (interface anglaise) et printemps (interface coréenne) : trimestres réunis, titre sans hangul.
     expect(byCode.get('4190.428')).toMatchObject({ title: 'Introduction to Machine Learning', terms: ['fall', 'spring'], level: 'undergrad' });
+  });
+
+  it('position : la première section retenue, dans le fichier du trimestre où le cours est donné', () => {
+    const courses = readSnuExports([engFall, sciFall, engSpring, sciSpring]);
+    const at = (code: string) => courses.find((c) => c.code === code)?.placement;
+    expect(at('4190.428')).toEqual({ pageIndex: 0, line: 6 }); // automne d'abord
+    expect(at('430.301C')).toEqual({ pageIndex: 0, line: 4 }); // première des deux sections
+    expect(at('M1522.007400')).toEqual({ pageIndex: 2, line: 5 }); // donné au printemps seulement
+    expect(at('3341.454')).toEqual({ pageIndex: 3, line: 5 });
+  });
+
+  it('position : une section coréenne ou fermée qui précède la section anglaise ouverte n’est pas citée', () => {
+    const header = ['Course Classification', 'College', 'Department', 'Degree Program', 'Academic Year', 'Course Number', 'Lecture Number', 'Course Title', 'Course Subtitle', 'Credits', 'Language for the lecture', 'Status'];
+    const row = (lecture: string, language: string, status: string) =>
+      ['x', 'y', 'Department of Statistics', 'Bachelor', '1', 'S1.001', lecture, 'Probability', '', '3', language, status].join('	');
+    const text = ['Course Search', '"Year : 2026, Semester : 2nd Semester"', header.join('	'), row('001', 'Korean', 'Open Lecture'), row('002', 'English', 'Course Canceled Subject'), row('003', 'English', 'Open Lecture')].join('\r\n') + '\r\n';
+    const body = Buffer.concat([Buffer.from([0xff, 0xfe]), Buffer.from(text, 'utf16le')]);
+    const [course] = readSnuExports([{ url: URL_SEARCH, body, contentType: 'text/plain' }]);
+    expect(course.placement).toEqual({ pageIndex: 0, line: 6 });
   });
 
   it('niveau : Bachelor donne undergrad, tout le reste grad (en anglais ou en coréen)', () => {

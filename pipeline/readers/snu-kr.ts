@@ -1,5 +1,6 @@
 import type { HostCourseInput, HostTerm } from '../../shared/types.js';
 import { registerReader, type Reader } from '../collect/readers.js';
+import { HANGUL } from '../collect/merge.js';
 import { decodeText } from '../provenance/snapshotText.js';
 
 /** Départements retenus : informatique, génie électrique et informatique, mathématiques, statistique. */
@@ -45,11 +46,16 @@ export interface SnuRow {
   credits: number | null;
   language: string;
   status: string;
+  /** Ligne (1-based) de la rangée dans le fichier texte. */
+  line: number;
 }
 
 /** Texte tabulé (« Texte Unicode » d'Excel) : cellules séparées par une tabulation, entre guillemets quand elles en ont besoin. */
-export function parseTabular(text: string): string[][] {
+/** `lines`, si donné, reçoit la ligne du fichier (1-based) où commence chaque rangée. */
+export function parseTabular(text: string, lines: number[] = []): string[][] {
   const rows: string[][] = [];
+  let line = 1;
+  let start = 1;
   let row: string[] = [];
   let cell = '';
   let quoted = false;
@@ -61,7 +67,10 @@ export function parseTabular(text: string): string[][] {
           cell += '"';
           i++;
         } else quoted = false;
-      } else cell += c;
+      } else {
+        if (c === '\n') line++;
+        cell += c;
+      }
     } else if (c === '"' && cell === '') quoted = true;
     else if (c === '\t') {
       row.push(cell);
@@ -69,13 +78,17 @@ export function parseTabular(text: string): string[][] {
     } else if (c === '\n') {
       row.push(cell.replace(/\r$/, ''));
       rows.push(row);
+      lines.push(start);
       row = [];
       cell = '';
+      line++;
+      start = line;
     } else cell += c;
   }
   if (cell !== '' || row.length > 0) {
     row.push(cell.replace(/\r$/, ''));
     rows.push(row);
+    lines.push(start);
   }
   return rows;
 }
@@ -93,7 +106,8 @@ export function termOfExport(rows: string[][]): HostTerm {
 
 /** Rangées de l'export (les trois premières lignes sont le titre, les filtres et les en-têtes). */
 export function parseExport(body: Buffer): { term: HostTerm; rows: SnuRow[] } {
-  const table = parseTabular(decodeText(body));
+  const lineOf: number[] = [];
+  const table = parseTabular(decodeText(body), lineOf);
   const isHeader = (r: string[]) => r.some((c) => (COLUMNS.courseNumber as readonly string[]).includes(clean(c)));
   const headerAt = table.findIndex(isHeader);
   if (headerAt < 0) throw new Error('En-têtes introuvables dans l’export (« Course Number » ou « 교과목번호 » attendu)');
@@ -105,7 +119,8 @@ export function parseExport(body: Buffer): { term: HostTerm; rows: SnuRow[] } {
     index[key] = at;
   }
   const rows: SnuRow[] = [];
-  for (const cells of table.slice(headerAt + 1)) {
+  for (const [at, cells] of table.entries()) {
+    if (at <= headerAt) continue;
     if (cells.every((c) => clean(c) === '')) continue;
     const get = (key: keyof typeof COLUMNS) => clean(cells[index[key]]);
     const credits = Number(get('credits'));
@@ -120,6 +135,7 @@ export function parseExport(body: Buffer): { term: HostTerm; rows: SnuRow[] } {
       credits: get('credits') !== '' && Number.isFinite(credits) && credits > 0 ? credits : null,
       language: get('language'),
       status: get('status'),
+      line: lineOf[at],
     });
   }
   return { term: termOfExport(table), rows };
@@ -152,10 +168,9 @@ export function exclusionOf(row: SnuRow): Exclusion | null {
   return null;
 }
 
-const HANGUL = /[㄰-㆏가-힯]/;
 
-/** Un cours (numéro de cours) formé de ses sections retenues. */
-function courseOf(rows: SnuRow[], terms: HostTerm[], sourceUrl: string): HostCourseInput {
+/** Un cours (numéro de cours) formé de ses sections retenues ; `placement` : la première, dans l'ordre des fichiers. */
+function courseOf(rows: SnuRow[], terms: HostTerm[], sourceUrl: string, placement: { pageIndex: number; line: number }): HostCourseInput {
   const first = rows[0];
   // Le titre sans hangul d'abord (l'export anglais d'un trimestre peut compléter l'export coréen d'un autre).
   const base = rows.map((r) => r.title).find((t) => t !== '' && !HANGUL.test(t)) ?? first.title;
@@ -173,6 +188,7 @@ function courseOf(rows: SnuRow[], terms: HostTerm[], sourceUrl: string): HostCou
     terms,
     level: rows.some(isBachelor) ? 'undergrad' : 'grad',
     sourceUrl,
+    placement,
   };
 }
 
@@ -183,19 +199,19 @@ function courseOf(rows: SnuRow[], terms: HostTerm[], sourceUrl: string): HostCou
  * numéro de cours (tous fichiers confondus) forment un cours ; ses trimestres sont ceux de ses sections retenues.
  */
 export const readSnuExports: Reader = (pages) => {
-  const byCode = new Map<string, { rows: SnuRow[]; terms: HostTerm[]; url: string }>();
-  for (const page of pages) {
+  const byCode = new Map<string, { rows: SnuRow[]; terms: HostTerm[]; url: string; placement: { pageIndex: number; line: number } }>();
+  for (const [pageIndex, page] of pages.entries()) {
     const { term, rows } = parseExport(page.body);
     for (const row of rows) {
       if (exclusionOf(row) !== null) continue;
       if (row.courseNumber === '') throw new Error(`Rangée sans numéro de cours : ${row.title} (${page.url})`);
-      const entry = byCode.get(row.courseNumber) ?? { rows: [], terms: [], url: page.url };
+      const entry = byCode.get(row.courseNumber) ?? { rows: [], terms: [], url: page.url, placement: { pageIndex, line: row.line } };
       entry.rows.push(row);
       if (!entry.terms.includes(term)) entry.terms.push(term);
       byCode.set(row.courseNumber, entry);
     }
   }
-  return [...byCode.values()].map((e) => courseOf(e.rows, e.terms, e.url));
+  return [...byCode.values()].map((e) => courseOf(e.rows, e.terms, e.url, e.placement));
 };
 
 registerReader('snu-kr', readSnuExports);

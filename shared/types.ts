@@ -80,6 +80,11 @@ export interface HostCourseInput {
   sourceUrl: string;
   /** Saisie manuelle seulement : d'où vient la position du cours. */
   provenance?: Provenance;
+  /**
+   * Position choisie par le lecteur (fichiers enregistrés) : rang de la page dans celles de la source et ligne
+   * (1-based) de la rangée qui a fait retenir le cours. Le collecteur la garde si cette ligne contient le code.
+   */
+  placement?: { pageIndex: number; line: number };
 }
 
 export interface PolyCourse {

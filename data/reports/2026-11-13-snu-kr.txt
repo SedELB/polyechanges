@@ -1,0 +1,17 @@
+=== collecte automatique ===
+Rapport de collecte : snu-kr
+Date : 2026-11-13
+Statut : ok
+Cours actifs : 94
+Ajoutés (0) : aucun
+Retirés (0) : aucun
+Modifiés (0) : aucun
+Descriptions non publiées : L'export de la recherche de cours de SNU n'a aucune description ; seuls les cours du département d'informatique reçoivent une description, tirée du catalogue 2020 du département (source snu-kr-catalog-cse).
+Sources : snu-kr (saved), snu-kr-catalog-cse (pdf, enrich)
+Codes ignorés de la source snu-kr-catalog-cse (enrich, absents des autres sources) : 51
+=== fin de la collecte automatique ===
+
+Notes sur la collecte
+- Recollecte après correction des positions : chaque cours cité dans un export pointe maintenant la première section retenue (anglais, ouverte) dans la copie du bon trimestre, et non la première ligne où son numéro apparaît. 26 positions ont changé ; contrôle fait sur les 84 cours cités dans un export : 84 sur 84 sont une rangée en anglais, ouverte, du bon numéro. Les 10 cours décrits par le catalogue de 2020 gardent la position du catalogue.
+- Les autres notes (sources, comptes, export de l'automne sans cycles supérieurs, 64 titres en coréen, vérification de 5 cours) sont dans le rapport du 2026-11-12 ; la vérification du cours 881.003 y cite la ligne 460 (section coréenne), remplacée ici par la ligne de la section 002.
+- Le sous-titre d'un cours n'est ajouté au titre que si toutes ses sections ont le même (cours à thèmes variables : titre seul).

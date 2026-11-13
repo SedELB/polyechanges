@@ -1,8 +1,8 @@
 import type { HostCourseInput } from '../../shared/types.js';
 import { registerReader, type AsyncReader } from '../collect/readers.js';
+import { HANGUL } from '../collect/merge.js';
 import { snapshotText } from '../provenance/snapshotText.js';
 
-const HANGUL = /[㄰-㆏가-힯]/;
 
 /** Lignes répétées sur chaque page du catalogue : bandeau du département, séparateurs, numéro de page, légende des crédits. */
 const PAGE_FURNITURE = [/^(공과대학|자연과학대학)\(/, /^`$/, /^[·.]{5,}$/, /^- \d+ -$/, /^학점구조는/, /^hours” per week/];
